@@ -22,3 +22,13 @@ codex/v2/*_result.txt
 codex/v2/sessions.txt
 codex/v2/qa_*/
 codex/v2/*.png
+# v3: зависимости, сборка, кадры проверки
+v3/**/node_modules/
+v3/**/dist/
+codex/v3/frames_film/
+codex/v3/qa/
+codex/v3/__pycache__/
+codex/v3/*.log
+codex/v3/*.out
+codex/v3/*_result.txt
+codex/v3/session.txt

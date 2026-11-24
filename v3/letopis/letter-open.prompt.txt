@@ -1,0 +1,6 @@
+Tool: built-in image_gen, historical-scene. No paid API.
+Final asset: public/media/letter-open.jpg, 1600x2000, JPEG quality 94.
+The generated portrait was resampled to the specified pixel dimensions for use as a website texture.
+
+Prompt:
+Create a photorealistic texture asset of an unfolded 1943 Soviet front-line letter sheet, portrait 1600x2000 pixels, flat and straight viewed from directly above. One full rectangular sheet fills the image edge to edge, with thin faded blue-grey horizontal notebook rules, yellowed ivory paper, delicate brown age patina, gently worn frayed edges, visible diagonal and vertical crease lines from being folded into a triangle. The central writing area is clean, fairly pale and legible for overlay text. Subtle dimensional light along the creases, realistic fine paper fibres, archival museum quality. Absolutely NO writing, handwriting, printed letters, numbers, stamps, icons, symbols, text or watermark. No envelope, no extra objects, no hands, no table background. Output one flat usable portrait paper texture.

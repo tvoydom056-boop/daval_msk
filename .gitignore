@@ -12,3 +12,13 @@ Thumbs.db
 # профили headless-браузера Codex (история, куки)
 report/*profile*/
 report/screens_tmp/
+# служебное Codex v2: сырые генерации, логи, сессии и клиент Syntx
+codex/v2/raw/
+codex/v2/syntx/
+codex/v2/syntx_v2.py
+codex/v2/*.log
+codex/v2/*.out
+codex/v2/*_result.txt
+codex/v2/sessions.txt
+codex/v2/qa_*/
+codex/v2/*.png

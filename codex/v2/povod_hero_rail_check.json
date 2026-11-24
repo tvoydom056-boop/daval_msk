@@ -1,0 +1,193 @@
+{
+  "browser": "Chromium spawn EPERM; no screenshots; overflow and console not measured",
+  "geometry": {
+    "1440x900": {
+      "active": 129.6,
+      "inactive": 63.36,
+      "innerRadius": 129.6,
+      "outerRadius": 201.60000000000002,
+      "centres": [
+        [
+          1319.04,
+          254.24
+        ],
+        [
+          1319.04,
+          366.72
+        ],
+        [
+          1319.04,
+          479.2
+        ],
+        [
+          1319.04,
+          591.68
+        ]
+      ],
+      "photoBounds": [
+        1254.24,
+        1383.84
+      ],
+      "captionWidth": 300,
+      "ringsClippedByHero": true,
+      "border": 3,
+      "ringBorder": 1.6,
+      "connector": 3,
+      "duration": 0.9
+    },
+    "375x812": {
+      "active": 96,
+      "inactive": 46,
+      "innerRadius": 64.875,
+      "outerRadius": 83.625,
+      "centres": [
+        [
+          307.0,
+          358.18
+        ],
+        [
+          307.0,
+          441.18
+        ],
+        [
+          307.0,
+          524.18
+        ],
+        [
+          307.0,
+          607.18
+        ]
+      ],
+      "photoBounds": [
+        259.0,
+        355.0
+      ],
+      "captionWidth": 219,
+      "ringsClippedByHero": true,
+      "border": 3,
+      "ringBorder": 1.6,
+      "connector": 3,
+      "duration": 0.9
+    }
+  },
+  "videos": {
+    "slide-wedding": {
+      "http": 200,
+      "embeddedIdentical": true
+    },
+    "slide-birthday": {
+      "http": 200,
+      "embeddedIdentical": true
+    },
+    "slide-anniversary": {
+      "http": 200,
+      "embeddedIdentical": true
+    },
+    "slide-jubilee": {
+      "http": 200,
+      "embeddedIdentical": true
+    },
+    "story-meet": {
+      "http": 200,
+      "embeddedIdentical": true
+    },
+    "story-trip": {
+      "http": 200,
+      "embeddedIdentical": true
+    },
+    "story-proposal": {
+      "http": 200,
+      "embeddedIdentical": true
+    },
+    "story-today": {
+      "http": 200,
+      "embeddedIdentical": true
+    },
+    "clouds": {
+      "http": 200,
+      "embeddedIdentical": true
+    }
+  },
+  "posterFaceClearance": {
+    "method": "Manual approximate face boxes on supplied 1920x1080 posters, CSS cover and title bounds. Moving video frames not rendered.",
+    "checks": [
+      {
+        "width": 1440,
+        "occasion": "birthday",
+        "zoom": 1.04,
+        "titleIntersections": 0
+      },
+      {
+        "width": 1440,
+        "occasion": "birthday",
+        "zoom": 1.09,
+        "titleIntersections": 0
+      },
+      {
+        "width": 1440,
+        "occasion": "birthday",
+        "zoom": 1.12,
+        "titleIntersections": 0
+      },
+      {
+        "width": 1440,
+        "occasion": "jubilee",
+        "zoom": 1.04,
+        "titleIntersections": 0
+      },
+      {
+        "width": 1440,
+        "occasion": "jubilee",
+        "zoom": 1.09,
+        "titleIntersections": 0
+      },
+      {
+        "width": 1440,
+        "occasion": "jubilee",
+        "zoom": 1.12,
+        "titleIntersections": 0
+      },
+      {
+        "width": 375,
+        "occasion": "birthday",
+        "zoom": 1.04,
+        "titleIntersections": 0
+      },
+      {
+        "width": 375,
+        "occasion": "birthday",
+        "zoom": 1.09,
+        "titleIntersections": 0
+      },
+      {
+        "width": 375,
+        "occasion": "birthday",
+        "zoom": 1.12,
+        "titleIntersections": 0
+      },
+      {
+        "width": 375,
+        "occasion": "jubilee",
+        "zoom": 1.04,
+        "titleIntersections": 0
+      },
+      {
+        "width": 375,
+        "occasion": "jubilee",
+        "zoom": 1.09,
+        "titleIntersections": 0
+      },
+      {
+        "width": 375,
+        "occasion": "jubilee",
+        "zoom": 1.12,
+        "titleIntersections": 0
+      }
+    ]
+  },
+  "sourceFiles": [
+    "povod/styles.css",
+    "povod/app.js"
+  ],
+  "artifactRebuilt": true
+}

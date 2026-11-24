@@ -1,0 +1,48 @@
+{
+  "method": "CSS geometry and DOM checks; browser rendering not performed",
+  "viewports": {
+    "1440x900": {
+      "sectionPaddingPx": 100.8,
+      "sharedSectionGapPx": 100.8,
+      "cardsToIntroGapPx": 100.8,
+      "phoneHintFrameGapPx": 18,
+      "phoneHintScreenGapPx": 27,
+      "slotsControl": {
+        "left": 1316,
+        "right": 1428,
+        "top": 858,
+        "bottom": 888,
+        "height": 30,
+        "font": 11
+      },
+      "occasionCaptionBottom": 842,
+      "captionToSlotsVerticalGapPx": 16,
+      "ctaCollisionPolicy": "hide control with 8 px clearance, show when area clears"
+    },
+    "375x812": {
+      "sectionPaddingPx": 56,
+      "sharedSectionGapPx": 56,
+      "cardsToIntroGapPx": 56,
+      "phoneHintFrameGapPx": 18,
+      "phoneHintScreenGapPx": 27,
+      "slotsControl": {
+        "left": 251,
+        "right": 363,
+        "top": 770,
+        "bottom": 800,
+        "height": 30,
+        "font": 11
+      },
+      "occasionCaptionBottom": 754,
+      "captionToSlotsVerticalGapPx": 16,
+      "ctaCollisionPolicy": "hide control with 8 px clearance, show when area clears"
+    }
+  },
+  "dom": {
+    "phoneHintOutside": true,
+    "metadataAndPosters": true,
+    "collisionScenariosPassed": true,
+    "artifactPassed": true
+  },
+  "unicodeLongDashes": 0
+}

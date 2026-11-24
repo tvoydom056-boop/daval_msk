@@ -3,170 +3,58 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Летопись - страницы памяти и семейное древо</title>
-<meta name="description" content="Создаём страницу памяти о близком человеке: история жизни, восстановленные фотографии, голос, семейное древо и QR-код на памятник.">
+<meta name="theme-color" content="#15130f">
+<meta name="description" content="Летопись рода. Фотографии, письма, голос и семейное древо в одной истории, которая останется детям. Демонстрационный макет.">
+<title>Летопись рода - семейный архив</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2315130f'/%3E%3Ctext x='12' y='47' font-size='46' fill='%23f3ece0' font-family='serif'%3EЛ%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,300..700;1,7..72,300..600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script src="data.js" defer></script>
+<script src="app.js" defer></script>
 </head>
 <body>
-
+<a class="skip" href="#tree">Перейти к древу</a>
+<svg class="svg-defs" aria-hidden="true"><defs>
+<filter id="ink-edge" x="-4%" y="-4%" width="108%" height="108%"><feTurbulence id="inkNoise" type="fractalNoise" baseFrequency=".025" numOctaves="2" seed="4" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="2.2" xChannelSelector="R" yChannelSelector="G"/></filter>
+<filter id="line-glow" filterUnits="userSpaceOnUse" x="-40" y="-40" width="1600" height="800"><feGaussianBlur stdDeviation="2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs></svg>
 <header class="top" id="top">
-  <div class="wrap top__in">
-    <a class="logo" href="#top">Летопись</a>
-    <nav class="nav" aria-label="Разделы">
-      <a href="#example">Пример</a>
-      <a href="#tree">Древо</a>
-      <a href="#qr">QR на памятник</a>
-      <a href="#prices">Цены</a>
-      <a href="#faq">Вопросы</a>
-    </nav>
-    <a class="btn btn--ghost top__cta" href="#request">Оставить заявку</a>
-  </div>
+<nav class="nav" aria-label="Основная навигация">
+<div class="nav__side"><a class="nav__link" href="#tree">Древо</a><a class="nav__link" href="#stories">Истории</a></div>
+<a class="wordmark" href="#home" aria-label="Летопись, начало страницы">Летопись</a>
+<div class="nav__side"><a class="nav__link" href="#how">Как это работает</a><a class="nav__link" href="#prices">Цены</a></div>
+<button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mobileMenu">Меню</button>
+</nav>
+<div class="mobile-menu" id="mobileMenu" hidden><a href="#tree">Древо</a><a href="#stories">Истории</a><a href="#how">Как это работает</a><a href="#prices">Цены</a></div>
 </header>
-
-<!-- 1. ПЕРВЫЙ ЭКРАН -->
-<section class="hero">
-  <div class="hero__media media" data-slot="ВИДЕО 16:9, 10-15 с, луп, без звука. Руки медленно листают старый семейный альбом, тёплый свет из окна, камера плавно едет. Справа тёмное место под текст. Постер: hero.jpg">
-    <img src="assets/img/hero.jpg" alt="" class="kenburns">
-    <!-- <video autoplay muted loop playsinline poster="assets/img/hero.jpg"><source src="assets/video/hero.mp4" type="video/mp4"></video> -->
-  </div>
-  <div class="hero__shade"></div>
-  <div class="wrap hero__in">
-    <p class="eyebrow">Страницы памяти и семейные древа</p>
-    <h1>Память, которую<br>можно открыть</h1>
-    <p class="hero__lead">Мы собираем историю близкого человека в красивую страницу: главы жизни, восстановленные и раскрашенные фотографии, голос, награды и родные. QR-код на памятнике откроет её с любого телефона.</p>
-    <div class="hero__actions">
-      <a class="btn btn--light" href="#example">Посмотреть пример</a>
-      <a class="btn btn--line-light" href="#prices">Цены от 3 990 ₽</a>
-    </div>
-    <ul class="hero__facts">
-      <li><b>5-7 дней</b> от материалов до готовой страницы</li>
-      <li><b>Пишем сами</b> по вашим голосовым и фото</li>
-      <li><b>Копия у семьи</b> PDF-книга и архив навсегда</li>
-    </ul>
-  </div>
+<main>
+<section class="hero" id="home" aria-labelledby="heroTitle">
+<div class="scene-media hero__media" data-parallax=".18"><video width="1920" height="1080" muted loop playsinline preload="none" poster="assets/v2/scenes/hero.jpg" data-src="assets/v2/video/hero.mp4" data-slot="ВИДЕО hero: старый деревянный дом у берёз в утреннем тумане" aria-hidden="true"></video></div>
+<div class="hero__shade"></div>
+<div class="hero__content">
+<p class="eyebrow hero-cascade" style="--delay:.1s">Семейный архив</p>
+<h1 id="heroTitle" class="hero-cascade" style="--delay:.25s">Летопись<br>рода</h1>
+<p class="hero__lead hero-cascade" style="--delay:.4s">Истории тех, благодаря кому мы есть. Фотографии, письма, голос и древо - в одном месте, которое останется детям.</p>
+<a class="glass-btn hero-cascade" style="--delay:.55s" href="#tree">Открыть древо</a>
+</div>
+<p class="hero__foot">Память начинается с одного имени</p>
+<div class="fog hero__fog" aria-hidden="true"><video width="1920" height="1080" muted loop playsinline preload="none" poster="assets/v2/scenes/fog.jpg" data-src="assets/v2/video/fog.mp4" data-slot="ВИДЕО fog: белый туман на чёрном фоне, наложение screen"></video></div>
 </section>
-
-<!-- 2. ПРИМЕР СТРАНИЦЫ -->
-<section class="sec" id="example">
-  <div class="wrap">
-    <div class="sec__head">
-      <p class="eyebrow">Живой пример</p>
-      <h2>Так выглядит страница памяти</h2>
-      <p class="sec__lead">Это пример с вымышленным человеком. Пролистайте главы, зажгите свечу, перейдите к родным - так будут смотреть страницу ваши близкие.</p>
-    </div>
-
-    <article class="mem" aria-label="Пример страницы памяти">
-      <div class="mem__bar"><span>letopis.ru/p/sokolov-nikolay</span><span class="mem__lock">Открыта для всех</span></div>
-
-      <div class="mem__head">
-        <div class="mem__portrait media" data-slot="ФОТО 4:5, главный портрет героя. Лучше оригинал после реставрации. Можно заменить на короткое оживление 3-4 с (луп, без звука)">
-          <img src="assets/img/nikolay-color.jpg" alt="Николай Петрович Соколов, 1958">
-        </div>
-        <div class="mem__title">
-          <p class="mem__years">12 марта 1931 - 4 ноября 2019</p>
-          <h3>Николай Петрович<br>Соколов</h3>
-          <p class="mem__role">Инженер-мостостроитель, отец, дед и прадед</p>
-          <blockquote class="mem__epitaph">«Мост строят не для себя. Его строят, чтобы другие дошли»</blockquote>
-          <div class="mem__meta">
-            <span>Прожил 88 лет</span><span>Ульяновская область</span><span>10 родных в древе</span>
-          </div>
-        </div>
-      </div>
-
-      <nav class="chapters" role="tablist" aria-label="Главы жизни">
-        <button role="tab" class="is-on" data-ch="0"><b>1931</b>Детство</button>
-        <button role="tab" data-ch="1"><b>1949</b>Учёба и Анна</button>
-        <button role="tab" data-ch="2"><b>1957</b>Мосты</button>
-        <button role="tab" data-ch="3"><b>1985</b>Дом и внуки</button>
-        <button role="tab" data-ch="4"><b>Память</b>Награды</button>
-      </nav>
-
-      <div class="chapter-view">
-        <div class="chapter is-on" data-ch="0">
-          <div class="chapter__text">
-            <h4>Детство в Тереньге</h4>
-            <p>Николай родился в селе Тереньга третьим ребёнком в семье плотника. Отца он почти не запомнил: в 1941 году Пётр Алексеевич ушёл на фронт и не вернулся. Мать работала в колхозе с рассвета до темноты.</p>
-            <p>В десять лет Коля уже чинил соседям табуретки отцовским рубанком. Этот рубанок он хранил всю жизнь и перед смертью отдал правнуку Мише со словами: «Руки помнят дольше, чем голова».</p>
-          </div>
-          <figure class="chapter__fig chapter__fig--quote">
-            <p>«Каждую весну мы с братьями бегали на Волгу смотреть ледоход. Я тогда решил, что через такую реку обязательно должен быть мост».</p>
-            <figcaption>Из рассказа Николая Петровича, записано внучкой Екатериной в 2016 году</figcaption>
-          </figure>
-        </div>
-        <div class="chapter" data-ch="1">
-          <div class="chapter__text">
-            <h4>Учёба и Анна</h4>
-            <p>В 1949 году Николай поступил в дорожный техникум в Ульяновске. Жил в общежитии, по ночам разгружал вагоны, а по субботам ходил на танцы в парк, где однажды пригласил на вальс студентку педучилища Анну.</p>
-            <p>Анна потом смеялась, что танцевал он плохо, но так серьёзно, что отказать было невозможно. Свадьбу сыграли в 1956 году у дома её родителей, на ней гуляло полсела.</p>
-          </div>
-          <figure class="chapter__fig media" data-slot="ФОТО 4:3, архивное фото главы. Реставрируем и по желанию раскрашиваем">
-            <img src="assets/img/wedding-1956.jpg" alt="Свадьба Николая и Анны, 1956 год">
-            <figcaption>Свадьба Николая и Анны, 1956 год</figcaption>
-          </figure>
-        </div>
-        <div class="chapter" data-ch="2">
-          <div class="chapter__text">
-            <h4>Мосты</h4>
-            <p>Тридцать четыре года Николай Петрович проработал в мостостроительном отряде. Его бригада ставила мосты через Свиягу, Суру и Каму, а в 1967 году он впервые руководил монтажом пролёта над большой водой.</p>
-            <p>Дома он почти не рассказывал о работе. Но когда семья ехала куда-нибудь на машине, на каждом мосту замедлялся и тихо говорил: «Этот держит».</p>
-          </div>
-          <figure class="chapter__fig media" data-slot="ФОТО 4:3 или ОЖИВЛЕНИЕ 4-6 с. Рабочее фото героя. Можно сделать движение воды и лёгкий наезд камеры">
-            <img src="assets/img/bridge-1967.jpg" alt="Монтаж моста, 1967 год">
-            <figcaption>Бригада на монтаже пролёта, 1967 год. Николай Петрович в центре, с чертежом</figcaption>
-          </figure>
-        </div>
-        <div class="chapter" data-ch="3">
-          <div class="chapter__text">
-            <h4>Дом и внуки</h4>
-            <p>Все праздники собирались у Соколовых: Анна Ивановна пекла пироги с калиной, Николай Петрович строгал внукам деревянные кораблики и устраивал «испытания на прочность» в ванной.</p>
-            <p>Внук Дмитрий стал инженером, как дед. Внучка Екатерина собрала эту страницу, чтобы правнук Миша знал, чей рубанок лежит у него на полке.</p>
-          </div>
-          <figure class="chapter__fig media" data-slot="ФОТО 4:3, семейное фото. Выцветшие цветные фото выравниваем по цвету">
-            <img src="assets/img/family-1985.jpg" alt="Семья Соколовых, 1985 год">
-            <figcaption>Новый год у Соколовых, 1985</figcaption>
-          </figure>
-        </div>
-        <div class="chapter" data-ch="4">
-          <div class="chapter__text">
-            <h4>Награды и документы</h4>
-            <p>Медаль «За трудовую доблесть» (1971), медаль «Ветеран труда» (1986), почётная грамота министерства за досрочную сдачу моста (1974).</p>
-            <p>Мы фотографируем награды и документы так, чтобы их было приятно рассматривать, и подписываем, за что и когда они вручены.</p>
-          </div>
-          <figure class="chapter__fig media" data-slot="ФОТО 4:3, предметная съёмка наград и документов. Можно снять самим по нашей памятке или прислать нам">
-            <img src="assets/img/medals.jpg" alt="Награды Николая Петровича">
-            <figcaption>Медали и грамота хранятся у дочери Ольги</figcaption>
-          </figure>
-        </div>
-      </div>
-
-      <div class="mem__foot">
-        <div class="words">
-          <p class="words__label">Слова памяти</p>
-          <blockquote>«Дед никогда не повышал голос. Он просто смотрел поверх очков, и всем становилось стыдно и смешно одновременно».<cite>Дмитрий, внук</cite></blockquote>
-          <blockquote>«Папа научил меня, что сделанное на совесть переживёт любые слова».<cite>Ольга, дочь</cite></blockquote>
-        </div>
-        <div class="candle">
-          <p class="words__label">Свеча памяти</p>
-          <div class="candle__flame" aria-hidden="true"><span></span></div>
-          <p class="candle__count"><b id="candleCount">214</b> свечей зажжено</p>
-          <button class="btn btn--dark" id="candleBtn">Зажечь свечу</button>
-        </div>
-      </div>
-      <div class="mem__links">
-        <span>Родные на странице:</span>
-        <button data-goto="anna">Анна Ивановна, жена</button>
-        <button data-goto="petr">Пётр Алексеевич, отец</button>
-        <button data-goto="olga">Ольга, дочь</button>
-        <button data-goto="nikolay" class="mem__tree">Открыть всё древо</button>
-      </div>
-    </article>
-  </div>
+<section class="family" id="tree" aria-labelledby="treeTitle">
+<div class="tree-atmosphere" aria-hidden="true"><video width="1920" height="1080" muted loop playsinline preload="none" data-src="assets/v2/video/tree-dust.mp4" data-slot="ВИДЕО tree-dust: тёплая пыль и огоньки за лентами рода"></video></div>
+<svg class="curve-mask curve-mask--top" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0H1440V20Q720 130 0 20Z"/></svg>
+<div class="family__intro wrap reveal"><div class="family__heading"><p class="eyebrow">Связанные одной историей</p><h2 id="treeTitle">Из корней <i>вырастаем мы.</i></h2></div><p class="family__hint">Пять поколений. Разные судьбы. Одно продолжающееся древо.<span>Перетаскивайте ленты. Выберите человека, чтобы увидеть его родных и открыть историю.</span></p></div>
+<div class="tree-stage" id="treeStage" aria-label="Древо семьи Соколовых"><div id="ribbons"></div><svg class="tree-lines" id="treeLines" aria-hidden="true"></svg></div>
+<p class="tree-touch-hint wrap" id="treeTouchHint">Потяните ленту или выберите человека</p>
+<aside class="selection wrap" id="selection" aria-live="polite" hidden></aside>
+<div class="family__bottom wrap"><span>Демонстрационный род. Все люди и истории вымышлены.</span><span>1900-е - 2010-е</span></div>
+<svg class="curve-mask curve-mask--bottom" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 80H1440V60Q720 -50 0 60Z"/></svg>
 </section>
-
-<!-- 3. КОЛОРИЗАЦИЯ -->
+<div id="stories" class="stories-heading wrap reveal"><p class="eyebrow">Четыре судьбы из одного древа</p><h2>У каждой жизни -<br><i>свой мир.</i></h2><p>Сохраним не только даты.<br>То, каким был человек.</p></div>
+<div id="chapters"></div>
+<div class="archive-services"><!-- 3. КОЛОРИЗАЦИЯ -->
 <section class="sec sec--paper2">
   <div class="wrap restore">
     <div class="restore__text">
@@ -181,34 +69,12 @@
       </ul>
     </div>
     <div class="compare media" id="compare" data-slot="ДВА ФОТО 4:5 одного кадра: оригинал ч/б (nikolay-bw.jpg) и после реставрации и цвета (nikolay-color.jpg). Композиция должна совпадать">
-      <img src="assets/img/nikolay-color.jpg" alt="После реставрации и раскрашивания">
-      <div class="compare__before"><img src="assets/img/nikolay-bw.jpg" alt="Оригинал 1958 года"></div>
+      <img src="assets/img/nikolay-color.jpg" alt="После реставрации и раскрашивания" loading="lazy" decoding="async" width="1200" height="1500">
+      <div class="compare__before"><img src="assets/img/nikolay-bw.jpg" alt="Оригинал 1958 года" loading="lazy" decoding="async" width="1200" height="1500"></div>
       <div class="compare__handle" aria-hidden="true"><span></span></div>
       <input type="range" min="0" max="100" value="50" aria-label="Сравнить до и после">
       <span class="compare__tag compare__tag--l">Оригинал, 1958</span>
       <span class="compare__tag compare__tag--r">После</span>
-    </div>
-  </div>
-</section>
-
-<!-- 4. ДРЕВО -->
-<section class="sec sec--night" id="tree">
-  <div class="wrap">
-    <div class="sec__head sec__head--light">
-      <p class="eyebrow">Семейное древо</p>
-      <h2>Пять поколений на одной странице</h2>
-      <p class="sec__lead">Нажмите на человека, чтобы прочитать о нём и перейти к его родным. Древо растёт вместе с семьёй: дети и внуки смогут добавить себя позже. Его можно открыть всем или закрыть паролем.</p>
-    </div>
-    <div class="tree">
-      <div class="tree__canvas" id="treeCanvas">
-        <svg class="tree__lines" id="treeLines" aria-hidden="true"></svg>
-      </div>
-      <aside class="tree__card" id="treeCard" aria-live="polite"></aside>
-    </div>
-    <div class="tree__legend">
-      <span><i class="lg lg--page"></i>Есть страница памяти</span>
-      <span><i class="lg lg--live"></i>Живые родственники</span>
-      <span class="tree__privacy">Доступ: <button class="pill is-on" data-priv="open">Для всех</button><button class="pill" data-priv="family">Только семья</button></span>
     </div>
   </div>
 </section>
@@ -233,7 +99,7 @@
         <p class="player__note">В макете звук не подключён: сюда ставится файл записи.</p>
       </div>
       <div class="film media" data-slot="ВИДЕО 16:9, 45-60 с, со звуком (музыка). Фильм-воспоминание из фото: оживления, наезды, титры с годами. Постер: family-1985.jpg">
-        <img src="assets/img/family-1985.jpg" alt="Кадр из фильма-воспоминания">
+        <img src="assets/img/family-1985.jpg" alt="Кадр из фильма-воспоминания" loading="lazy" decoding="async" width="1600" height="1200">
         <div class="film__over">
           <span class="film__play">Смотреть фильм</span>
           <span class="film__len">Фильм-воспоминание, 1:00</span>
@@ -247,14 +113,14 @@
 <section class="sec sec--paper2" id="qr">
   <div class="wrap qr">
     <div class="qr__photo media" data-slot="ФОТО 4:3 или ВИДЕО 6-8 с: табличка с QR на граните, рука с телефоном наводит камеру, открывается страница">
-      <img src="assets/img/grave-qr.jpg" alt="Табличка с QR-кодом на памятнике">
+      <img src="assets/img/grave-qr.jpg" alt="Табличка с QR-кодом на памятнике" loading="lazy" decoding="async" width="1600" height="1200">
     </div>
     <div class="qr__text">
       <p class="eyebrow">QR-код на памятник</p>
       <h2>Наведите камеру - и история рядом</h2>
       <p>Мы даём файл QR-кода для печати на металлической или керамической табличке. Его делает любая мастерская или наш партнёр. Ссылка постоянная, менять табличку не придётся.</p>
       <div class="qr__row">
-        <div class="qr__code"><canvas id="qrCanvas" width="148" height="148" aria-label="QR-код примера"></canvas><span>Наведите камеру</span></div>
+        <div class="qr__code"><svg id="qrCanvas" width="148" height="148" viewBox="0 0 37 37" role="img" aria-label="QR-код демонстрационного примера" shape-rendering="crispEdges"><rect width="100%" height="100%" fill="#fff"/><path d="M4,4h1v1h-1z M5,4h1v1h-1z M6,4h1v1h-1z M7,4h1v1h-1z M8,4h1v1h-1z M9,4h1v1h-1z M10,4h1v1h-1z M13,4h1v1h-1z M16,4h1v1h-1z M17,4h1v1h-1z M18,4h1v1h-1z M20,4h1v1h-1z M21,4h1v1h-1z M22,4h1v1h-1z M23,4h1v1h-1z M26,4h1v1h-1z M27,4h1v1h-1z M28,4h1v1h-1z M29,4h1v1h-1z M30,4h1v1h-1z M31,4h1v1h-1z M32,4h1v1h-1z M4,5h1v1h-1z M10,5h1v1h-1z M14,5h1v1h-1z M15,5h1v1h-1z M16,5h1v1h-1z M18,5h1v1h-1z M19,5h1v1h-1z M20,5h1v1h-1z M22,5h1v1h-1z M23,5h1v1h-1z M24,5h1v1h-1z M26,5h1v1h-1z M32,5h1v1h-1z M4,6h1v1h-1z M6,6h1v1h-1z M7,6h1v1h-1z M8,6h1v1h-1z M10,6h1v1h-1z M12,6h1v1h-1z M13,6h1v1h-1z M14,6h1v1h-1z M16,6h1v1h-1z M17,6h1v1h-1z M18,6h1v1h-1z M20,6h1v1h-1z M23,6h1v1h-1z M24,6h1v1h-1z M26,6h1v1h-1z M28,6h1v1h-1z M29,6h1v1h-1z M30,6h1v1h-1z M32,6h1v1h-1z M4,7h1v1h-1z M6,7h1v1h-1z M7,7h1v1h-1z M8,7h1v1h-1z M10,7h1v1h-1z M13,7h1v1h-1z M14,7h1v1h-1z M15,7h1v1h-1z M17,7h1v1h-1z M18,7h1v1h-1z M20,7h1v1h-1z M22,7h1v1h-1z M23,7h1v1h-1z M24,7h1v1h-1z M26,7h1v1h-1z M28,7h1v1h-1z M29,7h1v1h-1z M30,7h1v1h-1z M32,7h1v1h-1z M4,8h1v1h-1z M6,8h1v1h-1z M7,8h1v1h-1z M8,8h1v1h-1z M10,8h1v1h-1z M14,8h1v1h-1z M18,8h1v1h-1z M19,8h1v1h-1z M21,8h1v1h-1z M22,8h1v1h-1z M23,8h1v1h-1z M26,8h1v1h-1z M28,8h1v1h-1z M29,8h1v1h-1z M30,8h1v1h-1z M32,8h1v1h-1z M4,9h1v1h-1z M10,9h1v1h-1z M13,9h1v1h-1z M17,9h1v1h-1z M19,9h1v1h-1z M20,9h1v1h-1z M23,9h1v1h-1z M24,9h1v1h-1z M26,9h1v1h-1z M32,9h1v1h-1z M4,10h1v1h-1z M5,10h1v1h-1z M6,10h1v1h-1z M7,10h1v1h-1z M8,10h1v1h-1z M9,10h1v1h-1z M10,10h1v1h-1z M12,10h1v1h-1z M14,10h1v1h-1z M16,10h1v1h-1z M18,10h1v1h-1z M20,10h1v1h-1z M22,10h1v1h-1z M24,10h1v1h-1z M26,10h1v1h-1z M27,10h1v1h-1z M28,10h1v1h-1z M29,10h1v1h-1z M30,10h1v1h-1z M31,10h1v1h-1z M32,10h1v1h-1z M12,11h1v1h-1z M13,11h1v1h-1z M14,11h1v1h-1z M16,11h1v1h-1z M17,11h1v1h-1z M18,11h1v1h-1z M19,11h1v1h-1z M21,11h1v1h-1z M22,11h1v1h-1z M24,11h1v1h-1z M4,12h1v1h-1z M5,12h1v1h-1z M6,12h1v1h-1z M8,12h1v1h-1z M9,12h1v1h-1z M10,12h1v1h-1z M11,12h1v1h-1z M12,12h1v1h-1z M14,12h1v1h-1z M15,12h1v1h-1z M18,12h1v1h-1z M20,12h1v1h-1z M21,12h1v1h-1z M23,12h1v1h-1z M24,12h1v1h-1z M25,12h1v1h-1z M26,12h1v1h-1z M30,12h1v1h-1z M4,13h1v1h-1z M6,13h1v1h-1z M9,13h1v1h-1z M14,13h1v1h-1z M15,13h1v1h-1z M18,13h1v1h-1z M20,13h1v1h-1z M26,13h1v1h-1z M29,13h1v1h-1z M32,13h1v1h-1z M4,14h1v1h-1z M7,14h1v1h-1z M9,14h1v1h-1z M10,14h1v1h-1z M12,14h1v1h-1z M13,14h1v1h-1z M17,14h1v1h-1z M20,14h1v1h-1z M21,14h1v1h-1z M24,14h1v1h-1z M26,14h1v1h-1z M27,14h1v1h-1z M30,14h1v1h-1z M31,14h1v1h-1z M32,14h1v1h-1z M4,15h1v1h-1z M5,15h1v1h-1z M6,15h1v1h-1z M9,15h1v1h-1z M11,15h1v1h-1z M15,15h1v1h-1z M19,15h1v1h-1z M20,15h1v1h-1z M21,15h1v1h-1z M22,15h1v1h-1z M23,15h1v1h-1z M25,15h1v1h-1z M28,15h1v1h-1z M31,15h1v1h-1z M7,16h1v1h-1z M8,16h1v1h-1z M9,16h1v1h-1z M10,16h1v1h-1z M12,16h1v1h-1z M16,16h1v1h-1z M19,16h1v1h-1z M20,16h1v1h-1z M21,16h1v1h-1z M25,16h1v1h-1z M26,16h1v1h-1z M29,16h1v1h-1z M31,16h1v1h-1z M32,16h1v1h-1z M6,17h1v1h-1z M7,17h1v1h-1z M11,17h1v1h-1z M12,17h1v1h-1z M15,17h1v1h-1z M16,17h1v1h-1z M17,17h1v1h-1z M20,17h1v1h-1z M24,17h1v1h-1z M25,17h1v1h-1z M26,17h1v1h-1z M29,17h1v1h-1z M32,17h1v1h-1z M4,18h1v1h-1z M6,18h1v1h-1z M9,18h1v1h-1z M10,18h1v1h-1z M11,18h1v1h-1z M12,18h1v1h-1z M13,18h1v1h-1z M15,18h1v1h-1z M16,18h1v1h-1z M18,18h1v1h-1z M28,18h1v1h-1z M29,18h1v1h-1z M31,18h1v1h-1z M32,18h1v1h-1z M4,19h1v1h-1z M6,19h1v1h-1z M8,19h1v1h-1z M9,19h1v1h-1z M11,19h1v1h-1z M16,19h1v1h-1z M17,19h1v1h-1z M18,19h1v1h-1z M20,19h1v1h-1z M21,19h1v1h-1z M24,19h1v1h-1z M29,19h1v1h-1z M31,19h1v1h-1z M7,20h1v1h-1z M10,20h1v1h-1z M12,20h1v1h-1z M14,20h1v1h-1z M15,20h1v1h-1z M18,20h1v1h-1z M19,20h1v1h-1z M20,20h1v1h-1z M21,20h1v1h-1z M23,20h1v1h-1z M24,20h1v1h-1z M25,20h1v1h-1z M26,20h1v1h-1z M27,20h1v1h-1z M29,20h1v1h-1z M31,20h1v1h-1z M32,20h1v1h-1z M7,21h1v1h-1z M9,21h1v1h-1z M11,21h1v1h-1z M13,21h1v1h-1z M15,21h1v1h-1z M18,21h1v1h-1z M20,21h1v1h-1z M26,21h1v1h-1z M29,21h1v1h-1z M30,21h1v1h-1z M32,21h1v1h-1z M4,22h1v1h-1z M6,22h1v1h-1z M8,22h1v1h-1z M10,22h1v1h-1z M12,22h1v1h-1z M13,22h1v1h-1z M14,22h1v1h-1z M17,22h1v1h-1z M21,22h1v1h-1z M26,22h1v1h-1z M27,22h1v1h-1z M28,22h1v1h-1z M31,22h1v1h-1z M32,22h1v1h-1z M5,23h1v1h-1z M6,23h1v1h-1z M8,23h1v1h-1z M11,23h1v1h-1z M15,23h1v1h-1z M21,23h1v1h-1z M22,23h1v1h-1z M23,23h1v1h-1z M24,23h1v1h-1z M26,23h1v1h-1z M29,23h1v1h-1z M31,23h1v1h-1z M4,24h1v1h-1z M10,24h1v1h-1z M12,24h1v1h-1z M13,24h1v1h-1z M14,24h1v1h-1z M16,24h1v1h-1z M19,24h1v1h-1z M20,24h1v1h-1z M21,24h1v1h-1z M24,24h1v1h-1z M25,24h1v1h-1z M26,24h1v1h-1z M27,24h1v1h-1z M28,24h1v1h-1z M12,25h1v1h-1z M14,25h1v1h-1z M15,25h1v1h-1z M16,25h1v1h-1z M17,25h1v1h-1z M20,25h1v1h-1z M21,25h1v1h-1z M22,25h1v1h-1z M24,25h1v1h-1z M28,25h1v1h-1z M30,25h1v1h-1z M31,25h1v1h-1z M32,25h1v1h-1z M4,26h1v1h-1z M5,26h1v1h-1z M6,26h1v1h-1z M7,26h1v1h-1z M8,26h1v1h-1z M9,26h1v1h-1z M10,26h1v1h-1z M12,26h1v1h-1z M14,26h1v1h-1z M15,26h1v1h-1z M16,26h1v1h-1z M18,26h1v1h-1z M21,26h1v1h-1z M23,26h1v1h-1z M24,26h1v1h-1z M26,26h1v1h-1z M28,26h1v1h-1z M29,26h1v1h-1z M31,26h1v1h-1z M32,26h1v1h-1z M4,27h1v1h-1z M10,27h1v1h-1z M12,27h1v1h-1z M13,27h1v1h-1z M14,27h1v1h-1z M16,27h1v1h-1z M17,27h1v1h-1z M18,27h1v1h-1z M19,27h1v1h-1z M21,27h1v1h-1z M24,27h1v1h-1z M28,27h1v1h-1z M29,27h1v1h-1z M31,27h1v1h-1z M4,28h1v1h-1z M6,28h1v1h-1z M7,28h1v1h-1z M8,28h1v1h-1z M10,28h1v1h-1z M12,28h1v1h-1z M13,28h1v1h-1z M15,28h1v1h-1z M18,28h1v1h-1z M19,28h1v1h-1z M20,28h1v1h-1z M21,28h1v1h-1z M22,28h1v1h-1z M24,28h1v1h-1z M25,28h1v1h-1z M26,28h1v1h-1z M27,28h1v1h-1z M28,28h1v1h-1z M31,28h1v1h-1z M32,28h1v1h-1z M4,29h1v1h-1z M6,29h1v1h-1z M7,29h1v1h-1z M8,29h1v1h-1z M10,29h1v1h-1z M14,29h1v1h-1z M15,29h1v1h-1z M18,29h1v1h-1z M20,29h1v1h-1z M23,29h1v1h-1z M24,29h1v1h-1z M25,29h1v1h-1z M27,29h1v1h-1z M28,29h1v1h-1z M30,29h1v1h-1z M31,29h1v1h-1z M32,29h1v1h-1z M4,30h1v1h-1z M6,30h1v1h-1z M7,30h1v1h-1z M8,30h1v1h-1z M10,30h1v1h-1z M12,30h1v1h-1z M13,30h1v1h-1z M14,30h1v1h-1z M17,30h1v1h-1z M20,30h1v1h-1z M24,30h1v1h-1z M27,30h1v1h-1z M28,30h1v1h-1z M29,30h1v1h-1z M32,30h1v1h-1z M4,31h1v1h-1z M10,31h1v1h-1z M12,31h1v1h-1z M14,31h1v1h-1z M15,31h1v1h-1z M20,31h1v1h-1z M21,31h1v1h-1z M22,31h1v1h-1z M24,31h1v1h-1z M26,31h1v1h-1z M27,31h1v1h-1z M31,31h1v1h-1z M4,32h1v1h-1z M5,32h1v1h-1z M6,32h1v1h-1z M7,32h1v1h-1z M8,32h1v1h-1z M9,32h1v1h-1z M10,32h1v1h-1z M12,32h1v1h-1z M14,32h1v1h-1z M16,32h1v1h-1z M19,32h1v1h-1z M20,32h1v1h-1z M21,32h1v1h-1z M23,32h1v1h-1z M24,32h1v1h-1z M27,32h1v1h-1z M31,32h1v1h-1z M32,32h1v1h-1z" fill="#1d1a16"/></svg><span>Наведите камеру</span></div>
         <dl class="place">
           <div><dt>Место захоронения</dt><dd>Кладбище Северное, Ульяновск</dd></div>
           <div><dt>Участок / ряд / место</dt><dd>14 / 6 / 22</dd></div>
@@ -338,7 +204,7 @@
 </section>
 
 <!-- 9. КАК РАБОТАЕМ -->
-<section class="sec">
+<section class="sec" id="how">
   <div class="wrap">
     <div class="sec__head">
       <p class="eyebrow">Как мы работаем</p>
@@ -389,11 +255,14 @@
       </label>
       <label>Пара слов о человеке<textarea name="about" rows="3" placeholder="Например: дедушка, строил мосты, есть 20 фото и голосовые"></textarea></label>
       <button class="btn btn--light" type="submit">Отправить заявку</button>
-      <p class="form__note" id="formNote">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных.</p>
+      <p class="demo-note">Это макет: заявка не отправляется.</p>
+      <p class="form__note" id="formNote" role="status">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных.</p>
     </form>
   </div>
 </section>
 
+</div>
+</main>
 <footer class="foot">
   <div class="wrap foot__in">
     <span class="logo">Летопись</span>
@@ -402,9 +271,8 @@
   </div>
 </footer>
 
-<button class="slots-toggle" id="slotsToggle" type="button">Слоты медиа</button>
+<button class="slots-toggle" id="slotsToggle" type="button" aria-label="Показать слоты медиа">Слоты</button>
 
-<script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
-<script src="app.js"></script>
+
 </body>
 </html>

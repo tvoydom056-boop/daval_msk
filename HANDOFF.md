@@ -11,6 +11,9 @@
 - Опубликовано ссылками (приватно, делиться через Share): Летопись https://claude.ai/artifact/YMXrNQiqHbmhu1KkjQZxkj , Повод https://claude.ai/artifact/LmShbEP6Q95L8CdasdZfLQ (одна страница, поводы по #wedding #birthday #anniversary #jubilee). Пересборка версий для публикации: `python build_artifacts.py` (пишет letopis/artifact.html и povod/artifact.html), затем republish тех же файлов.
 - Проверяющий агент прошёл: бюджет выровнен до 50 000, добавлены расчёт хранения, пояснение цены «Истории» 4 490 (решить вдвоём), допуслуги, даты примеров.
 
+- PDF для друга готов: report/Отчёт_для_команды_Летопись_и_Повод.pdf (14 стр., вёрстка Codex, скриншоты снимает report/capture_screenshots.py при запущенном сервере 8765, сборка report/build_report.py).
+- Git: локальный репозиторий в этой папке, ветка main, remote origin = https://github.com/tvoydom056-boop/daval_msk.git (репо друга). На 24.11 репозиторий ПУБЛИЧНЫЙ и пустой; push не делали до решения о видимости. Профили headless-браузера в report/ исключены .gitignore.
+
 ## Как запустить макеты
 - `python -m http.server 8765 --directory "E:/CLAUDE/Сайты памяти и поздравлений"`, открыть http://localhost:8765/letopis/ и /povod/. В E:/CLAUDE/.claude/launch.json есть конфигурация memorial-sites.
 - Кнопка «Слоты медиа» (правый нижний угол) подписывает каждое место под видео/фото: что туда поставить.

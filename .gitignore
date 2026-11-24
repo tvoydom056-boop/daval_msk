@@ -1,0 +1,14 @@
+# сборки для публикации ссылкой (пересобираются build_artifacts.py)
+letopis/artifact.html
+povod/artifact.html
+# служебное Codex
+codex/*.log
+codex/*_result.txt
+__pycache__/
+*.pyc
+report/qa/
+.DS_Store
+Thumbs.db
+# профили headless-браузера Codex (история, куки)
+report/*profile*/
+report/screens_tmp/

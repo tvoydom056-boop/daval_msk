@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Повод - сайт-подарок с вашей историей</title>
+<meta name="description" content="Личный сайт-подарок к свадьбе, дню рождения, годовщине или юбилею: ваши фото, голосовые, письма и видео в одной красивой истории.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-occasion="jubilee">
+
+<header class="top">
+  <div class="wrap top__in">
+    <a class="logo" href="index.html">Повод<i>.</i></a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="index.html#occasions">Все поводы</a>
+      <a href="#demo">Пример</a>
+      <a href="#oprices">Цены</a>
+      <a href="#ofaq">Вопросы</a>
+    </nav>
+    <a class="btn btn--ink btn--sm" href="#request">Заказать подарок</a>
+  </div>
+</header>
+
+<main id="page"></main>
+
+<!-- ЗАЯВКА -->
+<section class="sec sec--dark" id="request">
+  <div class="wrap request">
+    <div>
+      <p class="eyebrow">Заявка</p>
+      <h2>Расскажите, кого и с чем поздравляем</h2>
+      <p class="sec__lead">Ответим в течение часа в рабочее время, подскажем идею и назовём точную цену.</p>
+      <p class="request__alt">Или напишите напрямую: Telegram, WhatsApp, телефон <span class="todo">(контакты добавим)</span></p>
+    </div>
+    <form class="form" id="form">
+      <label>Как к вам обращаться<input name="name" required placeholder="Аня"></label>
+      <label>Телефон или Telegram<input name="contact" required placeholder="+7 ... или @ник"></label>
+      <label>Повод
+        <select name="occasion" id="occSelect"><option>Свадьба</option><option>День рождения</option><option>Годовщина</option><option>Юбилей бабушки и дедушки</option><option>Свой повод</option></select>
+      </label>
+      <label>Формат
+        <select name="plan" id="planSelect"><option>Пока не знаю</option><option>Мини</option><option>История</option><option>Премиум</option></select>
+      </label>
+      <label>Когда праздник<input name="date" placeholder="Например, 14 марта"></label>
+      <button class="btn btn--acc" type="submit">Отправить заявку</button>
+      <p class="form__note" id="formNote">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <span class="logo">Повод<i>.</i></span>
+    <span>Сайты-подарки с вашей историей</span>
+    <span>Политика конфиденциальности · Оферта</span>
+  </div>
+</footer>
+
+<button class="slots-toggle" id="slotsToggle" type="button">Слоты медиа</button>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

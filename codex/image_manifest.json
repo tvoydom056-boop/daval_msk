@@ -1,0 +1,134 @@
+{
+  "tool": "built-in image_gen",
+  "quality": 85,
+  "images": [
+    {
+      "name": "hero",
+      "folder": "letopis",
+      "width": 2400,
+      "height": 1350,
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a20e2c-bb96-7012-9dcc-7b449095ddf3\\exec-48dd1cca-7744-4fad-8736-1c5ef78c0c90.png",
+      "prompt": "Use case: photorealistic-natural. One real photographic still life, landscape 16:9. An old open family photograph album on a scratched wooden table beside a window on the LEFT. Several loose small black-and-white family photos with white borders nearby, old reading glasses and one plain cup of tea. Archive photos have small indistinct fictional Russian family portraits, no text. Low warm late-evening window light from the LEFT creates tangible paper and wood textures and deep shadows. The open album and all objects are mainly within the LEFT 55 percent. RIGHT 45 percent is spacious dark softly shadowed empty wooden tabletop suitable for a website headline overlay. Natural understated warm light, quiet dignity, a real used family object not staged luxury. Shot on a real camera with restrained grain and natural depth of field. Keep main album readable as an album with individual photographic prints. No writing, readable inscriptions, letters, logos, watermark or invented glyphs anywhere. No text overlay. No CGI, no glossy AI render, no excessive dust or dramatic fantasy light."
+    },
+    {
+      "name": "nikolay-bw",
+      "folder": "letopis",
+      "width": 1200,
+      "height": 1500,
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a20e2c-bb96-7012-9dcc-7b449095ddf3\\exec-4549e527-7c19-4100-a539-aa203490344c.png",
+      "prompt": "Use case: historical-scene. Generate one authentic black-and-white studio photographic portrait card, portrait aspect ratio 4:5. Soviet Russia, 1958: a fictional ordinary Russian man aged 27, short neatly cut dark hair, clean-shaven, dark jacket and open white shirt with no tie, calm subtle smile, looking into the lens. Chest-up formal studio composition, plain softly graded backdrop, all head and shoulders comfortably in frame, slight natural asymmetry. Actual silver gelatin photo scanned from a family archive: delicate film grain, realistic pores, modest period lens softness, subtle worn emulsion and fine scratches, one small crack confined to the top right corner. Keep his face clean and recognizable, not overly damaged. Neutral true monochrome, credible 1950s hair and tailoring. Ordinary face specified only by demographics, no celebrity likeness. No writing, dates, text, lettering, stamps, logos, watermark. No fake sepia or illustration, no CGI, no fashion retouching, no plastic skin. This exact frame will later be colorized for an aligned before/after slider."
+    },
+    {
+      "name": "nikolay-color",
+      "folder": "letopis",
+      "width": 1200,
+      "height": 1500,
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a20e2c-bb96-7012-9dcc-7b449095ddf3\\exec-4a893d1f-2d8d-47a2-9cca-8359bdea76e8.png",
+      "prompt": "Use case: identity-preserve, archival photographic colorization EDIT. Input image 1 is the exact black-and-white target photograph, NOT inspiration. Colorize only this existing image. Absolute priority: keep every pixel's geometry unchanged, same crop, same dimensions 1200x1500 / 4:5 ratio, identical face, eyes, nose, smile, hairstyle, shirt folds, jacket edges, every scratch, faded patch, corner crack and aged card border in exactly the original coordinates. No restoration, no denoising, no new details, no reshaping, no zoom, no translation. Add plausible subtle warm natural colors only: muted gray-blue wool jacket, ivory white shirt, natural warm light skin, dark brown hair, gray neutral studio background, brown eyes. Preserve the original brightness, grain, contrast, flat photographic lighting and all surface wear. A restrained real historic-photo colorization, not a new portrait. The two images will be precisely superimposed for a before-after slider; align both eyelids, pupils, ears, mouth corners, shoulders and borders perfectly. No text, logos, new marks, watermark, glossy skin, modernization or beauty retouch."
+    },
+    {
+      "name": "wedding-1956",
+      "folder": "letopis",
+      "width": 1600,
+      "height": 1200,
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a20e2c-bb96-7012-9dcc-7b449095ddf3\\exec-c8c9c298-43d1-4e79-907b-569223f3373d.png",
+      "prompt": "Use case: historical-scene. A genuine-looking old black-and-white wedding photograph from rural Russia in 1956, landscape 4:3, a complete physical rectangular photographic card with narrow white paper margins visible on all four sides. Four fictional ordinary people: young bride and groom about 25 at center, one male and one female guest beside them, in front of a modest timber village house. Bride wears a simple light modest knee-to-calf-length 1950s dress and plain veil, holding a small bouquet at waist height. Groom in an ordinary dark Soviet suit and white shirt, short tidy hair. Guests dressed appropriately for 1956, no modern clothing or objects. The couple stands close, slightly shy happy expressions toward a family photographer. All faces readable but with authentic modest lens softness. Silver gelatin black-and-white, real film grain, slightly uneven exposure and faint card wear, gentle incidental motion softness, real outdoor daylight. Full figures or comfortably below knees, hands anatomically simple and realistic. No celebrities, no stylized fashion, no cinematic polish, no CGI, no plastic skin. No text, letters, numbers, signatures, stamps, logos or watermark anywhere."
+    },
+    {
+      "name": "bridge-1967",
+      "folder": "letopis",
+      "width": 1600,
+      "height": 1200,
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a20e2c-bb96-7012-9dcc-7b449095ddf3\\exec-19a37803-da14-494c-a2ed-251b479ca7bd.png",
+      "prompt": "Use case: historical-scene. One archival black-and-white documentary photograph from Soviet Russia in 1967, landscape 4:3. A large steel truss bridge under construction spanning a WIDE RIVER, heavy unfinished steel spans, riveted framework and era-appropriate crane visible in middle distance across the river. In foreground exactly FIVE fictional ordinary male engineers and construction workers aged 28-55 stand together on rough riverbank, wearing authentic work jackets and plain hard hats, no branding. The central man holds a large open blueprint low enough to keep all five faces visible; the blueprint has faint schematic lines but absolutely no letters or words. Unposed workplace documentary, one or two look at blueprint, others toward photographer. Real plausible hands, each belongs to a person; no extra arms. Their bodies take lower third to half frame, bridge and river clearly show. Natural overcast light, authentic silver gelatin film grain, moderate vintage lens softness, scanned family archive print, slight age wear. No modern safety vests or machinery styling, no fashion gloss, no CGI or plastic faces. No writing, signs, lettering, numbers, logos, watermark anywhere."
+    },
+    {
+      "name": "family-1985",
+      "folder": "letopis",
+      "width": 1600,
+      "height": 1200,
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a20e2c-bb96-7012-9dcc-7b449095ddf3\\exec-7c8779cd-0a87-41e1-b5e8-376bd09bfc97.png",
+      "prompt": "Use case: historical-scene. One faded COLOR family snapshot taken on Soviet consumer film in Russia in 1985, landscape 4:3. A family at a holiday dining table in a modest apartment with a traditional red patterned rug hanging on the wall. At center sit husband and wife BOTH AGED 54 (middle-aged grandparents with some gray hair, not elderly 80-year-olds), three adult children about 25-32 around them and exactly TWO little grandchildren about 4 and 7. Seven people total, distinct fictional ordinary Russian faces and believable family resemblance. Everyone naturally gathered behind the table, casual smiles, one child leans against a parent. Typical 1985 homemade salads, plain dishes, glassware, patterned tablecloth. Modest period clothing and Soviet domestic setting, no contemporary electronics. Flash mixed with warm room light, warm faded color shift, subtle film grain, slight softness and imperfect snapshot composition. Real skin and unretouched ordinary faces, no synthetic smoothness. Hands simple naturally resting, no hands hidden in impossible overlaps, no extra limbs. No text, labels, books with writing, letters, numbers, logos or watermark anywhere. No modern advertising aesthetic, no CGI."
+    },
+    {
+      "name": "medals",
+      "folder": "letopis",
+      "width": 1600,
+      "height": 1200,
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a20e2c-bb96-7012-9dcc-7b449095ddf3\\exec-677cbe10-2802-481b-954a-34f113a7d71a.png",
+      "prompt": "Use case: photorealistic-natural. Landscape 4:3 real camera close-up still life on dark green wool cloth: exactly TWO old Soviet labor medals on small faded red ribbon mounts, aged metal with embossed star and labor emblem relief, surfaces at a shallow oblique angle, lettering on medals completely unreadable and no visible legible glyphs. A yellowed honorary certificate lies partly behind the medals in the distant background, recognizable from a faded ornamental border and paper but its entire printed area falls completely out of focus as smooth indistinct tonal blur, absolutely no visible readable words, letters or fake writing. One old wooden pencil with no brand and worn reading glasses nearby. Tactile authentic patina, cloth fibers, soft lateral window light, shallow depth of field, medals in selective focus, certificate strongly defocused. Quiet documentary family archive photography rather than a glossy catalog. Natural lens rendering and restrained grain, believable scale, no text overlays, no numbers, logos or watermark. No CGI, shiny new decorations, plastic or gaudy studio lighting. The award paper should not generate pseudo-text."
+    },
+    {
+      "name": "anna-bw",
+      "folder": "letopis",
+      "width": 1000,
+      "height": 1250,
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a20e2c-bb96-7012-9dcc-7b449095ddf3\\exec-50ead1de-ed70-41e0-9256-7d15836bc8c0.png",
+      "prompt": "Use case: historical-scene. One authentic black-and-white photographic portrait from Soviet Russia, year 1957. Vertical 4:5 ratio, chest-up portrait of a fictional ordinary Russian woman aged 24, soft gentle smile looking directly into the camera. Her hair is braided and arranged as a crown around the head, period-appropriate, with natural small flyaway hairs. A simple modest blouse with a small pointed collar, no jewelry except perhaps none. Plain softly mottled studio backdrop, natural asymmetrical features and unretouched skin, convincing 1950s studio lighting, gentle lens softness, fine silver gelatin grain, scanned vintage print with very restrained age wear. Leave comfortable space around crown braids and shoulders, no modern haircut, no fashion model retouching, no makeup glamour, no CGI. Only demographic identity, no celebrity resemblance. No writing, lettering, dates, stamps, signatures, logos or watermark anywhere. True monochrome, no sepia."
+    },
+    {
+      "name": "grave-qr",
+      "folder": "letopis",
+      "width": 1600,
+      "height": 1200,
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a20e2c-bb96-7012-9dcc-7b449095ddf3\\exec-c7166455-e708-43fd-a5b5-750173c853fb.png",
+      "prompt": "Use case: photorealistic-natural. One respectful real documentary photo in a Russian cemetery in autumn, landscape 4:3. Low close framing of the LOWER part of a plain dark polished granite headstone and its stone base; the top of the stele and any names or dates are completely outside the frame. A TINY brushed metal square plaque ONLY 3 by 3 centimeters is neatly affixed to the lower granite, with a black square QR matrix centered on it and no words whatsoever. Show credible physical scale: plaque occupies only roughly 4 percent of image width, on a much larger stone surface, not a giant sign. Recognizable QR pattern with three finder corner squares. Fallen yellow birch leaves on the stone base and ground, a modest bunch of fresh living flowers beside it. Soft cloudy daylight, natural reflections on dark granite, shallow but not extreme depth of field. Other distant cemetery stones are strongly blurred with absolutely no readable marks. Real material wear and subdued autumn colors, phone or documentary camera texture. No people. No readable names, dates, letters, inscriptions, brand, logo, watermark or caption anywhere. No funeral horror mood, no glossy CGI."
+    },
+    {
+      "name": "wedding",
+      "folder": "povod",
+      "width": 1600,
+      "height": 2000,
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a20e2c-bb96-7012-9dcc-7b449095ddf3\\exec-6a492e4e-82df-4602-8586-d084fc3a257b.png",
+      "prompt": "Use case: photorealistic-natural. One candid wedding reportage photograph, vertical 4:5. Two fictional ordinary Russian adults about 27, a laughing groom gently twirling his laughing bride in a grassy rural field at sunset. He supports her securely at the waist as they turn, her simple ivory wedding skirt moves naturally in a small arc and her feet remain near the grass. Plain dark suit, white shirt without tie, modest real wedding dress, no luxury designer look. Show their faces in a spontaneous joyful interaction, full figures with comfortable framing and enough room for moving dress, ordinary natural faces and unretouched textured skin. Warm low backlight through her hair from the setting sun, photographer's imperfect but well-timed frame, real-camera slight motion softness in skirt and grass, delicate 35mm grain, restrained warm color. All arms and hands belong clearly to the two people, correct anatomy and secure natural grip. Real wedding memory in Russia, not glossy bridal magazine, no fashion models, no extravagant fantasy dress, no CGI, no plastic skin, no artificial orange filter. No writing, text, letters, logos, signs, watermark or date stamp anywhere."
+    },
+    {
+      "name": "birthday",
+      "folder": "povod",
+      "width": 1600,
+      "height": 2000,
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a20e2c-bb96-7012-9dcc-7b449095ddf3\\exec-d66c83a9-bc4c-4ff7-a329-c30dc063ee65.png",
+      "prompt": "Use case: precise-object-edit. Input 1 is the exact target smartphone birthday photograph. Change ONLY the dark bookcase and books visible at the extreme upper-left background edge: replace that entire bookcase/books area with the same ordinary warm patterned wallpaper as the neighboring wall, naturally dark in the original room light. Remove all book spines, tiny lettering and prints in that upper-left background. Do NOT change anything else. Preserve the five people, all faces and expressions, eyes, skin detail, hands and fingers, sparklers, cake, candles, furniture, window, lighting, flash, grain, camera perspective and exact 4:5 crop. The birthday man is blowing candles, keep his lips and eyes identical. No beauty retouch or changes to texture. No text, letters, numbers, new objects, logos or watermark anywhere. This is a strictly local background cleanup, not a fresh scene."
+    },
+    {
+      "name": "anniversary",
+      "folder": "povod",
+      "width": 1600,
+      "height": 2000,
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a20e2c-bb96-7012-9dcc-7b449095ddf3\\exec-60cc8c49-5ebc-49d5-81c1-142b320943ad.png",
+      "prompt": "Use case: photorealistic-natural. One candid intimate everyday photograph of a fictional ordinary Russian couple about 30 in their small cozy kitchen in the morning, vertical 4:5. The woman laughs naturally, in a simple soft cotton home top, loose slightly messy dark-blond hair and unretouched skin. The man beside her smiles toward her while carrying exactly TWO plain ceramic mugs, one in each hand by its handle, both mugs visible with normal five-finger anatomy, not merging into one another. Ordinary relaxed clothes, no logos. Modest lived-in Russian apartment kitchen, wooden or laminate counter, a folded kitchen towel and soft background blur, no staged luxury interior. Gentle morning window light from one side, subtle real camera grain, honest skin pores, small domestic imperfections, warm quiet affection. Medium framing with faces and both mugs comfortably inside image. No writing on mugs or appliances, no packages with text, no signage, letters, numbers, logo or watermark anywhere. No model posing, no cosmetic retouch, no glossy stock-photo look, no CGI, no plastic skin."
+    },
+    {
+      "name": "jubilee",
+      "folder": "povod",
+      "width": 1600,
+      "height": 2000,
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a20e2c-bb96-7012-9dcc-7b449095ddf3\\exec-46684a0d-8390-455d-9bca-923578fa4ca6.png",
+      "prompt": "Use case: photorealistic-natural. One real-looking family phone photograph at a grandmother's birthday celebration in an ordinary Russian apartment, vertical 4:5. A fictional Russian grandmother aged 75 sits at a festive table, real deep gentle wrinkles, gray short hair and happy watery eyes, a modest patterned blouse. Exactly TWO grandchildren, one aged 6 and one aged 10, hug her warmly from either side, cheerful natural faces, believable children and small hands resting simply on her shoulders. Grandmother smiles with a slightly overwhelmed warm emotion, not posed stock model. A homemade cake with a few plain lit candles in foreground, no numbers or letters on cake. Ordinary plates, tablecloth and modest home decor, warm household light, mild phone flash or noise, plausible uneven skin and everyday textures, authentic family moment. Keep all three faces visible and undistorted, arms anatomically connected, no extra fingers or limbs, no adult hands substituted for children's hands. No signs, banners, greeting writing, text, letters, numbers, logos, labels or watermark. No beauty filter, glossy artificial lighting, CGI or plastic skin."
+    },
+    {
+      "name": "story-meet",
+      "folder": "povod",
+      "width": 1200,
+      "height": 1500,
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a20e2c-bb96-7012-9dcc-7b449095ddf3\\exec-00241961-bf9a-46a1-b8b9-d08eaa90c326.png",
+      "prompt": "Use case: photorealistic-natural. One unposed smartphone photograph from 2019, vertical portrait aspect ratio 4:5, inside a modest independent Russian cafe on a first date. Two fictional ordinary Russian young adults about 23, a woman with shoulder-length dark brown hair, brown eyes and a lightly freckled oval face in a simple rust knit sweater; a man with short wavy medium brown hair, brown eyes, clean shaven and a narrow oval face in a muted navy casual overshirt. Seated close across a small wooden table, slightly turned toward photographer, shy hesitant smiles, candid eye contact toward each other. Two plain coffee cups, hands naturally resting near their own cup with clear plausible anatomy. Warm string lights in evening background, mixed low light, modest smartphone noise, slightly imperfect composition, realistic skin and hair. Intimate everyday memory, not advertising, not magazine, no artificial cinematic color grading, no perfect model faces, no beauty smoothing, no CGI. No readable menus, text, letters, numbers, logos or watermark anywhere. Frame both faces clearly. This pair will be the reference for a second vacation photo, so keep visible distinct yet ordinary faces."
+    },
+    {
+      "name": "story-trip",
+      "folder": "povod",
+      "width": 1200,
+      "height": 1500,
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a20e2c-bb96-7012-9dcc-7b449095ddf3\\exec-c30b29c1-a6de-4f2f-8d9d-0a9e5c12881d.png",
+      "prompt": "Use case: identity-preserve. Input 1 is a REFERENCE for the identity of the two fictional ordinary young adults. Generate a different candid vacation photograph of this SAME couple around age 23, preserving their recognizable faces, proportions, dark brown shoulder-length hair and freckles on the woman, short wavy brown hair and clean-shaven narrow face on the man. Vertical 4:5 photo. They stand next to each other on a rocky Black Sea coast in Russia, sea and pale craggy coastal cliffs clearly in the background. Wind blows her hair and their light jackets. Both laugh naturally, she wears a light olive spring jacket, he a faded denim jacket, plain garments without branding, different season from the reference cafe picture. A friend took this imperfect frame on film: restrained slightly faded film color, subtle grain, natural slightly overcast coastal sun, small motion in hair, credible casual body language. Waist-up with hands simple and plausibly resting at sides or around shoulders. Real people on a modest trip, no tourist advertising, no glamorous models, no artificial cinematic gloss. No text, letters, logos, watermark, distortions or extra fingers."
+    }
+  ],
+  "edits": [
+    {
+      "name": "birthday",
+      "reason": "Removed printed book spines from background",
+      "original_source": "C:\\Users\\User\\.codex\\generated_images\\01a20e2c-bb96-7012-9dcc-7b449095ddf3\\exec-236b9283-7f83-4ec5-811b-409627eecb08.png",
+      "original_prompt": "Use case: photorealistic-natural. One spontaneous 2019-style smartphone photo at a birthday party in a modest Russian apartment at night, vertical 4:5. Five fictional ordinary friends all aged 22-25 crowd around a small dining table. The birthday man in the center leans forward and blows out several simple slim candles on a homemade cake, clearly rounded pursed lips and lively happy eyes. Two friends nearby hold sparklers safely upright away from faces, other two laugh. Strong direct phone flash with honest skin texture, occasional red cheeks, dark room behind and some warm lamp glow, believable flare from sparklers, real phone noise. People in ordinary plain casual clothing, unposed lively expressions, imperfect snapshot, no glamorous staged ad. Hands anatomically correct and clearly separated, each sparkler held in one normal hand, no duplicated faces or limbs. Cake decoration only fruit or plain frosting, NO numeral candles or lettering. No party banners, text, numbers, letters, logos, labels, watermark anywhere, no beauty smoothing, no glossy CGI. Keep the cake, blowing person and several smiling faces all clearly visible."
+    }
+  ]
+}

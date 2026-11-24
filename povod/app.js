@@ -6,7 +6,6 @@
   const SPA = document.body.hasAttribute('data-spa');
   const ORDER = ['wedding', 'birthday', 'anniversary', 'jubilee'];
   const COLORS = { wedding: 'var(--wed)', birthday: 'var(--bday)', anniversary: 'var(--anni)', jubilee: 'var(--jub)' };
-  const bars = (n, seed = 1) => Array.from({ length: n }, (_, i) => `<i style="height:${Math.round(25 + 75 * Math.abs(Math.sin(i * 0.7 + seed) * Math.cos(i * 0.23 + seed * 2)))}%"></i>`).join('');
   const nf = n => n.toLocaleString('ru-RU');
 
   const card = k => {
@@ -19,14 +18,22 @@
   };
 
   /* содержимое подарка */
-  const gift = g => {
-    const s = g.sections.map((x, si) => {
-      const head = `<p class="g-label">${x.label || ''}</p>${x.title ? `<h4>${x.title}</h4>` : ''}`;
+  const gift = (g, standalone = false) => {
+    const coverTag = standalone ? 'h1' : 'h3';
+    const sectionTag = standalone ? 'h2' : 'h4';
+    const chapterTag = standalone ? 'h3' : 'h5';
+    const s = g.sections.map(x => {
+      const head = `<p class="g-label">${x.label || ''}</p>${x.title ? `<${sectionTag}>${x.title}</${sectionTag}>` : ''}`;
       switch (x.type) {
         case 'chapters': return `<section class="g-sec">${head}${x.items.map(c => `
-          <div class="g-ch"><b>${c.y}</b><h5>${c.h}</h5><p>${c.p}</p>${c.img ? `<img src="${c.img}" alt="" loading="lazy">` : ''}</div>`).join('')}</section>`;
-        case 'voices': return `<section class="g-sec">${head}<div class="g-voices">${x.items.map((v, i) => `
-          <button class="g-voice" data-voice><span class="vplay"></span><span class="g-voice__b"><span class="g-voice__n">${v.n}</span><span class="vbars">${bars(26, i + 1)}</span></span><span class="vtime">${v.t}</span></button>`).join('')}</div></section>`;
+          <div class="g-ch"><b>${c.y}</b><${chapterTag}>${c.h}</${chapterTag}><p>${c.p}</p>${c.img ? `<img src="${c.img}" alt="" loading="lazy">` : ''}</div>`).join('')}</section>`;
+        case 'voices': return `<section class="g-sec">${head}<div class="g-voices">${x.items.map(v => `
+          <div class="g-voice rel" data-slot="ГОЛОСОВОЕ: короткая запись близкого без фоновой музыки">
+            <strong class="g-voice__n">${v.n}</strong>
+            <p class="g-voice__caption">${v.src ? 'Синтезированный пример' : `Место для записи · ${v.t}`}</p>
+            ${v.src ? `<audio aria-label="Поздравление: ${v.n}" src="${v.src}" controls preload="none"></audio>
+            <details><summary>Текст поздравления</summary><p>${v.transcript}</p></details>` : ''}
+          </div>`).join('')}</div></section>`;
         case 'letter': return `<section class="g-sec"><p class="g-label">${x.label}</p><div class="g-letter">${x.text}<div class="sign">${x.sign}</div></div></section>`;
         case 'gallery': return `<section class="g-sec">${head}<div class="g-gallery">${x.imgs.map(i => `<img src="${i}" alt="" loading="lazy">`).join('')}</div></section>`;
         case 'count': {
@@ -37,22 +44,24 @@
           <div class="g-reason" style="z-index:${x.items.length - i};transform:rotate(${(i % 2 ? 1 : -1) * Math.min(i, 3)}deg)"><p>${r}</p><small>${i + 1} из ${x.items.length} · нажмите, чтобы открыть следующую</small></div>`).join('')}</div></section>`;
         case 'quiz': return `<section class="g-sec">${head}<div class="g-quiz" data-quiz="${x.ok}"><p>${x.q}</p>${x.opts.map((o, i) => `<button data-i="${i}">${o}</button>`).join('')}<small>${x.note}</small></div></section>`;
         case 'recipe': return `<section class="g-sec">${head}<div class="g-recipe"><ol>${x.steps.map(t => `<li>${t}</li>`).join('')}</ol></div></section>`;
-        case 'final': return `<section class="g-final"><h4>${x.title}</h4><p>${x.text}</p></section>`;
+        case 'final': return `<section class="g-final"><${sectionTag}>${x.title}</${sectionTag}><p>${x.text}</p></section>`;
       }
       return '';
     }).join('');
-    return `<div class="g-cover rel" data-slot="ОБЛОЖКА: фото или видео 9:16 героя/пары, 5-8 с, луп"><img src="${g.cover.img}" alt=""><small>${g.cover.small}</small><h3>${g.cover.title}</h3><p>${g.cover.sub}</p></div>${s}`;
+    return `<div class="g-cover rel" data-slot="ОБЛОЖКА: фото или видео 9:16 героя/пары, 5-8 с, луп"><img src="${g.cover.img}" alt=""><small>${g.cover.small}</small><${coverTag}>${g.cover.title}</${coverTag}><p>${g.cover.sub}</p></div>${s}`;
   };
 
+  const pauseAudio = (root, current) => $$('audio', root).forEach(audio => {
+    if (audio !== current) audio.pause();
+  });
+  document.addEventListener('play', e => {
+    if (e.target instanceof HTMLAudioElement) pauseAudio(document, e.target);
+  }, true);
+  addEventListener('pagehide', () => pauseAudio(document));
+
   const bindGift = root => {
-    $$('[data-voice]', root).forEach(b => b.addEventListener('click', () => {
-      const on = !b.classList.contains('is-play');
-      $$('[data-voice]', root).forEach(x => { x.classList.remove('is-play'); clearInterval(x._t); $$('.vbars i', x).forEach(i => i.classList.remove('on')); });
-      if (!on) return;
-      b.classList.add('is-play');
-      const is = $$('.vbars i', b); let k = 0;
-      b._t = setInterval(() => { if (k >= is.length) { clearInterval(b._t); b.classList.remove('is-play'); is.forEach(i => i.classList.remove('on')); return; } is[k++].classList.add('on'); }, 160);
-    }));
+    if (root.hasAttribute('data-gift-bound')) return;
+    root.setAttribute('data-gift-bound', '');
     $$('[data-reasons]', root).forEach(box => {
       const cards = $$('.g-reason', box); let i = 0;
       box.addEventListener('click', () => {
@@ -70,9 +79,16 @@
     });
   };
 
+  const giftStory = $('#giftStory');
+  if (giftStory) {
+    giftStory.innerHTML = gift(OCCASIONS[occKey].gift, true);
+    bindGift(giftStory);
+    return;
+  }
+
   const plan = k => {
     const p = PLANS[k];
-    return `<div class="plan${p.main ? ' plan--main' : ''}">${p.main ? '<span class="plan__badge">Чаще выбирают</span>' : ''}
+    return `<div class="plan${p.main ? ' plan--main' : ''}">${p.main ? '<span class="plan__badge">Рекомендуем</span>' : ''}
       <h3>${p.name}</h3><p class="plan__price">${p.price}</p><p class="plan__for">${p.for}</p>
       <ul>${p.items.map(i => `<li>${i}</li>`).join('')}</ul>
       <a class="btn ${p.main ? 'btn--acc' : 'btn--line'}" href="#request" data-plan="${p.name}">Выбрать «${p.name}»</a></div>`;
@@ -85,12 +101,27 @@
   /* страница повода */
   const page = $('#page');
   let full = null;
-  const closeFull = () => { if (full) full.classList.remove('is-open'); document.body.style.overflow = ''; };
-  addEventListener('keydown', e => { if (e.key === 'Escape') closeFull(); });
+  const openFull = () => {
+    pauseAudio(page);
+    full.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+    $('#closeFull').focus({ preventScroll: true });
+  };
+  const closeFull = () => {
+    if (!full || !full.classList.contains('is-open')) return;
+    pauseAudio(full);
+    full.classList.remove('is-open');
+    document.body.style.overflow = '';
+    $('#openFull')?.focus({ preventScroll: true });
+  };
+  addEventListener('keydown', e => { if (e.key === 'Escape') closeFull(); }, true);
   const renderOcc = key => {
     const o = OCCASIONS[key];
+    const demoPlan = PLANS[o.demoPlan];
+    closeFull();
+    pauseAudio(page);
     document.body.dataset.occasion = key;
-    document.title = `${o.name} - сайт-подарок | Повод`;
+    if (SPA || key !== 'jubilee') document.title = `${o.name} - сайт-подарок | Повод`;
     page.innerHTML = `
     <section class="ohero">
       <div class="ohero__media" data-slot="${o.heroSlot}"><img src="${o.img}" alt=""></div>
@@ -98,7 +129,7 @@
         <p class="eyebrow">${o.name}</p>
         <h1>${o.title}</h1>
         <p class="ohero__lead">${o.lead}</p>
-        <div class="ohero__actions"><a class="btn btn--acc" href="#demo">Посмотреть пример</a><a class="btn btn--line-light" href="#oprices">Цены ${o.from}</a></div>
+        <div class="ohero__actions"><a class="btn btn--acc" href="${key === 'jubilee' && !SPA ? 'jubilee-demo.html' : '#demo'}">Посмотреть пример</a><a class="btn btn--line-light" href="#oprices">Цены ${o.from}</a></div>
       </div>
     </section>
 
@@ -108,6 +139,7 @@
           <p class="eyebrow">Живой пример</p>
           <h2>${o.demoTitle}</h2>
           ${o.demoText.map(t => `<p>${t}</p>`).join('')}
+          ${demoPlan ? `<p><strong>Главы и голосовые входят в тариф «${demoPlan.name}» за ${demoPlan.price}.</strong></p>` : ''}
           <ul class="demo__list">${o.demoList.map(t => `<li>${t}</li>`).join('')}</ul>
           <button class="btn btn--ink" id="openFull">Открыть пример на весь экран</button>
         </div>
@@ -158,22 +190,41 @@
     full.className = 'gift-full'; full.innerHTML = `<button class="gift-full__close" id="closeFull">Закрыть пример</button><div class="gift" id="giftFull">${gift(o.gift)}</div>`;
     document.body.appendChild(full);
     bindGift($('#giftPhone')); bindGift($('#giftFull'));
-    $('#openFull').addEventListener('click', () => { full.classList.add('is-open'); document.body.style.overflow = 'hidden'; });
+    $('#openFull').addEventListener('click', openFull);
     $('#closeFull').addEventListener('click', closeFull);
     full.addEventListener('click', e => { if (e.target === full) closeFull(); });
     $('#giftPhone').addEventListener('scroll', () => { $('#phoneHint').style.opacity = 0; }, { once: true });
     const sel = $('#occSelect'); if (sel) sel.value = o.name;
+    const requestedPlan = new URLSearchParams(location.search).get('plan');
+    const planSelect = $('#planSelect');
+    if (!SPA && planSelect && o.plans.includes(requestedPlan)) planSelect.value = PLANS[requestedPlan].name;
   };
   if (page && occKey && !SPA) renderOcc(occKey);
 
   /* одна страница со всеми поводами (для публикации ссылкой): #wedding, #birthday ... */
   if (SPA) {
     const hub = $('#hub'), hubTitle = document.title;
-    const showHub = () => { hub.hidden = false; page.hidden = true; page.innerHTML = ''; delete document.body.dataset.occasion; document.title = hubTitle; };
+    $$('[data-spa-href]', hub).forEach(a => { a.href = a.dataset.spaHref; });
+    const showHub = () => {
+      closeFull();
+      pauseAudio(page);
+      hub.hidden = false;
+      page.hidden = true;
+      page.innerHTML = '';
+      delete document.body.dataset.occasion;
+      document.title = hubTitle;
+    };
     const route = () => {
       const h = decodeURIComponent(location.hash.slice(1));
-      if (OCCASIONS[h]) { hub.hidden = true; page.hidden = false; renderOcc(h); scrollTo(0, 0); }
-      else if (!h || h === 'home') { showHub(); scrollTo(0, 0); }
+      const opensDemo = h === 'jubilee-demo';
+      const key = opensDemo ? 'jubilee' : h;
+      if (Object.hasOwn(OCCASIONS, key)) {
+        hub.hidden = true;
+        page.hidden = false;
+        renderOcc(key);
+        scrollTo(0, 0);
+        if (opensDemo) openFull();
+      } else if (!h || h === 'home') { showHub(); scrollTo(0, 0); }
       else if (hub.hidden && hub.querySelector('#' + CSS.escape(h))) { showHub(); document.getElementById(h).scrollIntoView(); }
     };
     addEventListener('hashchange', route); route();
@@ -182,10 +233,12 @@
   /* общее */
   document.addEventListener('click', e => { const a = e.target.closest('[data-plan]'); const s = $('#planSelect'); if (a && s) s.value = a.dataset.plan; });
   const form = $('#form');
-  if (form) form.addEventListener('submit', e => { e.preventDefault(); $('#formNote').textContent = 'Это макет: заявка не отправляется. В рабочей версии она придёт нам в Telegram.'; });
+  if (form) {
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      $('#formNote').textContent = 'Демо-заявка заполнена. Отправка появится после подключения контактов.';
+    });
+    $('button[type="submit"]', form).disabled = false;
+  }
   $('#slotsToggle').addEventListener('click', () => document.body.classList.toggle('show-slots'));
-
-  /* главная: плеер в плавающей карточке */
-  const fv = $('.float--voice');
-  if (fv) { const is = $$('.vbars i', fv); let k = 0; setInterval(() => { is.forEach((i, j) => i.classList.toggle('on', j < k)); k = (k + 1) % (is.length + 6); }, 180); }
 })();

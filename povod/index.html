@@ -29,23 +29,22 @@
 <!-- 1. ПЕРВЫЙ ЭКРАН -->
 <section class="hhero">
   <div class="wrap hhero__in">
-    <div>
-      <p class="eyebrow">Сайты-подарки к вашей дате</p>
+    <div class="hhero__copy">
+      <p class="eyebrow">Личные сайты-подарки</p>
       <h1>Подарите близким <em>их историю</em></h1>
-      <p class="hhero__lead">Из ваших фото, голосовых и воспоминаний соберём личный сайт к юбилею, дню рождения, годовщине или свадьбе.</p>
+      <p class="hhero__lead">Соберём ваши фото, голосовые и воспоминания в подарок, который можно открыть по ссылке.</p>
       <div class="hhero__actions">
         <a class="btn btn--acc" href="jubilee-demo.html" data-spa-href="#jubilee-demo">Открыть пример подарка</a>
         <a class="btn btn--line" href="#occasions">Выбрать повод</a>
       </div>
       <p class="hhero__note"><a href="#prices">От 1 990 ₽</a> · от 2 дней после получения материалов.</p>
     </div>
-    <div class="stage">
-      <div class="stage__media" data-slot="ВИДЕО 4:5, 8-12 с, луп без звука: кто-то листает юбилейный подарок на телефоне (обложка, старые фото, письмо). Постер: jubilee.jpg">
-        <img src="assets/img/jubilee.jpg" alt="Бабушка с внучками у праздничного торта" width="1600" height="2000">
+    <figure class="stage">
+      <div class="stage__media rel" data-slot="Фото или короткое видео юбилея. Постер jubilee.jpg">
+        <img src="assets/img/jubilee.jpg" alt="Бабушка с внучками у праздничного торта" width="1600" height="2000" fetchpriority="high">
       </div>
-      <div class="float float--count"><b>80 лет</b><span>Бабушке Вале</span></div>
-      <div class="float float--note"><p>Бабуля, спасибо за каждое лето на даче.</p><span>Твои внуки</span></div>
-    </div>
+      <figcaption class="stage__caption"><b>Бабушке Вале 80</b><span>Пример подарка на юбилей</span></figcaption>
+    </figure>
   </div>
 </section>
 
@@ -53,9 +52,8 @@
 <section class="sec sec--bg2" id="occasions">
   <div class="wrap">
     <div class="sec__head">
-      <p class="eyebrow">Поводы</p>
       <h2>Какой у вас повод?</h2>
-      <p class="sec__lead">Под каждый повод свой пример, свои блоки и цены. Нажмите, чтобы посмотреть, как это выглядит.</p>
+      <p class="sec__lead">У каждого повода свой пример и набор форматов.</p>
     </div>
     <div class="occ" id="occGrid"></div>
     <div class="occ__other">
@@ -69,45 +67,24 @@
 </section>
 
 <!-- 3. ЧТО МОЖЕТ БЫТЬ ВНУТРИ -->
-<section class="sec" id="inside">
-  <div class="wrap">
-    <div class="sec__head">
-      <p class="eyebrow">Что внутри</p>
-      <h2>Не открытка, а целая история</h2>
-      <p class="sec__lead">Собираем подарок из того, что у вас уже есть в телефоне. Всё работает по ссылке, без приложений.</p>
+<section class="sec sec--dark" id="inside">
+  <div class="wrap contents">
+    <div>
+      <h2>Из чего складывается подарок</h2>
+      <ul class="contents__list">
+        <li><b>Главы из жизни</b><span>Фотографии и истории по годам. Для семьи это может быть и старый снимок, и рецепт, записанный со слов бабушки.</span></li>
+        <li><b>Голоса и письма</b><span>Поздравления из разных городов и ваши слова, оформленные как письмо от руки.</span></li>
+        <li><b>Музыка, видео и игры</b><span>В зависимости от тарифа добавим вашу песню, короткий фильм или квиз про именинника.</span></li>
+      </ul>
+      <a class="btn btn--line-light" href="jubilee-demo.html" data-spa-href="#jubilee-demo">Послушать поздравление в демо</a>
     </div>
-    <div class="feats">
-      <div class="feat">
-        <h3>Голосовые</h3>
-        <p>Те самые сообщения из переписки и поздравления от друзей, собранные по одной ссылке.</p>
-        <div class="feat__demo"><span class="vplay"></span><span class="vbars" style="max-width:180px"><i class="on" style="height:40%"></i><i class="on" style="height:80%"></i><i class="on" style="height:55%"></i><i class="on" style="height:90%"></i><i style="height:60%"></i><i style="height:35%"></i><i style="height:80%"></i><i style="height:65%"></i><i style="height:45%"></i><i style="height:95%"></i><i style="height:50%"></i><i style="height:70%"></i></span><span class="vtime">0:41</span></div>
+    <figure class="contents__album">
+      <div class="contents__photos rel" data-slot="Два снимка из разных глав семейной истории">
+        <img src="assets/img/jub-young.jpg" alt="Валя в юности" width="1200" height="1500" loading="lazy">
+        <img src="assets/img/jub-family.jpg" alt="Семейное лето на даче" width="1200" height="1500" loading="lazy">
       </div>
-      <div class="feat">
-        <h3>Письмо от руки</h3>
-        <p>Ваши слова, оформленные рукописным почерком. Можно надиктовать голосом.</p>
-        <div class="feat__demo feat__demo--hand">Помнишь нашу первую зиму? Я помню каждый день.</div>
-      </div>
-      <div class="feat">
-        <h3>История по годам</h3>
-        <p>Главы от первой встречи до сегодняшнего дня, с фото и датами.</p>
-        <div class="feat__demo"><div class="feat__years"><span>2016</span><span>2018</span><span>2022</span><span>2026</span></div></div>
-      </div>
-      <div class="feat">
-        <h3>Фото и видео</h3>
-        <p>Галерея, оживлённые фото и короткий фильм из ваших кадров.</p>
-        <div class="feat__demo"><span class="feat__ph" style="background-image:url(assets/img/story-meet.jpg)"></span><span class="feat__ph" style="background-image:url(assets/img/wedding.jpg)"></span><span class="feat__ph" style="background-image:url(assets/img/story-trip.jpg)"></span></div>
-      </div>
-      <div class="feat">
-        <h3>Квиз и мини-игры</h3>
-        <p>Вопросы с подвохом про именинника, которые проходят всей компанией.</p>
-        <div class="feat__demo"><div class="feat__quiz"><b>Что Лёша забыл в походе?</b><span>Спальник</span><span class="ok">Палатку</span></div></div>
-      </div>
-      <div class="feat">
-        <h3>Музыка</h3>
-        <p>Ваша песня на фоне или трек, который подберём под настроение.</p>
-        <div class="feat__demo"><div class="feat__eq"><i style="animation-delay:0s"></i><i style="animation-delay:.2s"></i><i style="animation-delay:.4s"></i><i style="animation-delay:.1s"></i><i style="animation-delay:.3s"></i><i style="animation-delay:.5s"></i><i style="animation-delay:.15s"></i></div></div>
-      </div>
-    </div>
+      <figcaption><blockquote>Бабуля, спасибо за каждое лето на даче.</blockquote><span>Из письма внуков в демо-подарке</span></figcaption>
+    </figure>
   </div>
 </section>
 
@@ -115,30 +92,27 @@
 <section class="sec sec--bg2" id="how">
   <div class="wrap">
     <div class="sec__head">
-      <p class="eyebrow">Как это работает</p>
-      <h2>Четыре шага до подарка</h2>
+      <h2>От вашей идеи до вручения</h2>
     </div>
-    <ol class="steps">
-      <li><b>Заявка</b><p>Пишете повод и дату. Подсказываем, что собрать, и называем точную цену.</p></li>
-      <li><b>Материалы</b><p>Фото, голосовые и пара историй. Друзьям даём отдельную ссылку для поздравлений.</p></li>
-      <li><b>Черновик</b><p>Через 2-4 дня присылаем закрытую ссылку. Правим вместе до идеала.</p></li>
-      <li><b>Подарок</b><p>Отдаём ссылку и открытку с QR-кодом, чтобы вручить лично.</p></li>
+    <ol class="steps steps--three">
+      <li><b>Обсудим повод и дату</b><p>Подскажем, что собрать, и согласуем цену и срок.</p></li>
+      <li><b>Соберём историю</b><p>Из ваших фото, записей и воспоминаний подготовим черновик подарка.</p></li>
+      <li><b>Подготовим к вручению</b><p>После согласования вы получите ссылку. Для вручения можно заказать печатную открытку с QR.</p></li>
     </ol>
   </div>
 </section>
 
 <!-- 5. ЦЕНЫ -->
-<section class="sec" id="prices">
+<section class="sec sec--pricing" id="prices">
   <div class="wrap">
     <div class="sec__head">
-      <p class="eyebrow">Цены</p>
-      <h2>Три формата под любой повод</h2>
+      <h2>Три формата подарка</h2>
       <p class="sec__lead">Цена фиксируется до начала работы. Размещение на год включено, продление 290 ₽ в год.</p>
     </div>
     <div class="plans">
       <div class="plan"><h3>Мини</h3><p class="plan__price">1 990 ₽</p><p class="plan__for">Быстро и мило, на готовом шаблоне</p><ul><li>До 15 фото</li><li>Одно письмо или поздравление</li><li>Музыка на фоне</li><li>Готово за 2 дня</li></ul><a class="btn btn--line" href="#request" data-plan="Мини">Выбрать «Мини»</a></div>
       <div class="plan plan--main"><span class="plan__badge">Рекомендуем</span><h3>История</h3><p class="plan__price">4 490 ₽</p><p class="plan__for">Ваша история целиком</p><ul><li>До 40 фото и хронология</li><li>Голосовые от вас и друзей</li><li>Рукописное письмо</li><li>Анимации и музыка</li><li>2 круга правок, 3-4 дня</li></ul><a class="btn btn--acc" href="#request" data-plan="История">Выбрать «Историю»</a></div>
-      <div class="plan"><h3>Премиум</h3><p class="plan__price">от 8 900 ₽</p><p class="plan__for">Когда хочется вау</p><ul><li>Всё из «Истории»</li><li>Видеоролик 30-60 секунд</li><li>Оживление фотографий</li><li>Индивидуальный дизайн</li><li>Мини-игра или квиз</li></ul><a class="btn btn--line" href="#request" data-plan="Премиум">Выбрать «Премиум»</a></div>
+      <div class="plan"><h3>Премиум</h3><p class="plan__price">от 8 900 ₽</p><p class="plan__for">Видео и индивидуальный дизайн</p><ul><li>Всё из «Истории»</li><li>Видеоролик 30-60 секунд</li><li>Оживление фотографий</li><li>Индивидуальный дизайн</li><li>Мини-игра или квиз</li></ul><a class="btn btn--line" href="#request" data-plan="Премиум">Выбрать «Премиум»</a></div>
     </div>
     <p class="plans__extra">Свадьба начинается с «Истории». Открытка с QR для вручения от 300 ₽. Посоветуйте нас другу: ему скидка 5 %, вам 300 ₽ на следующий подарок.</p>
   </div>
@@ -147,7 +121,7 @@
 <!-- 6. ВОПРОСЫ -->
 <section class="sec sec--bg2" id="faq">
   <div class="wrap faq">
-    <div class="sec__head"><p class="eyebrow">Вопросы</p><h2>Что обычно спрашивают</h2></div>
+    <div class="sec__head"><h2>Вопросы о подарке</h2></div>
     <div>
       <details open><summary>Сколько живёт сайт?</summary><p>Год включён в цену, дальше 290 ₽ в год. По запросу отдаём архив сайта, который откроется на любом компьютере.</p></details>
       <details><summary>Нужно ли что-то устанавливать?</summary><p>Нет. Сайт открывается по ссылке или QR-коду на любом телефоне и компьютере.</p></details>
@@ -161,8 +135,8 @@
 <section class="sec sec--dark" id="request">
   <div class="wrap request">
     <div>
-      <p class="eyebrow">Заявка</p>
-      <h2>Расскажите, кого и с чем поздравляем</h2>
+      <p class="eyebrow">Демо-заявка</p>
+      <h2>К какой дате нужен подарок?</h2>
       <p class="sec__lead">Чтобы согласовать подарок, нам понадобятся повод, дата и удобный способ связи.</p>
       <p class="request__alt">Контакт для заявок появится перед запуском.</p>
     </div>

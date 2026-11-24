@@ -10,11 +10,10 @@
 
   const card = k => {
     const o = OCCASIONS[k];
-    return `<a class="occ__card" href="${SPA ? '#' + k : k + '.html'}" style="--c:${COLORS[k]}" data-slot="ФОТО 3:4 или ВИДЕО-превью 5-6 с без звука (${o.short.toLowerCase()}). Видео стартует при наведении">
-      <img src="${o.img}" alt="" loading="lazy">
-      <span class="occ__tag">${o.short}</span>
-      <h3>${o.name}</h3><p>${o.card}</p>
-      <span class="occ__price">${o.from}<span>Смотреть пример</span></span></a>`;
+    return `<a class="occ__card" href="${SPA ? '#' + k : k + '.html'}" style="--c:${COLORS[k]}">
+      <div class="occ__media rel" data-slot="Обложка повода «${o.short}»"><img src="${o.img}" alt="" loading="lazy"></div>
+      <div class="occ__copy"><h3>${o.name}</h3><p>${o.card}</p>
+      <span class="occ__price">${o.from}<span>Смотреть пример</span></span></div></a>`;
   };
 
   /* содержимое подарка */
@@ -48,7 +47,8 @@
       }
       return '';
     }).join('');
-    return `<div class="g-cover rel" data-slot="ОБЛОЖКА: фото или видео 9:16 героя/пары, 5-8 с, луп"><img src="${g.cover.img}" alt=""><small>${g.cover.small}</small><${coverTag}>${g.cover.title}</${coverTag}><p>${g.cover.sub}</p></div>${s}`;
+    return `<div class="g-cover rel" data-slot="ОБЛОЖКА: фото или видео 9:16 героя/пары, 5-8 с, луп"><img src="${g.cover.img}" alt="">
+      <div class="g-cover__copy"><small>${g.cover.small}</small><${coverTag}>${g.cover.title}</${coverTag}><p>${g.cover.sub}</p></div></div>${s}`;
   };
 
   const pauseAudio = (root, current) => $$('audio', root).forEach(audio => {
@@ -124,26 +124,28 @@
     if (SPA || key !== 'jubilee') document.title = `${o.name} - сайт-подарок | Повод`;
     page.innerHTML = `
     <section class="ohero">
-      <div class="ohero__media" data-slot="${o.heroSlot}"><img src="${o.img}" alt=""></div>
-      <div class="wrap ohero__in">
-        <p class="eyebrow">${o.name}</p>
-        <h1>${o.title}</h1>
-        <p class="ohero__lead">${o.lead}</p>
-        <div class="ohero__actions"><a class="btn btn--acc" href="${key === 'jubilee' && !SPA ? 'jubilee-demo.html' : '#demo'}">Посмотреть пример</a><a class="btn btn--line-light" href="#oprices">Цены ${o.from}</a></div>
+      <div class="wrap ohero__spread">
+        <div class="ohero__in">
+          <p class="eyebrow">${o.name}</p>
+          <h1>${o.title}</h1>
+          <p class="ohero__lead">${o.lead}</p>
+          <div class="ohero__actions"><a class="btn btn--acc" href="${key === 'jubilee' && !SPA ? 'jubilee-demo.html' : '#demo'}">Посмотреть пример</a><a class="btn btn--line" href="#oprices">Цены ${o.from}</a></div>
+        </div>
+        <div class="ohero__media rel" data-slot="${o.heroSlot}"><img src="${o.img}" alt=""></div>
       </div>
     </section>
 
-    <section class="sec" id="demo">
+    <section class="sec sec--example" id="demo">
       <div class="wrap demo">
         <div class="demo__text">
-          <p class="eyebrow">Живой пример</p>
+          <p class="eyebrow">Пример подарка</p>
           <h2>${o.demoTitle}</h2>
           ${o.demoText.map(t => `<p>${t}</p>`).join('')}
           ${demoPlan ? `<p><strong>Главы и голосовые входят в тариф «${demoPlan.name}» за ${demoPlan.price}.</strong></p>` : ''}
           <ul class="demo__list">${o.demoList.map(t => `<li>${t}</li>`).join('')}</ul>
           <button class="btn btn--ink" id="openFull">Открыть пример на весь экран</button>
         </div>
-        <div>
+        <div class="demo__display">
           <div class="phone"><div class="phone__screen"><div class="gift" id="giftPhone">${gift(o.gift)}</div><span class="phone__hint" id="phoneHint">Листайте внутри телефона</span></div></div>
         </div>
       </div>
@@ -151,36 +153,36 @@
 
     <section class="sec sec--bg2">
       <div class="wrap">
-        <div class="sec__head"><p class="eyebrow">Что внутри</p><h2>Из чего собираем подарок</h2></div>
+        <div class="sec__head"><h2>Из чего собираем подарок</h2></div>
         <ul class="inside">${o.inside.map(i => `<li><b>${i.b}</b><span>${i.s}</span></li>`).join('')}</ul>
       </div>
     </section>
 
-    <section class="sec" id="oprices">
+    <section class="sec sec--pricing" id="oprices">
       <div class="wrap">
-        <div class="sec__head"><p class="eyebrow">Цены</p><h2>Выберите формат</h2><p class="sec__lead">Цена фиксируется до начала работы. Размещение на год включено, продление 290 ₽ в год.</p></div>
-        <div class="plans" style="${o.plans.length === 2 ? 'max-width:820px' : ''}">${o.plans.map(plan).join('')}</div>
+        <div class="sec__head"><h2>Форматы подарка</h2><p class="sec__lead">Цена фиксируется до начала работы. Размещение на год включено, продление 290 ₽ в год.</p></div>
+        <div class="plans">${o.plans.map(plan).join('')}</div>
         <p class="plans__extra">${o.extra}</p>
       </div>
     </section>
 
     <section class="sec sec--bg2">
       <div class="wrap">
-        <div class="sec__head"><p class="eyebrow">Как это работает</p><h2>От вас истории, от нас всё остальное</h2></div>
+        <div class="sec__head"><h2>Как соберём ваш подарок</h2></div>
         <ol class="steps">${o.steps.map(s => `<li><b>${s.b}</b><p>${s.p}</p></li>`).join('')}</ol>
       </div>
     </section>
 
     <section class="sec" id="ofaq">
       <div class="wrap faq">
-        <div class="sec__head"><p class="eyebrow">Вопросы</p><h2>Что обычно спрашивают</h2></div>
+        <div class="sec__head"><h2>Вопросы о подарке</h2></div>
         <div>${o.faq.map((f, i) => `<details${i ? '' : ' open'}><summary>${f.q}</summary><p>${f.a}</p></details>`).join('')}</div>
       </div>
     </section>
 
     <section class="sec sec--bg2">
       <div class="wrap">
-        <div class="sec__head"><p class="eyebrow">Другие поводы</p><h2>Сделаем и для другого случая</h2></div>
+        <div class="sec__head"><h2>Другие поводы</h2></div>
         <div class="others">${ORDER.filter(k => k !== key).map(card).join('')}</div>
       </div>
     </section>`;

@@ -1,0 +1,180 @@
+/* The camera looks into a warm archival space; the ribbon mechanics are shared. */
+.family-tree-scene .tree-screen{display:block;padding:0;min-height:0;background:#120f0c;background-image:radial-gradient(ellipse at 50% 48%,rgba(201,137,74,.08),transparent 72%)}
+.family-tree-scene .tree-heading,.family-tree-scene.is-selected .tree-heading{position:absolute;top:8.5%;left:5.6%;right:5.6%;height:auto;display:block;padding:0;z-index:8}
+.family-tree-scene .tree-heading h2{font-size:clamp(48px,6vw,96px);line-height:1.08;letter-spacing:-.035em;max-width:100%;padding-bottom:.1em}
+.tree-window{position:absolute;top:24%;left:0;right:0;bottom:8%;overflow:hidden}
+.family-tree-scene .tree-stage{position:absolute;left:0;top:0;flex:none;transform-origin:0 0;will-change:transform}
+.family-tree-scene #ribbons{height:100%;grid-template-rows:repeat(5,minmax(0,1fr))}
+.family-tree-scene .ribbon__viewport{overflow:visible}
+.family-tree-scene .ribbon__label{width:140px;padding:0 0 0 24px;background:linear-gradient(90deg,#120f0c 62%,#120f0c00)}
+.family-tree-scene .ribbon__label b{font-family:'Literata Variable',serif;font-size:40px;font-weight:300;line-height:1;letter-spacing:-.03em;color:#d9b68a}
+.family-tree-scene .ribbon__label span{font-size:11px;line-height:1.5;letter-spacing:.12em;text-transform:uppercase;margin-top:9px;color:#c3ad91}
+.family-tree-scene .person__photo{width:112px;height:140px;border:1px solid rgba(201,137,74,.45);border-radius:6px;box-shadow:0 9px 25px #0005}
+.family-tree-scene .person img{filter:grayscale(1) sepia(.32);border-radius:5px}
+.family-tree-scene .person__name{font-size:15px;line-height:18px;min-height:18px;width:220px;margin-top:5px;white-space:nowrap}
+.family-tree-scene .person__given,.family-tree-scene .person__surname{display:inline;margin:0}
+.family-tree-scene .person__years{font-size:12px;line-height:16px;margin-top:2px;color:#cab89e}
+.family-tree-scene .person__role{display:none}
+.family-tree-scene .kin-line,.family-tree-scene .active-line{stroke:rgba(201,137,74,.6);stroke-width:2;opacity:1;vector-effect:non-scaling-stroke;filter:drop-shadow(0 0 6px #c9894a66)}
+.family-tree-scene .active-line{stroke:#d7ac75}.family-tree-scene .hover-line{opacity:.65}
+.tree-instruction{position:absolute;bottom:29px;left:6%;right:6%;font-size:13px;line-height:1.5;text-align:center;color:#d3c0a4}
+.family-tree-scene .tree-footnote{position:absolute;bottom:7px;left:0;right:0;text-align:center;padding:0;font-size:9px;color:#998772}
+.family-tree-scene .selection{position:absolute;left:0;right:0;bottom:65px;background:linear-gradient(180deg,#120f0cee,#120f0c);border-top-color:#c9894a66}
+.family-tree-scene.is-selected .tree-window{bottom:190px}
+
+/* One accented event line, then readable narrative lines. */
+.film-scene .scene-copy,.film-scene .front-copy,.film-scene .medal-copy,.film-scene .envelope-copy{--caption-lead-size:32px;font-size:24px;line-height:1.35}
+.film-scene .caption-lead,.film-scene .medal-copy .caption-lead{font-size:32px;font-weight:300;font-style:italic;line-height:1.35;color:#e5bd86}
+.film-scene .medal-copy .line-mask:not(.caption-lead){font-size:24px;line-height:1.35}
+.film-scene .scene-copy .line-mask,.film-scene .front-copy .line-mask,.film-scene .medal-copy .line-mask{padding-bottom:.08em}
+.film-scene .front-copy{width:51vw;max-width:none}
+.film-scene .front-copy:before,.film-scene .medal-copy:before,.film-scene .envelope-copy:before{content:'';position:absolute;inset:-40px -55px;z-index:-1;pointer-events:none;background:radial-gradient(ellipse,#030606a3,transparent 72%);filter:blur(18px)}
+.film-scene .front-copy,.film-scene .medal-copy,.film-scene .envelope-copy{isolation:isolate;text-shadow:0 2px 15px #000b}
+.film-scene .scene-copy:before{background:radial-gradient(ellipse at 45% 55%,#030606b8,transparent 72%)}
+.film-scene .front-copy em{color:#dfb68a}
+.film-scene .medal-copy p+p{margin-top:0}
+.film-scene .bridge-intro{left:8%;bottom:11%;width:51vw}
+.film-scene .caliper-copy{left:auto;right:8%;width:53vw;bottom:12%}
+.film-scene .teacher-copy{left:auto;right:7%;width:53vw;bottom:11%}
+.film-scene .wartime-copy{left:7%;width:55vw;bottom:11%}
+
+/* The closing image becomes the next chapter's opening, with no paper interval. */
+#petr .paper-wash,#petr .epilogue{display:none}
+.chapter-transition{position:absolute;inset:0;z-index:40;opacity:0;pointer-events:none;overflow:hidden;background:#090c09}
+.transition-blueprint{background:#1f3a5f;background-image:repeating-linear-gradient(0deg,transparent 0 3px,#e1e5d704 3px 4px),radial-gradient(ellipse at 30% 40%,#456a8b55,transparent 70%)}
+.transition-school{background:linear-gradient(#0b120a1f,#0b120a1f),url('/media/chalkboard.jpg') center/cover}
+.tr-chapter-label{position:absolute;top:13.4%;left:var(--gutter);max-width:88vw;font-size:11px;font-weight:400;letter-spacing:.22em;line-height:1.8;text-transform:uppercase}
+.tr-self-story{display:block;font-size:11px;color:#dec581;margin:9px 0 0;letter-spacing:.12em}
+.tr-scoreboard{position:absolute;left:50%;top:27%;width:min(66vw,850px);transform:translateX(-50%);padding:30px 40px 24px;background:#080b09;border:1px solid #686447;box-shadow:0 25px 80px #0008,inset 0 0 80px #ffffff03}
+.tr-score-teams{display:flex;justify-content:space-between;font-size:20px;letter-spacing:.2em;text-transform:uppercase;color:#c8bc80}
+.tr-score-numbers{display:flex;justify-content:center;gap:65px;align-items:center;margin-top:24px}
+.tr-segment-digit{--digit-w:92px;--digit-h:150px;position:relative;display:inline-block;width:var(--digit-w);height:var(--digit-h);flex-shrink:0;background:#070907}
+.tr-segment{position:absolute;display:block;background:#b2993910}.tr-segment.tr-is-lit{background:#d4b84b;filter:drop-shadow(0 0 4px #d9b74235)}
+.tr-segment-a,.tr-segment-g,.tr-segment-d{left:15%;width:70%;height:8%;clip-path:polygon(9% 0,91% 0,100% 50%,91% 100%,9% 100%,0 50%)}
+.tr-segment-a{top:0}.tr-segment-g{top:46%}.tr-segment-d{bottom:0}
+.tr-segment-b,.tr-segment-c,.tr-segment-e,.tr-segment-f{width:11%;height:39%;clip-path:polygon(50% 0,100% 9%,100% 91%,50% 100%,0 91%,0 9%)}
+.tr-segment-b{right:0;top:6%}.tr-segment-c{right:0;bottom:6%}.tr-segment-e{left:0;bottom:6%}.tr-segment-f{left:0;top:6%}
+.tr-score-colon{font-size:90px;color:#d4b84b;font-weight:300;line-height:1}
+.tr-home-score{position:relative;display:block;width:92px;height:150px}.tr-home-score .tr-score-new{display:none}
+.tr-match-clock{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:28px}.tr-match-clock .tr-segment-digit{--digit-w:23px;--digit-h:38px}.tr-match-clock b{font-size:28px;color:#d4b84b;font-weight:300}
+
+/* A sideways cabinet of five different deliverables. */
+#benefits{padding:0}
+.benefits-stage{height:100svh;background:#eee5d7;color:#39372e;perspective:1200px}
+.benefits-heading{position:absolute;top:8.5%;left:var(--gutter);right:var(--gutter);width:auto;max-width:none;margin:0}
+#benefits .benefits-heading h2{font-size:clamp(48px,6vw,96px);line-height:1.03;margin:12px 0 0;max-width:1120px;text-wrap:balance}
+.benefits-window{position:absolute;left:0;right:0;top:34%;height:62vh;overflow:hidden}
+.benefit-rail{position:relative;display:flex;gap:2.8vw;width:max-content;height:100%;padding:0 var(--gutter);will-change:transform}
+.benefit-card{flex:0 0 46vw;width:46vw;height:62vh;display:flex;flex-direction:column;background:#f7f1e7;border:1px solid #b5a48a55;overflow:hidden;border-radius:4px;box-shadow:0 18px 35px #79664c0d}
+.benefit-visual{position:relative;height:54%;flex-shrink:0;display:flex;justify-content:center;align-items:center;overflow:hidden;background:#211c15;perspective:1200px}
+.benefit-index{position:absolute;top:14px;left:22px;font-size:84px;line-height:1;letter-spacing:-.06em;font-weight:300;color:#efdbc0;opacity:.8;z-index:6;text-shadow:0 3px 14px #0004}
+.benefit-card-copy{padding:24px 28px;min-height:0}
+#benefits .benefit-card h3{font-size:32px;font-weight:300;line-height:1.2;letter-spacing:-.025em;margin:0 0 15px}
+.benefit-card-copy p{font-size:18px;line-height:1.5}
+.benefits-progress{position:absolute;left:var(--gutter);right:var(--gutter);bottom:1.7%;height:1px;background:#b9aa9266}
+.benefits-progress i{display:block;width:100%;height:100%;background:#9c7045;transform-origin:left;transform:scaleX(0)}
+.preview-page{width:78%;height:83%;border:1px solid #bfae8b66;border-radius:5px;overflow:hidden;box-shadow:0 22px 50px #0008;transform:perspective(1000px) rotateY(-7deg) rotateX(4deg)}
+.preview-browser{height:22px;padding:4px 12px;background:#15130f;color:#dbc5a1;font-size:8px;letter-spacing:.13em;display:flex;justify-content:space-between}.preview-browser i{width:30%;height:1px;background:#cab79a55;margin-top:5px}
+.preview-page-scene{position:relative;height:calc(100% - 22px);overflow:hidden}.preview-page-scene img{height:100%;object-fit:cover;object-position:65% 50%;filter:brightness(.7)}
+.preview-page-scene p{position:absolute;left:0;right:0;top:28%;font-size:52px;font-weight:300;letter-spacing:-.03em;text-align:center;color:var(--paper);line-height:1.1}.preview-page-scene em{display:block;font-size:.55em;margin-left:32%}
+.preview-qr{position:absolute;inset:0;overflow:hidden}.preview-qr img{width:100%;height:100%;object-fit:cover;object-position:53% 48%;transform:scale(4);transform-origin:53% 48%}
+.benefit-card-2 .benefit-index{color:#e3d5bc}
+.benefit-card-3 .benefit-visual{background:radial-gradient(ellipse,#ac92734d,transparent 70%),#d3c0a4}.benefit-card-3 .benefit-index{color:#5a4531;opacity:.6;text-shadow:none}
+.preview-book{position:relative;width:70%;height:82%;display:grid;grid-template-columns:1fr 1fr;transform-style:preserve-3d;transform:rotateY(-12deg) rotateX(12deg) rotateZ(-3deg);box-shadow:14px 23px 30px #46352255}
+.book-page{position:relative;background:#f4ead7;padding:12px 16px;color:#54452e;overflow:hidden;box-shadow:inset 0 0 14px #9d87622b}.book-page-left{background:linear-gradient(90deg,#f2e8d6 80%,#c8b596);transform:rotateY(4deg);transform-origin:right}.book-page-right{background:linear-gradient(90deg,#b5a182,#f2e8d6 12%);transform:rotateY(-4deg);transform-origin:left}
+.book-page-left p{font-size:15px;line-height:1.2;margin-bottom:9px}.book-page-left img{height:65%;width:68%;object-fit:cover;object-position:center top;filter:sepia(.2);margin:auto}.book-page-left small{display:block;font-size:9px;letter-spacing:.12em;text-align:center;margin-top:9px}
+.book-page-right>span{font-size:32px;line-height:1.3;color:#9f7a4c}.book-page-right p{font-size:13px;line-height:1.65;font-style:italic;margin-top:10px}.book-page-right i{display:block;height:1px;background:#aa977750;margin-top:13px;width:100%}.book-page-right i:last-child{width:60%}
+.preview-archive{position:relative;width:78%;height:85%}.preview-archive figure{position:absolute;left:24%;top:4%;width:52%;height:86%;background:#ede2cc;padding:8px 8px 22px;box-shadow:0 10px 25px #0006}
+.preview-archive figure:nth-child(1){transform:translateX(-30%) rotate(-15deg)}.preview-archive figure:nth-child(2){transform:translateX(32%) rotate(14deg)}.preview-archive figure:nth-child(3){transform:translateY(6%) rotate(-6deg)}.preview-archive figure:nth-child(4){transform:translateX(8%) rotate(4deg)}.preview-archive img{height:100%;width:100%;object-fit:cover;filter:sepia(.18)}
+.preview-family{position:relative;display:grid;grid-template-columns:58px 58px;grid-template-rows:repeat(3,72px);gap:18px 62px;width:240px;height:270px;align-content:center;justify-content:center}.preview-family span{position:relative;z-index:2;border:1px solid #c9894a88;border-radius:3px;overflow:hidden}.preview-family img{width:100%;height:100%;object-fit:cover;filter:sepia(.25)}.preview-family svg{position:absolute;inset:0;width:100%;height:100%;stroke:#c69c6f;stroke-width:1;opacity:.8}
+
+/* Prices are physical panels: the entrance and the pointer tilt use separate layers. */
+#prices{background:#15130f;color:#f3ece0;padding-top:110px;padding-bottom:120px}
+#prices h2{font-size:clamp(48px,6vw,96px);line-height:1.08;max-width:1150px}
+#prices .price-lead{color:#cabca6;font-size:22px;max-width:850px}
+.price-plans{gap:22px;margin-top:85px;perspective:1200px}
+.price-card-shell{position:relative;min-width:0;perspective:1200px}.price-card-shell-main{transform:translateY(-24px)}
+.price-card-entrance{height:100%;transform-style:preserve-3d;will-change:transform,opacity}
+#prices .price-plan{height:100%;padding:52px 26px 30px;background:rgba(243,236,224,.05);border:1px solid rgba(243,236,224,.14);border-radius:16px;color:#f3ece0;transform-style:preserve-3d;will-change:transform;isolation:isolate;box-shadow:0 18px 50px #0003}
+#prices .price-plan-main{background:rgba(243,236,224,.065);border-color:#c9894a66}
+#prices .price-plan>h3,#prices .price-plan>p,#prices .price-plan>ul,#prices .price-plan>a{position:relative;z-index:2}
+#prices .price-plan h3{font-size:28px;font-weight:300;line-height:1.2}
+#prices .plan-price{font-family:'Literata Variable',serif;font-size:80px;font-weight:300;line-height:1.15;letter-spacing:-.04em;margin:25px 0 18px;white-space:nowrap}
+.price-prefix{font-size:24px;letter-spacing:0}.price-currency{font-size:36px;letter-spacing:-.02em}.price-value{font:inherit}
+#prices .plan-for{font-size:19px;line-height:1.5;color:#d6c4aa;min-height:58px}
+#prices .price-plan .plan-badge{position:absolute;top:18px;left:26px;font-size:11px;letter-spacing:.13em;color:#eacba0}
+#prices .price-plan ul{font-size:18px;line-height:1.6;margin:26px 0 35px;color:#dfd5c5}
+#prices .price-plan li{border-color:#e3cfac21;padding:11px 0}
+#prices .price-extra{font-size:18px;line-height:1.7;color:#b8a88e;max-width:1100px;margin-top:42px}
+.price-plan-main:before{content:'';position:absolute;inset:-1px;padding:1px;border-radius:16px;background:conic-gradient(from var(--border-angle,0deg),#c9894a44,#e6c996,#c9894a44 28%,#79512a88 53%,#f0d6a7 76%,#c9894a44);mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);mask-composite:exclude;-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;pointer-events:none;z-index:3}
+.price-pointer-glint{position:absolute;inset:0;z-index:3;border-radius:inherit;pointer-events:none;background:radial-gradient(ellipse at var(--shine-x,50%) var(--shine-y,20%),#fff2dc1f,transparent 57%);opacity:var(--shine-opacity,0);transition:opacity .35s}
+
+/* Larger paper typography and an input line that follows focus and content. */
+#restoration h2,#qr h2,#faq h2,#request h2{font-size:clamp(48px,6vw,96px);line-height:1.1;letter-spacing:-.035em}
+#qr .paper-lead,#request .paper-lead{font-size:24px;line-height:1.5}
+.faq-list summary{font-size:26px;line-height:1.4}.faq-list p{font-size:20px}
+.request-form{gap:28px}.request-form label{font-size:14px;letter-spacing:.06em}
+.form-control{position:relative;display:block}
+.request-form .form-control input,.request-form .form-control select,.request-form .form-control textarea{font-size:24px;padding:16px 0 18px;border-bottom-color:#9c896c77;outline:none;box-shadow:none}
+.field-line{position:absolute;left:0;right:0;bottom:0;height:2px;background:#a6723e;transform:scaleX(0);transform-origin:left;transition:transform .45s cubic-bezier(.16,1,.3,1);pointer-events:none}
+.form-control:focus-within .field-line,.form-control.has-value .field-line{transform:scaleX(1)}
+.form-control:focus-within{outline:1px solid #aa825b55;outline-offset:6px}
+
+@media(max-width:767px){
+ .family-tree-scene .tree-heading,.family-tree-scene.is-selected .tree-heading{top:9%;left:6.4%;right:6.4%;height:auto}
+ .family-tree-scene .tree-heading h2{font-size:42px;line-height:1.07;max-width:100%}
+ .tree-window{top:25%;bottom:9%}.family-tree-scene.is-selected .tree-window{bottom:200px}
+ .family-tree-scene .ribbon__label{width:62px;padding-left:8px;background:linear-gradient(90deg,#120f0c 62%,#120f0c00)}
+ .family-tree-scene .ribbon__label b{font-size:22px}.family-tree-scene .ribbon__label span{font-size:11px;letter-spacing:.04em;line-height:1.5;margin-top:7px}
+ .family-tree-scene .person__photo{width:72px;height:90px}
+ .family-tree-scene .person__name{font-size:12px;line-height:14px;width:110px;min-height:28px;margin-top:3px}
+ .family-tree-scene .person__given,.family-tree-scene .person__surname{display:table;margin:0 auto}
+ .family-tree-scene .person__years{font-size:12px;line-height:15px;margin-top:1px}
+ .tree-instruction{font-size:13px;bottom:31px;left:5%;right:5%}.family-tree-scene .tree-footnote{font-size:8px;bottom:10px}
+ .family-tree-scene .selection{bottom:68px;padding:10px 0;background:#120f0cf5}
+ .film-scene .scene-copy,.film-scene .front-copy,.film-scene .medal-copy,.film-scene .envelope-copy{--caption-lead-size:24px;font-size:19px;line-height:1.35}
+ .film-scene .caption-lead,.film-scene .medal-copy .caption-lead{font-size:24px;line-height:1.35}
+ .film-scene .medal-copy .line-mask:not(.caption-lead){font-size:19px;line-height:1.35}
+ .film-scene .front-copy{width:87.2%;left:6.4%}
+ .film-scene .bridge-intro,.film-scene .caliper-copy,.film-scene .teacher-copy,.film-scene .wartime-copy{width:87.2%;left:6.4%;right:auto}
+ .film-scene .caliper-copy{bottom:13%}.film-scene .teacher-copy{bottom:11%}
+ .film-scene .coach-copy{width:44vw;left:6.4%;top:30%;bottom:auto}
+ .film-scene .envelope-copy{width:40vw;top:45%}.school-envelope{top:calc(44% + var(--y)*20vh)}
+ .tr-chapter-label{top:16%;left:6.4%;width:87.2%;max-width:none;font-size:11px;letter-spacing:.22em;line-height:2;text-align:center}
+ .tr-scoreboard{top:29%;width:87.2%;padding:22px 18px}.tr-score-teams{font-size:12px;letter-spacing:.14em}.tr-score-numbers{gap:28px;margin-top:24px}.tr-segment-digit{--digit-w:58px;--digit-h:95px}.tr-home-score{width:58px;height:95px}.tr-score-colon{font-size:64px}.tr-match-clock{margin-top:22px;gap:6px}.tr-match-clock .tr-segment-digit{--digit-w:19px;--digit-h:32px}
+ .benefits-heading{top:8%;left:6.4%;right:6.4%}
+ #benefits .benefits-heading h2{font-size:48px;line-height:1.04;max-width:100%;margin-top:10px}
+ .benefits-window{top:34%;height:62vh}.benefit-rail{gap:20px;padding:0 6.4vw}
+ .benefit-card{flex-basis:86vw;width:86vw;height:62vh}.benefit-visual{height:42%}
+ .benefit-card-copy{padding:20px 22px}.benefit-index{font-size:64px;left:15px;top:10px}
+ #benefits .benefit-card h3{font-size:32px;line-height:1.18;margin-bottom:12px}.benefit-card-copy p{font-size:18px;line-height:1.45}
+ .preview-page{width:82%;height:82%}.preview-page-scene p{font-size:35px;top:30%}
+ .preview-book{width:76%;height:82%}.book-page{padding:8px 10px}.book-page-left p{font-size:10px;margin-bottom:6px}.book-page-left img{height:61%;width:76%}.book-page-left small{font-size:7px;margin-top:5px}.book-page-right>span{font-size:20px}.book-page-right p{font-size:9px;line-height:1.5;margin-top:5px}.book-page-right i{margin-top:7px}
+ .preview-archive figure{padding:5px 5px 14px}.preview-family{transform:scale(.72);flex-shrink:0}
+ #prices{padding-top:80px;padding-bottom:90px}#prices h2{font-size:48px;line-height:1.1}#prices .price-lead{font-size:19px}
+ .price-plans{gap:40px;margin-top:60px}.price-card-shell-main{transform:translateY(-24px)}
+ #prices .price-plan{padding:49px 24px 30px}#prices .price-plan h3{font-size:28px}
+ #prices .plan-price{font-size:56px;line-height:1.2;margin:23px 0 18px}.price-prefix{font-size:20px}.price-currency{font-size:29px}
+ #prices .plan-for{font-size:19px;min-height:0}#prices .price-plan .plan-badge{left:24px;font-size:11px}#prices .price-plan ul{font-size:18px}#prices .price-extra{font-size:17px}
+ #restoration h2,#qr h2,#faq h2,#request h2{font-size:48px;line-height:1.08}
+ #restoration .restore-stage{gap:28px;padding-top:80px;padding-bottom:35px}
+ #qr .paper-lead,#request .paper-lead{font-size:19px;line-height:1.55}.faq-list summary{font-size:23px}.faq-list p{font-size:19px}
+ .request-form .form-control input,.request-form .form-control select,.request-form .form-control textarea{font-size:22px;padding:17px 0}
+}
+
+html:not(.motion-ready) .chapter-transition{display:none}
+html:not(.motion-ready) .family-tree-scene .tree-screen{height:auto;min-height:100svh;padding:95px 0 65px}
+html:not(.motion-ready) .family-tree-scene .tree-heading{position:relative;inset:auto;padding:0 6.4%;margin-bottom:40px}
+html:not(.motion-ready) .tree-window{position:relative;inset:auto;overflow:clip}
+html:not(.motion-ready) .family-tree-scene .tree-stage{position:relative;inset:auto;transform:none!important}
+html:not(.motion-ready) .family-tree-scene .selection{position:relative;inset:auto;margin:20px auto}
+html:not(.motion-ready) .tree-instruction{position:relative;inset:auto;margin:24px 0 12px}
+html:not(.motion-ready) #benefits .benefits-stage{height:auto;padding:80px 0}
+html:not(.motion-ready) .benefits-heading{position:relative;inset:auto;width:87.2%;margin:0 auto 45px}
+html:not(.motion-ready) .benefits-window{position:relative;inset:auto;height:auto;overflow:visible}
+html:not(.motion-ready) .benefit-rail{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%;gap:24px;padding:0 var(--gutter);transform:none!important}
+html:not(.motion-ready) .benefit-card{width:100%;height:auto;min-height:62vh}
+html:not(.motion-ready) .benefit-visual{height:32vh;flex-basis:auto}
+html:not(.motion-ready) .benefits-progress{display:none}
+@media(max-width:767px){html:not(.motion-ready) .benefit-rail{grid-template-columns:1fr}html:not(.motion-ready) .benefit-card{min-height:62vh}}
+@media(prefers-reduced-motion:reduce){.price-plan{transform:none!important}.price-pointer-glint{display:none}.field-line{transition:none}}

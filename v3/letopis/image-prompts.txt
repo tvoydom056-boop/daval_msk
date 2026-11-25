@@ -1,0 +1,10 @@
+Built-in image_gen. No paid API. Asset preparation only resized/encoded the generated originals.
+
+chalkboard.jpg - 2400x1350 JPEG:
+Create one photorealistic website background texture, landscape 2400x1350. A dark forest-green school chalkboard from a rural Soviet classroom in the 1950s, viewed exactly front-on. The board fills the frame edge to edge, with soft wiped chalk haze, very faint horizontal cleaning marks and natural aged slate texture. Low, warm morning light from the left. Keep the center dark and quiet for white typography added later. No writing, no letters, no numbers, no symbols, no frame, no objects, no watermarks.
+
+notebook-open.jpg - 2000x1400 JPEG:
+Create one photorealistic archival object texture, landscape 2000x1400. A completely open, blank Soviet school exercise notebook from the 1950s, seen exactly top-down. Two pale ivory paper pages with fine faded blue diagonal handwriting guidelines and very light horizontal rules, a delicate red vertical margin, visible central stitched binding crease. Softly worn paper corners and slight natural aging, realistic fibers. The open two-page notebook fills almost the entire rectangular frame, symmetrical pages with wide clean writing areas. Gentle photographic daylight, no heavy shadows. NO handwriting, no letters, no text, no numbers, no symbols, no stationery, no table objects, no watermark.
+
+envelope.png - 600x400 RGBA PNG:
+Create one photorealistic cutout asset: a single small old Soviet postal envelope circa 1960, warm yellowed ivory paper, viewed straight from above, envelope FRONT side, horizontal 3:2 shape, lightly worn and dog-eared corners, faint postal patina and paper fibers. No stamp, no text, no numbers, no writing, no marks, no symbols. Envelope isolated on a genuinely transparent background, no surface, no background shadow beyond its edges. Approximately 600 pixels wide. Museum archival photography, quiet natural light.

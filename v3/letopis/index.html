@@ -4,26 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#0b0c0a" />
-    <meta name="description" content="Летопись рода. Истории тех, благодаря кому мы есть. Глава первая - Пётр Соколов." />
-    <title>Летопись рода - Пётр Соколов</title>
+    <meta name="description" content="Летопись рода. Истории тех, благодаря кому мы есть. Семейное древо и истории пяти поколений." />
+    <title>Летопись рода - семейная история</title>
     <link rel="icon" href="data:," />
     <link rel="preload" as="image" href="./media/hero.jpg" />
   </head>
   <body>
-    <a class="skip-link" href="#petr">К истории Петра</a>
+    <a class="skip-link" href="#tree">К семейному древу</a>
     <nav class="navigation" aria-label="Главная навигация">
       <a class="wordmark" href="#hero">Летопись</a>
       <div class="nav-links">
         <a href="#tree">Древо</a><span aria-hidden="true">·</span>
         <a href="#petr">Истории</a><span aria-hidden="true">·</span>
-        <button type="button" data-open-prices>Цены</button>
+        <a href="#prices">Цены</a>
       </div>
     </nav>
 
     <main>
-      <section class="hero" id="hero" aria-labelledby="hero-title">
+      <section class="hero" id="hero" data-scene="hero" data-pin-vh="115" aria-labelledby="hero-title">
         <div class="hero-camera">
-          <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="./media/hero.jpg" aria-hidden="true">
+          <video class="hero-video" muted loop playsinline preload="auto" poster="./media/hero.jpg" aria-hidden="true">
             <source src="./media/hero.mp4" type="video/mp4" />
           </video>
         </div>
@@ -35,27 +35,27 @@
           </h1>
         </div>
         <p class="hero-description">Истории тех,<br class="mobile-break" /> благодаря кому мы есть</p>
-        <a class="scroll-invitation" href="#petr"><span>Листайте</span><i aria-hidden="true"></i></a>
+        <a class="scroll-invitation" href="#tree"><span>Листайте</span><i aria-hidden="true"></i></a>
         <div class="hero-fog hero-fog-back" aria-hidden="true">
-          <video autoplay muted loop playsinline preload="auto" poster="./media/fog.jpg"><source src="./media/fog.mp4" type="video/mp4" /></video>
+          <canvas class="procedural-fog"></canvas>
         </div>
         <div class="hero-fog hero-fog-front" aria-hidden="true">
-          <video autoplay muted loop playsinline preload="auto" poster="./media/fog.jpg"><source src="./media/fog.mp4" type="video/mp4" /></video>
+          <canvas class="procedural-fog"></canvas>
         </div>
         <div class="hero-haze" aria-hidden="true"></div>
         <div class="hero-black" aria-hidden="true"></div>
       </section>
 
-      <section class="chapter" id="petr" aria-labelledby="petr-title">
-        <div class="chapter-stage">
+      <section class="chapter film-scene" id="petr" data-scene="petr" data-pin-vh="620" aria-labelledby="petr-title">
+        <div class="chapter-stage scene-stage">
           <h2 id="petr-title" class="sr-only">Глава первая. Пётр Соколов, 1909-1943</h2>
           <div class="field" aria-hidden="true">
-            <video class="war-video" autoplay muted loop playsinline preload="auto" poster="./media/war.jpg"><source src="./media/war.mp4" type="video/mp4" /></video>
+            <video class="war-video" muted loop playsinline preload="none" poster="./media/war.jpg"><source data-src="./media/war.mp4" type="video/mp4" /></video>
           </div>
           <div class="field-shade" aria-hidden="true"></div>
           <div class="field-dim" aria-hidden="true"></div>
           <div class="scene-fog" aria-hidden="true">
-            <video autoplay muted loop playsinline preload="auto" poster="./media/fog.jpg"><source src="./media/fog.mp4" type="video/mp4" /></video>
+            <canvas class="procedural-fog"></canvas>
           </div>
           <p class="chapter-label">Глава первая <span>·</span> Пётр Соколов <span>·</span> 1909-1943</p>
 
@@ -117,34 +117,20 @@
               <p class="quote-source">Из письма, май 1943</p>
             </div>
           </section>
-          <div class="final-fog" aria-hidden="true"><video autoplay muted loop playsinline preload="auto" poster="./media/fog.jpg"><source src="./media/fog.mp4" type="video/mp4" /></video></div>
+          <div class="final-fog" aria-hidden="true"><canvas class="procedural-fog"></canvas></div>
           <div class="paper-wash" aria-hidden="true"></div>
           <section class="epilogue" id="next" aria-labelledby="next-title">
             <p class="next-chapter-label">Глава вторая</p>
             <h2 class="next-chapter-title" id="next-title">Николай Петрович</h2>
             <p class="next-chapter-description">Мосты, которые стоят до сих пор</p>
-            <button class="tree-button" type="button" data-open-tree>Вернуться к древу</button>
+            <button class="tree-button" type="button" data-go-tree>Вернуться к древу</button>
           </section>
         </div>
       </section>
+      <div id="lower"></div>
     </main>
+    <footer class="site-footer"></footer>
 
-    <dialog class="tree-dialog" id="tree" aria-labelledby="tree-title">
-      <button class="dialog-close" type="button" data-close-dialog>Закрыть</button>
-      <p class="eyebrow">Летопись рода</p>
-      <h2 id="tree-title">Семейное древо</h2>
-      <div class="family-tree">
-        <button class="tree-person" type="button" data-petr><img src="./media/petr.jpg" width="600" height="750" alt="Портрет Петра Соколова" /><span>Пётр Соколов<small>1909-1943</small></span></button>
-        <div class="tree-connector" aria-hidden="true"></div>
-        <p class="tree-child">Николай<small>Следующая глава</small></p>
-      </div>
-    </dialog>
-    <dialog class="prices-dialog" aria-labelledby="prices-title">
-      <button class="dialog-close" type="button" data-close-dialog>Закрыть</button>
-      <p class="eyebrow">Летопись рода</p>
-      <h2 id="prices-title">Цены</h2>
-      <p class="dialog-note">Это проба первой главы. Раздел с ценами появится в полной версии.</p>
-    </dialog>
     <div class="vignette" aria-hidden="true"></div>
     <canvas class="film-grain" aria-hidden="true"></canvas>
     <noscript><p class="noscript">Для фильма с прокруткой включите JavaScript. Текст истории доступен ниже.</p></noscript>

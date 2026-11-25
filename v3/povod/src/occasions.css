@@ -1,0 +1,29 @@
+.occasions .occasion-card{width:17vw;height:23.8vw}
+.occasions .occasion-card .visual{bottom:90px}
+.occasions .card-meta{left:17px;right:15px;bottom:19px}
+.occasions .card-meta h3{font-size:22px;line-height:1.2;letter-spacing:-.03em}
+.occasions .card-meta>span{font-size:16px;line-height:1.3;margin-top:7px}
+.occasions .own-card h3{font-size:22px;line-height:1.2}
+.occasion-swipe{display:none}
+@media(min-width:768px){
+  html:not(.motion) .occasions{padding-inline:5vw}
+  html:not(.motion) .occasions .occasion-card{width:17vw;height:23.8vw}
+}
+@media(max-width:767px){
+  .occasions .card-deck{inset:31% 0 auto;display:flex;align-items:center;gap:18px;height:calc(89.6vw + 60px);padding:30px 18vw;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-padding-inline:18vw;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none;touch-action:pan-x pan-y pinch-zoom}
+  .occasions .card-deck::-webkit-scrollbar{display:none}
+  .occasions .occasion-card{position:relative;inset:auto;flex:0 0 64vw;width:64vw;height:89.6vw;scroll-snap-align:center;scroll-snap-stop:normal;transform:none}
+  .occasions .occasion-card .visual{inset:7px 7px 90px}
+  .occasions .card-meta{left:17px;right:15px;bottom:19px}
+  .occasions .card-meta h3{font-size:22px;line-height:1.2}
+  .occasions .card-meta>span{font-size:16px;line-height:1.3;margin-top:7px}
+  .occasions .occasion-card:hover .card-lift{transform:none}
+  .occasions .own-card .card-lift{padding:25px}
+  .occasions .own-card h3{font-size:22px;line-height:1.2}
+  .occasions .own-card p{font-size:13px;line-height:1.5;margin-top:20px}
+  .occasions .own-star{font-size:62px;top:22px;right:22px}
+  .occasions .occasion-swipe{display:block;position:absolute;left:24px;right:24px;top:82%;text-align:center;font-size:12px;line-height:1.5;opacity:.65}
+  html:not(.motion) .occasions .card-deck{position:relative;inset:auto;display:flex;grid-template-columns:none;width:calc(100% + 48px);margin-left:-24px;gap:18px}
+  html:not(.motion) .occasions .occasion-card{position:relative;inset:auto;flex:0 0 64vw;width:64vw;height:89.6vw;grid-column:auto}
+  html:not(.motion) .occasions .occasion-swipe{position:relative;inset:auto;margin-top:12px}
+}

@@ -32,3 +32,9 @@ codex/v3/*.log
 codex/v3/*.out
 codex/v3/*_result.txt
 codex/v3/session.txt
+codex/v3/frames_povod/
+codex/v3/cap_*.txt
+codex/v3/*.json
+codex/v3/frames_all/
+codex/v3/work_povod_scenes/
+run_*.out

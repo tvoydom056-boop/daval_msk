@@ -3,6 +3,7 @@ import './scenes.css';
 import './presentation.css';
 import './tree.css';
 import './embed.css';
+import './book.css';
 import './lib/style-audit.js';
 import Lenis from 'lenis';
 import {gsap,ScrollTrigger,$,$$,initMedia,setMediaReduced,loadMedia} from './lib/core.js';
@@ -17,11 +18,13 @@ import {mountSergey,animateSergey,setStaticSergey} from './scenes/sergey.js';
 import {mountMaria,animateMaria} from './scenes/maria.js';
 import {mountSections,animateSections,animateBenefits} from './scenes/sections.js';
 import {mountChapterTransitions,animateChapterTransition} from './lib/transitions.js';
+import {mountBook,animateBook} from './scenes/book.js';
 
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
 let lenis,contexts=[],timelines=[],intro,ticker;
 let atmosphereMounted=false;
 mountTree();mountNikolay();mountSergey();mountMaria();mountSections();
+mountBook();
 mountChapterTransitions();
 $$('#petr .front-copy,#petr .medal-copy').forEach(element=>element.dataset.lines='');
 words($('#petr blockquote'));
@@ -57,7 +60,7 @@ function metrics() {
 }
 function layout() {
   const pins=metrics();
-  const unpinned=$$('#lower > .paper-section:not([data-pin-vh]), .restoration-notes, .site-footer').map(element=>({id:element.id||element.className,height:element.offsetHeight}));
+  const unpinned=$$('#lower > .paper-section:not([data-pin-vh]), .book-page, .restoration-notes, .site-footer').map(element=>({id:element.id||element.className,height:element.offsetHeight}));
   const natural=pins.reduce((sum,pin)=>sum+pin.naturalHeight,0);
   const pinLength=pins.reduce((sum,pin)=>sum+pin.length,0);
   const sections=unpinned.reduce((sum,section)=>sum+section.height,0);
@@ -98,11 +101,12 @@ function rebuild(preserve=true) {
     const scope=id==='restoration'?$('#lower'):document.getElementById(id);
     contexts.push(gsap.context(()=>{
       const result=animate({mobile:innerWidth<768});
-      if(['petr','nikolay','sergey'].includes(id))animateChapterTransition(result.timeline);
+      if(['petr','nikolay','sergey','maria'].includes(id))animateChapterTransition(result.timeline);
       timelines.push(result.timeline);
       if(result.intro)intro=result.intro;
     },scope));
   });
+  contexts.push(gsap.context(animateBook,$('main')));
   ScrollTrigger.refresh();
   if(preserve){
     intro?.progress(1);

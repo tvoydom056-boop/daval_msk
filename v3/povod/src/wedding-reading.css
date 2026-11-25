@@ -1,0 +1,60 @@
+/* A reading edition of the same ten scenes, scoped to the wedding route. */
+#site .wedding-reading{position:relative;isolation:isolate;overflow:clip;background:var(--reading-bg,#23313f);color:var(--reading-ink,#fff4dc);font-family:Onest,sans-serif}
+.wedding-reading-opening{width:min(880px,calc(100% - 96px));margin:0 auto;padding:150px 0 110px;color:#fff4dc;font-family:Onest,sans-serif}
+.wedding-reading-kicker{margin:0 0 32px;color:#f2c14e;font-family:Onest,sans-serif;font-size:12px;letter-spacing:.17em;text-transform:uppercase}
+.wedding-reading-opening h2{max-width:850px;color:#fff4dc;font-family:Onest,sans-serif;font-size:clamp(44px,5.4vw,78px);line-height:1.07;letter-spacing:-.055em;font-weight:400;text-wrap:balance}
+.wedding-reading-lead{max-width:640px;margin-top:38px;color:#fff4dc;font-family:Onest,sans-serif;font-size:19px;line-height:1.65;font-weight:300}
+.wedding-reading-by{max-width:640px;margin-top:32px;padding-top:22px;border-top:1px solid #fff4dc38;color:#f2c14e;font-family:Onest,sans-serif;font-size:13px;line-height:1.5}
+.wedding-reading-chapter{position:relative;min-height:110svh;padding:140px 0 150px;background:linear-gradient(transparent,var(--chapter-bg) 110px,var(--chapter-bg) calc(100% - 110px),transparent);color:var(--chapter-ink);font-family:Onest,sans-serif}
+.wedding-reading-spread{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);align-items:start;gap:clamp(55px,6.5vw,100px);width:min(1200px,calc(100% - 112px));margin:0 auto}
+.wedding-reading-chapter.photo-right .wedding-reading-spread{grid-template-columns:minmax(0,1.18fr) minmax(0,.82fr)}
+.wedding-reading-chapter.photo-right .wedding-reading-print{grid-column:2;grid-row:1}
+.wedding-reading-chapter.photo-right .wedding-reading-copy{grid-column:1;grid-row:1}
+.wedding-reading-print{position:relative;max-width:430px;width:100%;margin:86px 0 0;padding:13px 13px 0;background:#fff5e5;box-shadow:0 4px 8px #0001,0 25px 55px #0003;rotate:var(--print-angle);color:#45382e;font-family:Onest,sans-serif;transform-origin:50% 30%}
+.wedding-reading-photo{position:relative;display:flex;aspect-ratio:16/9;overflow:hidden;background:var(--chapter-bg)}
+.wedding-reading-poster{position:relative;display:block;flex:1;min-width:0;min-height:0;overflow:hidden}
+.wedding-reading-poster img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:contain;object-position:50% 50%}
+.wedding-reading-photo.double-photo{aspect-ratio:8/9;flex-direction:column}
+.wedding-reading-print figcaption{padding:17px 5px 19px;color:#45382e;font-family:Onest,sans-serif;font-size:11px;line-height:1.5;letter-spacing:.025em}
+.wedding-reading-copy{max-width:640px;min-width:0;color:var(--chapter-ink);font-family:Onest,sans-serif}
+.wedding-reading-chapter-heading{margin-bottom:34px;color:var(--chapter-ink);font-family:Onest,sans-serif}
+.wedding-reading-year{margin-bottom:21px;color:var(--chapter-accent);font-family:Onest,sans-serif;font-size:clamp(70px,7vw,108px);font-weight:300;line-height:1;letter-spacing:-.08em;font-variant-numeric:lining-nums}
+.wedding-reading-chapter h3{color:var(--chapter-ink);font-family:Onest,sans-serif;font-size:clamp(30px,2.8vw,42px);font-weight:400;line-height:1.15;letter-spacing:-.04em;text-wrap:balance}
+.wedding-reading-paragraphs{color:var(--chapter-ink);font-family:Onest,sans-serif;font-size:19px;line-height:1.65;font-weight:300}
+.wedding-reading-paragraphs p{margin:0 0 1em;color:var(--chapter-ink);font-family:Onest,sans-serif}
+.wedding-reading-paragraphs p:last-child{margin-bottom:0}
+.wedding-reading-voice{position:relative;max-width:405px;margin:40px 0 0 9%;padding:29px 30px 24px;background:#fff0c7;color:#463327;font-family:Caveat,cursive;font-size:29px;line-height:1.12;rotate:var(--note-angle);box-shadow:1px 4px 8px #0001,3px 12px 25px #0002;transform-origin:50% 8%}
+.wedding-reading-voice::before{content:'';position:absolute;left:36%;top:-13px;width:80px;height:27px;background:#fff9dc8c;rotate:-5deg;border-left:1px solid #fff9dc40;border-right:1px solid #fff9dc40}
+.wedding-reading-voice p{color:#463327;font-family:Caveat,cursive}
+.wedding-reading-voice .wedding-reading-sign{margin-top:17px;color:#815c3c;font-family:Caveat,cursive;font-size:25px;text-align:right}
+.wedding-reading-finale{padding:0 32px 150px;text-align:center;color:var(--chapter-ink);font-family:Onest,sans-serif}
+.wedding-reading-finale p{color:var(--chapter-ink);font-family:Onest,sans-serif;font-size:clamp(76px,11vw,160px);line-height:1.05;letter-spacing:-.065em;font-weight:300}
+body.wedding-reading-active #site .navigation,body.wedding-reading-active #site .navigation.nav-solid{background:color-mix(in srgb,var(--reading-nav-bg) 88%,transparent);color:var(--reading-nav-ink);font-family:Onest,sans-serif;backdrop-filter:blur(14px)}
+body.wedding-reading-active #site .navigation .logo-dot{color:var(--reading-nav-accent)}
+body.wedding-reading-active #site .navigation .nav-request{border-color:color-mix(in srgb,var(--reading-nav-accent) 65%,transparent);background:color-mix(in srgb,var(--reading-nav-bg) 55%,transparent)}
+@media(max-width:1023px) and (min-width:768px){.wedding-reading-spread{width:calc(100% - 80px);gap:42px}.wedding-reading-paragraphs{font-size:18px}.wedding-reading-print{margin-top:108px}.wedding-reading-voice{margin-left:0;font-size:27px;padding:25px}}
+@media(max-width:767px){
+  .wedding-reading-opening{width:calc(100% - 48px);padding:90px 0 65px}
+  .wedding-reading-kicker{font-size:10px;margin-bottom:25px}
+  .wedding-reading-opening h2{font-size:43px;line-height:1.08}
+  .wedding-reading-lead{font-size:18px;line-height:1.65;margin-top:27px}
+  .wedding-reading-by{margin-top:27px;font-size:11px;line-height:1.6}
+  .wedding-reading-chapter{min-height:0;padding:85px 0 95px;background:linear-gradient(transparent,var(--chapter-bg) 60px,var(--chapter-bg) calc(100% - 60px),transparent)}
+  .wedding-reading-spread,.wedding-reading-chapter.photo-right .wedding-reading-spread{width:calc(100% - 48px);grid-template-columns:minmax(0,1fr);gap:56px}
+  .wedding-reading-chapter.photo-right .wedding-reading-print,.wedding-reading-chapter.photo-right .wedding-reading-copy{grid-column:auto;grid-row:auto}
+  .wedding-reading-print{width:calc(100% - 16px);max-width:380px;margin:0 auto;padding:10px 10px 0}
+  .wedding-reading-photo{aspect-ratio:16/9}
+  .wedding-reading-photo.double-photo{aspect-ratio:8/9}
+  .wedding-reading-print figcaption{padding:14px 3px 16px;font-size:10px}
+  .wedding-reading-year{font-size:77px;margin-bottom:19px}
+  .wedding-reading-chapter h3{font-size:32px;line-height:1.16}
+  .wedding-reading-chapter-heading{margin-bottom:27px}
+  .wedding-reading-paragraphs{font-size:18px;line-height:1.65}
+  .wedding-reading-voice{width:calc(100% - 14px);max-width:none;margin:34px auto 0;padding:27px 25px 23px;font-size:28px}
+  .wedding-reading-voice .wedding-reading-sign{font-size:25px}
+  .wedding-reading-finale{padding:0 24px 95px}
+}
+@media(prefers-reduced-motion:reduce){
+  .wedding-reading-chapter,.wedding-reading-finale{background:var(--chapter-bg)}
+  .wedding-reading-print,.wedding-reading-voice{opacity:1!important;transform:none!important}
+}

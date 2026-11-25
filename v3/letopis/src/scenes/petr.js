@@ -22,7 +22,6 @@ export function animatePetr({mobile}) {
     gsap.set('.medal-copy .line-mask > span', { yPercent: 120 });
     gsap.set('.quote-word', { opacity: 0, filter: 'blur(6px)' });
     gsap.set('.quote-source, .final-fog, .paper-wash', { opacity: 0 });
-    gsap.set('.epilogue', { autoAlpha: 0 });
 
     const yearState = { value: 1909 };
     const letters = { value: 1 };

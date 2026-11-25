@@ -1,24 +1,22 @@
 import {$,gsap} from './core.js';
 
-const pairs=[['petr','nikolay','blueprint'],['nikolay','sergey','stadium'],['sergey','maria','school']];
-function openingClone(source){
-  const clone=source.cloneNode(true);
-  [clone,...clone.querySelectorAll('*')].forEach(element=>{
-    element.removeAttribute('id');
-    [...element.classList].forEach(name=>{element.classList.remove(name);element.classList.add('tr-'+name);});
-  });
-  return clone;
-}
+// A film closes on the same paper as its following page, never on the next film.
 export function mountChapterTransitions(){
-  pairs.forEach(([from,to,look])=>{
-    const frame=document.createElement('div');
-    frame.className='chapter-transition transition-'+look;frame.dataset.nextChapter=to;frame.setAttribute('aria-hidden','true');
-    frame.append(openingClone($('#'+to+' .chapter-label')));
-    if(look==='stadium')frame.append(openingClone($('#sergey .scoreboard')));
-    $('#'+from+' .scene-stage').append(frame);
+  ['petr','nikolay','sergey','maria'].forEach(id=>{
+    const stage=$('#'+id+' .scene-stage');
+    let paper=$('.paper-wash,.school-paper',stage);
+    if(!paper){
+      paper=document.createElement('div');
+      paper.setAttribute('aria-hidden','true');
+      stage.append(paper);
+    }
+    paper.classList.add('chapter-paper');
   });
 }
+
 export function animateChapterTransition(timeline){
-  gsap.set('.chapter-transition',{opacity:0});
-  timeline.to('.chapter-transition',{opacity:1,duration:4,ease:'none'},96);
+  const root=timeline.scrollTrigger.trigger;
+  const paper=$('.chapter-paper',root);
+  gsap.set(paper,{opacity:0});
+  timeline.to(paper,{opacity:1,duration:4,ease:'none'},96);
 }

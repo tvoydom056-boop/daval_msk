@@ -2,6 +2,7 @@ import './style.css';
 import './story.css';
 import './occasions.css';
 import './embed.css';
+import './wedding-reading.css';
 import './style-audit.js';
 import Lenis from 'lenis';
 import { gsap, ScrollTrigger, $, $$, order, videoController } from './shared';
@@ -10,10 +11,11 @@ import { occasionsMarkup, mountOccasions } from './scenes/occasions';
 import { storyMarkup, mountStory } from './scenes/story';
 import { giftMarkup, mountGift } from './scenes/gift';
 import { sectionsMarkup, mountSections } from './scenes/sections';
+import { weddingReadingMarkup, mountWeddingReading } from './scenes/wedding-reading';
 
 const main = $('#main');
 const motionPreference = matchMedia('(prefers-reduced-motion: reduce)');
-let current = '', context, videos, hero, story, gift, lenis, ticker, revision = 0, navigating = false;
+let current = '', context, videos, hero, story, reading, gift, lenis, ticker, revision = 0, navigating = false;
 const routeKey = () => order.includes(location.hash.slice(1)) ? location.hash.slice(1) : 'home';
 history.scrollRestoration = 'manual';
 
@@ -38,7 +40,7 @@ async function render(key, restore = 0) {
   const token = ++revision;
   const reduced = motionPreference.matches;
   window.__povod = { ready: false };
-  hero?.destroy(); story?.destroy(); gift?.destroy(); videos?.destroy();
+  hero?.destroy(); story?.destroy(); reading?.destroy(); gift?.destroy(); videos?.destroy();
   context?.revert();
   gsap.killTweensOf('.phone-annotation h3,.phone-annotation p,.hero-slide .visual,.slide-progress i');
   current = key;
@@ -47,7 +49,7 @@ async function render(key, restore = 0) {
   document.body.dataset.route = key;
   main.innerHTML = key === 'home'
     ? heroMarkup() + occasionsMarkup() + giftMarkup('wedding') + sectionsMarkup(null)
-    : landingMarkup(key) + storyMarkup(key) + giftMarkup(key) + sectionsMarkup(key);
+    : landingMarkup(key) + storyMarkup(key) + (key === 'wedding' ? weddingReadingMarkup() : '') + giftMarkup(key) + sectionsMarkup(key);
   document.title = key === 'home' ? 'Повод - ваши люди, ваши истории' : `${({ wedding: 'Свадьба', birthday: 'День рождения', anniversary: 'Годовщина', jubilee: 'Юбилей' })[key]} - Повод`;
   startLenis(reduced);
   setScroll(0);
@@ -56,6 +58,7 @@ async function render(key, restore = 0) {
     hero = mountHero(reduced, () => videos?.sync());
     mountOccasions(reduced);
     story = key === 'home' ? null : mountStory(key, reduced);
+    reading = key === 'wedding' ? mountWeddingReading(reduced) : null;
     gift = mountGift(key === 'home' ? 'wedding' : key, reduced);
     mountSections(reduced);
   }, main);

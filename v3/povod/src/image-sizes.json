@@ -1,0 +1,402 @@
+{
+  "img/anni-first.jpg": {
+    "height": 1500,
+    "size": 325176,
+    "variants": [
+      {
+        "height": 600,
+        "path": "responsive/img-anni-first-480.webp",
+        "size": 39634,
+        "width": 480
+      },
+      {
+        "height": 1200,
+        "path": "responsive/img-anni-first-960.webp",
+        "size": 109554,
+        "width": 960
+      },
+      {
+        "height": 1500,
+        "path": "responsive/img-anni-first-1200.webp",
+        "size": 154670,
+        "width": 1200
+      }
+    ],
+    "width": 1200
+  },
+  "img/anni-home.jpg": {
+    "height": 1500,
+    "size": 285641,
+    "variants": [
+      {
+        "height": 600,
+        "path": "responsive/img-anni-home-480.webp",
+        "size": 31754,
+        "width": 480
+      },
+      {
+        "height": 1200,
+        "path": "responsive/img-anni-home-960.webp",
+        "size": 94404,
+        "width": 960
+      },
+      {
+        "height": 1500,
+        "path": "responsive/img-anni-home-1200.webp",
+        "size": 129408,
+        "width": 1200
+      }
+    ],
+    "width": 1200
+  },
+  "img/anniversary.jpg": {
+    "height": 2000,
+    "size": 390159,
+    "variants": [
+      {
+        "height": 600,
+        "path": "responsive/img-anniversary-480.webp",
+        "size": 30210,
+        "width": 480
+      },
+      {
+        "height": 1200,
+        "path": "responsive/img-anniversary-960.webp",
+        "size": 86866,
+        "width": 960
+      },
+      {
+        "height": 1800,
+        "path": "responsive/img-anniversary-1440.webp",
+        "size": 149462,
+        "width": 1440
+      }
+    ],
+    "width": 1600
+  },
+  "img/bday-hike.jpg": {
+    "height": 1500,
+    "size": 414705,
+    "variants": [
+      {
+        "height": 600,
+        "path": "responsive/img-bday-hike-480.webp",
+        "size": 57516,
+        "width": 480
+      },
+      {
+        "height": 1200,
+        "path": "responsive/img-bday-hike-960.webp",
+        "size": 154576,
+        "width": 960
+      },
+      {
+        "height": 1500,
+        "path": "responsive/img-bday-hike-1200.webp",
+        "size": 207392,
+        "width": 1200
+      }
+    ],
+    "width": 1200
+  },
+  "img/bday-uni.jpg": {
+    "height": 1500,
+    "size": 367193,
+    "variants": [
+      {
+        "height": 600,
+        "path": "responsive/img-bday-uni-480.webp",
+        "size": 45948,
+        "width": 480
+      },
+      {
+        "height": 1200,
+        "path": "responsive/img-bday-uni-960.webp",
+        "size": 122866,
+        "width": 960
+      },
+      {
+        "height": 1500,
+        "path": "responsive/img-bday-uni-1200.webp",
+        "size": 165838,
+        "width": 1200
+      }
+    ],
+    "width": 1200
+  },
+  "img/birthday.jpg": {
+    "height": 2000,
+    "size": 361383,
+    "variants": [
+      {
+        "height": 600,
+        "path": "responsive/img-birthday-480.webp",
+        "size": 33460,
+        "width": 480
+      },
+      {
+        "height": 1200,
+        "path": "responsive/img-birthday-960.webp",
+        "size": 88118,
+        "width": 960
+      },
+      {
+        "height": 1800,
+        "path": "responsive/img-birthday-1440.webp",
+        "size": 145220,
+        "width": 1440
+      }
+    ],
+    "width": 1600
+  },
+  "img/jub-family.jpg": {
+    "height": 1500,
+    "size": 398914,
+    "variants": [
+      {
+        "height": 600,
+        "path": "responsive/img-jub-family-480.webp",
+        "size": 57752,
+        "width": 480
+      },
+      {
+        "height": 1200,
+        "path": "responsive/img-jub-family-960.webp",
+        "size": 147100,
+        "width": 960
+      },
+      {
+        "height": 1500,
+        "path": "responsive/img-jub-family-1200.webp",
+        "size": 196464,
+        "width": 1200
+      }
+    ],
+    "width": 1200
+  },
+  "img/jub-young.jpg": {
+    "height": 1500,
+    "size": 334225,
+    "variants": [
+      {
+        "height": 600,
+        "path": "responsive/img-jub-young-480.webp",
+        "size": 54040,
+        "width": 480
+      },
+      {
+        "height": 1200,
+        "path": "responsive/img-jub-young-960.webp",
+        "size": 142102,
+        "width": 960
+      },
+      {
+        "height": 1500,
+        "path": "responsive/img-jub-young-1200.webp",
+        "size": 187136,
+        "width": 1200
+      }
+    ],
+    "width": 1200
+  },
+  "img/jubilee.jpg": {
+    "height": 2000,
+    "size": 617320,
+    "variants": [
+      {
+        "height": 600,
+        "path": "responsive/img-jubilee-480.webp",
+        "size": 68958,
+        "width": 480
+      },
+      {
+        "height": 1200,
+        "path": "responsive/img-jubilee-960.webp",
+        "size": 203748,
+        "width": 960
+      },
+      {
+        "height": 1800,
+        "path": "responsive/img-jubilee-1440.webp",
+        "size": 331724,
+        "width": 1440
+      }
+    ],
+    "width": 1600
+  },
+  "img/story-meet.jpg": {
+    "height": 1500,
+    "size": 346680,
+    "variants": [
+      {
+        "height": 600,
+        "path": "responsive/img-story-meet-480.webp",
+        "size": 42396,
+        "width": 480
+      },
+      {
+        "height": 1200,
+        "path": "responsive/img-story-meet-960.webp",
+        "size": 144640,
+        "width": 960
+      },
+      {
+        "height": 1500,
+        "path": "responsive/img-story-meet-1200.webp",
+        "size": 206436,
+        "width": 1200
+      }
+    ],
+    "width": 1200
+  },
+  "img/story-trip.jpg": {
+    "height": 1500,
+    "size": 298117,
+    "variants": [
+      {
+        "height": 600,
+        "path": "responsive/img-story-trip-480.webp",
+        "size": 39494,
+        "width": 480
+      },
+      {
+        "height": 1200,
+        "path": "responsive/img-story-trip-960.webp",
+        "size": 116210,
+        "width": 960
+      },
+      {
+        "height": 1500,
+        "path": "responsive/img-story-trip-1200.webp",
+        "size": 161100,
+        "width": 1200
+      }
+    ],
+    "width": 1200
+  },
+  "img/wedding.jpg": {
+    "height": 2000,
+    "size": 391447,
+    "variants": [
+      {
+        "height": 600,
+        "path": "responsive/img-wedding-480.webp",
+        "size": 32096,
+        "width": 480
+      },
+      {
+        "height": 1200,
+        "path": "responsive/img-wedding-960.webp",
+        "size": 91284,
+        "width": 960
+      },
+      {
+        "height": 1800,
+        "path": "responsive/img-wedding-1440.webp",
+        "size": 153106,
+        "width": 1440
+      }
+    ],
+    "width": 1600
+  },
+  "v2/scenes/slide-anniversary.jpg": {
+    "height": 1080,
+    "size": 329952,
+    "variants": [
+      {
+        "height": 270,
+        "path": "responsive/scene-slide-anniversary-480.webp",
+        "size": 18748,
+        "width": 480
+      },
+      {
+        "height": 540,
+        "path": "responsive/scene-slide-anniversary-960.webp",
+        "size": 61982,
+        "width": 960
+      },
+      {
+        "height": 810,
+        "path": "responsive/scene-slide-anniversary-1440.webp",
+        "size": 114994,
+        "width": 1440
+      }
+    ],
+    "width": 1920
+  },
+  "v2/scenes/slide-birthday.jpg": {
+    "height": 1080,
+    "size": 242995,
+    "variants": [
+      {
+        "height": 270,
+        "path": "responsive/scene-slide-birthday-480.webp",
+        "size": 14106,
+        "width": 480
+      },
+      {
+        "height": 540,
+        "path": "responsive/scene-slide-birthday-960.webp",
+        "size": 41344,
+        "width": 960
+      },
+      {
+        "height": 810,
+        "path": "responsive/scene-slide-birthday-1440.webp",
+        "size": 76926,
+        "width": 1440
+      }
+    ],
+    "width": 1920
+  },
+  "v2/scenes/slide-jubilee.jpg": {
+    "height": 1080,
+    "size": 462199,
+    "variants": [
+      {
+        "height": 270,
+        "path": "responsive/scene-slide-jubilee-480.webp",
+        "size": 34552,
+        "width": 480
+      },
+      {
+        "height": 540,
+        "path": "responsive/scene-slide-jubilee-960.webp",
+        "size": 107150,
+        "width": 960
+      },
+      {
+        "height": 810,
+        "path": "responsive/scene-slide-jubilee-1440.webp",
+        "size": 186572,
+        "width": 1440
+      }
+    ],
+    "width": 1920
+  },
+  "v2/scenes/slide-wedding.jpg": {
+    "height": 1080,
+    "size": 248480,
+    "variants": [
+      {
+        "height": 270,
+        "path": "responsive/scene-slide-wedding-480.webp",
+        "size": 11988,
+        "width": 480
+      },
+      {
+        "height": 540,
+        "path": "responsive/scene-slide-wedding-960.webp",
+        "size": 43598,
+        "width": 960
+      },
+      {
+        "height": 810,
+        "path": "responsive/scene-slide-wedding-1440.webp",
+        "size": 80098,
+        "width": 1440
+      }
+    ],
+    "width": 1920
+  }
+}

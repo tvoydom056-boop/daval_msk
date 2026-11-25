@@ -38,3 +38,4 @@ codex/v3/*.json
 codex/v3/frames_all/
 codex/v3/work_povod_scenes/
 run_*.out
+.taste-skill/

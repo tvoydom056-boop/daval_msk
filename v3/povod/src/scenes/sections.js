@@ -1,24 +1,69 @@
 import { PLANS, OCCASIONS, HUB } from '../data';
-import { gsap, order, $$, image, maskedLines } from '../shared';
+import { order, esc } from '../dom';
+import { examplePlan } from './gift';
 
-export function sectionsMarkup(key) {
-  const o = key ? OCCASIONS[key] : null;
-  return `<section class="section intro-section" id="about"><div class="wrap intro-grid"><p class="eyebrow">Больше, чем подарок</p><div><h2 class="reveal-lines">${maskedLines(HUB.title, 26)}</h2><p class="lead">${HUB.lead}</p><p class="small-note">${HUB.note}</p></div></div></section>
-  <section id="prices" class="section prices-section"><div class="wrap"><div class="section-heading"><p class="eyebrow">Формат под вашу историю</p><h2 class="reveal-lines">${maskedLines('Выберите формат', 30)}</h2><p class="lead">${HUB.prices}</p></div>
-    <div class="plans">${Object.entries(PLANS).map(([k, p]) => `<article class="plan ${p.main ? 'plan-main' : ''}">${p.main ? '<span class="plan-badge">Главный формат</span>' : `<span class="plan-index">0${k === 'mini' ? 1 : 3}</span>`}<h3 class="reveal-lines">${maskedLines(p.name, 30)}</h3><p class="plan-price reveal-lines">${maskedLines(p.price, 30)}</p><p class="plan-for">${p.for}</p><ul>${p.items.map(t => `<li class="reveal-lines">${maskedLines(t, 48)}</li>`).join('')}</ul><a href="#request" data-scroll="request" data-plan="${p.name}" class="button ${p.main ? '' : 'button-outline'}">Выбрать «${p.name}»</a></article>`).join('')}</div><p class="plans-extra">${o ? o.extra : HUB.extra}</p>${key === 'wedding' ? '<p class="small-note">Свадебный формат начинается с «Истории».</p>' : ''}</div></section>
-  <section id="how" class="section steps-section"><div class="wrap"><div class="section-heading"><p class="eyebrow">Как это работает</p><h2 class="reveal-lines">${maskedLines('От вас истории, от нас всё остальное', 21)}</h2></div><ol class="steps">${(o?.steps || HUB.steps).map((s, i) => `<li><span class="step-number">0${i + 1}</span><h3>${s.b}</h3><p>${s.p}</p></li>`).join('')}</ol></div></section>
-  <section id="faq" class="section faq-section"><div class="wrap faq-grid"><div><p class="eyebrow">Можно спросить</p><h2>Что обычно<br>спрашивают</h2></div><div>${(o?.faq || HUB.faq).map((f, i) => `<details name="povod-faq"><summary><span>${f.q}</span><i aria-hidden="true"></i></summary><div><p>${f.a}</p></div></details>`).join('')}</div></div></section>
-  <section id="request" class="section request-section"><div class="wrap request-grid"><div><p class="eyebrow">Заявка</p><h2>Расскажите,<br>кого и с чем<br><span>поздравляем.</span></h2><p class="lead">Ответим в течение часа в рабочее время, подскажем идею и назовём точную цену.</p></div><form id="request-form"><label>Как к вам обращаться<input name="name" autocomplete="given-name" maxlength="80" required placeholder="Аня"></label><label>Телефон или Telegram<input name="contact" maxlength="120" required placeholder="+7 ... или @ник"></label><label>Повод<select name="occasion">${order.map(k => `<option ${k === key ? 'selected' : ''}>${OCCASIONS[k].name}</option>`).join('')}<option>Свой повод</option></select></label><label>Формат<select name="plan"><option>Пока не знаю</option>${Object.values(PLANS).map(p => `<option>${p.name}</option>`).join('')}</select></label><label class="wide">Когда праздник<input name="date" maxlength="100" placeholder="Например, 14 марта"></label><button type="submit" class="button">Отправить заявку</button><p class="form-note wide" role="status">Это макет: заявка не отправляется, данные никуда не передаются.</p></form></div></section>
-  <section id="other" class="section other-section"><div class="wrap"><div class="section-heading"><p class="eyebrow">Хорошие люди заслуживают</p><h2>${o ? 'Другие поводы' : 'Ещё один повод'}</h2></div><div class="other-grid">${order.filter(k => k !== key).map(k => `<a href="#${k}" data-route="${k}"><div data-slot="Другой повод ${OCCASIONS[k].short}">${image(`v2/scenes/slide-${k}.jpg`, OCCASIONS[k].short)}</div><h3>${OCCASIONS[k].short}</h3><span>${OCCASIONS[k].from}</span></a>`).join('')}</div></div></section>
-  <footer class="footer wrap"><a href="#home" class="logo">повод<span>.</span></a><p>Ваши люди. Ваши истории.</p><small>Демонстрационный проект. Люди и истории вымышлены.</small></footer>`;
+export function allowedPlanIds(occasionKey) {
+  return order.includes(occasionKey) ? OCCASIONS[occasionKey].plans : Object.keys(PLANS);
 }
 
-export function mountSections(reduced) {
-  if (reduced) return;
-  $$('.reveal-lines').forEach(el => {
-    gsap.fromTo($$('.line-mask > span', el), { yPercent: 115 }, { yPercent: 0, duration: .85, stagger: .09, ease: 'power3.out', scrollTrigger: { trigger: el, start: 'top 94%', once: true } });
-  });
-  $$('.steps li').forEach(el => {
-    gsap.from(el, { y: 45, opacity: 0, duration: .9, ease: 'power3.out', scrollTrigger: { trigger: el, start: 'top 90%', once: true } });
-  });
+export function planOptions(occasionKey, currentPlan = 'unknown') {
+  const ids = allowedPlanIds(occasionKey);
+  const selected = ids.includes(currentPlan) ? currentPlan : 'unknown';
+  return `<option value="unknown"${selected === 'unknown' ? ' selected' : ''}>Пока не знаю</option>${ids.map(id => `<option value="${esc(id)}"${selected === id ? ' selected' : ''}>${esc(PLANS[id].name)}</option>`).join('')}`;
+}
+
+function occasionOptions(occasionKey) {
+  return `<option value="unknown"${occasionKey === 'unknown' ? ' selected' : ''}>Пока не знаю</option>${order.map(id => `<option value="${esc(id)}"${occasionKey === id ? ' selected' : ''}>${esc(OCCASIONS[id].name)}</option>`).join('')}<option value="custom">Свой повод</option>`;
+}
+
+export function sectionsMarkup(key) {
+  const occasionKey = order.includes(key) ? key : 'unknown';
+  const o = OCCASIONS[occasionKey];
+  const samplePlan = examplePlan(key || 'jubilee');
+  const inside = [
+    { title: 'Фотографии и главы', text: o?.plans.includes('mini') === false ? 'До 40 фото и хронология в «Истории» и «Премиуме».' : 'До 15 фото в «Мини». До 40 фото и хронология в «Истории» и «Премиуме».' },
+    { title: 'Письма и голосовые', text: o?.plans.includes('mini') === false ? 'Рукописное оформление письма и голосовые поздравления входят в оба формата.' : 'Одно письмо в «Мини». Рукописное оформление и голосовые поздравления в «Истории» и «Премиуме».' },
+    { title: 'Музыка и анимации', text: 'Музыка входит во все форматы. Анимации доступны в «Истории» и «Премиуме».' },
+    { title: 'Видео и интерактив', text: 'В «Премиуме»: ролик 30-60 секунд, оживление фото, индивидуальный дизайн и мини-игра или квиз.' }
+  ];
+
+  return `<section class="section" id="inside"><div class="wrap">
+    <div class="section-heading"><h2>Что будет на вашем сайте</h2><p class="lead">Содержание зависит от формата. Сначала согласуем материалы и состав, затем соберём страницу.</p></div>
+    <div class="inside-grid">${inside.map(item => `<article class="inside-item"><h3>${esc(item.title)}</h3><p>${esc(item.text)}</p></article>`).join('')}</div>
+  </div></section>
+  <section class="section" id="how"><div class="wrap">
+    <div class="section-heading"><h2>Как заказать сайт-подарок</h2></div>
+    <ol class="steps">${HUB.steps.map(step => `<li><h3>${esc(step.b)}</h3><p>${esc(step.p)}</p></li>`).join('')}</ol>
+  </div></section>
+  <section class="section" id="prices"><div class="wrap">
+    <div class="section-heading"><h2>Форматы и стоимость</h2><p class="lead">${esc(HUB.prices)}</p></div>
+    <div class="plans">${allowedPlanIds(occasionKey).map(id => {
+      const plan = PLANS[id];
+      const actionName = id === 'story' ? 'Историю' : plan.name;
+      return `<article class="plan${plan.main ? ' plan-main' : ''}">${plan.main ? '<span class="plan-badge">Основной формат</span>' : ''}<h3>${esc(plan.name)}</h3><p class="plan-price">${esc(plan.price)}</p>${id === samplePlan ? '<p class="plan-example">Как в примере выше</p>' : '<div class="plan-example-space" aria-hidden="true"></div>'}<p class="plan-for">${esc(plan.for)}</p><ul>${plan.items.map(item => `<li>${esc(item)}</li>`).join('')}</ul><a class="button${plan.main ? '' : ' button-outline'}" href="#request" data-scroll="request" data-plan="${esc(id)}" data-occasion="${esc(occasionKey)}">Выбрать «${esc(actionName)}»</a></article>`;
+    }).join('')}</div>
+    <div class="plans-extra"><p>${esc(HUB.extra)}</p>${occasionKey === 'wedding' ? '<p>Свадебный сайт начинается с «Истории». Гостевой альбом по QR можно добавить за 1 990 ₽.</p>' : ''}<p>Тестовые цены демонстрационного проекта. Точную стоимость согласуем до начала работы.</p></div>
+  </div></section>
+  <section class="section" id="faq"><div class="wrap faq-grid">
+    <div class="section-heading"><h2>Вопросы о подарке</h2></div>
+    <div class="faq-list">${HUB.faq.map(item => `<details name="povod-faq"><summary>${esc(item.q)}</summary><div><p>${esc(item.a)}</p></div></details>`).join('')}</div>
+  </div></section>
+  <section class="section" id="request"><div class="wrap request-grid">
+    <div class="section-heading"><h2>Расскажите о вашем поводе</h2><p class="lead">Выберите повод и формат. Если пока не решили, оставьте «Пока не знаю».</p></div>
+    <form id="request-form" aria-describedby="request-note"><div class="form-grid">
+      <label for="request-name">Как к вам обращаться<input id="request-name" name="name" autocomplete="given-name" maxlength="80" required></label>
+      <label for="request-contact">Телефон или Telegram<input id="request-contact" name="contact" autocomplete="tel" maxlength="120" required placeholder="Телефон или @имя"></label>
+      <label for="request-occasion">Повод<select id="request-occasion" name="occasion">${occasionOptions(occasionKey)}</select></label>
+      <label for="request-plan">Формат<select id="request-plan" name="plan">${planOptions(occasionKey)}</select></label>
+      <label class="wide" for="request-date">Когда праздник, если дата известна<input id="request-date" name="date" maxlength="100" placeholder="Например, 14 марта"></label>
+      <p class="form-note wide" id="request-note">Это демонстрационная форма. Заявка не отправляется, данные никуда не передаются. Демо не принимает материалы и оплату.</p>
+      <button type="submit" class="button wide">Отправить заявку</button>
+      <p class="form-note wide" id="request-status" role="status" aria-live="polite"></p>
+    </div></form>
+  </div></section>
+  <footer class="footer"><div class="wrap">
+    ${o ? `<nav class="other-links" aria-label="Другие поводы"><span>Другие поводы</span>${order.filter(id => id !== occasionKey).map(id => `<a href="#${esc(id)}" data-route="${esc(id)}">${esc(OCCASIONS[id].short)}</a>`).join('')}</nav>` : ''}
+    <a href="#home" data-route="home" class="logo" aria-label="Повод - на главную">повод<span>.</span></a>
+    <p>Сайты-подарки с вашей историей.</p><small>Демонстрационный проект. Люди и истории вымышлены, цены тестовые.</small>
+  </div></footer>`;
 }

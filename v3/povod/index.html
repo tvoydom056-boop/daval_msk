@@ -1,25 +1,32 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" data-type="service">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#f7d9c6">
+    <meta name="theme-color" content="#fffaf6">
+    <meta name="page-type" content="service">
+    <meta name="site-kind" content="other">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='8' fill='%23fffaf6'/%3E%3Ctext x='10' y='35' font-family='sans-serif' font-size='38' font-weight='600' fill='%23ad452e'%3E%D0%BF%3C/text%3E%3C/svg%3E">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Повод - сайт-подарок с вашей историей">
+    <meta property="og:description" content="Фотографии, воспоминания и поздравления в личном сайте-подарке. Демонстрационный проект.">
     <meta name="description" content="Повод - сайты-подарки с вашей историей. Фото, голосовые и письма к свадьбе, дню рождения, годовщине и юбилею.">
-    <title>Повод - ваши люди, ваши истории</title>
+    <title>Повод - сайт-подарок с вашей историей</title>
   </head>
   <body>
     <div id="site">
     <a class="skip-link" href="#main">К содержимому</a>
     <header class="navigation">
       <a href="#home" class="logo" aria-label="Повод - главная">повод<span class="logo-dot">.</span></a>
-      <nav aria-label="Основная навигация">
+      <button type="button" class="menu-toggle" id="menu-toggle" aria-controls="primary-nav" aria-expanded="false">Меню</button>
+      <nav id="primary-nav" aria-label="Основная навигация">
         <a href="#occasions" data-scroll="occasions">Поводы</a>
-        <a href="#prices" data-scroll="prices">Форматы и цены</a>
-        <a href="#request" data-scroll="request" class="nav-request">Собрать подарок</a>
+        <a href="#how" data-scroll="how">Как заказать</a>
+        <a href="#prices" data-scroll="prices">Стоимость</a>
+        <a href="#request" data-scroll="request" class="nav-request">Обсудить подарок</a>
       </nav>
     </header>
-    <main id="main" tabindex="-1"></main>
-    <div class="route-flight" aria-hidden="true"></div>
+    <main id="main" tabindex="-1"><noscript><div class="wrap section"><h1>Повод - сайты-подарки</h1><p>Для просмотра интерактивного макета включите JavaScript. Мы собираем фотографии, воспоминания и поздравления в персональный сайт.</p></div></noscript></main>
     </div>
     <script type="module" src="/src/main.js"></script>
   </body>

@@ -1,14 +1,12 @@
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { $$, media, image, esc } from './dom';
+
+export { order, $, $$, media, esc, image } from './dom';
 gsap.registerPlugin(ScrollTrigger);
 export { gsap, ScrollTrigger };
-export const order = ['wedding', 'birthday', 'anniversary', 'jubilee'];
-export const $ = (selector, root = document) => root.querySelector(selector);
-export const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
 export const vh = (n) => innerHeight * n / 100;
-export const media = (path) => `${import.meta.env.BASE_URL}media/${path.replace(/^assets\//, '')}`;
-export const esc = (s = '') => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-export const image = (path, alt = '', extra = '') => `<img src="${media(path)}" alt="${esc(alt)}" decoding="async" ${extra}>`;
+
 export const visual = (name, path, slot, extra = '') => `<div class="visual ${extra}" data-slot="${esc(slot)}">${image(path)}${name ? `<video muted loop playsinline preload="none" poster="${media(path)}" data-src="${media(`v2/video/${name}.mp4`)}" aria-hidden="true"></video>` : ''}</div>`;
 export const lines = (text, limit = 36) => {
   const result = []; let line = '';

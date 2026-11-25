@@ -1,93 +1,82 @@
-import { OCCASIONS } from '../data';
-import { gsap, pin, $, $$, image, esc } from '../shared';
+import { OCCASIONS, PLANS } from '../data';
+import { $, $$, image, esc } from '../dom';
 
-const bars = seed => Array.from({ length: 26 }, (_, i) => `<i style="height:${Math.round(20 + 80 * Math.abs(Math.sin(i * .7 + seed) * Math.cos(i * .23 + seed * 2)))}%"></i>`).join('');
+export function examplePlan(key = 'jubilee') {
+  const sections = OCCASIONS[key].gift.sections;
+  if (sections.some(section => section.type === 'quiz')) return 'prem';
+  return sections.some(section => section.type === 'voices' || section.type === 'chapters') ? 'story' : 'mini';
+}
+
+function giftCover(g, hero = false, preview = false) {
+  const heading = hero ? 'h2' : 'h3';
+  const sizes = hero ? '(max-width: 767px) calc(100vw - 52px), 434px' : preview ? '270px' : '(max-width: 767px) calc(100vw - 40px), 760px';
+  return `<section class="g-cover" data-block="cover" data-slot="Обложка подарка">${image(g.cover.img, g.cover.title, `${hero ? 'fetchpriority="high"' : 'loading="lazy"'} sizes="${sizes}"`)}<div><small>${esc(g.cover.small)}</small><${heading}>${esc(g.cover.title)}</${heading}><p>${esc(g.cover.sub)}</p></div></section>`;
+}
+
+function chapterMarkup(c, heading = 'h5') {
+  return `<article class="g-chapter"><span>${esc(c.y)}</span><${heading}>${esc(c.h)}</${heading}><p>${esc(c.p)}</p>${c.img ? `<div data-slot="Фото главы ${esc(c.h)}">${image(c.img, c.h, 'loading="lazy"')}</div>` : ''}</article>`;
+}
+
+export function coverMarkup(key = 'jubilee', { hero = false } = {}) {
+  const g = OCCASIONS[key].gift;
+  const chapter = g.sections.find(s => s.type === 'chapters')?.items[0];
+  return `<div class="gift-preview${hero ? ' gift-preview-hero' : ''}">${giftCover(g, hero, true)}${chapter ? `<div class="g-section g-chapters-section">${chapterMarkup(chapter, hero ? 'h3' : 'h4')}</div>` : ''}</div>`;
+}
+
 export function giftContents(g) {
-  return `<section class="g-cover" data-block="cover" data-slot="Обложка подарка">${image(g.cover.img, g.cover.title)}<div><small>${g.cover.small}</small><h3>${g.cover.title}</h3><p>${g.cover.sub}</p></div></section>` + g.sections.map(s => {
-    const head = `<p class="g-label">${s.label || ''}</p>${s.title ? `<h4>${s.title}</h4>` : ''}`;
+  return giftCover(g) + g.sections.map(s => {
+    const head = `<p class="g-label">${esc(s.label)}</p>${s.title ? `<h4>${esc(s.title)}</h4>` : ''}`;
     let body = '';
     switch (s.type) {
-      case 'chapters': body = head + s.items.map(c => `<article class="g-chapter"><span>${c.y}</span><h5>${c.h}</h5><p>${c.p}</p>${c.img ? `<div data-slot="Фото главы ${esc(c.h)}">${image(c.img, c.h)}</div>` : ''}</article>`).join(''); break;
-      case 'voices': body = head + s.items.map((v, i) => `<button class="g-voice" type="button" data-voice><span class="voice-top"><b>${v.n}</b><small>${v.t}</small></span><span class="voice-wave">${bars(i + 1)}</span><span class="voice-action">Слушать</span></button>`).join('') + '<p class="voice-note" role="status">Демонстрация плеера. Записи в макет не добавлены.</p>'; break;
-      case 'letter': body = head + `<div class="g-letter">${s.text}<div class="sign">${s.sign}</div></div>`; break;
-      case 'count': body = `<div class="g-count"><b>${Math.max(0, Math.floor((Date.now() - new Date(s.from).getTime()) / 86400000)).toLocaleString('ru-RU')}</b><span>${s.unit}</span><small>${s.note}</small></div>`; break;
-      case 'gallery': body = head + `<div class="g-gallery">${s.imgs.map((p, i) => `<div data-slot="Галерея ${i + 1}">${image(p, 'Фото из истории')}</div>`).join('')}</div>`; break;
-      case 'quiz': body = head + `<div class="g-quiz" data-quiz="${s.ok}"><p>${s.q}</p>${s.opts.map((t, i) => `<button type="button" data-answer="${i}">${t}</button>`).join('')}<small>${s.note}</small><p class="quiz-result" role="status"></p></div>`; break;
-      case 'reasons': body = head + `<div class="g-reasons" data-index="0"><button type="button" data-reason>${s.items[0]}</button><small><span data-reason-count>1</span> из ${s.items.length} · нажмите, чтобы открыть следующую</small><script type="application/json" class="reason-data">${JSON.stringify(s.items).replace(/</g, '\\u003c')}</script></div>`; break;
-      case 'recipe': body = head + `<ol class="g-recipe">${s.steps.map(t => `<li>${t}</li>`).join('')}</ol>`; break;
-      case 'final': body = `<h4>${s.title}</h4><p>${s.text}</p>`; break;
+      case 'chapters': body = head + s.items.map(c => chapterMarkup(c)).join(''); break;
+      case 'voices': body = head + `<ul class="g-voices">${s.items.map(v => `<li class="g-voice"><div class="voice-top"><b>${esc(v.n)}</b><small>${esc(v.t)}</small></div></li>`).join('')}</ul><p class="voice-note">Здесь будут голосовые близких. В этом примере аудиозаписей нет. Голосовые входят в пакет «История» и выше.</p>`; break;
+      case 'letter': body = head + `<div class="g-letter">${esc(s.text)}<div class="sign">${esc(s.sign)}</div></div>`; break;
+      case 'count': body = `<div class="g-count"><b>${Math.max(0, Math.floor((Date.now() - new Date(s.from).getTime()) / 86400000)).toLocaleString('ru-RU')}</b><span>${esc(s.unit)}</span><small>${esc(s.note)}</small></div>`; break;
+      case 'gallery': body = head + `<div class="g-gallery">${s.imgs.map((p, i) => `<div data-slot="Галерея ${i + 1}">${image(p, `${g.cover.title}: фотография ${i + 1} из истории`, 'loading="lazy" sizes="(max-width: 767px) 28vw, 224px"')}</div>`).join('')}</div>`; break;
+      case 'quiz': body = head + `<div class="g-quiz" data-quiz="${s.ok}"><p>${esc(s.q)}</p>${s.opts.map((t, i) => `<button type="button" data-answer="${i}" aria-pressed="false">${esc(t)}</button>`).join('')}<small>${esc(s.note)}</small><p class="quiz-result" role="status"></p></div><p class="small-note">Квиз входит в пакет «Премиум».</p>`; break;
+      case 'reasons': body = head + `<div class="g-reasons" data-index="0"><button type="button" data-reason>${esc(s.items[0])}</button><small><span data-reason-count>1</span> из ${s.items.length} · нажмите, чтобы открыть следующую</small><script type="application/json" class="reason-data">${JSON.stringify(s.items).replace(/</g, '\\u003c')}</script></div>`; break;
+      case 'recipe': body = head + `<ol class="g-recipe">${s.steps.map(t => `<li>${esc(t)}</li>`).join('')}</ol>`; break;
+      case 'final': body = `<h4>${esc(s.title)}</h4><p>${esc(s.text)}</p>`; break;
     }
     return `<section class="g-section g-${s.type}-section" data-block="${s.type}">${body}</section>`;
   }).join('');
 }
 
-export function giftMarkup(key) {
+export function giftMarkup(key = 'jubilee') {
   const o = OCCASIONS[key];
-  return `<section id="phone" class="phone-stage pinned-stage" aria-label="Подарок в телефоне">
-    <div class="phone-intro"><p class="eyebrow">Живой пример · Вымышленная история</p><h2>Вся история.<br><span>Ближе, чем кажется.</span></h2><p>${o.demoText[0]}</p><a class="text-link" href="#request" data-scroll="request">Хочу такой подарок</a></div>
-    <div class="phone-aura" aria-hidden="true"></div><div class="phone"><div class="phone-camera" aria-hidden="true"></div><div class="phone-screen" tabindex="0" role="region" aria-label="Пример подарка - прокрутка страницы листает телефон"><div class="gift-content">${giftContents(o.gift)}</div></div></div>
-    <div class="phone-annotation" aria-live="off"><small data-phone-number>01 / ${o.gift.sections.length + 1}</small><h3 data-phone-caption>${o.demoTitle}</h3><p data-phone-description>Настоящие чувства. Ваши фотографии. Ваша ссылка.</p><span class="annotation-line" aria-hidden="true"></span></div>
-    <div class="phone-progress" aria-hidden="true"><i></i></div><p class="phone-footer">Листайте страницу - подарок листается вместе с вами</p>
-  </section>`;
+  const plan = examplePlan(key);
+  const comparison = o.plans.includes('mini') && plan !== 'mini' ? ' В «Мини» будет до 15 фото, одно письмо и музыка на готовом шаблоне, без хронологии и голосовых.' : key === 'wedding' ? ' Для свадьбы доступны «История» и «Премиум».' : '';
+  return `<section id="example" class="section example-section" aria-labelledby="example-title"><div class="wrap">
+    <div class="example-intro"><div class="example-copy"><p class="eyebrow">Пример сайта-подарка</p><h2 id="example-title">${esc(o.demoTitle)}</h2><p class="lead">${esc(o.card)}</p><p>Такой сайт можно открыть по ссылке на телефоне или компьютере. Посмотрите обложку, а затем откройте подарок целиком.</p><p class="example-includes">В примере показаны возможности формата «${esc(PLANS[plan].name)}».${comparison}</p><p class="example-note">Люди и истории вымышлены. Фотографии сгенерированы.</p><a class="text-link" href="#request" data-scroll="request">Обсудить подарок</a></div>
+    <div class="phone" aria-label="Обложка и начало примера подарка"><div class="phone-camera" aria-hidden="true"></div><div class="phone-screen">${coverMarkup(key)}</div></div></div>
+    <details id="gift-example" class="gift-example"><summary>Открыть подарок целиком</summary><div class="gift-reading">${giftContents(o.gift)}</div></details>
+  </div></section>`;
 }
 
-export function mountGift(key, reduced) {
-  const screen = $('.phone-screen'), content = $('.gift-content');
-  if (!screen) return { destroy() {} };
-  const names = { cover: OCCASIONS[key].demoTitle, chapters: 'Ваша история по главам', voices: 'Голосовые от друзей', letter: 'Рукописное письмо', gallery: 'Те самые фотографии', count: 'Каждый день вместе', reasons: '10 причин, почему ты', quiz: 'Квиз про героя', recipe: 'Тот самый семейный рецепт', final: 'И это только начало' };
-  const descriptions = { cover: 'Настоящие чувства. Ваши фотографии. Ваша ссылка.', chapters: 'Все маленькие моменты, из которых сложилось большое.', voices: 'Голоса, которые хочется слышать снова.', letter: 'Ваши слова. Без особенного повода говорить их вслух.', gallery: 'Даже те, на которых все закрыли глаза.', count: 'Обновляется каждый день.', reasons: 'Открывайте карточки по одной.', quiz: 'Для тех, кто знает героя лучше всех. Или думает, что знает.', recipe: 'Записанный с её слов. Вместе с «на глаз».', final: OCCASIONS[key].gift.sections.at(-1).text };
-  const blocks = $$('[data-block]', content);
-  let last = '';
-  const state = { progress: 0 };
-  function sync() {
-    const max = Math.max(0, content.scrollHeight - screen.clientHeight);
-    const y = state.progress * max;
-    content.style.transform = `translate3d(0,${-y}px,0)`;
-    const block = blocks.find(b => b.offsetTop + b.offsetHeight > y + screen.clientHeight * .4) || blocks.at(-1);
-    const type = block.dataset.block;
-    if (type !== last) {
-      $('[data-phone-caption]').textContent = names[type];
-      $('[data-phone-description]').textContent = descriptions[type];
-      $('[data-phone-number]').textContent = `${String(blocks.indexOf(block) + 1).padStart(2, '0')} / ${blocks.length}`;
-      if (!reduced) gsap.fromTo('.phone-annotation h3,.phone-annotation p', { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: .35, stagger: .05, overwrite: true });
-      last = type;
-    }
-  }
+export function mountGift() {
+  const section = $('#example');
+  if (!section) return { destroy() {} };
   const click = e => {
-    const voice = e.target.closest('[data-voice]');
-    if (voice) $('.voice-note', voice.parentNode).textContent = 'В макете нет аудиозаписи. В готовом подарке здесь будет голос близкого человека.';
     const answer = e.target.closest('[data-answer]');
     if (answer) {
       const quiz = answer.closest('[data-quiz]'), ok = +quiz.dataset.quiz;
-      $$('[data-answer]', quiz).forEach(b => { b.classList.toggle('is-correct', +b.dataset.answer === ok); b.classList.toggle('is-wrong', b === answer && +b.dataset.answer !== ok); });
-      $('.quiz-result', quiz).textContent = +answer.dataset.answer === ok ? 'Верно! Палатку. Три гитары зато были.' : 'Почти! Правильный ответ выделен.';
+      const answers = $$('[data-answer]', quiz);
+      answers.forEach(b => {
+        b.classList.toggle('is-correct', +b.dataset.answer === ok);
+        b.classList.toggle('is-wrong', b === answer && +b.dataset.answer !== ok);
+        b.setAttribute('aria-pressed', String(b === answer));
+      });
+      $('.quiz-result', quiz).textContent = +answer.dataset.answer === ok ? 'Верно!' : `Правильный ответ: ${answers[ok].textContent}`;
     }
     const reason = e.target.closest('[data-reason]');
     if (reason) {
       const stack = reason.closest('.g-reasons'), items = JSON.parse($('.reason-data', stack).textContent);
-      const i = (+stack.dataset.index + 1) % items.length; stack.dataset.index = i;
-      reason.textContent = items[i]; $('[data-reason-count]', stack).textContent = i + 1;
-      if (!reduced) gsap.fromTo(reason, { rotation: -3, y: 10 }, { rotation: 0, y: 0, duration: .3 });
+      const i = (+stack.dataset.index + 1) % items.length;
+      stack.dataset.index = i;
+      reason.textContent = items[i];
+      $('[data-reason-count]', stack).textContent = i + 1;
     }
   };
-  content.addEventListener('click', click);
-  let timeline, observer;
-  if (!reduced) {
-    timeline = pin('phone', '.phone-stage', 200);
-    timeline.to(state, { progress: 1, duration: 100, onUpdate: sync }, 0)
-      .fromTo('.phone-progress i', { scaleX: 0 }, { scaleX: 1, duration: 100 }, 0);
-    observer = new ResizeObserver(sync); observer.observe(content); observer.observe(screen);
-    sync();
-  }
-  // Keyboard users can advance the pinned gift without finding a scroll wheel.
-  const keyboard = e => {
-    if (reduced || !['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', 'Home', 'End'].includes(e.key) || e.target.matches('button')) return;
-    e.preventDefault();
-    const st = timeline.scrollTrigger;
-    const delta = e.key.includes('Down') ? .045 : -.045;
-    const p = e.key === 'Home' ? 0 : e.key === 'End' ? 1 : Math.max(0, Math.min(1, state.progress + delta));
-    window.__lenis?.scrollTo(st.start + (st.end - st.start) * p, { immediate: true });
-  };
-  screen.addEventListener('keydown', keyboard);
-  return { timeline, sync, destroy() { observer?.disconnect(); content.removeEventListener('click', click); screen.removeEventListener('keydown', keyboard); } };
+  section.addEventListener('click', click);
+  return { destroy() { section.removeEventListener('click', click); } };
 }

@@ -30,7 +30,8 @@ export function animateSergey() {
   const clock=$('.match-clock'),digits=[...clock.querySelectorAll('.segment-digit')],time={seconds:86*60};
   const updateClock=()=>{const value=Math.floor(time.seconds),formatted=`${String(Math.floor(value/60)).padStart(2,'0')}${String(value%60).padStart(2,'0')}`;digits.forEach((element,index)=>updateDigit(element,Number(formatted[index])));clock.setAttribute('aria-label',formatted.slice(0,2)+':'+formatted.slice(2));};
   updateClock();
-  gsap.set('.football-video',{clipPath:'inset(0% 50% 0% 50%)'});
+  gsap.set('.football-video',{clipPath:'none'});
+  gsap.set('.stadium-dark',{opacity:.65});
   gsap.set('.football-video video',{scale:1.12});
   gsap.set('.score-new',{rotationX:90,opacity:0,transformOrigin:'50% 0%'});
   gsap.set('.goal-flash,.winning-copy,.rolling-ball,.team-frame,.team-copy,.yard-evening,.yard-boots,.yard-pennant,.pennant-rope,.coach-copy,.football-quote,.morning-flash',{opacity:0});
@@ -43,7 +44,6 @@ export function animateSergey() {
     .to('.score-old',{rotationX:-90,opacity:0,transformOrigin:'50% 100%',duration:1.2},15)
     .to('.score-new',{rotationX:0,opacity:1,duration:1.2},15.6)
     .to('.goal-flash',{opacity:.3,duration:.12},15.4).to('.goal-flash',{opacity:0,duration:.3},15.52)
-    .to('.football-video',{clipPath:'inset(0% 0% 0% 0%)',duration:14},16)
     .to('.stadium-dark',{opacity:0,duration:14},16)
     .to('.scoreboard',{y:()=>-vh(70),opacity:0,duration:13},17)
     .to('.winning-copy',{opacity:1,duration:3},22)

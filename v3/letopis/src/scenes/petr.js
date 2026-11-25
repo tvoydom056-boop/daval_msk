@@ -4,7 +4,7 @@ export function animatePetr({mobile}) {
   const root=document.getElementById('petr');
   const setYear=odometer(root.querySelector('.year'));
   setYear(1909);
-    gsap.set('.field', { clipPath: 'inset(0% 50% 0% 50%)', opacity: 1 });
+    gsap.set('.field', { clipPath: 'none', opacity: 1 });
     gsap.set('.war-video', { scale: 1.28 });
     gsap.set('.field-shade', { opacity: 0 });
     gsap.set('.field-dim', { opacity: 0 });
@@ -37,7 +37,6 @@ export function animatePetr({mobile}) {
     film.addLabel('year', 0)
       .to(yearState, { value: 1941, duration: 12, onUpdate: () => setYear(yearState.value) }, 0)
       .addLabel('front', 12)
-      .to('.field', { clipPath: 'inset(0% 0% 0% 0%)', duration: 18 }, 12)
       .to('.war-video', { scale: 1.06, y: () => -vh(2), duration: 18 }, 12)
       .to('.war-video', { scale: 1.13, y: () => -vh(5), duration: 56 }, 30)
       .to('.field-shade', { opacity: 1, duration: 12 }, 12)
@@ -80,7 +79,6 @@ export function animatePetr({mobile}) {
       .to('.quote-source', { opacity: .8, duration: 2 }, 92)
       .addLabel('next-chapter', 96)
       .to('.final-fog', { opacity: .35, yPercent: -12, duration: 4 }, 96)
-      .to('.last-letter', { opacity: 0, duration: 3 }, 97)
       .addLabel('end', 100);
 
 

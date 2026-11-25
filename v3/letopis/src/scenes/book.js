@@ -35,6 +35,10 @@ export function mountBook(){
   $('#petr').insertAdjacentHTML('beforebegin',letterMarkup('story-intro',storyText.intro));
   ids.forEach((id,index)=>$('#'+id).insertAdjacentHTML('afterend',chapterMarkup(id,storyText.chapters[id],index)));
   $('#maria-story').insertAdjacentHTML('afterend',letterMarkup('story-outro',storyText.outro));
+  $$('.book-page').forEach(page=>{
+    if(page.previousElementSibling?.classList.contains('film-scene'))page.classList.add('book-from-film');
+    if(page.nextElementSibling?.classList.contains('film-scene'))page.classList.add('book-film-lead');
+  });
 }
 
 export function animateBook(){
@@ -49,5 +53,4 @@ export function animateBook(){
     const update=trigger=>fill.style.transform=`scaleY(${trigger.progress})`;
     ScrollTrigger.create({trigger:chapter,start:'top 25%',end:'bottom 75%',onUpdate:update,onRefresh:update});
   });
-  $$('.book-page').forEach(page=>ScrollTrigger.create({trigger:page,start:'top 70px',end:'bottom 70px',toggleClass:{targets:'.navigation',className:'nav-paper'}}));
 }

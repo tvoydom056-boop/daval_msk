@@ -70,6 +70,6 @@ export function animateMaria({mobile}) {
     .to('.school-shade',{opacity:.78,duration:4},88).to('.sunbeam',{opacity:.15,duration:4},88)
     .to('.school-quote',{opacity:1,duration:2},89);
   quoteReveal(timeline,'.school-quote',89,2,.36);
-  timeline.to('.school-paper',{opacity:1,duration:3.2},96.8).addLabel('end',100);
+  timeline.addLabel('end',100);
   return {timeline};
 }

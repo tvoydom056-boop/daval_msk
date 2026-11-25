@@ -4,6 +4,8 @@ import './presentation.css';
 import './tree.css';
 import './embed.css';
 import './book.css';
+import './flow.css';
+import './navigation.css';
 import './lib/style-audit.js';
 import Lenis from 'lenis';
 import {gsap,ScrollTrigger,$,$$,initMedia,setMediaReduced,loadMedia} from './lib/core.js';
@@ -17,8 +19,9 @@ import {mountNikolay,animateNikolay} from './scenes/nikolay.js';
 import {mountSergey,animateSergey,setStaticSergey} from './scenes/sergey.js';
 import {mountMaria,animateMaria} from './scenes/maria.js';
 import {mountSections,animateSections,animateBenefits} from './scenes/sections.js';
-import {mountChapterTransitions,animateChapterTransition} from './lib/transitions.js';
+import {mountChapterTransitions,animateChapterTransition,animatePageExits} from './lib/transitions.js';
 import {mountBook,animateBook} from './scenes/book.js';
+import {initNavigation} from './lib/navigation.js';
 
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
 let lenis,contexts=[],timelines=[],intro,ticker;
@@ -30,6 +33,7 @@ $$('#petr .front-copy,#petr .medal-copy').forEach(element=>element.dataset.lines
 words($('#petr blockquote'));
 $('.medal-metal').style.setProperty('--medal-mask','url("'+new URL('./media/medal.png',document.baseURI).href+'")');
 const tree=initTree({goTo});
+initNavigation({getLenis:()=>lenis});
 const definitions=[
   ['hero',animateHero],['tree',()=>tree.animate()],['petr',animatePetr],
   ['nikolay',animateNikolay],['sergey',animateSergey],['maria',animateMaria],
@@ -39,7 +43,7 @@ const definitions=[
 function goTo(target,{immediate=false}={}) {
   if(!target)return;
   const trigger=ScrollTrigger.getById(target.id);
-  const position=trigger?trigger.start+(target.id==='tree'?(trigger.end-trigger.start)*.7:0):target;
+  const position=trigger?trigger.start+(target.id==='tree'?(trigger.end-trigger.start)*(innerWidth<768?.82:.78):['petr','nikolay','sergey','maria'].includes(target.id)?innerHeight*.75:0):target;
   if(lenis)lenis.scrollTo(position,{duration:1.6,immediate,force:true});
   else target.scrollIntoView({behavior:'instant',block:'start'});
 }
@@ -107,6 +111,7 @@ function rebuild(preserve=true) {
     },scope));
   });
   contexts.push(gsap.context(animateBook,$('main')));
+  contexts.push(gsap.context(animatePageExits,$('main')));
   ScrollTrigger.refresh();
   if(preserve){
     intro?.progress(1);

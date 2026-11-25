@@ -15,11 +15,16 @@
     <nav class="navigation" aria-label="Главная навигация">
       <a class="wordmark" href="#hero">Летопись</a>
       <div class="nav-links">
-        <a href="#tree">Древо</a><span aria-hidden="true">·</span>
-        <a href="#petr">Истории</a><span aria-hidden="true">·</span>
-        <a href="#prices">Цены</a>
+        <a href="#tree">Древо</a>
+        <a href="#petr">Истории</a>
+        <a class="nav-primary" href="#prices">Цены</a>
       </div>
+      <button class="nav-toggle" type="button" aria-haspopup="dialog" aria-controls="mobile-menu" aria-expanded="false">Меню</button>
     </nav>
+    <dialog class="mobile-menu" id="mobile-menu" aria-labelledby="mobile-menu-title" data-lenis-prevent>
+      <header class="mobile-menu-header"><p id="mobile-menu-title">Летопись</p><button class="menu-close" type="button">Закрыть</button></header>
+      <nav aria-label="Разделы сайта"><a href="#tree">Древо</a><a href="#petr">Истории</a><a class="nav-primary" href="#prices">Цены</a></nav>
+    </dialog>
 
     <main>
       <section class="hero" id="hero" data-scene="hero" data-pin-vh="115" aria-labelledby="hero-title">
@@ -44,7 +49,6 @@
           <canvas class="procedural-fog"></canvas>
         </div>
         <div class="hero-haze" aria-hidden="true"></div>
-        <div class="hero-black" aria-hidden="true"></div>
       </section>
 
       <section class="chapter film-scene" id="petr" data-scene="petr" data-pin-vh="620" aria-labelledby="petr-title">

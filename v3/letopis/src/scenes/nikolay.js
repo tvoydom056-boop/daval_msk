@@ -35,7 +35,8 @@ export function mountNikolay() {
 }
 export function animateNikolay({mobile}) {
   const timeline=pinTimeline('nikolay',600);
-  gsap.set('.bridge-video',{clipPath:'inset(0% 50% 0% 50%)'});
+  gsap.set('.bridge-video',{clipPath:'none'});
+  gsap.set('.bridge-blueprint',{opacity:.82});
   gsap.set('.bridge-video video',{scale:1.15,x:vw(5)});
   gsap.set('.bridge-length,.welding-sparks,.bridge-year,.brigade-frame,.brigade-copy,.bridge-night,.bridge-route,.route-counter,.route-copy,.bridge-caliper,.caliper-measure,.caliper-copy,.bridge-helmet,.bridge-quote,.bridge-evening',{opacity:0});
   gsap.set('.brigade-frame',{y:vh(70),rotation:9,rotationX:18});
@@ -48,7 +49,6 @@ export function animateNikolay({mobile}) {
   timeline.to('.bridge-length',{opacity:1,duration:4},7);
   revealLines(timeline,'.bridge-intro',5,4,1);
   timeline.addLabel('bridge',15)
-    .to('.bridge-video',{clipPath:'inset(0% 0% 0% 0%)',duration:20},15)
     .to('.bridge-video video',{x:()=>-vw(10),scale:1.05,duration:85},15)
     .to('.bridge-blueprint',{opacity:0,duration:15},15)
     .to('.bridge-drawing',{x:()=>vw(mobile?12:7.5),y:()=>vh(mobile?-5:2.5),scale:mobile?2.7:1.3,duration:20},15)

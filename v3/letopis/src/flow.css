@@ -1,0 +1,18 @@
+/* Both scenes share a viewport: fog clears over the actual pinned tree. */
+html.motion-ready #site #hero{margin-bottom:-100svh;z-index:3;background:transparent;pointer-events:none}
+html.motion-ready #hero a{pointer-events:auto}
+html.motion-ready #tree{z-index:1}
+html.motion-ready #hero .hero-shade{background:linear-gradient(180deg,#050c0b3d,#060f0c1a 33%,#060d0a3b 66%,#050c0ab3)}
+/* Closing images dissolve into the real paper, instead of a blank paper hold. */
+#site .book-page{z-index:4}
+#site .book-page::after{content:'';position:absolute;top:-150px;bottom:auto;left:0;right:0;height:150px;background:linear-gradient(transparent,#efe6d6);pointer-events:none}
+#site .book-has-next{padding-bottom:0}
+/* Put the entrance veil inside the masked page; keep the text at its original y. */
+#site .book-from-film{margin-top:-150px;padding-top:260px;background:linear-gradient(to bottom,transparent,#efe6d6 150px);box-shadow:none}
+#site .book-from-film::before{mask-image:linear-gradient(transparent,#000 150px)}
+#site .book-from-film::after{display:none}
+/* Dissolve the whole last page, never cut a moving edge through its text. */
+html.motion-ready #site .book-film-lead{margin-bottom:-100svh}
+#site .chapter-entry-fog{position:absolute;inset:0;z-index:30;pointer-events:none;background:radial-gradient(ellipse at 30% 62%,#c9c1ac80,transparent 75%),radial-gradient(ellipse at 80% 25%,#b7bdad70,transparent 70%);mix-blend-mode:screen}
+html:not(.motion-ready) #site .chapter-entry-fog{display:none}
+@media(max-width:767px){#site .book-from-film{padding-top:222px}}

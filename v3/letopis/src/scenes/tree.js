@@ -35,7 +35,12 @@ export function initTree({goTo}){
     const {width,height}=size();
     let scale,x,y;
     if(mobile()){
-      if(!pan.active){pan.scale=.75;pan.x=width/2-700*pan.scale;pan.y=height/2-326*pan.scale;}
+      if(!pan.active){
+        const blend=reduced?1:camera.overview;
+        pan.scale=(.75+(camera.zoom-1)*.18)*(1-blend)+.75*blend;
+        pan.x=width/2-(camera.x*(1-blend)+700*blend)*pan.scale;
+        pan.y=(height*.28-camera.y*pan.scale)*(1-blend)+(height/2-326*.75)*blend;
+      }
       constrain();scale=pan.scale;x=pan.x;y=pan.y;
     }else{
       const fit=Math.min(1,height/TREE.height,(width-24)/TREE.width),blend=camera.overview;
@@ -133,9 +138,9 @@ export function initTree({goTo}){
   resize();
   return {
     resize,
-    setReduced(value){reduced=value;pan.active=false;pan.vx=pan.vy=0;if(value){root.querySelectorAll('.tree-generation').forEach(el=>el.style.opacity='1');edges.forEach(el=>{el.style.strokeDashoffset='0';});}applyCamera();},
+    setReduced(value){reduced=value;pan.active=false;pan.vx=pan.vy=0;if(value){root.inert=false;root.querySelectorAll('.tree-generation').forEach(el=>el.style.opacity='1');edges.forEach(el=>{el.style.strokeDashoffset='0';});}applyCamera();},
     animate(){
-      const timeline=pinTimeline('tree',200,1);
+      const timeline=pinTimeline('tree',315,1);
       Object.assign(camera,{zoom:2.2,x:400,y:78,overview:0});pan.active=false;
       gsap.set('.tree-generation',{opacity:mobile()?.45:0});
       // The first generation is explicit because other world decorations precede it.
@@ -153,7 +158,12 @@ export function initTree({goTo}){
         timeline.to('.tree-edge[data-generation="'+index+'"]',{strokeDashoffset:0,duration:12},start)
           .to('.tree-generation[data-generation="'+index+'"]',{opacity:1,duration:4},start+8);
       }
-      timeline.to({}, {duration:30},70).addLabel('end',100);applyCamera();return {timeline};
+      timeline.to({}, {duration:30},70).addLabel('end',100);
+      // The real tree is already pinned behind the hero. Start its camera as fog opens.
+      const lead=mobile()?100*110/205:31.25;
+      timeline.shiftChildren(lead,true,0);
+      timeline.to({}, {duration:lead},0);
+      applyCamera();return {timeline};
     },
   };
 }

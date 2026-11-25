@@ -38,3 +38,9 @@ codex/v3/*.json
 codex/v3/frames_all/
 codex/v3/work_povod_scenes/
 run_*.out
+
+# v4 рабочие артефакты Codex и QA
+codex/v4/qa_out/
+codex/v4/work/
+codex/v4/probe/
+codex/v4/__pycache__/

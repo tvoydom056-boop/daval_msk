@@ -21,3 +21,12 @@
 Первый кадр сразу показывает диагональные половины. Home раскрывается через растущую полигональную замочную скважину на фотографии; поверхность снаружи прозрачная, после раскрытия clip-path снимается полностью, плоская фигура не остаётся.
 
 Computed-стили проверены в Happy DOM на 1440x900 и 375x812, включая вложенные строки подписей и письма. Сборка и расчёты проходят. capture_povod.py теперь проверяет точные размеры, первый кадр, снятие маски home и мобильную ленту. Реальная браузерная проверка в этом запуске не выполнена: автоматическая проверка разрешений отклонила доступ к Google Chrome. Для неё подготовлен qa/povod-runtime/review_probe.py, который работает в существующем Chrome без драйвера; не запускать его одновременно с preview на 4174. Результат DOM-проверки: codex/v3/povod_review_dom_audit.json.
+
+## Общая правка изоляции шрифтов и цвета - 25.11.2026
+- Весь интерфейс внутри #site с собственными font-family, color и background. Цвета светлых и тёмных сцен заданы на контейнерах; html/body дополнительно защищены !important.
+- src/fonts.css содержит явные @font-face, font-display:swap, только кириллицу и латиницу, включая Latin-ext для рубля. URL относительные, WOFF2 в dist/assets, base64 для шрифтов отключён через assetsInlineLimit:0.
+- В консоли доступен window.__auditTypography(): перечисляет элементы, зависимые от body по color/font-family, сравнивает computed styles до и после подстановки чёрного Arial.
+- Проверка production bundles в Happy DOM на 1440x900 и 375x812, с reduced-motion и без: все состояния дали colorFromBody=[], fontFromBody=[], changedByHost=[]. У Повода проверены home/wedding/birthday/anniversary/jubilee.
+- QA-движок имеет локальное исправление наследования !important, проверенное независимым CSS-fixture. Исходный файл сохранён. Сайт и его node_modules этим исправлением не затронуты.
+- Оба npm run build успешны. Визуальная проверка в настоящем браузере после этой правки не выполнена: Chromium недоступен; отдельный headless Edge завершился без CDP. Данные и компоновка Повода не менялись.
+- Отчёт: codex/v3/qa/type-tree/typography-report.json; запуск проверки: node qa/type-tree/fix_dom_inheritance.mjs, затем node qa/type-tree/audit_built.mjs при preview на 4273/4274.

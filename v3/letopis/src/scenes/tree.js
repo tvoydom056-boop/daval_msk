@@ -1,364 +1,159 @@
-import {family as D,people as P} from '../data.js';
-import {gsap,pinTimeline,addFrame,clamp} from '../lib/core.js';
-import {letters} from '../lib/text.js';
+import {family,people} from '../data.js';
+import {gsap,pinTimeline,addFrame,clamp,escapeHTML as e} from '../lib/core.js';
+import {TREE,treeRows,treePositions,treeEdges,lineage} from '../lib/tree-layout.js';
 
-export function mountTree() {
-  document.getElementById('petr').insertAdjacentHTML('beforebegin',`<section class="film-scene family-tree-scene" id="tree" data-scene="tree" data-pin-vh="220" aria-labelledby="tree-title"><div class="scene-stage tree-screen"><header class="tree-heading"><h2 id="tree-title">Из корней вырастаем мы.</h2></header><div class="tree-window"><div class="tree-stage" id="treeStage"><svg id="treeLines" aria-hidden="true"></svg><div id="ribbons"></div></div></div><aside class="selection" id="selection" hidden aria-live="polite"></aside><p class="tree-instruction" id="treeTouchHint">Потяните ленту или выберите человека</p><p class="tree-footnote">Вымышленная семья для демонстрации макета.</p></div></section>`);
-  letters(document.getElementById('tree-title'),'tree-title-char');
+export function mountTree(){
+  const cards=treeRows.map((row,index)=>'<div class="tree-generation" data-generation="'+index+'"><div class="tree-generation-label" style="top:'+treePositions[row[0][0]].y+'px"><b>'+family.generations[index].label+'</b><span>'+family.generations[index].years+'</span></div>'+row.map(([id])=>{
+    const p=people[id],pos=treePositions[id],[given,...surname]=p.name.split(' ');
+    return '<button type="button" class="tree-person" data-person="'+id+'" aria-pressed="false" aria-label="'+e(p.name+', '+p.years+', '+p.role)+'" style="left:'+pos.x+'px;top:'+pos.y+'px"><span class="tree-person-photo"><img src="./media/people/'+id+'.jpg" width="84" height="104" loading="lazy" draggable="false" alt="'+e(p.name)+'"></span><span class="tree-person-name"><span>'+e(given)+'</span><span>'+e(surname.join(' '))+'</span></span><span class="tree-person-years">'+e(p.years)+'</span></button>';
+  }).join('')+'</div>').join('');
+  const paths=treeEdges().map(edge=>{
+    const attributes=' data-kind="'+edge.type+'" data-generation="'+edge.generation+'" data-parents="'+edge.parents.join(' ')+'" data-children="'+edge.children.join(' ')+'" pathLength="1000" d="'+edge.d+'"/>';
+    return '<path class="tree-edge-guide"'+attributes+'<path class="tree-edge"'+attributes;
+  }).join('');
+  const html='<section class="film-scene family-tree-scene" id="tree" data-scene="tree" data-pin-vh="200" aria-labelledby="tree-title"><div class="scene-stage tree-screen"><canvas class="tree-dust" aria-hidden="true"></canvas><header class="tree-heading"><h2 id="tree-title">Из корней вырастаем мы.</h2><p>Пять поколений одной семьи</p></header><div class="tree-window" data-lenis-prevent><div class="tree-world"><div class="tree-family-name" style="left:400px">Соколовы</div><div class="tree-family-name" style="left:940px">Орловы</div><svg class="tree-links" viewBox="0 0 '+TREE.width+' '+TREE.height+'" aria-hidden="true">'+paths+'</svg>'+cards+'</div></div><aside class="selection tree-selection" hidden aria-live="polite"></aside><div class="tree-help"><span class="tree-desktop-hint">Выберите человека, чтобы увидеть его линию</span><span class="tree-mobile-hint">Двигайте древо пальцем</span><a href="#petr">К историям</a></div></div></section>';
+  document.getElementById('petr').insertAdjacentHTML('beforebegin',html);
 }
-export function initTree({goTo}) {
-  const $=(selector,root=document)=>root.querySelector(selector);
-  const $$=(selector,root=document)=>[...root.querySelectorAll(selector)];
-  const kids=id=>Object.keys(P).filter(key=>(P[key].parents||[]).includes(id));
-  const ease=t=>1-Math.pow(1-t,3);
-  let reduced=false,frame=0;
-  const growth={draw:0,move:0};
-  const camera={zoom:2.4,focus:0,overview:0};
-  const cameraFrame={scale:1,x:0};
-  /* Бесшовные ленты. Размер набора и число копий зависят от экрана. */
-  const family = $('#tree'), stage = $('#treeStage'), lines = $('#treeLines');
-  const selection = $('#selection');
-  const touchHint = $('#treeTouchHint');
-  const dismissTouchHint = () => { family.classList.add('has-tree-interaction'); };
-  family.addEventListener('pointerdown', dismissTouchHint, {once: true});
-  let rows = [], selected = 'nikolay', locked = false, hovered = null;
-  let treeVisible = false, drag = null, suppressClickUntil = 0;
-  const normalize = row => { row.offset = ((row.offset % row.span) + row.span) % row.span - row.span; };
-  const personHTML = (id, x, copy) => {
-    const p = P[id];
-    const [given, ...surname] = p.name.split(' ');
-    return `<button type="button" class="person${p.live ? ' person--live' : ''}" data-person="${id}" data-copy="${copy}" style="transform:translate3d(${x}px,0,0)" aria-label="${p.name}, ${p.years}, ${p.role}" aria-pressed="false"><span class="person__photo"><img src="./media/people/${id}.jpg" width="600" height="750" alt="${p.name}" loading="lazy" decoding="async" draggable="false" data-slot="ПОРТРЕТ: ${p.name}"></span><span class="person__name"><span class="person__given">${given}</span> <span class="person__surname">${surname.join(' ')}</span></span><span class="person__years">${p.years}</span><span class="person__role">${p.role}</span></button>`;
-  };
-  function ribbonLayout(generation, index, screenWidth, mobile) {
-    const width = mobile ? 72 : 112;
-    const count = generation.ids.length;
-    const baseStep = Math.max(mobile ? 132 : 230, 1.04 * screenWidth / count);
-    // Balanced deviations keep the loop period at count * baseStep.
-    const waves = generation.ids.map((_, i) => Math.sin(2 * Math.PI * i / count + index * .63 + .3));
-    const amplitude = Math.max(...waves.map(Math.abs), 1e-9);
-    const steps = waves.map(value => Math.max(mobile ? 132 : 0, baseStep * (1 + .08 * value / amplitude)));
-    const positions = {};
-    let cursor = 0;
-    generation.ids.forEach((id, i) => {
-      positions[id] = cursor;
-      cursor += steps[i];
-    });
-    return {width, span: cursor, positions, baseStep, steps, photoHeight: width * 1.25};
-  }
-  function renderPositions(row) {
-    row.buttons.forEach(button => { button.style.transform = `translate3d(${row.positions[button.dataset.person] + Number(button.dataset.copy) * row.span}px,0,0)`; });
-  }
-  function setHovered(id) {
-    if (hovered === id) return;
-    hovered = id; highlight();
-  }
-  function buildTree() {
-    const mobile = innerWidth <= 700;
-    const old = rows.map(r => r.offset / r.span);
-    const layouts = D.generations.map((g, index) => ribbonLayout(g, index, innerWidth, mobile));
-    // The opening shot keeps the two founders together on a phone as well.
-    if(mobile)layouts[0].positions.maria=76;
-    $('#ribbons').innerHTML = D.generations.map((g, index) => {
-      const {span, positions} = layouts[index];
-      const copies = Math.ceil(innerWidth * 2 / span) + 1;
-      const contents = Array.from({ length: copies }, (_, copy) => g.ids.map(id => personHTML(id, positions[id] + copy * span, copy)).join('')).join('');
-      return `<div class="ribbon" data-generation="${index}"><div class="ribbon__label" aria-label="${g.label} поколение, ${g.years}"><b>${g.label}</b><span>${g.years}</span></div><div class="ribbon__viewport" aria-label="${g.label} поколение, ${g.years}"><div class="ribbon__track" style="width:${span * copies}px">${contents}</div></div></div>`;
-    }).join('');
-    rows = D.generations.map((g, index) => {
-      const el = $(`[data-generation="${index}"]`), viewport = $('.ribbon__viewport', el), track = $('.ribbon__track', el);
-      const layout = layouts[index];
-      const row = { ...g, ...layout, basePositions: {...layout.positions}, el, viewport, track, offset: 0, velocity: 0, hover: false, pause: 1, tween: null, geometryTween: null, group: null, buttons: $$('.person', track), y: el.offsetTop + viewport.offsetTop };
-      const anchor = (layout.positions[g.ids[0]] + layout.positions[g.ids[g.ids.length - 1]]) / 2;
-      row.offset = old[index] !== undefined ? old[index] * row.span : innerWidth / 2 + (mobile ? 0 : 60) - layout.width / 2 - anchor;
-      normalize(row);
-      track.style.transform = `translate3d(${row.offset}px,0,0)`;
-      viewport.addEventListener('pointerenter', e => { if (e.pointerType !== 'touch') row.hover = true; });
-      viewport.addEventListener('pointerleave', () => { row.hover = false; setHovered(null); });
-      viewport.addEventListener('pointerover', e => { if (e.pointerType !== 'touch') setHovered(e.target.closest('[data-person]')?.dataset.person || null); });
-      viewport.addEventListener('focusin', e => { row.hover = true; setHovered(e.target.closest('[data-person]')?.dataset.person || null); });
-      viewport.addEventListener('focusout', () => { row.hover = false; setHovered(null); });
-      viewport.addEventListener('dragstart', e => e.preventDefault());
-      viewport.addEventListener('pointerdown', e => {
-        if (e.button !== 0 || e.isPrimary === false) return;
-        suppressClickUntil = 0;
-        drag = { row, pointer: e.pointerId, startX: e.clientX, startY: e.clientY, lastX: e.clientX, lastTime: performance.now(), active: false };
-        row.velocity = 0;
-      });
-      viewport.addEventListener('pointermove', e => {
-        if (!drag || drag.row !== row || drag.pointer !== e.pointerId) return;
-        const dx = e.clientX - drag.startX, dy = e.clientY - drag.startY;
-        if (!drag.active && Math.abs(dy) > 8 && Math.abs(dy) > Math.abs(dx)) { suppressClickUntil = performance.now() + 300; drag = null; return; }
-        if (!drag.active && Math.abs(dx) >= 6 && Math.abs(dx) > Math.abs(dy)) {
-          release(); drag.active = true; viewport.setPointerCapture(e.pointerId); viewport.classList.add('is-dragging');
-        }
-        if (drag.active) {
-          const now = performance.now(), delta = (e.clientX - drag.lastX)/cameraFrame.scale;
-          row.offset += delta;
-          if (reduced) { normalize(row); row.track.style.transform = `translate3d(${row.offset}px,0,0)`; drawConnections(performance.now()); }
-          row.velocity = clamp(delta / Math.max(8, now - drag.lastTime) * (1000 / 60), -35, 35);
-          drag.lastX = e.clientX; drag.lastTime = now;
-          suppressClickUntil = now + 300;
-          e.preventDefault();
-        }
-      });
-      const endDrag = e => {
-        if (!drag || drag.row !== row || drag.pointer !== e.pointerId) return;
-        if (drag.active) {
-          if (e.type === 'pointercancel' || performance.now() - drag.lastTime > 80) row.velocity = 0;
-          suppressClickUntil = performance.now() + 300;
-          if (viewport.hasPointerCapture(e.pointerId)) viewport.releasePointerCapture(e.pointerId);
-        }
-        viewport.classList.remove('is-dragging'); drag = null;
-      };
-      viewport.addEventListener('pointerup', endDrag);
-      viewport.addEventListener('pointercancel', endDrag);
-      viewport.addEventListener('lostpointercapture', endDrag);
-      return row;
-    });
-    lines.setAttribute('viewBox', `0 0 ${stage.clientWidth} ${stage.clientHeight}`);
 
-
-    if (locked) align(selected, true);
-    else if(!old.length){
-      const row=rows[0];
-      row.offset=innerWidth/2-(row.positions.petr+row.positions.maria)/2-row.width/2;
-      normalize(row);row.track.style.transform=`translate3d(${row.offset}px,0,0)`;
-    }
-    highlight();
-    setTabStops();
-    syncSizes();
-  }
-  function setTabStops() {
-    rows.forEach(row => row.ids.forEach(id => {
-      const copies = row.buttons.filter(b => b.dataset.person === id);
-      let nearest = null, distance = Infinity;
-      copies.forEach(b => { const x = row.offset + row.positions[id] + Number(b.dataset.copy) * row.span + row.width / 2; const dist = Math.abs(x - innerWidth / 2); if (dist < distance) { nearest = b; distance = dist; } });
-      copies.forEach(b => { b.tabIndex = b === nearest ? 0 : -1; });
-    }));
-  }
-  function highlight() {
-    const kin = new Set();
-    [selected, hovered].filter(Boolean).forEach(id => {
-      const p = P[id];
-      [id, ...(p.parents || []), ...kids(id), p.spouse].filter(Boolean).forEach(key => kin.add(key));
-    });
-    family.classList.toggle('is-selected', locked);
-    rows.forEach(row => row.buttons.forEach(b => {
-      b.classList.toggle('is-current', b.dataset.person === selected);
-      b.classList.toggle('is-kin', kin.has(b.dataset.person));
-      b.classList.toggle('is-hovered', b.dataset.person === hovered);
-      b.setAttribute('aria-pressed', String(locked && b.dataset.person === selected));
-    }));
-  }
-  function align(id, immediate = false) {
-    const p = P[id], groups = [p.parents || [], [id], kids(id)].filter(g => g.length);
-    const start = performance.now();
-    rows.forEach(row => {
-      row.group = groups.find(group => group.some(key => row.ids.includes(key))) || null;
-      row.tween = null;
-      const targetPositions = {...row.basePositions};
-      // Keep two selected relatives and their labels inside a phone viewport.
-      if (row.group?.length > 1 && innerWidth <= 700) {
-        const indexes = row.group.map(key => row.ids.indexOf(key));
-        const first = Math.min(...indexes), last = Math.max(...indexes);
-        const left = targetPositions[row.ids[first]], right = targetPositions[row.ids[last]];
-        if (right - left > innerWidth - 110) {
-          const spread = Math.max(132 * (last - first), innerWidth - 110);
-          const startX = (left + right - spread) / 2;
-          for (let i = first; i <= last; i++) targetPositions[row.ids[i]] = startX + (i - first) * spread / (last - first);
-        }
-      }
-      if (immediate || reduced) { row.positions = targetPositions; renderPositions(row); row.geometryTween = null; }
-      else row.geometryTween = {from: {...row.positions}, to: targetPositions, start};
-      if (!row.group) return;
-      const mean = row.group.reduce((sum, key) => sum + targetPositions[key] + row.width / 2, 0) / row.group.length;
-      const k = Math.round((innerWidth / 2 - row.offset - mean) / row.span);
-      const to = innerWidth / 2 - mean - k * row.span;
-      row.velocity = 0;
-      if (immediate || reduced) { row.offset = to; normalize(row); row.track.style.transform = `translate3d(${row.offset}px,0,0)`; }
-      else row.tween = { from: row.offset, to, start };
-    });
-  }
-  function select(id) {
-    dismissTouchHint();
-    family.classList.add('is-aligning');
-    selected = id; locked = true; highlight();
-    const p = P[id], hasChapter = D.chapters.some(ch => ch.id === id);
-    selection.innerHTML = `<div><h3>${p.name}</h3><p class="selection__years">${p.years} · ${p.role}</p></div><p class="selection__bio">${p.bio}</p><div>${hasChapter ? `<a class="glass-btn" href="#${id}">Читать историю</a>` : '<p class="selection__empty">Эту историю семья ещё не записала</p>'}<button class="selection__close" type="button">Отпустить древо</button></div>`;
-    selection.hidden = false;
-    // The shared animation loop also opens the panel on its next frame.
-    selection.classList.remove('is-open'); panelOpening = true;
-    $('.selection__close', selection).addEventListener('click', release);
-    syncSizes(); align(id); setTabStops(); if (reduced) drawConnections(performance.now());
-    if (hasChapter) goTo(document.getElementById(id));
-  }
-  let panelOpening = false;
-  function release() {
-    if (!locked) return;
-    locked = false; panelOpening = false; family.classList.remove('is-aligning');
-    rows.forEach(row => {
-      row.group = null; row.tween = null;
-      if (reduced) { row.positions = {...row.basePositions}; renderPositions(row); row.geometryTween = null; }
-      else row.geometryTween = {from: {...row.positions}, to: {...row.basePositions}, start: performance.now()};
-    });
-    selection.classList.remove('is-open'); selection.hidden = true; highlight(); syncSizes(); if(reduced)drawConnections(performance.now());
-  }
-  stage.addEventListener('click', e => {
-    if (performance.now() < suppressClickUntil) return;
-    const person = e.target.closest('[data-person]');
-    if (person) select(person.dataset.person); else release();
-  });
-  family.addEventListener('click', e => { if (!e.target.closest('.person,.selection')) release(); });
-
-  /* Геометрия связей берётся у ближайших копий, без чтения каждого портрета. */
-  function point(id, nearX = innerWidth / 2) {
-    const row = rows.find(r => r.ids.includes(id));
-    const local = row.positions[id] + row.width / 2;
-    const k = Math.round((nearX - row.offset - local) / row.span);
-    return { x: row.offset + local + k * row.span, top: row.y, bottom: row.y + row.photoHeight };
-  }
-  const avg = points => points.reduce((sum, p) => sum + p.x, 0) / points.length;
-  function connectionPaths(id, straight) {
-    const p = P[id], self = point(id), out = [];
-    const parents = (p.parents || []).map(key => point(key, self.x));
-    const children = kids(id).map(key => point(key, self.x));
-    const connect = (from, to) => {
-      const x1 = avg(from), x2 = avg(to), y1 = from[0].bottom, y2 = to[0].top;
-      if (straight) {
-        const a = y1 + 16, b = y2 - 16;
-        from.forEach(q => out.push(`M${q.x},${q.bottom}V${a}H${x1}`));
-        out.push(`M${x1},${a}L${x2},${b}`);
-        to.forEach(q => out.push(`M${x2},${b}H${q.x}V${q.top}`));
-      } else {
-        from.forEach(a => to.forEach(b => { const mid = (y1 + y2) / 2; out.push(`M${a.x},${y1}C${a.x},${mid} ${b.x},${mid} ${b.x},${y2}`); }));
-      }
-    };
-    if (parents.length) connect(parents, [self]);
-    if (children.length) connect([self], children);
-    if (p.spouse) {
-      const partner = point(p.spouse, self.x), y = self.top + (self.bottom - self.top) * .55;
-      const half = rows.find(r => r.ids.includes(id)).width / 2 + 5;
-      const side = partner.x > self.x ? 1 : -1;
-      out.push(`M${self.x + half * side},${y}H${partner.x - half * side}`);
-    }
-    return out;
-  }
-  const parentEdges = Object.entries(P).flatMap(([child, person]) => (person.parents || []).map(parent => ({parent, child})));
-  function visiblePoints(id) {
-    const row = rows.find(r => r.ids.includes(id));
-    const local = row.positions[id] + row.width / 2;
-    const viewLeft=-cameraFrame.x/cameraFrame.scale;
-    const viewRight=(innerWidth-cameraFrame.x)/cameraFrame.scale;
-    const first = Math.ceil((viewLeft-80-row.offset-local)/row.span);
-    const last = Math.floor((viewRight+80-row.offset-local)/row.span);
-    return Array.from({length: Math.max(0, last - first + 1)}, (_, i) => ({x: row.offset + local + (first + i) * row.span, top: row.y, bottom: row.y + row.photoHeight}));
-  }
-  function drawConnections(now) {
-    rows.forEach(row => { row.y = row.el.offsetTop + row.viewport.offsetTop + Number(gsap.getProperty(row.el,'y') || 0); });
-    lines.setAttribute('viewBox',`0 0 ${stage.clientWidth} ${stage.clientHeight}`);
-    const settled = locked && !rows.some(r => r.tween);
-    const seen = new Set();
-    let markup = '';
-    parentEdges.forEach(({parent, child}, i) => {
-      const pairs = [
-        ...visiblePoints(child).map(b => [point(parent, b.x), b]),
-        ...visiblePoints(parent).map(a => [a, point(child, a.x)])
-      ];
-      pairs.forEach(([a, b]) => {
-        const key = `${parent}:${child}:${Math.round(a.x)}:${Math.round(b.x)}`;
-        if (seen.has(key)) return;
-        seen.add(key);
-        const mid = (a.bottom + b.top) / 2;
-        const sway = reduced ? 0 : Math.sin(now * .00065 + i * 1.3) * 5;
-        markup += `<path class="kin-line" pathLength="1000" style="stroke-dasharray:1000;stroke-dashoffset:${1000*(1-clamp(growth.draw*5-D.generations.findIndex(g=>g.ids.includes(child))+1))}" d="M${a.x},${a.bottom}C${a.x + sway},${mid} ${b.x - sway},${mid} ${b.x},${b.top}"/>`;
-      });
-    });
-    markup += connectionPaths(selected, settled).map(d => `<path class="active-line" pathLength="1000" style="stroke-dasharray:1000;stroke-dashoffset:${1000*(1-growth.draw)}" d="${d}"/>`).join('');
-    if (hovered && hovered !== selected) markup += connectionPaths(hovered, false).map(d => `<path class="active-line hover-line" pathLength="1000" style="stroke-dasharray:1000;stroke-dashoffset:${1000*(1-growth.draw)}" d="${d}"/>`).join('');
-    lines.innerHTML = markup;
-  }
-
-
-  function syncSizes() {
-    const mobile=innerWidth<=700;
-    const width=mobile?72:112;
-    family.style.setProperty('--tree-photo-width',`${width}px`);
-    stage.style.height=`${(mobile?144:188)*5}px`;
-    stage.style.width=`${innerWidth}px`;
-    rows.forEach(row=>{row.width=width;row.photoHeight=width*1.25;});
-    lines.setAttribute('viewBox',`0 0 ${stage.clientWidth} ${stage.clientHeight}`);
-    applyCamera();
+export function initTree({goTo}){
+  const root=document.getElementById('tree'),viewport=root.querySelector('.tree-window'),world=root.querySelector('.tree-world'),panel=root.querySelector('.selection');
+  const nodes=[...root.querySelectorAll('[data-person]')],edges=[...root.querySelectorAll('.tree-edge,.tree-edge-guide')];
+  let reduced=false,selected=null,hovered=null,suppressClick=0,gesture=null;
+  const camera={zoom:2.2,x:400,y:78,overview:0};
+  const view={scale:1,x:0,y:0};
+  const pan={active:false,scale:.75,x:0,y:0,vx:0,vy:0};
+  const pointers=new Map();
+  const mobile=()=>innerWidth<768;
+  const size=()=>({width:viewport.clientWidth||innerWidth,height:viewport.clientHeight||innerHeight*.74});
+  function constrain(){
+    const {width,height}=size(),w=TREE.width*pan.scale,h=TREE.height*pan.scale;
+    pan.x=w>width?clamp(pan.x,width-w-32,32):(width-w)/2;
+    pan.y=h>height?clamp(pan.y,height-h-24,24):(height-h)/2;
   }
   function applyCamera(){
-    if(reduced){stage.style.transform='none';cameraFrame.scale=1;cameraFrame.x=0;return;}
-    const viewport=$('.tree-window');
-    const height=viewport.clientHeight||innerHeight*.7;
-    const worldHeight=(innerWidth<=700?144:188)*5;
-    const fit=Math.min(1,(height-10)/worldHeight);
-    const blend=camera.overview;
-    const scale=camera.zoom*(1-blend)+fit*blend;
-    const petr=point('petr'),maria=point('maria',petr.x);
-    const pair=(petr.x+maria.x)/2;
-    const center=pair*(1-blend)+innerWidth/2*blend;
-    const focus=rows[0].photoHeight/2+camera.focus*(innerWidth<=700?144:188);
-    const y=(height*.45-focus*scale)*(1-blend)+(height-worldHeight*fit)/2*blend;
-    const x=innerWidth/2-center*scale;
-    stage.style.transform=`translate3d(${x}px,${y}px,0) scale(${scale})`;
-    cameraFrame.scale=scale;cameraFrame.x=x;
-  }
-  buildTree();
-  addFrame(family,(seconds,delta)=>{
-    const now=seconds*1000,dt=delta*1000,frames=dt/(1000/60);
-    treeVisible=true;
-    if(panelOpening){selection.classList.add('is-open');panelOpening=false;}
-      if (treeVisible) {
-        rows.forEach(row => {
-          if (row.geometryTween) {
-            const t = clamp((now - row.geometryTween.start) / 900), p = ease(t);
-            row.ids.forEach(id => { row.positions[id] = row.geometryTween.from[id] + (row.geometryTween.to[id] - row.geometryTween.from[id]) * p; });
-            renderPositions(row);
-            if (t >= 1) row.geometryTween = null;
-          }
-          if (row.tween) {
-            const t = clamp((now - row.tween.start) / 900);
-            row.offset = row.tween.from + (row.tween.to - row.tween.from) * ease(t);
-            if (t >= 1) { row.tween = null; normalize(row); setTabStops(); }
-          } else if (!(locked && row.group) && !reduced && growth.move > 0 && !(drag?.active && drag.row === row)) {
-            row.pause = clamp(row.pause + (row.hover ? -1 : 1) * dt / 400);
-            row.offset += row.speed * frames * row.pause + row.velocity * frames;
-            row.velocity *= Math.pow(.95, frames);
-            if (Math.abs(row.velocity) < .01) row.velocity = 0;
-            normalize(row);
-          }
-          normalize(row);
-          row.track.style.transform = `translate3d(${row.offset}px,0,0)`;
-        });
-        applyCamera();drawConnections(now);
-        if (locked && !rows.some(row => row.tween || row.geometryTween)) family.classList.remove('is-aligning');
-        if (++frame % 120 === 0) setTabStops();
-      }
-
-  });
-  return {
-    resize:()=>{buildTree();drawConnections(0);},
-    setReduced:value=>{reduced=value;growth.draw=value?1:0;growth.move=0;camera.zoom=2.4;camera.focus=0;camera.overview=value?1:0;syncSizes();drawConnections(0);},
-    animate:()=>{
-      const timeline=pinTimeline('tree',220,1);
-      growth.draw=0;growth.move=0;
-      camera.zoom=2.4;camera.focus=0;camera.overview=0;applyCamera();
-      gsap.set('.ribbon',{clipPath:'none',y:0,filter:'brightness(.25)'});
-      gsap.set(rows[0].el,{filter:'brightness(1)'});
-      gsap.set('.tree-title-char',{yPercent:120});
-      timeline.to('.tree-title-char',{yPercent:0,duration:3,stagger:.22},0)
-        .to(camera,{zoom:1.85,focus:1,duration:18,onUpdate:applyCamera},0)
-        .to(camera,{zoom:1.35,focus:2,duration:16,onUpdate:applyCamera},18)
-        .to(camera,{zoom:1.05,focus:3,duration:16,onUpdate:applyCamera},34)
-        .to(camera,{zoom:.86,focus:4,duration:12,onUpdate:applyCamera},50)
-        .to(camera,{overview:1,duration:8,onUpdate:applyCamera},62)
-        .to('.ribbon:not(:first-child)',{filter:'brightness(1)',duration:12,stagger:13},8)
-        .to(growth,{draw:1,duration:62},8).to(growth,{move:1,duration:1},70)
-        .to({}, {duration:29},71).addLabel('end',100);
-      return {timeline};
+    if(reduced&&!mobile()){world.style.transform='none';return;}
+    const {width,height}=size();
+    let scale,x,y;
+    if(mobile()){
+      if(!pan.active){pan.scale=.75;pan.x=width/2-700*pan.scale;pan.y=height/2-326*pan.scale;}
+      constrain();scale=pan.scale;x=pan.x;y=pan.y;
+    }else{
+      const fit=Math.min(1,height/TREE.height,(width-24)/TREE.width),blend=camera.overview;
+      scale=camera.zoom*(1-blend)+fit*blend;
+      const center=camera.x*(1-blend)+TREE.width/2*blend;
+      x=width/2-center*scale;
+      y=(height*.28-camera.y*scale)*(1-blend)+(height-TREE.height*fit)/2*blend;
     }
+    Object.assign(view,{scale,x,y});
+    world.style.transform='translate3d('+x+'px,'+y+'px,0) scale('+scale+')';
+    root.dataset.treeScale=scale.toFixed(4);
+  }
+  function highlight(){
+    const active=hovered||selected,kin=active?lineage(active):null;
+    root.classList.toggle('has-lineage',Boolean(active));
+    nodes.forEach(node=>{
+      const on=kin?.has(node.dataset.person);
+      node.classList.toggle('is-related',Boolean(on));node.classList.toggle('is-dim',Boolean(kin&&!on));
+      node.classList.toggle('is-current',node.dataset.person===active);
+      node.setAttribute('aria-pressed',String(node.dataset.person===selected));
+    });
+    edges.forEach(edge=>{
+      const parents=edge.dataset.parents.split(' '),children=edge.dataset.children.split(' ').filter(Boolean);
+      const on=kin&&(edge.dataset.kind==='couple'?parents.every(id=>kin.has(id)):parents.some(id=>kin.has(id))&&children.some(id=>kin.has(id)));
+      edge.classList.toggle('is-related',Boolean(on));edge.classList.toggle('is-dim',Boolean(kin&&!on));
+    });
+  }
+  function close(){selected=null;panel.hidden=true;panel.classList.remove('is-open');root.classList.remove('is-selected');highlight();applyCamera();}
+  function select(id){
+    selected=id;const person=people[id],chapter=['petr','nikolay','sergey','maria'].includes(id);
+    panel.innerHTML='<div><h3>'+e(person.name)+'</h3><p class="selection__years">'+e(person.years)+'</p></div><p class="selection__bio">'+e(person.bio)+'</p><div>'+(chapter?'<a class="glass-btn" href="#'+id+'">Читать историю</a>':'')+'<button type="button" class="selection__close" aria-label="Закрыть сведения о человеке">Закрыть</button></div>';
+    panel.hidden=false;panel.classList.add('is-open');root.classList.add('is-selected');
+    panel.querySelector('.selection__close').addEventListener('click',close);
+    panel.querySelector('.glass-btn')?.addEventListener('click',event=>{event.preventDefault();event.stopPropagation();goTo(document.getElementById(id));});
+    highlight();applyCamera();
+  }
+  world.addEventListener('pointerover',event=>{if(event.pointerType==='touch')return;const id=event.target.closest('[data-person]')?.dataset.person;if(hovered!==id){hovered=id||null;highlight();}});
+  world.addEventListener('pointerleave',()=>{hovered=null;highlight();});
+  world.addEventListener('focusin',event=>{hovered=event.target.closest('[data-person]')?.dataset.person||null;highlight();});
+  world.addEventListener('focusout',()=>{hovered=null;highlight();});
+  world.addEventListener('click',event=>{if(performance.now()<suppressClick)return;const person=event.target.closest('[data-person]');if(person)select(person.dataset.person);else close();});
+  root.addEventListener('keydown',event=>{if(event.key==='Escape')close();});
+  function local(event){const rect=viewport.getBoundingClientRect();return {x:event.clientX-rect.left,y:event.clientY-rect.top};}
+  function beginGesture(){
+    const pts=[...pointers.values()];
+    if(pts.length>=2){const [a,b]=pts;const center={x:(a.x+b.x)/2,y:(a.y+b.y)/2};gesture={pinch:true,distance:Math.hypot(a.x-b.x,a.y-b.y),scale:pan.scale,wx:(center.x-pan.x)/pan.scale,wy:(center.y-pan.y)/pan.scale};suppressClick=performance.now()+400;}
+    else if(pts.length){gesture={pinch:false,start:{...pts[0]},last:{...pts[0]},time:performance.now(),moved:false};}
+    else gesture=null;
+  }
+  viewport.addEventListener('pointerdown',event=>{
+    if(!mobile()||event.button>0)return;
+    if(!pan.active){Object.assign(pan,{active:true,...view,vx:0,vy:0});}
+    pan.vx=pan.vy=0;pointers.set(event.pointerId,local(event));beginGesture();
+    try{viewport.setPointerCapture(event.pointerId);}catch{/* Synthetic events have no active pointer. */}
+  });
+  viewport.addEventListener('pointermove',event=>{
+    if(!pointers.has(event.pointerId)||!gesture)return;
+    const point=local(event);pointers.set(event.pointerId,point);const pts=[...pointers.values()];
+    if(gesture.pinch&&pts.length>=2){
+      const [a,b]=pts,center={x:(a.x+b.x)/2,y:(a.y+b.y)/2};
+      pan.scale=clamp(gesture.scale*Math.hypot(a.x-b.x,a.y-b.y)/Math.max(1,gesture.distance),.6,1.4);
+      pan.x=center.x-gesture.wx*pan.scale;pan.y=center.y-gesture.wy*pan.scale;suppressClick=performance.now()+400;
+    }else{
+      const now=performance.now(),dx=point.x-gesture.last.x,dy=point.y-gesture.last.y,elapsed=Math.max(8,now-gesture.time);
+      if(Math.hypot(point.x-gesture.start.x,point.y-gesture.start.y)>5)gesture.moved=true;
+      pan.x+=dx;pan.y+=dy;pan.vx=clamp(dx/elapsed*16.67,-36,36);pan.vy=clamp(dy/elapsed*16.67,-36,36);gesture.last=point;gesture.time=now;
+      if(gesture.moved)suppressClick=now+350;
+    }
+    constrain();applyCamera();event.preventDefault();
+  });
+  function endPointer(event){
+    if(!pointers.has(event.pointerId))return;
+    if(gesture?.pinch||gesture?.moved)suppressClick=performance.now()+350;
+    if(event.type==='pointercancel'){pan.vx=pan.vy=0;}
+    pointers.delete(event.pointerId);beginGesture();
+    try{if(viewport.hasPointerCapture(event.pointerId))viewport.releasePointerCapture(event.pointerId);}catch{}
+  }
+  ['pointerup','pointercancel','lostpointercapture'].forEach(type=>viewport.addEventListener(type,endPointer));
+  viewport.addEventListener('wheel',event=>{
+    if(!mobile()||!event.ctrlKey)return;event.preventDefault();
+    if(!pan.active)Object.assign(pan,{active:true,...view,vx:0,vy:0});
+    const point=local(event),wx=(point.x-pan.x)/pan.scale,wy=(point.y-pan.y)/pan.scale;
+    pan.scale=clamp(pan.scale*Math.exp(-event.deltaY*.003),.6,1.4);pan.x=point.x-wx*pan.scale;pan.y=point.y-wy*pan.scale;constrain();applyCamera();
+  },{passive:false});
+  const canvas=root.querySelector('.tree-dust'),ctx=canvas.getContext('2d');
+  const dust=Array.from({length:34},(_,index)=>({x:Math.random(),y:Math.random(),size:.5+Math.random()*1.2,phase:index*1.7}));
+  function resize(){canvas.width=innerWidth;canvas.height=innerHeight;pan.vx=pan.vy=0;applyCamera();}
+  addFrame(root,(seconds,delta)=>{
+    if(mobile()&&pan.active&&!pointers.size&&(Math.abs(pan.vx)>.04||Math.abs(pan.vy)>.04)){
+      const frames=delta*60;pan.x+=pan.vx*frames;pan.y+=pan.vy*frames;pan.vx*=Math.pow(.91,frames);pan.vy*=Math.pow(.91,frames);constrain();applyCamera();
+    }
+    ctx.clearRect(0,0,canvas.width,canvas.height);ctx.fillStyle='#d9ac70';
+    dust.forEach(dot=>{ctx.globalAlpha=.09+.12*(.5+.5*Math.sin(seconds*.23+dot.phase));ctx.beginPath();ctx.ellipse(((dot.x+seconds*.0015)%1)*canvas.width,((dot.y-seconds*.0008+1)%1)*canvas.height,dot.size,dot.size,0,0,Math.PI*2);ctx.fill();});
+  },{fps:30});
+  resize();
+  return {
+    resize,
+    setReduced(value){reduced=value;pan.active=false;pan.vx=pan.vy=0;if(value){root.querySelectorAll('.tree-generation').forEach(el=>el.style.opacity='1');edges.forEach(el=>{el.style.strokeDashoffset='0';});}applyCamera();},
+    animate(){
+      const timeline=pinTimeline('tree',200,1);
+      Object.assign(camera,{zoom:2.2,x:400,y:78,overview:0});pan.active=false;
+      gsap.set('.tree-generation',{opacity:mobile()?.45:0});
+      // The first generation is explicit because other world decorations precede it.
+      gsap.set(root.querySelector('.tree-generation[data-generation="0"]'),{opacity:1});
+      if(mobile())gsap.set(root.querySelector('.tree-generation[data-generation="1"]'),{opacity:1});
+      gsap.set('.tree-edge',{strokeDasharray:1000,strokeDashoffset:1000});
+      gsap.set('.tree-edge[data-generation="0"]',{strokeDashoffset:0});
+      timeline.to(camera,{zoom:1.6,x:700,y:238,duration:18,onUpdate:applyCamera},0)
+        .to(camera,{zoom:1.2,x:675,y:398,duration:16,onUpdate:applyCamera},18)
+        .to(camera,{zoom:1,x:550,y:558,duration:16,onUpdate:applyCamera},34)
+        .to(camera,{zoom:.95,x:625,y:718,duration:12,onUpdate:applyCamera},50)
+        .to(camera,{overview:1,duration:8,onUpdate:applyCamera},62);
+      for(let index=1;index<5;index++){
+        const start=6+(index-1)*14;
+        timeline.to('.tree-edge[data-generation="'+index+'"]',{strokeDashoffset:0,duration:12},start)
+          .to('.tree-generation[data-generation="'+index+'"]',{opacity:1,duration:4},start+8);
+      }
+      timeline.to({}, {duration:30},70).addLabel('end',100);applyCamera();return {timeline};
+    },
   };
 }

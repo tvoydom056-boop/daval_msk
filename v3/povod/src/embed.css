@@ -1,0 +1,10 @@
+/* Keep typography inside the project, including in a host's artifact frame. */
+html,body{background:#fdf0e7!important;color:#1d1a1c!important;font-family:Onest,sans-serif!important;margin:0!important}
+#site{position:relative;min-height:100svh;background:#fdf0e7;color:#1d1a1c;font-family:Onest,sans-serif;font-size:16px;font-weight:400;font-synthesis:none;--peach:#f7d9c6;--paper:#fdf0e7;--ink:#1d1a1c;--accent:#e8743b;--gutter:5.3vw}
+#site .hero,#site .landing-hero{color:#fff7ec;font-family:Onest,sans-serif}
+#site .occasions,#site .phone-stage,#site .section,#site .footer{color:#1d1a1c;font-family:Onest,sans-serif}
+#site .film-story{color:var(--film-ink,#fff7ec);font-family:Onest,sans-serif}
+#site .film-scene.story-panel{color:var(--scene-ink,#fff7ec);font-family:Onest,sans-serif}
+body.story-route #site{background:var(--film-bg,#fdf0e7)}
+body.story-active #site{color:var(--film-ink,#1d1a1c);--accent:var(--film-accent,#e8743b)}
+@media(max-width:767px){#site{--gutter:6.4vw}}

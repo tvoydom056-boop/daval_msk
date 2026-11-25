@@ -1,6 +1,8 @@
 import './style.css';
 import './story.css';
 import './occasions.css';
+import './embed.css';
+import './style-audit.js';
 import Lenis from 'lenis';
 import { gsap, ScrollTrigger, $, $$, order, videoController } from './shared';
 import { heroMarkup, landingMarkup, mountHero } from './scenes/hero';

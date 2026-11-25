@@ -1,5 +1,4 @@
-@import '@fontsource-variable/literata';
-@import '@fontsource-variable/literata/wght-italic.css';
+@import './fonts.css';
 @import 'lenis/dist/lenis.css';
 
 :root {

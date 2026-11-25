@@ -1,6 +1,9 @@
 import './style.css';
 import './scenes.css';
 import './presentation.css';
+import './tree.css';
+import './embed.css';
+import './lib/style-audit.js';
 import Lenis from 'lenis';
 import {gsap,ScrollTrigger,$,$$,initMedia,setMediaReduced,loadMedia} from './lib/core.js';
 import {words,splitLines,odometer} from './lib/text.js';

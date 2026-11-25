@@ -21,7 +21,7 @@ from capture_film import mathematical_audit, seek
 
 ROOT=Path(__file__).resolve().parent
 PROJECT=ROOT.parents[1]/'v3'/'letopis'
-SCENES={'hero':115,'tree':220,'petr':620,'nikolay':600,'sergey':560,'maria':560}
+SCENES={'hero':115,'tree':200,'petr':620,'nikolay':600,'sergey':560,'maria':560}
 PINS={**SCENES,'restoration':120,'benefits':360}
 CAPTURE_SCENES=[*SCENES,'benefits']
 VIEWPORTS=[(1440,900),(375,812)]
@@ -37,8 +37,8 @@ def geometry(project):
         record['pinLengthsPx']={name:height*distance/100 for name,distance in PINS.items()}
         record['sumOfPinsVh']=sum(PINS.values())
         record['naturalHeightVh']=800
-        record['pinnedPlusNaturalPx']=height*39.55
-        record['pageFormula']='3155vh of pins + 800vh of natural pinned stages + restoration notes + other paper sections + footer'
+        record['pinnedPlusNaturalPx']=height*39.35
+        record['pageFormula']='3135vh of pins + 800vh of natural pinned stages + restoration notes + other paper sections + footer'
         record['lowerSectionsHeight']='Measured by window.__film.layout() in the actual browser, not guessed.'
         if width==375:
             envelope_w=width*.27
@@ -152,13 +152,14 @@ def capture(browser,url,width,height,output):
     # Verify real user interactions after the storyboard capture.
     tree=next(pin for pin in page.evaluate('window.__film.metrics()') if pin['id']=='tree')
     seek(page,tree['start']+tree['length']*.7)
-    page.locator('[data-person="anna"][tabindex="0"]').click()
+    page.locator('[data-person="anna"]').click()
     assert page.locator('.selection').is_visible()
     page.locator('.selection__close').click()
     assert not page.locator('.selection').is_visible()
-    page.locator('[data-person="petr"][tabindex="0"]').click();page.wait_for_timeout(1800)
-    petr=next(pin for pin in page.evaluate('window.__film.metrics()') if pin['id']=='petr')
-    assert abs(page.evaluate('scrollY')-petr['start'])<5
+    page.locator('[data-person="nikolay"]').click()
+    page.locator('.tree-selection .glass-btn').click();page.wait_for_timeout(1800)
+    chapter=next(pin for pin in page.evaluate('window.__film.metrics()') if pin['id']=='nikolay')
+    assert abs(page.evaluate('scrollY')-chapter['start'])<5
     price_y=page.evaluate('document.getElementById("prices").getBoundingClientRect().top+scrollY');seek(page,price_y)
     page.locator('[data-plan="История жизни"]').click();page.wait_for_timeout(1800)
     assert page.locator('[name=plan]').input_value()=='История жизни'

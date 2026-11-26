@@ -1,0 +1,88 @@
+/* Only the life example gets a film title; the other chapters keep their entry. */
+body[data-page="example-life"] #site .life-title{position:absolute;inset:0;z-index:34;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:100px 6.4% 90px;text-align:center;background:#07110d25;color:#f7f0e3;font-family:'Literata Variable',Literata,Georgia,serif;text-shadow:0 2px 24px #07110dc9;pointer-events:none}
+body[data-page="example-life"] #site .life-title-copy{width:100%;max-width:1280px;margin-top:-5vh}
+body[data-page="example-life"] #site .life-title-format{font-size:13px;letter-spacing:.23em;text-transform:uppercase;margin-bottom:30px;color:#f7f0e3}
+body[data-page="example-life"] #site .life-title h1{font-size:clamp(90px,10.8vw,164px);font-weight:300;line-height:1.12;letter-spacing:-.055em;text-wrap:balance;margin:0 0 34px;color:#f7f0e3;font-family:'Literata Variable',Literata,Georgia,serif}
+body[data-page="example-life"] #site .life-title .written-char{display:inline-block}
+body[data-page="example-life"] #site .life-title-word{display:inline-block;white-space:nowrap}
+body[data-page="example-life"] #site .life-title-years{font-size:18px;line-height:1.75;color:#f7f0e3;max-width:660px;margin:auto;text-wrap:balance}
+body[data-page="example-life"] #site .life-title-scroll{position:absolute;bottom:7%;font-size:12px;letter-spacing:.12em;color:#f7f0e3}
+html:not(.motion-ready) body[data-page="example-life"] #site .life-title{position:relative;inset:auto;min-height:85svh;width:100%;margin:0;order:-20;background:linear-gradient(#10191485,#10191485),url('../public/media/war.jpg') center/cover}
+html:not(.motion-ready) body[data-page="example-life"] #site .life-title-scroll{display:none}
+@media(max-width:767px){
+  body[data-page="example-life"] #site .life-title{padding:100px 24px 90px}
+  body[data-page="example-life"] #site .life-title-copy{margin-top:-3vh}
+  body[data-page="example-life"] #site .life-title-format{font-size:11px;margin-bottom:24px;letter-spacing:.18em}
+  body[data-page="example-life"] #site .life-title h1{font-size:clamp(60px,17.6vw,84px);line-height:1.12;letter-spacing:-.05em;margin-bottom:28px}
+  body[data-page="example-life"] #site .life-title-years{font-size:15px;line-height:1.8;max-width:310px}
+}
+
+/* The same paper continues after the book; objects, recording and map are its archive. */
+body[data-page="example-life"] #site .life-archive{position:relative;isolation:isolate;background:#efe6d6;color:#302820;font-family:'Literata Variable',Literata,Georgia,serif}
+body[data-page="example-life"] #site .life-archive::before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.3;background-image:repeating-radial-gradient(circle at 23% 41%,#76583512 0 .6px,transparent .7px 3.4px);background-size:9px 11px}
+body[data-page="example-life"] #site .life-archive-section{position:relative;padding:76px 0 86px;color:#302820;font-family:'Literata Variable',Literata,Georgia,serif;line-height:1.7;background:transparent}
+body[data-page="example-life"] #site .life-archive-wrap{width:calc(100% - 144px);max-width:1200px;margin:auto}
+body[data-page="example-life"] #site .life-archive-heading{position:relative;border-top:1px solid #9a5b2c40;padding-top:34px;margin-bottom:35px}
+body[data-page="example-life"] #site .life-margin-number{display:block;font-size:13px;letter-spacing:.12em;color:#9a5b2c;margin-bottom:14px}
+body[data-page="example-life"] #site .life-archive-heading h2{font-size:clamp(36px,3.8vw,56px);font-weight:350;line-height:1.2;letter-spacing:-.04em;margin:0;color:#302820;font-family:'Literata Variable',Literata,Georgia,serif}
+body[data-page="example-life"] #site .life-archive-heading p{font-size:14px;line-height:1.7;margin-top:18px;color:#765b43}
+body[data-page="example-life"] #site .life-object-table{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px;align-items:start;padding-top:22px}
+body[data-page="example-life"] #site .life-object{margin:0;min-width:0}
+body[data-page="example-life"] #site .life-object-open{display:flex;align-items:center;justify-content:center;width:100%;height:320px;padding:12px;border:0;border-radius:0;background:transparent;cursor:zoom-in;transition:transform .55s cubic-bezier(.2,.7,.2,1);color:#302820;font-family:'Literata Variable',Literata,Georgia,serif}
+body[data-page="example-life"] #site .life-object img{position:static;display:block;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;filter:drop-shadow(3px 12px 9px #4b342a26);transition:filter .55s}
+body[data-page="example-life"] #site .life-object-0 img{transform:rotate(-7deg)}
+body[data-page="example-life"] #site .life-object-1 img{transform:rotate(8deg);margin-top:65px}
+body[data-page="example-life"] #site .life-object-2 img{transform:rotate(-8deg);margin-top:30px}
+body[data-page="example-life"] #site .life-object-3 img{transform:rotate(4deg);max-height:280px}
+body[data-page="example-life"] #site .life-object figcaption{font-size:14px;line-height:1.7;color:#6e5039;margin-top:24px;max-width:250px}
+body[data-page="example-life"] #site .life-object-open:hover,body[data-page="example-life"] #site .life-object-open:focus-visible{transform:translateY(-12px)}
+body[data-page="example-life"] #site .life-object-open:hover img{filter:drop-shadow(5px 23px 14px #4b342a35)}
+body[data-page="example-life"] #site .life-object-open:focus-visible{outline:1px solid #9a5b2c;outline-offset:8px}
+body[data-page="example-life"] #site .life-voice-layout{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:70px;border-top:1px solid #9a5b2c40;padding-top:34px}
+body[data-page="example-life"] #site .life-voice .life-archive-heading{border:0;padding:0;margin:0}
+body[data-page="example-life"] #site .life-voice-recording{padding-top:34px;min-width:0}
+body[data-page="example-life"] #site .life-recording-caption{font-size:18px;line-height:1.7;margin:0;color:#5d4737;max-width:680px}
+body[data-page="example-life"] #site .life-wave{display:block;width:100%;height:90px;margin:25px 0;fill:none;stroke:#966c47;stroke-width:2;stroke-linecap:round}
+body[data-page="example-life"] #site .life-archive-button{display:inline-block;max-width:100%;padding:13px 20px;border:1px solid #9a5b2c75;border-radius:2px;background:#e6d6ba;color:#533a27;font-family:'Literata Variable',Literata,Georgia,serif;font-size:14px;line-height:1.6;cursor:pointer;text-align:left}
+body[data-page="example-life"] #site .life-archive-button:focus-visible{outline:2px solid #9a5b2c;outline-offset:5px}
+body[data-page="example-life"] #site .life-voice-status{font-size:13px;line-height:1.7;margin:14px 0 0;color:#765b43}
+body[data-page="example-life"] #site .life-voice-status:empty{display:none}
+body[data-page="example-life"] #site .life-transcript{margin:40px 0 0;padding:25px 0 0;border-top:1px solid #9a5b2c40;font-size:25px;font-style:italic;line-height:1.65;color:#65452e;text-wrap:pretty}
+body[data-page="example-life"] #site .life-memory-layout{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:65px;align-items:center}
+body[data-page="example-life"] #site .life-map-print{margin:0;background:#faf4e7;padding:14px;transform:rotate(-1deg);box-shadow:0 7px 17px #4b342a17}
+body[data-page="example-life"] #site .life-map{display:block;width:100%;height:auto;font-family:'Literata Variable',Literata,Georgia,serif}
+body[data-page="example-life"] #site .life-memory-copy>p:first-child{font-size:20px;line-height:1.8;color:#463626;margin:0 0 30px}
+body[data-page="example-life"] #site .life-archive-button:disabled{opacity:.65;cursor:default;background:transparent}
+body[data-page="example-life"] #site .life-route-note{font-size:13px;line-height:1.7;color:#765b43;margin-top:14px}
+body[data-page="example-life"] #site .life-fiction{font-size:13px;line-height:1.7;color:#765b43;margin-top:56px}
+body[data-page="example-life"] #site .life-lightbox{position:fixed;inset:0;width:min(1000px,calc(100vw - 64px));max-width:none;max-height:calc(100svh - 48px);margin:auto;padding:26px 32px 30px;border:1px solid #c4b69e;border-radius:2px;background:#efe6d6;color:#302820;font-family:'Literata Variable',Literata,Georgia,serif;overflow:auto;overscroll-behavior:contain}
+body[data-page="example-life"] #site .life-lightbox::backdrop{background:#120f0bce;backdrop-filter:blur(5px)}
+body[data-page="example-life"] #site .life-lightbox-close{display:block;margin:0 0 18px auto;padding:8px 12px;border:1px solid #9a5b2c75;background:transparent;color:#5b3f2b;font-family:'Literata Variable',Literata,Georgia,serif;font-size:14px;line-height:1.5}
+body[data-page="example-life"] #site .life-lightbox figure{margin:0;text-align:center}
+body[data-page="example-life"] #site .life-lightbox img{display:block;width:auto;height:auto;max-width:100%;max-height:calc(100svh - 225px);margin:auto;object-fit:contain;filter:drop-shadow(3px 12px 10px #4b342a26)}
+body[data-page="example-life"] #site .life-lightbox figcaption{font-size:18px;line-height:1.6;max-width:720px;margin:26px auto 0;color:#533a27}
+@media(max-width:767px){
+  body[data-page="example-life"] #site .life-archive-section{padding:48px 0 54px}
+  body[data-page="example-life"] #site .life-archive-wrap{width:calc(100% - 48px)}
+  body[data-page="example-life"] #site .life-archive-heading{padding-top:24px;margin-bottom:26px}
+  body[data-page="example-life"] #site .life-archive-heading h2{font-size:36px;line-height:1.25}
+  body[data-page="example-life"] #site .life-object-table{grid-template-columns:repeat(2,minmax(0,1fr));gap:38px 24px;padding-top:0}
+  body[data-page="example-life"] #site .life-object-open{height:210px;padding:5px}
+  body[data-page="example-life"] #site .life-object-1 img{margin-top:40px}
+  body[data-page="example-life"] #site .life-object-2 img{margin-top:20px}
+  body[data-page="example-life"] #site .life-object-3 img{max-height:190px}
+  body[data-page="example-life"] #site .life-object figcaption{font-size:14px;line-height:1.65;margin-top:18px}
+  body[data-page="example-life"] #site .life-voice-layout{display:block;padding-top:24px}
+  body[data-page="example-life"] #site .life-voice-recording{padding-top:28px}
+  body[data-page="example-life"] #site .life-recording-caption{font-size:18px}
+  body[data-page="example-life"] #site .life-wave{height:70px;margin:20px 0}
+  body[data-page="example-life"] #site .life-transcript{font-size:22px;line-height:1.7;margin-top:32px}
+  body[data-page="example-life"] #site .life-memory-layout{display:block}
+  body[data-page="example-life"] #site .life-map-print{padding:8px}
+  body[data-page="example-life"] #site .life-memory-copy{margin-top:32px}
+  body[data-page="example-life"] #site .life-memory-copy>p:first-child{font-size:18px;line-height:1.8}
+  body[data-page="example-life"] #site .life-fiction{margin-top:40px}
+  body[data-page="example-life"] #site .life-lightbox{width:calc(100vw - 24px);padding:16px 18px 24px;max-height:calc(100svh - 24px)}
+  body[data-page="example-life"] #site .life-lightbox figcaption{font-size:16px;line-height:1.65;margin-top:22px}
+}
+@media(prefers-reduced-motion:reduce){body[data-page="example-life"] #site .life-object-open,body[data-page="example-life"] #site .life-object img{transition:none}}

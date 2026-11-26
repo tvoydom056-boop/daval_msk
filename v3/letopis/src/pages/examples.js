@@ -10,6 +10,8 @@ import {mountMaria,animateMaria} from '../scenes/maria.js';
 import {mountBook} from '../scenes/book.js';
 import {mountChapterTransitions} from '../lib/transitions.js';
 import {candleMarkup,initCandle} from '../lib/candle.js';
+import {mountLifeTitle} from '../lib/life-title.js';
+import {mountLifeArchive} from './life-archive.js';
 
 // The fixed plane also covers the incoming film until the archive dissolves.
 function animateFamilyFlow(){
@@ -37,6 +39,7 @@ export function mountExample(id){
   let tree;
   if(id==='life'){
     main.innerHTML=assetMarkup(petrHTML)+'<div id="lower"></div>';
+    mountLifeTitle($('#petr'));
     $$('#petr .front-copy,#petr .medal-copy').forEach(el=>el.dataset.lines='');
     words($('#petr blockquote'));
     $('.medal-metal').style.setProperty('--medal-mask',`url("${new URL(media('medal.png'),document.baseURI).href}")`);
@@ -56,6 +59,7 @@ export function mountExample(id){
   mountBook({intro:id==='family',outro:id==='family',introBefore:id==='family'?'tree':undefined});
   mountChapterTransitions();
   $('#lower').outerHTML=candleMarkup({tone:'paper'})+tariffBlock(id==='maria'||id==='sergey'?'life':id);
+  if(id==='life')mountLifeArchive();
   initCandle({key:`letopis-example-${id}-candle-v1`});
   const definitions=id==='life'?[['petr',animatePetr]]:id==='family'?[['tree',()=>{const result=tree.animate();animateFamilyFlow();return result;}],['nikolay',animateNikolay]]:id==='maria'?[['maria',animateMaria]]:[['sergey',animateSergey]];
   return {book:true,tree,definitions,onReady:()=>tree?.onReady(),onStatic:()=>{

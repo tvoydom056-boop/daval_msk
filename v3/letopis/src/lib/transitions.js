@@ -41,7 +41,12 @@ export function animateChapterTransition(timeline){
   // These are initially visible in the original film. Never mix them with book text.
   const opening=root.querySelectorAll('.chapter-label,.beat-year,.scoreboard');
   gsap.set(opening,{autoAlpha:0});
-  timeline.to(opening,{autoAlpha:1,duration:.6,ease:'none'},lead);
+  const title=root.querySelector('.life-title');
+  timeline.to(opening,{autoAlpha:1,duration:title?lead*.12:.6,ease:'none'},title?lead*.88:lead);
+  if(title){
+    // Add only after shifting the original movie: reuse its existing entry lead.
+    timeline.to(title,{autoAlpha:0,filter:'blur(10px)',y:()=>-vh(5),duration:lead*.6,ease:'none'},lead*.4);
+  }
 }
 
 export function animatePageExits(){

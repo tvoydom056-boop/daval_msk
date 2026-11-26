@@ -23,6 +23,7 @@ export function initCandle({key,root=document.querySelector('#candle')}){
     const value=lit?1:0,text=candleCountText(value);
     root.dataset.candleCount=String(value);count.hidden=!value;count.textContent=value?String(value):'';label.textContent=value?text.slice(String(value).length+1):text;
     button.setAttribute('aria-pressed',String(lit));button.disabled=false;
+    button.textContent=lit?'Свеча горит':home.candle.button;
   }
   button.addEventListener('click',()=>{
     if(lit){flame.pulse();return;}

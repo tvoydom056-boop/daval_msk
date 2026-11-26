@@ -9,6 +9,7 @@ import {mountSergey,animateSergey,setStaticSergey} from '../scenes/sergey.js';
 import {mountMaria,animateMaria} from '../scenes/maria.js';
 import {mountBook} from '../scenes/book.js';
 import {mountChapterTransitions} from '../lib/transitions.js';
+import {candleMarkup,initCandle} from '../lib/candle.js';
 
 // The fixed plane also covers the incoming film until the archive dissolves.
 function animateFamilyFlow(){
@@ -54,7 +55,8 @@ export function mountExample(id){
   }
   mountBook({intro:id==='family',outro:id==='family',introBefore:id==='family'?'tree':undefined});
   mountChapterTransitions();
-  $('#lower').outerHTML=tariffBlock(id==='maria'||id==='sergey'?'life':id);
+  $('#lower').outerHTML=candleMarkup({tone:'paper'})+tariffBlock(id==='maria'||id==='sergey'?'life':id);
+  initCandle({key:`letopis-example-${id}-candle-v1`});
   const definitions=id==='life'?[['petr',animatePetr]]:id==='family'?[['tree',()=>{const result=tree.animate();animateFamilyFlow();return result;}],['nikolay',animateNikolay]]:id==='maria'?[['maria',animateMaria]]:[['sergey',animateSergey]];
   return {book:true,tree,definitions,onReady:()=>tree?.onReady(),onStatic:()=>{
     if(id==='life'){odometer($('.year'))(1941);$('.count-number').textContent='37';}

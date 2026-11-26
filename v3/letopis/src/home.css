@@ -145,6 +145,8 @@
 #site .is-lit .candle-lit{opacity:1;animation:candle-flicker 4s ease-in-out 1.8s infinite alternate}
 #site .is-lit .candle-glow{opacity:1;animation:candle-glow 3.7s ease-in-out 2s infinite alternate}
 #site #light-candle:disabled{cursor:default;background:#b77c43;border-color:#b77c43}
+#site .request-form .form-consent{margin:14px 0 0;max-width:540px;font-size:14px;line-height:1.7;color:var(--home-ink,#48382b);font-family:'Literata Variable',Literata,Georgia,serif}
+#site .form-consent a{color:inherit;text-decoration:underline;text-underline-offset:3px}
 #site #faq,#site #request{background:#efe6d6}
 #site #faq{padding-top:140px}
 #site #request{padding-top:40px;padding-bottom:90px}

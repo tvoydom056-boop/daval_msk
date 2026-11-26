@@ -1,0 +1,59 @@
+/* Isolated catalogue surface. All copy has an explicit Literata/colour ancestor. */
+body[data-page="families"] #site{background:#efe6d6}
+body[data-page="families"] #site .vignette{display:none}
+body[data-page="families"] #site .families-page{position:relative;z-index:2;min-height:85svh;padding:158px 0 90px;background:#efe6d6;color:#302820;font-family:'Literata Variable',Literata,Georgia,serif;line-height:1.65}
+body[data-page="families"] #site .families-wrap{width:calc(100% - 2 * var(--gutter));max-width:1440px;margin-inline:auto}
+body[data-page="families"] #site .families-heading{color:#302820;font-family:'Literata Variable',Literata,Georgia,serif;max-width:1020px}
+body[data-page="families"] #site .families-kicker{margin:0 0 24px;color:#8b542e;font-size:12px;line-height:1.5;letter-spacing:.12em;text-transform:uppercase}
+body[data-page="families"] #site .families-heading h1{margin:0;font-size:clamp(42px,4.8vw,70px);line-height:1.14;font-weight:350;letter-spacing:-.045em;text-wrap:balance}
+body[data-page="families"] #site .families-intro{max-width:720px;margin:28px 0 0;font-size:17px;line-height:1.8;color:#645344}
+body[data-page="families"] #site .families-filters{display:flex;flex-wrap:wrap;gap:10px;margin:45px 0 30px;color:#302820;font-family:'Literata Variable',Literata,Georgia,serif}
+body[data-page="families"] #site .families-filters button{min-height:46px;max-width:100%;padding:11px 20px;border:1px solid #9c80605e;border-radius:5px;background:transparent;color:#58432e;font-family:'Literata Variable',Literata,Georgia,serif;font-size:14px;font-weight:400;line-height:1.5;text-transform:none;letter-spacing:0;cursor:pointer;transition:background .2s,border-color .2s,color .2s}
+body[data-page="families"] #site .families-filters button:hover{border-color:#896443;background:#e5d7c1}
+body[data-page="families"] #site .families-filters button[aria-pressed="true"]{background:#493b2d;color:#fff2de;border-color:#493b2d}
+body[data-page="families"] #site .families-filters button:focus-visible,body[data-page="families"] #site .families-publication a:focus-visible{outline:3px solid #8b542e;outline-offset:4px}
+body[data-page="families"] #site .families-catalogue{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px 18px;color:#fff3df;font-family:'Literata Variable',Literata,Georgia,serif}
+body[data-page="families"] #site .families-entry{min-width:0;margin:0}
+body[data-page="families"] #site .families-entry[hidden]{display:none!important}
+body[data-page="families"] #site .families-card{position:relative;isolation:isolate;display:flex;align-items:flex-end;aspect-ratio:4/5.4;min-height:460px;overflow:hidden;border-radius:6px;background:#342c23;color:#fff3df;text-decoration:none;font-family:'Literata Variable',Literata,Georgia,serif}
+body[data-page="families"] #site .families-card>img{position:absolute;z-index:-2;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:center 35%;transition:transform 1.4s cubic-bezier(.2,.5,.3,1)}
+body[data-page="families"] #site .families-card::after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,#1c160f30,transparent 24%,#1c160f13 34%,#1c160fc9 65%,#1c160ff2 100%);pointer-events:none}
+body[data-page="families"] #site .families-card-top{position:absolute;top:22px;left:22px;right:22px;display:flex;align-items:flex-start;justify-content:space-between;gap:8px;color:#fff3df;font-family:'Literata Variable',Literata,Georgia,serif}
+body[data-page="families"] #site .families-tariff,body[data-page="families"] #site .families-example{padding:6px 10px;border:1px solid #e5c6a44d;border-radius:4px;background:#211a14c9;font-size:11px;line-height:1.5;font-weight:400;margin:0;backdrop-filter:blur(10px)}
+body[data-page="families"] #site .families-example{flex-shrink:0;color:#e6cfb2}
+body[data-page="families"] #site .families-card-copy{width:100%;min-width:0;padding:30px 25px;color:#fff3df;font-family:'Literata Variable',Literata,Georgia,serif}
+body[data-page="families"] #site .families-card-copy h2{max-width:450px;margin:0 0 12px;font-size:clamp(27px,2.35vw,36px);line-height:1.2;font-weight:350;letter-spacing:-.025em;overflow-wrap:anywhere;text-wrap:balance}
+body[data-page="families"] #site .families-years{margin:0;font-size:14px;line-height:1.6;color:#e4ceb0}
+body[data-page="families"] #site .families-summary{overflow:hidden;margin:16px 0 0;font-size:14px;line-height:1.7;color:#f0dfc9;text-overflow:ellipsis;white-space:nowrap}
+body[data-page="families"] #site .families-open{display:inline-flex;align-items:center;justify-content:center;max-width:100%;min-height:46px;margin-top:23px;padding:11px 17px;border:1px solid #ead4b6;border-radius:4px;background:#f0e4d0;color:#332719;font-size:13px;line-height:1.5;transition:opacity .3s,transform .45s}
+body[data-page="families"] #site .families-card:focus-visible{outline:3px solid #8b542e;outline-offset:5px}
+body[data-page="families"] #site .families-publication{margin-top:46px;padding-top:27px;border-top:1px solid #99785c55;color:#645344;font-family:'Literata Variable',Literata,Georgia,serif;font-size:15px;line-height:1.8}
+body[data-page="families"] #site .families-publication a{text-decoration:underline;text-decoration-color:#9a795b80;text-underline-offset:5px}
+body[data-page="families"] #site .families-publication a:hover{color:#8b542e}
+@media(hover:hover) and (pointer:fine){
+  body[data-page="families"] #site .families-open{opacity:0;transform:translateY(7px)}
+  body[data-page="families"] #site .families-card:hover>img,body[data-page="families"] #site .families-card:focus-visible>img{transform:scale(1.07)}
+  body[data-page="families"] #site .families-card:hover .families-open,body[data-page="families"] #site .families-card:focus-visible .families-open{opacity:1;transform:translateY(0)}
+}
+@media(min-width:601px) and (max-width:1050px){
+  body[data-page="families"] #site .families-catalogue{grid-template-columns:repeat(2,minmax(0,1fr))}
+  body[data-page="families"] #site .families-card{min-height:440px}
+}
+@media(max-width:600px){
+  body[data-page="families"] #site .families-page{padding:120px 0 65px}
+  body[data-page="families"] #site .families-heading h1{font-size:40px;line-height:1.17}
+  body[data-page="families"] #site .families-kicker{margin-bottom:20px}
+  body[data-page="families"] #site .families-intro{margin-top:23px;font-size:16px}
+  body[data-page="families"] #site .families-filters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:30px 0 24px}
+  body[data-page="families"] #site .families-filters button{padding:10px 8px;font-size:12px;min-height:45px}
+  body[data-page="families"] #site .families-catalogue{grid-template-columns:minmax(0,1fr);gap:22px}
+  body[data-page="families"] #site .families-card{min-height:450px;aspect-ratio:4/5.6}
+  body[data-page="families"] #site .families-card-top{top:18px;left:20px;right:20px}
+  body[data-page="families"] #site .families-card-copy{padding:27px 22px}
+  body[data-page="families"] #site .families-card-copy h2{font-size:30px}
+  body[data-page="families"] #site .families-publication{margin-top:33px;font-size:14px}
+}
+@media(prefers-reduced-motion:reduce){
+  body[data-page="families"] #site .families-card>img,body[data-page="families"] #site .families-open,body[data-page="families"] #site .families-filters button{transition:none}
+}
+@media(max-width:767px){body[data-page="families"] #site .families-open{opacity:1;transform:none}}

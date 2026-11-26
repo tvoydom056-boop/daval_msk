@@ -1,0 +1,23 @@
+/* A single flame owns all flicker and illumination. No pre-lit photograph. */
+#site .candle-section{position:relative;isolation:isolate;--candle-power:0}
+#site .candle-section .candle-layout{position:relative;z-index:1}
+#site .candle-room-glow{position:absolute;inset:0;pointer-events:none;z-index:0;opacity:calc(var(--candle-power) * .4);background:radial-gradient(ellipse at 73% 42%,#ffad382d,transparent 62%);mix-blend-mode:screen}
+#site .candle-section .candle-image{isolation:isolate}
+#site .candle-section .candle-base{z-index:0;opacity:1;transition:filter .8s;filter:brightness(.62)}
+#site .candle-section.is-lit .candle-base{opacity:1;filter:brightness(.96) saturate(1.05)}
+#site .candle-flame{position:absolute;left:41.3876%;top:9.8884%;width:16.7464%;height:31.1005%;z-index:3;pointer-events:none;filter:blur(.35px)}
+#site .candle-air{position:absolute;inset:0;width:100%;height:100%;z-index:4;pointer-events:none}
+#site .candle-aura{position:absolute;left:30%;top:1%;width:43%;height:49%;z-index:1;pointer-events:none;opacity:var(--candle-power);background:radial-gradient(ellipse,#ffc16430,transparent 65%);mix-blend-mode:screen}
+#site .candle-wax-light{position:absolute;inset:0;z-index:2;pointer-events:none;opacity:calc(var(--candle-power) * .8);background:radial-gradient(ellipse 28% 14% at 50% 38%,#ffc56e66,transparent 85%);mix-blend-mode:soft-light}
+#site .candle-count .candle-count-label{font-size:14px;line-height:1.8;margin-right:0}
+#site .candle-count [hidden]{display:none}
+#site .candle-tone-paper{background:#efe6d6;color:#302820;font-family:'Literata Variable',Literata,Georgia,serif}
+#site .candle-tone-paper .candle-room-glow{mix-blend-mode:multiply;opacity:calc(var(--candle-power) * .23)}
+#site .candle-tone-paper .candle-aura{mix-blend-mode:multiply;background:radial-gradient(ellipse,#d9963d29,transparent 65%)}
+#site .candle-tone-paper .candle-base{filter:none}
+#site .candle-tone-paper.is-lit .candle-base{filter:brightness(1.05) saturate(1.08)}
+#site .candle-tone-paper .candle-count{color:#8b542e}
+body[data-page="example-page"] #site .candle-tone-paper{background:#faf6ee}
+body[data-page="example-page"] #site .candle-section.is-lit .candle-base{opacity:1;filter:brightness(1.05) saturate(1.08)}
+@media(max-width:767px){#site .candle-room-glow{background:radial-gradient(ellipse at 50% 72%,#ffad382b,transparent 60%)}}
+@media(prefers-reduced-motion:reduce){#site .candle-section .candle-base{transition:none}}

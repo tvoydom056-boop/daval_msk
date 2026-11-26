@@ -23,7 +23,7 @@ export function mountMemoryPage(){
   initCandle({key:'letopis-page-galina-candle-v1'});
   mountPetals(document.querySelector('#galina'));
   mountPetals(document.querySelector('#garden'),{light:true});
-  return {definitions:[['galina',()=>{gsap.fromTo('.memory-cover-image img',{filter:'brightness(1.8) saturate(.4)',opacity:.3},{filter:'brightness(1) saturate(1)',opacity:1,duration:1.7,ease:'power2.out'});return {};}],['memory-story',()=>{
+  return {definitions:[['galina',()=>{const intro=gsap.fromTo('.memory-cover-image img',{filter:'brightness(1.8) saturate(.4)',opacity:.3},{filter:'brightness(1) saturate(1)',opacity:1,duration:1.7,ease:'power2.out'});return {intro};}],['memory-story',()=>{
     document.querySelectorAll('.memory-print').forEach(photo=>gsap.fromTo(photo,{opacity:0,y:30,rotation:parseFloat(photo.style.getPropertyValue('--print-turn'))*2.3},{opacity:1,y:0,rotation:parseFloat(photo.style.getPropertyValue('--print-turn')),duration:1.05,ease:'power2.out',scrollTrigger:{trigger:photo,start:'top 94%',once:true}}));return {};
   }],['garden',()=>{gsap.fromTo('.memory-garden>img',{yPercent:-8},{yPercent:8,ease:'none',scrollTrigger:{trigger:'#garden',start:'top bottom',end:'bottom top',scrub:1}});return {};}]]};
 }

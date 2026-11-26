@@ -6,6 +6,7 @@ import {animateHero} from '../scenes/hero.js';
 import {sectionMarkup} from '../scenes/sections.js';
 import {animateHomeTone} from '../lib/home-tone.js';
 import {candleMarkup,initCandle} from '../lib/candle.js';
+import {animateHowLine} from '../lib/how-line.js';
 
 export const heading=data=>`<p class="eyebrow">${e(data.kicker)}</p><h2>${e(data.title)}</h2>`;
 export function mountHome(){
@@ -34,10 +35,7 @@ export function mountHome(){
     section.dataset.theme=section.dataset.tone;
   });
   initHomeControls();
-  return {onStatic:()=>animateHomeTone({reduced:true}),definitions:[['hero',animateHero],['about',()=>({timeline:gsap.timeline({scrollTrigger:{id:'about',trigger:'#about',start:'top top',end:()=>'+='+vh(115),pin:'.home-about-stage',scrub:true}}).to({},{duration:1})})],['how',()=>{
-    $$('.home-steps li').forEach(step=>gsap.fromTo(step,{opacity:.25,y:28},{opacity:1,y:0,ease:'none',scrollTrigger:{trigger:step,start:'top 94%',end:'top 65%',scrub:true}}));
-    return {};
-  }],['main',animateHomeTone]]};
+  return {onStatic:()=>{animateHomeTone({reduced:true});animateHowLine({reduced:true});},definitions:[['hero',animateHero],['about',()=>({timeline:gsap.timeline({scrollTrigger:{id:'about',trigger:'#about',start:'top top',end:()=>'+='+vh(115),pin:'.home-about-stage',scrub:true}}).to({},{duration:1})})],['how',animateHowLine],['main',animateHomeTone]]};
 }
 
 function initHomeControls(){

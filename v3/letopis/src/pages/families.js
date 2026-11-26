@@ -2,6 +2,8 @@ import {home} from '../content/home.js';
 import {family} from '../content/family.js';
 import {escapeHTML as e} from '../lib/core.js';
 import {siteURL} from '../lib/shell.js';
+import {reelMarkup,initFamilyReel} from '../lib/family-reel.js';
+import '../family-reel.css';
 
 // Keep the catalogue connected to the approved examples and family biographies.
 const firstSentence=text=>text.match(/^[\s\S]*?[.!?](?:\s|$)/)?.[0].trim()||text;
@@ -24,6 +26,7 @@ export function mountFamilies(){
         <h1 id="families-title">${e(home.families.title)}</h1>
         <p class="families-intro">${e(home.families.note)}</p>
       </header>
+      ${reelMarkup(items)}
       <div class="families-filters" role="group" aria-label="Фильтр по тарифу">
         ${filters.map(([id,label])=>`<button type="button" data-family-filter="${id}" aria-pressed="${id==='all'}" aria-controls="families-catalogue">${e(label)}</button>`).join('')}
       </div>
@@ -51,5 +54,6 @@ export function mountFamilies(){
     buttons.forEach(control=>control.setAttribute('aria-pressed',String(control===button)));
     cards.forEach(card=>{card.hidden=selected!=='all'&&card.dataset.familyFormat!==selected;});
   }));
+  initFamilyReel();
   return {};
 }

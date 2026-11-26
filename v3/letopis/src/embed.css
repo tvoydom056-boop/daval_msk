@@ -1,6 +1,6 @@
 /* The host page must never be the typographic parent of this site. */
 html,body{background:#0b0c0a!important;color:#f3ece0!important;font-family:'Literata Variable',Literata,Georgia,serif!important;margin:0!important}
-#site{position:relative;min-height:100svh;background:#0b0c0a;color:#f3ece0;font-family:'Literata Variable',Literata,Georgia,serif;font-size:16px;font-weight:300;font-synthesis:none;--paper:#f3ece0;--copper:#c9894a;--ink:#2b2a33;--gutter:5.6vw}
+#site{position:relative;min-height:100svh;background:#0b0c0a;color:#f3ece0;font-family:'Literata Variable',Literata,Georgia,serif;font-size:16px;font-weight:300;font-synthesis:none;--paper:#f3ece0;--copper:#c9894a;--ink:#2b2a33;--gutter:5.6vw;overflow-anchor:none}
 #site .hero,#site .film-scene,#site .chapter-stage,#site .chapter-transition{color:#f3ece0;font-family:'Literata Variable',Literata,Georgia,serif}
 #site .paper-section,#site .restore-stage,#site .benefits-stage{color:#39372e;font-family:'Literata Variable',Literata,Georgia,serif}
 #site #prices,#site .site-footer,#site .navigation{color:#f3ece0;font-family:'Literata Variable',Literata,Georgia,serif}

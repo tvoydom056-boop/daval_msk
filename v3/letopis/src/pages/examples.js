@@ -12,6 +12,8 @@ import {mountChapterTransitions} from '../lib/transitions.js';
 import {candleMarkup,initCandle} from '../lib/candle.js';
 import {mountLifeTitle} from '../lib/life-title.js';
 import {mountLifeArchive} from './life-archive.js';
+import {family} from '../content/family.js';
+import {escapeHTML as e} from '../lib/core.js';
 
 // The fixed plane also covers the incoming film until the archive dissolves.
 function animateFamilyFlow(){
@@ -52,9 +54,14 @@ export function mountExample(id){
         if(window.__lenis&&trigger)window.__lenis.scrollTo(trigger.start+innerHeight*.75,{force:true,duration:1.5});
         else target.scrollIntoView();
       }});
-      $('#site').insertAdjacentHTML('afterbegin','<div class="family-backdrop" aria-hidden="true"></div>');
+      $('#site').insertAdjacentHTML('afterbegin',`<div class="family-backdrop" aria-hidden="true"><img class="family-album" src="${media('home/card-family.jpg')}" width="1600" height="2000" decoding="async" alt=""></div>`);
     }else if(id==='maria')mountMaria();
-    else if(id==='sergey')mountSergey();
+    else if(id==='sergey'){
+      mountSergey();
+      const person=family.people.sergey,root=$('#sergey');
+      $('.scene-stage',root).insertAdjacentHTML('afterbegin',`<header class="life-title example-entry-title"><p class="entry-format">История жизни</p><h1 id="sergey-entry-name">${e(person.name)}</h1><p class="entry-years">${e(person.years)} · ${e(person.role)}</p><p class="entry-scroll">Листайте</p></header>`);
+      root.setAttribute('aria-labelledby','sergey-entry-name');
+    }
   }
   mountBook({intro:id==='family',outro:id==='family',introBefore:id==='family'?'tree':undefined});
   mountChapterTransitions();

@@ -34,6 +34,9 @@ export function drawPaths(timeline, selector, at, duration, stagger = .35) {
 const visible = new Set();
 const animations = new Set();
 let reducedMotion = false;
+let touched=false;
+export const canLoadVideo=()=>!reducedMotion&&(!matchMedia('(max-width: 767px)').matches||touched);
+const near=root=>{const rect=root.getBoundingClientRect();return rect.top<innerHeight*1.9&&rect.bottom>-innerHeight*.9;};
 export function addFrame(root, draw, {fps = 60} = {}) {
   const item = {root,draw,interval:1000/fps,last:0};
   animations.add(item);
@@ -41,30 +44,36 @@ export function addFrame(root, draw, {fps = 60} = {}) {
 }
 export const isVisible = root => visible.has(root) && !document.hidden;
 export function loadMedia(root) {
-  if(reducedMotion)return;
+  if(!canLoadVideo()||!near(root))return;
   $$('video',root).forEach(video=>{
     const source=video.querySelector('source[data-src]');
-    if(source&&!source.getAttribute('src')){if(video.preload!=='auto')video.preload='metadata';source.src=source.dataset.src;video.load();}
+    if(source&&!source.getAttribute('src')){video.preload='none';source.src=source.dataset.src;video.load();}
   });
 }
 export function initMedia() {
   const roots = $$('[data-scene], .paper-section');
   const load = loadMedia;
   const preload = new IntersectionObserver(entries => entries.forEach(entry => {
-    if(entry.isIntersecting){load(entry.target);preload.unobserve(entry.target);}
-  }),{rootMargin:'500px'});
+    if(entry.isIntersecting)load(entry.target);
+  }),{rootMargin:`${Math.round(innerHeight*.9)}px`});
   const observer = new IntersectionObserver(entries => entries.forEach(entry => {
     const root=entry.target;
     if(entry.isIntersecting)visible.add(root);else visible.delete(root);
     $$('video',root).forEach(video => {
-      if(entry.isIntersecting&&!reducedMotion&&!document.hidden){load(root);video.play()?.catch(()=>{});}
+      if(entry.isIntersecting&&canLoadVideo()&&!document.hidden){load(root);video.play()?.catch(()=>{});}
       else video.pause();
     });
   }));
   roots.forEach(root=>{preload.observe(root);observer.observe(root);});
   document.addEventListener('visibilitychange',()=>roots.forEach(root=>$$('video',root).forEach(video=>{
-    if(isVisible(root)&&!reducedMotion)video.play()?.catch(()=>{});else video.pause();
+    if(isVisible(root)&&canLoadVideo()){load(root);video.play()?.catch(()=>{});}else video.pause();
   })));
+  // There are no mobile encodes in this edition: keep posters until a real touch.
+  document.addEventListener('pointerdown',event=>{
+    if(!event.isTrusted||event.pointerType!=='touch'||touched)return;
+    touched=true;
+    roots.filter(near).forEach(root=>{load(root);if(isVisible(root))$$('video',root).forEach(video=>video.play()?.catch(()=>{}));});
+  },{passive:true});
   gsap.ticker.add((time, delta) => {
     if(document.hidden)return;
     animations.forEach(item=>{
@@ -79,6 +88,6 @@ export function setMediaReduced(value) {
   reducedMotion=value;
   $$('video').forEach(video=>{
     const root=video.closest('[data-scene],.paper-section');
-    if(!value&&isVisible(root))video.play()?.catch(()=>{});else video.pause();
+    if(canLoadVideo()&&isVisible(root)){loadMedia(root);video.play()?.catch(()=>{});}else video.pause();
   });
 }

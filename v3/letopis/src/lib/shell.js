@@ -8,7 +8,8 @@ export const assetMarkup=html=>html.replaceAll('./media/',siteURL('media/'));
 export function mountShell(){
   const example=document.body.dataset.page.startsWith('example-');
   const links=[...(example?[['На главную','index.html']]:[]),['Примеры','index.html#examples'],['Цены','index.html#prices'],['Наши семьи','families.html'],['Заявка','index.html#request']];
-  const items=links.map(([label,href])=>`<a${label==='Цены'?' class="nav-primary"':''} href="${siteURL(href)}">${label}</a>`).join('');
+  const current=document.body.dataset.page==='families'?'Наши семьи':'';
+  const items=links.map(([label,href])=>`<a${label==='Заявка'?' class="nav-primary"':''}${label===current?' aria-current="page"':''} href="${siteURL(href)}">${label}</a>`).join('');
   document.querySelector('#site').insertAdjacentHTML('afterbegin',`<a class="skip-link" href="#main">К содержанию</a><nav class="navigation" aria-label="Главная навигация"><a class="wordmark" href="${siteURL('index.html')}">Летопись</a><div class="nav-links">${items}</div><button class="nav-toggle" type="button" aria-haspopup="dialog" aria-controls="mobile-menu" aria-expanded="false">Меню</button></nav><dialog class="mobile-menu" id="mobile-menu" aria-labelledby="mobile-menu-title" data-lenis-prevent><header class="mobile-menu-header"><p id="mobile-menu-title">Летопись</p><button class="menu-close" type="button">Закрыть</button></header><nav aria-label="Разделы сайта">${items}</nav></dialog>`);
   document.querySelector('.site-footer').innerHTML=`<p>${e(home.footer.note)}</p><nav aria-label="Документы">${home.footer.docs.map(([label,url])=>`<a href="${siteURL(url)}">${e(label)}</a>`).join('')}</nav>`;
 }

@@ -12,7 +12,7 @@ export function mountMaria() {
   const envelopes=cities.map((city,index)=>{const angle=index*Math.PI/3;return `<figure class="school-envelope" style="--x:${Math.cos(angle)};--y:${Math.sin(angle)}">${prop('envelope','Письмо бывшего ученика')}<figcaption>${city}</figcaption></figure>`;}).join('');
   $('#lower').insertAdjacentHTML('beforebegin',`<section id="maria" class="film-scene school-chapter" data-scene="maria" data-pin-vh="560" aria-labelledby="maria-title"><div class="scene-stage">
     <div class="scene-background school-video">${sceneVideo('school')}</div><div class="chalkboard"></div><div class="school-shade"></div>
-    <p class="chapter-label">Глава четвёртая</p>
+    <p class="chapter-label">${document.body.dataset.page==='example-maria'?'История жизни · Мария Соколова':'Глава четвёртая'}</p>
     <div class="chalk-heading"><h2 id="maria-title"><span class="chalk-word">Мария</span> <span class="chalk-word">Соколова</span></h2><p class="chalk-years">1912-1998 · учительница</p></div>
     <canvas class="chalk-dust" aria-hidden="true"></canvas><div class="sunbeam" aria-hidden="true"></div>
     <div class="scene-copy teacher-copy" data-lines>${emphasis(data.captions[0])}</div>
@@ -32,6 +32,8 @@ export function animateMaria({mobile}) {
   const timeline=pinTimeline('maria',560);
   gsap.set('.chalk-heading .written-char',{clipPath:'inset(0% 100% 0% 0%)'});
   gsap.set('.chalk-years',{opacity:0});
+  const intro=gsap.timeline().to('.chalk-heading .written-char',{clipPath:'inset(0% 0% 0% 0%)',duration:.85,stagger:.065,ease:'power2.out'},.1).to('.chalk-years',{opacity:1,duration:.8},.6);
+  timeline.eventCallback('onUpdate',()=>{if(timeline.time()>.2&&intro.progress()<1)intro.progress(1);});
   gsap.set('.school-video video',{scale:1.3,y:vh(6)});
   gsap.set('.teacher-copy,.sunbeam,.school-notebook,.school-globe,.teacher-counter,.wartime-copy,.student-letters,.school-quote,.school-paper',{opacity:0});
   gsap.set('.school-notebook',{y:vh(60),rotationX:35,rotationZ:-3});
@@ -41,8 +43,6 @@ export function animateMaria({mobile}) {
   gsap.set('.globe-glint',{xPercent:-100});
   gsap.set('.school-envelope',{xPercent:-50,yPercent:-50,x:index=>(index%2?1:-1)*vw(90),y:index=>(index<3?-1:1)*vh(70),rotation:index=>index*11-30});
   timeline.addLabel('chalk',0)
-    .to('.chalk-heading .written-char',{clipPath:'inset(0% 0% 0% 0%)',duration:1.4,stagger:.52},1)
-    .to('.chalk-years',{opacity:1,duration:4},10)
     .addLabel('classroom',15)
     .to('.chalkboard,.chalk-heading,.chalk-dust',{opacity:0,y:()=>-vh(9),duration:17},15)
     .to('.school-video video',{scale:1.05,y:0,duration:17},15)
@@ -71,5 +71,5 @@ export function animateMaria({mobile}) {
     .to('.school-quote',{opacity:1,duration:2},89);
   quoteReveal(timeline,'.school-quote',89,2,.36);
   timeline.addLabel('end',100);
-  return {timeline};
+  return {timeline,intro};
 }

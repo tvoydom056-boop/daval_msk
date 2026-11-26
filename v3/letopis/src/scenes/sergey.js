@@ -9,7 +9,7 @@ function updateDigit(element,number) {if(element.dataset.digit===String(number))
 export function mountSergey() {
   $('#lower').insertAdjacentHTML('beforebegin',`<section id="sergey" class="film-scene football-chapter" data-scene="sergey" data-pin-vh="560" aria-labelledby="sergey-title"><div class="scene-stage">
     <div class="scene-background football-video">${sceneVideo('football')}</div><div class="stadium-dark"></div><div class="scene-shade"></div>
-    <p class="chapter-label" id="sergey-title">Глава третья · Сергей Николаевич · род. 1958 <span class="self-story">Рассказывает сам</span></p>
+    <p class="chapter-label" id="sergey-title">${document.body.dataset.page==='example-sergey'?'История жизни':'Глава третья'} · Сергей Николаевич · род. 1958 <span class="self-story">Рассказывает сам</span></p>
     <div class="scoreboard" aria-label="Строитель 1:1 Гости"><div class="score-teams"><span>Строитель</span><span>Гости</span></div><div class="score-numbers"><span class="home-score">${digit(1,'score-old')}${digit(2,'score-new')}</span><b class="score-colon">:</b>${digit(1,'away-score')}</div><div class="match-clock" aria-label="86:00">${digit(8)}${digit(6)}<b>:</b>${digit(0)}${digit(0)}</div></div>
     <div class="goal-flash" aria-hidden="true"></div>
     <div class="scene-copy winning-copy" data-lines>${emphasis(data.captions[1])}</div>

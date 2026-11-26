@@ -15,3 +15,15 @@ body[data-page="example-family"] #site .vignette{display:none}
 html:not(.motion-ready) body[data-page="example-family"] #site .family-backdrop{display:none}
 html:not(.motion-ready) body[data-page="example-family"] #site #story-intro{background:#efe6d6}
 html:not(.motion-ready) body[data-page="example-family"] #site #tree{background:#1c1714}
+
+body[data-page="example-family"] #site .family-album{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.085;filter:sepia(.3);pointer-events:none}
+
+/* Give the standalone football story a name during its existing fog entry. */
+#site .example-entry-title{position:absolute;inset:0;z-index:34;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;padding:100px 6% 90px;text-align:center;pointer-events:none;background:#10110e24;color:#f7f0e3;font-family:'Literata Variable',Literata,Georgia,serif;text-shadow:0 2px 24px #10110ec9}
+#site .example-entry-title .entry-format{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:#f7f0e3}
+#site .example-entry-title h1{font-size:clamp(68px,8vw,126px);font-weight:300;line-height:1.15;letter-spacing:-.04em;max-width:1100px;margin:0;color:#f7f0e3}
+#site .example-entry-title .entry-years{font-size:18px;line-height:1.8;max-width:650px;color:#f7f0e3}
+#site .example-entry-title .entry-scroll{position:absolute;bottom:7%;font-size:12px;letter-spacing:.12em;color:#f7f0e3}
+html:not(.motion-ready) #site .example-entry-title{position:relative;inset:auto;order:-20;min-height:75svh;background:#25251b}
+html:not(.motion-ready) #site .example-entry-title .entry-scroll{display:none}
+@media(max-width:767px){#site .example-entry-title{gap:24px;padding:95px 26px 100px}#site .example-entry-title h1{font-size:54px}#site .example-entry-title .entry-years{font-size:16px}}

@@ -14,13 +14,17 @@ import './families.css';
 import './lib/style-audit.js';
 import {mountShell} from './lib/shell.js';
 import {startRuntime} from './lib/runtime.js';
-mountShell();
-const page=document.body.dataset.page;
-let setup;
-if(page==='home')setup=(await import('./pages/home.js')).mountHome();
-else if(page==='example-page')setup=(await import('./pages/memory-page.js')).mountMemoryPage();
-else if(page==='families')setup=(await import('./pages/families.js')).mountFamilies();
-else if(page==='docs')setup=(await import('./pages/documents.js')).mountDocuments();
-else if(['example-life','example-family','example-maria','example-sergey'].includes(page))setup=(await import('./pages/examples.js')).mountExample(page.slice(8));
-else setup=(await import('./pages/placeholders.js')).mountPlaceholder(page);
-await startRuntime(setup);
+import {prepareImages} from './lib/images.js';
+export async function boot(mount){
+  // Pick the layout before mounting, so the underlay never moves into the viewport.
+  document.documentElement.classList.toggle('motion-ready',!matchMedia('(prefers-reduced-motion: reduce)').matches);
+  mountShell();
+  const setup=mount();
+  prepareImages();
+  await startRuntime(setup);
+  // Only first-screen imagery participates in the incoming snapshot.
+  const poster=document.querySelector('main video[poster]')?.poster;
+  const cover=document.querySelector('.memory-cover-image img');
+  if(cover)await cover.decode().catch(()=>{});
+  else if(poster){const image=new Image();image.src=poster;await Promise.race([image.decode().catch(()=>{}),new Promise(resolve=>setTimeout(resolve,1200))]);}
+}

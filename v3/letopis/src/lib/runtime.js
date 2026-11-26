@@ -1,5 +1,5 @@
 import Lenis from 'lenis';
-import {gsap,ScrollTrigger,$,$$,initMedia,setMediaReduced,loadMedia} from './core.js';
+import {gsap,ScrollTrigger,$,$$,initMedia,setMediaReduced,loadMedia,canLoadVideo} from './core.js';
 import {splitLines} from './text.js';
 import {initGrain} from './grain.js';
 import {mountAtmosphere} from './atmosphere.js';
@@ -36,7 +36,7 @@ export async function startRuntime({definitions=[],tree,book=false,onStatic=()=>
     const root=document.getElementById(id);if(!root)return;
     loadMedia(root);$$('img',root).forEach(img=>img.loading='eager');
     await Promise.all($$('img',root).map(img=>img.decode().catch(()=>{})));
-    if(!reduced.matches)await Promise.all($$('video',root).map(video=>video.readyState>=2?Promise.resolve():new Promise(resolve=>{
+    if(canLoadVideo())await Promise.all($$('video',root).filter(video=>video.querySelector('source[src]')).map(video=>video.readyState>=2?Promise.resolve():new Promise(resolve=>{
       video.addEventListener('loadeddata',resolve,{once:true});video.addEventListener('error',resolve,{once:true});setTimeout(resolve,12000);
     })));
   }
@@ -68,11 +68,17 @@ export async function startRuntime({definitions=[],tree,book=false,onStatic=()=>
     lenis=new Lenis({lerp:.085,smoothWheel:true,syncTouch:false});window.__lenis=lenis;lenis.on('scroll',ScrollTrigger.update);
     ticker=time=>lenis.raf(time*1000);gsap.ticker.add(ticker);gsap.ticker.lagSmoothing(0);
   }
-  await document.fonts.ready;startLenis();rebuild(false);initMedia();initGrain(reduced);
+  // Configure the visible frame synchronously, before a native snapshot can run.
+  startLenis();rebuild(false);initMedia();initGrain(reduced);
   function ensureAtmosphere(){if(!reduced.matches&&!atmosphere){mountAtmosphere();atmosphere=true;}}
   ensureAtmosphere();let timer;
   addEventListener('resize',()=>{clearTimeout(timer);timer=setTimeout(()=>rebuild(),220);},{passive:true});
   reduced.addEventListener('change',()=>{if(ticker)gsap.ticker.remove(ticker);lenis?.destroy();lenis=undefined;window.__lenis=undefined;startLenis();rebuild(false);ensureAtmosphere();});
+  // Font metrics may refine line wrapping, while keeping the entry animation's phase.
+  await document.fonts.ready;
+  const entryProgress=intro?.progress();
+  rebuild();
+  if(entryProgress!==undefined)intro?.progress(entryProgress);
   if(location.hash&&!location.hash.startsWith('#person=')){
     try{goTo(document.getElementById(decodeURIComponent(location.hash.slice(1))),{immediate:true});}catch{/* An invalid URL fragment has no matching anchor. */}
   }

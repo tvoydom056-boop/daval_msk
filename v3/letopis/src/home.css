@@ -112,9 +112,11 @@
 #site #home-services .benefits-heading h2{font-size:clamp(38px,4vw,64px);line-height:1.16}
 #site #home-services .benefits-window{position:static;height:auto;overflow:visible}
 #site #home-services .benefit-rail{display:grid;grid-template-columns:1fr 1fr;gap:35px;width:calc(100% - 2 * var(--gutter));margin:auto;padding:0;transform:none}
-#site #home-services .benefit-card{width:auto;min-width:0;margin:0;flex:none;display:block}
+#site #home-services .benefit-card{width:auto;height:auto;min-width:0;margin:0;flex:none;display:block}
 #site #home-services .benefit-visual{height:300px}
-#site #home-services .benefit-card-copy{padding:25px 0 0}
+#site #home-services .benefit-card-copy{padding:26px 30px 32px}
+#site #home-services .preview-book{width:min(62%,440px)}
+#site #home-services .book-page-left{padding-left:22px}
 #site #home-services .benefit-index{display:none}
 #site .home-prices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:55px}
 #site .home-price{display:flex;flex-direction:column;padding:38px 30px;border:1px solid #d8c3a933;border-radius:8px;background:#eee0c608}
@@ -239,3 +241,16 @@ body[data-page="home"] #site #home-services .benefit-card,
 body[data-page="home"] #site #home-services .benefit-card-copy{color:#302820}
 body[data-page="home"] #site .request-form input::placeholder,
 body[data-page="home"] #site .request-form textarea::placeholder{color:var(--home-ink);opacity:1}
+
+/* A single route connects the four real step positions. */
+#site .home-steps{position:relative}
+#site .home-steps li{border-top:0}
+#site .home-steps .how-line{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+#site .how-line path{fill:none;stroke-width:1;vector-effect:non-scaling-stroke;stroke-linecap:round}
+#site .how-line-guide{stroke:#8b542e33}
+#site .how-line-ink{stroke:#b8773e;stroke-width:1.5!important}
+body[data-page="home"] #site .home-step-number{color:#8c8173;transition:color .3s ease}
+body[data-page="home"] #site .step-reached .home-step-number{color:#ae6430}
+#site .home-steps .step-reached h3{color:#8b542e}
+@media(max-width:767px){#site .home-steps{margin-left:14px}#site .home-steps li{padding-top:0}#site .home-step-number{align-self:start}}
+@media(prefers-reduced-motion:reduce){#site .home-step-number{transition:none}}

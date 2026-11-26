@@ -1,0 +1,12 @@
+@view-transition{navigation:auto}
+::view-transition-group(*){animation-duration:.5s;animation-timing-function:cubic-bezier(.22,.65,.3,1)}
+::view-transition-old(root){animation:page-dissolve-out .5s ease both}
+::view-transition-new(root){animation:page-dissolve-in .5s ease both}
+::view-transition-old(example-page),::view-transition-new(example-page),
+::view-transition-old(example-life),::view-transition-new(example-life),
+::view-transition-old(example-family),::view-transition-new(example-family),
+::view-transition-old(example-maria),::view-transition-new(example-maria),
+::view-transition-old(example-sergey),::view-transition-new(example-sergey){height:100%;width:100%;object-fit:cover;mix-blend-mode:normal}
+@keyframes page-dissolve-out{to{opacity:0}}
+@keyframes page-dissolve-in{from{opacity:0}}
+@media(prefers-reduced-motion:reduce){@view-transition{navigation:none}::view-transition-group(*){animation:none!important}}

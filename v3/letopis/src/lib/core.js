@@ -10,7 +10,7 @@ export const vw = n => document.documentElement.clientWidth * n / 100;
 export const clamp = (value, low = 0, high = 1) => Math.max(low, Math.min(high, value));
 export const escapeHTML = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 export const emphasis = value => escapeHTML(value).replace(/\*([^*]+)\*/g, '<em>$1</em>');
-export const media = name => `./media/${name}`;
+export const media = name => `${document.body.dataset.root||'./'}media/${name}`;
 export const sceneVideo = name => `<video muted loop playsinline preload="none" poster="${media(name+'.jpg')}" aria-hidden="true"><source data-src="${media(name+'.mp4')}" type="video/mp4"></video>`;
 export const prop = (name, alt, className = '') => `<img class="prop ${className}" src="${media(name+'.png')}" alt="${escapeHTML(alt)}" loading="lazy" decoding="async" data-slot="${escapeHTML(alt)}">`;
 export function pinTimeline(id, distance, scrub = 1.2) {

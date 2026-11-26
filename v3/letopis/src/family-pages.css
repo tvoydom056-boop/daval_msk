@@ -1,0 +1,17 @@
+/* Page routing and archive handoffs are isolated from the accepted home design. */
+body[data-page="example-family"] #site{isolation:isolate}
+body[data-page="example-family"] #site .family-backdrop{position:fixed;inset:0;z-index:2;pointer-events:none;background:#efe6d6}
+body[data-page="example-family"] #site #story-intro{--family-intro-ink:#2a2420;--family-intro-accent:#9a5b2c;background:transparent;color:var(--family-intro-ink);position:relative;z-index:4}
+body[data-page="example-family"] #site #story-intro::after{display:none}
+body[data-page="example-family"] #site #story-intro .book-heading,
+body[data-page="example-family"] #site #story-intro .book-heading h2,
+body[data-page="example-family"] #site #story-intro .book-prose,
+body[data-page="example-family"] #site #story-intro .book-prose>p{color:var(--family-intro-ink)}
+body[data-page="example-family"] #site #story-intro .book-prose .book-by{color:var(--family-intro-accent)}
+body[data-page="example-family"] #site #tree{position:relative;z-index:3;background:transparent}
+body[data-page="example-family"] #site #nikolay{position:relative;z-index:1}
+html.motion-ready body[data-page="example-family"] #site #tree{margin-bottom:-100svh}
+body[data-page="example-family"] #site .vignette{display:none}
+html:not(.motion-ready) body[data-page="example-family"] #site .family-backdrop{display:none}
+html:not(.motion-ready) body[data-page="example-family"] #site #story-intro{background:#efe6d6}
+html:not(.motion-ready) body[data-page="example-family"] #site #tree{background:#1c1714}

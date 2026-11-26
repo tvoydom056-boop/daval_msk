@@ -2,7 +2,9 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   base: './',
-  build: { assetsInlineLimit: 0 },
+  build: { assetsInlineLimit: 0,rollupOptions:{input:{
+    home:'index.html',life:'examples/life.html',family:'examples/family.html',maria:'examples/maria.html',sergey:'examples/sergey.html',page:'examples/page.html',families:'families.html',docs:'docs.html',
+  }} },
   server: { port: 5173, strictPort: true },
   preview: { port: 4173, strictPort: true },
 });

@@ -1,4 +1,4 @@
-import {gsap,$,$$,vh,vw,pinTimeline,sceneVideo,prop,emphasis,drawPaths,escapeHTML} from '../lib/core.js';
+import {gsap,$,$$,vh,vw,pinTimeline,media,sceneVideo,prop,emphasis,drawPaths,escapeHTML} from '../lib/core.js';
 import {chapters} from '../data.js';
 import {words,letters,quoteReveal,counter,revealLines} from '../lib/text.js';
 import {particles} from '../lib/particles.js';
@@ -16,7 +16,7 @@ export function mountMaria() {
     <div class="chalk-heading"><h2 id="maria-title"><span class="chalk-word">Мария</span> <span class="chalk-word">Соколова</span></h2><p class="chalk-years">1912-1998 · учительница</p></div>
     <canvas class="chalk-dust" aria-hidden="true"></canvas><div class="sunbeam" aria-hidden="true"></div>
     <div class="scene-copy teacher-copy" data-lines>${emphasis(data.captions[0])}</div>
-    <article class="school-notebook" aria-label="Школьный диктант"><img src="./media/notebook-open.jpg" width="2000" height="1400" alt="Раскрытая школьная тетрадь 1950-х годов" loading="lazy" data-slot="Раскрытая тетрадь"><div class="dictation"><p>${handwriting('Диктант.')}</p><p>${handwriting('Осень. Над рекой стоит туман.')}</p><p>${handwriting('Скоро зима.')}</p></div><span class="teacher-grade" aria-label="Оценка пять">5</span></article>
+    <article class="school-notebook" aria-label="Школьный диктант"><img src="${media('notebook-open.jpg')}" width="2000" height="1400" alt="Раскрытая школьная тетрадь 1950-х годов" loading="lazy" data-slot="Раскрытая тетрадь"><div class="dictation"><p>${handwriting('Диктант.')}</p><p>${handwriting('Осень. Над рекой стоит туман.')}</p><p>${handwriting('Скоро зима.')}</p></div><span class="teacher-grade" aria-label="Оценка пять">5</span></article>
     <div class="school-globe">${prop('globe','Школьный глобус')}<div class="globe-metal" aria-hidden="true"><i class="globe-glint"></i></div></div>
     <div class="teacher-counter"><span class="scene-number" data-years-count>1</span><span class="eyebrow">год у школьной доски</span></div>
     <div class="scene-copy wartime-copy" data-lines>${emphasis(data.captions[1])}</div>
@@ -26,7 +26,7 @@ export function mountMaria() {
   </div></section>`);
   $$('.chalk-word').forEach(element=>letters(element));words($('#maria blockquote'));
   particles($('#maria .chalk-dust'),{type:'chalk',count:55,origin:[.5,.36]});
-  $('.globe-metal').style.setProperty('--globe-mask',`url("${new URL('./media/globe.png',document.baseURI).href}")`);
+  $('.globe-metal').style.setProperty('--globe-mask',`url("${new URL(media('globe.png'),document.baseURI).href}")`);
 }
 export function animateMaria({mobile}) {
   const timeline=pinTimeline('maria',560);

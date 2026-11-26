@@ -12,8 +12,8 @@ function letterMarkup(id,data){
   </div></section>`;
 }
 
-function chapterMarkup(id,data,index){
-  const next=ids[index+1],nextData=storyText.chapters[next];
+function chapterMarkup(id,data,index,chapterIds){
+  const next=chapterIds[index+1],nextData=storyText.chapters[next];
   const halfway=Math.ceil(data.paragraphs.length/2);
   const prose=data.paragraphs.map((text,i)=>paragraph(text)+(i+1===halfway?`<blockquote class="book-pull" data-book-reveal>${e(data.pull)}</blockquote>`:'')).join('');
   return `<article class="book-page book-chapter${next?' book-has-next':''}" id="${id}-story" data-book-chapter="${id}" aria-labelledby="${id}-story-title">
@@ -23,18 +23,19 @@ function chapterMarkup(id,data,index){
       <div class="book-prose">${prose}</div>
       <footer class="book-next"${id==='petr'?' id="next"':''}>
         ${nextData?`<a class="book-next-link" href="#${next}"><span class="book-kicker">${e(nextData.kicker)}</span><span class="book-next-title">${e(nextData.title)}</span>${id==='petr'?'<span class="book-next-description">Мосты, которые стоят до сих пор</span>':''}</a>`:''}
-        <button class="book-tree" type="button" data-go-tree>Вернуться к древу</button>
+        ${document.getElementById('tree')?'<button class="book-tree" type="button" data-go-tree>Вернуться к древу</button>':'<a class="book-tree" href="./family.html#tree">К семейному древу</a>'}
       </footer>
     </div>
     <div class="book-progress" aria-hidden="true"><div class="book-progress-stick"><i></i></div></div>
   </article>`;
 }
 
-export function mountBook(){
+export function mountBook({intro=false,outro=false,introBefore}={}){
+  const chapterIds=ids.filter(id=>document.getElementById(id));
   $('#petr .epilogue')?.remove();
-  $('#petr').insertAdjacentHTML('beforebegin',letterMarkup('story-intro',storyText.intro));
-  ids.forEach((id,index)=>$('#'+id).insertAdjacentHTML('afterend',chapterMarkup(id,storyText.chapters[id],index)));
-  $('#maria-story').insertAdjacentHTML('afterend',letterMarkup('story-outro',storyText.outro));
+  if(intro)$('#'+(introBefore||chapterIds[0])).insertAdjacentHTML('beforebegin',letterMarkup('story-intro',storyText.intro));
+  chapterIds.forEach((id,index)=>$('#'+id).insertAdjacentHTML('afterend',chapterMarkup(id,storyText.chapters[id],index,chapterIds)));
+  if(outro)$('#'+chapterIds.at(-1)+'-story').insertAdjacentHTML('afterend',letterMarkup('story-outro',storyText.outro));
   $$('.book-page').forEach(page=>{
     if(page.previousElementSibling?.classList.contains('film-scene'))page.classList.add('book-from-film');
     if(page.nextElementSibling?.classList.contains('film-scene'))page.classList.add('book-film-lead');

@@ -1,12 +1,12 @@
 import {gsap,vh,vw} from '../lib/core.js';
 export function animateHero() {
   const root=document.getElementById('hero');
-  const tree=document.getElementById('tree');
+  const tree=document.getElementById('tree')||document.getElementById('about');
   tree.inert=true;
     gsap.set('.hero-video', { scale: 1.18 });
     gsap.set('.letter-mask > span', { yPercent: 116 });
     gsap.set('.hero-script', { opacity: 0, y: 24 });
-    gsap.set('.hero-description, .scroll-invitation', { opacity: 1, y: 0 });
+    gsap.set('.hero-description, .scroll-invitation, .hero-actions', { opacity: 1, y: 0 });
     gsap.set('.hero-fog-back', { yPercent: 75, opacity: 0 });
     gsap.set('.hero-fog-front', { yPercent: 100, opacity: 0 });
     gsap.set('.hero-haze', { opacity: 0 });
@@ -28,7 +28,7 @@ export function animateHero() {
     hero.addLabel('home', 0)
       .to('.hero-camera', { scale: 1.14, y: () => -vh(6), duration: 100 }, 0)
       .to('.hero-type', { y: () => -vh(28), opacity: 0, filter: 'blur(8px)', duration: 62 }, 0)
-      .fromTo('.hero-description, .scroll-invitation', { opacity: 1, y: 0 }, { opacity: 0, y: () => -vh(9), duration: 21, immediateRender: false }, 14)
+      .fromTo('.hero-description, .scroll-invitation, .hero-actions', { opacity: 1, y: 0 }, { opacity: 0, y: () => -vh(9), duration: 21, immediateRender: false }, 14)
       .addLabel('fog-rise', 35)
       .to('.hero-fog-back', { yPercent: -38, x: () => -vw(3), opacity: 1, duration: 37 }, 35)
       .to('.hero-fog-front', { yPercent: -12, x: () => vw(4), opacity: .85, duration: 37 }, 35)

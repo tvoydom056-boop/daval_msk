@@ -4,6 +4,7 @@ import {$,gsap,ScrollTrigger,vh} from './core.js';
 export function mountChapterTransitions(){
   ['petr','nikolay','sergey','maria'].forEach(id=>{
     const stage=$('#'+id+' .scene-stage');
+    if(!stage)return;
     let paper=$('.paper-wash,.school-paper',stage);
     if(!paper){
       paper=document.createElement('div');

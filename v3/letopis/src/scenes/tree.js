@@ -1,5 +1,5 @@
 import {family,people} from '../data.js';
-import {gsap,pinTimeline,addFrame,clamp,escapeHTML as e} from '../lib/core.js';
+import {gsap,pinTimeline,addFrame,clamp,escapeHTML as e,media} from '../lib/core.js';
 import {TREE,treeRows,treePositions,treeEdges,lineage} from '../lib/tree-layout.js';
 
 export function mountTree(){
@@ -12,7 +12,7 @@ export function mountTree(){
     return '<path class="tree-edge-guide"'+attributes+'<path class="tree-edge"'+attributes;
   }).join('');
   const html='<section class="film-scene family-tree-scene" id="tree" data-scene="tree" data-pin-vh="200" aria-labelledby="tree-title"><div class="scene-stage tree-screen"><canvas class="tree-dust" aria-hidden="true"></canvas><header class="tree-heading"><h2 id="tree-title">Из корней вырастаем мы.</h2><p>Пять поколений одной семьи</p></header><div class="tree-window" data-lenis-prevent><div class="tree-world"><div class="tree-family-name" style="left:400px">Соколовы</div><div class="tree-family-name" style="left:940px">Орловы</div><svg class="tree-links" viewBox="0 0 '+TREE.width+' '+TREE.height+'" aria-hidden="true">'+paths+'</svg>'+cards+'</div></div><aside class="selection tree-selection" hidden aria-live="polite"></aside><div class="tree-help"><span class="tree-desktop-hint">Выберите человека, чтобы увидеть его линию</span><span class="tree-mobile-hint">Двигайте древо пальцем</span><a href="#petr">К историям</a></div></div></section>';
-  document.getElementById('petr').insertAdjacentHTML('beforebegin',html);
+  document.getElementById('nikolay').insertAdjacentHTML('beforebegin',html.replaceAll('./media/',media('')).replace('href="#petr"','href="#nikolay"'));
 }
 
 export function initTree({goTo}){
@@ -71,10 +71,10 @@ export function initTree({goTo}){
   function close(){selected=null;panel.hidden=true;panel.classList.remove('is-open');root.classList.remove('is-selected');highlight();applyCamera();}
   function select(id){
     selected=id;const person=people[id],chapter=['petr','nikolay','sergey','maria'].includes(id);
-    panel.innerHTML='<div><h3>'+e(person.name)+'</h3><p class="selection__years">'+e(person.years)+'</p></div><p class="selection__bio">'+e(person.bio)+'</p><div>'+(chapter?'<a class="glass-btn" href="#'+id+'">Читать историю</a>':'')+'<button type="button" class="selection__close" aria-label="Закрыть сведения о человеке">Закрыть</button></div>';
+    panel.innerHTML='<div><h3>'+e(person.name)+'</h3><p class="selection__years">'+e(person.years)+'</p></div><p class="selection__bio">'+e(person.bio)+'</p><div>'+(chapter?'<a class="glass-btn" href="'+(id==='petr'?'./life.html#petr':'#'+id)+'">Читать историю</a>':'')+'<button type="button" class="selection__close" aria-label="Закрыть сведения о человеке">Закрыть</button></div>';
     panel.hidden=false;panel.classList.add('is-open');root.classList.add('is-selected');
     panel.querySelector('.selection__close').addEventListener('click',close);
-    panel.querySelector('.glass-btn')?.addEventListener('click',event=>{event.preventDefault();event.stopPropagation();goTo(document.getElementById(id));});
+    panel.querySelector('.glass-btn')?.addEventListener('click',event=>{if(id==='petr')return;event.preventDefault();event.stopPropagation();goTo(document.getElementById(id));});
     highlight();applyCamera();
   }
   world.addEventListener('pointerover',event=>{if(event.pointerType==='touch')return;const id=event.target.closest('[data-person]')?.dataset.person;if(hovered!==id){hovered=id||null;highlight();}});
@@ -140,7 +140,7 @@ export function initTree({goTo}){
     resize,
     setReduced(value){reduced=value;pan.active=false;pan.vx=pan.vy=0;if(value){root.inert=false;root.querySelectorAll('.tree-generation').forEach(el=>el.style.opacity='1');edges.forEach(el=>{el.style.strokeDashoffset='0';});}applyCamera();},
     animate(){
-      const timeline=pinTimeline('tree',315,1);
+      const timeline=pinTimeline('tree',document.getElementById('hero')?315:200,1);
       Object.assign(camera,{zoom:2.2,x:400,y:78,overview:0});pan.active=false;
       gsap.set('.tree-generation',{opacity:mobile()?.45:0});
       // The first generation is explicit because other world decorations precede it.
@@ -160,7 +160,7 @@ export function initTree({goTo}){
       }
       timeline.to({}, {duration:30},70).addLabel('end',100);
       // The real tree is already pinned behind the hero. Start its camera as fog opens.
-      const lead=mobile()?100*110/205:31.25;
+      const lead=document.getElementById('hero')?(mobile()?100*110/205:31.25):0;
       timeline.shiftChildren(lead,true,0);
       timeline.to({}, {duration:lead},0);
       applyCamera();return {timeline};

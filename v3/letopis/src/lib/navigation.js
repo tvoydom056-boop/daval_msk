@@ -23,7 +23,7 @@ export function initNavigation({getLenis}){
   $('.menu-close',dialog).addEventListener('click',close);
   dialog.addEventListener('cancel',event=>{event.preventDefault();close();});
   dialog.addEventListener('close',()=>{if(previousFocus)release();});
-  dialog.addEventListener('click',event=>{if(event.target.closest('a[href^="#"]'))close();});
+  dialog.addEventListener('click',event=>{if(event.target.closest('a[href]'))close();});
   dialog.addEventListener('keydown',event=>{
     if(event.key==='Escape'){event.preventDefault();close();return;}
     if(event.key!=='Tab')return;
@@ -40,13 +40,13 @@ export function initNavigation({getLenis}){
     let paper=false;
     for(const layer of layers){
       if(layer.closest('.navigation,.mobile-menu'))continue;
-      const section=layer.closest('.book-page,.paper-section,.film-scene,.hero,.site-footer');
+      const section=layer.closest('[data-theme],.book-page,.paper-section,.film-scene,.hero,.site-footer');
       if(!section)continue;
       const style=getComputedStyle(section);
       if(style.visibility==='hidden'||Number(style.opacity)<.55)continue;
       if(section.classList.contains('book-from-film')&&rect.top+rect.height/2<section.getBoundingClientRect().top+75)continue;
       const wash=section.querySelector('.chapter-paper');
-      paper=section.id!=='prices'&&(section.matches('.book-page,.paper-section')||(wash&&Number(getComputedStyle(wash).opacity)>.55));
+      paper=section.dataset.theme?section.dataset.theme==='paper':section.id!=='prices'&&(section.matches('.book-page,.paper-section')||(wash&&Number(getComputedStyle(wash).opacity)>.55));
       break;
     }
     navigation.dataset.theme=paper?'paper':'dark';

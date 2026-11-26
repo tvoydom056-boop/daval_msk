@@ -5,6 +5,7 @@ import {assetMarkup,exampleCards,siteURL} from '../lib/shell.js';
 import {animateHero} from '../scenes/hero.js';
 import {sectionMarkup} from '../scenes/sections.js';
 import {animateHomeTone} from '../lib/home-tone.js';
+import {candleMarkup,initCandle} from '../lib/candle.js';
 
 export const heading=data=>`<p class="eyebrow">${e(data.kicker)}</p><h2>${e(data.title)}</h2>`;
 export function mountHome(){
@@ -15,7 +16,7 @@ export function mountHome(){
     <div id="home-services">${sectionMarkup(['restoration','qr','benefits'])}</div>
     <section class="home-section home-dark" id="prices" data-theme="dark"><div class="home-wrap">${heading(home.prices)}<div class="home-prices">${home.prices.tariffs.map(tariff=>`<article class="home-price${tariff.main?' home-price-main':''}"><h3>${e(tariff.name)}</h3><p class="home-price-value">${e(tariff.price)}</p><p class="home-price-time">${e(tariff.time)}</p><ul>${tariff.items.map(item=>`<li>${e(item)}</li>`).join('')}</ul><a class="home-button" href="${siteURL(tariff.example)}">Посмотреть пример</a></article>`).join('')}</div><a class="home-button primary prices-cta" href="#request">${e(home.prices.cta)}</a><div class="price-footnotes"><dl class="home-extras">${home.prices.extras.map(([label,price])=>`<div><dt>${e(label)}</dt><dd>${e(price)}</dd></div>`).join('')}</dl><div class="home-terms">${home.prices.terms.map(term=>`<p>${e(term)}</p>`).join('')}</div></div></div></section>
     <section class="home-section paper-section" id="families"><div class="home-wrap">${heading(home.families)}<p class="section-note">${e(home.families.note)}</p>${exampleCards({compact:true})}<a class="home-button families-link" href="${siteURL(home.families.link.href)}">${e(home.families.link.label)}</a></div></section>
-    <section class="home-section home-dark" id="candle" data-theme="dark"><div class="home-wrap candle-layout"><div>${heading(home.candle)}<p class="section-note">${e(home.candle.text)}</p><button class="home-button primary" id="light-candle" type="button" aria-pressed="false">${e(home.candle.button)}</button><p class="candle-count" role="status"><span id="candle-count">0</span> ${e(home.candle.counter)}</p></div><div class="candle-image" data-slot="Свеча памяти"><img class="candle-base" src="${siteURL('media/home/candle-unlit.png')}" alt="Свеча памяти" width="1254" height="1254"><img class="candle-lit" src="${siteURL('media/home/candle.png')}" alt="" width="1254" height="1254" aria-hidden="true"><i class="candle-glow" aria-hidden="true"></i></div></div></section>
+    ${candleMarkup()}
     ${sectionMarkup(['faq','request'])}`);
   // Keep the original useful demonstrations, remove cards repeating about/QR/examples.
   $$('.benefit-card-1,.benefit-card-2,.benefit-card-5').forEach(card=>card.remove());
@@ -55,14 +56,5 @@ function initHomeControls(){
     control.addEventListener('input',update);control.addEventListener('change',update);update();
   });
   form.addEventListener('submit',event=>{event.preventDefault();$('.form-note',form).textContent=$('.demo-note',form).textContent;});
-  const key='letopis-home-candle-v1',button=$('#light-candle');
-  let lit=false;
-  try{lit=localStorage.getItem(key)==='1';}catch{/* Storage can be unavailable in a private browser. */}
-  function show(){
-    $('#candle').classList.toggle('is-lit',lit);$('#candle-count').textContent=lit?'1':'0';
-    button.setAttribute('aria-pressed',String(lit));button.disabled=lit;
-  }
-  button.addEventListener('click',()=>{if(lit)return;lit=true;try{localStorage.setItem(key,'1');}catch{/* Keep one light for this visit. */}show();});
-  addEventListener('storage',event=>{if(event.key===key&&event.newValue==='1'){lit=true;show();}});
-  show();
+  initCandle({key:'letopis-home-candle-v1'});
 }

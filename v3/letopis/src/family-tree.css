@@ -11,15 +11,15 @@ body[data-page="example-family"] #site{--family-bio-width:42vw}
 #site .archive-size{position:relative;margin-inline:auto}
 #site .archive-world{position:absolute;left:0;top:0;width:1280px;height:744px;transform-origin:0 0}
 #site .archive-family-name{position:absolute;top:0;text-align:center;font-size:12px;line-height:18px;letter-spacing:.16em;color:#ddb17e}
-#site .archive-lines{position:absolute;inset:0;width:1280px;height:744px;overflow:visible;pointer-events:none}
+#site .archive-lines{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
 #site .archive-edge{fill:none;stroke:#bc9568;stroke-width:1.4;stroke-linejoin:round;stroke-linecap:round;transition:stroke .4s,opacity .4s}
 #site .archive-edge.is-related{stroke:#f4c48b;stroke-width:2.2}
 #site .archive-edge.is-dim{opacity:.15}
 #site .archive-generation-label{position:absolute;left:0;display:flex;flex-direction:column;gap:5px;width:74px;color:#d3a975;line-height:1.4}
 #site .archive-generation-label b{font-size:24px;font-weight:350}
 #site .archive-generation-label span{font-size:10px;color:#dfd0bd}
-#site .archive-person{position:absolute;width:226px;height:138px;display:grid;grid-template-columns:110px minmax(0,1fr);padding:0;text-align:left;border:1px solid #ad8a5959;border-radius:5px;background:#2d241b;color:#f3ece0;overflow:hidden;font-family:'Literata Variable',Literata,Georgia,serif;cursor:pointer;transition:opacity .4s,border-color .4s,box-shadow .4s}
-#site .archive-person img{display:block;width:110px;height:138px;object-fit:cover;filter:sepia(.1);opacity:.94}
+#site .archive-person{position:absolute;width:var(--archive-card-width,226px);height:var(--archive-card-height,138px);display:grid;grid-template-columns:var(--archive-portrait-width,110px) minmax(0,1fr);padding:0;text-align:left;border:1px solid #ad8a5959;border-radius:5px;background:#2d241b;color:#f3ece0;overflow:hidden;font-family:'Literata Variable',Literata,Georgia,serif;cursor:pointer;transition:opacity .4s,border-color .4s,box-shadow .4s}
+#site .archive-person img{display:block;width:var(--archive-portrait-width,110px);height:var(--archive-portrait-height,138px);object-fit:cover;filter:sepia(.1);opacity:.94}
 #site .archive-person-copy{display:flex;flex-direction:column;justify-content:center;padding:10px;min-width:0}
 #site .archive-person-name{font-size:16px;line-height:1.25;font-weight:400;letter-spacing:-.025em}
 #site .archive-person-name>span{display:block}
@@ -37,6 +37,14 @@ body[data-page="example-family"] #site{--family-bio-width:42vw}
 #site .family-archive.has-biography .archive-heading{width:calc(100% - var(--family-bio-width) - 48px);margin-left:24px;display:block}
 #site .family-archive.has-biography .archive-heading p{font-size:12px;margin-top:7px}
 #site .family-archive.has-biography .archive-help{width:calc(100% - var(--family-bio-width) - 48px);margin-left:24px}
+#site .archive-wide .archive-stage{padding-block:72px 8px}
+#site .archive-wide .archive-heading{margin-bottom:6px}
+#site .archive-wide .archive-view{width:calc(100% - 48px);overflow:clip}
+#site .archive-wide .archive-help{margin-top:4px}
+#site .archive-wide .archive-family-name{top:4px}
+#site .archive-wide .archive-generation-label{left:12px;transform:translateY(-50%)}
+#site .archive-wide .archive-person-copy{padding-inline:8px}
+#site .archive-wide .archive-person-role{overflow-wrap:anywhere}
 @media(max-width:767px){
   #site .archive-stage{padding-top:84px;min-height:650px}
   #site .archive-heading{display:block;width:calc(100% - 48px);margin-bottom:16px}

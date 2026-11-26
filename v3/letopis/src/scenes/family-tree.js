@@ -7,6 +7,11 @@ export const archiveLayout={width:1280,height:744,cardWidth:226,cardHeight:138,p
   nikolay:[448,168],anna:[690,168],sergey:[328,314],irina:[570,314],olga:[1012,314],
   dmitry:[328,460],anya:[690,460],misha:[328,606],
 }};
+const wideArchiveLayout={width:1368,height:768,cardWidth:244,cardHeight:164,portraitWidth:130,portraitHeight:162,positions:{
+  petr:[52,26],maria:[312,26],ivan:[852,26],evdokia:[1112,26],
+  nikolay:[452,198],anna:[712,198],sergey:[312,370],irina:[572,370],olga:[1112,370],
+  dmitry:[312,542],anya:[832,542],misha:[572,600],
+}};
 export function familyRelations(id){
   const parents=Object.entries(family.children).find(([,children])=>children.includes(id))?.[0].split('+')||[];
   const spouse=family.couples.find(pair=>pair.includes(id))?.filter(person=>person!==id)||[];
@@ -42,8 +47,8 @@ function roundedPath(points,radius=4){
   }
   return d+`L${points.at(-1).join(' ')}`;
 }
-export function archiveEdges(){
-  const {positions:p,cardWidth:w,cardHeight:h}=archiveLayout,edges=[];
+export function archiveEdges(layout=archiveLayout){
+  const {positions:p,cardWidth:w,cardHeight:h}=layout,edges=[];
   family.couples.forEach(pair=>{
     const [left,right]=pair.map(id=>p[id]);
     edges.push({key:pair.join('+'),kind:'couple',people:pair,d:roundedPath([[left[0]+w,left[1]+h/2],[right[0],right[1]+h/2]])});
@@ -52,8 +57,13 @@ export function archiveEdges(){
     const parents=key.split('+'),a=p[parents[0]],b=p[parents[1]];
     const x=b?(a[0]+w+b[0])/2:a[0]+w/2,y=a[1]+(b?h/2:h);
     children.forEach(child=>{
-      const target=p[child],tx=target[0]+w/2,ty=target[1],mid=ty-4;
-      edges.push({key:key+'>'+child,kind:'child',people:[...parents,child],d:roundedPath([[x,y],[x,mid],[tx,mid],[tx,ty]])});
+      const [left,top]=p[child];
+      let points=[[x,y],[x,top-4],[left+w/2,top-4],[left+w/2,top]];
+      if(!b&&top<a[1]+h&&left>=a[0]+w){
+        const right=a[0]+w,from=a[1]+h/2,to=top+h/2,mid=(right+left)/2;
+        points=[[right,from],[mid,from],[mid,to],[left,to]];
+      }
+      edges.push({key:key+'>'+child,kind:'child',people:[...parents,child],d:roundedPath(points)});
     });
   });
   return edges.sort((a,b)=>p[a.people[0]][1]-p[b.people[0]][1]);
@@ -70,6 +80,9 @@ export function mountFamilyTree(){
 
 export function initFamilyTree(){
   const root=$('#tree'),view=$('.archive-view',root),size=$('.archive-size',root),world=$('.archive-world',root);
+  const lines=$('.archive-lines',root),cards=$$('.archive-person',root),labels=$$('.archive-generation-label',root);
+  const familyNames=$$('.archive-family-name',root);
+  let currentLayout=archiveLayout;
   let reduced=false,lastMobile=innerWidth<768,selected=null,firstFit=true,biography;
   const listeners=new Set();
   function ruler(){
@@ -78,11 +91,43 @@ export function initFamilyTree(){
     $$('.archive-rail-label',root).forEach(label=>label.style.top=(60+Number(label.dataset.row)*146)*scale-view.scrollTop+'px');
   }
   view.addEventListener('scroll',ruler,{passive:true});
+  function applyLayout(layout){
+    if(layout===currentLayout)return;
+    currentLayout=layout;
+    const {width,height,positions,cardWidth,cardHeight,portraitWidth=110,portraitHeight=138}=layout;
+    const wide=layout===wideArchiveLayout;
+    root.classList.toggle('archive-wide',wide);
+    world.style.width=width+'px';world.style.height=height+'px';
+    world.style.setProperty('--archive-card-width',cardWidth+'px');
+    world.style.setProperty('--archive-card-height',cardHeight+'px');
+    world.style.setProperty('--archive-portrait-width',portraitWidth+'px');
+    world.style.setProperty('--archive-portrait-height',portraitHeight+'px');
+    cards.forEach(card=>{
+      const [x,y]=positions[card.dataset.person];
+      card.style.left=x+'px';card.style.top=y+'px';
+    });
+    labels.forEach((label,index)=>{
+      const [,y]=positions[family.generations[index].ids[0]];
+      label.style.top=(y+(wide?cardHeight/2:38))+'px';
+    });
+    familyNames.forEach((name,index)=>{
+      const [left,right]=family.couples[index].map(id=>positions[id][0]);
+      name.style.left=left+'px';name.style.width=(right+cardWidth-left)+'px';
+    });
+    lines.setAttribute('viewBox',`0 0 ${width} ${height}`);
+    const byKey=new Map(archiveEdges(layout).map(edge=>[edge.key,edge.d]));
+    $$('.archive-edge',lines).forEach(edge=>edge.setAttribute('d',byKey.get(edge.dataset.edge)));
+  }
   function fit(){
     const mobile=innerWidth<768;
-    const scale=mobile ? .75 : Math.min(1,(view.clientWidth-16)/archiveLayout.width,view.clientHeight/archiveLayout.height);
+    const wide=!mobile&&!root.classList.contains('has-biography');
+    const layout=wide?wideArchiveLayout:archiveLayout;
+    applyLayout(layout);
+    const scale=mobile ? .75 : Math.min(1,(view.clientWidth-16)/layout.width,view.clientHeight/layout.height);
+    const height=layout.height*scale;
     world.style.transform=`scale(${scale})`;
-    size.style.width=archiveLayout.width*scale+'px';size.style.height=archiveLayout.height*scale+'px';
+    size.style.width=layout.width*scale+'px';size.style.height=height+'px';
+    size.style.marginTop=wide?Math.max(0,(view.clientHeight-height)/2)+'px':'';
     root.dataset.archiveScale=scale.toFixed(4);
     if(mobile&&(firstFit||!lastMobile))view.scrollLeft=(561*scale)-view.clientWidth/2;
     if(!mobile)view.scrollLeft=0;
@@ -133,6 +178,7 @@ export function initFamilyTree(){
   }
   const api={root,view,world,resize,fit,highlight,animate,revealCard,get selected(){return selected;},setReduced(value){reduced=value;biography?.setReduced(value);},onResize(listener){listeners.add(listener);},onReady(){}};
   biography=bindFamilyBiography(api,{relations:familyRelations});
+  new ResizeObserver(fit).observe(view);
   api.onReady=()=>{fit();revealCard('nikolay',{force:true});biography.onReady();requestAnimationFrame(()=>{if(!window.__familyArchive.dialog.open)revealCard('nikolay',{force:true});});};
   return api;
 }

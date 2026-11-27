@@ -44,3 +44,7 @@ run_*.out
 
 # локальный архив библиотеки предметов профессий для скачивания
 /output/professions-50/
+
+# локальные копии тематических пробников и архив для скачивания
+/output/imagegen/collections-samples/
+/output/imagegen/collections-samples-36.zip

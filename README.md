@@ -25,6 +25,7 @@ python -m http.server 8765
 | `HANDOFF.md` | Текущее состояние и следующие шаги |
 | `assets/medals/` | Общая библиотека 50 PNG медалей, каталог, промпты и источники. Правила переиспользования в `assets/medals/README.md` |
 | `assets/professions/` | Общая библиотека 50 PNG предметов для разных профессий, каталог и промпты. Правила переиспользования в `assets/professions/README.md` |
+| `assets/collections/` | 36 тематических PNG-пробников в 12 папках, каталог, промпты и полный план на 150 позиций. Состав в `assets/collections/README.md` |
 | `report/` | PDF-отчёт для команды |
 | `letopis/index.html`, `styles.css`, `app.js` | Макет «Летописи», древо и интерактив в `app.js` |
 | `povod/data.js` | Все тексты, цены и примеры поводов. Менять содержимое здесь |

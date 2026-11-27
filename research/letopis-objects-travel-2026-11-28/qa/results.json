@@ -1,0 +1,192 @@
+{
+  "passed": 35,
+  "total": 35,
+  "results": [
+    {
+      "name": "manifest",
+      "passed": true,
+      "detail": "50 entries, exact ids 51-100: true"
+    },
+    {
+      "name": "categories",
+      "passed": true,
+      "detail": "5/5 categories"
+    },
+    {
+      "name": "transparent assignments",
+      "passed": true,
+      "detail": "10/10 cutouts, exact ids 61-70: true"
+    },
+    {
+      "name": "original files",
+      "passed": true,
+      "detail": "50/50 present"
+    },
+    {
+      "name": "desktop overflow",
+      "passed": true,
+      "detail": "viewport 1440, document 1440, body 1440"
+    },
+    {
+      "name": "desktop cards",
+      "passed": true,
+      "detail": "50/50 cards"
+    },
+    {
+      "name": "desktop images",
+      "passed": true,
+      "detail": "50/50 loaded, 50 with alt"
+    },
+    {
+      "name": "desktop original links",
+      "passed": true,
+      "detail": "50/50 original links"
+    },
+    {
+      "name": "desktop transparent previews",
+      "passed": true,
+      "detail": "10/10 CSS checker backgrounds, complete images: true"
+    },
+    {
+      "name": "desktop filter Альбомы и конструкции",
+      "passed": true,
+      "detail": "10/10 visible"
+    },
+    {
+      "name": "desktop filter Закладки и детали",
+      "passed": true,
+      "detail": "10/10 visible"
+    },
+    {
+      "name": "desktop filter Дорожные реликвии",
+      "passed": true,
+      "detail": "10/10 visible"
+    },
+    {
+      "name": "desktop filter Люди в пути",
+      "passed": true,
+      "detail": "10/10 visible"
+    },
+    {
+      "name": "desktop filter Места и атмосфера",
+      "passed": true,
+      "detail": "10/10 visible"
+    },
+    {
+      "name": "desktop all filter",
+      "passed": true,
+      "detail": "50/50 visible"
+    },
+    {
+      "name": "desktop prompt details",
+      "passed": true,
+      "detail": "open true, complete prompt true"
+    },
+    {
+      "name": "mobile overflow",
+      "passed": true,
+      "detail": "viewport 375, document 375, body 375"
+    },
+    {
+      "name": "mobile cards",
+      "passed": true,
+      "detail": "50/50 cards"
+    },
+    {
+      "name": "mobile images",
+      "passed": true,
+      "detail": "50/50 loaded, 50 with alt"
+    },
+    {
+      "name": "mobile original links",
+      "passed": true,
+      "detail": "50/50 original links"
+    },
+    {
+      "name": "mobile transparent previews",
+      "passed": true,
+      "detail": "10/10 CSS checker backgrounds, complete images: true"
+    },
+    {
+      "name": "mobile filter Альбомы и конструкции",
+      "passed": true,
+      "detail": "10/10 visible"
+    },
+    {
+      "name": "mobile filter Закладки и детали",
+      "passed": true,
+      "detail": "10/10 visible"
+    },
+    {
+      "name": "mobile filter Дорожные реликвии",
+      "passed": true,
+      "detail": "10/10 visible"
+    },
+    {
+      "name": "mobile filter Люди в пути",
+      "passed": true,
+      "detail": "10/10 visible"
+    },
+    {
+      "name": "mobile filter Места и атмосфера",
+      "passed": true,
+      "detail": "10/10 visible"
+    },
+    {
+      "name": "mobile all filter",
+      "passed": true,
+      "detail": "50/50 visible"
+    },
+    {
+      "name": "mobile prompt details",
+      "passed": true,
+      "detail": "open true, complete prompt true"
+    },
+    {
+      "name": "catalog desktop links",
+      "passed": true,
+      "detail": "2/2 gallery links, targets exist: true"
+    },
+    {
+      "name": "catalog desktop overflow",
+      "passed": true,
+      "detail": "viewport 1440, document 1440, body 1440"
+    },
+    {
+      "name": "catalog desktop previews",
+      "passed": true,
+      "detail": "4/4 loaded"
+    },
+    {
+      "name": "catalog mobile links",
+      "passed": true,
+      "detail": "2/2 gallery links, targets exist: true"
+    },
+    {
+      "name": "catalog mobile overflow",
+      "passed": true,
+      "detail": "viewport 375, document 375, body 375"
+    },
+    {
+      "name": "catalog mobile previews",
+      "passed": true,
+      "detail": "4/4 loaded"
+    },
+    {
+      "name": "browser errors",
+      "passed": true,
+      "detail": "0 console/page/request errors"
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "qa/desktop.png",
+    "qa/mobile.png",
+    "qa/objects.png",
+    "qa/objects-paper.png",
+    "qa/objects-dark.png",
+    "qa/travel-people.png",
+    "qa/catalog-desktop.png",
+    "qa/catalog-mobile.png"
+  ]
+}

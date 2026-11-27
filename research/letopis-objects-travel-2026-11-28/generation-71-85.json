@@ -1,0 +1,122 @@
+[
+  {
+    "id": 71,
+    "file": "generated/letopis-71-open-suitcase-blanket.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Открытый чемодан с пледом и простой одеждой; материалы и замки правдоподобны, бирок и читаемых надписей нет.",
+    "sha256": "ACA56E1CA2948B10CF7E269518FF470E30549D08E3CF867BC4CF6596BE247684"
+  },
+  {
+    "id": 72,
+    "file": "generated/letopis-72-compass-on-cloth.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Один потёртый компас на грубой ткани; корпус и стрелка выглядят убедительно, букв и цифр нет.",
+    "sha256": "9508507EFC46CC63EB59799E49ECDE3A890F8A5B2DC6D1DD6D8BA38850959C5C"
+  },
+  {
+    "id": 73,
+    "file": "generated/letopis-73-hiking-staff-door.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Деревянный посох у простой дачной двери; силуэт полностью виден, предметы опираются естественно, надписей нет.",
+    "sha256": "3CA5E9288DE0D0F00ECD09776F6A133D747738B4D333266841F4BA23686F482B"
+  },
+  {
+    "id": 74,
+    "file": "generated/letopis-74-sea-keepsakes-windowsill.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Пять морских камней и две ракушки на старом подоконнике; натуральные фактуры, песок и спокойный свет.",
+    "sha256": "DEDAD2D9339EF7A56F5DBF4912FF31057AD0FE0564FB6B55306813339ACFADFE"
+  },
+  {
+    "id": 75,
+    "file": "generated/letopis-75-travel-keepsake-spoon.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Простая металлическая ложечка с растительным узором на льняной ткани; форма и металл реалистичны, гравировки с текстом нет.",
+    "sha256": "577E91CD02BF7475BFCB891007CCBE7EA63D107C155E9F5BF0018EFF7645E8B8"
+  },
+  {
+    "id": 76,
+    "file": "generated/letopis-76-repaired-canvas-rucksack.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Крупный план брезентового рюкзака с ручной заплатой и пряжкой; правдоподобная ткань и швы, брендов нет.",
+    "sha256": "5D983C8FC86FD99D4D687DD470A3DB42AEC40440448AC04787D6B0B8AFA9B4C6"
+  },
+  {
+    "id": 77,
+    "file": "generated/letopis-77-rolled-travel-blanket.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Свёрнутый шерстяной плед с одним кожаным ремнём; весь силуэт виден, пряжка и складки правдоподобны.",
+    "sha256": "01D7FC43FCC69D2D4088DE15319FC28EEE871A10D44DC03266494C798E1CE147"
+  },
+  {
+    "id": 78,
+    "file": "generated/letopis-78-camping-kettle-shelf.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Эмалированный чайник на деревянной полке; ручка, носик и следы использования выглядят убедительно, надписей нет.",
+    "sha256": "6C8D1C149711AF79B8EA498BA5C13766324A48185CF2ED5A149A0BD021BFB157"
+  },
+  {
+    "id": 79,
+    "file": "generated/letopis-79-ticket-in-pocket.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Уголок поблёкшего билета в кармане куртки; только нечитаемые следы краски, без дат, номеров, кодов и персональных сведений.",
+    "sha256": "C7665C37A2377797C9F601116581F20D450F4BFA879CEBEB09A66BFB6CE208E7"
+  },
+  {
+    "id": 80,
+    "file": "generated/letopis-80-strapped-travel-notebook.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Закрытый дорожный блокнот с кожаным ремешком и простой карандаш; предметы полностью в кадре, текста нет.",
+    "sha256": "D6D0265E7F572F2BA647DC844FBD22D121B6D619FEFC9FCAD4A97593F5F0BD95"
+  },
+  {
+    "id": 81,
+    "file": "generated/letopis-81-father-son-forest-map.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Отец и взрослый сын сверяются с картой на лесной развилке; лица различимы, руки разделены, читаемых подписей на карте нет.",
+    "sha256": "82EF307B13155FAA5CCB3A8ED355B3CE1D43C36C92B5058B00C2728B21F5BAFC"
+  },
+  {
+    "id": 82,
+    "file": "generated/letopis-82-mother-daughter-river-ferry.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Пожилая мать и взрослая дочь поднимаются на речной паром; походка, лица и сумки выглядят правдоподобно, надписей нет.",
+    "sha256": "07946CCD0011E2E96D2DFA10511B565BFBA3D53BF98D9C5E525C40968D55602E"
+  },
+  {
+    "id": 83,
+    "file": "generated/letopis-83-sisters-rural-station.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Две взрослые сестры встречаются на сельской станции с сумками; жест объятия и видимая кисть естественны, названий и текста нет.",
+    "sha256": "88F44186F53ED4AB1F860A454CA93DD2A61D2D4A8E601281D7D7C60A82FB6708"
+  },
+  {
+    "id": 84,
+    "file": "generated/letopis-84-women-woodland-boardwalk.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Две женщины в дождевиках разговаривают на мокрой деревянной тропе; походка, руки и лица правдоподобны, брендов нет.",
+    "sha256": "4CF18697C178A7D62B72A7FCF8D29B9BE87A499A2996ED4501742F7A1F2A5FBC"
+  },
+  {
+    "id": 85,
+    "file": "generated/letopis-85-older-couple-cable-car.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Пожилая пара внутри закрытой канатной кабины смотрит на долину; естественные профили и руки, без дублированных отражений и надписей.",
+    "sha256": "9197017AB8005507FB2F691A255F9113C9F819DF9F3014324F58ADF3E2346E72"
+  }
+]

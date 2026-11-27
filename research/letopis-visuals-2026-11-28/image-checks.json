@@ -1,0 +1,459 @@
+{
+  "count": 50,
+  "unique_images": 50,
+  "valid_png": true,
+  "aspect_ratio_tolerance": "1%",
+  "total_bytes": 135007414,
+  "files": [
+    {
+      "id": 1,
+      "file": "generated/letopis-01-family-album-window.png",
+      "width": 1672,
+      "height": 941,
+      "format": "PNG",
+      "bytes": 2304884,
+      "sha256": "82136c5dfd0bf5a20624142bae5cf467dc06ef9ad84de513f93f391244c3b813"
+    },
+    {
+      "id": 2,
+      "file": "generated/letopis-02-stitched-album.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 2814459,
+      "sha256": "532a94acf9d4dcf913eed7c3bb0c4e62864d418a671d4dfa772b295ca74ab993"
+    },
+    {
+      "id": 3,
+      "file": "generated/letopis-03-postcard-box.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "bytes": 2618072,
+      "sha256": "9bfb279bac5d5a28130b3d557f479196dd6eccb1f8680c459fe697105e299790"
+    },
+    {
+      "id": 4,
+      "file": "generated/letopis-04-recipe-table.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "bytes": 2581317,
+      "sha256": "4c80cf897fcefaa4ee0024a9548961c4868020581fbff40936f185251e04a633"
+    },
+    {
+      "id": 5,
+      "file": "generated/letopis-05-camera-and-negatives.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 2700036,
+      "sha256": "bcd29266ab643c0b491436038242de632f5eb98c0d067d92875e5cb671779ac5"
+    },
+    {
+      "id": 6,
+      "file": "generated/letopis-06-workshop-tools.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 2880198,
+      "sha256": "142777e0efbfd18443e24a21dfb922907ad3195028dd6cd40ab93b7bab4fe6ed"
+    },
+    {
+      "id": 7,
+      "file": "generated/letopis-07-pressed-flowers.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "bytes": 2631064,
+      "sha256": "edefda132b256ea0069ba134393ae7de37dc932203ed92da5d971ea354971220"
+    },
+    {
+      "id": 8,
+      "file": "generated/letopis-08-linen-and-sewing.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "bytes": 2786723,
+      "sha256": "3afa9da7e599827190a89337bdf3ed5da0b4977f51362d2f717db2d008e8c180"
+    },
+    {
+      "id": 9,
+      "file": "generated/letopis-09-childhood-box.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "bytes": 2537998,
+      "sha256": "90e977c11a08d9484defa1608189af8fffe73ceae4e6940e5b33a6edc7243ed1"
+    },
+    {
+      "id": 10,
+      "file": "generated/letopis-10-passing-a-photo.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 2332986,
+      "sha256": "20f045f9d54e3bcc4dcb38acc18b6f6f83b5356a311fa7226f04c2b6d333ffdb"
+    },
+    {
+      "id": 11,
+      "file": "generated/letopis-11-elder-serious.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "bytes": 2603777,
+      "sha256": "8912875a401061d26bea8da535369355070968417d15c9a24eed33ef534cb64a"
+    },
+    {
+      "id": 12,
+      "file": "generated/letopis-12-elder-warm-smile.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "bytes": 2742806,
+      "sha256": "898fcf823a1fb8b3250efc14dcbc56002ff9da1b4cf2a32f2d270b055f17bfb7"
+    },
+    {
+      "id": 13,
+      "file": "generated/letopis-13-father-serious.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "bytes": 2418610,
+      "sha256": "e61be5c07019f5cf50f3f427b60e79f67c9e2a1412cafcaad25efbd204173030"
+    },
+    {
+      "id": 14,
+      "file": "generated/letopis-14-mother-gentle-smile.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "bytes": 2421678,
+      "sha256": "ff0fbf01e849dba9cc3e6296b5192e4b83a54b728da12813e3ba19102b5830e1"
+    },
+    {
+      "id": 15,
+      "file": "generated/letopis-15-young-reader.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "bytes": 2744274,
+      "sha256": "1f512f9174005c9876d1c138e145724c479dc352c67985eaeccecdf6949c4c74"
+    },
+    {
+      "id": 16,
+      "file": "generated/letopis-16-young-laughter.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "bytes": 2423056,
+      "sha256": "e52a86a1895be77c63139eee2d969c5c6b02fce86f4bb10cda306bae52d8ad06"
+    },
+    {
+      "id": 17,
+      "file": "generated/letopis-17-gardener-smile.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "bytes": 2687761,
+      "sha256": "48642d230fe091742c0e82b8ca40858b6b3c199d8c0aa3c2bbbef2ca8428a5e7"
+    },
+    {
+      "id": 18,
+      "file": "generated/letopis-18-mother-window-thought.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "bytes": 2419043,
+      "sha256": "7a54011a8c542c072725347df2dcca71f5c21e851de8d00c58d7292b2d62f6c1"
+    },
+    {
+      "id": 19,
+      "file": "generated/letopis-19-teacher-portrait.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "bytes": 2320444,
+      "sha256": "3f15213a3ccc35484f1198f4f3ed6678fdc77701d6d82ac28d06640fee7cbba0"
+    },
+    {
+      "id": 20,
+      "file": "generated/letopis-20-craftsman-portrait.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "bytes": 2864432,
+      "sha256": "ce8ecf749c7ef173b17c07db279d10f0c7589d427c471a42a3cd6688350d1e7e"
+    },
+    {
+      "id": 21,
+      "file": "generated/letopis-21-grandmother-and-dough.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "bytes": 2663404,
+      "sha256": "3928976dfe88bdfd873f65851505a02a8b7e432d193f01b34a086a2efc116c0e"
+    },
+    {
+      "id": 22,
+      "file": "generated/letopis-22-father-daughter-bicycle.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 2628734,
+      "sha256": "2a746e12cf67362edb1ef9beaaf5c4ec4d30ac42265601502927f08f5729126b"
+    },
+    {
+      "id": 23,
+      "file": "generated/letopis-23-mother-daughter-album.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "bytes": 2897937,
+      "sha256": "8b492230b2fb269d7f41061049bf99354494bde220f6c39c67cdc48f3d2a8cf5"
+    },
+    {
+      "id": 24,
+      "file": "generated/letopis-24-three-sisters.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "bytes": 2360061,
+      "sha256": "f16469f7b0a9f6160d0a5981933c8cba49e61ac6768b952af6a2c9cb5add8e8a"
+    },
+    {
+      "id": 25,
+      "file": "generated/letopis-25-old-friends-chess.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 2633196,
+      "sha256": "7db31c58f335f5ec60e2c27fa74fab656b2e3895197ee037c056aee343333e84"
+    },
+    {
+      "id": 26,
+      "file": "generated/letopis-26-friends-at-tea.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 2760085,
+      "sha256": "d237e939df906466d74908c31c4e193e5d273a4dc5311e7785529a1ebdd7edb0"
+    },
+    {
+      "id": 27,
+      "file": "generated/letopis-27-siblings-orchard.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 3278891,
+      "sha256": "98908e206bbd29123c67c0e8b5a3473e4ffeee65b631b1b4cb72345e31ffa925"
+    },
+    {
+      "id": 28,
+      "file": "generated/letopis-28-four-generations-doorway.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "bytes": 3100699,
+      "sha256": "63a5251c0ec8f53f4be49105fa6e057853f4deddd2bc1c19baee8d353e56ddcf"
+    },
+    {
+      "id": 29,
+      "file": "generated/letopis-29-older-couple-walk.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 3096845,
+      "sha256": "daf3993f81487e12b33073f8819f9e4b3c73bbccce4cb846fbc6ace5a7aac8f9"
+    },
+    {
+      "id": 30,
+      "file": "generated/letopis-30-grandfather-radio.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "bytes": 2766027,
+      "sha256": "681df396203771437367306f298491081619f0ce4439daeeae693f28e88f376c"
+    },
+    {
+      "id": 31,
+      "file": "generated/letopis-31-birch-home-morning.png",
+      "width": 1672,
+      "height": 941,
+      "format": "PNG",
+      "bytes": 3223034,
+      "sha256": "bf8aee978f54e57c6b012aae74edd96e98c0628e7cf43c98b3a3691b03d926fd"
+    },
+    {
+      "id": 32,
+      "file": "generated/letopis-32-summer-dacha-table.png",
+      "width": 1672,
+      "height": 941,
+      "format": "PNG",
+      "bytes": 2789141,
+      "sha256": "2f0183c2e6944c3070f9f0e78a1082e5c9be4ff216788959f066ed0b87b57d10"
+    },
+    {
+      "id": 33,
+      "file": "generated/letopis-33-train-window-journey.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 2701853,
+      "sha256": "8c8910939c43702b3b74b30ef20f93d037314cbbb26f9260ef5c8c7d3278cab6"
+    },
+    {
+      "id": 34,
+      "file": "generated/letopis-34-seaside-couple-snapshot.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 2512006,
+      "sha256": "797f270cf7be04f327302dd00f1bfe8088ee4a2dc03f9c01bfe7754d9cdc5825"
+    },
+    {
+      "id": 35,
+      "file": "generated/letopis-35-friends-hiking-pause.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 2895041,
+      "sha256": "ba55bacfd3f1cfab5818d2703403e26546d8d532230883a31d70dd5b16f41c78"
+    },
+    {
+      "id": 36,
+      "file": "generated/letopis-36-river-family-picnic.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "bytes": 2853140,
+      "sha256": "c6e977842a074b5b4fafa8be4b542e21c55139ab6ee550df98f33c49ea24cd6a"
+    },
+    {
+      "id": 37,
+      "file": "generated/letopis-37-familiar-town-walk.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 2938614,
+      "sha256": "cf5a519c72b7a6597870accb26c20eb4a51742f95777d00987f9ef2b645fad54"
+    },
+    {
+      "id": 38,
+      "file": "generated/letopis-38-winter-homeward.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 2831746,
+      "sha256": "b2a5b4bcd56c29bd82526e76b1b7a170cac95325f77795bebc456eddaac02ae2"
+    },
+    {
+      "id": 39,
+      "file": "generated/letopis-39-lake-camping-morning.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 2653852,
+      "sha256": "145487b76c0f149fa25dd59b7f15f7df62240dd729ce2524ff35754536586ad2"
+    },
+    {
+      "id": 40,
+      "file": "generated/letopis-40-childhood-courtyard.png",
+      "width": 1672,
+      "height": 941,
+      "format": "PNG",
+      "bytes": 3256637,
+      "sha256": "d5e017e467af317b7315b8c82365c15be1bfa1deed07a0272b4f13c9a1bb6cd5"
+    },
+    {
+      "id": 41,
+      "file": "generated/letopis-41-grandmother-birthday.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "bytes": 2665849,
+      "sha256": "79828779b932e5deecee4e047a0e7fe569a91ee3ccb46e32edcc6b38e393dbb1"
+    },
+    {
+      "id": 42,
+      "file": "generated/letopis-42-girlfriends-birthday.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 2763357,
+      "sha256": "626b82af3ebbf7aeb456a8f21b9898eae13ce6d978cc4ef083080dd93c96f7a2"
+    },
+    {
+      "id": 43,
+      "file": "generated/letopis-43-parents-wedding-memory.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "bytes": 2513999,
+      "sha256": "c55de6c951d371b50e75fa97b312d93419148ac9d8fcfd898cb09babd6ebfc31"
+    },
+    {
+      "id": 44,
+      "file": "generated/letopis-44-anniversary-at-home.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "bytes": 2856027,
+      "sha256": "ed13440a942e66a1e2d95c4d99aaf3b5262c641adb7d7f5cbc799e409905af14"
+    },
+    {
+      "id": 45,
+      "file": "generated/letopis-45-new-year-family-evening.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "bytes": 2748083,
+      "sha256": "38305a5ab6bbea9d4a26bfa67012fd8a577e0fc9d03430035b58ef6eda649536"
+    },
+    {
+      "id": 46,
+      "file": "generated/letopis-46-march-eight-mimosa.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "bytes": 2617299,
+      "sha256": "f7d51acd2ef7f3c0081158da2e55b4d2bdaa622f875a3b98963e79f0fd030043"
+    },
+    {
+      "id": 47,
+      "file": "generated/letopis-47-february-fourteen-kitchen.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 2633710,
+      "sha256": "69f5ce157830961beb030bf5ea1d1e995f86ef241b710d7b8c8af0a105917bbb"
+    },
+    {
+      "id": 48,
+      "file": "generated/letopis-48-first-school-day.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "bytes": 2461512,
+      "sha256": "bac645565de0215b7b67f2179f6c2811ff5f5c51e7452818cb2011fb61fb23e8"
+    },
+    {
+      "id": 49,
+      "file": "generated/letopis-49-friends-reunion.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 2553633,
+      "sha256": "f8327f22cb2b88c10b15cd786e17e84c003cd44a3a81e1c062192f5cec8d037a"
+    },
+    {
+      "id": 50,
+      "file": "generated/letopis-50-first-home-housewarming.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "bytes": 2519384,
+      "sha256": "20805ede467d9103846ad4b434b56014fa8e7f5678b1bb7d4372030e63d24f80"
+    }
+  ]
+}

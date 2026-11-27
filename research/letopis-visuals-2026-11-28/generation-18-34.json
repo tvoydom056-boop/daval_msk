@@ -1,0 +1,127 @@
+{
+  "owner_ids": "18-34",
+  "count": 17,
+  "synthetic_demo": true,
+  "review_method": "Все 17 отдельных результатов просмотрены в полном изображении: лица, руки, число людей, композиция, эпоха, случайные надписи и заметные артефакты. Кадр 23 отдельно открыт после ограничения вывода трёх превью. Сгенерировано встроенным imagegen по точным промптам manifest.json, без референсных изображений и без платного CLI/API.",
+  "assets": [
+    {
+      "id": 18,
+      "file": "generated/letopis-18-mother-window-thought.png",
+      "status": "generated-reviewed",
+      "sha256": "7A54011A8C542C072725347DF2DCCA71F5C21E851DE8D00C58D7292B2D62F6C1",
+      "visual_review": "Портрет соответствует эпохе 2000-х и домашнему свету; лицо и кожа естественны, случайных надписей и артефактов нет."
+    },
+    {
+      "id": 19,
+      "file": "generated/letopis-19-teacher-portrait.png",
+      "status": "generated-reviewed",
+      "sha256": "3F15213A3CCC35484F1198F4F3ED6678FDC77701D6D82AC28D06640FEE7CBBA0",
+      "visual_review": "Чёрно-белый портрет учительницы соответствует 1950-м; лицо, воротник, пустая доска и композиция чистые, текста нет."
+    },
+    {
+      "id": 20,
+      "file": "generated/letopis-20-craftsman-portrait.png",
+      "status": "generated-reviewed",
+      "sha256": "CE8ECF749C7EF173B17C07DB279D10F0C7589D427C471A42A3CD6688350D1E7E",
+      "visual_review": "Естественный пожилой мастер в мастерской; возраст, лицо и мягкая улыбка реалистичны, читаемых надписей нет."
+    },
+    {
+      "id": 21,
+      "file": "generated/letopis-21-grandmother-and-dough.png",
+      "sha256": "3928976DFE88BDFD873F65851505A02A8B7E432D193F01B34A086A2EFC116C0E",
+      "status": "generated-reviewed",
+      "visual_review": "Два поколения за тестом, четыре естественные руки и два лица, домашний свет, без надписей."
+    },
+    {
+      "id": 22,
+      "file": "generated/letopis-22-father-daughter-bicycle.png",
+      "sha256": "2A746E12CF67362EDB1EF9BEAAF5C4EC4D30AC42265601502927F08F5729126B",
+      "status": "generated-reviewed",
+      "visual_review": "Отец и дочь с велосипедом: два человека, два целых колеса, период 1990-х, руки и лица без явных ошибок."
+    },
+    {
+      "id": 23,
+      "file": "generated/letopis-23-mother-daughter-album.png",
+      "sha256": "8B492230B2FB269D7F41061049BF99354494BDE220F6C39C67CDC48F3D2A8CF5",
+      "status": "generated-reviewed",
+      "visual_review": "Мать и взрослая дочь рассматривают альбом; две различимые фигуры и естественные руки, надписей и артефактов нет."
+    },
+    {
+      "id": 24,
+      "file": "generated/letopis-24-three-sisters.png",
+      "sha256": "F16469F7B0A9F6160D0A5981933C8CBA49E61AC6768B952AF6A2C9CB5ADD8E8A",
+      "status": "generated-reviewed",
+      "visual_review": "Три сестры на крыльце; разные выражения лиц, одежда и плёнка в духе 1980-х, явных анатомических ошибок и надписей нет."
+    },
+    {
+      "id": 25,
+      "file": "generated/letopis-25-old-friends-chess.png",
+      "sha256": "7DB31C58F335F5EC60E2C27FA74FAB656B2E3895197EE037C056AEE343333E84",
+      "status": "generated-reviewed",
+      "visual_review": "Два пожилых друга за шахматами; лица и руки естественны, доска служит второстепенным предметом, надписей нет."
+    },
+    {
+      "id": 26,
+      "file": "generated/letopis-26-friends-at-tea.png",
+      "sha256": "D237E939DF906466D74908C31C4E193E5D273A4DC5311E7785529A1EBDD7EDB0",
+      "status": "generated-reviewed",
+      "visual_review": "Три подруги за чаем, бытовая сцена 1970-х; живые лица, руки и жесты правдоподобны, текста нет."
+    },
+    {
+      "id": 27,
+      "file": "generated/letopis-27-siblings-orchard.png",
+      "sha256": "98908E206BBD29123C67C0E8B5A3473E4FFEEE65B631B1B4CB72345E31FFA925",
+      "status": "generated-reviewed",
+      "visual_review": "Брат и сестра с яблоками; две фигуры, чёрно-белая стилизация 1960-х, пропорции и руки без явных ошибок."
+    },
+    {
+      "id": 28,
+      "file": "generated/letopis-28-four-generations-doorway.png",
+      "sha256": "63A5251C0EC8F53F4BE49105FA6E057853F4DEDDD2BC1C19BAEE8D353E56DDCF",
+      "status": "generated-reviewed",
+      "visual_review": "Четыре родственницы четырёх поколений у дома; число людей и возрастные различия соблюдены, лица и руки чистые, текста нет."
+    },
+    {
+      "id": 29,
+      "file": "generated/letopis-29-older-couple-walk.png",
+      "sha256": "DAF3993F81487E12B33073F8819F9E4B3C73BBCCCE4CB846FBC6ACE5A7AAC8F9",
+      "status": "generated-reviewed",
+      "visual_review": "Пожилая пара на прогулке, естественные лица, соединённые руки и шаг; спокойный современный документальный кадр без надписей."
+    },
+    {
+      "id": 30,
+      "file": "generated/letopis-30-grandfather-radio.png",
+      "sha256": "681DF396203771437367306F298491081619F0CE4439DAEEAE693F28E88F376C",
+      "status": "generated-reviewed",
+      "visual_review": "Дедушка объясняет внуку устройство отключённого приёмника; два лица и естественные руки, техника без маркировки, одежда в духе 1980-х."
+    },
+    {
+      "id": 31,
+      "file": "generated/letopis-31-birch-home-morning.png",
+      "sha256": "BF8AEE978F54E57C6B012AAE74EDD96E98C0628E7CF43C98B3A3691B03D926FD",
+      "status": "generated-reviewed",
+      "visual_review": "Широкий кадр деревянного дома и берёз с тихим полем слева; без людей, современных предметов, адресов и надписей."
+    },
+    {
+      "id": 32,
+      "file": "generated/letopis-32-summer-dacha-table.png",
+      "sha256": "2F0183C2E6944C3070F9F0E78A1082E5C9BE4FF216788959F066ED0B87B57D10",
+      "status": "generated-reviewed",
+      "visual_review": "Дачный стол с тремя чашками и яблоками, широкое свободное поле слева; без людей, надписей и явных дефектов."
+    },
+    {
+      "id": 33,
+      "file": "generated/letopis-33-train-window-journey.png",
+      "sha256": "8C8910939C43702B3B74B30EF20F93D037314CBBB26F9260EF5C8C7D3278CAB6",
+      "status": "generated-reviewed",
+      "visual_review": "Мама с сыном у окна поезда; два лица, естественные профили и руки, обстановка и плёнка в духе 1980-х, текста нет."
+    },
+    {
+      "id": 34,
+      "file": "generated/letopis-34-seaside-couple-snapshot.png",
+      "sha256": "797F270CF7BE04F327302DD00F1BFE8088EE4A2DC03F9C01BFE7754D9CDC5825",
+      "status": "generated-reviewed",
+      "visual_review": "Молодая пара у моря: два естественных лица, целые головы, анатомически правдоподобные руки, одежда и плёнка в духе 1970-х, текста нет."
+    }
+  ]
+}

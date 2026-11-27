@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "title": "150 новых предметных PNG для семейных историй",
-  "status": "draft",
+  "status": "partially-generated",
   "count": 150,
   "sample_count": 36,
   "categories": [
@@ -76,938 +76,1086 @@
       "category": "family-archive",
       "name": "Семейный фотоальбом, закрытый, без надписей",
       "file": "family-archive/png/01-photo-album.png",
-      "sample": true
+      "sample": true,
+      "status": "generated"
     },
     {
       "id": "c002",
       "category": "family-archive",
       "name": "Открытый почтовый конверт без надписей",
       "file": "family-archive/png/02-open-envelope.png",
-      "sample": true
+      "sample": true,
+      "status": "generated"
     },
     {
       "id": "c003",
       "category": "family-archive",
       "name": "Перевязанная стопка писем без читаемого текста",
       "file": "family-archive/png/03-tied-letters.png",
-      "sample": true
+      "sample": true,
+      "status": "generated"
     },
     {
       "id": "c004",
       "category": "family-archive",
       "name": "Пустая деревянная фоторамка",
       "file": "family-archive/png/04-wooden-photo-frame.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c005",
       "category": "family-archive",
       "name": "Чистая состаренная фотокарточка",
       "file": "family-archive/png/05-blank-vintage-photo-card.png",
-      "sample": false
+      "sample": false,
+      "status": "deferred",
+      "deferred_reason": "Пустая фотокарточка визуально близка к выбранной открытке c006 и менее выразительна без реального семейного снимка."
     },
     {
       "id": "c006",
       "category": "family-archive",
       "name": "Почтовая открытка с пустыми полями",
       "file": "family-archive/png/06-blank-postcard.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c007",
       "category": "family-archive",
       "name": "Полоска фотонегативов",
       "file": "family-archive/png/07-film-negative-strip.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c008",
       "category": "family-archive",
       "name": "Деревянная шкатулка для семейных реликвий",
       "file": "family-archive/png/08-keepsake-box.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c009",
       "category": "family-archive",
       "name": "Детская вязаная пинетка",
       "file": "family-archive/png/09-baby-bootie.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c010",
       "category": "family-archive",
       "name": "Браслет новорождённого с пустой биркой",
       "file": "family-archive/png/10-blank-newborn-bracelet.png",
-      "sample": false
+      "sample": false,
+      "status": "deferred",
+      "deferred_reason": "Браслет новорождённого применим к узкому эпизоду и с пустой биркой слабо узнаваем; детскую тему уже раскрывают пинетка и погремушка."
     },
     {
       "id": "c011",
       "category": "family-archive",
       "name": "Свадебный атласный бант",
       "file": "family-archive/png/11-wedding-ribbon-bow.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c012",
       "category": "family-archive",
       "name": "Засушенная роза",
       "file": "family-archive/png/12-pressed-rose.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c013",
       "category": "family-archive",
       "name": "Старая детская погремушка",
       "file": "family-archive/png/13-vintage-baby-rattle.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c014",
       "category": "family-archive",
       "name": "Фотослайд в картонной рамке без надписей",
       "file": "family-archive/png/14-mounted-photo-slide.png",
-      "sample": false
+      "sample": false,
+      "status": "deferred",
+      "deferred_reason": "Одиночный слайд близок по роли к выбранной полоске негативов c007; небольшой пустой кадр добавляет меньше разнообразия."
     },
     {
       "id": "c015",
       "category": "sport",
       "name": "Футбольный мяч",
       "file": "sport/png/01-football.png",
-      "sample": true
+      "sample": true,
+      "status": "generated"
     },
     {
       "id": "c016",
       "category": "sport",
       "name": "Теннисная ракетка",
       "file": "sport/png/02-tennis-racket.png",
-      "sample": true
+      "sample": true,
+      "status": "generated"
     },
     {
       "id": "c017",
       "category": "sport",
       "name": "Фигурный конёк",
       "file": "sport/png/03-figure-skate.png",
-      "sample": true
+      "sample": true,
+      "status": "generated"
     },
     {
       "id": "c018",
       "category": "sport",
       "name": "Деревянная лыжа с креплением",
       "file": "sport/png/04-wooden-ski.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c019",
       "category": "sport",
       "name": "Гантель",
       "file": "sport/png/05-dumbbell.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c020",
       "category": "sport",
       "name": "Плавательные очки",
       "file": "sport/png/06-swimming-goggles.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c021",
       "category": "sport",
       "name": "Боксёрская перчатка",
       "file": "sport/png/07-boxing-glove.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c022",
       "category": "sport",
       "name": "Дорожный велосипед",
       "file": "sport/png/08-road-bicycle.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c023",
       "category": "sport",
       "name": "Баскетбольный мяч",
       "file": "sport/png/09-basketball.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c024",
       "category": "sport",
       "name": "Волан для бадминтона",
       "file": "sport/png/10-badminton-shuttlecock.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c025",
       "category": "sport",
       "name": "Ракетка для настольного тенниса",
       "file": "sport/png/11-table-tennis-paddle.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c026",
       "category": "sport",
       "name": "Фехтовальная маска",
       "file": "sport/png/12-fencing-mask.png",
-      "sample": false
+      "sample": false,
+      "status": "deferred",
+      "deferred_reason": "Фехтовальная маска нужна более редкому увлечению; в этой партии предпочтены более универсальные спортивные предметы."
     },
     {
       "id": "c027",
       "category": "music",
       "name": "Акустическая гитара",
       "file": "music/png/01-acoustic-guitar.png",
-      "sample": true
+      "sample": true,
+      "status": "generated"
     },
     {
       "id": "c028",
       "category": "music",
       "name": "Баян",
       "file": "music/png/02-button-accordion.png",
-      "sample": true
+      "sample": true,
+      "status": "generated"
     },
     {
       "id": "c029",
       "category": "music",
       "name": "Виниловая пластинка без надписей",
       "file": "music/png/03-vinyl-record.png",
-      "sample": true
+      "sample": true,
+      "status": "generated"
     },
     {
       "id": "c030",
       "category": "music",
       "name": "Поперечная флейта",
       "file": "music/png/04-concert-flute.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c031",
       "category": "music",
       "name": "Труба",
       "file": "music/png/05-trumpet.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c032",
       "category": "music",
       "name": "Бубен",
       "file": "music/png/06-tambourine.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c033",
       "category": "music",
       "name": "Деревянный механический метроном",
       "file": "music/png/07-wooden-metronome.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c034",
       "category": "music",
       "name": "Аудиокассета без надписей",
       "file": "music/png/08-audio-cassette.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c035",
       "category": "music",
       "name": "Балалайка",
       "file": "music/png/09-balalaika.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c036",
       "category": "music",
       "name": "Акустическое пианино",
       "file": "music/png/10-upright-piano.png",
-      "sample": false
+      "sample": false,
+      "status": "deferred",
+      "deferred_reason": "Полное пианино требует корректной перспективы корпуса и множества повторяющихся клавиш; более компактные инструменты дают восемь разных музыкальных сюжетов."
     },
     {
       "id": "c037",
       "category": "music",
       "name": "Губная гармошка",
       "file": "music/png/11-harmonica.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c038",
       "category": "music",
       "name": "Саксофон",
       "file": "music/png/12-saxophone.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c039",
       "category": "travel",
       "name": "Старый дорожный чемодан",
       "file": "travel/png/01-vintage-suitcase.png",
-      "sample": true
+      "sample": true,
+      "status": "generated"
     },
     {
       "id": "c040",
       "category": "travel",
       "name": "Магнитный туристический компас",
       "file": "travel/png/02-magnetic-compass.png",
-      "sample": true
+      "sample": true,
+      "status": "generated"
     },
     {
       "id": "c041",
       "category": "travel",
       "name": "Бинокль",
       "file": "travel/png/03-binoculars.png",
-      "sample": true
+      "sample": true,
+      "status": "generated"
     },
     {
       "id": "c042",
       "category": "travel",
       "name": "Походный рюкзак",
       "file": "travel/png/04-hiking-backpack.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c043",
       "category": "travel",
       "name": "Складная карта без надписей",
       "file": "travel/png/05-unlabeled-folding-map.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c044",
       "category": "travel",
       "name": "Железнодорожный билет с пустыми полями",
       "file": "travel/png/06-blank-railway-ticket.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c045",
       "category": "travel",
       "name": "Походный термос",
       "file": "travel/png/07-camping-thermos.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c046",
       "category": "travel",
       "name": "Брезентовая туристическая палатка",
       "file": "travel/png/08-canvas-tent.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c047",
       "category": "travel",
       "name": "Походный ботинок",
       "file": "travel/png/09-hiking-boot.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c048",
       "category": "travel",
       "name": "Треккинговая палка",
       "file": "travel/png/10-trekking-pole.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c049",
       "category": "travel",
       "name": "Багажная бирка с пустым полем",
       "file": "travel/png/11-blank-luggage-tag.png",
-      "sample": false
+      "sample": false,
+      "status": "deferred",
+      "deferred_reason": "Пустая багажная бирка мало выразительна отдельно и близка к уже выбранным дорожным заготовкам карты и билета."
     },
     {
       "id": "c050",
       "category": "travel",
       "name": "Морская раковина на память о поездке",
       "file": "travel/png/12-seashell-souvenir.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c051",
       "category": "hobbies",
       "name": "Деревянный шахматный конь",
       "file": "hobbies/png/01-wooden-chess-knight.png",
-      "sample": true
+      "sample": true,
+      "status": "generated"
     },
     {
       "id": "c052",
       "category": "hobbies",
       "name": "Пяльцы с вышивкой",
       "file": "hobbies/png/02-embroidery-hoop.png",
-      "sample": true
+      "sample": true,
+      "status": "generated"
     },
     {
       "id": "c053",
       "category": "hobbies",
       "name": "Удочка с катушкой",
       "file": "hobbies/png/03-fishing-rod.png",
-      "sample": true
+      "sample": true,
+      "status": "generated"
     },
     {
       "id": "c054",
       "category": "hobbies",
       "name": "Клубок шерсти",
       "file": "hobbies/png/04-wool-yarn-ball.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c055",
       "category": "hobbies",
       "name": "Крючок для вязания",
       "file": "hobbies/png/05-crochet-hook.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c056",
       "category": "hobbies",
       "name": "Любительский астрономический телескоп",
       "file": "hobbies/png/06-amateur-telescope.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c057",
       "category": "hobbies",
       "name": "Модель парусника",
       "file": "hobbies/png/07-model-sailboat.png",
-      "sample": false
+      "sample": false,
+      "status": "deferred",
+      "deferred_reason": "Тонкий рангоут и связная система такелажа модели парусника сложнее проверяются; сохранены более простые и разные формы увлечений."
     },
     {
       "id": "c058",
       "category": "hobbies",
       "name": "Механический кубик-головоломка без маркировки",
       "file": "hobbies/png/08-twist-puzzle-cube.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c059",
       "category": "hobbies",
       "name": "Керамическая ваза ручной работы",
       "file": "hobbies/png/09-handmade-pottery-vase.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c060",
       "category": "hobbies",
       "name": "Бумажный журавлик оригами",
       "file": "hobbies/png/10-origami-crane.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c061",
       "category": "hobbies",
       "name": "Коллекционная модель ретроавтомобиля",
       "file": "hobbies/png/11-model-vintage-car.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c062",
       "category": "hobbies",
       "name": "Резная деревянная фигурка птицы",
       "file": "hobbies/png/12-carved-wooden-bird.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c063",
       "category": "home-and-garden",
       "name": "Садовая лейка",
       "file": "home-and-garden/png/01-garden-watering-can.png",
-      "sample": true
+      "sample": true,
+      "status": "generated"
     },
     {
       "id": "c064",
       "category": "home-and-garden",
       "name": "Керамический заварочный чайник",
       "file": "home-and-garden/png/02-ceramic-teapot.png",
-      "sample": true
+      "sample": true,
+      "status": "generated"
     },
     {
       "id": "c065",
       "category": "home-and-garden",
       "name": "Пеларгония в терракотовом горшке",
       "file": "home-and-garden/png/03-potted-pelargonium.png",
-      "sample": true
+      "sample": true,
+      "status": "generated"
     },
     {
       "id": "c066",
       "category": "home-and-garden",
       "name": "Садовая лопата с длинной ручкой",
       "file": "home-and-garden/png/04-garden-spade.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c067",
       "category": "home-and-garden",
       "name": "Плетёная хозяйственная корзина",
       "file": "home-and-garden/png/05-wicker-basket.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c068",
       "category": "home-and-garden",
       "name": "Чугунная сковорода",
       "file": "home-and-garden/png/06-cast-iron-skillet.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c069",
       "category": "home-and-garden",
       "name": "Деревянные настенные часы без надписей",
       "file": "home-and-garden/png/07-wooden-wall-clock.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c070",
       "category": "home-and-garden",
       "name": "Деревянный скворечник",
       "file": "home-and-garden/png/08-wooden-birdhouse.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c071",
       "category": "home-and-garden",
       "name": "Каменная кухонная ступка",
       "file": "home-and-garden/png/09-stone-kitchen-mortar.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c072",
       "category": "home-and-garden",
       "name": "Эмалированный дуршлаг",
       "file": "home-and-garden/png/10-enamel-colander.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c073",
       "category": "home-and-garden",
       "name": "Садовые грабли",
       "file": "home-and-garden/png/11-garden-rake.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c074",
       "category": "home-and-garden",
       "name": "Плетёное кресло",
       "file": "home-and-garden/png/12-wicker-armchair.png",
-      "sample": false
+      "sample": false,
+      "status": "deferred",
+      "deferred_reason": "Плетёное кресло имеет сложную пространственную решётку и мебельный масштаб; материал плетения уже представлен выбранной корзиной c067."
     },
     {
       "id": "c075",
       "category": "education",
       "name": "Выпускная академическая шапочка",
       "file": "education/png/01-graduation-cap.png",
-      "sample": true
+      "sample": true,
+      "status": "generated"
     },
     {
       "id": "c076",
       "category": "education",
       "name": "Свёрнутый диплом без текста",
       "file": "education/png/02-blank-diploma-scroll.png",
-      "sample": true
+      "sample": true,
+      "status": "generated"
     },
     {
       "id": "c077",
       "category": "education",
       "name": "Учебный глобус без надписей",
       "file": "education/png/03-unlabeled-school-globe.png",
-      "sample": true
+      "sample": true,
+      "status": "generated"
     },
     {
       "id": "c078",
       "category": "education",
       "name": "Школьная грифельная доска без текста",
       "file": "education/png/04-blank-school-slate.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c079",
       "category": "education",
       "name": "Школьный колокольчик",
       "file": "education/png/05-school-bell.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c080",
       "category": "education",
       "name": "Деревянный карандаш без маркировки",
       "file": "education/png/06-wooden-pencil.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c081",
       "category": "education",
       "name": "Прозрачный транспортир",
       "file": "education/png/07-school-protractor.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c082",
       "category": "education",
       "name": "Логарифмическая линейка",
       "file": "education/png/08-slide-rule.png",
-      "sample": false
+      "sample": false,
+      "status": "deferred",
+      "deferred_reason": "Логарифмическая линейка близка по виду к готовой масштабной линейке p008 и требует достоверных мелких шкал; в этой партии отложена."
     },
     {
       "id": "c083",
       "category": "education",
       "name": "Школьная меловая губка",
       "file": "education/png/09-chalkboard-eraser.png",
-      "sample": false
+      "sample": false,
+      "status": "deferred",
+      "deferred_reason": "Меловая губка слабо читается как отдельный сюжет; школьная тема уже представлена доской c078 и другими более узнаваемыми вещами."
     },
     {
       "id": "c084",
       "category": "education",
       "name": "Деревянный пенал",
       "file": "education/png/10-wooden-pencil-case.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c085",
       "category": "education",
       "name": "Школьный ранец без эмблем",
       "file": "education/png/11-school-satchel.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c086",
       "category": "education",
       "name": "Кубок за достижения без надписей",
       "file": "education/png/12-blank-achievement-trophy.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c087",
       "category": "personal-items",
       "name": "Карманные часы",
       "file": "personal-items/png/01-pocket-watch.png",
-      "sample": true
+      "sample": true,
+      "status": "generated"
     },
     {
       "id": "c088",
       "category": "personal-items",
       "name": "Круглые очки",
       "file": "personal-items/png/02-round-eyeglasses.png",
-      "sample": true
+      "sample": true,
+      "status": "generated"
     },
     {
       "id": "c089",
       "category": "personal-items",
       "name": "Открытый медальон с пустым местом под фото",
       "file": "personal-items/png/03-open-photo-locket.png",
-      "sample": true
+      "sample": true,
+      "status": "generated"
     },
     {
       "id": "c090",
       "category": "personal-items",
       "name": "Гладкое обручальное кольцо",
       "file": "personal-items/png/04-plain-wedding-ring.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c091",
       "category": "personal-items",
       "name": "Гребень для волос",
       "file": "personal-items/png/05-hair-comb.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c092",
       "category": "personal-items",
       "name": "Старый домашний ключ",
       "file": "personal-items/png/06-old-house-key.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c093",
       "category": "personal-items",
       "name": "Хлопковый носовой платок",
       "file": "personal-items/png/07-cotton-handkerchief.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c094",
       "category": "personal-items",
       "name": "Зажим для галстука",
       "file": "personal-items/png/08-tie-clip.png",
-      "sample": false
+      "sample": false,
+      "status": "deferred",
+      "deferred_reason": "Зажим для галстука слишком мелкий и мало выразителен без одежды; личные вещи представлены восемью более узнаваемыми предметами."
     },
     {
       "id": "c095",
       "category": "personal-items",
       "name": "Флакон духов без этикетки",
       "file": "personal-items/png/09-unlabeled-perfume-bottle.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c096",
       "category": "personal-items",
       "name": "Кожаный бумажник",
       "file": "personal-items/png/10-leather-wallet.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c097",
       "category": "personal-items",
       "name": "Заколка для волос",
       "file": "personal-items/png/11-hair-barrette.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c098",
       "category": "personal-items",
       "name": "Деревянная трость",
       "file": "personal-items/png/12-wooden-walking-cane.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c099",
       "category": "everyday-history",
       "name": "Дисковый телефон",
       "file": "everyday-history/png/01-rotary-telephone.png",
-      "sample": true
+      "sample": true,
+      "status": "generated"
     },
     {
       "id": "c100",
       "category": "everyday-history",
       "name": "Транзисторный радиоприёмник",
       "file": "everyday-history/png/02-transistor-radio.png",
-      "sample": true
+      "sample": true,
+      "status": "generated"
     },
     {
       "id": "c101",
       "category": "everyday-history",
       "name": "Керосиновая лампа",
       "file": "everyday-history/png/03-kerosene-lamp.png",
-      "sample": true
+      "sample": true,
+      "status": "generated"
     },
     {
       "id": "c102",
       "category": "everyday-history",
       "name": "Самовар",
       "file": "everyday-history/png/04-samovar.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c103",
       "category": "everyday-history",
       "name": "Походный примус",
       "file": "everyday-history/png/05-primus-stove.png",
-      "sample": false
+      "sample": false,
+      "status": "deferred",
+      "deferred_reason": "Примус требует согласованной конструкции горелки, насоса и бака; для текущей партии выбран более универсальный бытовой набор."
     },
     {
       "id": "c104",
       "category": "everyday-history",
       "name": "Сумка-авоська",
       "file": "everyday-history/png/06-string-grocery-bag.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c105",
       "category": "everyday-history",
       "name": "Эмалированная кружка",
       "file": "everyday-history/png/07-enamel-mug.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c106",
       "category": "everyday-history",
       "name": "Катушечный магнитофон",
       "file": "everyday-history/png/08-reel-to-reel-recorder.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c107",
       "category": "everyday-history",
       "name": "Чугунный угольный утюг",
       "file": "everyday-history/png/09-charcoal-iron.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c108",
       "category": "everyday-history",
       "name": "Телевизор с кинескопом и выключенным экраном",
       "file": "everyday-history/png/10-crt-television.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c109",
       "category": "everyday-history",
       "name": "Эмалированная хлебница",
       "file": "everyday-history/png/11-enamel-bread-bin.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c110",
       "category": "everyday-history",
       "name": "Сифон для газированной воды",
       "file": "everyday-history/png/12-soda-siphon.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c111",
       "category": "gaming",
       "name": "Геймпад с двумя аналоговыми стиками",
       "file": "gaming/png/01-dual-analog-gamepad.png",
-      "sample": true
+      "sample": true,
+      "status": "generated"
     },
     {
       "id": "c112",
       "category": "gaming",
       "name": "Настольный игровой джойстик",
       "file": "gaming/png/02-desktop-gaming-joystick.png",
-      "sample": true
+      "sample": true,
+      "status": "generated"
     },
     {
       "id": "c113",
       "category": "gaming",
       "name": "Портативная игровая консоль с выключенным экраном",
       "file": "gaming/png/03-handheld-console.png",
-      "sample": true
+      "sample": true,
+      "status": "generated"
     },
     {
       "id": "c114",
       "category": "gaming",
       "name": "Проводная игровая мышь",
       "file": "gaming/png/04-wired-gaming-mouse.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c115",
       "category": "gaming",
       "name": "Шлем виртуальной реальности",
       "file": "gaming/png/05-vr-headset.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c116",
       "category": "gaming",
       "name": "Игровой картридж без наклейки",
       "file": "gaming/png/06-blank-game-cartridge.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c117",
       "category": "gaming",
       "name": "Стационарная игровая приставка без маркировки",
       "file": "gaming/png/07-retro-game-console.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c118",
       "category": "gaming",
       "name": "Блок педалей для автосимулятора",
       "file": "gaming/png/08-racing-pedals.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c119",
       "category": "gaming",
       "name": "Игровой оптический диск в футляре без надписей",
       "file": "gaming/png/09-game-disc-case.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c120",
       "category": "gaming",
       "name": "Панель аркадных кнопок без джойстика",
       "file": "gaming/png/10-arcade-button-panel.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c121",
       "category": "gaming",
       "name": "Карта памяти для игровой приставки без надписей",
       "file": "gaming/png/11-console-memory-card.png",
-      "sample": false
+      "sample": false,
+      "status": "deferred",
+      "deferred_reason": "Карта памяти игровой приставки визуально близка к выбранному картриджу c116; предпочтены восемь периферийных предметов с разными силуэтами."
     },
     {
       "id": "c122",
       "category": "gaming",
       "name": "Тканевый коврик для мыши без рисунка",
       "file": "gaming/png/12-plain-mouse-pad.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c123",
       "category": "animals",
       "name": "Рыжий полосатый кот, целиком",
       "file": "animals/png/01-ginger-tabby-cat.png",
-      "sample": true
+      "sample": true,
+      "status": "generated"
     },
     {
       "id": "c124",
       "category": "animals",
       "name": "Палевый пёс, целиком",
       "file": "animals/png/02-yellow-dog.png",
-      "sample": true
+      "sample": true,
+      "status": "generated"
     },
     {
       "id": "c125",
       "category": "animals",
       "name": "Волнистый попугай, целиком",
       "file": "animals/png/03-budgerigar.png",
-      "sample": true
+      "sample": true,
+      "status": "generated"
     },
     {
       "id": "c126",
       "category": "animals",
       "name": "Серый длинношёрстный кот, целиком",
       "file": "animals/png/04-gray-longhair-cat.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c127",
       "category": "animals",
       "name": "Чёрно-белый кот, целиком",
       "file": "animals/png/05-black-white-cat.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c128",
       "category": "animals",
-      "name": "Такса, целиком",
+      "name": "Небольшой длиннотелый пёс с короткими лапами, целиком",
       "file": "animals/png/06-dachshund.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c129",
       "category": "animals",
       "name": "Домашний кролик, целиком",
       "file": "animals/png/07-domestic-rabbit.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c130",
       "category": "animals",
       "name": "Морская свинка, целиком",
       "file": "animals/png/08-guinea-pig.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c131",
       "category": "animals",
       "name": "Лошадь, целиком",
       "file": "animals/png/09-horse.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c132",
       "category": "animals",
       "name": "Сухопутная черепаха, целиком",
       "file": "animals/png/10-tortoise.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c133",
       "category": "animals",
       "name": "Золотая рыбка, целиком",
       "file": "animals/png/11-goldfish.png",
-      "sample": false
+      "sample": false,
+      "status": "generated"
     },
     {
       "id": "c134",
       "category": "animals",
       "name": "Ёж, целиком",
       "file": "animals/png/12-hedgehog.png",
-      "sample": false
+      "sample": false,
+      "status": "deferred",
+      "deferred_reason": "Ёж реже связан с домашним питомцем; мелкие иглы усложняют чистую границу, а восемь выбранных животных дают достаточно разные формы."
     },
     {
       "id": "c135",
@@ -1015,7 +1163,8 @@
       "name": "Мужской тёмный пиджак с рубашкой и галстуком",
       "file": "clothing-templates/png/01-male-dark-suit.png",
       "sample": true,
-      "gender": "male"
+      "gender": "male",
+      "status": "generated"
     },
     {
       "id": "c136",
@@ -1023,7 +1172,8 @@
       "name": "Женская светлая блузка",
       "file": "clothing-templates/png/02-female-light-blouse.png",
       "sample": true,
-      "gender": "female"
+      "gender": "female",
+      "status": "generated"
     },
     {
       "id": "c137",
@@ -1031,7 +1181,8 @@
       "name": "Женское бордовое платье",
       "file": "clothing-templates/png/03-female-burgundy-dress.png",
       "sample": true,
-      "gender": "female"
+      "gender": "female",
+      "status": "generated"
     },
     {
       "id": "c138",
@@ -1039,7 +1190,8 @@
       "name": "Мужская клетчатая повседневная рубашка",
       "file": "clothing-templates/png/04-male-plaid-shirt.png",
       "sample": false,
-      "gender": "male"
+      "gender": "male",
+      "status": "generated"
     },
     {
       "id": "c139",
@@ -1047,7 +1199,8 @@
       "name": "Мужской вязаный свитер с круглой горловиной",
       "file": "clothing-templates/png/05-male-crewneck-sweater.png",
       "sample": false,
-      "gender": "male"
+      "gender": "male",
+      "status": "generated"
     },
     {
       "id": "c140",
@@ -1055,7 +1208,8 @@
       "name": "Мужская джинсовая куртка",
       "file": "clothing-templates/png/06-male-denim-jacket.png",
       "sample": false,
-      "gender": "male"
+      "gender": "male",
+      "status": "generated"
     },
     {
       "id": "c141",
@@ -1063,7 +1217,8 @@
       "name": "Мужской вязаный жилет с рубашкой",
       "file": "clothing-templates/png/07-male-knitted-vest-shirt.png",
       "sample": false,
-      "gender": "male"
+      "gender": "male",
+      "status": "generated"
     },
     {
       "id": "c142",
@@ -1071,7 +1226,8 @@
       "name": "Мужская лёгкая рабочая куртка без эмблем",
       "file": "clothing-templates/png/08-male-work-jacket.png",
       "sample": false,
-      "gender": "male"
+      "gender": "male",
+      "status": "generated"
     },
     {
       "id": "c143",
@@ -1079,7 +1235,8 @@
       "name": "Мужская летняя льняная рубашка со стойкой",
       "file": "clothing-templates/png/09-male-linen-shirt.png",
       "sample": false,
-      "gender": "male"
+      "gender": "male",
+      "status": "generated"
     },
     {
       "id": "c144",
@@ -1087,7 +1244,8 @@
       "name": "Мужская водолазка",
       "file": "clothing-templates/png/10-male-turtleneck.png",
       "sample": false,
-      "gender": "male"
+      "gender": "male",
+      "status": "generated"
     },
     {
       "id": "c145",
@@ -1095,7 +1253,8 @@
       "name": "Женский мягкий кардиган с блузкой",
       "file": "clothing-templates/png/11-female-cardigan-blouse.png",
       "sample": false,
-      "gender": "female"
+      "gender": "female",
+      "status": "generated"
     },
     {
       "id": "c146",
@@ -1103,7 +1262,8 @@
       "name": "Женский твидовый жакет",
       "file": "clothing-templates/png/12-female-tweed-jacket.png",
       "sample": false,
-      "gender": "female"
+      "gender": "female",
+      "status": "generated"
     },
     {
       "id": "c147",
@@ -1111,7 +1271,8 @@
       "name": "Женский вязаный свитер с круглой горловиной",
       "file": "clothing-templates/png/13-female-crewneck-sweater.png",
       "sample": false,
-      "gender": "female"
+      "gender": "female",
+      "status": "generated"
     },
     {
       "id": "c148",
@@ -1119,7 +1280,8 @@
       "name": "Женская блузка с бантом у воротника",
       "file": "clothing-templates/png/14-female-bow-blouse.png",
       "sample": false,
-      "gender": "female"
+      "gender": "female",
+      "status": "generated"
     },
     {
       "id": "c149",
@@ -1127,7 +1289,8 @@
       "name": "Женская джинсовая куртка",
       "file": "clothing-templates/png/15-female-denim-jacket.png",
       "sample": false,
-      "gender": "female"
+      "gender": "female",
+      "status": "generated"
     },
     {
       "id": "c150",
@@ -1135,7 +1298,11 @@
       "name": "Женское шерстяное пальто с лацканами",
       "file": "clothing-templates/png/16-female-wool-coat.png",
       "sample": false,
-      "gender": "female"
+      "gender": "female",
+      "status": "generated"
     }
-  ]
+  ],
+  "generated_count": 136,
+  "deferred_count": 14,
+  "updated_at": "2026-11-27"
 }

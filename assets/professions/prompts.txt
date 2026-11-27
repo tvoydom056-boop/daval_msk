@@ -1,0 +1,465 @@
+[p001] Стетоскоп (Врач)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One real conventional acoustic medical stethoscope, complete and correctly assembled, dark burgundy flexible rubber tubing forming a natural open U, two symmetric curved stainless steel ear tubes with soft black eartips, one single round brushed stainless steel chestpiece attached to the tubing. Arrange the full connected instrument with ears up and chestpiece near the lower right. Tubes and metal must be physically coherent.
+
+[p002] Строительная каска (Строитель)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One real conventional mustard yellow construction safety hard hat. Sturdy molded thermoplastic dome with subtle longitudinal reinforcement ridges, short front brim, a little dark inner suspension visible beneath the rim. Three-quarter view from slightly above. Modest signs of honest use, intact clean helmet, no writing or logos.
+
+[p003] Швейная машинка (Швея)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One real conventional compact mechanical domestic sewing machine, warm ivory enamel body on its own integral flat sewing bed, side handwheel, a small stitch selector, metal needle assembly and presser foot over a silver needle plate. Three-quarter view showing the open sewing arm, needle side, and handwheel. Believable familiar practical mid-to-late-twentieth-century construction with correct connected geometry. The spool pin is empty; no dangling thread, separate accessories, fabric, case or external table. No branding, labels or markings.
+
+[p004] Поварской нож (Повар)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One real conventional chef's kitchen knife with a broad tapered satin stainless steel blade, curved cutting edge, clearly defined heel and smooth dark walnut handle fixed by three small metal rivets. Complete knife lies diagonally across the square image, handle at lower left and blade tip at upper right, viewed from above at a slight oblique angle. Ordinary practical kitchen utensil, dry and clean, realistic proportional blade and handle, no sheath, food or any other object.
+
+[p005] Комбинированный гаечный ключ (Автомеханик)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One real conventional forged steel combination wrench, one open jaw end and one closed twelve-point box ring end connected by a single continuous flat shank. Correct mechanically usable geometry and realistic steel thickness. Satin silver finish with slight wear. Complete tool lies diagonally across the square image, open jaw near upper right and ring end near lower left, viewed from above at a slight oblique angle. No stamped text, size numerals, logos or extra parts.
+
+[p006] Перьевая ручка (Учитель)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One conventional fountain pen in dark burgundy resin with modest brushed brass details and its cap posted securely on the back, a small authentic metal nib exposed. Exactly one complete connected pen, placed diagonally, whole silhouette visible. No loose cap, ink bottle, writing or paper.
+
+[p007] Чертёжный циркуль (Инженер)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One real mechanical technical drawing compass, brushed steel with a knurled adjustment wheel, two slim hinged legs opened slightly, one sharp metal point and one short graphite lead in its holder. Physically coherent hinge and legs, whole instrument visible diagonally. No drawing, case or extra attachments.
+
+[p008] Масштабная линейка (Архитектор)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One real ivory triangular-section architect's scale ruler, complete straight tool with three longitudinal faces and fine clearly defined unnumbered measurement tick marks along its working edges. Gently aged plastic, diagonal view showing the triangular end section. No printed digits, letters, drawing or other objects.
+
+[p009] Столярный рубанок (Столяр)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One conventional hand woodworking bench plane, warm beech wood body with a flat sole and a real steel cutting iron held by a wooden wedge, front horn grip. Three-quarter view from slightly above showing the functional blade opening and solid wooden body. No shavings, workbench or other tools.
+
+[p010] Стрелочный мультиметр (Электрик)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One real conventional rectangular handheld analog electrical multimeter, dark charcoal body, clear analog needle window with simple unnumbered tick marks, one large rotary selector and integral recessed connection sockets. No test leads, extra probes, external cables, digits, letters or labels. Intact functional everyday construction.
+
+[p011] Трубный ключ (Сантехник)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One conventional adjustable plumber's pipe wrench with a muted brick-red forged handle, black serrated opposing jaws, threaded adjustment nut and correctly aligned working jaw mechanism. Show the entire connected tool diagonally from above at a slight angle. No markings, pipes or additional parts.
+
+[p012] Сварочная маска (Сварщик)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One conventional handheld-free welding face shield with dark charcoal molded protective shell, a real rectangular dark glass viewing window, lower chin guard and integral inner adjustable headband just visible at the back. Three-quarter view. No logo, person, separate handle, sparks or extra equipment.
+
+[p013] Малярная кисть (Маляр)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One conventional wide flat house-painting brush with natural cream bristles, a brushed metal ferrule and a smooth warm wooden handle with one hanging hole. Slight traces of dried ivory paint only on the ferrule. Entire brush visible diagonally. No paint pot, liquid paint, writing or extra brush.
+
+[p014] Кельма каменщика (Каменщик)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One conventional bricklayer's trowel, a flat triangular steel blade connected by a curved steel tang to a warm brown wooden handle. Mechanically plausible attachment, a slightly worn but clean metal surface. Whole tool in a diagonal three-quarter view. No brick, mortar, dirt pile or other objects.
+
+[p015] Оптический нивелир (Геодезист)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One real conventional optical surveying level instrument: a compact muted olive horizontal telescope with a round objective lens, focus knob, sighting detail and its attached circular three-screw leveling base. Correct connected precision instrument shown three-quarter from above. No tripod, case, text, target or additional objects.
+
+[p016] Серп (Земледелец)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One conventional agricultural sickle, a curved crescent steel cutting blade securely joined to a short turned dark wooden handle. Entire hooked blade and complete handle visible with wide clear margins. Slight honest wear, dry and clean. No crop, grass, blood, rope or decorative symbolism.
+
+[p017] Садовый секатор (Садовник)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One real conventional bypass pruning shear, two short curved steel blades crossing at a central pivot, dark red handles with a small visible spring and closing latch. Closed or nearly closed functional tool, entire silhouette visible. No branch, leaves, hands or other equipment.
+
+[p018] Молочный бидон (Работник молочной фермы)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One conventional small aluminum milk collection can, cylindrical brushed aluminum body, narrower neck, broad shoulders, sturdy side handles and a fitted metal lid attached by its hinge and closed. Modest dents and honest age without dirt. Three-quarter view showing complete can, no text, liquid or additional vessels.
+
+[p019] Пчеловодный дымарь (Пчеловод)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One real conventional beekeeper smoker: a cylindrical stainless steel chamber with a conical hinged spout lid and a compact brown leather bellows attached on the side in a wooden frame. Complete coherent functional tool, three-quarter view. No smoke, flame, bees, detached pieces or other tools.
+
+[p020] Судовой штурвал (Моряк)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One real traditional ship's steering wheel with eight smooth dark wooden spokes and rounded projecting hand grips, continuous circular wooden rim and a modest brass center hub. Correct radial symmetry, front three-quarter view with the entire wheel inside the image. No pedestal, rope, anchor, text or naval emblems.
+
+[p021] Автомобильный руль (Водитель)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One conventional complete automobile steering wheel, dark charcoal rubber-covered circular rim, three brushed metal spokes and a plain black central horn pad. Realistic practical proportions and slight honest wear. Front three-quarter view, full wheel visible. No steering column, dashboard, logo, badge or text.
+
+[p022] Железнодорожный сигнальный фонарь (Железнодорожник)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One real conventional portable railway signal lantern, dark olive metal body with a large round red signal lens, attached top carrying handle and a small protective hood. The glass lens has believable reflections, light is switched off. Whole lantern three-quarter view, no hand, track, writing, cables or extra objects.
+
+[p023] Авиационная гарнитура (Пилот)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One conventional over-ear aviation headset, two dark olive earcups with black cushions, padded metal headband, and one connected boom microphone near one earcup. A short attached cable forms a tidy loop entirely inside the composition. Realistic coherent construction, no logo, labels, person or separate radio.
+
+[p024] Пожарный топор (Пожарный)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One conventional fire service axe with a solid red painted steel head, one broad cutting edge and a short pointed rear pick, firmly fitted to one long straight honey-brown wooden handle. Whole tool diagonally composed with clear margins. Slight honest wear, no insignia, lettering, flames or extra objects.
+
+[p025] Почтовая сумка (Почтальон)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One traditional dark brown leather postman's shoulder bag, rectangular soft body with broad flap, two modest brass buckles, visible stitching and its single attached long shoulder strap arranged in a complete tidy loop above the bag. Whole strap and bag visible. No letters, paper, logos, stamps, text or other objects.
+
+[p026] Сапожная колодка (Сапожник)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One real conventional adult left-foot wooden shoemaking last, smooth honey-colored maple with a rounded toe, defined instep and heel, a small metal hinge detail embedded near the midfoot. Three-quarter view of the complete solid wooden last. No shoe, human foot, stand, writing or other tools.
+
+[p027] Парикмахерские ножницы (Парикмахер)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One conventional pair of professional hair-cutting scissors, polished steel, two straight slightly open blades, one central pivot screw, two distinct finger rings and one small curved finger rest. Correct connected tool and realistic cutting geometry. Entire scissors diagonally visible. No hair, comb, hand or lettering.
+
+[p028] Стоматологическое зеркало (Стоматолог)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One conventional dental mouth mirror: a slender brushed stainless steel handle with fine grip texture and one small circular reflective mirror at the end of an angled steel neck. Physically continuous correct instrument, entire handle and mirror visible diagonally. No mouth, person, case, text or additional tools.
+
+[p029] Аптечные весы (Фармацевт)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One real traditional small apothecary equal-arm balance scale, a muted brass central pillar on a compact dark wood base, one balanced horizontal beam and two small brass pans suspended from it by fine chains. Mechanically coherent, complete connected apparatus centered three-quarter view. No loose weights, powders, labels, signs or other objects.
+
+[p030] Лабораторный микроскоп (Лаборант)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One real conventional monocular laboratory light microscope with warm ivory metal base and arm, a single angled black eyepiece tube, revolving objective nosepiece, black specimen stage and realistic focus knobs. Correctly connected optics and upright construction. Whole microscope visible three-quarter view. No slide, sample, cord, label or extra equipment.
+
+[p031] Отоскоп (Ветеринар)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One real conventional handheld veterinary otoscope, a ribbed dark charcoal battery handle connected to a chrome instrument head with one short black conical ear speculum and a small viewing lens. Correct coherent medical device, shown complete diagonally. No animal, hands, separate tips, case, logo or lettering.
+
+[p032] Пекарская скалка (Пекарь)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One conventional wooden rolling pin with a smooth cylindrical beech barrel and two matching turned end handles securely joined to it. Natural warm wood grain, modest honest wear, dry and clean. Entire rolling pin visible diagonally with generous margins. No flour, dough, tabletop, markings or other objects.
+
+[p033] Кондитерский мешок (Кондитер)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One conventional reusable pastry piping bag made from lightly creased cream canvas, tapered conical body, its upper end neatly folded closed, and one attached stainless steel star piping nozzle at the narrow tip. Complete bag shown diagonally, no cream, frosting, food, hands or extra nozzles.
+
+[p034] Поднос (Официант)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One conventional oval stainless steel serving tray with a gently raised continuous rim and subtle brushed metal reflections. Empty, complete, shown from above at a gentle oblique angle, warm-neutral studio light. Modest scratches from everyday use. No cups, food, table, hands, logo or lettering.
+
+Additional background-extraction edit:
+Use case: background-extraction.
+Edit target: the attached photograph of one oval stainless steel serving tray.
+Primary request: turn the object into a CLEAN, FULLY OPAQUE OBJECT CUTOUT on a genuinely transparent background. Remove ALL surrounding beige glow, haze, floor, cast shadow and vignette, including the soft ring of light around the object. Only the solid physical object should remain. Outside its exact silhouette must be fully transparent alpha zero. Solid metal or plastic must be opaque alpha 255, not faded or translucent.
+Composition: place the complete unchanged object on a SQUARE canvas with generous transparent margins on every side. Its longest dimension should occupy about 80 percent of the square. Preserve object proportions, camera angle, colors, surface texture and all physical details.
+Lighting: keep natural shading and highlights ON the object only; no shadow or halo outside its silhouette.
+Constraints: only one complete object, no cropping, no added text, logos, hands, scenery, props or painted checkerboard. True PNG alpha transparency.
+
+[p035] Ручная кофемолка (Бариста)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One real traditional manual coffee grinder, a compact warm wood square box with a front drawer, attached small metal bean hopper on top and one complete curved metal crank with a turned wood knob. Correct coherent working construction shown three-quarter view. No loose coffee beans, cup, labels, cord or other objects.
+
+[p036] Переплетённая книга (Библиотекарь)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One single thick closed clothbound book, muted olive fabric cover with subtle wear at the corners, plain spine without any lettering or ornament, warm ivory page edges visible. Three-quarter view from slightly above showing spine, cover and page block. No title, writing, bookmark, stacked books or other objects.
+
+[p037] Деревянные счёты (Бухгалтер)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One conventional wooden accounting abacus, a single rectangular dark wood frame containing parallel horizontal metal rods with orderly groups of warm brown and dark wooden sliding beads. Correct physically connected frame and rods, complete object at a gentle three-quarter angle. No digits, labels, papers, coins or other objects.
+
+[p038] Печатная машинка (Журналист)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One real conventional compact mechanical typewriter, dark charcoal metal body, rows of small blank round cream keys, a long space bar, clearly defined typebar basket, carriage roller and a connected carriage return lever. Correct mechanically coherent proportions, whole machine three-quarter view. No paper, letters on keys, branding, case or extra objects.
+
+[p039] Плёночный фотоаппарат (Фотограф)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One real conventional compact 35mm film camera, brushed silver metal top and bottom with dark leatherette front, one attached moderately short standard lens with realistic concentric metal rings, viewfinder window, shutter button and winding lever. Three-quarter view, complete intact camera. No strap, cap, branding, digits, lettering or other objects.
+
+[p040] Скрипка (Музыкант)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One conventional full-size acoustic violin in warm amber varnished wood, correct familiar body with two f-holes, four strings over one realistic bridge, tailpiece, chinrest, fingerboard, scroll and four tuning pegs. Whole violin visible diagonally with generous margins. No bow, case, stand, sheet music or lettering.
+
+[p041] Палитра художника (Художник)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One traditional oval wooden painter's palette with a single oval thumb hole near one side and several small restrained patches of dried ochre, muted green, cream, burgundy and dark blue paint on the upper surface. Whole palette at a gentle top-down oblique angle. No brush, fresh dripping paint, hand or other objects.
+
+[p042] Киянка скульптора (Скульптор)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One conventional sculptor's wooden mallet with one solid cylindrical beech head and one smoothly tapered ash handle fitted firmly into its center. Honest wood grain and subtle working wear, correctly connected tool shown completely diagonally from slightly above. No chisel, sculpture, stone, lettering or other objects.
+
+[p043] Ювелирная лупа (Ювелир)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One real conventional folding jeweler's loupe, a small round optical glass lens in a muted brass housing with its single dark protective folding cover pivoted open and attached at the hinge. Exactly one connected magnifier unit, three-quarter view, complete and clearly recognizable. No gemstone, ring, case, fingers or markings.
+
+[p044] Часовой пинцет (Часовщик)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One conventional precision watchmaker's tweezers, two slender satin stainless steel spring arms joined at the broad rear end, narrowing to two accurately aligned fine pointed tips with a small natural opening between them. Complete tool diagonally visible. No screws, watch, lettering, hands or other objects.
+
+[p045] Компьютерная клавиатура (Программист)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One conventional full-size desktop computer keyboard, warm ivory plastic chassis, realistic orderly rows of blank gently concave keys, long space bar, arrow-key cluster and numeric keypad. Practical familiar proportions, subtle use wear, complete keyboard from a gentle top-down three-quarter angle. No lettering, logo, cable, mouse, screen or extra objects.
+
+Additional background-extraction edit:
+Use case: background-extraction.
+Edit target: the attached photograph of one ivory desktop keyboard.
+Primary request: turn the object into a CLEAN, FULLY OPAQUE OBJECT CUTOUT on a genuinely transparent background. Remove ALL surrounding beige glow, haze, floor, cast shadow and vignette, including the soft ring of light around the object. Only the solid physical object should remain. Outside its exact silhouette must be fully transparent alpha zero. Solid metal or plastic must be opaque alpha 255, not faded or translucent.
+Composition: place the complete unchanged object on a SQUARE canvas with generous transparent margins on every side. Its longest dimension should occupy about 80 percent of the square. Preserve object proportions, camera angle, colors, surface texture and all physical details.
+Lighting: keep natural shading and highlights ON the object only; no shadow or halo outside its silhouette.
+Constraints: only one complete object, no cropping, no added text, logos, hands, scenery, props or painted checkerboard. True PNG alpha transparency.
+
+[p046] Химическая колба (Химик)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One real empty round-bottom laboratory glass flask, one spherical clear thin glass body smoothly joined to a long narrow open neck with a small rolled lip. Colorless glass with a subtle pale green edge tint and realistic soft highlights. Entire flask upright, no base, stand, stopper, liquid, label, writing or other objects. Transparent background also visible through the glass, no opaque rectangular backdrop trapped inside.
+
+[p047] Геологический молоток (Геолог)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One conventional geologist's rock hammer, satin steel head with one square striking face and one narrow tapered rear pick, fitted securely to one warm brown straight wooden handle. Correct functional tool, entire silhouette diagonally visible with modest wear. No stone, soil, fragments, lettering or additional tools.
+
+[p048] Типографский валик (Печатник)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One conventional handheld printing ink brayer, a single black rubber roller held on a steel axle within a U-shaped metal bracket attached to one smooth warm wooden handle. Correct coherent connected construction, modest traces of old dry black ink on the bracket, complete object three-quarter view. No printed sheet, lettering, ink container or other objects.
+
+[p049] Архивная папка (Архивист)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One conventional closed archival document folder made of thick warm tan cardboard, a dark cloth reinforced spine and two narrow cotton ribbon ties neatly fastened at its edge. Slightly worn, thick enough to suggest documents contained inside, complete object three-quarter view. Blank cover with no labels, writing, loose papers, stamps or additional objects.
+
+[p050] Спасательный круг (Спасатель)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One real conventional rescue lifebuoy, a sturdy warm-white circular flotation ring with four evenly spaced muted red-orange bands and a natural beige grab rope neatly attached around the rim through integral loops. Correct continuous ring, the central hole fully transparent, complete object front three-quarter view. No lettering, emblem, water, hand or other objects.

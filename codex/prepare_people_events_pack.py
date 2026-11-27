@@ -1,4 +1,4 @@
-"""Prepare or check the separate 50-photo Povod collection without changing masters."""
+"""Prepare or check a separate Povod photo collection without changing masters."""
 
 import argparse
 from collections import Counter
@@ -19,6 +19,20 @@ THEMES = ("portraits", "relatives", "friends", "birthday", "wedding", "anniversa
 ORIENTATIONS = ("portrait", "portrait", "landscape", "landscape", "square")
 ROLES = ("cover", "cover", "section", "section", "gallery")
 PREVIEW_EDGE = 960
+PROFILES = {
+    "people-events-50": {
+        "ids": IDS,
+        "editorial_ids": EDITORIAL_IDS,
+        "themes": THEMES,
+        "theme_size": 5,
+    },
+    "photo-concepts-20": {
+        "ids": [f"pc{number:03d}" for number in range(1, 21)],
+        "editorial_ids": {f"pc{number:03d}" for number in (4, 5, 10, 15, 19, 20)},
+        "themes": ("graduation", "housewarming", "retirement", "theatre-premiere", "new-pet", "newborn", "reunion", "race-finish", "teacher-thanks", "first-steps", "business-opening", "career-start", "first-bike", "first-school-day", "first-book", "music-debut", "first-exhibition", "volunteer-project", "family-tree-planting", "pottery"),
+        "theme_size": 1,
+    },
+}
 
 
 def contained(root, relative):
@@ -60,12 +74,12 @@ def preview_paths(identifier):
     }
 
 
-def sheet_path(number):
-    first, last = (number - 1) * 10 + 1, number * 10
-    return f"contact-sheets/{number:02d}-pe{first:03d}-pe{last:03d}.jpg"
+def sheet_path(number, ids):
+    first, last = ids[(number - 1) * 10], ids[number * 10 - 1]
+    return f"contact-sheets/{number:02d}-{first}-{last}.jpg"
 
 
-def load_catalog(root):
+def load_catalog(root, profile):
     try:
         catalog = json.loads(contained(root, "catalog.json").read_text(encoding="utf-8"))
     except (OSError, UnicodeError, json.JSONDecodeError) as error:
@@ -73,21 +87,24 @@ def load_catalog(root):
     if not isinstance(catalog, dict) or catalog.get("version") != 1 or not isinstance(catalog.get("title"), str) or not catalog["title"].strip():
         raise ValueError("Catalog needs version=1 and a nonempty title")
     items = catalog.get("items")
-    if not isinstance(items, list) or len(items) != 50 or any(not isinstance(item, dict) for item in items):
-        raise ValueError("Catalog must contain exactly 50 item objects")
-    if Counter(item.get("id") for item in items) != Counter(IDS):
-        raise ValueError("Catalog IDs must be exactly pe001-pe050, each once")
+    ids = profile["ids"]
+    count = len(ids)
+    if not isinstance(items, list) or len(items) != count or any(not isinstance(item, dict) for item in items):
+        raise ValueError(f"Catalog must contain exactly {count} item objects")
+    if Counter(item.get("id") for item in items) != Counter(ids):
+        raise ValueError(f"Catalog IDs must be exactly {ids[0]}-{ids[-1]}, each once")
     items.sort(key=lambda item: item["id"])
-    if Counter(item.get("style") for item in items) != {"documentary": 35, "editorial": 15}:
-        raise ValueError("Expected 35 documentary and 15 editorial items")
-    if Counter(item.get("orientation") for item in items) != {"portrait": 20, "landscape": 20, "square": 10}:
-        raise ValueError("Expected 20 portrait, 20 landscape and 10 square items")
+    editorial_count = len(profile["editorial_ids"])
+    if Counter(item.get("style") for item in items) != {"documentary": count - editorial_count, "editorial": editorial_count}:
+        raise ValueError(f"Expected {count - editorial_count} documentary and {editorial_count} editorial items")
+    if Counter(item.get("orientation") for item in items) != Counter(ORIENTATIONS * (count // 5)):
+        raise ValueError(f"Expected {count * 2 // 5} portrait, {count * 2 // 5} landscape and {count // 5} square items")
     themes = [item.get("theme") for item in items]
     if any(not isinstance(theme, str) or not theme.strip() for theme in themes):
         raise ValueError("Every item needs a theme")
     counts = Counter(themes)
-    if len(counts) != 10 or set(counts.values()) != {5}:
-        raise ValueError("Expected 10 themes, 5 items each")
+    if len(counts) != len(profile["themes"]) or set(counts.values()) != {profile["theme_size"]}:
+        raise ValueError(f"Expected {len(profile['themes'])} themes, {profile['theme_size']} items each")
     prompts = set()
     for index, item in enumerate(items):
         identifier = item["id"]
@@ -98,11 +115,12 @@ def load_catalog(root):
         if prompt in prompts:
             raise ValueError(f"{identifier}: duplicate full prompt")
         prompts.add(prompt)
-        expected_style = "editorial" if identifier in EDITORIAL_IDS else "documentary"
+        expected_style = "editorial" if identifier in profile["editorial_ids"] else "documentary"
         if item["style"] != expected_style:
             raise ValueError(f"{identifier}: expected {expected_style} style")
-        if item["theme"] != THEMES[index // 5]:
-            raise ValueError(f"{identifier}: expected {THEMES[index // 5]} theme")
+        expected_theme = profile["themes"][index // profile["theme_size"]]
+        if item["theme"] != expected_theme:
+            raise ValueError(f"{identifier}: expected {expected_theme} theme")
         if item["orientation"] != ORIENTATIONS[index % 5] or item.get("role") != ROLES[index % 5]:
             raise ValueError(f"{identifier}: orientation or role differs from the approved matrix")
         if item.get("aspect_ratio") != RATIOS[item["orientation"]]:
@@ -160,17 +178,19 @@ def inspect_originals(root, items, check):
     return available
 
 
-def check_outputs(root, items, available):
+def check_outputs(root, items, available, profile):
+    ids = profile["ids"]
+    count = len(ids)
     originals = contained(root, "originals")
     expected = {item["file"] for item in items}
     actual = {path.relative_to(root).as_posix() for path in originals.rglob("*") if path.is_file()}
     if actual != expected:
-        raise ValueError("Originals directory must contain exactly the 50 catalog originals")
+        raise ValueError(f"Originals directory must contain exactly the {count} catalog originals")
     for kind, extension, format_name in (("jpeg", "jpg", "JPEG"), ("webp", "webp", "WEBP")):
         directory = contained(root, f"previews/{kind}")
         actual = {path.name for path in directory.iterdir() if path.is_file()} if directory.is_dir() else set()
-        if actual != {f"{identifier}.{extension}" for identifier in IDS}:
-            raise ValueError(f"Expected exactly 50 {kind} previews")
+        if actual != {f"{identifier}.{extension}" for identifier in ids}:
+            raise ValueError(f"Expected exactly {count} {kind} previews")
         for item in items:
             relative = preview_paths(item["id"])[kind]
             if item.get("previews") != preview_paths(item["id"]):
@@ -181,12 +201,12 @@ def check_outputs(root, items, available):
                 if encoded.format != format_name or photo.size != available[item["id"]]["preview_size"]:
                     raise ValueError(f"{item['id']}: invalid {kind} preview format or dimensions")
     directory = contained(root, "contact-sheets")
-    expected = {Path(sheet_path(number)).name for number in range(1, 6)}
+    expected = {Path(sheet_path(number, ids)).name for number in range(1, count // 10 + 1)}
     actual = {path.name for path in directory.iterdir() if path.is_file()} if directory.is_dir() else set()
     if actual != expected:
-        raise ValueError("Expected exactly 5 contact sheets")
-    for number in range(1, 6):
-        path = contained(root, sheet_path(number))
+        raise ValueError(f"Expected exactly {count // 10} contact sheets")
+    for number in range(1, count // 10 + 1):
+        path = contained(root, sheet_path(number, ids))
         photo = read_image(path)
         with Image.open(path) as encoded:
             valid = encoded.format == "JPEG" and photo.size == (1500, 970)
@@ -217,12 +237,13 @@ def wrapped(draw, text, face, width):
     return lines
 
 
-def write_sheets(root, items, available):
+def write_sheets(root, items, available, profile):
     heading, label, small = font(27), font(20), font(16)
-    for number in range(1, 6):
+    sheet_count = len(profile["ids"]) // 10
+    for number in range(1, sheet_count + 1):
         sheet = Image.new("RGB", (1500, 970), "#fffaf6")
         draw = ImageDraw.Draw(sheet)
-        draw.text((20, 18), f"Повод - фотографии {number}/5", fill="#29211e", font=heading)
+        draw.text((20, 18), f"Повод - фотографии {number}/{sheet_count}", fill="#29211e", font=heading)
         for index, item in enumerate(items[(number - 1) * 10:number * 10]):
             left, top = (index % 5) * 300 + 10, (index // 5) * 450 + 65
             draw.rectangle((left, top, left + 280, top + 340), fill="#f0e5dd")
@@ -236,12 +257,12 @@ def write_sheets(root, items, available):
             lines = wrapped(draw, item["title_ru"], label, 280)
             for offset, line in enumerate(lines[:3]):
                 draw.text((left, top + 375 + offset * 23), line, fill="#29211e", font=label)
-        output = contained(root, sheet_path(number))
+        output = contained(root, sheet_path(number, profile["ids"]))
         output.parent.mkdir(parents=True, exist_ok=True)
         sheet.save(output, "JPEG", quality=85, optimize=True)
 
 
-def prepare(root, catalog, available):
+def prepare(root, catalog, available, profile):
     font(20)
     for item in catalog["items"]:
         identifier = item["id"]
@@ -258,27 +279,31 @@ def prepare(root, catalog, available):
             photo.save(output, format_name, quality=quality)
         item.update({key: value for key, value in available[identifier].items() if key != "preview_size"})
         item["previews"] = paths
-    write_sheets(root, catalog["items"], available)
+    write_sheets(root, catalog["items"], available, profile)
     contained(root, "catalog.json").write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Prepared {len(available)}/50 originals, {len(available) * 2} previews and 5 contact sheets; acceptance statuses unchanged")
+    count = len(profile["ids"])
+    print(f"Prepared {len(available)}/{count} originals, {len(available) * 2} previews and {count // 10} contact sheets; acceptance statuses unchanged")
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[1] / "assets/collections/people-events-50", help="Collection directory containing catalog.json")
+    parser.add_argument("--profile", choices=PROFILES, default="people-events-50", help="Approved collection matrix (default: people-events-50)")
+    parser.add_argument("--root", type=Path, help="Collection directory containing catalog.json (default: assets/collections/<profile>)")
     mode = parser.add_mutually_exclusive_group()
-    mode.add_argument("--check", action="store_true", help="Read-only final validation; require all 50 accepted originals and derivatives")
+    mode.add_argument("--check", action="store_true", help="Read-only final validation; require all accepted originals and derivatives for the profile")
     mode.add_argument("--prepare", action="store_true", help="Prepare available images and update metadata (default)")
     args = parser.parse_args()
-    root = args.root.resolve()
+    profile = PROFILES[args.profile]
+    root = (args.root or Path(__file__).resolve().parents[1] / "assets/collections" / args.profile).resolve()
     try:
-        catalog = load_catalog(root)
+        catalog = load_catalog(root, profile)
         available = inspect_originals(root, catalog["items"], args.check)
         if args.check:
-            check_outputs(root, catalog["items"], available)
-            print("PASS: 50 accepted originals, 100 previews, 5 contact sheets; quotas, paths, hashes, metadata and dimensions checked")
+            check_outputs(root, catalog["items"], available, profile)
+            count = len(profile["ids"])
+            print(f"PASS: {count} accepted originals, {count * 2} previews, {count // 10} contact sheets; quotas, paths, hashes, metadata and dimensions checked")
         else:
-            prepare(root, catalog, available)
+            prepare(root, catalog, available, profile)
     except (ValueError, OSError) as error:
         print(f"ERROR: {error}", file=sys.stderr)
         return 1

@@ -12,6 +12,13 @@ const { chromium } = require(modulePath || 'playwright');
 const manifest = JSON.parse(fs.readFileSync(path.join(root, 'manifest.json'), 'utf8').replace(/^\uFEFF/, ''));
 const assets = manifest.assets;
 const categories = [...new Set(assets.map(asset => asset.category))];
+const researchRoot = path.dirname(root);
+const catalogCollections = fs.readdirSync(researchRoot, { withFileTypes: true })
+  .filter(entry => entry.isDirectory() && fs.existsSync(path.join(researchRoot, entry.name, 'manifest.json')))
+  .map(entry => ({ folder: entry.name, manifest: JSON.parse(fs.readFileSync(path.join(researchRoot, entry.name, 'manifest.json'), 'utf8').replace(/^\uFEFF/, '')) }))
+  .filter(entry => entry.manifest.site === 'letopis' && entry.manifest.assets?.length);
+const catalogTotal = catalogCollections.reduce((total, entry) => total + entry.manifest.assets.length, 0);
+const expectedCatalogLinks = new Set(catalogCollections.map(entry => pathToFileURL(path.join(researchRoot, entry.folder, 'gallery.html')).href));
 const qa = path.join(root, 'qa');
 fs.mkdirSync(qa, { recursive: true });
 
@@ -129,10 +136,15 @@ try {
       if (message.type() === 'error') errors.push(safeMessage(`catalog ${name} console: ${message.text()}`));
     });
     page.on('pageerror', error => errors.push(safeMessage(`catalog ${name} page: ${error.message}`)));
+    page.on('requestfailed', request => errors.push(safeMessage(`catalog ${name} request: ${request.url()} ${request.failure()?.errorText}`)));
     await page.goto(pathToFileURL(catalogPath).href, { waitUntil: 'load' });
     const galleryLinks = await page.locator('a.gallery-link').evaluateAll(links => links.map(link => link.href));
-    const validLinks = galleryLinks.length === 2 && galleryLinks.every(link => fs.existsSync(fileURLToPath(link)));
-    check(`catalog ${name} links`, validLinks, `${galleryLinks.length}/2 gallery links, targets exist: ${validLinks}`);
+    const validLinks = galleryLinks.length === catalogCollections.length && galleryLinks.every(link => expectedCatalogLinks.has(link) && fs.existsSync(fileURLToPath(link)));
+    check(`catalog ${name} links`, validLinks, `${galleryLinks.length}/${catalogCollections.length} gallery links, targets exist: ${validLinks}`);
+    const catalogHeading = await page.locator('h1').innerText();
+    const catalogCount = await page.locator('header .count').innerText();
+    check(`catalog ${name} total`, catalogHeading.startsWith(`${catalogTotal} `) && catalogCount.includes(`${catalogTotal} из ${catalogTotal}`),
+      `${catalogTotal} expected, complete total shown: ${catalogCount.includes(`${catalogTotal} из ${catalogTotal}`)}`);
     const overflow = await page.evaluate(() => ({ document: document.documentElement.scrollWidth, body: document.body.scrollWidth }));
     check(`catalog ${name} overflow`, overflow.document <= width && overflow.body <= width,
       `viewport ${width}, document ${overflow.document}, body ${overflow.body}`);
@@ -140,7 +152,7 @@ try {
       await Promise.all(images.map(image => image.decode().catch(() => {})));
       return { total: images.length, loaded: images.filter(image => image.complete && image.naturalWidth > 0).length };
     });
-    check(`catalog ${name} previews`, previews.total === 4 && previews.loaded === 4,
+    check(`catalog ${name} previews`, previews.total === catalogCollections.length * 2 && previews.loaded === previews.total,
       `${previews.loaded}/${previews.total} loaded`);
     await page.screenshot({ path: path.join(qa, `catalog-${name}.png`), fullPage: true });
     await page.close();

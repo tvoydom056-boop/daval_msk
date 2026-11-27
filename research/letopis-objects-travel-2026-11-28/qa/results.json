@@ -1,6 +1,6 @@
 {
-  "passed": 35,
-  "total": 35,
+  "passed": 37,
+  "total": 37,
   "results": [
     {
       "name": "manifest",
@@ -145,7 +145,12 @@
     {
       "name": "catalog desktop links",
       "passed": true,
-      "detail": "2/2 gallery links, targets exist: true"
+      "detail": "3/3 gallery links, targets exist: true"
+    },
+    {
+      "name": "catalog desktop total",
+      "passed": true,
+      "detail": "120 expected, complete total shown: true"
     },
     {
       "name": "catalog desktop overflow",
@@ -155,12 +160,17 @@
     {
       "name": "catalog desktop previews",
       "passed": true,
-      "detail": "4/4 loaded"
+      "detail": "6/6 loaded"
     },
     {
       "name": "catalog mobile links",
       "passed": true,
-      "detail": "2/2 gallery links, targets exist: true"
+      "detail": "3/3 gallery links, targets exist: true"
+    },
+    {
+      "name": "catalog mobile total",
+      "passed": true,
+      "detail": "120 expected, complete total shown: true"
     },
     {
       "name": "catalog mobile overflow",
@@ -170,7 +180,7 @@
     {
       "name": "catalog mobile previews",
       "passed": true,
-      "detail": "4/4 loaded"
+      "detail": "6/6 loaded"
     },
     {
       "name": "browser errors",

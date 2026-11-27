@@ -38,3 +38,6 @@ codex/v3/*.json
 codex/v3/frames_all/
 codex/v3/work_povod_scenes/
 run_*.out
+
+# локальный архив библиотеки медалей для скачивания
+/output/medals-50/

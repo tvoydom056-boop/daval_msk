@@ -63,7 +63,8 @@ Style: realistic studio photography, calm warm-neutral light from the upper left
 Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
 Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
 Subject: One short strip of amber-brown 35 mm photographic negative film with four empty image frames and regular perforations along both long edges. Give the connected strip a slight natural curl and show it diagonally from above. Include no pictures, frame numbers or edge lettering.
-Edit prompt:
+
+Edit 1:
 Edit this exact photographic negative-strip asset to repair its transparency only. Keep the amber-brown connected 35 mm film strip, its four blank image frames, curling shape, warm studio lighting, material, camera angle and complete composition. Remove the entire white/grey cloud, haze, glow, shadow and every background mark outside the physical film silhouette. The background must be genuine alpha=0 transparency everywhere outside the film and inside every sprocket perforation. No white background, no floor, no halo, no checkerboard, no border. The amber film and its dark blank frames stay visible and opaque, with no photographs, numbers, writing, logos or added props. Preserve every film edge inside the canvas with clean margins.
 
 [c008] Деревянная шкатулка для семейных реликвий
@@ -142,7 +143,8 @@ Style: realistic studio photography, calm warm-neutral light from the upper left
 Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
 Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
 Subject: One conventional classic tennis racket with a honey-brown wooden oval frame, clearly woven cream strings and a dark brown wrapped grip. The entire long racket is visible diagonally and fits comfortably inside the square image. No ball, case, hand, brand marks or lettering.
-Edit prompt:
+
+Edit 1:
 Use case: background-extraction.
 Edit target: the attached wooden tennis racket cutout.
 Keep exactly the wooden racket frame, its woven strings and its leather grip. Remove EVERY remaining white or grey background pixel and surrounding haze, especially around the racket head and in ALL the individual rectangular gaps BETWEEN the strings. All holes between strings must be genuinely transparent alpha zero. Keep the thin physical strings intact and opaque, along with the wood and leather.
@@ -721,7 +723,8 @@ Style: realistic studio photography, calm warm-neutral light from the upper left
 Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
 Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
 Subject: One cream enameled metal colander with a dark rolled rim, evenly distributed drainage holes and two attached side handles. Show it from a gentle overhead three-quarter angle, including its small integral foot ring. Include no vegetables, cookware or lettering.
-Edit prompt:
+
+Edit 1:
 Repair the transparency of this exact enamel colander asset while preserving its cream enamel, dark rim, wear, handles, circular perforations, complete silhouette and camera angle. The bright white circles on the far interior wall are open drainage holes: remove the white fill at the center of each such see-through hole, giving genuine alpha=0 in those hole interiors. The gaps inside both handles also must be fully transparent. Keep the metal thickness and hole rims visible; keep the physical enamel walls opaque. Near-wall perforations may retain naturally visible material of the opposite wall where physically appropriate, but no white background plugs. Outside the entire colander must remain clean alpha=0, with no haze, floor, shadow or new elements. Same square composition, complete object and clear margins.
 
 [c073] Садовые грабли
@@ -1267,7 +1270,8 @@ Composition: exactly one main asset or the one explicitly described connected se
 Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
 Animal-specific: natural healthy anatomy and real fur, scales or feathers, no artificial patina, no cartoon or toy appearance.
 Subject: One black-and-white domestic cat standing naturally on four paws, with a white chest and feet and irregular dark patches across its head and back. Show the complete animal from a gentle side three-quarter angle, including the full tail and ears. Keep the anatomy ordinary and include no collar or costume.
-Edit prompt:
+
+Edit 1:
 Repair this exact black-and-white cat PNG by removing every remnant of the white/grey background. Preserve the whole cat, natural anatomy, black-and-white fur pattern, face, whiskers, ears, all four legs, paws and raised curved tail, and preserve the same gentle studio light. Outside the precise fur silhouette and in all gaps between legs, paws, body and tail, set the background to genuine alpha=0 transparency. Eliminate the large white cloud above and left of its head, the haze around its torso and the background between the legs. No floor, cast shadow, glow, checkerboard or added elements. Do not erase white fur or whiskers; physical white fur must stay visible and opaque. Keep the entire animal in frame with clear margins.
 
 [c128] Небольшой длиннотелый пёс с короткими лапами, целиком
@@ -1385,7 +1389,8 @@ Style: photorealistic clothing product photography, calm warm-neutral soft studi
 CRITICAL: only clothing fabric and its own buttons or tie. NO head, face, neck, skin, hands, body, human, mannequin, display stand, hanger or filler. The complete head-and-neck area and the interior neck opening MUST be alpha-zero transparent so a separate head can be placed there. No dark or flesh-colored plug filling the collar.
 Do not fade solid fabric. No background, tabletop, floor, external shadows, haze, glow, checkerboard, writing, logos, extra accessories or decorative picture frame.
 Subject: A men's muted navy-and-rust checked cotton shirt with a soft point collar, a straight button placket and one small chest pocket. Show only the garment straight-on from both complete shoulders to the lower chest. Keep the collar opening entirely empty, with no head, neck, skin, arms, hands, body or mannequin.
-Edit prompt:
+
+Edit 1:
 Keep this exact photorealistic men's plaid shirt template: same rust-and-navy plaid fabric, collar, buttons, pocket, frontal camera, invisible wearer and shoulder-and-chest crop. Repair its canvas spacing: shrink the ENTIRE current shirt silhouette uniformly to approximately 82 percent of its current size and center it horizontally, so there is at least 8 percent fully transparent margin between the shirt and BOTH side edges, and at least 5 percent transparent margin below the straight lower crop edge. Preserve the same chest-cropped template shape; do not extend it into a full-length shirt. Keep the transparent head and neck opening empty, no head, neck, skin, mannequin or hands. Nothing may touch any canvas edge. All pixels outside the fabric silhouette must be genuinely alpha=0, with no white background, floor, shadow, glow or added element. Same square canvas.
 
 [c139] Мужской вязаный свитер с круглой горловиной
@@ -1519,3 +1524,886 @@ Style: photorealistic clothing product photography, calm warm-neutral soft studi
 CRITICAL: only clothing fabric and its own buttons or tie. NO head, face, neck, skin, hands, body, human, mannequin, display stand, hanger or filler. The complete head-and-neck area and the interior neck opening MUST be alpha-zero transparent so a separate head can be placed there. No dark or flesh-colored plug filling the collar.
 Do not fade solid fabric. No background, tabletop, floor, external shadows, haze, glow, checkerboard, writing, logos, extra accessories or decorative picture frame.
 Subject: A women's camel wool coat with broad conventional notched lapels and a plain button front below the chest opening. Show only the garment straight-on from both complete shoulders to the lower chest. Keep the V-shaped opening between the lapels entirely empty, with no head, neck, skin, arms, hands, body or mannequin.
+
+[c151] Овальная настенная рамка
+Category: frames
+File: frames/png/01-oval-wall-frame.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One oval wall photograph frame made of warm brown wood, with a modest molded profile and a single large oval opening. Show it perfectly straight-on, with the entire outer oval and inner contour undistorted. The center is a genuine transparent through-opening, without glass, backing, picture, easel or text.
+
+[c152] Круглая настенная рамка
+Category: frames
+File: frames/png/02-round-wall-frame.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One round wall photograph frame with a restrained dark brass rim and a simple narrow circular molding. Show a perfectly straight-on frontal view so both the outer edge and the inner aperture remain true circles. The center is completely open and transparent, with no glass, backing panel, photograph, decorative symbols or lettering.
+
+[c153] Широкая горизонтальная рамка для семейного снимка
+Category: frames
+File: frames/png/03-wide-family-photo-frame.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One wide horizontal wooden photograph frame with a landscape aperture roughly twice as wide as it is high, suitable for a family group photograph. Show the complete frame perfectly straight-on, with parallel edges and no perspective tilt. Keep the central aperture genuinely open and transparent, without glazing, backing, easel, image or lettering.
+
+Edit 1:
+Extract ONLY the complete wide horizontal wooden photo frame from this reference into a genuine transparent PNG cutout. Preserve the wooden rails, joinery, proportions, front-facing view and material. Delete the entire brown/black blurred backdrop outside the frame AND inside its central rectangular photograph opening. Both the outer background and central window must be real alpha=0 transparency, not dark colour or blur. No glass, photograph, backing board, wall, floor, cast shadow, glow or vignette. Keep the complete frame with a clear transparent margin on every side. Do not change or crop the wooden frame.
+
+[c154] Двойная рамка на петлях
+Category: frames
+File: frames/png/04-double-hinged-frame.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One real hinged double photograph frame made of warm dark walnut wood, with two matching vertical rectangular openings and two small believable brass hinges joining the panels. Open the frame flat so both front faces are coplanar and face the camera straight on, allowing later insertion of two portraits. No photographs, glass, backing board or opaque inserts: both central picture openings must be genuinely alpha=0 transparent, exactly like the surrounding background. Preserve the solid wooden rails and hinges, realistic joinery and gentle wear. The complete double frame is centered with at least 8 percent transparent margin on every side. No stand, floor, wall, extra objects or lettering.
+
+[c155] Глубокая рамка-витрина
+Category: frames
+File: frames/png/05-deep-display-frame.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One deep wooden display frame with four thick sidewalls forming an open rectangular tunnel and a restrained flat front rim. Show it perfectly straight-on, with symmetrical visible inner sidewalls and an undistorted rectangular aperture. The central passage remains genuinely empty and transparent all the way through. Include no glass, rear panel, photograph, contents, easel or text.
+
+[c156] Одиночное паспарту
+Category: frames
+File: frames/png/06-single-window-mat.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One single cream cotton mat board for a vertical photograph, a solid rectangular outer shape with one centered rectangular opening and a visible neatly bevelled inner edge. Strict straight-on frontal view, no perspective distortion. The picture opening and all space outside the mat board must be genuine alpha=0 transparency: absolutely no glass, photo, white insert or backing board.
+
+[c157] Паспарту с четырьмя окнами
+Category: frames
+File: frames/png/07-four-window-mat.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One warm ivory conservation mat board with four identical rectangular portrait apertures arranged in a regular two-by-two grid, separated by broad paperboard dividers. Show the complete board perfectly straight-on with clean beveled window edges and no perspective distortion. All four apertures are genuine transparent through-openings, with no glazing, backing, pictures, numbers or lettering.
+
+[c158] Настольный держатель фотографии с зажимом
+Category: frames
+File: frames/png/08-photo-clip-holder.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One tabletop photograph holder consisting of a small plain wooden base, one securely attached upright metal stem and a single functional spring clip at its top. Show the whole connected holder from a straight-on frontal view, with the clip empty and slightly open. Include no photograph, card, glass, lettering or additional objects.
+
+[c159] Фотоальбомный уголок
+Category: family-archive
+File: family-archive/png/15-photo-mount-corner.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One real triangular photograph mounting corner made of gently aged dark brown paper, seen from directly above. Clearly show the small folded lip and pocket that holds a photograph corner, with a believable thin paper edge. No photograph, album page, adhesive backing sheet or extra corner pieces.
+
+[c160] Канцелярский зажим
+Category: family-archive
+File: family-archive/png/16-binder-clip.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One small black folded-steel binder clip with two hinged silver wire handles raised in their conventional positions. Show the complete connected clip from a gentle front three-quarter angle, with coherent jaws, pivots and wire loops. Include no paper, lettering or other stationery.
+
+[c161] Проволочная скрепка
+Category: family-archive
+File: family-archive/png/17-wire-paper-clip.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One conventional wire paper clip formed from a single continuous length of muted brass-colored wire bent into nested rounded oval loops. Show the complete clip flat and directly from above, with both wire ends visible and ordinary practical proportions. Include no paper, markings or other clips.
+
+[c162] Полоска бумажного скотча с рваным краем
+Category: family-archive
+File: family-archive/png/18-torn-masking-tape-strip.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One short flat strip of warm ivory paper masking tape with naturally torn irregular ends and subtle paper fibres, laid at a slight diagonal in a top-down view. The tape is a solid physical paper strip, not faded into the background. No backing surface, photograph, dispenser or fingers.
+
+[c163] Сургучная печать без эмблемы
+Category: family-archive
+File: family-archive/png/19-plain-wax-seal.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One round dark burgundy wax seal disk with an irregular poured rim and a completely plain gently indented center. Show the entire front face directly from above, with believable solid wax texture. Include no emblem, letters, ribbon, envelope or document.
+
+[c164] Пустая металлическая табличка
+Category: family-archive
+File: family-archive/png/20-blank-metal-nameplate.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One slender rectangular brushed-brass nameplate with softly rounded corners and two small mounting holes near its short ends. Show the complete plate straight-on from the front, with its central writing area entirely blank. Keep the mounting holes genuinely open, without screws, backing board, names or engraved decoration.
+
+[c165] Лист миллиметровой бумаги без цифр
+Category: family-archive
+File: family-archive/png/21-unnumbered-graph-paper.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One rectangular sheet of warm cream graph paper with a fine muted blue square grid and slightly heavier lines at regular intervals. Show the whole sheet nearly flat from above, with a very slight curl at one corner and clearly visible paper edges. Include no numbers, headings, diagrams, handwriting or other stationery.
+
+[c166] Подложка из крафт-бумаги с неровными краями
+Category: family-archive
+File: family-archive/png/22-deckle-edge-kraft-paper.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One flat rectangular sheet of thick brown kraft paper with naturally uneven hand-torn edges and small visible paper fibers along the perimeter. Show the complete sheet directly from above, with subtle shallow surface waviness. Keep it entirely blank, without printing, labels, adhesive, folds hiding its shape or other objects.
+
+[c167] Дубовая веточка с желудями
+Category: plants
+File: plants/png/01-oak-twig-acorns.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One short oak twig with three naturally lobed green-brown leaves and two acorns seated in textured cups, all attached to the same branch. Show the full connected twig from slightly above, with restrained early-autumn coloring. Include no insects, birds, ribbon, vase or extra foliage.
+
+[c168] Осенний кленовый лист
+Category: plants
+File: plants/png/02-autumn-maple-leaf.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One real autumn maple leaf with five recognisable lobes, fine serrated edges, natural branching veins and its complete slender petiole. Warm muted golden ochre with a few russet areas, photographed from above, intact and gently curled. No extra leaves, tree branch, dewdrops, insects or background.
+
+[c169] Цветущая ветка яблони
+Category: plants
+File: plants/png/03-apple-blossom-twig.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One short real apple-tree twig with a small cluster of fresh five-petalled white and pale pink apple blossoms, delicate yellow stamens and a few natural green leaves. The connected branch is complete, photographed in a gentle three-quarter view. Fresh living plant texture, no artificial ageing, fruit, vase, insects or extra loose petals.
+
+[c170] Веточка рябины с ягодами
+Category: plants
+File: plants/png/04-rowan-twig-berries.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One short rowan twig with a small tight cluster of muted red-orange berries and one pinnate leaf made of paired serrated leaflets. Keep the berries and leaf coherently attached to the same slender branch and show its complete silhouette from a gentle frontal angle. Include no insects, birds, ribbons or vase.
+
+[c171] Еловая веточка
+Category: plants
+File: plants/png/05-spruce-sprig.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One complete spruce sprig with a thin woody central twig and short individual dark-green needles attached naturally around it. Show it from slightly above, with its tapered tip and cut stem end both visible. Include no insects, cones, ornaments, snow or separate branches.
+
+[c172] Пшеничный колос
+Category: plants
+File: plants/png/06-wheat-ear.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One ripe wheat ear with natural alternating rows of golden-ochre kernels, fine attached awns and a short intact section of slender straw stem. Show the entire botanical specimen diagonally from a gentle frontal angle. Include no insects, ribbon, field, loose grain or additional stalks.
+
+[c173] Стебель ландыша
+Category: plants
+File: plants/png/07-lily-of-the-valley-stem.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One intact gently arched lily-of-the-valley flower stem bearing six small downward-facing ivory bell flowers on short attached pedicels. Show its full slender green stem and delicate flower edges in a natural frontal arrangement. Include no insects, roots, ribbons, vase or unrelated leaves.
+
+[c174] Сосновая шишка
+Category: plants
+File: plants/png/08-pine-cone.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One complete naturally dried brown pine cone with an oval body and overlapping woody scales arranged around a single central axis. Show the whole cone from a gentle three-quarter angle, including its intact base and tip. Include no insects, needles, branches, ribbon or other cones.
+
+[c175] Плюшевый медведь
+Category: childhood
+File: childhood/png/01-teddy-bear.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One gently loved classic teddy bear seated upright, its entire body visible including both ears, two arms and both feet. Warm light-brown plush fabric with believable seams, two small dark eyes, a stitched brown nose and a modest embroidered mouth. Photorealistic physical toy, not a live bear or cartoon, no clothing, bow, hat, accessories or labels.
+
+[c176] Деревянная лошадка-качалка
+Category: childhood
+File: childhood/png/02-wooden-rocking-horse.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One small traditional wooden rocking horse with four connected legs, a simple saddle-shaped seat and two curved rockers joined by ordinary cross braces. Show the entire assembled toy from a gentle side three-quarter angle so both rockers are understandable. Include no rider, fabric mane, lettering or extra toys.
+
+[c177] Юла
+Category: childhood
+File: childhood/png/03-spinning-top.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One traditional metal spinning top with a rounded low bell-shaped body, a narrow bottom tip and a vertical pump plunger attached at its center. Its body has plain restrained cream and burgundy bands. Show the complete toy from a gentle three-quarter angle, with no hand, motion blur, writing or other objects.
+
+[c178] Пирамидка с кольцами
+Category: childhood
+File: childhood/png/04-stacking-ring-toy.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One wooden stacking-ring toy with a flat round base, a straight central post and six graduated rings stacked from largest at the bottom to smallest at the top. Use restrained ordinary red, blue, yellow and green paint, with a small rounded wooden cap on the post. Show the complete assembled toy from a gentle three-quarter angle, without loose rings, lettering or other toys.
+
+[c179] Закрытая матрёшка
+Category: childhood
+File: childhood/png/05-closed-nesting-doll.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One closed wooden nesting doll with a fitted horizontal middle seam and a rounded stable base. Its simple traditional painted design has a muted red headscarf, an ivory front, a small stylized face and restrained leaf details. Show the complete doll from the front, with no separate inner dolls, lettering or additional objects.
+
+[c180] Комплект домино в открытой коробке
+Category: childhood
+File: childhood/png/06-dominoes-open-box.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One small open rectangular wooden domino case containing three visible ivory domino tiles side by side, seen gently from above. Each tile has a central dividing line and simple standard black circular pips: one face 1|2, one 0|3, one 2|4. Keep the case construction and open lid believable, all pieces together as one compact set. No letters, printed numbers, logos, extra dice, cards or people.
+
+[c181] Детский самокат
+Category: childhood
+File: childhood/png/07-child-scooter.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One small traditional child's scooter with two rubber wheels, a narrow wooden deck, a plain metal frame and a T-shaped handlebar with attached grips. Show the entire connected toy from a side three-quarter angle, with a conventional steering fork and the wheels correctly aligned. Include no child, helmet, branding or extra equipment.
+
+[c182] Металлическая пружинка-игрушка
+Category: childhood
+File: childhood/png/08-metal-coil-spring-toy.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One continuous steel coil spring toy with evenly spaced turns, resting as a short upright cylinder. Show the complete toy from slightly above so the open center and continuous spiral winding are clear. Include no colored plastic, lettering, stand or loose fragments.
+
+[c183] Напёрсток
+Category: hobbies
+File: hobbies/png/13-sewing-thimble.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One small domed metal sewing thimble with an open lower rim and a conventional grid of fine shallow dimples around its closed upper surface. Show the whole thimble from a gentle three-quarter angle, with believable thin metal construction. Include no finger, needle, thread or engraving.
+
+[c184] Катушка швейных ниток
+Category: hobbies
+File: hobbies/png/14-sewing-thread-spool.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One wooden sewing-thread spool with two round flanges and a central barrel neatly wound with fine cream cotton thread. A short thread end remains connected and lies close to the spool. Show the complete spool from a gentle overhead three-quarter angle, with no lettering, needles or other sewing equipment.
+
+[c185] Портновский сантиметр
+Category: hobbies
+File: hobbies/png/15-tailor-measuring-tape.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One flexible yellow cloth tailor's measuring tape loosely coiled as a single continuous strip, with both plain metal-capped ends visible. Use fine regular dark graduation ticks without numerals or lettering. Show the whole tape from slightly above, with natural soft bends and no hands, fabric or other tools.
+
+[c186] Штопальный грибок
+Category: hobbies
+File: hobbies/png/16-darning-mushroom.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One traditional wooden darning mushroom with a broad smooth domed cap securely joined to a straight turned handle. Show the complete tool from a gentle side three-quarter angle so its mushroom-shaped working surface is clear. Include no sock, yarn, needle, lettering or extra objects.
+
+[c187] Игольница
+Category: hobbies
+File: hobbies/png/17-pincushion.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One small round muted red fabric pincushion divided by stitched radial seams, with three plain steel sewing pins inserted securely into its top. Show the complete cushion and all three attached pin heads from a gentle overhead three-quarter angle. Include no loose pins, needles, lettering or other sewing equipment.
+
+[c188] Крупная перламутровая пуговица
+Category: hobbies
+File: hobbies/png/18-mother-of-pearl-button.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One large round ivory mother-of-pearl sewing button with four ordinary evenly arranged sewing holes and a gently raised rim. Show the complete button directly from above, with subtle natural pearly variation. Keep all four holes open and include no thread, fabric, letters or decorative carving.
+
+[c189] Деревянное веретено
+Category: hobbies
+File: hobbies/png/19-wooden-spindle.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One traditional wooden hand spindle consisting of a long smooth tapered shaft fitted through a single turned disk-shaped whorl near its lower end. Show the complete coherent assembly diagonally from slightly above. Include no yarn, hands, lettering or additional tools.
+
+[c190] Шило с деревянной ручкой
+Category: hobbies
+File: hobbies/png/20-wooden-handle-awl.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One sewing awl with a smooth pear-shaped wooden handle and one securely fitted slender pointed steel shaft. Show the complete tool diagonally from slightly above, with a practical conventional joint between handle and shaft. Include no leather, holes, lettering or other tools.
+
+[c191] Эмалированная кастрюля с крышкой
+Category: home-and-garden
+File: home-and-garden/png/13-enamel-pot-lid.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One cream enameled metal cooking pot with a dark rolled rim, two securely attached side handles and a fitted lid with a simple central knob. Show the entire closed pot from a gentle overhead three-quarter angle, with modest realistic rim wear. Include no food, steam, labels, table or utensils.
+
+[c192] Ручная мясорубка
+Category: home-and-garden
+File: home-and-garden/png/14-hand-cranked-meat-grinder.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One complete traditional hand-cranked cast-iron meat grinder with a top feed funnel, cylindrical body, a circular perforated front outlet plate, a side crank with a wooden handle and a visible lower screw clamp. Clearly show coherent working construction in a three-quarter catalogue view. Gentle natural metal wear, no meat, countertop, branding or detached spare parts.
+
+[c193] Разделочная доска
+Category: home-and-garden
+File: home-and-garden/png/15-wooden-cutting-board.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One beech cutting board with a rectangular working face, softly rounded corners and a short integral handle containing a hanging hole. Show the complete board flat from slightly above, with ordinary wood grain and light kitchen wear. Keep the hanging hole open and include no food, knife, lettering or extra items.
+
+[c194] Венчик
+Category: home-and-garden
+File: home-and-garden/png/16-wire-whisk.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One conventional stainless-steel wire whisk with a simple cylindrical handle and a teardrop cage formed by continuous wire loops securely fixed into a ferrule. Show the complete whisk diagonally from a gentle three-quarter angle, with clear open spaces between the wires. Include no bowl, food, labels or loose wire.
+
+[c195] Варежка-прихватка
+Category: home-and-garden
+File: home-and-garden/png/17-oven-mitt.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One quilted ivory cotton oven mitt with a properly attached thumb section, a simple stitched pattern and an empty wrist opening. Show the complete mitt from slightly above, with its padded fabric construction clearly visible. Include no human hand, arm, cookware, lettering or second mitt.
+
+[c196] Сложенная скатерть с кружевным краем
+Category: home-and-garden
+File: home-and-garden/png/18-folded-lace-tablecloth.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One real folded rectangular cream linen tablecloth with a SIMPLE crochet lace trim hanging below its FRONT edge. Three soft folded linen layers, seen gently from above in three-quarter view. The lace trim uses about eight LARGE simple open oval loops of cream cotton yarn, not dense floral cutwork. The entire lower row of crochet loops hangs freely beyond ALL linen layers with open air behind it, and every large loop opening must be genuine alpha=0 transparency like the outer background. The linen body and yarn threads remain opaque. Choose broad clearly open loop holes so there is no ambiguous tiny mesh or fabric behind them. Calm warm-neutral light, believable physical textile, complete silhouette and generous margins. No table, floor, backdrop, white plugs, dark painted hole interiors, props, lettering or monogram.
+
+[c197] Банка варенья без этикетки
+Category: home-and-garden
+File: home-and-garden/png/19-unlabeled-jam-jar.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One closed cylindrical glass preserve jar with a plain metal screw lid, filled with dark red berry jam to just below the neck. Show the entire jar upright from a gentle three-quarter angle, with visible thick glass edges and natural jam texture. Include no label, ribbon, loose fruit or utensil.
+
+[c198] Фарфоровая сахарница
+Category: home-and-garden
+File: home-and-garden/png/20-porcelain-sugar-bowl.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One plain off-white porcelain sugar bowl with a rounded body, two small attached side handles and a fitted lid with a modest central knob. Show the complete closed vessel from a gentle three-quarter angle. Include no decoration, lettering, loose sugar, spoon or matching crockery.
+
+[c199] Тяпка
+Category: home-and-garden
+File: home-and-garden/png/21-garden-hoe.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One garden hoe with a long straight wooden handle securely fitted through a conventional metal socket and bent neck to a flat transverse steel blade. Show the complete connected tool diagonally from a gentle side three-quarter angle. Include no soil, plants, lettering or additional tools.
+
+[c200] Комплект садовых перчаток
+Category: home-and-garden
+File: home-and-garden/png/22-garden-gloves-pair.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One matched pair of empty olive canvas gardening gloves with restrained brown reinforced palms, each having four proper finger sections and one attached thumb section. Lay the two complete gloves side by side with their wrist openings and all fingertips visible from slightly above. Include no hands, soil, plants, lettering or separate equipment.
+
+[c201] Садовая тачка
+Category: home-and-garden
+File: home-and-garden/png/23-garden-wheelbarrow.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One garden wheelbarrow with a shallow galvanized steel tray, one front rubber wheel, two long handles and two rear support legs, all properly connected to the same frame. Show the entire empty wheelbarrow from a gentle front-side three-quarter angle. Include no soil, tools, plants, labels or separate props.
+
+[c202] Шланг, свёрнутый кольцом
+Category: home-and-garden
+File: home-and-garden/png/24-coiled-garden-hose.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One continuous muted green rubber garden hose wound into a compact loose coil, with both ends visible and plain metal connectors attached. Show the complete coil from a gentle overhead three-quarter angle, with ordinary hose thickness and natural bends. Include no water, nozzle, labels or separate tools.
+
+[c203] Дачный подвесной рукомойник
+Category: home-and-garden
+File: home-and-garden/png/25-wall-mounted-country-washstand.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One small wall-mounted country washstand with a cylindrical aluminum water reservoir, a fitted lid, an attached rear hanging tab and a conventional push-rod water outlet underneath. Show the entire unmounted unit from a gentle front three-quarter angle, with all parts securely connected. Include no wall, basin, water stream, lettering or separate container.
+
+[c204] Перевязанная вязанка берёзовых поленьев
+Category: home-and-garden
+File: home-and-garden/png/26-tied-birch-firewood-bundle.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One cohesive bundle of four short birch firewood logs held tightly together by two loops of natural twine. Show the complete tied bundle from a gentle three-quarter angle, with white birch bark, dark bark marks and believable cut wood ends. Include no flames, ash, tools, lettering or loose extra logs.
+
+[c205] Металлическое ведро
+Category: home-and-garden
+File: home-and-garden/png/27-metal-bucket.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One empty tapered galvanized metal bucket with a rolled upper rim and one arched wire handle attached at two side pivots. Show the complete bucket from a gentle overhead three-quarter angle, with modest realistic material wear. Include no water, mop, plants, lettering or separate tools.
+
+[c206] Деревянный рассадный ящик
+Category: home-and-garden
+File: home-and-garden/png/28-wooden-seedling-box.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One shallow rectangular seedling box made of plain unfinished wooden boards with simple joined corners and a few narrow drainage gaps in its bottom. Show the complete empty box from a gentle overhead three-quarter angle, with believable wood grain. Include no soil, seedlings, labels, tools or additional containers.
+
+[c207] Спальный мешок
+Category: travel
+File: travel/png/13-sleeping-bag.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One complete muted navy mummy-shaped sleeping bag with coherent quilted padding, a visible side zipper and an empty hood opening. Show it closed and gently laid out diagonally from slightly above, preserving the entire soft fabric outline. Include no person, sleeping mat, pillow, lettering or extra bedding.
+
+[c208] Туристический коврик в рулоне
+Category: travel
+File: travel/png/14-rolled-camping-mat.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One camping foam mat rolled into a single compact cylinder and held by two simple attached dark straps. Show the whole muted olive roll from a gentle three-quarter angle so the layered spiral is visible at one end. Include no carrying bag, person, lettering or additional equipment.
+
+[c209] Складной походный табурет
+Category: travel
+File: travel/png/15-folding-camp-stool.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One folding camping stool with a plain olive canvas seat stretched across two conventional crossed metal leg frames joined at their pivots. Show the complete assembled stool from a gentle three-quarter angle, with all four feet and the taut seat visible. Include no person, scenery, logos or separate equipment.
+
+[c210] Походная фляга
+Category: travel
+File: travel/png/16-camping-canteen.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One flat oval metal camping canteen in a muted olive canvas cover, closed by a fitted screw cap retained by a short attached chain. Show the complete canteen from a gentle three-quarter angle, with coherent seams, neck and cover fastenings. Include no cup, badges, lettering or separate accessories.
+
+[c211] Спасательный жилет
+Category: travel
+File: travel/png/17-life-jacket.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One conventional life jacket with muted ochre fabric, two padded front panels, a simple neck opening and correctly attached adjustable webbing straps with plastic buckles. Show the complete empty jacket from a gentle front three-quarter angle, with ordinary shoulder construction. Include no wearer, lettering, symbols, whistle, water or other gear.
+
+[c212] Весло
+Category: travel
+File: travel/png/18-paddle.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One wooden canoe paddle with a single broad flattened oval blade, a long straight shaft and a modest T-shaped grip. Show the entire connected paddle diagonally from slightly above, with coherent wood grain and conventional proportions. Include no water, boat, person, markings or second paddle.
+
+[c213] Маска для сна
+Category: travel
+File: travel/png/19-sleep-mask.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One plain slate-blue cotton sleep mask with a soft contoured eye-covering panel and one securely attached elastic strap forming a closed loop behind it. Show the complete empty mask from a gentle front-overhead angle. Include no face, pillow, writing or other travel accessories.
+
+[c214] Дорожный несессер
+Category: travel
+File: travel/png/20-travel-toiletry-bag.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One small closed brown canvas travel toiletry bag with a rectangular gusseted body, a fitted top zipper and one attached short carrying loop. Show the entire bag from a gentle three-quarter angle, with ordinary practical stitching. Include no bottles, toiletries, lettering, initials or separate items.
+
+[c215] Колода карт рубашкой вверх
+Category: hobbies
+File: hobbies/png/21-face-down-playing-card-deck.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: A single neatly aligned deck of ordinary playing cards, shown face-down as one compact set. The back design is a restrained burgundy field with a simple geometric border, while the layered cream card edges remain visible. Show the complete deck from a shallow overhead three-quarter angle, with no lettering, ranks, suits, box or loose cards.
+
+[c216] Дротик
+Category: sport
+File: sport/png/13-dart.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One conventional steel-tip dart with a knurled brass barrel, a short straight shaft and plain muted red flights fitted coherently at the rear. Show the entire dart diagonally from a gentle three-quarter angle, with its tip and flight edges complete. Include no target, hand, lettering or additional darts.
+
+[c217] Бильярдный кий
+Category: sport
+File: sport/png/14-billiard-cue.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One complete wooden billiard cue with a long straight tapered shaft, a small pale ferrule and an attached dark leather tip. Show the full cue diagonally from slightly above, with conventional proportions and a plain darker butt end. Include no balls, rack, chalk, branding or lettering.
+
+[c218] Скейтборд
+Category: sport
+File: sport/png/15-skateboard.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One conventional skateboard with a short wooden laminated deck, slightly raised nose and tail, dark plain grip tape, two attached metal trucks and four rubber wheels. Show the complete board from a gentle overhead three-quarter angle so the deck and wheel assembly are understandable. Include no rider, shoes, lettering or graphics.
+
+[c219] Кистевой эспандер
+Category: sport
+File: sport/png/16-hand-gripper.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One conventional hand-grip exerciser with two textured dark handles joined by a single exposed metal coil spring at the top. Show the complete connected tool diagonally from a gentle three-quarter angle, with the handles naturally separated. Include no hand, lettering or additional exercise equipment.
+
+[c220] Спортивный свисток
+Category: sport
+File: sport/png/17-sports-whistle.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One plain metal sports whistle with a conventional hollow body, a fitted mouthpiece, a visible air opening and one small attached ring. Show the complete whistle from a gentle side three-quarter angle. Include no cord, person, lettering or separate accessories.
+
+[c221] Хоккейная клюшка
+Category: sport
+File: sport/png/18-hockey-stick.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One conventional wooden hockey stick with a long straight shaft and a single correctly angled gently curved blade, finished with a short plain dark tape wrap on the blade. Show the complete connected stick diagonally from slightly above. Include no puck, player, gloves, brand or lettering.
+
+[c222] Бумеранг
+Category: sport
+File: sport/png/19-boomerang.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One plain wooden boomerang with two broad gently curved arms forming a conventional open V shape, rounded tips and believable thin airfoil edges. Show the complete object almost flat from above, with natural wood grain. Include no painted symbols, lettering, hand or other objects.
+
+[c223] Ошейник без данных
+Category: pet-accessories
+File: pet-accessories/png/01-plain-pet-collar.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One real medium-brown leather pet collar arranged in a compact loose oval loop, with a believable small metal buckle, adjustment holes and a metal D-ring. Show the complete collar from a gentle three-quarter top view with natural leather grain and modest wear. No animal, lead, name tag, engraved personal data or brand; empty spaces inside the loop and metal rings must remain genuinely transparent.
+
+[c224] Поводок
+Category: pet-accessories
+File: pet-accessories/png/02-pet-leash.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One continuous brown woven pet leash with a stitched hand loop at one end and a securely attached metal swivel clasp at the other. Show its full length loosely curved from slightly above, with both ends clearly visible. Include no animal, collar, identification tag or lettering.
+
+[c225] Миска для питомца
+Category: pet-accessories
+File: pet-accessories/png/03-pet-bowl.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One plain empty stainless-steel pet feeding bowl with a wide rolled lip and a short dark non-slip base ring, viewed gently from above in three-quarter view. Realistic brushed metal interior and restrained reflections on fully opaque physical metal. No water, food, lettering, logos, animal or floor.
+
+[c226] Лежанка для питомца
+Category: pet-accessories
+File: pet-accessories/png/04-pet-bed.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One small oval beige canvas pet bed with a padded raised bolster around the edge and a recessed cushion forming one coherent textile unit. Show the entire empty bed from a gentle overhead three-quarter angle, with practical sewn seams. Include no animal, blanket, toy, lettering or logo.
+
+[c227] Когтеточка
+Category: pet-accessories
+File: pet-accessories/png/05-cat-scratching-post.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One simple cat scratching post consisting of a square wooden base and one thick upright column tightly wrapped in natural sisal rope and fitted with a plain top cap. Show the complete securely connected unit from a gentle three-quarter angle. Include no cat, hanging toy, lettering or extra platforms.
+
+[c228] Игрушечная мышка
+Category: pet-accessories
+File: pet-accessories/png/06-toy-mouse.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One small stuffed gray fabric toy mouse with rounded sewn ears, simple embroidered eyes and a single attached cotton-cord tail. Show the complete connected toy from a gentle three-quarter angle, with its seams and soft fabric construction visible. Include no live animal, label, collar or separate accessories.
+
+[c229] Переноска для питомца
+Category: pet-accessories
+File: pet-accessories/png/07-pet-carrier.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One compact rigid pet carrier with a plain charcoal molded plastic shell, conventional ventilation slots, a closed attached metal-bar front door and a fitted top carrying handle. Show the entire empty carrier from a gentle front three-quarter angle, with coherent hinges, latches and an unoccupied interior. Include no animal, bedding, bowl, labels or brand.
+
+[c230] Птичья жердочка с креплением
+Category: pet-accessories
+File: pet-accessories/png/08-bird-perch-clamp.png
+Use case: product-mockup.
+Asset type: reusable photorealistic PNG cutout for the quiet family-memory website Letopis.
+Canvas and backdrop: SQUARE 1:1 composition with genuine alpha transparency. Outside the precise silhouette of the requested subject every background pixel must be completely transparent. No floor, tabletop, backdrop, haze, vignette, surrounding glow, cast shadow or painted checkerboard.
+Style: realistic studio photography, calm warm-neutral light from the upper left, natural materials and believable physical construction. Moderate gentle wear only where appropriate to an old everyday object. Preserve fine details and soft shading ON the subject; keep the surrounding alpha background clean.
+Composition: exactly one main asset or the one explicitly described connected set, complete silhouette inside the square with clear margins of at least 8 percent; longest dimension about 80 percent of the frame. Never crop tips, handles, tails, ears or edges.
+Constraints: no logos, brand names, watermark, decorative border, extra props, people, body parts, readable text, invented personal details or floating unrelated pieces. Opaque physical materials must remain fully opaque, not faded or semi-transparent.
+Subject: One straight natural wooden bird perch with a conventional threaded metal mounting bolt at one end, fitted with two washers and a wing nut. Show the complete connected component from slightly above, with the whole wooden dowel and clamp visible. Include no cage, bird, food, foliage or lettering.

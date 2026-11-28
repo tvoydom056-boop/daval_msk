@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Повод - сайт-подарок с вашей историей</title>
+<meta name="description" content="Личный сайт-подарок к свадьбе, дню рождения, годовщине или юбилею: ваши фото, голосовые, письма и видео в одной красивой истории.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top__in">
+    <a class="logo" href="index.html">Повод<i>.</i></a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#occasions">Поводы</a>
+      <a href="#inside">Что внутри</a>
+      <a href="#how">Как работаем</a>
+      <a href="#prices">Цены</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <a class="btn btn--ink btn--sm" href="#request">Заказать подарок</a>
+  </div>
+</header>
+
+<!-- 1. ПЕРВЫЙ ЭКРАН -->
+<section class="hhero">
+  <div class="wrap hhero__in">
+    <div class="hhero__copy">
+      <p class="eyebrow">Личные сайты-подарки</p>
+      <h1>Подарите близким <em>их историю</em></h1>
+      <p class="hhero__lead">Соберём ваши фото, голосовые и воспоминания в подарок, который можно открыть по ссылке.</p>
+      <div class="hhero__actions">
+        <a class="btn btn--acc" href="jubilee-demo.html" data-spa-href="#jubilee-demo">Открыть пример подарка</a>
+        <a class="btn btn--line" href="#occasions">Выбрать повод</a>
+      </div>
+      <p class="hhero__note"><a href="#prices">От 1 990 ₽</a> · от 2 дней после получения материалов.</p>
+    </div>
+    <figure class="stage">
+      <div class="stage__media rel" data-slot="Фото или короткое видео юбилея. Постер jubilee.jpg">
+        <img src="assets/img/jubilee.jpg" alt="Бабушка с внучками у праздничного торта" width="1600" height="2000" fetchpriority="high">
+      </div>
+      <figcaption class="stage__caption"><b>Бабушке Вале 80</b><span>Пример подарка на юбилей</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 2. ВЫБОР ПОВОДА -->
+<section class="sec sec--bg2" id="occasions">
+  <div class="wrap">
+    <div class="sec__head">
+      <h2>Какой у вас повод?</h2>
+      <p class="sec__lead">У каждого повода свой пример и набор форматов.</p>
+    </div>
+    <div class="occ" id="occGrid"></div>
+    <div class="occ__other">
+      <div>
+        <h3>Свой повод</h3>
+        <p>Выпускной, проводы, рождение ребёнка, юбилей компании, просто «спасибо». Придумаем формат вместе.</p>
+      </div>
+      <a class="btn btn--ink" href="#request">Рассказать о поводе</a>
+    </div>
+  </div>
+</section>
+
+<!-- 3. ЧТО МОЖЕТ БЫТЬ ВНУТРИ -->
+<section class="sec sec--dark" id="inside">
+  <div class="wrap contents">
+    <div>
+      <h2>Из чего складывается подарок</h2>
+      <ul class="contents__list">
+        <li><b>Главы из жизни</b><span>Фотографии и истории по годам. Для семьи это может быть и старый снимок, и рецепт, записанный со слов бабушки.</span></li>
+        <li><b>Голоса и письма</b><span>Поздравления из разных городов и ваши слова, оформленные как письмо от руки.</span></li>
+        <li><b>Музыка, видео и игры</b><span>В зависимости от тарифа добавим вашу песню, короткий фильм или квиз про именинника.</span></li>
+      </ul>
+      <a class="btn btn--line-light" href="jubilee-demo.html" data-spa-href="#jubilee-demo">Послушать поздравление в демо</a>
+    </div>
+    <figure class="contents__album">
+      <div class="contents__photos rel" data-slot="Два снимка из разных глав семейной истории">
+        <img src="assets/img/jub-young.jpg" alt="Валя в юности" width="1200" height="1500" loading="lazy">
+        <img src="assets/img/jub-family.jpg" alt="Семейное лето на даче" width="1200" height="1500" loading="lazy">
+      </div>
+      <figcaption><blockquote>Бабуля, спасибо за каждое лето на даче.</blockquote><span>Из письма внуков в демо-подарке</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 4. КАК РАБОТАЕМ -->
+<section class="sec sec--bg2" id="how">
+  <div class="wrap">
+    <div class="sec__head">
+      <h2>От вашей идеи до вручения</h2>
+    </div>
+    <ol class="steps steps--three">
+      <li><b>Обсудим повод и дату</b><p>Подскажем, что собрать, и согласуем цену и срок.</p></li>
+      <li><b>Соберём историю</b><p>Из ваших фото, записей и воспоминаний подготовим черновик подарка.</p></li>
+      <li><b>Подготовим к вручению</b><p>После согласования вы получите ссылку. Для вручения можно заказать печатную открытку с QR.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 5. ЦЕНЫ -->
+<section class="sec sec--pricing" id="prices">
+  <div class="wrap">
+    <div class="sec__head">
+      <h2>Три формата подарка</h2>
+      <p class="sec__lead">Цена фиксируется до начала работы. Размещение на год включено, продление 290 ₽ в год.</p>
+    </div>
+    <div class="plans">
+      <div class="plan"><h3>Мини</h3><p class="plan__price">1 990 ₽</p><p class="plan__for">Быстро и мило, на готовом шаблоне</p><ul><li>До 15 фото</li><li>Одно письмо или поздравление</li><li>Музыка на фоне</li><li>Готово за 2 дня</li></ul><a class="btn btn--line" href="#request" data-plan="Мини">Выбрать «Мини»</a></div>
+      <div class="plan plan--main"><span class="plan__badge">Рекомендуем</span><h3>История</h3><p class="plan__price">4 490 ₽</p><p class="plan__for">Ваша история целиком</p><ul><li>До 40 фото и хронология</li><li>Голосовые от вас и друзей</li><li>Рукописное письмо</li><li>Анимации и музыка</li><li>2 круга правок, 3-4 дня</li></ul><a class="btn btn--acc" href="#request" data-plan="История">Выбрать «Историю»</a></div>
+      <div class="plan"><h3>Премиум</h3><p class="plan__price">от 8 900 ₽</p><p class="plan__for">Видео и индивидуальный дизайн</p><ul><li>Всё из «Истории»</li><li>Видеоролик 30-60 секунд</li><li>Оживление фотографий</li><li>Индивидуальный дизайн</li><li>Мини-игра или квиз</li></ul><a class="btn btn--line" href="#request" data-plan="Премиум">Выбрать «Премиум»</a></div>
+    </div>
+    <p class="plans__extra">Свадьба начинается с «Истории». Открытка с QR для вручения от 300 ₽. Посоветуйте нас другу: ему скидка 5 %, вам 300 ₽ на следующий подарок.</p>
+  </div>
+</section>
+
+<!-- 6. ВОПРОСЫ -->
+<section class="sec sec--bg2" id="faq">
+  <div class="wrap faq">
+    <div class="sec__head"><h2>Вопросы о подарке</h2></div>
+    <div>
+      <details open><summary>Сколько живёт сайт?</summary><p>Год включён в цену, дальше 290 ₽ в год. По запросу отдаём архив сайта, который откроется на любом компьютере.</p></details>
+      <details><summary>Нужно ли что-то устанавливать?</summary><p>Нет. Сайт открывается по ссылке или QR-коду на любом телефоне и компьютере.</p></details>
+      <details><summary>Можно ли сделать срочно?</summary><p>«Мини» делаем за 2 дня, срочно за сутки с доплатой 1 000 ₽.</p></details>
+      <details><summary>Кто увидит сайт?</summary><p>Только те, кому вы дадите ссылку. По желанию ставим пароль.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 7. ЗАЯВКА -->
+<section class="sec sec--dark" id="request">
+  <div class="wrap request">
+    <div>
+      <p class="eyebrow">Демо-заявка</p>
+      <h2>К какой дате нужен подарок?</h2>
+      <p class="sec__lead">Чтобы согласовать подарок, нам понадобятся повод, дата и удобный способ связи.</p>
+      <p class="request__alt">Контакт для заявок появится перед запуском.</p>
+    </div>
+    <form class="form" id="form">
+      <label>Как к вам обращаться<input name="name" required placeholder="Аня"></label>
+      <label>Телефон или Telegram<input name="contact" required placeholder="+7 ... или @ник"></label>
+      <label>Повод
+        <select name="occasion" id="occSelect"><option>Свадьба</option><option>День рождения</option><option>Годовщина</option><option>Юбилей бабушки и дедушки</option><option>Свой повод</option></select>
+      </label>
+      <label>Формат
+        <select name="plan" id="planSelect"><option>Пока не знаю</option><option>Мини</option><option>История</option><option>Премиум</option></select>
+      </label>
+      <label>Когда праздник<input name="date" placeholder="Например, 14 марта"></label>
+      <button class="btn btn--acc" type="submit" disabled>Проверить демо-заявку</button>
+      <p class="form__note" id="formNote" role="status">Это макет заявки. Для проверки используйте вымышленные данные.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <span class="logo">Повод<i>.</i></span>
+    <span>Сайты-подарки с вашей историей</span>
+    <span>Политика конфиденциальности · Оферта</span>
+  </div>
+</footer>
+
+<button class="slots-toggle" id="slotsToggle" type="button">Слоты медиа</button>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

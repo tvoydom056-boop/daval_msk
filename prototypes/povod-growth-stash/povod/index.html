@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Повод - сайт-подарок с вашей историей</title>
+<meta name="description" content="Личный сайт-подарок к свадьбе, дню рождения, годовщине или юбилею: ваши фото, голосовые, письма и видео в одной красивой истории.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top__in">
+    <a class="logo" href="index.html">Повод<i>.</i></a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#occasions">Поводы</a>
+      <a href="#inside">Что от вас</a>
+      <a href="#how">Как работаем</a>
+      <a href="#prices">Цены</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <a class="btn btn--ink btn--sm" href="#request" data-cta="header">Заказать подарок</a>
+  </div>
+</header>
+
+<!-- 1. ПЕРВЫЙ ЭКРАН -->
+<section class="hhero">
+  <div class="wrap hhero__in">
+    <div class="hhero__copy">
+      <p class="eyebrow">Личные сайты-подарки под ключ</p>
+      <h1>Подарите близким <em>их историю</em></h1>
+      <p class="hhero__lead">Вы скидываете фото и пару голосовых за 15 минут. Мы превращаем их в живой сайт с письмом от руки, голосами родных и открыткой с QR.</p>
+      <div class="hero-tabs" id="heroTabs" role="tablist" aria-label="Сценарии подарка"></div>
+      <div class="hhero__actions">
+        <a class="btn btn--acc" id="heroDemoBtn" href="jubilee-demo.html" data-spa-href="#jubilee-demo" data-cta="hero-demo">Открыть пример подарка</a>
+        <a class="btn btn--line" href="#occasions" data-cta="hero-occasions">Выбрать свой повод</a>
+      </div>
+      <p class="hhero__note"><a href="#prices">От 1 990 ₽</a> · по цене букета, но останется навсегда · готово от 2 дней</p>
+    </div>
+    <figure class="stage">
+      <div class="stage__media rel" id="heroStageMedia" data-slot="Фото или короткое видео выбранного повода. Постер jubilee.jpg">
+        <img id="heroStageImg" src="assets/img/jubilee.jpg" alt="Бабушка с внучками у праздничного торта" width="1600" height="2000" fetchpriority="high">
+      </div>
+      <figcaption class="stage__caption"><b id="heroStageTitle">Бабушке Вале 80</b><span id="heroStageSub">Семейный архив, голоса внуков и рецепт пирога</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 2. ВЫБОР ПОВОДА -->
+<section class="sec sec--bg2" id="occasions">
+  <div class="wrap">
+    <div class="sec__head">
+      <h2>Какой у вас повод?</h2>
+      <p class="sec__lead">В каждом разделе есть живой пример в телефоне и сравнение того, что входит в тарифы.</p>
+    </div>
+    <div class="occ" id="occGrid"></div>
+    <div class="occ__other">
+      <div>
+        <h3>Свой повод</h3>
+        <p>Выпускной, проводы, рождение ребёнка, юбилей компании, просто «спасибо». Придумаем структуру вместе.</p>
+      </div>
+      <a class="btn btn--ink" href="#request" data-occasion-pick="custom" data-cta="custom-occasion">Рассказать о поводе</a>
+    </div>
+  </div>
+</section>
+
+<!-- 3. ЧТО МОЖЕТ БЫТЬ ВНУТРИ И КАК ВРУЧАЕТСЯ -->
+<section class="sec sec--dark" id="inside">
+  <div class="wrap contents">
+    <div>
+      <p class="eyebrow">Минимум хлопот с вашей стороны</p>
+      <h2>От вас 15 минут - от нас готовая история</h2>
+      <div class="exchange" id="exchangeGrid"></div>
+      <div class="invite-box" id="inviteBox"></div>
+      <div class="contents__actions">
+        <a class="btn btn--line-light" href="jubilee-demo.html" data-spa-href="#jubilee-demo" data-cta="inside-demo">Открыть юбилейный пример</a>
+      </div>
+    </div>
+    <div class="contents__side">
+      <figure class="contents__album">
+        <div class="contents__photos rel" data-slot="Два снимка из разных глав семейной истории">
+          <img src="assets/img/jub-young.jpg" alt="Валя в юности" width="1200" height="1500" loading="lazy">
+          <img src="assets/img/jub-family.jpg" alt="Семейное лето на даче" width="1200" height="1500" loading="lazy">
+        </div>
+        <figcaption><blockquote>Бабуля, спасибо за каждое лето на даче.</blockquote><span>Из письма внуков в демо-подарке</span></figcaption>
+      </figure>
+      <div class="qr-card-preview" id="qrCardPreview"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. КАК РАБОТАЕМ -->
+<section class="sec sec--bg2" id="how">
+  <div class="wrap">
+    <div class="sec__head">
+      <h2>От вашей идеи до вручения</h2>
+    </div>
+    <ol class="steps steps--three">
+      <li><b>Обсудим повод и дату</b><p>Подскажем, что собрать, проверим запас времени к празднику и сразу зафиксируем цену.</p></li>
+      <li><b>Соберём историю за вас</b><p>Расшифруем голосовые, выстроим главы, приведём в порядок старые фото и сверстаем страницу.</p></li>
+      <li><b>Подготовим к вручению</b><p>После двух кругов правок вы получите ссылку, а при желании - печатную открытку с QR для конверта.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 5. ЦЕНЫ -->
+<section class="sec sec--pricing" id="prices">
+  <div class="wrap">
+    <div class="sec__head">
+      <h2>Три формата подарка</h2>
+      <p class="sec__lead">Цена фиксируется до начала работы. Размещение на год включено, продление 290 ₽ в год.</p>
+    </div>
+    <div class="plans" id="hubPrices"></div>
+    <p class="plans__extra">Свадьба начинается с «Истории». Открытка с QR для вручения от 300 ₽. Посоветуйте нас другу: ему скидка 5 %, вам 300 ₽ на следующий подарок.</p>
+  </div>
+</section>
+
+<!-- 6. ВОПРОСЫ -->
+<section class="sec sec--bg2" id="faq">
+  <div class="wrap faq">
+    <div class="sec__head"><h2>Вопросы о подарке</h2></div>
+    <div>
+      <details open><summary>Сколько времени это займёт у меня?</summary><p>Около 15-20 минут на старте: скинуть фото из телефона и наговорить пару голосовых, как вспоминается. Тексты, структуру и монтаж делаем мы.</p></details>
+      <details><summary>Как собрать поздравления от друзей из разных городов?</summary><p>Мы даём готовый текст для общего чата и удобный приём в Telegram или общую папку. Друзья скидывают туда фото и голосовые, а мы сами всё сводим.</p></details>
+      <details><summary>Сколько живёт сайт и что останется у нас?</summary><p>Год включён в цену, дальше 290 ₽ в год. По запросу отдаём автономный архив сайта, который откроется на любом компьютере без интернета.</p></details>
+      <details><summary>Можно ли сделать срочно?</summary><p>«Мини» делаем за 2 дня, срочно за сутки с доплатой 1 000 ₽. Если праздник завтра, можно подарить базовую версию ко дню X и дополнить её позже.</p></details>
+      <details><summary>Кто увидит сайт?</summary><p>Только те, кому вы дадите ссылку. По желанию ставим пароль.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 7. ЗАЯВКА -->
+<section class="sec sec--dark" id="request">
+  <div class="wrap request">
+    <div>
+      <p class="eyebrow">Демо-заявка</p>
+      <h2>К какой дате нужен подарок?</h2>
+      <p class="sec__lead">Чтобы согласовать подарок, нам понадобятся повод, дата и удобный способ связи.</p>
+      <div class="soft-cta" id="interviewGuide"></div>
+      <p class="request__alt">Контакт для заявок появится перед запуском.</p>
+    </div>
+    <form class="form" id="form" novalidate>
+      <div class="form__channels" role="group" aria-label="Где вам удобнее ответить">
+        <span class="form__label-inline">Где ответить</span>
+        <div class="channel-pills" id="channelPills">
+          <button type="button" class="ch-pill is-on" data-channel="telegram">Telegram</button>
+          <button type="button" class="ch-pill" data-channel="phone">Телефон</button>
+          <button type="button" class="ch-pill" data-channel="whatsapp">WhatsApp</button>
+        </div>
+        <input type="hidden" name="contactChannel" id="channelInput" value="telegram">
+      </div>
+      <label>Как к вам обращаться<input name="name" required maxlength="80" placeholder="Аня"></label>
+      <label><span id="contactLabel">Ваш ник или номер в Telegram</span><input name="contact" id="contactInput" required maxlength="100" placeholder="@nik или +7 ..."></label>
+      <label>Повод
+        <select name="occasion" id="occSelect">
+          <option value="wedding">Свадьба</option>
+          <option value="birthday">День рождения</option>
+          <option value="anniversary">Годовщина</option>
+          <option value="jubilee">Юбилей бабушки и дедушки</option>
+          <option value="custom">Свой повод</option>
+        </select>
+      </label>
+      <label>Формат
+        <select name="plan" id="planSelect">
+          <option value="unknown">Пока не знаю</option>
+          <option value="mini">Мини (1 990 ₽)</option>
+          <option value="story">История (4 490 ₽)</option>
+          <option value="prem">Премиум (от 8 900 ₽)</option>
+        </select>
+      </label>
+      <div class="form__full">
+        <label>Когда праздник
+          <div class="date-row">
+            <input name="date" id="dateInput" maxlength="60" placeholder="Например, 14 марта или 2026-12-20">
+            <input type="date" id="datePicker" aria-label="Выбрать дату в календаре">
+          </div>
+        </label>
+        <p class="date-status" id="dateStatus">Укажите дату - подскажем, успеваем ли спокойно или нужен срочный тариф.</p>
+      </div>
+      <label class="form__full">Коротко о подарке (необязательно)
+        <textarea name="about" rows="2" maxlength="1000" placeholder="Кому дарите, сколько примерно фото и участвуют ли друзья"></textarea>
+      </label>
+      <input class="hp-field" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <label class="form__consent form__full">
+        <input type="checkbox" name="consent" id="consentCheck" required>
+        <span>Согласен с политикой обработки персональных данных (для демо-проверки данные никуда не отправляются)</span>
+      </label>
+      <button class="btn btn--acc form__full" type="submit">Проверить демо-заявку</button>
+      <p class="form__note" id="formNote" role="status">Это макет заявки. Для проверки используйте вымышленные данные.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <span class="logo">Повод<i>.</i></span>
+    <span>Сайты-подарки с вашей историей</span>
+    <span>Политика конфиденциальности · Оферта</span>
+  </div>
+</footer>
+
+<button class="slots-toggle" id="slotsToggle" type="button">Слоты медиа</button>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

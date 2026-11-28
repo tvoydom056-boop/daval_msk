@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Сайт-подарок на годовщину отношений или свадьбы | Повод</title>
+<meta name="description" content="Необычный подарок на годовщину: главы ваших лет вместе, карточки 10 причин, голосовое из прошлого, письмо и счётчик дней.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-occasion="anniversary">
+
+<header class="top">
+  <div class="wrap top__in">
+    <a class="logo" href="index.html">Повод<i>.</i></a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="index.html#occasions">Все поводы</a>
+      <a href="#demo">Пример</a>
+      <a href="#oprices">Цены</a>
+      <a href="#ofaq">Вопросы</a>
+    </nav>
+    <a class="btn btn--ink btn--sm" href="#request" data-cta="header">Заказать подарок</a>
+  </div>
+</header>
+
+<main id="page"></main>
+
+<!-- ЗАЯВКА -->
+<section class="sec sec--dark" id="request">
+  <div class="wrap request">
+    <div>
+      <p class="eyebrow">Заявка</p>
+      <h2>Расскажите, кого и с чем поздравляем</h2>
+      <p class="sec__lead">Чтобы согласовать подарок, нам понадобятся повод, дата и удобный способ связи.</p>
+      <div class="soft-cta" id="interviewGuide"></div>
+      <p class="request__alt">Контакт для заявок появится перед запуском.</p>
+    </div>
+    <form class="form" id="form" novalidate>
+      <div class="form__channels" role="group" aria-label="Где вам удобнее ответить">
+        <span class="form__label-inline">Где ответить</span>
+        <div class="channel-pills" id="channelPills">
+          <button type="button" class="ch-pill is-on" data-channel="telegram">Telegram</button>
+          <button type="button" class="ch-pill" data-channel="phone">Телефон</button>
+          <button type="button" class="ch-pill" data-channel="whatsapp">WhatsApp</button>
+        </div>
+        <input type="hidden" name="contactChannel" id="channelInput" value="telegram">
+      </div>
+      <label>Как к вам обращаться<input name="name" required maxlength="80" placeholder="Аня"></label>
+      <label><span id="contactLabel">Ваш ник или номер в Telegram</span><input name="contact" id="contactInput" required maxlength="100" placeholder="@nik или +7 ..."></label>
+      <label>Повод
+        <select name="occasion" id="occSelect">
+          <option value="wedding">Свадьба</option>
+          <option value="birthday">День рождения</option>
+          <option value="anniversary">Годовщина</option>
+          <option value="jubilee">Юбилей бабушки и дедушки</option>
+          <option value="custom">Свой повод</option>
+        </select>
+      </label>
+      <label>Формат
+        <select name="plan" id="planSelect">
+          <option value="unknown">Пока не знаю</option>
+          <option value="mini">Мини (1 990 ₽)</option>
+          <option value="story">История (4 490 ₽)</option>
+          <option value="prem">Премиум (от 8 900 ₽)</option>
+        </select>
+      </label>
+      <div class="form__full">
+        <label>Когда праздник
+          <div class="date-row">
+            <input name="date" id="dateInput" maxlength="60" placeholder="Например, 14 марта или 2026-12-20">
+            <input type="date" id="datePicker" aria-label="Выбрать дату в календаре">
+          </div>
+        </label>
+        <p class="date-status" id="dateStatus">Укажите дату - подскажем, успеваем ли спокойно или нужен срочный тариф.</p>
+      </div>
+      <label class="form__full">Коротко о подарке (необязательно)
+        <textarea name="about" rows="2" maxlength="1000" placeholder="Кому дарите, сколько примерно фото и участвуют ли друзья"></textarea>
+      </label>
+      <input class="hp-field" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <label class="form__consent form__full">
+        <input type="checkbox" name="consent" id="consentCheck" required>
+        <span>Согласен с политикой обработки персональных данных (для демо-проверки данные никуда не отправляются)</span>
+      </label>
+      <button class="btn btn--acc form__full" type="submit">Проверить демо-заявку</button>
+      <p class="form__note" id="formNote" role="status">Это макет заявки. Для проверки используйте вымышленные данные.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <span class="logo">Повод<i>.</i></span>
+    <span>Сайты-подарки с вашей историей</span>
+    <span>Политика конфиденциальности · Оферта</span>
+  </div>
+</footer>
+
+<button class="slots-toggle" id="slotsToggle" type="button">Слоты медиа</button>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,2114 @@
+diff --git a/povod/anniversary.html b/povod/anniversary.html
+index 16ea434..2889301 100644
+--- a/povod/anniversary.html
++++ b/povod/anniversary.html
+@@ -3,8 +3,8 @@
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+-<title>Повод - сайт-подарок с вашей историей</title>
+-<meta name="description" content="Личный сайт-подарок к свадьбе, дню рождения, годовщине или юбилею: ваши фото, голосовые, письма и видео в одной красивой истории.">
++<title>Сайт-подарок на годовщину отношений или свадьбы | Повод</title>
++<meta name="description" content="Необычный подарок на годовщину: главы ваших лет вместе, карточки 10 причин, голосовое из прошлого, письмо и счётчик дней.">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+@@ -21,7 +21,7 @@
+       <a href="#oprices">Цены</a>
+       <a href="#ofaq">Вопросы</a>
+     </nav>
+-    <a class="btn btn--ink btn--sm" href="#request">Заказать подарок</a>
++    <a class="btn btn--ink btn--sm" href="#request" data-cta="header">Заказать подарок</a>
+   </div>
+ </header>
+ 
+@@ -34,19 +34,56 @@
+       <p class="eyebrow">Заявка</p>
+       <h2>Расскажите, кого и с чем поздравляем</h2>
+       <p class="sec__lead">Чтобы согласовать подарок, нам понадобятся повод, дата и удобный способ связи.</p>
++      <div class="soft-cta" id="interviewGuide"></div>
+       <p class="request__alt">Контакт для заявок появится перед запуском.</p>
+     </div>
+-    <form class="form" id="form">
+-      <label>Как к вам обращаться<input name="name" required placeholder="Аня"></label>
+-      <label>Телефон или Telegram<input name="contact" required placeholder="+7 ... или @ник"></label>
++    <form class="form" id="form" novalidate>
++      <div class="form__channels" role="group" aria-label="Где вам удобнее ответить">
++        <span class="form__label-inline">Где ответить</span>
++        <div class="channel-pills" id="channelPills">
++          <button type="button" class="ch-pill is-on" data-channel="telegram">Telegram</button>
++          <button type="button" class="ch-pill" data-channel="phone">Телефон</button>
++          <button type="button" class="ch-pill" data-channel="whatsapp">WhatsApp</button>
++        </div>
++        <input type="hidden" name="contactChannel" id="channelInput" value="telegram">
++      </div>
++      <label>Как к вам обращаться<input name="name" required maxlength="80" placeholder="Аня"></label>
++      <label><span id="contactLabel">Ваш ник или номер в Telegram</span><input name="contact" id="contactInput" required maxlength="100" placeholder="@nik или +7 ..."></label>
+       <label>Повод
+-        <select name="occasion" id="occSelect"><option>Свадьба</option><option>День рождения</option><option>Годовщина</option><option>Юбилей бабушки и дедушки</option><option>Свой повод</option></select>
++        <select name="occasion" id="occSelect">
++          <option value="wedding">Свадьба</option>
++          <option value="birthday">День рождения</option>
++          <option value="anniversary">Годовщина</option>
++          <option value="jubilee">Юбилей бабушки и дедушки</option>
++          <option value="custom">Свой повод</option>
++        </select>
+       </label>
+       <label>Формат
+-        <select name="plan" id="planSelect"><option>Пока не знаю</option><option>Мини</option><option>История</option><option>Премиум</option></select>
++        <select name="plan" id="planSelect">
++          <option value="unknown">Пока не знаю</option>
++          <option value="mini">Мини (1 990 ₽)</option>
++          <option value="story">История (4 490 ₽)</option>
++          <option value="prem">Премиум (от 8 900 ₽)</option>
++        </select>
+       </label>
+-      <label>Когда праздник<input name="date" placeholder="Например, 14 марта"></label>
+-      <button class="btn btn--acc" type="submit" disabled>Проверить демо-заявку</button>
++      <div class="form__full">
++        <label>Когда праздник
++          <div class="date-row">
++            <input name="date" id="dateInput" maxlength="60" placeholder="Например, 14 марта или 2026-12-20">
++            <input type="date" id="datePicker" aria-label="Выбрать дату в календаре">
++          </div>
++        </label>
++        <p class="date-status" id="dateStatus">Укажите дату - подскажем, успеваем ли спокойно или нужен срочный тариф.</p>
++      </div>
++      <label class="form__full">Коротко о подарке (необязательно)
++        <textarea name="about" rows="2" maxlength="1000" placeholder="Кому дарите, сколько примерно фото и участвуют ли друзья"></textarea>
++      </label>
++      <input class="hp-field" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
++      <label class="form__consent form__full">
++        <input type="checkbox" name="consent" id="consentCheck" required>
++        <span>Согласен с политикой обработки персональных данных (для демо-проверки данные никуда не отправляются)</span>
++      </label>
++      <button class="btn btn--acc form__full" type="submit">Проверить демо-заявку</button>
+       <p class="form__note" id="formNote" role="status">Это макет заявки. Для проверки используйте вымышленные данные.</p>
+     </form>
+   </div>
+diff --git a/povod/app.js b/povod/app.js
+index b72ef31..a5a1c8c 100644
+--- a/povod/app.js
++++ b/povod/app.js
+@@ -1,111 +1,316 @@
+-/* Повод - вёрстка из data.js и интерактив */
++/* Повод - вёрстка из data.js, переключение тарифов, проверка даты и интерактив */
+ (() => {
+   const $ = (s, r = document) => r.querySelector(s);
+   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+   const occKey = document.body.dataset.occasion;
+   const SPA = document.body.hasAttribute('data-spa');
+   const ORDER = ['wedding', 'birthday', 'anniversary', 'jubilee'];
+-  const COLORS = { wedding: 'var(--wed)', birthday: 'var(--bday)', anniversary: 'var(--anni)', jubilee: 'var(--jub)' };
++  const HERO_ORDER = ['jubilee', 'wedding', 'birthday', 'anniversary'];
++  const COLORS = {
++    wedding: 'var(--wed)',
++    birthday: 'var(--bday)',
++    anniversary: 'var(--anni)',
++    jubilee: 'var(--jub)'
++  };
+   const nf = n => n.toLocaleString('ru-RU');
++  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({
++    '&': '&amp;',
++    '<': '&lt;',
++    '>': '&gt;',
++    '"': '&quot;',
++    "'": '&#39;'
++  }[c]));
++
++  /* слой аналитики микро-конверсий (готов к подключению Метрики) */
++  const events = window.__povodEvents = window.__povodEvents || [];
++  let lastCta = 'direct';
++  const track = (name, detail = {}) => {
++    const item = { name, detail, ts: Date.now() };
++    events.push(item);
++    document.dispatchEvent(new CustomEvent('povod:event', { detail: item }));
++  };
++
++  /* слоты медиа доступны на любой странице, включая отдельное демо */
++  $('#slotsToggle')?.addEventListener('click', () => {
++    const on = document.body.classList.toggle('show-slots');
++    track('toggle_slots', { on });
++  });
++
++  const copyText = async (text, btn, idleLabel) => {
++    try {
++      if (navigator.clipboard?.writeText) await navigator.clipboard.writeText(text);
++    } catch (_) {
++      /* fallback для локальных файлов без https */
++      const ta = document.createElement('textarea');
++      ta.value = text;
++      ta.style.position = 'fixed';
++      ta.style.opacity = '0';
++      document.body.appendChild(ta);
++      ta.select();
++      try { document.execCommand('copy'); } catch (__) {}
++      ta.remove();
++    }
++    if (btn) {
++      btn.textContent = 'Скопировано';
++      setTimeout(() => { btn.textContent = idleLabel; }, 1800);
++    }
++  };
+ 
+   const card = k => {
+     const o = OCCASIONS[k];
+-    return `<a class="occ__card" href="${SPA ? '#' + k : k + '.html'}" style="--c:${COLORS[k]}">
+-      <div class="occ__media rel" data-slot="Обложка повода «${o.short}»"><img src="${o.img}" alt="" loading="lazy"></div>
+-      <div class="occ__copy"><h3>${o.name}</h3><p>${o.card}</p>
+-      <span class="occ__price">${o.from}<span>Смотреть пример</span></span></div></a>`;
++    return `<a class="occ__card" href="${SPA ? '#' + k : k + '.html'}" style="--c:${COLORS[k]}" data-cta="card-${k}">
++      <div class="occ__media rel" data-slot="Обложка повода «${esc(o.short)}»"><img src="${esc(o.img)}" alt="" loading="lazy"></div>
++      <div class="occ__copy"><h3>${esc(o.name)}</h3><p>${esc(o.card)}</p>
++      <span class="occ__price">${esc(o.from)}<span>Смотреть пример</span></span></div></a>`;
+   };
+ 
+-  /* содержимое подарка */
+-  const gift = (g, standalone = false) => {
++  /* содержимое подарка с фильтрацией по тарифу */
++  const gift = (g, standalone = false, tierKey = 'story') => {
+     const coverTag = standalone ? 'h1' : 'h3';
+     const sectionTag = standalone ? 'h2' : 'h4';
+     const chapterTag = standalone ? 'h3' : 'h5';
+-    const s = g.sections.map(x => {
+-      const head = `<p class="g-label">${x.label || ''}</p>${x.title ? `<${sectionTag}>${x.title}</${sectionTag}>` : ''}`;
++    const planObj = PLANS[tierKey] || PLANS.story;
++    const allowed = new Set(planObj.includes);
++
++    const visibleSections = g.sections.filter(x => x.type === 'final' || allowed.has(x.type));
++    const missingHint = tierKey === 'mini'
++      ? `<div class="g-tier-banner">Показана комплектация «Мини» (1 990 ₽): обложка, письмо и галерея. Главы истории и голосовые добавляются в «Истории».</div>`
++      : '';
++
++    const s = visibleSections.map(x => {
++      const head = `<p class="g-label">${esc(x.label || '')}</p>${x.title ? `<${sectionTag}>${esc(x.title)}</${sectionTag}>` : ''}`;
+       switch (x.type) {
+-        case 'chapters': return `<section class="g-sec">${head}${x.items.map(c => `
+-          <div class="g-ch"><b>${c.y}</b><${chapterTag}>${c.h}</${chapterTag}><p>${c.p}</p>${c.img ? `<img src="${c.img}" alt="" loading="lazy">` : ''}</div>`).join('')}</section>`;
+-        case 'voices': return `<section class="g-sec">${head}<div class="g-voices">${x.items.map(v => `
+-          <div class="g-voice rel" data-slot="ГОЛОСОВОЕ: короткая запись близкого без фоновой музыки">
+-            <strong class="g-voice__n">${v.n}</strong>
+-            <p class="g-voice__caption">${v.src ? 'Синтезированный пример' : `Место для записи · ${v.t}`}</p>
+-            ${v.src ? `<audio aria-label="Поздравление: ${v.n}" src="${v.src}" controls preload="none"></audio>
+-            <details><summary>Текст поздравления</summary><p>${v.transcript}</p></details>` : ''}
+-          </div>`).join('')}</div></section>`;
+-        case 'letter': return `<section class="g-sec"><p class="g-label">${x.label}</p><div class="g-letter">${x.text}<div class="sign">${x.sign}</div></div></section>`;
+-        case 'gallery': return `<section class="g-sec">${head}<div class="g-gallery">${x.imgs.map(i => `<img src="${i}" alt="" loading="lazy">`).join('')}</div></section>`;
++        case 'chapters':
++          return `<section class="g-sec">${head}${x.items.map(c => `
++            <div class="g-ch"><b>${esc(c.y)}</b><${chapterTag}>${esc(c.h)}</${chapterTag}><p>${esc(c.p)}</p>${c.img ? `<img src="${esc(c.img)}" alt="" loading="lazy">` : ''}</div>`).join('')}</section>`;
++        case 'voices':
++          return `<section class="g-sec">${head}<div class="g-voices">${x.items.map(v => `
++            <div class="g-voice rel" data-slot="ГОЛОСОВОЕ: короткая запись близкого без фоновой музыки">
++              <strong class="g-voice__n">${esc(v.n)}</strong>
++              <p class="g-voice__caption">${v.src ? 'Синтезированный пример' : `Место для записи · ${esc(v.t)}`}</p>
++              ${v.src ? `<audio aria-label="Поздравление: ${esc(v.n)}" src="${esc(v.src)}" controls preload="none"></audio>
++              <details><summary>Текст поздравления</summary><p>${esc(v.transcript)}</p></details>` : ''}
++            </div>`).join('')}</div></section>`;
++        case 'letter':
++          return `<section class="g-sec"><p class="g-label">${esc(x.label)}</p><div class="g-letter">${esc(x.text)}<div class="sign">${esc(x.sign)}</div></div></section>`;
++        case 'gallery':
++          return `<section class="g-sec">${head}<div class="g-gallery">${x.imgs.map(i => `<img src="${esc(i)}" alt="" loading="lazy">`).join('')}</div></section>`;
+         case 'count': {
+           const d = Math.floor((Date.now() - new Date(x.from).getTime()) / 864e5);
+-          return `<section class="g-sec"><div class="g-count"><b>${nf(d)}</b><span>${x.unit}<br>${x.note}</span></div></section>`;
++          return `<section class="g-sec"><div class="g-count"><b>${nf(d)}</b><span>${esc(x.unit)}<br>${esc(x.note)}</span></div></section>`;
+         }
+-        case 'reasons': return `<section class="g-sec">${head}<div class="g-reasons" data-reasons>${x.items.map((r, i) => `
+-          <div class="g-reason" style="z-index:${x.items.length - i};transform:rotate(${(i % 2 ? 1 : -1) * Math.min(i, 3)}deg)"><p>${r}</p><small>${i + 1} из ${x.items.length} · нажмите, чтобы открыть следующую</small></div>`).join('')}</div></section>`;
+-        case 'quiz': return `<section class="g-sec">${head}<div class="g-quiz" data-quiz="${x.ok}"><p>${x.q}</p>${x.opts.map((o, i) => `<button data-i="${i}">${o}</button>`).join('')}<small>${x.note}</small></div></section>`;
+-        case 'recipe': return `<section class="g-sec">${head}<div class="g-recipe"><ol>${x.steps.map(t => `<li>${t}</li>`).join('')}</ol></div></section>`;
+-        case 'final': return `<section class="g-final"><${sectionTag}>${x.title}</${sectionTag}><p>${x.text}</p></section>`;
++        case 'reasons':
++          return `<section class="g-sec">${head}<div class="g-reasons" data-reasons>${x.items.map((r, i) => `
++            <div class="g-reason" style="z-index:${x.items.length - i};transform:rotate(${(i % 2 ? 1 : -1) * Math.min(i, 3)}deg)"><p>${esc(r)}</p><small>${i + 1} из ${x.items.length} · нажмите, чтобы открыть следующую</small></div>`).join('')}</div></section>`;
++        case 'quiz':
++          return `<section class="g-sec">${head}<div class="g-quiz" data-quiz="${x.ok}"><p>${esc(x.q)}</p>${x.opts.map((o, i) => `<button type="button" data-i="${i}">${esc(o)}</button>`).join('')}<small>${esc(x.note)}</small></div></section>`;
++        case 'recipe':
++          return `<section class="g-sec">${head}<div class="g-recipe"><ol>${x.steps.map(t => `<li>${esc(t)}</li>`).join('')}</ol></div></section>`;
++        case 'premExtra':
++          return `<section class="g-sec"><div class="g-prem-extra rel" data-slot="ВИДЕО 30-60 с или оживление фото для тарифа Премиум"><p class="g-label">${esc(x.label)}</p><${chapterTag}>${esc(x.title)}</${chapterTag}><p>${esc(x.text)}</p></div></section>`;
++        case 'final':
++          return `<section class="g-final"><${sectionTag}>${esc(x.title)}</${sectionTag}><p>${esc(x.text)}</p></section>`;
+       }
+       return '';
+     }).join('');
+-    return `<div class="g-cover rel" data-slot="ОБЛОЖКА: фото или видео 9:16 героя/пары, 5-8 с, луп"><img src="${g.cover.img}" alt="">
+-      <div class="g-cover__copy"><small>${g.cover.small}</small><${coverTag}>${g.cover.title}</${coverTag}><p>${g.cover.sub}</p></div></div>${s}`;
++
++    const poweredHref = standalone ? 'index.html#request' : (SPA ? '#home' : '#request');
++    const powered = `<div class="g-powered"><span>Сделано в Поводе</span><a href="${poweredHref}" data-cta="viral-footer">Собрать подарок для близких</a></div>`;
++
++    return `<div class="g-cover rel" data-slot="ОБЛОЖКА: фото или видео 9:16 героя/пары, 5-8 с, луп"><img src="${esc(g.cover.img)}" alt="">
++      <div class="g-cover__copy"><small>${esc(g.cover.small)}</small><${coverTag}>${esc(g.cover.title)}</${coverTag}><p>${esc(g.cover.sub)}</p></div></div>${missingHint}${s}${powered}`;
+   };
+ 
+   const pauseAudio = (root, current) => $$('audio', root).forEach(audio => {
+     if (audio !== current) audio.pause();
+   });
+   document.addEventListener('play', e => {
+-    if (e.target instanceof HTMLAudioElement) pauseAudio(document, e.target);
++    if (e.target instanceof HTMLAudioElement) {
++      pauseAudio(document, e.target);
++      track('play_voice', { src: e.target.getAttribute('src') || '' });
++    }
+   }, true);
+   addEventListener('pagehide', () => pauseAudio(document));
+ 
+   const bindGift = root => {
+-    if (root.hasAttribute('data-gift-bound')) return;
++    if (!root || root.hasAttribute('data-gift-bound')) return;
+     root.setAttribute('data-gift-bound', '');
+-    $$('[data-reasons]', root).forEach(box => {
+-      const cards = $$('.g-reason', box); let i = 0;
+-      box.addEventListener('click', () => {
+-        if (i < cards.length - 1) { cards[i].classList.add('is-out'); i++; }
+-        else { cards.forEach(c => c.classList.remove('is-out')); i = 0; }
+-      });
+-    });
+-    $$('[data-quiz]', root).forEach(q => {
+-      const ok = +q.dataset.quiz;
+-      $$('button', q).forEach(b => b.addEventListener('click', () => {
++    root.addEventListener('click', e => {
++      const box = e.target.closest('[data-reasons]');
++      if (box) {
++        const cards = $$('.g-reason', box);
++        let idx = Number(box.dataset.idx || 0);
++        if (idx < cards.length - 1) {
++          cards[idx].classList.add('is-out');
++          idx++;
++        } else {
++          cards.forEach(c => c.classList.remove('is-out'));
++          idx = 0;
++        }
++        box.dataset.idx = String(idx);
++        track('reasons_step', { idx });
++        return;
++      }
++      const qBtn = e.target.closest('[data-quiz] button');
++      if (qBtn) {
++        const q = qBtn.closest('[data-quiz]');
++        const ok = +q.dataset.quiz;
+         $$('button', q).forEach(x => x.classList.remove('ok', 'no'));
+-        b.classList.add(+b.dataset.i === ok ? 'ok' : 'no');
+-        if (+b.dataset.i !== ok) $$('button', q)[ok].classList.add('ok');
+-      }));
++        qBtn.classList.add(+qBtn.dataset.i === ok ? 'ok' : 'no');
++        if (+qBtn.dataset.i !== ok) $$('button', q)[ok]?.classList.add('ok');
++        track('quiz_answer', { correct: +qBtn.dataset.i === ok });
++      }
+     });
+   };
+ 
+   const giftStory = $('#giftStory');
+   if (giftStory) {
+-    giftStory.innerHTML = gift(OCCASIONS[occKey].gift, true);
++    giftStory.innerHTML = gift(OCCASIONS[occKey].gift, true, 'story');
+     bindGift(giftStory);
+     return;
+   }
+ 
+-  const plan = k => {
++  const planCard = k => {
+     const p = PLANS[k];
+     return `<div class="plan${p.main ? ' plan--main' : ''}">${p.main ? '<span class="plan__badge">Рекомендуем</span>' : ''}
+-      <h3>${p.name}</h3><p class="plan__price">${p.price}</p><p class="plan__for">${p.for}</p>
+-      <ul>${p.items.map(i => `<li>${i}</li>`).join('')}</ul>
+-      <a class="btn ${p.main ? 'btn--acc' : 'btn--line'}" href="#request" data-plan="${p.name}">Выбрать «${p.name}»</a></div>`;
++      <h3>${esc(p.name)}</h3><p class="plan__price">${esc(p.price)}</p><p class="plan__for">${esc(p.for)}</p>
++      <p class="plan__anchor">${esc(p.anchor)}</p>
++      <ul>${p.items.map(i => `<li>${esc(i)}</li>`).join('')}</ul>
++      <a class="btn ${p.main ? 'btn--acc' : 'btn--line'}" href="#request" data-plan="${esc(k)}" data-cta="plan-${esc(k)}">Выбрать «${esc(p.name)}»</a></div>`;
+   };
+ 
+-  /* главная */
++  /* рендер общих блоков главной */
+   const occGrid = $('#occGrid');
+   if (occGrid) occGrid.innerHTML = ORDER.map(card).join('');
+ 
++  const hubPrices = $('#hubPrices');
++  if (hubPrices) hubPrices.innerHTML = ['mini', 'story', 'prem'].map(planCard).join('');
++
++  const exchangeGrid = $('#exchangeGrid');
++  if (exchangeGrid && GROWTH_COPY?.exchange) {
++    const ex = GROWTH_COPY.exchange;
++    exchangeGrid.innerHTML = `
++      <div class="exchange__col">
++        <h3>${esc(ex.inputTitle)}</h3>
++        <p class="exchange__sub">${esc(ex.inputSub)}</p>
++        <ul>${ex.inputItems.map(i => `<li>${esc(i)}</li>`).join('')}</ul>
++      </div>
++      <div class="exchange__col exchange__col--out">
++        <h3>${esc(ex.outputTitle)}</h3>
++        <p class="exchange__sub">${esc(ex.outputSub)}</p>
++        <ul>${ex.outputItems.map(i => `<li>${esc(i)}</li>`).join('')}</ul>
++      </div>`;
++  }
++
++  const inviteBox = $('#inviteBox');
++  if (inviteBox && GROWTH_COPY?.friendInvite) {
++    const inv = GROWTH_COPY.friendInvite;
++    inviteBox.innerHTML = `
++      <details>
++        <summary>${esc(inv.title)}</summary>
++        <p class="invite-box__hint">${esc(inv.hint)}</p>
++        <p class="invite-box__text" id="inviteText">${esc(inv.text)}</p>
++        <button type="button" class="btn btn--line-light btn--sm" id="copyInviteBtn">Скопировать текст для чата</button>
++      </details>`;
++    $('#copyInviteBtn')?.addEventListener('click', e => {
++      copyText(inv.text, e.currentTarget, 'Скопировать текст для чата');
++      track('copy_template', { kind: 'friend_invite' });
++    });
++  }
++
++  const qrCardPreview = $('#qrCardPreview');
++  if (qrCardPreview && GROWTH_COPY?.qrCard) {
++    const q = GROWTH_COPY.qrCard;
++    qrCardPreview.innerHTML = `
++      <div class="qr-card-preview__copy">
++        <p class="eyebrow">${esc(q.eyebrow)}</p>
++        <h3>${esc(q.title)}</h3>
++        <p>${esc(q.lead)}</p>
++        <p class="qr-card-preview__note">${esc(q.priceNote)}</p>
++      </div>
++      <div class="qr-card-mock rel" data-slot="МАКЕТ ОТКРЫТКИ: фото реальной открытки с QR в конверте">
++        <div class="qr-card-mock__code" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
++        <strong>${esc(q.cardTitle)}</strong>
++        <span>${esc(q.cardSub)}</span>
++        <small>${esc(q.cardUrl)}</small>
++      </div>`;
++  }
++
++  /* переключатель сценариев в Hero на главной */
++  const heroTabs = $('#heroTabs');
++  if (heroTabs) {
++    let activeHero = 'jubilee';
++    const updateHero = key => {
++      activeHero = key;
++      const o = OCCASIONS[key];
++      const img = $('#heroStageImg');
++      const title = $('#heroStageTitle');
++      const sub = $('#heroStageSub');
++      const media = $('#heroStageMedia');
++      const btn = $('#heroDemoBtn');
++      if (img) {
++        img.src = o.img;
++        img.alt = o.heroCaption;
++      }
++      if (title) title.textContent = o.heroCaption;
++      if (sub) sub.textContent = o.heroSub;
++      if (media) media.dataset.slot = o.heroSlot;
++      if (btn) {
++        if (key === 'jubilee') {
++          btn.textContent = 'Открыть пример подарка';
++          btn.href = SPA ? '#jubilee-demo' : 'jubilee-demo.html';
++          btn.dataset.spaHref = '#jubilee-demo';
++        } else {
++          btn.textContent = `Смотреть пример: ${o.short}`;
++          btn.href = SPA ? `#${key}` : `${key}.html#demo`;
++          btn.dataset.spaHref = `#${key}`;
++        }
++      }
++      $$('.hero-tab', heroTabs).forEach(b => {
++        const on = b.dataset.hero === key;
++        b.classList.toggle('is-on', on);
++        b.setAttribute('aria-selected', on ? 'true' : 'false');
++      });
++    };
++
++    heroTabs.innerHTML = HERO_ORDER.map(k => `
++      <button type="button" class="hero-tab" role="tab" data-hero="${k}">${esc(OCCASIONS[k].tabLabel)}</button>`).join('');
++    heroTabs.addEventListener('click', e => {
++      const btn = e.target.closest('[data-hero]');
++      if (!btn) return;
++      updateHero(btn.dataset.hero);
++      track('hero_switch', { occasion: activeHero });
++    });
++    updateHero('jubilee');
++  }
++
++  /* мягкий лид-магнит (7 вопросов для старта) в блоке заявки */
++  const interviewGuide = $('#interviewGuide');
++  if (interviewGuide && GROWTH_COPY?.interviewQuestions) {
++    const q = GROWTH_COPY.interviewQuestions;
++    interviewGuide.innerHTML = `
++      <details class="soft-cta__box">
++        <summary>${esc(q.title)}</summary>
++        <p class="soft-cta__hint">${esc(q.hint)}</p>
++        <ol class="soft-cta__list">${q.items.map(i => `<li>${esc(i.replace(/^\d+\.\s*/, ''))}</li>`).join('')}</ol>
++        <button type="button" class="btn btn--line-light btn--sm" id="copyGuideBtn">Скопировать вопросы себе</button>
++      </details>`;
++    $('#copyGuideBtn')?.addEventListener('click', e => {
++      copyText(q.items.join('\n'), e.currentTarget, 'Скопировать вопросы себе');
++      track('copy_template', { kind: 'interview_questions' });
++    });
++  }
++
+   /* страница повода */
+   const page = $('#page');
+   let full = null;
+   const openFull = () => {
++    if (!full) return;
+     pauseAudio(page);
+     full.classList.add('is-open');
+     document.body.style.overflow = 'hidden';
+-    $('#closeFull').focus({ preventScroll: true });
++    $('#closeFull')?.focus({ preventScroll: true });
++    track('open_full_demo', { occasion: document.body.dataset.occasion || '' });
+   };
+   const closeFull = () => {
+     if (!full || !full.classList.contains('is-open')) return;
+@@ -115,23 +320,30 @@
+     $('#openFull')?.focus({ preventScroll: true });
+   };
+   addEventListener('keydown', e => { if (e.key === 'Escape') closeFull(); }, true);
++
+   const renderOcc = key => {
+     const o = OCCASIONS[key];
+-    const demoPlan = PLANS[o.demoPlan];
++    const defaultTier = o.plans.includes(o.demoPlan) ? o.demoPlan : o.plans[0];
+     closeFull();
+     pauseAudio(page);
+     document.body.dataset.occasion = key;
+-    if (SPA || key !== 'jubilee') document.title = `${o.name} - сайт-подарок | Повод`;
++    if (SPA || key !== 'jubilee') document.title = o.seoTitle || `${o.name} - сайт-подарок | Повод`;
++    const metaDesc = document.querySelector('meta[name="description"]');
++    if (metaDesc && o.seoDesc) metaDesc.setAttribute('content', o.seoDesc);
++
+     page.innerHTML = `
+     <section class="ohero">
+       <div class="wrap ohero__spread">
+         <div class="ohero__in">
+-          <p class="eyebrow">${o.name}</p>
+-          <h1>${o.title}</h1>
+-          <p class="ohero__lead">${o.lead}</p>
+-          <div class="ohero__actions"><a class="btn btn--acc" href="${key === 'jubilee' && !SPA ? 'jubilee-demo.html' : '#demo'}">Посмотреть пример</a><a class="btn btn--line" href="#oprices">Цены ${o.from}</a></div>
++          <p class="eyebrow">${esc(o.name)}</p>
++          <h1>${esc(o.title)}</h1>
++          <p class="ohero__lead">${esc(o.lead)}</p>
++          <div class="ohero__actions">
++            <a class="btn btn--acc" href="${key === 'jubilee' && !SPA ? 'jubilee-demo.html' : '#demo'}" data-cta="occ-demo">Посмотреть пример</a>
++            <a class="btn btn--line" href="#oprices" data-cta="occ-prices">Цены ${esc(o.from)}</a>
++          </div>
+         </div>
+-        <div class="ohero__media rel" data-slot="${o.heroSlot}"><img src="${o.img}" alt=""></div>
++        <div class="ohero__media rel" data-slot="${esc(o.heroSlot)}"><img src="${esc(o.img)}" alt=""></div>
+       </div>
+     </section>
+ 
+@@ -139,14 +351,20 @@
+       <div class="wrap demo">
+         <div class="demo__text">
+           <p class="eyebrow">Пример подарка</p>
+-          <h2>${o.demoTitle}</h2>
+-          ${o.demoText.map(t => `<p>${t}</p>`).join('')}
+-          ${demoPlan ? `<p><strong>Главы и голосовые входят в тариф «${demoPlan.name}» за ${demoPlan.price}.</strong></p>` : ''}
+-          <ul class="demo__list">${o.demoList.map(t => `<li>${t}</li>`).join('')}</ul>
+-          <button class="btn btn--ink" id="openFull">Открыть пример на весь экран</button>
++          <h2>${esc(o.demoTitle)}</h2>
++          ${o.demoText.map(t => `<p>${esc(t)}</p>`).join('')}
++          <div class="tier-switch" id="tierSwitch" role="group" aria-label="Сравнить комплектацию тарифа">
++            ${o.plans.map(pk => `<button type="button" class="tier-pill${pk === defaultTier ? ' is-on' : ''}" data-tier="${pk}">${esc(PLANS[pk].name)} · ${esc(PLANS[pk].price)}</button>`).join('')}
++          </div>
++          <p class="tier-note" id="tierNote"></p>
++          <ul class="demo__list">${o.demoList.map(t => `<li>${esc(t)}</li>`).join('')}</ul>
++          <div class="demo__actions">
++            <button type="button" class="btn btn--ink" id="openFull">Открыть пример на весь экран</button>
++            <a class="btn btn--acc" href="#request" id="demoOrderBtn" data-plan="${defaultTier}" data-cta="demo-order">Выбрать «${esc(PLANS[defaultTier].name)}»</a>
++          </div>
+         </div>
+         <div class="demo__display">
+-          <div class="phone"><div class="phone__screen"><div class="gift" id="giftPhone">${gift(o.gift)}</div><span class="phone__hint" id="phoneHint">Листайте внутри телефона</span></div></div>
++          <div class="phone"><div class="phone__screen"><div class="gift" id="giftPhone"></div><span class="phone__hint" id="phoneHint">Листайте внутри телефона</span></div></div>
+         </div>
+       </div>
+     </section>
+@@ -154,29 +372,29 @@
+     <section class="sec sec--bg2">
+       <div class="wrap">
+         <div class="sec__head"><h2>Из чего собираем подарок</h2></div>
+-        <ul class="inside">${o.inside.map(i => `<li><b>${i.b}</b><span>${i.s}</span></li>`).join('')}</ul>
++        <ul class="inside">${o.inside.map(i => `<li><b>${esc(i.b)}</b><span>${esc(i.s)}</span></li>`).join('')}</ul>
+       </div>
+     </section>
+ 
+     <section class="sec sec--pricing" id="oprices">
+       <div class="wrap">
+         <div class="sec__head"><h2>Форматы подарка</h2><p class="sec__lead">Цена фиксируется до начала работы. Размещение на год включено, продление 290 ₽ в год.</p></div>
+-        <div class="plans">${o.plans.map(plan).join('')}</div>
+-        <p class="plans__extra">${o.extra}</p>
++        <div class="plans">${o.plans.map(planCard).join('')}</div>
++        <p class="plans__extra">${esc(o.extra)}</p>
+       </div>
+     </section>
+ 
+     <section class="sec sec--bg2">
+       <div class="wrap">
+         <div class="sec__head"><h2>Как соберём ваш подарок</h2></div>
+-        <ol class="steps">${o.steps.map(s => `<li><b>${s.b}</b><p>${s.p}</p></li>`).join('')}</ol>
++        <ol class="steps">${o.steps.map(s => `<li><b>${esc(s.b)}</b><p>${esc(s.p)}</p></li>`).join('')}</ol>
+       </div>
+     </section>
+ 
+     <section class="sec" id="ofaq">
+       <div class="wrap faq">
+         <div class="sec__head"><h2>Вопросы о подарке</h2></div>
+-        <div>${o.faq.map((f, i) => `<details${i ? '' : ' open'}><summary>${f.q}</summary><p>${f.a}</p></details>`).join('')}</div>
++        <div>${o.faq.map((f, i) => `<details${i ? '' : ' open'}><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join('')}</div>
+       </div>
+     </section>
+ 
+@@ -189,18 +407,55 @@
+ 
+     if (full) full.parentNode.removeChild(full);
+     full = document.createElement('div');
+-    full.className = 'gift-full'; full.innerHTML = `<button class="gift-full__close" id="closeFull">Закрыть пример</button><div class="gift" id="giftFull">${gift(o.gift)}</div>`;
++    full.className = 'gift-full';
++    full.innerHTML = `<button type="button" class="gift-full__close" id="closeFull">Закрыть пример</button><div class="gift" id="giftFull"></div>`;
+     document.body.appendChild(full);
+-    bindGift($('#giftPhone')); bindGift($('#giftFull'));
++
++    const setTier = tierKey => {
++      const phone = $('#giftPhone');
++      const fullGift = $('#giftFull');
++      if (phone) {
++        phone.removeAttribute('data-gift-bound');
++        phone.innerHTML = gift(o.gift, false, tierKey);
++        phone.scrollTop = 0;
++        bindGift(phone);
++      }
++      if (fullGift) {
++        fullGift.removeAttribute('data-gift-bound');
++        fullGift.innerHTML = gift(o.gift, false, tierKey);
++        fullGift.scrollTop = 0;
++        bindGift(fullGift);
++      }
++      $$('#tierSwitch .tier-pill', page).forEach(b => b.classList.toggle('is-on', b.dataset.tier === tierKey));
++      const note = $('#tierNote');
++      if (note) note.textContent = PLANS[tierKey].anchor;
++      const orderBtn = $('#demoOrderBtn');
++      if (orderBtn) {
++        orderBtn.dataset.plan = tierKey;
++        orderBtn.textContent = `Выбрать «${PLANS[tierKey].name}»`;
++      }
++    };
++
++    setTier(defaultTier);
++    $('#tierSwitch')?.addEventListener('click', e => {
++      const b = e.target.closest('[data-tier]');
++      if (!b) return;
++      setTier(b.dataset.tier);
++      track('switch_tier_preview', { occasion: key, tier: b.dataset.tier });
++    });
++
+     $('#openFull').addEventListener('click', openFull);
+     $('#closeFull').addEventListener('click', closeFull);
+     full.addEventListener('click', e => { if (e.target === full) closeFull(); });
+     $('#giftPhone').addEventListener('scroll', () => { $('#phoneHint').style.opacity = 0; }, { once: true });
+-    const sel = $('#occSelect'); if (sel) sel.value = o.name;
++
++    const sel = $('#occSelect');
++    if (sel) sel.value = key;
+     const requestedPlan = new URLSearchParams(location.search).get('plan');
+     const planSelect = $('#planSelect');
+-    if (!SPA && planSelect && o.plans.includes(requestedPlan)) planSelect.value = PLANS[requestedPlan].name;
++    if (!SPA && planSelect && o.plans.includes(requestedPlan)) planSelect.value = requestedPlan;
+   };
++
+   if (page && occKey && !SPA) renderOcc(occKey);
+ 
+   /* одна страница со всеми поводами (для публикации ссылкой): #wedding, #birthday ... */
+@@ -226,21 +481,202 @@
+         renderOcc(key);
+         scrollTo(0, 0);
+         if (opensDemo) openFull();
+-      } else if (!h || h === 'home') { showHub(); scrollTo(0, 0); }
+-      else if (hub.hidden && hub.querySelector('#' + CSS.escape(h))) { showHub(); document.getElementById(h).scrollIntoView(); }
++      } else if (!h || h === 'home') {
++        showHub();
++        scrollTo(0, 0);
++      } else if (hub.hidden && hub.querySelector('#' + CSS.escape(h))) {
++        showHub();
++        document.getElementById(h).scrollIntoView();
++      }
+     };
+-    addEventListener('hashchange', route); route();
++    addEventListener('hashchange', route);
++    route();
+   }
+ 
+-  /* общее */
+-  document.addEventListener('click', e => { const a = e.target.closest('[data-plan]'); const s = $('#planSelect'); if (a && s) s.value = a.dataset.plan; });
++  /* форма по контракту POST /api/request, проверка дедлайна и предвыбор */
++  document.addEventListener('click', e => {
++    const ctaEl = e.target.closest('[data-cta]');
++    if (ctaEl) lastCta = ctaEl.dataset.cta;
++
++    const planLink = e.target.closest('[data-plan]');
++    const planSel = $('#planSelect');
++    if (planLink && planSel && Object.hasOwn(PLANS, planLink.dataset.plan)) {
++      planSel.value = planLink.dataset.plan;
++      track('pick_plan', { plan: planLink.dataset.plan, from: lastCta });
++    }
++
++    const occPick = e.target.closest('[data-occasion-pick]');
++    const occSel = $('#occSelect');
++    if (occPick && occSel) {
++      occSel.value = occPick.dataset.occasionPick;
++      track('pick_occasion', { occasion: occPick.dataset.occasionPick });
++    }
++  });
++
++  const MONTHS = {
++    'январ': 0, 'феврал': 1, 'март': 2, 'апрел': 3, 'ма': 4, 'июн': 5,
++    'июл': 6, 'август': 7, 'сентябр': 8, 'октябр': 9, 'ноябр': 10, 'декабр': 11
++  };
++  const parseDateText = raw => {
++    const s = raw.trim().toLowerCase();
++    if (!s) return null;
++    const iso = s.match(/^(\d{4})-(\d{2})-(\d{2})$/);
++    if (iso) return new Date(+iso[1], +iso[2] - 1, +iso[3]);
++    const ruNum = s.match(/^(\d{1,2})[./-](\d{1,2})(?:[./-](\d{2,4}))?$/);
++    if (ruNum) {
++      const y = ruNum[3] ? (+ruNum[3] < 100 ? 2000 + +ruNum[3] : +ruNum[3]) : new Date().getFullYear();
++      const d = new Date(y, +ruNum[2] - 1, +ruNum[1]);
++      if (!ruNum[3] && d < new Date().setHours(0, 0, 0, 0)) d.setFullYear(y + 1);
++      return d;
++    }
++    const ruWord = s.match(/(\d{1,2})\s+([а-яё]+)(?:\s+(\d{4}))?/);
++    if (ruWord) {
++      const mKey = Object.keys(MONTHS).find(k => ruWord[2].startsWith(k));
++      if (mKey) {
++        const y = ruWord[3] ? +ruWord[3] : new Date().getFullYear();
++        const d = new Date(y, MONTHS[mKey], +ruWord[1]);
++        if (!ruWord[3] && d < new Date().setHours(0, 0, 0, 0)) d.setFullYear(y + 1);
++        return d;
++      }
++    }
++    return null;
++  };
++
+   const form = $('#form');
+   if (form) {
++    const channelMeta = {
++      telegram: { label: 'Ваш ник или номер в Telegram', placeholder: '@nik или +7 ...' },
++      phone: { label: 'Номер телефона', placeholder: '+7 900 000-00-00' },
++      whatsapp: { label: 'Номер в WhatsApp', placeholder: '+7 900 000-00-00' }
++    };
++
++    $('#channelPills')?.addEventListener('click', e => {
++      const b = e.target.closest('[data-channel]');
++      if (!b) return;
++      const ch = b.dataset.channel;
++      $$('#channelPills .ch-pill').forEach(x => x.classList.toggle('is-on', x === b));
++      $('#channelInput').value = ch;
++      const meta = channelMeta[ch];
++      if (meta) {
++        $('#contactLabel').textContent = meta.label;
++        $('#contactInput').placeholder = meta.placeholder;
++      }
++      track('switch_channel', { channel: ch });
++    });
++
++    const dateInput = $('#dateInput');
++    const datePicker = $('#datePicker');
++    const dateStatus = $('#dateStatus');
++    const updateDateStatus = () => {
++      if (!dateStatus || !dateInput) return;
++      const parsed = parseDateText(dateInput.value);
++      dateStatus.className = 'date-status';
++      if (!dateInput.value.trim()) {
++        dateStatus.textContent = 'Укажите дату - подскажем, успеваем ли спокойно или нужен срочный тариф.';
++        return;
++      }
++      if (!parsed || Number.isNaN(parsed.getTime())) {
++        dateStatus.textContent = 'Дату зафиксируем в заявке и сразу согласуем срок в переписке.';
++        return;
++      }
++      const today = new Date();
++      today.setHours(0, 0, 0, 0);
++      const diff = Math.round((parsed.getTime() - today.getTime()) / 864e5);
++      if (diff < 0) {
++        dateStatus.classList.add('is-warn');
++        dateStatus.textContent = 'Эта дата уже прошла - проверьте год или напишите актуальную дату.';
++      } else if (diff <= 1) {
++        dateStatus.classList.add('is-rush');
++        dateStatus.textContent = 'До праздника меньше 2 дней: успеем «Мини» к утру или срочный запуск за 24 часа (+1 000 ₽).';
++      } else if (diff <= 3) {
++        dateStatus.classList.add('is-rush');
++        dateStatus.textContent = `Осталось ${diff} дн.: спокойно успеваем «Мини» (2 дня), «Историю» запустим в ускоренном режиме.`;
++      } else {
++        dateStatus.classList.add('is-ok');
++        dateStatus.textContent = `До праздника ${diff} дн. - спокойно успеваем любой формат с запасом на правки.`;
++      }
++    };
++
++    datePicker?.addEventListener('change', () => {
++      if (datePicker.value) {
++        dateInput.value = datePicker.value;
++        updateDateStatus();
++      }
++    });
++    dateInput?.addEventListener('input', updateDateStatus);
++
++    let formStarted = false;
++    form.addEventListener('focusin', () => {
++      if (formStarted) return;
++      formStarted = true;
++      track('form_start', { occasion: $('#occSelect')?.value || '', plan: $('#planSelect')?.value || '' });
++    });
++
+     form.addEventListener('submit', e => {
+       e.preventDefault();
+-      $('#formNote').textContent = 'Демо-заявка заполнена. Отправка появится после подключения контактов.';
++      const note = $('#formNote');
++      const fd = new FormData(form);
++      const name = String(fd.get('name') || '').trim();
++      const contact = String(fd.get('contact') || '').trim();
++      const about = String(fd.get('about') || '').trim();
++      const date = String(fd.get('date') || '').trim();
++      const website = String(fd.get('website') || '').trim();
++      const consent = $('#consentCheck')?.checked;
++      const occasion = String(fd.get('occasion') || 'custom');
++      const plan = String(fd.get('plan') || 'unknown');
++      const contactChannel = String(fd.get('contactChannel') || 'telegram');
++
++      note.className = 'form__note';
++      if (website) {
++        note.textContent = 'Демо-заявка отклонена проверкой.';
++        return;
++      }
++      if (name.length < 1 || name.length > 80) {
++        note.classList.add('is-err');
++        note.textContent = 'Укажите имя (от 1 до 80 символов).';
++        form.elements.name.focus();
++        return;
++      }
++      if (contact.length < 3 || contact.length > 100) {
++        note.classList.add('is-err');
++        note.textContent = 'Укажите телефон или @ник (от 3 до 100 символов).';
++        form.elements.contact.focus();
++        return;
++      }
++      if (about.length > 1000) {
++        note.classList.add('is-err');
++        note.textContent = 'Комментарий не должен быть длиннее 1 000 символов.';
++        return;
++      }
++      if (!consent) {
++        note.classList.add('is-err');
++        note.textContent = 'Подтвердите согласие на обработку персональных данных.';
++        $('#consentCheck')?.focus();
++        return;
++      }
++
++      const utm = {};
++      new URLSearchParams(location.search).forEach((v, k) => {
++        if (k.startsWith('utm_')) utm[k] = v;
++      });
++      const payload = {
++        brand: 'povod',
++        name,
++        contact,
++        contactChannel,
++        plan,
++        occasion,
++        date,
++        about,
++        consent: true,
++        website: '',
++        meta: { cta: lastCta, utm }
++      };
++      track('form_submit_demo', payload);
++      const planTitle = PLANS[plan]?.name || 'Пока не знаю';
++      const occTitle = OCCASIONS[occasion]?.short || 'Свой повод';
++      note.classList.add('is-ok');
++      note.textContent = `Демо-заявка проверена (${occTitle}, формат «${planTitle}», канал: ${contactChannel}). Это макет - реальная отправка в Telegram подключится на сервере.`;
+     });
+-    $('button[type="submit"]', form).disabled = false;
+   }
+-  $('#slotsToggle').addEventListener('click', () => document.body.classList.toggle('show-slots'));
+ })();
+diff --git a/povod/birthday.html b/povod/birthday.html
+index 9d03779..4234cee 100644
+--- a/povod/birthday.html
++++ b/povod/birthday.html
+@@ -3,8 +3,8 @@
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+-<title>Повод - сайт-подарок с вашей историей</title>
+-<meta name="description" content="Личный сайт-подарок к свадьбе, дню рождения, годовщине или юбилею: ваши фото, голосовые, письма и видео в одной красивой истории.">
++<title>Сайт-подарок на день рождения от друзей и семьи | Повод</title>
++<meta name="description" content="Оригинальный подарок на день рождения: общие фото, голосовые поздравления друзей из разных городов, письмо и квиз про именинника.">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+@@ -21,7 +21,7 @@
+       <a href="#oprices">Цены</a>
+       <a href="#ofaq">Вопросы</a>
+     </nav>
+-    <a class="btn btn--ink btn--sm" href="#request">Заказать подарок</a>
++    <a class="btn btn--ink btn--sm" href="#request" data-cta="header">Заказать подарок</a>
+   </div>
+ </header>
+ 
+@@ -34,19 +34,56 @@
+       <p class="eyebrow">Заявка</p>
+       <h2>Расскажите, кого и с чем поздравляем</h2>
+       <p class="sec__lead">Чтобы согласовать подарок, нам понадобятся повод, дата и удобный способ связи.</p>
++      <div class="soft-cta" id="interviewGuide"></div>
+       <p class="request__alt">Контакт для заявок появится перед запуском.</p>
+     </div>
+-    <form class="form" id="form">
+-      <label>Как к вам обращаться<input name="name" required placeholder="Аня"></label>
+-      <label>Телефон или Telegram<input name="contact" required placeholder="+7 ... или @ник"></label>
++    <form class="form" id="form" novalidate>
++      <div class="form__channels" role="group" aria-label="Где вам удобнее ответить">
++        <span class="form__label-inline">Где ответить</span>
++        <div class="channel-pills" id="channelPills">
++          <button type="button" class="ch-pill is-on" data-channel="telegram">Telegram</button>
++          <button type="button" class="ch-pill" data-channel="phone">Телефон</button>
++          <button type="button" class="ch-pill" data-channel="whatsapp">WhatsApp</button>
++        </div>
++        <input type="hidden" name="contactChannel" id="channelInput" value="telegram">
++      </div>
++      <label>Как к вам обращаться<input name="name" required maxlength="80" placeholder="Аня"></label>
++      <label><span id="contactLabel">Ваш ник или номер в Telegram</span><input name="contact" id="contactInput" required maxlength="100" placeholder="@nik или +7 ..."></label>
+       <label>Повод
+-        <select name="occasion" id="occSelect"><option>Свадьба</option><option>День рождения</option><option>Годовщина</option><option>Юбилей бабушки и дедушки</option><option>Свой повод</option></select>
++        <select name="occasion" id="occSelect">
++          <option value="wedding">Свадьба</option>
++          <option value="birthday">День рождения</option>
++          <option value="anniversary">Годовщина</option>
++          <option value="jubilee">Юбилей бабушки и дедушки</option>
++          <option value="custom">Свой повод</option>
++        </select>
+       </label>
+       <label>Формат
+-        <select name="plan" id="planSelect"><option>Пока не знаю</option><option>Мини</option><option>История</option><option>Премиум</option></select>
++        <select name="plan" id="planSelect">
++          <option value="unknown">Пока не знаю</option>
++          <option value="mini">Мини (1 990 ₽)</option>
++          <option value="story">История (4 490 ₽)</option>
++          <option value="prem">Премиум (от 8 900 ₽)</option>
++        </select>
+       </label>
+-      <label>Когда праздник<input name="date" placeholder="Например, 14 марта"></label>
+-      <button class="btn btn--acc" type="submit" disabled>Проверить демо-заявку</button>
++      <div class="form__full">
++        <label>Когда праздник
++          <div class="date-row">
++            <input name="date" id="dateInput" maxlength="60" placeholder="Например, 14 марта или 2026-12-20">
++            <input type="date" id="datePicker" aria-label="Выбрать дату в календаре">
++          </div>
++        </label>
++        <p class="date-status" id="dateStatus">Укажите дату - подскажем, успеваем ли спокойно или нужен срочный тариф.</p>
++      </div>
++      <label class="form__full">Коротко о подарке (необязательно)
++        <textarea name="about" rows="2" maxlength="1000" placeholder="Кому дарите, сколько примерно фото и участвуют ли друзья"></textarea>
++      </label>
++      <input class="hp-field" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
++      <label class="form__consent form__full">
++        <input type="checkbox" name="consent" id="consentCheck" required>
++        <span>Согласен с политикой обработки персональных данных (для демо-проверки данные никуда не отправляются)</span>
++      </label>
++      <button class="btn btn--acc form__full" type="submit">Проверить демо-заявку</button>
+       <p class="form__note" id="formNote" role="status">Это макет заявки. Для проверки используйте вымышленные данные.</p>
+     </form>
+   </div>
+diff --git a/povod/data.js b/povod/data.js
+index 659eab5..aaf61e8 100644
+--- a/povod/data.js
++++ b/povod/data.js
+@@ -1,56 +1,267 @@
+-/* Повод - содержимое лендингов. Тексты и медиа меняются здесь, вёрстка в app.js */
++/* Повод - содержимое лендингов и структура витрины. Тексты, тарифы и примеры меняются здесь */
+ const IMG = 'assets/img/';
+ 
+ const PLANS = {
+-  mini:  { name: 'Мини', price: '1 990 ₽', for: 'Быстро и мило, на готовом шаблоне', items: ['До 15 фото', 'Одно письмо или поздравление', 'Музыка на фоне', 'Готово за 2 дня', 'Размещение 1 год'] },
+-  story: { name: 'История', price: '4 490 ₽', for: 'Главный формат: ваша история целиком', main: true, items: ['До 40 фото и хронология', 'Голосовые от вас и друзей', 'Рукописное письмо', 'Анимации и музыка', '2 круга правок, 3-4 дня', 'Размещение 1 год'] },
+-  prem:  { name: 'Премиум', price: 'от 8 900 ₽', for: 'Когда хочется вау', items: ['Всё из «Истории»', 'Видеоролик 30-60 секунд', 'Оживление фотографий', 'Индивидуальный дизайн', 'Мини-игра или квиз про героя'] }
++  mini: {
++    key: 'mini',
++    name: 'Мини',
++    price: '1 990 ₽',
++    for: 'Быстро и мило, на готовом шаблоне',
++    anchor: 'По цене букета, но остаётся навсегда',
++    items: [
++      'До 15 фото',
++      'Одно письмо или поздравление',
++      'Музыка на фоне',
++      'Готово за 2 дня',
++      'Размещение 1 год'
++    ],
++    includes: ['letter', 'gallery']
++  },
++  story: {
++    key: 'story',
++    name: 'История',
++    price: '4 490 ₽',
++    for: 'Главный формат: ваша история целиком',
++    anchor: 'Основной выбор: голосовые, главы и редактура',
++    main: true,
++    items: [
++      'До 40 фото и хронология',
++      'Голосовые от вас и друзей',
++      'Рукописное письмо',
++      'Анимации и музыка',
++      '2 круга правок, 3-4 дня',
++      'Размещение 1 год'
++    ],
++    includes: ['chapters', 'voices', 'letter', 'count', 'recipe', 'gallery']
++  },
++  prem: {
++    key: 'prem',
++    name: 'Премиум',
++    price: 'от 8 900 ₽',
++    for: 'Видео, оживление фото и интерактивы',
++    anchor: 'Индивидуальный дизайн, ролик и квиз',
++    items: [
++      'Всё из «Истории»',
++      'Видеоролик 30-60 секунд',
++      'Оживление фотографий',
++      'Индивидуальный дизайн',
++      'Мини-игра или квиз про героя'
++    ],
++    includes: ['chapters', 'voices', 'reasons', 'quiz', 'letter', 'count', 'recipe', 'gallery', 'premExtra']
++  }
++};
++
++const GROWTH_COPY = {
++  exchange: {
++    inputTitle: 'От вас за 15 минут',
++    inputSub: 'Без написания текстов и возни с конструкторами',
++    inputItems: [
++      'Папка или альбом с 10-40 фото, можно прямо из телефона',
++      '2-3 голосовых в Telegram «как вспоминается», мы сами расшифруем и отредактируем',
++      'Если подарок от компании друзей: готовый текст для общего чата и сбор в одну папку или переписку'
++    ],
++    outputTitle: 'От нас через 2-4 дня',
++    outputSub: 'Готовый сайт по постоянной ссылке',
++    outputItems: [
++      'Собранная история с главами, датами, письмом от руки и живыми голосами',
++      'Спокойная проверка на телефоне и 2 круга правок перед вручением',
++      'По запросу: печатная открытка с QR-кодом (от 300 ₽) и архив сайта на компьютер'
++    ]
++  },
++  friendInvite: {
++    title: 'Готовое сообщение для чата друзей или семьи',
++    hint: 'Скопируйте и отправьте в общий чат, чтобы собрать материалы без лишней суеты',
++    text: 'Ребята, собираем сайт-подарок для [Имя] к [дата]. Нужны 2-3 ваших любимых фото и одно голосовое на 20-40 секунд: смешная история или тёплое поздравление. Скиньте сюда до [число], а мы всё красиво оформим в одну страницу.'
++  },
++  interviewQuestions: {
++    title: '7 вопросов, с которых легко начать',
++    hint: 'Праздник ещё не скоро? Сохраните памятку - ответов голосом хватит на целый сайт',
++    items: [
++      '1. Какое самое первое или смешное воспоминание связано с героем?',
++      '2. Какая фраза или привычка сразу выдаёт этого человека?',
++      '3. Где вы были вместе и этот момент хочется помнить всегда?',
++      '4. Какое блюдо, песня или место ассоциируются только с ним?',
++      '5. За что вы особенно благодарны этому человеку?',
++      '6. О чём вы мечтаете для него в ближайшие годы?',
++      '7. Какие 3-5 старых фото обязательно должны попасть на страницу?'
++    ]
++  },
++  qrCard: {
++    eyebrow: 'Вручение в руки',
++    title: 'Открытка с QR-кодом, чтобы не дарить просто ссылку',
++    lead: 'Цифровой подарок ощущается весомее, когда его можно достать из конверта за праздничным столом. Гость или именинник наводит камеру телефона - и сразу открывается история с голосами.',
++    priceNote: 'Печать открытки с QR: от 300 ₽. Можно вручить и в электронном виде.',
++    cardTitle: 'Тебе подарок',
++    cardSub: 'Наведи камеру телефона на код и включи звук',
++    cardUrl: 'povod.ru/p/valya-80'
++  }
+ };
+ 
+ const OCCASIONS = {
++  jubilee: {
++    name: 'Юбилей бабушки и дедушки',
++    short: 'Юбилей',
++    tabLabel: 'Юбилей 80',
++    heroCaption: 'Бабушке Вале 80',
++    heroSub: 'Семейный архив, голоса внуков и рецепт пирога',
++    card: 'Жизнь любимого человека глазами детей и внуков',
++    from: 'от 1 990 ₽',
++    img: IMG + 'jubilee.jpg',
++    seoTitle: 'Сайт-подарок на юбилей из семейных фото и голосов | Повод',
++    seoDesc: 'Соберём сайт-подарок маме, папе, бабушке или дедушке на юбилей. Посмотрите пример с главами жизни, семейными фото и голосовым поздравлением.',
++    title: 'Подарите близкому историю его жизни',
++    lead: 'К юбилею бабушки, дедушки или родителей соберём семейные фотографии, воспоминания и голоса близких. Вы сможете открыть подарок по ссылке и показать его за праздничным столом.',
++    heroSlot: 'ВИДЕО 16:9, 10-15 с, луп без звука: внуки обнимают бабушку, свечи на торте, тёплый свет. Постер: jubilee.jpg',
++    demoTitle: 'Бабушке Вале 80',
++    demoText: [
++      'Вымышленный пример подарка на 80-летие. Здесь собраны главы от деревенской юности до рождения правнуков, голосовое поздравление и рецепт семейного пирога.',
++      'Переключайте форматы ниже, чтобы увидеть разницу между «Мини», «Историей» и «Премиумом». Печатная открытка с QR доступна отдельно.'
++    ],
++    demoPlan: 'story',
++    demoList: [
++      'Жизнь по главам с архивными фото',
++      'Реставрация и цвет старых снимков',
++      'Голосовое поздравление от внука',
++      'Семейный рецепт её словами',
++      'Крупный текст и простое управление'
++    ],
++    gift: {
++      cover: { img: IMG + 'jubilee.jpg', small: '1946 - 2026', title: 'Бабушке Вале 80', sub: 'От детей, внуков и правнуков' },
++      sections: [
++        {
++          type: 'voices',
++          label: 'Голосовые',
++          title: 'Поздравление от внука',
++          items: [{
++            n: 'Саша из Казани',
++            src: 'assets/audio/jubilee-greeting.mp3',
++            transcript: 'Бабуля, я до сих пор помню, как ты доставала яблочный пирог из духовки. Мы никогда не дожидались, пока он остынет. Спасибо за каждое лето на даче. С юбилеем, бабушка!'
++          }]
++        },
++        {
++          type: 'chapters',
++          label: 'Твоя жизнь',
++          title: 'Восемьдесят лет любви',
++          items: [
++            { y: '1966', h: 'Велосипед и коса', p: 'Первая красавица Майны, каждое утро ездила на ферму на отцовском велосипеде.', img: IMG + 'jub-young.jpg' },
++            { y: '1990', h: 'Дача', p: 'Яблоки вёдрами, варенье на всю зиму и мы с Ирой, которые таскали клубнику до того, как она поспевала.', img: IMG + 'jub-family.jpg' },
++            { y: '2015', h: 'Прабабушка', p: 'Родился Мишка, и ты связала ему двенадцать пар носков за первый месяц.' },
++            { y: '2026', h: '80', p: 'Всё такая же: встаёшь раньше всех и кормишь всех больше, чем нужно.', img: IMG + 'jubilee.jpg' }
++          ]
++        },
++        {
++          type: 'recipe',
++          label: 'Семейный рецепт',
++          title: 'Пирог с яблоками бабы Вали',
++          steps: [
++            'Три яйца взбить с сахаром «на глаз, стакан без горки»',
++            'Муки столько, чтобы было как густая сметана',
++            'Яблоки с дачи, обязательно антоновка',
++            'В духовку, «пока весь дом не запахнет»'
++          ]
++        },
++        { type: 'letter', label: 'Письмо', text: 'Бабуля, спасибо за каждое лето на даче, за пироги, за то, что всегда ждёшь и всегда рада. Мы тебя очень любим.', sign: 'Твои внуки' },
++        { type: 'gallery', label: 'Галерея', imgs: [IMG + 'jubilee.jpg', IMG + 'jub-young.jpg', IMG + 'jub-family.jpg'] },
++        { type: 'premExtra', label: 'Входит в «Премиум»', title: 'Семейный фильм и оживление архивных портретов', text: 'Собираем 60-секундное видео из старых фото и голосов родных, оживляем 2-3 знаковых снимка молодости и оформляем страницу в индивидуальной палитре.' },
++        { type: 'final', title: 'С юбилеем, бабуля!', text: '4 детей, 7 внуков, 3 правнука и все ждут пирог' }
++      ]
++    },
++    inside: [
++      { b: 'Жизнь по главам', s: 'Детство, юность, семья, работа, внуки' },
++      { b: 'Старые фото в цвете', s: 'Восстанавливаем и раскрашиваем архивные снимки' },
++      { b: 'Голосовые от родных', s: 'Собираем через Telegram или общую папку из любых городов' },
++      { b: 'Семейный рецепт', s: 'Записываем с её слов, как она рассказывает' },
++      { b: 'Крупный текст', s: 'Удобно читать на телефоне и планшете без очков' },
++      { b: 'Открытка с QR', s: 'Навести камеру, и всё открывается само' }
++    ],
++    plans: ['mini', 'story', 'prem'],
++    extra: 'Реставрация и цвет старых фото: 3 входят в «Историю», дальше 250 ₽ за снимок. Печать открытки с QR от 300 ₽.',
++    steps: [
++      { b: 'Заявка', p: 'Пишете, чей юбилей и когда. Лучше за 1-2 недели.' },
++      { b: 'Сбор', p: 'Скидываете фото и голосовые в Telegram или облачную папку. Даём памятку для родных.' },
++      { b: 'Черновик', p: 'Через 3-4 дня показываем закрытую версию организатору.' },
++      { b: 'Вручение', p: 'Отдаём ссылку и открытку с QR. Можно показать на телевизоре за столом.' }
++    ],
++    faq: [
++      { q: 'Бабушка не пользуется интернетом', a: 'Даём открытку с QR и показываем, как открыть. Сайт можно вывести на телевизор за праздничным столом.' },
++      { q: 'Фото старые и испорченные', a: 'Восстановим трещины и пятна, по желанию раскрасим. Оригинал всегда остаётся рядом.' },
++      { q: 'Родственники в разных городах', a: 'Даём готовый текст для семейного чата. Каждый скидывает голосовое и фото в переписку, мы сами всё сводим.' }
++    ]
++  },
++
+   wedding: {
+-    name: 'Свадьба', short: 'Свадьба',
+-    card: 'История пары от первой встречи до «да»', from: 'от 4 490 ₽', img: IMG + 'wedding.jpg',
++    name: 'Свадьба',
++    short: 'Свадьба',
++    tabLabel: 'Свадьба',
++    heroCaption: 'Наташа и Андрей',
++    heroSub: 'История знакомства, голосовые из переписки и клятвы',
++    card: 'История пары от первой встречи до «да»',
++    from: 'от 4 490 ₽',
++    img: IMG + 'wedding.jpg',
++    seoTitle: 'Свадебный сайт-история пары и подарок молодым | Повод',
++    seoDesc: 'Личный свадебный сайт-история: знакомство по главам, голосовые из переписки, письмо и фото с праздника. Готово за 3-4 дня.',
+     title: 'История вашей любви в одном сайте',
+     lead: 'От первого «привет» до свадьбы: фото, голосовые, письма и видео. Можно показать гостям на празднике и пересматривать на каждую годовщину.',
+     heroSlot: 'ВИДЕО 16:9, 10-15 с, луп без звука: пара на закате, замедление, лёгкое зерно. Постер: wedding.jpg',
+     demoTitle: 'Наташа и Андрей',
+-    demoText: ['Так выглядит сайт-подарок на свадьбу. Листайте прямо в телефоне: история знакомства, голосовое, письмо и счётчик дней вместе.', 'Ссылку можно отправить гостям заранее или показать QR-код на экране во время праздника.'],
+-    demoList: ['История знакомства по главам', 'Голосовые из вашей переписки', 'Письмо рукописным почерком', 'Галерея и видео со свадьбы', 'Счётчик дней вместе'],
++    demoText: [
++      'Так выглядит сайт-подарок на свадьбу. Листайте прямо в телефоне: история знакомства, голосовое, письмо и счётчик дней вместе.',
++      'Свадебный формат начинается с «Истории», потому что материалов обычно больше. Переключите режим ниже, чтобы сравнить с «Премиумом».'
++    ],
++    demoPlan: 'story',
++    demoList: [
++      'История знакомства по главам',
++      'Голосовые из вашей переписки',
++      'Письмо рукописным почерком',
++      'Галерея и видео со свадьбы',
++      'Счётчик дней вместе'
++    ],
+     gift: {
+       cover: { img: IMG + 'wedding.jpg', small: 'Вместе с 17 августа 2019', title: 'Наташа и Андрей', sub: 'Как всё начиналось' },
+       sections: [
+-        { type: 'chapters', label: 'Наша история', title: 'Шесть лет за одну минуту', items: [
+-          { y: '2019', h: 'Кофейня на Гончарова', p: 'Андрей перепутал заказ и забрал её латте. Вернулся извиниться и остался до закрытия.', img: IMG + 'story-meet.jpg' },
+-          { y: '2021', h: 'Первое море', p: 'Неделя в Абрау без связи, сгоревшие носы и решение больше не расставаться дольше чем на три дня.', img: IMG + 'story-trip.jpg' },
+-          { y: '2024', h: 'Предложение', p: 'На той же кофейне, за тем же столиком. Бариста был в курсе и написал на стаканчике главный вопрос.' },
+-          { y: '2025', h: 'Свадьба', p: 'Сто двадцать гостей, дождь ровно на десять минут и самый красивый закат года.', img: IMG + 'wedding.jpg' }
+-        ]},
+-        { type: 'voices', label: 'Голосовые', title: 'Сохранили из переписки', items: [
+-          { n: 'Андрей, 2019: «Кажется, я влюбился»', t: '0:18' },
+-          { n: 'Наташа, 2021: из аэропорта', t: '0:34' },
+-          { n: 'Мама Наташи, тост на свадьбе', t: '1:12' }
+-        ]},
++        {
++          type: 'chapters',
++          label: 'Наша история',
++          title: 'Шесть лет за одну минуту',
++          items: [
++            { y: '2019', h: 'Кофейня на Гончарова', p: 'Андрей перепутал заказ и забрал её латте. Вернулся извиниться и остался до закрытия.', img: IMG + 'story-meet.jpg' },
++            { y: '2021', h: 'Первое море', p: 'Неделя в Абрау без связи, сгоревшие носы и решение больше не расставаться дольше чем на три дня.', img: IMG + 'story-trip.jpg' },
++            { y: '2024', h: 'Предложение', p: 'В той же кофейне, за тем же столиком. Бариста был в курсе и написал на стаканчике главный вопрос.' },
++            { y: '2025', h: 'Свадьба', p: 'Сто двадцать гостей, дождь ровно на десять минут и самый красивый закат года.', img: IMG + 'wedding.jpg' }
++          ]
++        },
++        {
++          type: 'voices',
++          label: 'Голосовые',
++          title: 'Сохранили из переписки',
++          items: [
++            { n: 'Андрей, 2019: «Кажется, я влюбился»', t: '0:18' },
++            { n: 'Наташа, 2021: из аэропорта', t: '0:34' },
++            { n: 'Мама Наташи, тост на свадьбе', t: '1:12' }
++          ]
++        },
+         { type: 'letter', label: 'Письмо', text: 'Наташа, я до сих пор помню, как ты смеялась над моим «извините, это, кажется, ваш латте». Спасибо, что тогда не ушла. Каждый день с тобой лучше предыдущего.', sign: 'Твой Андрей' },
+         { type: 'count', from: '2019-08-17', unit: 'дней вместе', note: 'и это только начало' },
+         { type: 'gallery', label: 'Галерея', imgs: [IMG + 'wedding.jpg', IMG + 'story-meet.jpg', IMG + 'story-trip.jpg'] },
+-        { type: 'final', title: 'Спасибо, что были с нами', text: 'Гости могут добавить свои фото со свадьбы по QR-коду на столах' }
++        { type: 'premExtra', label: 'Входит в «Премиум»', title: 'Свадебный квиз для гостей и ролик 60 секунд', text: 'Добавим интерактив «Кто лучше знает пару» для банкета, видеоролик из ваших съёмок и индивидуальное оформление под палитру свадьбы.' },
++        { type: 'final', title: 'Спасибо, что были с нами', text: 'Гости могут открыть историю по QR-коду на карточках столов' }
+       ]
+     },
+     inside: [
+       { b: 'История знакомства', s: 'Главы от первой встречи до свадьбы, с вашими фото и датами' },
+       { b: 'Голосовые', s: 'Те самые сообщения из переписки, тосты родителей, клятвы' },
+-      { b: 'Письмо от руки', s: 'Пишем вашим словами, оформляем рукописным почерком' },
++      { b: 'Письмо от руки', s: 'Пишем вашими словами, оформляем рукописным почерком' },
+       { b: 'Видео со свадьбы', s: 'Короткий фильм или лучшие моменты от вашего видеографа' },
+-      { b: 'Гостевой альбом по QR', s: 'Гости сами добавляют фото с праздника со своих телефонов' },
++      { b: 'Карточки с QR на столы', s: 'Гости открывают историю пары прямо на празднике' },
+       { b: 'Счётчик дней вместе', s: 'Тикает каждый день, приятно заглядывать на годовщину' }
+     ],
+-    plans: ['story', 'prem'], extra: 'Гостевой альбом по QR: гости загружают фото со своих телефонов, +1 990 ₽ к любому пакету. Свадебный формат начинается с «Истории», потому что материалов обычно больше.',
++    plans: ['story', 'prem'],
++    extra: 'Свадебный формат начинается с «Истории», потому что материалов обычно больше. Дополнительно: гостевой альбом по QR (+1 990 ₽), печатные карточки с QR от 300 ₽.',
+     steps: [
+       { b: 'Заявка', p: 'Пишете дату свадьбы и что хотите показать. Лучше за 2-3 недели до праздника.' },
+       { b: 'Материалы', p: 'Фото, голосовые, пара историй. Удобно надиктовать голосом, мы сами соберём текст.' },
+       { b: 'Черновик', p: 'Через 3-4 дня присылаем закрытую ссылку. Правим вместе до идеала.' },
+-      { b: 'Праздник', p: 'Отдаём ссылку и QR-код для экрана или столов. Видео со свадьбы добавим позже.' }
++      { b: 'Праздник', p: 'Отдаём ссылку и QR-код для экрана или столов. Фото и видео со свадьбы добавим позже.' }
+     ],
+     faq: [
+       { q: 'Можно ли добавить фото и видео после свадьбы?', a: 'Да. Обычно сайт делают к празднику, а через пару недель дополняют фото и фильмом от видеографа.' },
+@@ -60,76 +271,157 @@ const OCCASIONS = {
+   },
+ 
+   birthday: {
+-    name: 'День рождения', short: 'День рождения',
+-    card: 'Подарок от друзей с общими историями и мемами', from: 'от 1 990 ₽', img: IMG + 'birthday.jpg',
++    name: 'День рождения',
++    short: 'День рождения',
++    tabLabel: 'День рождения',
++    heroCaption: 'Лёше 25',
++    heroSub: 'Истории от друзей, голосовые и квиз с подвохами',
++    card: 'Подарок от друзей с общими историями и шутками',
++    from: 'от 1 990 ₽',
++    img: IMG + 'birthday.jpg',
++    seoTitle: 'Сайт-подарок на день рождения от друзей и семьи | Повод',
++    seoDesc: 'Оригинальный подарок на день рождения: общие фото, голосовые поздравления друзей из разных городов, письмо и квиз про именинника.',
+     title: 'Подарок, который не пылится на полке',
+     lead: 'Собираем общие фото, истории и голосовые поздравления от друзей в один сайт. Его откроют в день рождения и будут пересматривать годами.',
+     heroSlot: 'ВИДЕО 16:9, 10-15 с, луп без звука: задувают свечи, бенгальские огни, смех, вспышка. Постер: birthday.jpg',
+     demoTitle: 'Лёше 25',
+-    demoText: ['Так выглядит подарок от друзей. Главы общей истории, голосовые от каждого и квиз «Насколько ты знаешь Лёху».', 'Друзья присылают голосовые по нашей ссылке, а мы собираем всё вместе. Организатору ничего не нужно сводить вручную.'],
+-    demoList: ['Общая история с первого курса', 'Голосовые поздравления от друзей', 'Квиз с подвохами про именинника', 'Письмо от лучшего друга', 'Галерея лучших (и худших) фото'],
++    demoText: [
++      'Так выглядит подарок от друзей. Главы общей истории, голосовые от каждого и квиз «Насколько ты знаешь Лёху».',
++      'Друзья скидывают голосовые и фото в общий чат или нашу переписку, а мы собираем всё вместе. Организатору не нужно ничего сводить вручную.'
++    ],
++    demoPlan: 'prem',
++    demoList: [
++      'Общая история с первого курса',
++      'Голосовые поздравления от друзей',
++      'Квиз с подвохами про именинника',
++      'Письмо от лучшего друга',
++      'Галерея лучших (и худших) фото'
++    ],
+     gift: {
+       cover: { img: IMG + 'birthday.jpg', small: '14 марта 2026', title: 'Лёше 25!', sub: 'От тех, кто помнит тебя с первого курса' },
+       sections: [
+-        { type: 'chapters', label: 'Как всё было', title: 'Семь лет дружбы', items: [
+-          { y: '2019', h: 'Общага, комната 412', p: 'Одна гитара на пятерых, пицца на последние деньги и твоя легендарная песня про сопромат.', img: IMG + 'bday-uni.jpg' },
+-          { y: '2021', h: 'Тот самый поход', p: 'Ты забыл палатку, но взял три гитары. Ночевали в одной, пели до утра. Лучший поход в истории.', img: IMG + 'bday-hike.jpg' },
+-          { y: '2023', h: 'Переезд в Питер', p: 'Провожали всей толпой и плакали на перроне. Ты потом месяц звонил каждый вечер.' },
+-          { y: '2026', h: '25!', p: 'Четверть века, а песня про сопромат всё ещё лучшая.', img: IMG + 'birthday.jpg' }
+-        ]},
+-        { type: 'voices', label: 'Голосовые', title: 'Поздравления от друзей', items: [
+-          { n: 'Макс', t: '0:41' }, { n: 'Аня и Дима', t: '1:05' }, { n: 'Серёга из Питера', t: '0:27' }, { n: 'Мама', t: '0:52' }
+-        ]},
+-        { type: 'quiz', label: 'Квиз', title: 'Насколько ты знаешь Лёху?', q: 'Что Лёша забыл в походе 2021 года?', opts: ['Спальник', 'Палатку', 'Гитару'], ok: 1, note: 'Пример вопроса: в настоящем квизе их 5-10' },
++        {
++          type: 'chapters',
++          label: 'Как всё было',
++          title: 'Семь лет дружбы',
++          items: [
++            { y: '2019', h: 'Общага, комната 412', p: 'Одна гитара на пятерых, пицца на последние деньги и твоя легендарная песня про сопромат.', img: IMG + 'bday-uni.jpg' },
++            { y: '2021', h: 'Тот самый поход', p: 'Ты забыл палатку, но взял три гитары. Ночевали в одной, пели до утра. Лучший поход в истории.', img: IMG + 'bday-hike.jpg' },
++            { y: '2023', h: 'Переезд в Питер', p: 'Провожали всей толпой и плакали на перроне. Ты потом месяц звонил каждый вечер.' },
++            { y: '2026', h: '25!', p: 'Четверть века, а песня про сопромат всё ещё лучшая.', img: IMG + 'birthday.jpg' }
++          ]
++        },
++        {
++          type: 'voices',
++          label: 'Голосовые',
++          title: 'Поздравления от друзей',
++          items: [
++            { n: 'Макс', t: '0:41' },
++            { n: 'Аня и Дима', t: '1:05' },
++            { n: 'Серёга из Питера', t: '0:27' },
++            { n: 'Мама', t: '0:52' }
++          ]
++        },
++        {
++          type: 'quiz',
++          label: 'Квиз',
++          title: 'Насколько ты знаешь Лёху?',
++          q: 'Что Лёша забыл в походе 2021 года?',
++          opts: ['Спальник', 'Палатку', 'Гитару'],
++          ok: 1,
++          note: 'Пример вопроса: в настоящем квизе их 5-10'
++        },
+         { type: 'letter', label: 'Письмо', text: 'Лёха, спасибо, что ты всегда первый приходишь, когда плохо, и последний уходишь, когда весело. Двадцать пять тебе идёт. Песню про сопромат на свадьбе споёшь ты.', sign: 'Макс' },
+         { type: 'gallery', label: 'Галерея', imgs: [IMG + 'birthday.jpg', IMG + 'bday-uni.jpg', IMG + 'bday-hike.jpg'] },
++        { type: 'premExtra', label: 'Входит в «Премиум»', title: 'Видеомонтаж из кружочков друзей и 10 вопросов квиза', text: 'Соберём видеоролик на 30-60 секунд из видеопоздравлений компании и настроим персональный квиз про именинника.' },
+         { type: 'final', title: 'С днём рождения!', text: 'Твои друзья: Макс, Аня, Дима, Серёга, Катя и ещё 7 человек' }
+       ]
+     },
+     inside: [
+       { b: 'Общая история', s: 'Главы дружбы с фото, датами и внутренними шутками' },
+-      { b: 'Голосовые от всех', s: 'Друзья записывают по нашей ссылке, мы собираем в один плеер' },
++      { b: 'Голосовые от всех', s: 'Друзья присылают голосовые в Telegram или облако, мы собираем в один плеер' },
+       { b: 'Квиз или мини-игра', s: 'Вопросы с подвохом про именинника, можно пройти всей компанией' },
+       { b: 'Письмо от руки', s: 'Тёплые слова рукописным почерком' },
+-      { b: 'Мемы и приколы', s: 'Подписи, стикеры и подборка лучших фейлов, если уместно' },
++      { b: 'Мемы и приколы', s: 'Подписи и подборка лучших кадров, если уместно' },
+       { b: 'Видео-поздравление', s: 'Ролик из фото и видео друзей в пакете «Премиум»' }
+     ],
+-    plans: ['mini', 'story', 'prem'], extra: 'Сбор голосовых от друзей по ссылке входит в «Историю» и «Премиум». Срочно за сутки +1 000 ₽.',
++    plans: ['mini', 'story', 'prem'],
++    extra: 'Сбор голосовых от друзей входит в «Историю» и «Премиум». Срочно за сутки +1 000 ₽.',
+     steps: [
+       { b: 'Заявка', p: 'Пишете, кому и когда день рождения. Хорошо бы за неделю.' },
+-      { b: 'Сбор', p: 'Даём ссылку для друзей: они сами присылают голосовые, фото и истории.' },
++      { b: 'Сбор', p: 'Даём готовое сообщение для чата друзей: они скидывают голосовые и фото, а мы забираем.' },
+       { b: 'Черновик', p: 'Через 3-4 дня показываем закрытую версию организатору.' },
+-      { b: 'Сюрприз', p: 'Отдаём ссылку и красивую открытку с QR, чтобы вручить лично.' }
++      { b: 'Сюрприз', p: 'Отдаём ссылку и открытку с QR, чтобы вручить лично.' }
+     ],
+     faq: [
+-      { q: 'Друзья в разных городах, как собрать поздравления?', a: 'Даём одну ссылку: каждый записывает голосовое и загружает фото с телефона. Вы ничего не пересылаете.' },
+-      { q: 'Можно с мемами и шутками?', a: 'Да, тон выбираете вы: от трогательного до совсем угарного.' },
+-      { q: 'Успеете за два дня?', a: 'Формат «Мини» делаем за 2 дня, срочный за сутки с доплатой.' }
++      { q: 'Друзья в разных городах, как собрать поздравления?', a: 'Мы даём шаблон сообщения для общего чата и удобный канал сбора в Telegram или облачной папке. Вам не нужно ничего сводить вручную.' },
++      { q: 'Можно с мемами и шутками?', a: 'Да, тон выбираете вы: от трогательного до весёлого с локальными шутками.' },
++      { q: 'Успеете за два дня?', a: 'Формат «Мини» делаем за 2 дня, срочный за сутки с доплатой 1 000 ₽.' }
+     ]
+   },
+ 
+   anniversary: {
+-    name: 'Годовщина', short: 'Годовщина',
+-    card: 'Годы вместе, собранные в одну историю', from: 'от 1 990 ₽', img: IMG + 'anniversary.jpg',
++    name: 'Годовщина',
++    short: 'Годовщина',
++    tabLabel: 'Годовщина',
++    heroCaption: 'Марина и Костя',
++    heroSub: 'Десять лет вместе, 10 причин и письмо',
++    card: 'Годы вместе, собранные в одну историю',
++    from: 'от 1 990 ₽',
++    img: IMG + 'anniversary.jpg',
++    seoTitle: 'Сайт-подарок на годовщину отношений или свадьбы | Повод',
++    seoDesc: 'Необычный подарок на годовщину: главы ваших лет вместе, карточки 10 причин, голосовое из прошлого, письмо и счётчик дней.',
+     title: 'Ваши годы вместе в одной истории',
+     lead: 'К годовщине отношений или свадьбы: главы вашей жизни, голосовые, письмо и десять причин, почему именно он или она.',
+     heroSlot: 'ВИДЕО 16:9, 10-15 с, луп без звука: утро на кухне, пара смеётся, кружки, мягкий свет. Постер: anniversary.jpg',
+     demoTitle: 'Марина и Костя',
+-    demoText: ['Так выглядит подарок на десятилетие отношений. Есть главы, голосовое и карточки «10 причин» - нажмите на карточку, чтобы открыть следующую.', 'Обычно такой сайт дарят как сюрприз: в утро годовщины приходит ссылка или открытка с QR-кодом.'],
+-    demoList: ['Главы ваших лет вместе', 'Карточки «10 причин, почему ты»', 'Голосовое и письмо', 'Счётчик дней вместе', 'Галерея любимых фото'],
++    demoText: [
++      'Так выглядит подарок на десятилетие отношений. Есть главы, голосовое и карточки «10 причин» - нажмите на карточку, чтобы открыть следующую.',
++      'Обычно такой сайт дарят как сюрприз: в утро годовщины приходит ссылка или открытка с QR-кодом.'
++    ],
++    demoPlan: 'prem',
++    demoList: [
++      'Главы ваших лет вместе',
++      'Карточки «10 причин, почему ты»',
++      'Голосовое и письмо',
++      'Счётчик дней вместе',
++      'Галерея любимых фото'
++    ],
+     gift: {
+       cover: { img: IMG + 'anniversary.jpg', small: '14 января 2016 - 14 января 2026', title: '10 лет', sub: 'Марина, это для тебя' },
+       sections: [
+-        { type: 'chapters', label: 'Наши годы', title: 'Десять лет за минуту', items: [
+-          { y: '2016', h: 'Первая зима', p: 'Каток на Соборной, ты упала три раза и каждый раз тянула меня за собой.', img: IMG + 'anni-first.jpg' },
+-          { y: '2018', h: 'Своя квартира', p: 'Красили стены сами, половина краски оказалась на нас и на Бублике.', img: IMG + 'anni-home.jpg' },
+-          { y: '2022', h: 'Бублик вырос', p: 'Теперь он занимает две трети кровати и считает это справедливым.' },
+-          { y: '2026', h: 'Десять', p: 'А ощущается как один очень длинный счастливый день.', img: IMG + 'anniversary.jpg' }
+-        ]},
+-        { type: 'reasons', label: '10 причин', title: 'Почему ты', items: ['Ты смеёшься громче всех на любом фильме', 'Ты помнишь, как я пью кофе, даже когда я сам забыл', 'Ты разговариваешь с Бубликом как с человеком', 'С тобой даже ремонт был весёлым', 'Ты всегда веришь в меня чуть больше, чем я сам', 'Ты делаешь сырники даже в понедельник', 'Ты не даёшь мне сдаваться на середине', 'С тобой любой дождь превращается в прогулку', 'Ты до сих пор краснеешь, когда я смотрю слишком долго', 'Потому что это ты'] },
++        {
++          type: 'chapters',
++          label: 'Наши годы',
++          title: 'Десять лет за минуту',
++          items: [
++            { y: '2016', h: 'Первая зима', p: 'Каток на Соборной, ты упала три раза и каждый раз тянула меня за собой.', img: IMG + 'anni-first.jpg' },
++            { y: '2018', h: 'Своя квартира', p: 'Красили стены сами, половина краски оказалась на нас и на Бублике.', img: IMG + 'anni-home.jpg' },
++            { y: '2022', h: 'Бублик вырос', p: 'Теперь он занимает две трети кровати и считает это справедливым.' },
++            { y: '2026', h: 'Десять', p: 'А ощущается как один очень длинный счастливый день.', img: IMG + 'anniversary.jpg' }
++          ]
++        },
++        {
++          type: 'reasons',
++          label: '10 причин',
++          title: 'Почему ты',
++          items: [
++            'Ты смеёшься громче всех на любом фильме',
++            'Ты помнишь, как я пью кофе, даже когда я сам забыл',
++            'Ты разговариваешь с Бубликом как с человеком',
++            'С тобой даже ремонт был весёлым',
++            'Ты всегда веришь в меня чуть больше, чем я сам',
++            'Ты делаешь сырники даже в понедельник',
++            'Ты не даёшь мне сдаваться на середине',
++            'С тобой любой дождь превращается в прогулку',
++            'Ты до сих пор краснеешь, когда я смотрю слишком долго',
++            'Потому что это ты'
++          ]
++        },
+         { type: 'voices', label: 'Голосовое', title: 'Сохранил с первой зимы', items: [{ n: 'Марина, 2016: «Ты где? Я замёрзла!»', t: '0:09' }] },
+         { type: 'letter', label: 'Письмо', text: 'Марина, десять лет назад я не умел кататься на коньках и не знал, что такое настоящий дом. Ты научила меня и тому, и другому.', sign: 'Костя' },
+         { type: 'count', from: '2016-01-14', unit: 'дней вместе', note: 'и Бублик подтверждает каждый' },
++        { type: 'premExtra', label: 'Входит в «Премиум»', title: 'Оживление общих снимков и ролик по вашим датам', text: 'Оживим любимые кадры из поездок и соберём короткий фильм на минуту под вашу песню.' },
+         { type: 'final', title: 'С годовщиной!', text: 'Открой эту страницу через год, тут появится новая глава' }
+       ]
+     },
+@@ -141,7 +433,8 @@ const OCCASIONS = {
+       { b: 'Новая глава каждый год', s: 'Сайт можно дополнять к следующей годовщине' },
+       { b: 'Открытка с QR', s: 'Красиво вручить в руки, а не просто прислать ссылку' }
+     ],
+-    plans: ['mini', 'story', 'prem'], extra: 'Новая глава к следующей годовщине: 990 ₽. Печать открытки с QR: от 300 ₽.',
++    plans: ['mini', 'story', 'prem'],
++    extra: 'Новая глава к следующей годовщине: 990 ₽. Печать открытки с QR: от 300 ₽.',
+     steps: [
+       { b: 'Заявка', p: 'Пишете дату годовщины и сколько вы вместе.' },
+       { b: 'Материалы', p: 'Фото по годам и пара историй голосом. Причины «почему ты» можно надиктовать.' },
+@@ -153,57 +446,5 @@ const OCCASIONS = {
+       { q: 'У нас мало фото вместе', a: 'Хватит 10-15. Остальное расскажем словами, голосом и деталями.' },
+       { q: 'Можно ли дополнять каждый год?', a: 'Да, это наша любимая идея: к каждой годовщине новая глава.' }
+     ]
+-  },
+-
+-  jubilee: {
+-    name: 'Юбилей бабушки и дедушки', short: 'Юбилей',
+-    card: 'Жизнь любимого человека глазами внуков', from: 'от 1 990 ₽', img: IMG + 'jubilee.jpg',
+-    title: 'Подарите близкому историю его жизни',
+-    lead: 'К юбилею бабушки, дедушки или родителей соберём семейные фотографии, воспоминания и голоса близких. Вы сможете открыть подарок по ссылке и показать его за праздничным столом.',
+-    heroSlot: 'ВИДЕО 16:9, 10-15 с, луп без звука: внуки обнимают бабушку, свечи на торте, тёплый свет. Постер: jubilee.jpg',
+-    demoTitle: 'Бабушке Вале 80',
+-    demoText: ['Вымышленный пример подарка на 80-летие. Здесь собраны главы от деревенской юности до рождения правнуков, голосовое поздравление и рецепт семейного пирога.', 'Подарок можно вручить по ссылке. Печатная открытка с QR доступна отдельно.'],
+-    demoPlan: 'story',
+-    demoList: ['Жизнь по главам с архивными фото', 'Реставрация и цвет старых снимков', 'Голосовое поздравление от внука', 'Семейный рецепт её словами', 'Крупный текст и простое управление'],
+-    gift: {
+-      cover: { img: IMG + 'jubilee.jpg', small: '1946 - 2026', title: 'Бабушке Вале 80', sub: 'От детей, внуков и правнуков' },
+-      sections: [
+-        { type: 'voices', label: 'Голосовые', title: 'Поздравление от внука', items: [{
+-          n: 'Саша из Казани',
+-          src: 'assets/audio/jubilee-greeting.mp3',
+-          transcript: 'Бабуля, я до сих пор помню, как ты доставала яблочный пирог из духовки. Мы никогда не дожидались, пока он остынет. Спасибо за каждое лето на даче. С юбилеем, бабушка!'
+-        }] },
+-        { type: 'chapters', label: 'Твоя жизнь', title: 'Восемьдесят лет любви', items: [
+-          { y: '1966', h: 'Велосипед и коса', p: 'Первая красавица Майны, каждое утро ездила на ферму на отцовском велосипеде.', img: IMG + 'jub-young.jpg' },
+-          { y: '1990', h: 'Дача', p: 'Яблоки вёдрами, варенье на всю зиму и мы с Ирой, которые таскали клубнику до того, как она поспевала.', img: IMG + 'jub-family.jpg' },
+-          { y: '2015', h: 'Прабабушка', p: 'Родился Мишка, и ты связала ему двенадцать пар носков за первый месяц.' },
+-          { y: '2026', h: '80', p: 'Всё такая же: встаёшь раньше всех и кормишь всех больше, чем нужно.', img: IMG + 'jubilee.jpg' }
+-        ]},
+-        { type: 'recipe', label: 'Семейный рецепт', title: 'Пирог с яблоками бабы Вали', steps: ['Три яйца взбить с сахаром «на глаз, стакан без горки»', 'Муки столько, чтобы было как густая сметана', 'Яблоки с дачи, обязательно антоновка', 'В духовку, «пока весь дом не запахнет»'] },
+-        { type: 'letter', label: 'Письмо', text: 'Бабуля, спасибо за каждое лето на даче, за пироги, за то, что всегда ждёшь и всегда рада. Мы тебя очень любим.', sign: 'Твои внуки' },
+-        { type: 'gallery', label: 'Галерея', imgs: [IMG + 'jubilee.jpg', IMG + 'jub-young.jpg', IMG + 'jub-family.jpg'] },
+-        { type: 'final', title: 'С юбилеем, бабуля!', text: '4 детей, 7 внуков, 3 правнука и все ждут пирог' }
+-      ]
+-    },
+-    inside: [
+-      { b: 'Жизнь по главам', s: 'Детство, юность, семья, работа, внуки' },
+-      { b: 'Старые фото в цвете', s: 'Восстанавливаем и раскрашиваем архивные снимки' },
+-      { b: 'Голосовые от внуков', s: 'Собираем по ссылке от всей семьи, даже из других городов' },
+-      { b: 'Семейный рецепт', s: 'Записываем с её слов, как она рассказывает' },
+-      { b: 'Крупный текст', s: 'Удобно читать на телефоне и планшете без очков' },
+-      { b: 'Открытка с QR', s: 'Навести камеру, и всё открывается само' }
+-    ],
+-    plans: ['mini', 'story', 'prem'], extra: 'Реставрация и цвет старых фото: 3 входят в «Историю», дальше 250 ₽ за снимок. Печать открытки с QR от 300 ₽.',
+-    steps: [
+-      { b: 'Заявка', p: 'Пишете, чей юбилей и когда. Лучше за 1-2 недели.' },
+-      { b: 'Сбор', p: 'Сканы старых фото, истории и голосовые от всей семьи по нашей ссылке.' },
+-      { b: 'Черновик', p: 'Через 3-4 дня показываем закрытую версию организатору.' },
+-      { b: 'Вручение', p: 'Отдаём ссылку и открытку с QR. Можно показать на телевизоре за столом.' }
+-    ],
+-    faq: [
+-      { q: 'Бабушка не пользуется интернетом', a: 'Даём открытку с QR и показываем, как открыть. Сайт можно вывести на телевизор за праздничным столом.' },
+-      { q: 'Фото старые и испорченные', a: 'Восстановим трещины и пятна, по желанию раскрасим. Оригинал всегда остаётся рядом.' },
+-      { q: 'Родственники в разных городах', a: 'Каждый записывает голосовое по одной ссылке, мы соберём все вместе.' }
+-    ]
+   }
+ };
+diff --git a/povod/index.html b/povod/index.html
+index bcd6df7..81d891a 100644
+--- a/povod/index.html
++++ b/povod/index.html
+@@ -17,12 +17,12 @@
+     <a class="logo" href="index.html">Повод<i>.</i></a>
+     <nav class="nav" aria-label="Разделы">
+       <a href="#occasions">Поводы</a>
+-      <a href="#inside">Что внутри</a>
++      <a href="#inside">Что от вас</a>
+       <a href="#how">Как работаем</a>
+       <a href="#prices">Цены</a>
+       <a href="#faq">Вопросы</a>
+     </nav>
+-    <a class="btn btn--ink btn--sm" href="#request">Заказать подарок</a>
++    <a class="btn btn--ink btn--sm" href="#request" data-cta="header">Заказать подарок</a>
+   </div>
+ </header>
+ 
+@@ -30,20 +30,21 @@
+ <section class="hhero">
+   <div class="wrap hhero__in">
+     <div class="hhero__copy">
+-      <p class="eyebrow">Личные сайты-подарки</p>
++      <p class="eyebrow">Личные сайты-подарки под ключ</p>
+       <h1>Подарите близким <em>их историю</em></h1>
+-      <p class="hhero__lead">Соберём ваши фото, голосовые и воспоминания в подарок, который можно открыть по ссылке.</p>
++      <p class="hhero__lead">Вы скидываете фото и пару голосовых за 15 минут. Мы превращаем их в живой сайт с письмом от руки, голосами родных и открыткой с QR.</p>
++      <div class="hero-tabs" id="heroTabs" role="tablist" aria-label="Сценарии подарка"></div>
+       <div class="hhero__actions">
+-        <a class="btn btn--acc" href="jubilee-demo.html" data-spa-href="#jubilee-demo">Открыть пример подарка</a>
+-        <a class="btn btn--line" href="#occasions">Выбрать повод</a>
++        <a class="btn btn--acc" id="heroDemoBtn" href="jubilee-demo.html" data-spa-href="#jubilee-demo" data-cta="hero-demo">Открыть пример подарка</a>
++        <a class="btn btn--line" href="#occasions" data-cta="hero-occasions">Выбрать свой повод</a>
+       </div>
+-      <p class="hhero__note"><a href="#prices">От 1 990 ₽</a> · от 2 дней после получения материалов.</p>
++      <p class="hhero__note"><a href="#prices">От 1 990 ₽</a> · по цене букета, но останется навсегда · готово от 2 дней</p>
+     </div>
+     <figure class="stage">
+-      <div class="stage__media rel" data-slot="Фото или короткое видео юбилея. Постер jubilee.jpg">
+-        <img src="assets/img/jubilee.jpg" alt="Бабушка с внучками у праздничного торта" width="1600" height="2000" fetchpriority="high">
++      <div class="stage__media rel" id="heroStageMedia" data-slot="Фото или короткое видео выбранного повода. Постер jubilee.jpg">
++        <img id="heroStageImg" src="assets/img/jubilee.jpg" alt="Бабушка с внучками у праздничного торта" width="1600" height="2000" fetchpriority="high">
+       </div>
+-      <figcaption class="stage__caption"><b>Бабушке Вале 80</b><span>Пример подарка на юбилей</span></figcaption>
++      <figcaption class="stage__caption"><b id="heroStageTitle">Бабушке Вале 80</b><span id="heroStageSub">Семейный архив, голоса внуков и рецепт пирога</span></figcaption>
+     </figure>
+   </div>
+ </section>
+@@ -53,38 +54,41 @@
+   <div class="wrap">
+     <div class="sec__head">
+       <h2>Какой у вас повод?</h2>
+-      <p class="sec__lead">У каждого повода свой пример и набор форматов.</p>
++      <p class="sec__lead">В каждом разделе есть живой пример в телефоне и сравнение того, что входит в тарифы.</p>
+     </div>
+     <div class="occ" id="occGrid"></div>
+     <div class="occ__other">
+       <div>
+         <h3>Свой повод</h3>
+-        <p>Выпускной, проводы, рождение ребёнка, юбилей компании, просто «спасибо». Придумаем формат вместе.</p>
++        <p>Выпускной, проводы, рождение ребёнка, юбилей компании, просто «спасибо». Придумаем структуру вместе.</p>
+       </div>
+-      <a class="btn btn--ink" href="#request">Рассказать о поводе</a>
++      <a class="btn btn--ink" href="#request" data-occasion-pick="custom" data-cta="custom-occasion">Рассказать о поводе</a>
+     </div>
+   </div>
+ </section>
+ 
+-<!-- 3. ЧТО МОЖЕТ БЫТЬ ВНУТРИ -->
++<!-- 3. ЧТО МОЖЕТ БЫТЬ ВНУТРИ И КАК ВРУЧАЕТСЯ -->
+ <section class="sec sec--dark" id="inside">
+   <div class="wrap contents">
+     <div>
+-      <h2>Из чего складывается подарок</h2>
+-      <ul class="contents__list">
+-        <li><b>Главы из жизни</b><span>Фотографии и истории по годам. Для семьи это может быть и старый снимок, и рецепт, записанный со слов бабушки.</span></li>
+-        <li><b>Голоса и письма</b><span>Поздравления из разных городов и ваши слова, оформленные как письмо от руки.</span></li>
+-        <li><b>Музыка, видео и игры</b><span>В зависимости от тарифа добавим вашу песню, короткий фильм или квиз про именинника.</span></li>
+-      </ul>
+-      <a class="btn btn--line-light" href="jubilee-demo.html" data-spa-href="#jubilee-demo">Послушать поздравление в демо</a>
+-    </div>
+-    <figure class="contents__album">
+-      <div class="contents__photos rel" data-slot="Два снимка из разных глав семейной истории">
+-        <img src="assets/img/jub-young.jpg" alt="Валя в юности" width="1200" height="1500" loading="lazy">
+-        <img src="assets/img/jub-family.jpg" alt="Семейное лето на даче" width="1200" height="1500" loading="lazy">
++      <p class="eyebrow">Минимум хлопот с вашей стороны</p>
++      <h2>От вас 15 минут - от нас готовая история</h2>
++      <div class="exchange" id="exchangeGrid"></div>
++      <div class="invite-box" id="inviteBox"></div>
++      <div class="contents__actions">
++        <a class="btn btn--line-light" href="jubilee-demo.html" data-spa-href="#jubilee-demo" data-cta="inside-demo">Открыть юбилейный пример</a>
+       </div>
+-      <figcaption><blockquote>Бабуля, спасибо за каждое лето на даче.</blockquote><span>Из письма внуков в демо-подарке</span></figcaption>
+-    </figure>
++    </div>
++    <div class="contents__side">
++      <figure class="contents__album">
++        <div class="contents__photos rel" data-slot="Два снимка из разных глав семейной истории">
++          <img src="assets/img/jub-young.jpg" alt="Валя в юности" width="1200" height="1500" loading="lazy">
++          <img src="assets/img/jub-family.jpg" alt="Семейное лето на даче" width="1200" height="1500" loading="lazy">
++        </div>
++        <figcaption><blockquote>Бабуля, спасибо за каждое лето на даче.</blockquote><span>Из письма внуков в демо-подарке</span></figcaption>
++      </figure>
++      <div class="qr-card-preview" id="qrCardPreview"></div>
++    </div>
+   </div>
+ </section>
+ 
+@@ -95,9 +99,9 @@
+       <h2>От вашей идеи до вручения</h2>
+     </div>
+     <ol class="steps steps--three">
+-      <li><b>Обсудим повод и дату</b><p>Подскажем, что собрать, и согласуем цену и срок.</p></li>
+-      <li><b>Соберём историю</b><p>Из ваших фото, записей и воспоминаний подготовим черновик подарка.</p></li>
+-      <li><b>Подготовим к вручению</b><p>После согласования вы получите ссылку. Для вручения можно заказать печатную открытку с QR.</p></li>
++      <li><b>Обсудим повод и дату</b><p>Подскажем, что собрать, проверим запас времени к празднику и сразу зафиксируем цену.</p></li>
++      <li><b>Соберём историю за вас</b><p>Расшифруем голосовые, выстроим главы, приведём в порядок старые фото и сверстаем страницу.</p></li>
++      <li><b>Подготовим к вручению</b><p>После двух кругов правок вы получите ссылку, а при желании - печатную открытку с QR для конверта.</p></li>
+     </ol>
+   </div>
+ </section>
+@@ -109,11 +113,7 @@
+       <h2>Три формата подарка</h2>
+       <p class="sec__lead">Цена фиксируется до начала работы. Размещение на год включено, продление 290 ₽ в год.</p>
+     </div>
+-    <div class="plans">
+-      <div class="plan"><h3>Мини</h3><p class="plan__price">1 990 ₽</p><p class="plan__for">Быстро и мило, на готовом шаблоне</p><ul><li>До 15 фото</li><li>Одно письмо или поздравление</li><li>Музыка на фоне</li><li>Готово за 2 дня</li></ul><a class="btn btn--line" href="#request" data-plan="Мини">Выбрать «Мини»</a></div>
+-      <div class="plan plan--main"><span class="plan__badge">Рекомендуем</span><h3>История</h3><p class="plan__price">4 490 ₽</p><p class="plan__for">Ваша история целиком</p><ul><li>До 40 фото и хронология</li><li>Голосовые от вас и друзей</li><li>Рукописное письмо</li><li>Анимации и музыка</li><li>2 круга правок, 3-4 дня</li></ul><a class="btn btn--acc" href="#request" data-plan="История">Выбрать «Историю»</a></div>
+-      <div class="plan"><h3>Премиум</h3><p class="plan__price">от 8 900 ₽</p><p class="plan__for">Видео и индивидуальный дизайн</p><ul><li>Всё из «Истории»</li><li>Видеоролик 30-60 секунд</li><li>Оживление фотографий</li><li>Индивидуальный дизайн</li><li>Мини-игра или квиз</li></ul><a class="btn btn--line" href="#request" data-plan="Премиум">Выбрать «Премиум»</a></div>
+-    </div>
++    <div class="plans" id="hubPrices"></div>
+     <p class="plans__extra">Свадьба начинается с «Истории». Открытка с QR для вручения от 300 ₽. Посоветуйте нас другу: ему скидка 5 %, вам 300 ₽ на следующий подарок.</p>
+   </div>
+ </section>
+@@ -123,9 +123,10 @@
+   <div class="wrap faq">
+     <div class="sec__head"><h2>Вопросы о подарке</h2></div>
+     <div>
+-      <details open><summary>Сколько живёт сайт?</summary><p>Год включён в цену, дальше 290 ₽ в год. По запросу отдаём архив сайта, который откроется на любом компьютере.</p></details>
+-      <details><summary>Нужно ли что-то устанавливать?</summary><p>Нет. Сайт открывается по ссылке или QR-коду на любом телефоне и компьютере.</p></details>
+-      <details><summary>Можно ли сделать срочно?</summary><p>«Мини» делаем за 2 дня, срочно за сутки с доплатой 1 000 ₽.</p></details>
++      <details open><summary>Сколько времени это займёт у меня?</summary><p>Около 15-20 минут на старте: скинуть фото из телефона и наговорить пару голосовых, как вспоминается. Тексты, структуру и монтаж делаем мы.</p></details>
++      <details><summary>Как собрать поздравления от друзей из разных городов?</summary><p>Мы даём готовый текст для общего чата и удобный приём в Telegram или общую папку. Друзья скидывают туда фото и голосовые, а мы сами всё сводим.</p></details>
++      <details><summary>Сколько живёт сайт и что останется у нас?</summary><p>Год включён в цену, дальше 290 ₽ в год. По запросу отдаём автономный архив сайта, который откроется на любом компьютере без интернета.</p></details>
++      <details><summary>Можно ли сделать срочно?</summary><p>«Мини» делаем за 2 дня, срочно за сутки с доплатой 1 000 ₽. Если праздник завтра, можно подарить базовую версию ко дню X и дополнить её позже.</p></details>
+       <details><summary>Кто увидит сайт?</summary><p>Только те, кому вы дадите ссылку. По желанию ставим пароль.</p></details>
+     </div>
+   </div>
+@@ -138,19 +139,56 @@
+       <p class="eyebrow">Демо-заявка</p>
+       <h2>К какой дате нужен подарок?</h2>
+       <p class="sec__lead">Чтобы согласовать подарок, нам понадобятся повод, дата и удобный способ связи.</p>
++      <div class="soft-cta" id="interviewGuide"></div>
+       <p class="request__alt">Контакт для заявок появится перед запуском.</p>
+     </div>
+-    <form class="form" id="form">
+-      <label>Как к вам обращаться<input name="name" required placeholder="Аня"></label>
+-      <label>Телефон или Telegram<input name="contact" required placeholder="+7 ... или @ник"></label>
++    <form class="form" id="form" novalidate>
++      <div class="form__channels" role="group" aria-label="Где вам удобнее ответить">
++        <span class="form__label-inline">Где ответить</span>
++        <div class="channel-pills" id="channelPills">
++          <button type="button" class="ch-pill is-on" data-channel="telegram">Telegram</button>
++          <button type="button" class="ch-pill" data-channel="phone">Телефон</button>
++          <button type="button" class="ch-pill" data-channel="whatsapp">WhatsApp</button>
++        </div>
++        <input type="hidden" name="contactChannel" id="channelInput" value="telegram">
++      </div>
++      <label>Как к вам обращаться<input name="name" required maxlength="80" placeholder="Аня"></label>
++      <label><span id="contactLabel">Ваш ник или номер в Telegram</span><input name="contact" id="contactInput" required maxlength="100" placeholder="@nik или +7 ..."></label>
+       <label>Повод
+-        <select name="occasion" id="occSelect"><option>Свадьба</option><option>День рождения</option><option>Годовщина</option><option>Юбилей бабушки и дедушки</option><option>Свой повод</option></select>
++        <select name="occasion" id="occSelect">
++          <option value="wedding">Свадьба</option>
++          <option value="birthday">День рождения</option>
++          <option value="anniversary">Годовщина</option>
++          <option value="jubilee">Юбилей бабушки и дедушки</option>
++          <option value="custom">Свой повод</option>
++        </select>
+       </label>
+       <label>Формат
+-        <select name="plan" id="planSelect"><option>Пока не знаю</option><option>Мини</option><option>История</option><option>Премиум</option></select>
++        <select name="plan" id="planSelect">
++          <option value="unknown">Пока не знаю</option>
++          <option value="mini">Мини (1 990 ₽)</option>
++          <option value="story">История (4 490 ₽)</option>
++          <option value="prem">Премиум (от 8 900 ₽)</option>
++        </select>
++      </label>
++      <div class="form__full">
++        <label>Когда праздник
++          <div class="date-row">
++            <input name="date" id="dateInput" maxlength="60" placeholder="Например, 14 марта или 2026-12-20">
++            <input type="date" id="datePicker" aria-label="Выбрать дату в календаре">
++          </div>
++        </label>
++        <p class="date-status" id="dateStatus">Укажите дату - подскажем, успеваем ли спокойно или нужен срочный тариф.</p>
++      </div>
++      <label class="form__full">Коротко о подарке (необязательно)
++        <textarea name="about" rows="2" maxlength="1000" placeholder="Кому дарите, сколько примерно фото и участвуют ли друзья"></textarea>
++      </label>
++      <input class="hp-field" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
++      <label class="form__consent form__full">
++        <input type="checkbox" name="consent" id="consentCheck" required>
++        <span>Согласен с политикой обработки персональных данных (для демо-проверки данные никуда не отправляются)</span>
+       </label>
+-      <label>Когда праздник<input name="date" placeholder="Например, 14 марта"></label>
+-      <button class="btn btn--acc" type="submit" disabled>Проверить демо-заявку</button>
++      <button class="btn btn--acc form__full" type="submit">Проверить демо-заявку</button>
+       <p class="form__note" id="formNote" role="status">Это макет заявки. Для проверки используйте вымышленные данные.</p>
+     </form>
+   </div>
+diff --git a/povod/jubilee-demo.html b/povod/jubilee-demo.html
+index 10e3a60..034789c 100644
+--- a/povod/jubilee-demo.html
++++ b/povod/jubilee-demo.html
+@@ -20,7 +20,7 @@
+ </header>
+ 
+ <main class="wrap gift-page">
+-  <p class="gift-page__note">Демо-подарок · вымышленная семейная история</p>
++  <p class="gift-page__note">Демо-подарок · вымышленная семейная история · пример тарифа «История»</p>
+   <div class="gift" id="giftStory"></div>
+   <noscript><p>Включите JavaScript, чтобы открыть историю.</p></noscript>
+   <div class="gift-page__actions">
+@@ -29,6 +29,7 @@
+   </div>
+ </main>
+ 
++<button class="slots-toggle" id="slotsToggle" type="button">Слоты медиа</button>
+ <script src="data.js"></script>
+ <script src="app.js"></script>
+ </body>
+diff --git a/povod/jubilee.html b/povod/jubilee.html
+index ffe69a1..f5f5264 100644
+--- a/povod/jubilee.html
++++ b/povod/jubilee.html
+@@ -21,7 +21,7 @@
+       <a href="#oprices">Цены</a>
+       <a href="#ofaq">Вопросы</a>
+     </nav>
+-    <a class="btn btn--ink btn--sm" href="#request">Заказать подарок</a>
++    <a class="btn btn--ink btn--sm" href="#request" data-cta="header">Заказать подарок</a>
+   </div>
+ </header>
+ 
+@@ -34,19 +34,56 @@
+       <p class="eyebrow">Заявка</p>
+       <h2>Расскажите, кого и с чем поздравляем</h2>
+       <p class="sec__lead">Чтобы согласовать подарок, нам понадобятся повод, дата и удобный способ связи.</p>
++      <div class="soft-cta" id="interviewGuide"></div>
+       <p class="request__alt">Контакт для заявок появится перед запуском.</p>
+     </div>
+-    <form class="form" id="form">
+-      <label>Как к вам обращаться<input name="name" required placeholder="Аня"></label>
+-      <label>Телефон или Telegram<input name="contact" required placeholder="+7 ... или @ник"></label>
++    <form class="form" id="form" novalidate>
++      <div class="form__channels" role="group" aria-label="Где вам удобнее ответить">
++        <span class="form__label-inline">Где ответить</span>
++        <div class="channel-pills" id="channelPills">
++          <button type="button" class="ch-pill is-on" data-channel="telegram">Telegram</button>
++          <button type="button" class="ch-pill" data-channel="phone">Телефон</button>
++          <button type="button" class="ch-pill" data-channel="whatsapp">WhatsApp</button>
++        </div>
++        <input type="hidden" name="contactChannel" id="channelInput" value="telegram">
++      </div>
++      <label>Как к вам обращаться<input name="name" required maxlength="80" placeholder="Аня"></label>
++      <label><span id="contactLabel">Ваш ник или номер в Telegram</span><input name="contact" id="contactInput" required maxlength="100" placeholder="@nik или +7 ..."></label>
+       <label>Повод
+-        <select name="occasion" id="occSelect"><option>Свадьба</option><option>День рождения</option><option>Годовщина</option><option>Юбилей бабушки и дедушки</option><option>Свой повод</option></select>
++        <select name="occasion" id="occSelect">
++          <option value="wedding">Свадьба</option>
++          <option value="birthday">День рождения</option>
++          <option value="anniversary">Годовщина</option>
++          <option value="jubilee">Юбилей бабушки и дедушки</option>
++          <option value="custom">Свой повод</option>
++        </select>
+       </label>
+       <label>Формат
+-        <select name="plan" id="planSelect"><option>Пока не знаю</option><option>Мини</option><option>История</option><option>Премиум</option></select>
++        <select name="plan" id="planSelect">
++          <option value="unknown">Пока не знаю</option>
++          <option value="mini">Мини (1 990 ₽)</option>
++          <option value="story">История (4 490 ₽)</option>
++          <option value="prem">Премиум (от 8 900 ₽)</option>
++        </select>
+       </label>
+-      <label>Когда праздник<input name="date" placeholder="Например, 14 марта"></label>
+-      <button class="btn btn--acc" type="submit" disabled>Проверить демо-заявку</button>
++      <div class="form__full">
++        <label>Когда праздник
++          <div class="date-row">
++            <input name="date" id="dateInput" maxlength="60" placeholder="Например, 14 марта или 2026-12-20">
++            <input type="date" id="datePicker" aria-label="Выбрать дату в календаре">
++          </div>
++        </label>
++        <p class="date-status" id="dateStatus">Укажите дату - подскажем, успеваем ли спокойно или нужен срочный тариф.</p>
++      </div>
++      <label class="form__full">Коротко о подарке (необязательно)
++        <textarea name="about" rows="2" maxlength="1000" placeholder="Кому дарите, сколько примерно фото и участвуют ли друзья"></textarea>
++      </label>
++      <input class="hp-field" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
++      <label class="form__consent form__full">
++        <input type="checkbox" name="consent" id="consentCheck" required>
++        <span>Согласен с политикой обработки персональных данных (для демо-проверки данные никуда не отправляются)</span>
++      </label>
++      <button class="btn btn--acc form__full" type="submit">Проверить демо-заявку</button>
+       <p class="form__note" id="formNote" role="status">Это макет заявки. Для проверки используйте вымышленные данные.</p>
+     </form>
+   </div>
+diff --git a/povod/styles.css b/povod/styles.css
+index 1518fa4..3f01981 100644
+--- a/povod/styles.css
++++ b/povod/styles.css
+@@ -27,7 +27,7 @@ body[data-occasion="jubilee"]{--acc:var(--jub);--tint:var(--jub-t)}
+ *{box-sizing:border-box;margin:0;padding:0}
+ [hidden]{display:none!important}
+ html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+-body{font-family:var(--f);background:var(--bg);color:var(--ink);font-size:17px;line-height:1.55}
++body{font-family:var(--f);background:var(--bg);color:var(--ink);font-size:17px;line-height:1.55;overflow-x:clip}
+ img{display:block;max-width:100%}
+ a{color:inherit}
+ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+@@ -90,16 +90,20 @@ h2{font-size:clamp(34px,4.4vw,58px);margin-bottom:14px}
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+-  padding: clamp(28px,4.6vw,70px);
++  padding: clamp(28px,4.4vw,64px);
+   background: var(--card);
+   border: 1px solid var(--line);
+ }
+-.hhero__copy{grid-area:copy;border-left:0;padding-inline:clamp(26px,3.7vw,54px)}
+-.hhero h1,.ohero h1{font-size:clamp(39px,4.55vw,65px);margin-bottom:22px}
++.hhero__copy{grid-area:copy;border-left:0;padding-inline:clamp(26px,3.7vw,52px)}
++.hhero h1,.ohero h1{font-size:clamp(39px,4.55vw,65px);margin-bottom:20px}
+ .hhero h1 em{display:block;white-space:nowrap;font-style:normal;color:var(--acc)}
+-.hhero__lead,.ohero__lead{font-size:clamp(16px,1.55vw,20px);color:var(--ink2);max-width:36rem;margin-bottom:25px}
++.hhero__lead,.ohero__lead{font-size:clamp(16px,1.5vw,19px);color:var(--ink2);max-width:36rem;margin-bottom:20px}
++.hero-tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}
++.hero-tab{padding:7px 12px;border:1px solid var(--line);border-radius:5px;background:var(--bg);font-size:13px;font-weight:500;color:var(--ink2);transition:background .15s,border-color .15s,color .15s}
++.hero-tab:hover{border-color:var(--ink);color:var(--ink)}
++.hero-tab.is-on{background:var(--ink);border-color:var(--ink);color:var(--dark-ink)}
+ .hhero__actions,.ohero__actions{display:flex;gap:9px;flex-wrap:wrap}
+-.hhero__note{margin-top:23px;font-size:14px;color:var(--ink2)}
++.hhero__note{margin-top:20px;font-size:14px;color:var(--ink2)}
+ .hhero__note a{text-underline-offset:3px}
+ .stage{grid-area:photo;display:grid;grid-template-rows:minmax(0,1fr) auto;background:var(--dark)}
+ .stage__media{min-height:clamp(410px,38vw,560px)}
+@@ -156,17 +160,38 @@ h2{font-size:clamp(34px,4.4vw,58px);margin-bottom:14px}
+ .occ__other p{color:var(--ink2);font-size:15px}
+ .occ__other .btn{flex-shrink:0}
+ 
+-/* что внутри */
+-.contents{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,92px);align-items:center}
+-.contents__list{list-style:none;margin:26px 0}
+-.contents__list li{padding:14px 0;border-top:1px solid #667B6E}
+-.contents__list b{display:block;font-size:19px}
+-.contents__list span{color:var(--dark-ink2);font-size:15px}
+-.contents__album{padding:clamp(14px,2.5vw,26px);border-radius:8px;background:var(--card);color:var(--ink)}
++/* что от вас -> что от нас, открытка QR */
++.contents{display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(30px,5.5vw,84px);align-items:start}
++.exchange{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0 18px}
++.exchange__col{padding:18px;border:1px solid #4A6356;border-radius:8px;background:#192F26}
++.exchange__col--out{background:#264236;border-color:#728B7D}
++.exchange__col h3{font-size:20px;margin-bottom:4px;letter-spacing:-.02em}
++.exchange__sub{font-size:13px;color:var(--dark-ink2);margin-bottom:14px}
++.exchange__col ul{list-style:none;display:grid;gap:9px;font-size:14px;color:var(--dark-ink2)}
++.exchange__col li{padding-left:14px;position:relative}
++.exchange__col li::before{content:"";position:absolute;left:0;top:10px;width:6px;height:1px;background:#FFD1AB}
++.invite-box{margin:16px 0 22px;border:1px solid #4A6356;border-radius:8px;padding:14px 16px;background:#192F26}
++.invite-box summary{cursor:pointer;font-size:15px;font-weight:600;color:var(--dark-ink)}
++.invite-box__hint{font-size:13px;color:var(--dark-ink2);margin-top:10px}
++.invite-box__text{margin:10px 0 12px;padding:12px;border-radius:6px;background:#14251D;color:var(--dark-ink);font-size:14px;line-height:1.45;border:1px solid #3C5549}
++.contents__actions{display:flex;flex-wrap:wrap;gap:10px}
++.contents__side{display:grid;gap:16px}
++.contents__album{padding:clamp(14px,2.5vw,24px);border-radius:8px;background:var(--card);color:var(--ink)}
+ .contents__photos{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+ .contents__photos img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+-.contents__album blockquote{font-family:var(--hand);font-size:clamp(28px,3.3vw,43px);line-height:1.1;margin:17px 0 5px}
++.contents__album blockquote{font-family:var(--hand);font-size:clamp(28px,3.3vw,40px);line-height:1.1;margin:15px 0 4px}
+ .contents__album figcaption span{font-size:13px;color:var(--ink2)}
++.qr-card-preview{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;padding:18px;border:1px solid #4A6356;border-radius:8px;background:#192F26}
++.qr-card-preview h3{font-size:20px;margin-bottom:6px;letter-spacing:-.02em}
++.qr-card-preview p{font-size:14px;color:var(--dark-ink2)}
++.qr-card-preview__note{margin-top:8px;color:#FFD1AB!important;font-size:13px!important}
++.qr-card-mock{width:154px;padding:14px 12px;border-radius:6px;background:var(--card);color:var(--ink);text-align:center;display:grid;gap:6px;justify-items:center}
++.qr-card-mock__code{width:64px;height:64px;padding:6px;border:1px solid var(--line);display:grid;grid-template-columns:repeat(3,1fr);gap:4px;background:#fff}
++.qr-card-mock__code span{background:var(--ink);display:block}
++.qr-card-mock__code span:nth-child(2n){opacity:.25}
++.qr-card-mock strong{font-size:14px;line-height:1.2}
++.qr-card-mock span{font-size:11px;color:var(--ink2);line-height:1.25}
++.qr-card-mock small{font-size:10px;color:var(--acc);font-weight:600}
+ 
+ /* шаги */
+ .steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;list-style:none;counter-reset:step}
+@@ -184,7 +209,8 @@ h2{font-size:clamp(34px,4.4vw,58px);margin-bottom:14px}
+ .plan__badge{align-self:flex-start;color:var(--acc);font-size:13px;font-weight:700;line-height:1.2;margin-bottom:11px}
+ .plan h3{font-size:25px;margin-bottom:12px}
+ .plan__price{font-size:clamp(34px,3.6vw,47px);font-weight:600;letter-spacing:-.055em;line-height:1;margin-bottom:9px}
+-.plan__for{font-size:15px;color:var(--ink2);padding-bottom:16px;margin-bottom:14px;border-bottom:1px solid var(--line)}
++.plan__for{font-size:15px;color:var(--ink2);margin-bottom:6px}
++.plan__anchor{font-size:13px;color:var(--acc);font-weight:600;padding-bottom:14px;margin-bottom:14px;border-bottom:1px solid var(--line)}
+ .plan ul{flex:1;list-style:none;margin-bottom:21px}
+ .plan li{position:relative;padding:5px 0 5px 16px;font-size:15px}
+ .plan li::before{content:"";position:absolute;left:0;top:16px;width:7px;height:1px;background:var(--acc)}
+@@ -201,23 +227,46 @@ h2{font-size:clamp(34px,4.4vw,58px);margin-bottom:14px}
+ .faq details[open] summary::after{transform:rotate(45deg)}
+ .faq details p{color:var(--ink2);margin-top:12px}
+ 
+-/* заявка */
+-.request{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:start;gap:clamp(28px,7vw,100px)}
+-.request__alt{margin-top:20px;color:var(--dark-ink2);font-size:14px}
++/* заявка и мягкий лид-магнит */
++.request{display:grid;grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);align-items:start;gap:clamp(28px,6vw,88px)}
++.request__alt{margin-top:18px;color:var(--dark-ink2);font-size:14px}
++.soft-cta{margin-top:22px}
++.soft-cta__box{border:1px solid #4A6356;border-radius:8px;padding:14px 16px;background:#192F26}
++.soft-cta__box summary{cursor:pointer;font-size:15px;font-weight:600;color:#FFD1AB}
++.soft-cta__hint{font-size:13px;color:var(--dark-ink2);margin:10px 0}
++.soft-cta__list{padding-left:18px;margin-bottom:12px;font-size:14px;color:var(--dark-ink2);display:grid;gap:5px}
++
+ .form {
+   display: grid;
+   grid-template-columns: repeat(2,minmax(0,1fr));
+-  gap: 16px;
+-  padding: clamp(18px,3.5vw,34px);
++  gap: 15px;
++  padding: clamp(18px,3.2vw,32px);
+   background: var(--card);
+   color: var(--ink);
+   border-radius: 8px;
+ }
++.form__channels{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;padding-bottom:6px;border-bottom:1px solid var(--line)}
++.form__label-inline{font-size:14px;font-weight:600;color:var(--ink)}
++.channel-pills{display:flex;flex-wrap:wrap;gap:6px}
++.ch-pill{padding:6px 12px;border:1px solid var(--line);border-radius:5px;font-size:13px;font-weight:500;color:var(--ink2);background:var(--bg)}
++.ch-pill.is-on{background:var(--ink);border-color:var(--ink);color:var(--dark-ink)}
+ .form label{display:flex;flex-direction:column;gap:6px;min-width:0;font-size:14px;font-weight:500}
+ .form input,.form select,.form textarea{min-width:0;width:100%;font:inherit;font-size:16px;font-weight:400;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:5px;padding:10px 11px;resize:vertical}
+ .form :focus-visible{outline-color:var(--acc)}
+-.form .btn{align-self:end}
++.form__full{grid-column:1/-1}
++.date-row{display:grid;grid-template-columns:1fr auto;gap:8px}
++.date-row input[type="date"]{width:auto;max-width:160px}
++.date-status{margin-top:6px;font-size:13px;color:var(--ink2)}
++.date-status.is-ok{color:#1F5E3A;font-weight:500}
++.date-status.is-rush{color:#8E5210;font-weight:500}
++.date-status.is-warn{color:#9B2D20;font-weight:500}
++.form .form__consent{flex-direction:row;align-items:flex-start;gap:10px;font-size:13px;font-weight:400;color:var(--ink2);cursor:pointer}
++.form .form__consent input{width:18px;height:18px;margin-top:2px;flex:0 0 18px}
++.hp-field{position:absolute;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none}
+ .form__note{grid-column:1/-1;font-size:14px;color:var(--ink2)}
++.form__note.is-ok{color:#1F5E3A;font-weight:500}
++.form__note.is-err{color:#9B2D20;font-weight:600}
++
+ .foot{background:var(--dark);color:var(--dark-ink2);border-top:1px solid #667B6E;padding:25px 0;font-size:14px}
+ .foot__in{display:flex;gap:12px 25px;flex-wrap:wrap;align-items:center}
+ .foot .logo{color:var(--dark-ink);font-size:23px}
+@@ -226,12 +275,17 @@ h2{font-size:clamp(34px,4.4vw,58px);margin-bottom:14px}
+ 
+ /* пример в телефоне */
+ .sec--example{background:var(--bg2)}
+-.demo{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,.85fr);gap:clamp(26px,7vw,96px);align-items:center}
++.demo{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,.85fr);gap:clamp(26px,6.5vw,92px);align-items:center}
+ .demo__text p{color:var(--ink2);font-size:17px;margin-bottom:14px}
+ .demo__text .eyebrow{color:var(--acc);font-size:13px}
+-.demo__list{list-style:none;margin:22px 0;display:grid;gap:8px}
++.tier-switch{display:flex;flex-wrap:wrap;gap:6px;margin:18px 0 10px}
++.tier-pill{padding:7px 12px;border:1px solid var(--line);border-radius:5px;background:var(--card);font-size:13px;font-weight:600;color:var(--ink2)}
++.tier-pill.is-on{background:var(--acc);border-color:var(--acc);color:#fff}
++.tier-note{font-size:14px!important;color:var(--ink)!important;font-weight:600;margin-bottom:14px!important}
++.demo__list{list-style:none;margin:18px 0;display:grid;gap:8px}
+ .demo__list li{display:flex;gap:11px;align-items:baseline;font-size:15px}
+ .demo__list li::before{content:"";flex:0 0 7px;height:1px;background:var(--acc);transform:translateY(-4px)}
++.demo__actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}
+ .demo__display{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:clamp(16px,4vw,42px)}
+ .phone{position:relative;width:100%;max-width:335px;aspect-ratio:380/710;margin:0 auto;border-radius:38px;background:#14251D;padding:9px;box-shadow:0 18px 42px -24px #20392E}
+ .phone__screen{position:relative;width:100%;height:100%;border-radius:30px;overflow:hidden;background:var(--bg)}
+@@ -247,6 +301,7 @@ h2{font-size:clamp(34px,4.4vw,58px);margin-bottom:14px}
+ .g-cover small{font-size:13px;opacity:.85;letter-spacing:.04em}
+ .g-cover h1,.g-cover h3{font-size:38px;line-height:1;margin:8px 0 10px}
+ .g-cover p{font-size:15px;opacity:.9}
++.g-tier-banner{margin:18px 20px 0;padding:12px 14px;border-radius:8px;background:var(--tint);border:1px solid var(--acc);font-size:13px;color:var(--ink)}
+ .g-sec{padding:36px 24px}
+ .g-sec h2,.g-sec h4{font-size:24px;margin-bottom:16px}
+ .g-label{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--acc);margin-bottom:8px}
+@@ -273,11 +328,11 @@ h2{font-size:clamp(34px,4.4vw,58px);margin-bottom:14px}
+ .g-count{background:var(--tint);border-radius:20px;padding:28px 24px;text-align:center}
+ .g-count b{display:block;font-size:52px;letter-spacing:-.04em;line-height:1;color:var(--acc);font-variant-numeric:tabular-nums}
+ .g-count span{font-size:15px;color:var(--ink2)}
+-.g-reasons{position:relative;height:170px}
+-.g-reason{position:absolute;inset:0;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .45s,opacity .45s;box-shadow:0 10px 24px -16px rgba(40,20,40,.35)}
+-.g-reason p{font-size:19px;font-weight:500;letter-spacing:-.01em}
++.g-reasons{position:relative;min-height:215px}
++.g-reason{position:absolute;inset:0;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;gap:12px;transition:transform .45s,opacity .45s;box-shadow:0 10px 24px -16px rgba(40,20,40,.35);overflow-wrap:anywhere}
++.g-reason p{font-size:18px;line-height:1.3;font-weight:500;letter-spacing:-.01em}
+ .g-reason small{font-size:13px;color:var(--ink3)}
+-.g-reason.is-out{transform:translateX(-110%) rotate(-8deg);opacity:0}
++.g-reason.is-out{transform:translateX(-110%) rotate(-8deg);opacity:0;pointer-events:none}
+ .g-quiz{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px}
+ .g-quiz p{font-weight:600;margin-bottom:12px;font-size:17px}
+ .g-quiz button{display:block;width:100%;text-align:left;padding:11px 14px;border:1px solid var(--line);border-radius:12px;margin-bottom:8px;font-size:15px;background:var(--bg)}
+@@ -287,9 +342,15 @@ h2{font-size:clamp(34px,4.4vw,58px);margin-bottom:14px}
+ .g-recipe{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+ .g-recipe ol{padding-left:18px;font-size:15px;color:var(--ink2)}
+ .g-recipe ol li{margin-bottom:6px}
+-.g-final{background:var(--dark);color:var(--dark-ink);padding:48px 24px 64px;text-align:center}
++.g-prem-extra{background:var(--tint);border:1px solid var(--acc);border-radius:14px;padding:20px}
++.g-prem-extra h3,.g-prem-extra h5{font-size:19px;margin-bottom:8px}
++.g-prem-extra p:last-child{font-size:14px;color:var(--ink2)}
++.g-final{background:var(--dark);color:var(--dark-ink);padding:48px 24px 44px;text-align:center}
+ .g-final h2,.g-final h4{font-size:28px;margin-bottom:10px}
+ .g-final p{color:var(--dark-ink2);font-size:15px}
++.g-powered{background:#182D24;color:var(--dark-ink2);padding:14px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px 14px;font-size:12px;border-top:1px solid #355044}
++.g-powered a{color:#FFD1AB;font-weight:600;text-underline-offset:3px}
++
+ /* режим "на весь экран" */
+ .gift-full{position:fixed;inset:0;z-index:100;background:#14251DAD;backdrop-filter:blur(6px);display:none;align-items:stretch;justify-content:center}
+ .gift-full.is-open{display:flex}
+@@ -319,7 +380,8 @@ h2{font-size:clamp(34px,4.4vw,58px);margin-bottom:14px}
+ .gift-page .g-sec{max-width:790px;margin-inline:auto;padding:clamp(28px,5vw,54px) clamp(18px,5vw,60px)}
+ .gift-page .g-sec + .g-sec{border-top:1px solid var(--line)}
+ .gift-page .g-ch img{max-width:440px}
+-.gift-page .g-final{border-radius:0 0 9px 9px}
++.gift-page .g-final{border-radius:0}
++.gift-page .g-powered{border-radius:0 0 9px 9px}
+ .gift-page__actions{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:24px}
+ 
+ .inside{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;list-style:none}
+@@ -347,6 +409,7 @@ body.show-slots [data-slot]::after{content:attr(data-slot);position:absolute;lef
+   .ohero__spread{grid-template-columns:1fr}
+   .stage__media,.ohero__media{min-height:clamp(260px,54vw,430px)}
+   .contents,.faq,.request{grid-template-columns:1fr}
++  .exchange{grid-template-columns:1fr}
+   .contents__album{max-width:620px}
+   .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+   .steps--three{grid-template-columns:repeat(3,minmax(0,1fr))}
+@@ -375,8 +438,12 @@ body.show-slots [data-slot]::after{content:attr(data-slot);position:absolute;lef
+   .occ__card p,.occ__price{font-size:13px}
+   .occ__copy{padding:14px}
+   .occ__other{flex-direction:column;align-items:flex-start}
++  .qr-card-preview{grid-template-columns:1fr}
++  .qr-card-mock{justify-self:start}
+   .steps,.steps--three,.inside{grid-template-columns:1fr}
+   .form{grid-template-columns:1fr}
++  .date-row{grid-template-columns:1fr}
++  .date-row input[type="date"]{max-width:none;width:100%}
+   .foot__in span:last-child{margin-left:0}
+   .gift-page .g-cover{grid-template-columns:1fr}
+   .gift-page .g-cover img{height:auto;min-height:0;max-height:340px;aspect-ratio:4/3}
+diff --git a/povod/wedding.html b/povod/wedding.html
+index d9ed6b3..598c906 100644
+--- a/povod/wedding.html
++++ b/povod/wedding.html
+@@ -3,8 +3,8 @@
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+-<title>Повод - сайт-подарок с вашей историей</title>
+-<meta name="description" content="Личный сайт-подарок к свадьбе, дню рождения, годовщине или юбилею: ваши фото, голосовые, письма и видео в одной красивой истории.">
++<title>Свадебный сайт-история пары и подарок молодым | Повод</title>
++<meta name="description" content="Личный свадебный сайт-история: знакомство по главам, голосовые из переписки, письмо и фото с праздника. Готово за 3-4 дня.">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+@@ -21,7 +21,7 @@
+       <a href="#oprices">Цены</a>
+       <a href="#ofaq">Вопросы</a>
+     </nav>
+-    <a class="btn btn--ink btn--sm" href="#request">Заказать подарок</a>
++    <a class="btn btn--ink btn--sm" href="#request" data-cta="header">Заказать подарок</a>
+   </div>
+ </header>
+ 
+@@ -34,19 +34,56 @@
+       <p class="eyebrow">Заявка</p>
+       <h2>Расскажите, кого и с чем поздравляем</h2>
+       <p class="sec__lead">Чтобы согласовать подарок, нам понадобятся повод, дата и удобный способ связи.</p>
++      <div class="soft-cta" id="interviewGuide"></div>
+       <p class="request__alt">Контакт для заявок появится перед запуском.</p>
+     </div>
+-    <form class="form" id="form">
+-      <label>Как к вам обращаться<input name="name" required placeholder="Аня"></label>
+-      <label>Телефон или Telegram<input name="contact" required placeholder="+7 ... или @ник"></label>
++    <form class="form" id="form" novalidate>
++      <div class="form__channels" role="group" aria-label="Где вам удобнее ответить">
++        <span class="form__label-inline">Где ответить</span>
++        <div class="channel-pills" id="channelPills">
++          <button type="button" class="ch-pill is-on" data-channel="telegram">Telegram</button>
++          <button type="button" class="ch-pill" data-channel="phone">Телефон</button>
++          <button type="button" class="ch-pill" data-channel="whatsapp">WhatsApp</button>
++        </div>
++        <input type="hidden" name="contactChannel" id="channelInput" value="telegram">
++      </div>
++      <label>Как к вам обращаться<input name="name" required maxlength="80" placeholder="Аня"></label>
++      <label><span id="contactLabel">Ваш ник или номер в Telegram</span><input name="contact" id="contactInput" required maxlength="100" placeholder="@nik или +7 ..."></label>
+       <label>Повод
+-        <select name="occasion" id="occSelect"><option>Свадьба</option><option>День рождения</option><option>Годовщина</option><option>Юбилей бабушки и дедушки</option><option>Свой повод</option></select>
++        <select name="occasion" id="occSelect">
++          <option value="wedding">Свадьба</option>
++          <option value="birthday">День рождения</option>
++          <option value="anniversary">Годовщина</option>
++          <option value="jubilee">Юбилей бабушки и дедушки</option>
++          <option value="custom">Свой повод</option>
++        </select>
+       </label>
+       <label>Формат
+-        <select name="plan" id="planSelect"><option>Пока не знаю</option><option>Мини</option><option>История</option><option>Премиум</option></select>
++        <select name="plan" id="planSelect">
++          <option value="unknown">Пока не знаю</option>
++          <option value="mini">Мини (1 990 ₽)</option>
++          <option value="story">История (4 490 ₽)</option>
++          <option value="prem">Премиум (от 8 900 ₽)</option>
++        </select>
+       </label>
+-      <label>Когда праздник<input name="date" placeholder="Например, 14 марта"></label>
+-      <button class="btn btn--acc" type="submit" disabled>Проверить демо-заявку</button>
++      <div class="form__full">
++        <label>Когда праздник
++          <div class="date-row">
++            <input name="date" id="dateInput" maxlength="60" placeholder="Например, 14 марта или 2026-12-20">
++            <input type="date" id="datePicker" aria-label="Выбрать дату в календаре">
++          </div>
++        </label>
++        <p class="date-status" id="dateStatus">Укажите дату - подскажем, успеваем ли спокойно или нужен срочный тариф.</p>
++      </div>
++      <label class="form__full">Коротко о подарке (необязательно)
++        <textarea name="about" rows="2" maxlength="1000" placeholder="Кому дарите, сколько примерно фото и участвуют ли друзья"></textarea>
++      </label>
++      <input class="hp-field" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
++      <label class="form__consent form__full">
++        <input type="checkbox" name="consent" id="consentCheck" required>
++        <span>Согласен с политикой обработки персональных данных (для демо-проверки данные никуда не отправляются)</span>
++      </label>
++      <button class="btn btn--acc form__full" type="submit">Проверить демо-заявку</button>
+       <p class="form__note" id="formNote" role="status">Это макет заявки. Для проверки используйте вымышленные данные.</p>
+     </form>
+   </div>

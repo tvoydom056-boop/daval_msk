@@ -1,0 +1,107 @@
+[
+  {
+    "id": 86,
+    "file": "generated/letopis-86-family-footbridge.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "review_note": "Просмотрен оригинал: действие и композиция соответствуют заданию, лица и руки правдоподобны, читаемого текста нет."
+  },
+  {
+    "id": 87,
+    "file": "generated/letopis-87-family-canoe.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "review_note": "Просмотрен оригинал: действие и композиция соответствуют заданию, лица и руки правдоподобны, читаемого текста нет."
+  },
+  {
+    "id": 88,
+    "file": "generated/letopis-88-grandfather-birdwatching.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "review_note": "Просмотрен оригинал: заданные люди и действие присутствуют, естественные лица и кисти рук, без читаемых надписей."
+  },
+  {
+    "id": 89,
+    "file": "generated/letopis-89-family-waterfall.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "review_note": "Просмотрен оригинал: заданные люди и действие присутствуют, естественные лица и кисти рук, без читаемых надписей."
+  },
+  {
+    "id": 90,
+    "file": "generated/letopis-90-roadtrip-map-car.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "review_note": "Просмотрен оригинал: сюжет и перспектива правдоподобны, нет надписей; у людей естественные руки и лица."
+  },
+  {
+    "id": 91,
+    "file": "generated/letopis-91-winding-mountain-road.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "review_note": "Просмотрен оригинал: сюжет и перспектива правдоподобны, нет надписей; у людей естественные руки и лица."
+  },
+  {
+    "id": 92,
+    "file": "generated/letopis-92-river-dock-mist.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "review_note": "Просмотрен оригинал: спокойная сцена без людей, геометрия и фактуры естественны, надписей нет."
+  },
+  {
+    "id": 93,
+    "file": "generated/letopis-93-rural-station-dawn.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "review_note": "Просмотрен оригинал: спокойная сцена без людей, геометрия и фактуры естественны, надписей нет."
+  },
+  {
+    "id": 94,
+    "file": "generated/letopis-94-car-window-rain.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "review_note": "Просмотрен оригинал: естественная атмосферная фотография, сюжет соответствует, надписей и заметных артефактов нет."
+  },
+  {
+    "id": 95,
+    "file": "generated/letopis-95-rocky-coast-lighthouse.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "review_note": "Просмотрен оригинал: естественная атмосферная фотография, сюжет соответствует, надписей и заметных артефактов нет."
+  },
+  {
+    "id": 96,
+    "file": "generated/letopis-96-old-train-corridor.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "review_note": "Просмотрен оригинал: согласованная перспектива интерьера/пейзажа, правдоподобные свет и материалы, нет надписей."
+  },
+  {
+    "id": 97,
+    "file": "generated/letopis-97-mountain-hut-evening.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "review_note": "Просмотрен оригинал: согласованная перспектива интерьера/пейзажа, правдоподобные свет и материалы, нет надписей."
+  },
+  {
+    "id": 98,
+    "file": "generated/letopis-98-railway-bridge-autumn.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "review_note": "Просмотрен оригинал: транспорт и ландшафт согласованы по масштабу, узнаваемых надписей и заметных артефактов нет."
+  },
+  {
+    "id": 99,
+    "file": "generated/letopis-99-winter-chairlift.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "review_note": "Просмотрен оригинал: транспорт и ландшафт согласованы по масштабу, узнаваемых надписей и заметных артефактов нет."
+  },
+  {
+    "id": 100,
+    "file": "generated/letopis-100-forest-stream-path.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "review_note": "Просмотрен оригинал: лесная тропа и устойчивая каменная переправа читаются естественно, нет текста и заметных артефактов."
+  }
+]

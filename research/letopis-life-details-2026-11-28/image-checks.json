@@ -1,0 +1,252 @@
+{
+  "count": 20,
+  "unique_new_images": 20,
+  "unique_all_series": 120,
+  "previous_100_unchanged": true,
+  "valid_png": true,
+  "alpha_cutouts": 5,
+  "aspect_ratio_tolerance": "2%",
+  "total_bytes": 47191461,
+  "files": [
+    {
+      "id": 101,
+      "file": "generated/letopis-101-recording-grandmothers-story.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2698949,
+      "sha256": "dc2127f99678198edddaeae55e3d5b0d5f9213ac972de1e07b797b6357e9777b"
+    },
+    {
+      "id": 102,
+      "file": "generated/letopis-102-family-songs-guitar.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2890945,
+      "sha256": "8b9d7da204ef0253517f752e17e2ae4b49ca9b7dde621e0c96ff7fb8a1c99c0a"
+    },
+    {
+      "id": 103,
+      "file": "generated/letopis-103-listening-old-cassette.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2790520,
+      "sha256": "7e99a177a06a64555d0c5926f94dd688b2824b80722761192db0276fa4b5965b"
+    },
+    {
+      "id": 104,
+      "file": "generated/letopis-104-grandmother-piano-grandson.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2488851,
+      "sha256": "7cfcd6723b777f781ca30fca4e632e3a2c37e9b9dad765b54ccf649765da5e03"
+    },
+    {
+      "id": 105,
+      "file": "generated/letopis-105-reel-to-reel-home-archive.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2464605,
+      "sha256": "979603f859dd6128be8860751dccbb52df09118ac59b0d1ce101efbc9e5b7589"
+    },
+    {
+      "id": 106,
+      "file": "generated/letopis-106-woman-doctor-before-shift.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2295049,
+      "sha256": "e2fc2889181d4bff30572366b7cb607b14ce47d1926300f75db9f60848c39881"
+    },
+    {
+      "id": 107,
+      "file": "generated/letopis-107-woman-engineer-drawing.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2386846,
+      "sha256": "7a92c08e5e953ea18e20dd41e1a2cb5a32684fee5c9a6a31be3fea5d80232d86"
+    },
+    {
+      "id": 108,
+      "file": "generated/letopis-108-potter-making-cup.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2239456,
+      "sha256": "8e715469931a790ccfa682fde38d49b0544d39a358bcf52399283f369fd01e37"
+    },
+    {
+      "id": 109,
+      "file": "generated/letopis-109-father-daughter-model-sailboat.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2857581,
+      "sha256": "382d7482cd4f7b135c8ba6fa73d18c3b2f378d19c758e99edb37bb54396b9f0c"
+    },
+    {
+      "id": 110,
+      "file": "generated/letopis-110-older-woman-cross-country-skiing.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2720876,
+      "sha256": "8631d042414b32ebc2b4ef25a3455c40a0f4d860a2509c0a466bdb99dbac4554"
+    },
+    {
+      "id": 111,
+      "file": "generated/letopis-111-height-mark-doorframe.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2672489,
+      "sha256": "7c8623dc92f30d76598e8ca38f66e2a5a354c463b95aac433b46776a2457b621"
+    },
+    {
+      "id": 112,
+      "file": "generated/letopis-112-mother-daughter-laundry.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2823014,
+      "sha256": "8adb71f6ab75b57575f83e5bfd2c1aac5f4b9377c9a40fc81c0d25861781cfad"
+    },
+    {
+      "id": 113,
+      "file": "generated/letopis-113-grandfather-storytime.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2557219,
+      "sha256": "ddbb01a7849e2a33511ede613788058f48e3c3dacc4c0a6875d65acacbc0dbc4"
+    },
+    {
+      "id": 114,
+      "file": "generated/letopis-114-family-jigsaw-evening.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2854005,
+      "sha256": "64838b3686015cf0eb9d80b4095a4eb75bc7a4a08d2fd7290f7329689d4eb5f9"
+    },
+    {
+      "id": 115,
+      "file": "generated/letopis-115-dog-paws-towel.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2903228,
+      "sha256": "f821f369e79054ba06eadd0c1072aa47da9017d246726e5cd6f73e7f4cf09811"
+    },
+    {
+      "id": 116,
+      "file": "generated/letopis-116-blank-label-cassette.png",
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "mode": "RGBA",
+      "bytes": 1739029,
+      "sha256": "0857f63b6c94050ee09f3da75d5196cbe33650b0f622a103553527bbdee6b2de",
+      "alpha_ok": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.47474747474747475,
+      "near_opaque_fraction": 0.5129944623774894,
+      "composite_review": "pass: paper/dark gallery screenshots"
+    },
+    {
+      "id": 117,
+      "file": "generated/letopis-117-old-house-key.png",
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "mode": "RGBA",
+      "bytes": 913908,
+      "sha256": "2126ca9e82bd3de8040f9d7337de9ed61f1277ca700963bdf3dd581be38b9ec4",
+      "alpha_ok": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.7845331939388852,
+      "near_opaque_fraction": 0.20213975565272468,
+      "composite_review": "pass: paper/dark gallery screenshots"
+    },
+    {
+      "id": 118,
+      "file": "generated/letopis-118-knitted-mitten-pair.png",
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "mode": "RGBA",
+      "bytes": 2140490,
+      "sha256": "97039e20700a7cda81c6b54681e9e9c917ba708da44201fae234076cea85cc7f",
+      "alpha_ok": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.4567597404414327,
+      "near_opaque_fraction": 0.5177098357027846,
+      "composite_review": "pass: paper/dark gallery screenshots"
+    },
+    {
+      "id": 119,
+      "file": "generated/letopis-119-reading-glasses-open-case.png",
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "mode": "RGBA",
+      "bytes": 2082970,
+      "sha256": "a6da176fc50c1b0664f4bc5cebd6dc874e202499624304da7beed51abe2caf14",
+      "alpha_ok": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.48227998951997947,
+      "near_opaque_fraction": 0.5067846686456609,
+      "composite_review": "pass: paper/dark gallery screenshots"
+    },
+    {
+      "id": 120,
+      "file": "generated/letopis-120-unbranded-wristwatch.png",
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "mode": "RGBA",
+      "bytes": 671431,
+      "sha256": "316dc081813fbc91ea38c5101162a67d7a58cd812cfced01cddd8dbc2e650b2d",
+      "alpha_ok": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_fraction": 0.8467932917693684,
+      "near_opaque_fraction": 0.13835407716042317,
+      "composite_review": "pass: paper/dark gallery screenshots"
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+[
+  {
+    "id": 111,
+    "file": "generated/letopis-111-height-mark-doorframe.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Родители отмечают рост ребёнка: книга горизонтальна, на косяке только штрихи без цифр; лица и видимые руки естественны.",
+    "sha256": "7C8623DC92F30D76598E8CA38F66E2A5A354C463B95AAC433B46776A2457B621",
+    "composite_review": "not_applicable",
+    "dimensions": [
+      1448,
+      1086
+    ],
+    "bytes": 2672489,
+    "aspect_ratio_error": 0.0,
+    "alpha": {
+      "mode": "RGB",
+      "has_alpha": false,
+      "extrema": [
+        255,
+        255
+      ],
+      "fully_transparent_pixels": 0,
+      "opaque_240_pixels": 1572528
+    }
+  },
+  {
+    "id": 112,
+    "file": "generated/letopis-112-mother-daughter-laundry.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Мать и взрослая дочь развешивают бельё; руки различимы, прищепки и натяжение верёвки выглядят правдоподобно, текста нет.",
+    "sha256": "8ADB71F6AB75B57575F83E5BFD2C1AAC5F4B9377C9A40FC81C0D25861781CFAD",
+    "composite_review": "not_applicable",
+    "dimensions": [
+      1448,
+      1086
+    ],
+    "bytes": 2823014,
+    "aspect_ratio_error": 0.0,
+    "alpha": {
+      "mode": "RGB",
+      "has_alpha": false,
+      "extrema": [
+        255,
+        255
+      ],
+      "fully_transparent_pixels": 0,
+      "opaque_240_pixels": 1572528
+    }
+  },
+  {
+    "id": 113,
+    "file": "generated/letopis-113-grandfather-storytime.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Дедушка читает двум детям; три различных лица, естественные кисти, книга без читаемых надписей и узнаваемых персонажей.",
+    "sha256": "DDBB01A7849E2A33511EDE613788058F48E3C3DACC4C0A6875D65ACACBC0DBC4",
+    "composite_review": "not_applicable",
+    "dimensions": [
+      1448,
+      1086
+    ],
+    "bytes": 2557219,
+    "aspect_ratio_error": 0.0,
+    "alpha": {
+      "mode": "RGB",
+      "has_alpha": false,
+      "extrema": [
+        255,
+        255
+      ],
+      "fully_transparent_pixels": 0,
+      "opaque_240_pixels": 1572528
+    }
+  },
+  {
+    "id": 114,
+    "file": "generated/letopis-114-family-jigsaw-evening.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Семья из четырёх человек собирает один пазл; руки разделены и выглядят правдоподобно, текст и коробка отсутствуют.",
+    "sha256": "64838B3686015CF0EB9D80B4095A4EB75BC7A4A08D2FD7290F7329689D4EB5F9",
+    "composite_review": "not_applicable",
+    "dimensions": [
+      1448,
+      1086
+    ],
+    "bytes": 2854005,
+    "aspect_ratio_error": 0.0,
+    "alpha": {
+      "mode": "RGB",
+      "has_alpha": false,
+      "extrema": [
+        255,
+        255
+      ],
+      "fully_transparent_pixels": 0,
+      "opaque_240_pixels": 1572528
+    }
+  },
+  {
+    "id": 115,
+    "file": "generated/letopis-115-dog-paws-towel.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Бабушка и ребёнок вытирают переднюю лапу спокойной собаке; четыре лапы, естественные человеческие руки, без надписей.",
+    "sha256": "F821F369E79054BA06EADD0C1072AA47DA9017D246726E5CD6F73E7F4CF09811",
+    "composite_review": "not_applicable",
+    "dimensions": [
+      1448,
+      1086
+    ],
+    "bytes": 2903228,
+    "aspect_ratio_error": 0.0,
+    "alpha": {
+      "mode": "RGB",
+      "has_alpha": false,
+      "extrema": [
+        255,
+        255
+      ],
+      "fully_transparent_pixels": 0,
+      "opaque_240_pixels": 1572528
+    }
+  },
+  {
+    "id": 116,
+    "file": "generated/letopis-116-blank-label-cassette.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Аудиокассета с пустой этикеткой, полная форма видна. Настоящий alpha подтверждён; красная кромка нативного preview имеет только alpha1-4. Окончательный просмотр на paper/dark ожидает gallery worker.",
+    "sha256": "0857F63B6C94050EE09F3DA75D5196CBE33650B0F622A103553527BBDEE6B2DE",
+    "composite_review": "pending",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "bytes": 1739029,
+    "aspect_ratio_error": 0.0,
+    "alpha": {
+      "mode": "RGBA",
+      "has_alpha": true,
+      "extrema": [
+        0,
+        255
+      ],
+      "fully_transparent_pixels": 746548,
+      "fully_transparent_fraction": 0.47474747474747475,
+      "opaque_240_pixels": 806692,
+      "opaque_240_fraction": 0.5129944623774894,
+      "fully_opaque_pixels": 1679
+    }
+  },
+  {
+    "id": 117,
+    "file": "generated/letopis-117-old-house-key.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Один потёртый домашний ключ без текста, форма полностью в кадре. Красные пиксели границы имеют только alpha1-5; итоговый paper/dark composite пока не проверен.",
+    "sha256": "2126CA9E82BD3DE8040F9D7337DE9ED61F1277CA700963BDF3DD581BE38B9EC4",
+    "composite_review": "pending",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "bytes": 913908,
+    "aspect_ratio_error": 0.0,
+    "alpha": {
+      "mode": "RGBA",
+      "has_alpha": true,
+      "extrema": [
+        0,
+        255
+      ],
+      "fully_transparent_pixels": 1233691,
+      "fully_transparent_fraction": 0.7845331939388852,
+      "opaque_240_pixels": 317868,
+      "opaque_240_fraction": 0.20213975565272468,
+      "fully_opaque_pixels": 616
+    }
+  },
+  {
+    "id": 118,
+    "file": "generated/letopis-118-knitted-mitten-pair.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Пара вязаных варежек с естественной фактурой и правильной формой большого пальца. Красные пиксели границы имеют только alpha1-4; итоговый paper/dark composite пока не проверен.",
+    "sha256": "97039E20700A7CDA81C6B54681E9E9C917BA708DA44201FAE234076CEA85CC7F",
+    "composite_review": "pending",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "bytes": 2140490,
+    "aspect_ratio_error": 0.0,
+    "alpha": {
+      "mode": "RGBA",
+      "has_alpha": true,
+      "extrema": [
+        0,
+        255
+      ],
+      "fully_transparent_pixels": 718262,
+      "fully_transparent_fraction": 0.4567597404414327,
+      "opaque_240_pixels": 814107,
+      "opaque_240_fraction": 0.5177098357027846,
+      "fully_opaque_pixels": 548
+    }
+  }
+]

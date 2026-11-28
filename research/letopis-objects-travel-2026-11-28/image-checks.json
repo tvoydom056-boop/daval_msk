@@ -1,0 +1,662 @@
+{
+  "count": 50,
+  "unique_new_images": 50,
+  "unique_both_series": 100,
+  "valid_png": true,
+  "alpha_cutouts": 10,
+  "alpha_check": "RGBA; alpha range 0-255; >1% pixels alpha0 and >1% pixels alpha>=240; visual light/dark review",
+  "aspect_ratio_tolerance": "2%",
+  "total_bytes": 120492445,
+  "files": [
+    {
+      "id": 51,
+      "file": "generated/letopis-51-accordion-standing-album.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2127667,
+      "sha256": "e626890b7c78baf115ec8e0ae86610e2960c10ba22b44f160dd187c88532ffe1"
+    },
+    {
+      "id": 52,
+      "file": "generated/letopis-52-transparent-pocket-binder.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2640196,
+      "sha256": "a85e82385c955ff354724e95118011946c7c86d5584cdd22cde4b8be23ac0c3a"
+    },
+    {
+      "id": 53,
+      "file": "generated/letopis-53-square-album-sleeve.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2746072,
+      "sha256": "5731b71dcb34a3415d2a0a31924caa386c89f65e462d8df0b8107030f582d58f"
+    },
+    {
+      "id": 54,
+      "file": "generated/letopis-54-gatefold-album-spread.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2800575,
+      "sha256": "c709ff788eaa9988f9b39d21b01a29cf38fc77738c371355d7168b7a3feb74ba"
+    },
+    {
+      "id": 55,
+      "file": "generated/letopis-55-translucent-album-interleaves.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2257532,
+      "sha256": "acc94c330ac5d99d6ec3aefc136855ae8ee548aba0661c82bc3d3eb2c68ab540"
+    },
+    {
+      "id": 56,
+      "file": "generated/letopis-56-unmarked-contact-sheet.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2962730,
+      "sha256": "721d4065e626e6f659d38da1f2c201e1b59e871628e9c28772725a8e8c61562a"
+    },
+    {
+      "id": 57,
+      "file": "generated/letopis-57-desktop-flip-album.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2313847,
+      "sha256": "c8b6244892a7c4986106d8376313fdb40717bfbf516a0a48e814d7f5ef88f19b"
+    },
+    {
+      "id": 58,
+      "file": "generated/letopis-58-two-volumes-slipcase.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2886636,
+      "sha256": "ddfba2d61825c3c856bf63a95cab9a6de36f0a4f9df5795e67a7b72f054c74b7"
+    },
+    {
+      "id": 59,
+      "file": "generated/letopis-59-flap-folder-ties.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2836321,
+      "sha256": "78164051a7bd27cc3589f5e764b8e55f4d97ff3ced06a303aa754cd1be6e4a58"
+    },
+    {
+      "id": 60,
+      "file": "generated/letopis-60-keepsake-pocket-album.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2648434,
+      "sha256": "ca5a68e22d4810cbabc0bdc7b8bf33ef73591c8c0c83cd4772ba60462f137ea3"
+    },
+    {
+      "id": 61,
+      "file": "generated/letopis-61-woven-bookmark-tassel.png",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG",
+      "mode": "RGBA",
+      "bytes": 876185,
+      "sha256": "82682b6d44e7897e2524b882bc5532cd2ed141cac775e44e3b59b4a089b18ff8",
+      "alpha_ok": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pixels": 1262264,
+      "transparent_fraction": 0.8024340069317832,
+      "fully_opaque_pixels": 182,
+      "near_opaque_pixels": 287794,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 62,
+      "file": "generated/letopis-62-brass-page-clip.png",
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "mode": "RGBA",
+      "bytes": 541956,
+      "sha256": "5aa40630cfb3c359b2a9c2404598f2be65f5f42aa5a23edae60beb877db79ea1",
+      "alpha_ok": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pixels": 1397877,
+      "transparent_fraction": 0.888942942392955,
+      "fully_opaque_pixels": 812,
+      "near_opaque_pixels": 149037,
+      "corner_alpha": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 63,
+      "file": "generated/letopis-63-cotton-archive-gloves.png",
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "mode": "RGBA",
+      "bytes": 2265780,
+      "sha256": "7b72d277775e47caee89ec2aaa324d3fed07b0171890e89b4ebe89e00263e9b8",
+      "alpha_ok": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pixels": 634429,
+      "transparent_fraction": 0.403448359189986,
+      "fully_opaque_pixels": 1234,
+      "near_opaque_pixels": 882022,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 64,
+      "file": "generated/letopis-64-four-paper-photo-corners.png",
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "mode": "RGBA",
+      "bytes": 569510,
+      "sha256": "10cb1261b72dd9ff91941fa2c9d991862800f62dccde5108d77e12ed4e6df578",
+      "alpha_ok": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pixels": 1351451,
+      "transparent_fraction": 0.859419554395631,
+      "fully_opaque_pixels": 1528,
+      "near_opaque_pixels": 201084,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 65,
+      "file": "generated/letopis-65-photo-stack-cotton-string.png",
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "mode": "RGBA",
+      "bytes": 2016619,
+      "sha256": "9d572970cd171257b929d8115a5326a9da1e6d30c1289a34eb403ee6b4a86f30",
+      "alpha_ok": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pixels": 704107,
+      "transparent_fraction": 0.4477582422054847,
+      "fully_opaque_pixels": 769,
+      "near_opaque_pixels": 850446,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 66,
+      "file": "generated/letopis-66-three-paper-divider-tabs.png",
+      "width": 1263,
+      "height": 1246,
+      "format": "PNG",
+      "mode": "RGBA",
+      "bytes": 790726,
+      "sha256": "f2ebfc35fd8767a18b26d54e73bc09265a14e8dfe982c3a586537313599792c3",
+      "alpha_ok": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pixels": 1250627,
+      "transparent_fraction": 0.7947058457213518,
+      "fully_opaque_pixels": 583,
+      "near_opaque_pixels": 304927,
+      "corner_alpha": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 67,
+      "file": "generated/letopis-67-blank-card-tag-string.png",
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "mode": "RGBA",
+      "bytes": 1143332,
+      "sha256": "66489226d32cafdb89f271d9661680840010e267fafeaafe266a2a12d190852d",
+      "alpha_ok": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pixels": 1060423,
+      "transparent_fraction": 0.6743479875562475,
+      "fully_opaque_pixels": 299,
+      "near_opaque_pixels": 483054,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 68,
+      "file": "generated/letopis-68-clip-linen-strip.png",
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "mode": "RGBA",
+      "bytes": 835610,
+      "sha256": "a92c58678704213b28abac1af6397c5941041b92c21b48f745ee0f6168243713",
+      "alpha_ok": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pixels": 1282150,
+      "transparent_fraction": 0.8153494145687548,
+      "fully_opaque_pixels": 221,
+      "near_opaque_pixels": 256622,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 69,
+      "file": "generated/letopis-69-mini-cloth-button-envelope.png",
+      "width": 1263,
+      "height": 1246,
+      "format": "PNG",
+      "mode": "RGBA",
+      "bytes": 2087336,
+      "sha256": "995b2a7d9c0ed384ac350b0cf375c4e58684604acea018e5ff69259f9cba960b",
+      "alpha_ok": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pixels": 832186,
+      "transparent_fraction": 0.5288092124410148,
+      "fully_opaque_pixels": 452,
+      "near_opaque_pixels": 724742,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 70,
+      "file": "generated/letopis-70-archival-cloth-tape-roll.png",
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "mode": "RGBA",
+      "bytes": 1076535,
+      "sha256": "aed019e45145d2e43511690a27fe2b7dfdb246fdeb0ffc872fd3ac85e1714403",
+      "alpha_ok": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pixels": 1097983,
+      "transparent_fraction": 0.6982332771176891,
+      "fully_opaque_pixels": 8,
+      "near_opaque_pixels": 444270,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 71,
+      "file": "generated/letopis-71-open-suitcase-blanket.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2533478,
+      "sha256": "aca56e1ca2948b10cf7e269518ff470e30549d08e3cf867bc4cf6596be247684"
+    },
+    {
+      "id": 72,
+      "file": "generated/letopis-72-compass-on-cloth.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 3189877,
+      "sha256": "9508507efc46cc63eb59799e49ecde3a890f8a5b2dc6d1dd6d8ba38850959c5c"
+    },
+    {
+      "id": 73,
+      "file": "generated/letopis-73-hiking-staff-door.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2588750,
+      "sha256": "3ca5e9288de0d0f00ecd09776f6a133d747738b4d333266841f4ba23686f482b"
+    },
+    {
+      "id": 74,
+      "file": "generated/letopis-74-sea-keepsakes-windowsill.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2402982,
+      "sha256": "dedad2d9339ef7a56f5dbf4912ff31057ad0fe0564fb6b55306813339acfadfe"
+    },
+    {
+      "id": 75,
+      "file": "generated/letopis-75-travel-keepsake-spoon.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 3168226,
+      "sha256": "577e91cd02bf7475bfcb891007ccbe7ea63d107c155e9f5bf0018eff7645e8b8"
+    },
+    {
+      "id": 76,
+      "file": "generated/letopis-76-repaired-canvas-rucksack.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 3439194,
+      "sha256": "5d983c8fc86fd99d4d687dd470a3db42aec40440448ac04787d6b0b8afa9b4c6"
+    },
+    {
+      "id": 77,
+      "file": "generated/letopis-77-rolled-travel-blanket.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2399375,
+      "sha256": "01d7fc43fcc69d2d4088de15319fc28eee871a10d44dc03266494c798e1ce147"
+    },
+    {
+      "id": 78,
+      "file": "generated/letopis-78-camping-kettle-shelf.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2025550,
+      "sha256": "6c8d1c149711af79b8ea498ba5c13766324a48185cf2ed5a149a0bd021bfb157"
+    },
+    {
+      "id": 79,
+      "file": "generated/letopis-79-ticket-in-pocket.png",
+      "width": 1448,
+      "height": 1086,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 3285644,
+      "sha256": "c7665c37a2377797c9f601116581f20d450f4bfa879cebeb09a66bfb6ce208e7"
+    },
+    {
+      "id": 80,
+      "file": "generated/letopis-80-strapped-travel-notebook.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2695924,
+      "sha256": "d6d0265e7f572f2ba647dc844fbd22d121b6d619fefc9fcad4a97593f5f0bd95"
+    },
+    {
+      "id": 81,
+      "file": "generated/letopis-81-father-son-forest-map.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 3209808,
+      "sha256": "82ef307b13155faa5ccb3a8ed355b3ce1d43c36c92b5058b00c2728b21f5bafc"
+    },
+    {
+      "id": 82,
+      "file": "generated/letopis-82-mother-daughter-river-ferry.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 3061502,
+      "sha256": "07946ccd0011e2e96d2dfa10511b565bfba3d53bf98d9c5e525c40968d55602e"
+    },
+    {
+      "id": 83,
+      "file": "generated/letopis-83-sisters-rural-station.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2477940,
+      "sha256": "88f44186f53ed4ab1f860a454ca93dd2a61d2d4a8e601281d7d7c60a82fb6708"
+    },
+    {
+      "id": 84,
+      "file": "generated/letopis-84-women-woodland-boardwalk.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 3103381,
+      "sha256": "4cf18697c178a7d62b72a7fcf8d29b9be87a499a2996ed4501742f7a1f2a5fbc"
+    },
+    {
+      "id": 85,
+      "file": "generated/letopis-85-older-couple-cable-car.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2362122,
+      "sha256": "9197017ab8005507fb2f691a255f9113c9f819df9f3014324f58adf3e2346e72"
+    },
+    {
+      "id": 86,
+      "file": "generated/letopis-86-family-footbridge.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 3332069,
+      "sha256": "b1a91a2ffb70766015794d71574fcc7532d03ea0bd32a38a5e46e28d7012c253"
+    },
+    {
+      "id": 87,
+      "file": "generated/letopis-87-family-canoe.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2392128,
+      "sha256": "116f4d81edc526264377c3ed95936a69f150b3feed76e8882ef146f0abfb2433"
+    },
+    {
+      "id": 88,
+      "file": "generated/letopis-88-grandfather-birdwatching.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2343925,
+      "sha256": "2c9ec648454cbae7d42d4c1faa8284bde036c66d7e528c89af500b20f27740d7"
+    },
+    {
+      "id": 89,
+      "file": "generated/letopis-89-family-waterfall.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2828714,
+      "sha256": "c26273210fa16ef337735f40a7a22a4d0ae15936c50868e9dee25799898be6ba"
+    },
+    {
+      "id": 90,
+      "file": "generated/letopis-90-roadtrip-map-car.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2820320,
+      "sha256": "0f698fe74f754003d0c840a4e0869985b591bd3c6f489e6247529fdb745ac3bb"
+    },
+    {
+      "id": 91,
+      "file": "generated/letopis-91-winding-mountain-road.png",
+      "width": 1672,
+      "height": 941,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2105877,
+      "sha256": "7c830836cf02d8be9a1ae3e23a8059e56c036f50fa7b0ef0ded8bfbe56b45d92"
+    },
+    {
+      "id": 92,
+      "file": "generated/letopis-92-river-dock-mist.png",
+      "width": 1672,
+      "height": 941,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2331164,
+      "sha256": "cd3efa756f1ddd586122282ebe0a200823e0a8fb5099da9d544fb793d655590c"
+    },
+    {
+      "id": 93,
+      "file": "generated/letopis-93-rural-station-dawn.png",
+      "width": 1672,
+      "height": 941,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2462483,
+      "sha256": "d7960b971bf91a1dcbd73a94a349cf1d6017c2715c484744557dc698320ce7b0"
+    },
+    {
+      "id": 94,
+      "file": "generated/letopis-94-car-window-rain.png",
+      "width": 1672,
+      "height": 941,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2573798,
+      "sha256": "905a78c9c8ac90bc99a6366929bcf26f9d640f8fcdcebec1cf13967dde9445a8"
+    },
+    {
+      "id": 95,
+      "file": "generated/letopis-95-rocky-coast-lighthouse.png",
+      "width": 1672,
+      "height": 941,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2308704,
+      "sha256": "b2bc258a63d1b8285494a47d81522c970303b0d68f97f515580b551aa9bc0899"
+    },
+    {
+      "id": 96,
+      "file": "generated/letopis-96-old-train-corridor.png",
+      "width": 1672,
+      "height": 941,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2161346,
+      "sha256": "270a060302030760288011ff3d4b40119e928507b9961dbd8c247b381fc750c0"
+    },
+    {
+      "id": 97,
+      "file": "generated/letopis-97-mountain-hut-evening.png",
+      "width": 1672,
+      "height": 941,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2662729,
+      "sha256": "ff124f2a3e462e0f665f2159daac2c295363f836799d178f5787ccd855b04b1e"
+    },
+    {
+      "id": 98,
+      "file": "generated/letopis-98-railway-bridge-autumn.png",
+      "width": 1672,
+      "height": 941,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 2940790,
+      "sha256": "7a0fba828437e4202e3ea9dba792a6ecad09dcafa11b7c0584cd9c7dbadb3191"
+    },
+    {
+      "id": 99,
+      "file": "generated/letopis-99-winter-chairlift.png",
+      "width": 1672,
+      "height": 941,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 3198922,
+      "sha256": "cdf34c58edd89772b800a6b833797e9df72564e12987236fbbc7af75aff5cfdc"
+    },
+    {
+      "id": 100,
+      "file": "generated/letopis-100-forest-stream-path.png",
+      "width": 1672,
+      "height": 941,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 3662124,
+      "sha256": "ac079daffe1f71dc33de930de14b5bd565ea8a337fa007d1e8e643e31f1f3d20"
+    }
+  ]
+}

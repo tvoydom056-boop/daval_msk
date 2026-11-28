@@ -63,6 +63,7 @@ site/                 Astro: витрины и /p/[slug]
   src/pages/          тонкие страницы-оболочки
   src/lib/            клиентская логика: отправка формы, состояние ошибок
   public/             шрифты, иконки, статичные картинки витрин
+    sprites/          общие спрайты и спрайт-листы витрин
 content/showcase/     letopis.json, povod.json: тексты, цены, примеры
 schema/               общий контракт: zod-схемы заявки, витрины, page.json
 api/                  Fastify: /api/request, /api/unlock, Telegram, лимиты
@@ -70,6 +71,8 @@ scripts/              проверка page.json, QR, PDF, архив, сжат�
 infra/                nginx, systemd, деплой, бэкап (без секретов)
 letopis/, povod/      макеты, эталон вида (только чтение)
 ```
+
+Общие спрайты и спрайт-листы витрин хранятся в `site/public/sprites/`.
 
 У `site/` и `api/` свои `package.json`, корневого нет: так установки зависимостей не конфликтуют. Оба импортируют схемы из `schema/` относительным путём.
 

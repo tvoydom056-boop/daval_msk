@@ -1,0 +1,53 @@
+[
+  {
+    "id": 12,
+    "source": "research/letopis-visuals-2026-11-28/generated/letopis-12-elder-warm-smile.png",
+    "source_sha256": "898fcf823a1fb8b3250efc14dcbc56002ff9da1b4cf2a32f2d270b055f17bfb7",
+    "source_size": [
+      1122,
+      1402
+    ],
+    "file": "anna.webp",
+    "size": [
+      480,
+      600
+    ],
+    "sha256": "99cfc11d8dd4ef1d0b9d2a53552c3fe431f159379e14ffd9248b91eab74d141e",
+    "bytes": 48252,
+    "status": "AI-generated fictional illustration, not a family archive"
+  },
+  {
+    "id": 31,
+    "source": "research/letopis-visuals-2026-11-28/generated/letopis-31-birch-home-morning.png",
+    "source_sha256": "bf8aee978f54e57c6b012aae74edd96e98c0628e7cf43c98b3a3691b03d926fd",
+    "source_size": [
+      1672,
+      941
+    ],
+    "file": "house.webp",
+    "size": [
+      1672,
+      941
+    ],
+    "sha256": "c2808d493eed1cb4ff1f32fc915054a1ceff3fdb242c2a5c250b4a94f05ed470",
+    "bytes": 359700,
+    "status": "AI-generated fictional illustration, not a family archive"
+  },
+  {
+    "id": 117,
+    "source": "research/letopis-life-details-2026-11-28/generated/letopis-117-old-house-key.png",
+    "source_sha256": "2126ca9e82bd3de8040f9d7337de9ed61f1277ca700963bdf3dd581be38b9ec4",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "file": "key.webp",
+    "size": [
+      600,
+      600
+    ],
+    "sha256": "d5ba91fbe44d39604d797f134981e49812ff9f97885e0c3ffbb0a078e1fef5d0",
+    "bytes": 41248,
+    "status": "AI-generated fictional illustration, not a family archive"
+  }
+]

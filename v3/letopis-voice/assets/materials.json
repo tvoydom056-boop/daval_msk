@@ -1,0 +1,21 @@
+{
+  "audio": {
+    "file": "story.mp3",
+    "duration_seconds": 253.626848,
+    "bytes": 2029861,
+    "sha256": "1b27d48bad480ae3da277c7a8f62da4a7dc37a2030f9520ecef689039ffa18ed",
+    "engine": "Windows System.Speech",
+    "voice": "Microsoft Irina Desktop",
+    "rate": -1,
+    "encoding": "MP3 mono 64 kbit/s",
+    "source": "../source/story.txt",
+    "source_sha256": "bf98227cb6a26dea04c4c936bf8f232b88643c6ffb9e7bceaff751c518711889",
+    "disclosure": "Generic synthetic reading of fiction. Not the voice of the illustrated person."
+  },
+  "font": {
+    "file": "literata.ttf",
+    "source": "https://github.com/google/fonts/tree/main/ofl/literata",
+    "license": "SIL OFL 1.1, OFL.txt",
+    "sha256": "b41138c9373112f32abb589cc22e8674b06ed4048b0c513be922bdd26f274440"
+  }
+}

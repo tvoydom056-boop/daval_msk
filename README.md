@@ -46,3 +46,28 @@ python -m http.server 8765
 - Виталий: дизайн, фото и видео в слоты, тексты.
 - Программист: перенос в рабочий проект (Astro или Next.js), формы, шаблоны клиентских страниц из JSON, хостинг.
 - Правила веток, PR и проверок - в [AGENTS.md](AGENTS.md), устройство рабочего сайта - в [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+
+
+## Единая рабочая ветка
+
+`site/unified-work` объединяет собственные наработки. `main` и ветки другого участника сохранены; default branch остаётся `main`. Цены и продуктовые договорённости не менялись.
+
+Запуск: актуальный «Повод» - Vite в `v3/povod` (`npm ci`, `npm run dev`). Для статических страниц запустите HTTP-сервер из корня репозитория; для аудиопилота нужен сервер с Range/206, как указано в его README.
+
+| Материалы | Где открыть |
+| --- | --- |
+| Базовая «Летопись» | [Страница памяти](letopis/index.html) |
+| Прототип «Летописи» v3 | [Инструкция](v3/letopis/README.md) |
+| Тематические PNG, медали и профессии | [Каталог коллекций](assets/collections/README.md), [медали](assets/medals/README.md), [профессии](assets/professions/README.md) |
+| 120 изображений семейных историй | [Визуальный каталог](research/letopis-catalog.html) |
+| Фотографии людей и событий | [Набор](assets/collections/people-events-50/README.md) |
+| Аудиопилот и альбом | [Инструкция](v3/letopis-voice/README.md) |
+| Самостоятельный scrapbook | [Альбом](letopis-scrapbook/index.html) |
+| Пять концептов «Повода» | [Концепты](concepts/povod-calm-five/index.html) |
+| GIF-вариант «Летописи» | [Сохранённый вариант](prototypes/letopis-photo-animation/letopis/index.html) |
+| Прежний редизайн «Повода» | [Вариант](prototypes/povod-redesign/povod/index.html) |
+| Незавершённый вариант из stash | [Исходники](prototypes/povod-growth-stash/SOURCE.md) |
+
+Пробные генерации сохранены в `output/imagegen`, вспомогательные материалы - в `archive/working-notes`. Каталог `site/public/sprites` является заготовкой; реальные PNG находятся в библиотеках выше. Большие ZIP-дубли сохранены отдельно в закрытой резервной копии, их уникальное содержимое включено обычными файлами. Вложенный независимый репозиторий аудита и профили браузеров не публикуются.
+
+Текущий статус и проверки находятся в [HANDOFF](HANDOFF.md), прежние записи - в [истории](HANDOFF_HISTORY.md). Карта переноса - [реестр консолидации](docs/consolidation-manifest.json).

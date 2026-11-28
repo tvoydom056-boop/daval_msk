@@ -1,0 +1,20 @@
+{
+  "task_id": "povod-people-events-50-impl-20261128",
+  "plan": ".codex/jev/povod-people-events-50-20261128.md",
+  "plan_sha256": "8b9a99d5f3cf111d7e96d4c7eb7bcb2eb0d76300ed2b633c8a2e1f3e8c34c97e",
+  "requirements": "approved",
+  "outline": "approved",
+  "details": [
+    "selection",
+    "style",
+    "references",
+    "generation",
+    "pack",
+    "verifier",
+    "visual",
+    "jev"
+  ],
+  "finalize": "approved",
+  "final_probability": 0.8,
+  "tool_result": "plan approved after outline, detail and assembly (0.80), bound to .codex/jev/povod-people-events-50-20261128.md and task 55f7e537958d. This advisory approval applies only to the reviewed artifact bytes."
+}

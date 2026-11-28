@@ -1,0 +1,128 @@
+[
+  {
+    "file": "SOURCE_PATH/Desktop/tmka/output/povod-design-research-2026-11-26/screenshots/01-letter-desktop-full.jpg",
+    "crop": {
+      "x": 16,
+      "y": 16,
+      "width": 1408,
+      "height": 700
+    }
+  },
+  {
+    "file": "SOURCE_PATH/Desktop/tmka/output/povod-design-research-2026-11-26/screenshots/02-album-desktop-full.jpg",
+    "crop": {
+      "x": 16,
+      "y": 16,
+      "width": 1408,
+      "height": 700
+    }
+  },
+  {
+    "file": "SOURCE_PATH/Desktop/tmka/output/povod-design-research-2026-11-26/screenshots/03-magazine-desktop-full.jpg",
+    "crop": {
+      "x": 16,
+      "y": 16,
+      "width": 1408,
+      "height": 700
+    }
+  },
+  {
+    "file": "SOURCE_PATH/Desktop/tmka/output/povod-design-research-2026-11-26/screenshots/04-photobooth-desktop-full.jpg",
+    "crop": {
+      "x": 16,
+      "y": 16,
+      "width": 1408,
+      "height": 700
+    }
+  },
+  {
+    "file": "SOURCE_PATH/Desktop/tmka/output/povod-design-research-2026-11-26/screenshots/05-poster-desktop-full.jpg",
+    "crop": {
+      "x": 16,
+      "y": 16,
+      "width": 1408,
+      "height": 700
+    }
+  },
+  {
+    "file": "SOURCE_PATH/Desktop/tmka/output/povod-design-research-2026-11-26/screenshots/06-route-desktop-full.jpg",
+    "crop": {
+      "x": 16,
+      "y": 16,
+      "width": 1408,
+      "height": 700
+    }
+  },
+  {
+    "file": "SOURCE_PATH/Desktop/tmka/output/povod-design-research-2026-11-26/screenshots/07-museum-desktop-full.jpg",
+    "crop": {
+      "x": 16,
+      "y": 16,
+      "width": 1408,
+      "height": 700
+    }
+  },
+  {
+    "file": "SOURCE_PATH/Desktop/tmka/output/povod-design-research-2026-11-26/screenshots/01-letter-mobile-full.jpg",
+    "crop": {
+      "x": 16,
+      "y": 16,
+      "width": 343,
+      "height": 1000
+    }
+  },
+  {
+    "file": "SOURCE_PATH/Desktop/tmka/output/povod-design-research-2026-11-26/screenshots/02-album-mobile-full.jpg",
+    "crop": {
+      "x": 16,
+      "y": 16,
+      "width": 343,
+      "height": 1000
+    }
+  },
+  {
+    "file": "SOURCE_PATH/Desktop/tmka/output/povod-design-research-2026-11-26/screenshots/03-magazine-mobile-full.jpg",
+    "crop": {
+      "x": 16,
+      "y": 16,
+      "width": 343,
+      "height": 1000
+    }
+  },
+  {
+    "file": "SOURCE_PATH/Desktop/tmka/output/povod-design-research-2026-11-26/screenshots/04-photobooth-mobile-full.jpg",
+    "crop": {
+      "x": 16,
+      "y": 16,
+      "width": 343,
+      "height": 1000
+    }
+  },
+  {
+    "file": "SOURCE_PATH/Desktop/tmka/output/povod-design-research-2026-11-26/screenshots/05-poster-mobile-full.jpg",
+    "crop": {
+      "x": 16,
+      "y": 16,
+      "width": 343,
+      "height": 1000
+    }
+  },
+  {
+    "file": "SOURCE_PATH/Desktop/tmka/output/povod-design-research-2026-11-26/screenshots/06-route-mobile-full.jpg",
+    "crop": {
+      "x": 16,
+      "y": 16,
+      "width": 343,
+      "height": 1000
+    }
+  },
+  {
+    "file": "SOURCE_PATH/Desktop/tmka/output/povod-design-research-2026-11-26/screenshots/07-museum-mobile-full.jpg",
+    "crop": {
+      "x": 16,
+      "y": 16,
+      "width": 343,
+      "height": 1000
+    }
+  }
+]

@@ -1,4 +1,4 @@
-﻿"""Статические проверки и честный расчётный лист, когда Chromium недоступен."""
+"""Статические проверки и честный расчётный лист, когда Chromium недоступен."""
 import json, re, subprocess, urllib.request
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont, ImageOps
@@ -106,4 +106,3 @@ paragraph(54,1910,'Пройдены: синтаксис JS, DOM исходной
 paragraph(54,2035,'Исходные данные сохранены. Длинных и средних тире нет. HTTP 200. Видео, которых ещё нет, остаются на постерах. Лист не подтверждает визуальную приёмку; повторяемый браузерный прогон: python codex/v2/check_povod.py.',1490,23)
 canvas.save(ROOT/'codex/v2/sheet_povod_page.jpg',quality=93)
 print(json.dumps(result,ensure_ascii=False,indent=2))
-

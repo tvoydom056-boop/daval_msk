@@ -1,0 +1,380 @@
+{
+  "owner_ids": "51-70",
+  "count": 20,
+  "synthetic_demo": true,
+  "method": "Встроенный imagegen, отдельный вызов для каждого изображения, точные самостоятельные промпты chunks/51-70.json, прозрачный фон запрошен только для 61-70. Все результаты просмотрены в полном превью; исходные файлы скопированы без изменения.",
+  "checks": "20 PNG читаются через Pillow verify, 20 уникальных SHA256, минимальная сторона 1024 пикселя, пропорции отличаются от запроса менее чем на 0.02. Названия и темы не пересекаются с первой серией. Реальный alpha-канал проверен у всех 10 вырезок.",
+  "alpha_review": "Все 10 вырезок имеют RGBA, alpha 0-255 и более 10% полностью прозрачных пикселей. В 62 и 66 один угловой пиксель имеет alpha 1/255, остальные углы полностью прозрачны. В крупном превью некоторых вырезок видна тонкая светлая или цветная кайма; перед интеграцией следует оценить её на рабочем светлом и тёмном фоне. Нарисованной шахматной подложки нет.",
+  "assets": [
+    {
+      "id": 51,
+      "file": "generated/letopis-51-accordion-standing-album.png",
+      "status": "generated-reviewed",
+      "visual_review": "Стоящий альбом-гармошка с последовательными панелями и вымышленными семейными кадрами; конструкция читается, текста и лишних предметов нет.",
+      "format": "PNG",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "bytes": 2127667,
+      "sha256": "E626890B7C78BAF115EC8E0AE86610E2960C10BA22B44F160DD187C88532FFE1"
+    },
+    {
+      "id": 52,
+      "file": "generated/letopis-52-transparent-pocket-binder.png",
+      "status": "generated-reviewed",
+      "visual_review": "Архивная папка с кольцами и приподнятым прозрачным фотокарманом; отражения и слои физически правдоподобны, подписи отсутствуют.",
+      "format": "PNG",
+      "width": 1448,
+      "height": 1086,
+      "mode": "RGB",
+      "bytes": 2640196,
+      "sha256": "A85E82385C955FF354724E95118011946C7C86D5584CDD22CDE4B8BE23AC0C3A"
+    },
+    {
+      "id": 53,
+      "file": "generated/letopis-53-square-album-sleeve.png",
+      "status": "generated-reviewed",
+      "visual_review": "Квадратный льняной альбом с чистой бумажной обечайкой; материал и геометрия читаются, случайных надписей нет.",
+      "format": "PNG",
+      "width": 1448,
+      "height": 1086,
+      "mode": "RGB",
+      "bytes": 2746072,
+      "sha256": "5731B71DCB34A3415D2A0A31924CAA386C89F65E462D8DF0B8107030F582D58F"
+    },
+    {
+      "id": 54,
+      "file": "generated/letopis-54-gatefold-album-spread.png",
+      "status": "generated-reviewed",
+      "visual_review": "Разворот с раскрытой правой створкой и единым вымышленным пейзажем; сгибы и поля читаются, текста нет.",
+      "format": "PNG",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "bytes": 2800575,
+      "sha256": "C709FF788EAA9988F9B39D21B01A29CF38FC77738C371355D7168B7A3FEB74BA"
+    },
+    {
+      "id": 55,
+      "file": "generated/letopis-55-translucent-album-interleaves.png",
+      "status": "generated-reviewed",
+      "visual_review": "Полупрозрачный защитный лист над небольшими семейными снимками; фактура бумаги, просвечивание и слои убедительны, текста нет.",
+      "format": "PNG",
+      "width": 1448,
+      "height": 1086,
+      "mode": "RGB",
+      "bytes": 2257532,
+      "sha256": "ACC94C330AC5D99D6EC3AEFC136855AE8EE548ABA0661C82BC3D3EB2C68AB540"
+    },
+    {
+      "id": 56,
+      "file": "generated/letopis-56-unmarked-contact-sheet.png",
+      "status": "generated-reviewed",
+      "visual_review": "Один физический контактный лист с двенадцатью вымышленными бытовыми кадрами; номера, метки и надписи отсутствуют, бумага имеет естественный изгиб.",
+      "format": "PNG",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "bytes": 2962730,
+      "sha256": "721D4065E626E6F659D38DA1F2C201E1B59E871628E9C28772725A8E8C61562A"
+    },
+    {
+      "id": 57,
+      "file": "generated/letopis-57-desktop-flip-album.png",
+      "status": "generated-reviewed",
+      "visual_review": "Настольный перекидной альбом на деревянной опоре с двумя кольцами; конструкция связная, фото вымышленное, календарной сетки и подписей нет.",
+      "format": "PNG",
+      "width": 1448,
+      "height": 1086,
+      "mode": "RGB",
+      "bytes": 2313847,
+      "sha256": "C8B6244892A7C4986106D8376313FDB40717BFBF516A0A48E814D7F5EF88F19B"
+    },
+    {
+      "id": 58,
+      "file": "generated/letopis-58-two-volumes-slipcase.png",
+      "status": "generated-reviewed",
+      "visual_review": "Два отдельных льняных тома в общем футляре, один выдвинут; геометрия и фактура целы, надписей нет.",
+      "format": "PNG",
+      "width": 1448,
+      "height": 1086,
+      "mode": "RGB",
+      "bytes": 2886636,
+      "sha256": "DDFBA2D61825C3C856BF63A95CAB9A6DE36F0A4F9DF5795E67A7B72F054C74B7"
+    },
+    {
+      "id": 59,
+      "file": "generated/letopis-59-flap-folder-ties.png",
+      "status": "generated-reviewed",
+      "visual_review": "Архивная папка с тремя клапанами и двумя завязками, внутри небольшие вымышленные фото; конструкция читается, личных данных и текста нет.",
+      "format": "PNG",
+      "width": 1448,
+      "height": 1086,
+      "mode": "RGB",
+      "bytes": 2836321,
+      "sha256": "78164051A7BD27CC3589F5E764B8E55F4D97FF3CED06A303AA754CD1BE6E4A58"
+    },
+    {
+      "id": 60,
+      "file": "generated/letopis-60-keepsake-pocket-album.png",
+      "status": "generated-reviewed",
+      "visual_review": "Открытый альбом с пришитым льняным кармашком и деревянным волчком; швы, поля и вымышленное фото читаются, надписей нет.",
+      "format": "PNG",
+      "width": 1448,
+      "height": 1086,
+      "mode": "RGB",
+      "bytes": 2648434,
+      "sha256": "CA5A68E22D4810CBABC0BDC7B8BF33EF73591C8C0C83CD4772BA60462F137EA3"
+    },
+    {
+      "id": 61,
+      "file": "generated/letopis-61-woven-bookmark-tassel.png",
+      "visual_review": "Один целый тканевый закладной элемент с кисточкой, текстуры и форма правдоподобны; надписей и нарисованной шахматной подложки нет.",
+      "status": "generated-reviewed",
+      "format": "PNG",
+      "width": 1122,
+      "height": 1402,
+      "mode": "RGBA",
+      "bytes": 876185,
+      "alpha_ok": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pixels": 1262264,
+      "transparent_fraction": 0.8024,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "82682B6D44E7897E2524B882BC5532CD2ED141CAC775E44E3B59B4A089B18FF8"
+    },
+    {
+      "id": 62,
+      "file": "generated/letopis-62-brass-page-clip.png",
+      "status": "generated-reviewed",
+      "visual_review": "Одна целая латунная скрепка, физическая форма и металлическая фактура читаются; надписей нет. Тонкая краевая полоса требует проверки на фоне галереи.",
+      "format": "PNG",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 541956,
+      "alpha_ok": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pixels": 1397877,
+      "transparent_fraction": 0.8889,
+      "corner_alpha": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "sha256": "5AA40630CFB3C359B2A9C2404598F2BE65F5F42AA5A23EDAE60BEB877DB79EA1"
+    },
+    {
+      "id": 63,
+      "file": "generated/letopis-63-cotton-archive-gloves.png",
+      "status": "generated-reviewed",
+      "visual_review": "Ровно две пустые хлопковые перчатки, по пять тканевых пальцев; края целы, надписей нет. Тонкая светлая кайма проверяется на фоне галереи.",
+      "format": "PNG",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 2265780,
+      "alpha_ok": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pixels": 634429,
+      "transparent_fraction": 0.4034,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "7B72D277775E47CAEE89EC2AAA324D3FED07B0171890E89B4EBE89E00263E9B8"
+    },
+    {
+      "id": 64,
+      "file": "generated/letopis-64-four-paper-photo-corners.png",
+      "status": "generated-reviewed",
+      "visual_review": "Ровно четыре раздельных бумажных уголка без соединяющей рамки; центр пустой, кромки и фактура читаются, текста нет.",
+      "format": "PNG",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 569510,
+      "alpha_ok": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pixels": 1351451,
+      "transparent_fraction": 0.8594,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "10CB1261B72DD9FF91941FA2C9D991862800F62DCCDE5108D77E12ED4E6DF578"
+    },
+    {
+      "id": 65,
+      "file": "generated/letopis-65-photo-stack-cotton-string.png",
+      "status": "generated-reviewed",
+      "visual_review": "Целая стопка вымышленных пейзажных снимков с хлопковой нитью; человеческих лиц, надписей и логотипов нет, узел правдоподобен.",
+      "format": "PNG",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 2016619,
+      "alpha_ok": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pixels": 704107,
+      "transparent_fraction": 0.4478,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "9D572970CD171257B929D8115A5326A9DA1E6D30C1289A34EB403EE6B4A86F30"
+    },
+    {
+      "id": 66,
+      "file": "generated/letopis-66-three-paper-divider-tabs.png",
+      "status": "generated-reviewed",
+      "visual_review": "Три раздельных бумажных разделителя разных спокойных тонов, вся форма внутри кадра, надписей нет.",
+      "format": "PNG",
+      "width": 1263,
+      "height": 1246,
+      "mode": "RGBA",
+      "bytes": 790726,
+      "alpha_ok": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pixels": 1250627,
+      "transparent_fraction": 0.7947,
+      "corner_alpha": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "sha256": "F2EBFC35FD8767A18B26D54E73BC09265A14E8DFE982C3A586537313599792C3"
+    },
+    {
+      "id": 67,
+      "file": "generated/letopis-67-blank-card-tag-string.png",
+      "status": "generated-reviewed",
+      "visual_review": "Одна пустая бирка с отверстием и целой нитью; поверхность пригодна для отдельной HTML-подписи, текста нет.",
+      "format": "PNG",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1143332,
+      "alpha_ok": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pixels": 1060423,
+      "transparent_fraction": 0.6743,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "66489226D32CAFDB89F271D9661680840010E267FAFEAAFE266A2A12D190852D"
+    },
+    {
+      "id": 68,
+      "file": "generated/letopis-68-clip-linen-strip.png",
+      "status": "generated-reviewed",
+      "visual_review": "Целая скрепка с льняной полоской и естественно растрёпанным краем; форма замкнута, случайных надписей нет.",
+      "format": "PNG",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 835610,
+      "alpha_ok": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pixels": 1282150,
+      "transparent_fraction": 0.8153,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "A92C58678704213B28ABAC1AF6397C5941041B92C21B48F745EE0F6168243713"
+    },
+    {
+      "id": 69,
+      "file": "generated/letopis-69-mini-cloth-button-envelope.png",
+      "status": "generated-reviewed",
+      "visual_review": "Один закрытый полотняный конверт с пуговицей, швы и крепление правдоподобны, края целы, надписей нет.",
+      "format": "PNG",
+      "width": 1263,
+      "height": 1246,
+      "mode": "RGBA",
+      "bytes": 2087336,
+      "alpha_ok": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pixels": 832186,
+      "transparent_fraction": 0.5288,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "995B2A7D9C0ED384AC350B0CF375C4E58684604ACEA018E5FF69259F9CBA960B"
+    },
+    {
+      "id": 70,
+      "file": "generated/letopis-70-archival-cloth-tape-roll.png",
+      "status": "generated-reviewed",
+      "visual_review": "Рулон тканевой ленты с целым свободным краем; полая втулка и фактура правдоподобны, надписей и фоновой подложки нет.",
+      "format": "PNG",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1076535,
+      "alpha_ok": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pixels": 1097983,
+      "transparent_fraction": 0.6982,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "AED019E45145D2E43511690A27FE2B7DFDB246FDEB0FFC872FD3AC85E1714403"
+    }
+  ]
+}

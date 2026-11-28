@@ -1,0 +1,124 @@
+{
+  "tool": "built-in imagegen",
+  "assets": [
+    {
+      "id": 1,
+      "file": "generated/letopis-01-family-album-window.png",
+      "status": "generated",
+      "visual_review": "accepted",
+      "review_note": "Просмотрен оригинал: альбом, естественный свет, рука и семейные снимки без надписей; композиция подходит для обложки."
+    },
+    {
+      "id": 35,
+      "file": "generated/letopis-35-friends-hiking-pause.png",
+      "status": "generated",
+      "visual_review": "accepted",
+      "review_note": "Четверо друзей на привале, лица и руки естественны, эпоха и пленочный характер согласованы."
+    },
+    {
+      "id": 36,
+      "file": "generated/letopis-36-river-family-picnic.png",
+      "status": "generated",
+      "visual_review": "accepted",
+      "review_note": "Просмотрен оригинал: сюжет соответствует заданию, лица и руки без заметных дефектов, нет читаемых надписей."
+    },
+    {
+      "id": 37,
+      "file": "generated/letopis-37-familiar-town-walk.png",
+      "status": "generated",
+      "visual_review": "accepted",
+      "review_note": "Просмотрен оригинал: сюжет соответствует заданию, лица и руки без заметных дефектов, нет читаемых надписей."
+    },
+    {
+      "id": 38,
+      "file": "generated/letopis-38-winter-homeward.png",
+      "status": "generated",
+      "visual_review": "accepted",
+      "review_note": "Оригинал просмотрен: естественные лица и руки, правдоподобная сцена, без лишнего текста."
+    },
+    {
+      "id": 39,
+      "file": "generated/letopis-39-lake-camping-morning.png",
+      "status": "generated",
+      "visual_review": "accepted",
+      "review_note": "Оригинал просмотрен: естественные лица и руки, правдоподобная сцена, без лишнего текста."
+    },
+    {
+      "id": 40,
+      "file": "generated/letopis-40-childhood-courtyard.png",
+      "status": "generated",
+      "visual_review": "accepted",
+      "review_note": "Двор без людей просмотрен отдельно: читаемая композиция, естественный свет, нет надписей."
+    },
+    {
+      "id": 41,
+      "file": "generated/letopis-41-grandmother-birthday.png",
+      "status": "generated",
+      "visual_review": "accepted",
+      "review_note": "Оригинал просмотрен: домашний день рождения, естественные лица и руки, без надписей и чрезмерного декора."
+    },
+    {
+      "id": 42,
+      "file": "generated/letopis-42-girlfriends-birthday.png",
+      "status": "generated",
+      "visual_review": "accepted",
+      "review_note": "Оригинал просмотрен: домашний день рождения, естественные лица и руки, без надписей и чрезмерного декора."
+    },
+    {
+      "id": 43,
+      "file": "generated/letopis-43-parents-wedding-memory.png",
+      "status": "generated",
+      "visual_review": "accepted",
+      "review_note": "Оригинал просмотрен: свадебный архив/годовщина соответствуют теме, без заметных артефактов или надписей."
+    },
+    {
+      "id": 44,
+      "file": "generated/letopis-44-anniversary-at-home.png",
+      "status": "generated",
+      "visual_review": "accepted",
+      "review_note": "Оригинал просмотрен: свадебный архив/годовщина соответствуют теме, без заметных артефактов или надписей."
+    },
+    {
+      "id": 45,
+      "file": "generated/letopis-45-new-year-family-evening.png",
+      "status": "generated",
+      "visual_review": "accepted",
+      "review_note": "Оригинал просмотрен: семейный праздник соответствует эпохе, лица/руки правдоподобны, нет читаемого текста."
+    },
+    {
+      "id": 46,
+      "file": "generated/letopis-46-march-eight-mimosa.png",
+      "status": "generated",
+      "visual_review": "accepted",
+      "review_note": "Оригинал просмотрен: семейный праздник соответствует эпохе, лица/руки правдоподобны, нет читаемого текста."
+    },
+    {
+      "id": 47,
+      "file": "generated/letopis-47-february-fourteen-kitchen.png",
+      "status": "generated",
+      "visual_review": "accepted",
+      "review_note": "Оригинал просмотрен: спокойная романтическая/школьная сцена, руки и лица естественны, предметы соответствуют периоду."
+    },
+    {
+      "id": 48,
+      "file": "generated/letopis-48-first-school-day.png",
+      "status": "generated",
+      "visual_review": "accepted",
+      "review_note": "Оригинал просмотрен: спокойная романтическая/школьная сцена, руки и лица естественны, предметы соответствуют периоду."
+    },
+    {
+      "id": 49,
+      "file": "generated/letopis-49-friends-reunion.png",
+      "status": "generated",
+      "visual_review": "accepted",
+      "review_note": "Оригинал просмотрен: встреча друзей/новоселье, естественные лица и руки, без читаемых надписей."
+    },
+    {
+      "id": 50,
+      "file": "generated/letopis-50-first-home-housewarming.png",
+      "status": "generated",
+      "visual_review": "accepted",
+      "review_note": "Оригинал просмотрен: встреча друзей/новоселье, естественные лица и руки, без читаемых надписей."
+    }
+  ]
+}

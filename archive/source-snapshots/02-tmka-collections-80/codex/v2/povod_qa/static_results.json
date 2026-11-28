@@ -1,0 +1,66 @@
+{
+  "sourceDataPreserved": true,
+  "unicodeDashes": {
+    "build_artifacts.py": 0,
+    "index.html": 0,
+    "styles.css": 0,
+    "app.js": 0,
+    "data.js": 0,
+    "wedding.html": 0,
+    "birthday.html": 0,
+    "anniversary.html": 0,
+    "jubilee.html": 0,
+    "artifact.html": 0
+  },
+  "singleRafLoop": true,
+  "http": {
+    "index": 200,
+    "wedding.html": 200,
+    "birthday.html": 200,
+    "anniversary.html": 200,
+    "jubilee.html": 200,
+    "artifact.html": 200,
+    "assets/v2/video/": 200
+  },
+  "artifactBytes": 37973592,
+  "videosAvailable": [
+    "clouds",
+    "slide-anniversary",
+    "slide-birthday",
+    "slide-jubilee",
+    "slide-wedding",
+    "story-meet",
+    "story-proposal",
+    "story-today",
+    "story-trip"
+  ],
+  "posterFallback": [],
+  "titleWidthsAt375": {
+    "available": 335,
+    "birthday": 329.3,
+    "anniversary": 323.0,
+    "fontPx": 64,
+    "method": "Onest 800 TTF metrics, letter spacing and horizontal scale"
+  },
+  "calculatedWidths": {
+    "1440x900": {
+      "container": 1280,
+      "card": 241.6,
+      "phone": 318,
+      "phoneColumn": 590.0
+    },
+    "375x812": {
+      "container": 335,
+      "card": 161.0,
+      "phone": 292,
+      "phoneColumn": 335
+    }
+  },
+  "browser": {
+    "started": false,
+    "reason": "Chromium spawn EPERM; Python WinError 5; CUA browser host unavailable",
+    "overflow": null,
+    "consoleErrors": null,
+    "screenshots": false
+  }
+}

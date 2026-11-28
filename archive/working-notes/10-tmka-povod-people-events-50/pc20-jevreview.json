@@ -1,0 +1,15 @@
+{
+  "task_id": "povod-new-concepts-20-push-20261128",
+  "plan": ".codex/jev/povod-new-concepts-20-push-20261128.md",
+  "plan_sha256": "018723560c84559a9511ba89af866140f51cb0e77a32f303a97c1358e55f89a9",
+  "requirements": "approved",
+  "outline": "approved",
+  "details": [
+    "concepts",
+    "render",
+    "pack",
+    "git"
+  ],
+  "finalize": "approved",
+  "final_probability": 0.88
+}

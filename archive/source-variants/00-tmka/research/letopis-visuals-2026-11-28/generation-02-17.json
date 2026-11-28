@@ -1,0 +1,130 @@
+[
+  {
+    "id": 2,
+    "file": "generated/letopis-02-stitched-album.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Альбом, шитьё, бумажные уголки и вымышленное семейное фото соответствуют сюжету; читаемых надписей нет.",
+    "sha256": "532A94ACF9D4DCF913EED7C3BB0C4E62864D418A671D4DFA772B295CA74AB993"
+  },
+  {
+    "id": 3,
+    "file": "generated/letopis-03-postcard-box.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Коробка, пейзажные открытки, конверты и лента соответствуют сюжету; надписей и современных предметов не видно.",
+    "sha256": "9BFB279BAC5D5A28130B3D557F479196DD6ECCB1F8680C459FE697105E299790"
+  },
+  {
+    "id": 4,
+    "file": "generated/letopis-04-recipe-table.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Пожилые руки лепят пельмень; анатомия и предметы выглядят правдоподобно, тетрадь без читаемого текста.",
+    "sha256": "4C80CF897FCEFAA4EE0024A9548961C4868020581FBFF40936F185251E04A633"
+  },
+  {
+    "id": 5,
+    "file": "generated/letopis-05-camera-and-negatives.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Небрендированный плёночный фотоаппарат, негативы и снимок поездки; читаемых маркировок и современных устройств нет.",
+    "sha256": "BCD29266AB643C0B491436038242DE632F5EB98C0D067D92875E5CB671779AC5"
+  },
+  {
+    "id": 6,
+    "file": "generated/letopis-06-workshop-tools.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Верстак, рубанок, струбцина и недоделанный табурет; конструкция и материалы выглядят убедительно, текста нет.",
+    "sha256": "142777E0EFBFD18443E24A21DFB922907AD3195028DD6CD40AB93B7BAB4FE6ED"
+  },
+  {
+    "id": 7,
+    "file": "generated/letopis-07-pressed-flowers.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Три засушенных цветка между чистыми страницами; материалы, свет и отсутствие текста соответствуют замыслу.",
+    "sha256": "EDEFDA132B256EA0069BA134393AE7DE37DC932203ED92DA5D971EA354971220"
+  },
+  {
+    "id": 8,
+    "file": "generated/letopis-08-linen-and-sewing.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Вышивка, льняная ткань и деревянные катушки; ножницы и игла выглядят правдоподобно, читаемых надписей нет.",
+    "sha256": "3AFA9DA7E599827190A89337BDF3ED5DA0B4977F51362D2F717DB2D008E8C180"
+  },
+  {
+    "id": 9,
+    "file": "generated/letopis-09-childhood-box.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Коробка с мишкой, деревянной машинкой, варежкой и оборотами снимков; реалистичные материалы, без брендов и надписей.",
+    "sha256": "90E977C11A08D9484DEFA1608189AF8FFFE73CEAE4E6940E5B33A6EDC7243ED1"
+  },
+  {
+    "id": 10,
+    "file": "generated/letopis-10-passing-a-photo.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Четыре естественные руки двух поколений передают семейный снимок; лица за кадром, надписей нет.",
+    "sha256": "20F045F9D54E3BCC4DCB38ACC18B6F6F83B5356A311FA7226F04C2B6D333FFDB"
+  },
+  {
+    "id": 11,
+    "file": "generated/letopis-11-elder-serious.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Серьёзный портрет пожилого мужчины; голова и плечи в кадре, естественный возраст, историческая монохромная фактура.",
+    "sha256": "8912875A401061D26BEA8DA535369355070968417D15C9A24EED33EF534CB64A"
+  },
+  {
+    "id": 12,
+    "file": "generated/letopis-12-elder-warm-smile.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Улыбающаяся пожилая женщина у окна; естественные морщины, серебристые волосы и спокойная домашняя атмосфера.",
+    "sha256": "898FCF823A1FB8B3250EFC14DCBC56002FF9DA1B4CF2A32F2D270B055F17BFB7"
+  },
+  {
+    "id": 13,
+    "file": "generated/letopis-13-father-serious.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Серьёзный мужчина в клетчатой рубашке; правдоподобное лицо и фактура цветной плёнки, современных деталей нет.",
+    "sha256": "E61BE5C07019F5CF50F3F427B60E79F67C9E2A1412CAFCAAD25EFBD204173030"
+  },
+  {
+    "id": 14,
+    "file": "generated/letopis-14-mother-gentle-smile.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Женщина с мягкой улыбкой в повседневной блузке; голова и плечи в кадре, естественные черты и плёночная фактура.",
+    "sha256": "FF0FBF01E849DBA9CC3E6296B5192E4B83A54B728DA12813E3BA19102B5830E1"
+  },
+  {
+    "id": 15,
+    "file": "generated/letopis-15-young-reader.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Молодая женщина с книгой у библиотечного окна; периодическая причёска, спокойное выражение, книга без текста.",
+    "sha256": "1F512F9174005C9876D1C138E145724C479DC352C67985EAECCECDF6949C4C74"
+  },
+  {
+    "id": 16,
+    "file": "generated/letopis-16-young-laughter.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Молодая женщина смеётся на веранде; естественная кожа, правдоподобные зубы и волосы, спокойный свет.",
+    "sha256": "E52A86A1895BE77C63139EEE2D969C5C6B02FCE86F4BB10CDA306BAE52D8AD06"
+  },
+  {
+    "id": 17,
+    "file": "generated/letopis-17-gardener-smile.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "note": "Мужчина в саду с небольшой улыбкой; возрастная фактура кожи, яблони и простой забор, надписей и брендов нет.",
+    "sha256": "48642D230FE091742C0E82B8CA40858B6B3C199D8C0AA3C2BBBEF2CA8428A5E7"
+  }
+]

@@ -1,0 +1,225 @@
+Повод: 5 дизайн-концепций, 26.11.2026
+
+Улучшенный промт
+Роль: арт-директор и маркетолог. Создай пять разных дизайн-концепций сайта «Повод» на основе идеи проекта: команда собирает сайты-подарки из фотографий, слов и голоса клиента. Для каждой покажи компьютерную и мобильную версии. Различай композицию, подачу истории и визуальный характер. Сохрани понятное предложение, шрифт Onest и заметный переход к примеру. Caveat используй только в письме. Не добавляй вымышленные отзывы, неподтверждённые цены и функции конструктора. Результат: пять отдельных PNG и краткое сравнение направлений.
+
+Результат
+01 - Журнал: редакционная сетка, молочный фон, терракота, крупные фотографии.
+02 - Личное кино: фотография на весь экран, короткая подача, главы истории.
+03 - Атлас воспоминаний: связанные эпизоды, на телефоне вертикальная последовательность.
+04 - Письмо: личное послание внутри цифровой истории, мягкая палитра, рукописный текст только в письме.
+05 - Смелый плакат: кобальт и светло-жёлтый, крупный шрифт, поводы как выразительный указатель.
+
+Рабочая рекомендация
+Для основной витрины начать с 01: ясное предложение и универсальная подача. В качестве эмоционального раздела использовать письмо из 04. Для более энергичного образа марки отдельно рассмотреть 05.
+Это дизайн-гипотезы. Сравнение не подтверждено данными о конверсии.
+
+Контракт
+Клиент присылает материалы, команда собирает готовый сайт-подарок. Доступ по ссылке.
+Пять картинок показывают только Повод; Летопись не входит в этот запрос.
+Люди и истории демонстрационные, фотографии сгенерированы.
+Существующие макеты и исходный код сайта не изменялись. Сохранены только локальные изображения и этот файл с промтами.
+Использован встроенный image_gen, не CLI/API.
+Рабочая ветка остаётся design/mockups-v2. Файлы находятся в существующей области локальных сгенерированных материалов codex/v2 и исключены текущим .gitignore.
+
+Основания в проекте
+PLAN.md (продукт и тестовый статус цен); povod/data.js (поводы и текущая структура материалов); README.md, HANDOFF.md, docs/ARCHITECTURE.md (состояние и контракт).
+
+Внешние ориентиры по подаче личных историй, просмотрены 26.11.2026
+Storyworth: https://welcome.storyworth.com/
+Remento: https://www.remento.co/
+Tribute: https://www.tribute.co/
+Вывод для нашей задачи: показывать содержимое истории, сразу объяснять формат подарка и короткий путь к примеру. Это интерпретация ведущего дизайнера, не данные об эффективности.
+
+Файлы
+codex/v2/concept-20261126-01-editorial.png
+codex/v2/concept-20261126-02-cinema.png
+codex/v2/concept-20261126-03-atlas.png
+codex/v2/concept-20261126-04-letter.png
+codex/v2/concept-20261126-05-poster.png
+
+Проверка
+Все пять изображений визуально просмотрены в выводе генератора: русский текст, основные кнопки, характер каждого направления, композиция desktop/mobile.
+Это растровые концепции, поэтому работа ссылок, настоящий адаптив, контраст CSS и анимации здесь не тестировались.
+
+Полные промты генерации
+
+01-editorial - Журнал
+
+Use case: ui-mockup.
+Asset type: high fidelity website design concept for the Russian brand «Повод» (personal digital gift websites made by a team).
+Produce one exceptionally polished, realistic, buildable web design presentation image, landscape 3:2, high resolution and pin-sharp typography. It must show ONE large desktop first-screen website screenshot (approximately 1440 by 1000 CSS pixels) taking 76% of the board width, and ONE matching narrow mobile screenshot (approximately 390 by 844 CSS pixels) beside it, taking 22%. They are flat frontal UI rectangles aligned at top, with a narrow neutral board gutter, subtle edges only. The UI is the subject and fills the board. No perspective devices, no floating laptops, no phones with hardware bezels, no art-director notes, no color swatches, no numbered labels on the board, no external annotations.
+Business truth: a customer sends photographs, personal words and recorded voice; the team assembles a finished gift website to give by link. Main occasions: wedding, birthday, anniversary, milestone birthday. This is a bespoke done-for-you service. The landing page must make that understandable immediately and show an example of the final gift-story experience.
+Shared content to render in crisp correct Russian, verbatim:
+brand «повод»;
+small category line «Сайты-подарки под ключ»;
+main large headline «Сайт-подарок» then «про вас.»;
+supporting sentence «Ваши фото, слова и голос. Мы соберём их в историю.»;
+primary button «Посмотреть пример»;
+secondary text action «Обсудить подарок»;
+desktop nav «Поводы», «Примеры», «Как это работает»;
+occasion choices «Свадьба», «День рождения», «Годовщина», «Юбилей»;
+a discreet label «Демо-история» inside the example preview;
+small helper «Подарок по ссылке».
+Mobile must be an actually recomposed responsive layout of the same direction: legible headline, 44px-scale clear button, no tiny copied desktop, no horizontal rail overflowing, no overlapping text, no offscreen primary CTA.
+Typography: Onest throughout the brand and interface, beautifully optically spaced; if unavailable visually match its humanist geometric Cyrillic forms. Caveat handwriting is allowed ONLY within a personal letter. No other decorative fonts.
+Photography: believable photorealistic candid human photographs, natural skin texture, warm spontaneous body language, fictional people only; clearly a demo story, never alleged real customers. Avoid AI-plastic faces and malformed anatomy.
+All compositions must have a deliberate grid, equal outside margins, very few strong elements, beautiful whitespace and hierarchy, no sea of rounded cards. Buttons have small rectangular corner radii and plain text, no arrow icons, no circular badges. Do not display prices, reviews, stars, awards, customer counts, logos of other companies, countdowns, discounts, claims of permanent hosting, login, signup, editor or upload controls. No purple/lavender, no neon, no 3D blobs, no glassmorphism, no generic SaaS dashboard. No lorem ipsum. Use only short specified text plus the few direction-specific words permitted below. Make every required element comfortably readable and every photo render fully.
+
+ART DIRECTION 1: EDITORIAL PERSONAL MAGAZINE.
+Palette flat warm ivory #F8F5ED, nearly-black ink #292A24, restrained brick red #BD4F3D. An elegant photo-book / independent magazine composition, contemporary and inviting rather than a wedding template. Desktop has a generous clean masthead, the enormous two-line Onest headline on the left in dark ink, subcopy and brick-red button on a clear text grid, and a dominant portrait-format gift-story photograph on the right of a happy fictional couple at an outdoor summer picnic. Two smaller rectangular companion photographs occupy aligned editorial cells near the main picture, with different scale and careful margins, not tilted or scattered. In the large photo-based digital story preview, integrate the modest title «То самое лето» and the label «Демо-история». Bottom of this first hero has a single thin-rule occasion text selector, not cards. The photographs occupy close to half of the visible desktop UI, cropped with intentional human framing. Product storytelling feels like a beautifully edited personal journal. Mobile stacks the masthead, large headline, short copy, full-width CTA, then one strong photo and a compact two-by-two occasion choice grid. Airy warm flat grounds, sharp rectangular photographs, no paper grain backgrounds. Make the composition visually sophisticated, editorial, tender and immediately buildable in HTML/CSS.
+
+02-cinema - Личное кино
+
+Use case: ui-mockup.
+Asset type: high fidelity website design concept for the Russian brand «Повод» (personal digital gift websites made by a team).
+Produce one exceptionally polished, realistic, buildable web design presentation image, landscape 3:2, high resolution and pin-sharp typography. It must show ONE large desktop first-screen website screenshot (approximately 1440 by 1000 CSS pixels) taking 76% of the board width, and ONE matching narrow mobile screenshot (approximately 390 by 844 CSS pixels) beside it, taking 22%. They are flat frontal UI rectangles aligned at top, with a narrow neutral board gutter, subtle edges only. The UI is the subject and fills the board. No perspective devices, no floating laptops, no phones with hardware bezels, no art-director notes, no color swatches, no numbered labels on the board, no external annotations.
+Business truth: a customer sends photographs, personal words and recorded voice; the team assembles a finished gift website to give by link. Main occasions: wedding, birthday, anniversary, milestone birthday. This is a bespoke done-for-you service. The landing page must make that understandable immediately and show an example of the final gift-story experience.
+Shared content to render in crisp correct Russian, verbatim:
+brand «повод»;
+small category line «Сайты-подарки под ключ»;
+main large headline «Сайт-подарок» then «про вас.»;
+supporting sentence «Ваши фото, слова и голос. Мы соберём их в историю.»;
+primary button «Посмотреть пример»;
+secondary text action «Обсудить подарок»;
+desktop nav «Поводы», «Примеры», «Как это работает»;
+occasion choices «Свадьба», «День рождения», «Годовщина», «Юбилей»;
+a discreet label «Демо-история» inside the example preview;
+small helper «Подарок по ссылке».
+Mobile must be an actually recomposed responsive layout of the same direction: legible headline, 44px-scale clear button, no tiny copied desktop, no horizontal rail overflowing, no overlapping text, no offscreen primary CTA.
+Typography: Onest throughout the brand and interface, beautifully optically spaced; if unavailable visually match its humanist geometric Cyrillic forms. Caveat handwriting is allowed ONLY within a personal letter. No other decorative fonts.
+Photography: believable photorealistic candid human photographs, natural skin texture, warm spontaneous body language, fictional people only; clearly a demo story, never alleged real customers. Avoid AI-plastic faces and malformed anatomy.
+All compositions must have a deliberate grid, equal outside margins, very few strong elements, beautiful whitespace and hierarchy, no sea of rounded cards. Buttons have small rectangular corner radii and plain text, no arrow icons, no circular badges. Do not display prices, reviews, stars, awards, customer counts, logos of other companies, countdowns, discounts, claims of permanent hosting, login, signup, editor or upload controls. No purple/lavender, no neon, no 3D blobs, no glassmorphism, no generic SaaS dashboard. No lorem ipsum. Use only short specified text plus the few direction-specific words permitted below. Make every required element comfortably readable and every photo render fully.
+
+ART DIRECTION 2: IMMERSIVE PERSONAL CINEMA.
+A completely different composition from an editorial split layout: one beautifully art-directed edge-to-edge photographic hero fills the whole desktop page under a minimal masthead. Show a wide cinematic candid photograph of a happy fictional couple beside a lake on a summer road trip, golden-hour natural light, faces clearly recognisable, broad natural landscape and generous negative space. Strong photo direction, not stock wedding poses. Dark green foliage and a restrained flat dark photographic scrim behind the left text provide excellent contrast; the main image itself remains sunlit and warm. Palette is the scene's golden straw and forest tones plus creamy-white type and a warm offwhite rectangular CTA. Oversized Onest headline is in the lower left, with very short readable subcopy and primary button immediately below. A small horizontally aligned static row of three film-scene stills at the bottom-right shows how an intimate digital story unfolds; use minimal sequence labels «Знакомство», «Наше лето», «Вместе», and label the example «Демо-история». No circular play button, no video player chrome, no pause symbols, no carousel controls. This is a landing page demonstrating story chapters, not a streaming platform. Occasion navigation is a single quiet text row anchored at the bottom left. Mobile uses the same full-screen photographic direction, a carefully recropped image with the two people in the upper part and the text and prominent cream button on an uncluttered forest-toned lower part; choose two rows for occasion labels. The photo takes the whole frame but the category and conversion path remain crystal clear. Beautiful bright cinematic emotion, minimal UI, premium photographic story, not sombre and not a tech dark-mode page.
+
+03-atlas - Атлас воспоминаний
+
+Use case: ui-mockup.
+Asset type: high fidelity website design concept for the Russian brand «Повод» (personal digital gift websites made by a team).
+Produce one exceptionally polished, realistic, buildable web design presentation image, landscape 3:2, high resolution and pin-sharp typography. It must show ONE large desktop first-screen website screenshot (approximately 1440 by 1000 CSS pixels) taking 76% of the board width, and ONE matching narrow mobile screenshot (approximately 390 by 844 CSS pixels) beside it, taking 22%. They are flat frontal UI rectangles aligned at top, with a narrow neutral board gutter, subtle edges only. The UI is the subject and fills the board. No perspective devices, no floating laptops, no phones with hardware bezels, no art-director notes, no color swatches, no numbered labels on the board, no external annotations.
+Business truth: a customer sends photographs, personal words and recorded voice; the team assembles a finished gift website to give by link. Main occasions: wedding, birthday, anniversary, milestone birthday. This is a bespoke done-for-you service. The landing page must make that understandable immediately and show an example of the final gift-story experience.
+Shared content to render in crisp correct Russian, verbatim:
+brand «повод»;
+small category line «Сайты-подарки под ключ»;
+main large headline «Сайт-подарок» then «про вас.»;
+supporting sentence «Ваши фото, слова и голос. Мы соберём их в историю.»;
+primary button «Посмотреть пример»;
+secondary text action «Обсудить подарок»;
+desktop nav «Поводы», «Примеры», «Как это работает»;
+occasion choices «Свадьба», «День рождения», «Годовщина», «Юбилей»;
+a discreet label «Демо-история» inside the example preview;
+small helper «Подарок по ссылке».
+Mobile must be an actually recomposed responsive layout of the same direction: legible headline, 44px-scale clear button, no tiny copied desktop, no horizontal rail overflowing, no overlapping text, no offscreen primary CTA.
+Typography: Onest throughout the brand and interface, beautifully optically spaced; if unavailable visually match its humanist geometric Cyrillic forms. Caveat handwriting is allowed ONLY within a personal letter. No other decorative fonts.
+Photography: believable photorealistic candid human photographs, natural skin texture, warm spontaneous body language, fictional people only; clearly a demo story, never alleged real customers. Avoid AI-plastic faces and malformed anatomy.
+All compositions must have a deliberate grid, equal outside margins, very few strong elements, beautiful whitespace and hierarchy, no sea of rounded cards. Buttons have small rectangular corner radii and plain text, no arrow icons, no circular badges. Do not display prices, reviews, stars, awards, customer counts, logos of other companies, countdowns, discounts, claims of permanent hosting, login, signup, editor or upload controls. No purple/lavender, no neon, no 3D blobs, no glassmorphism, no generic SaaS dashboard. No lorem ipsum. Use only short specified text plus the few direction-specific words permitted below. Make every required element comfortably readable and every photo render fully.
+
+ART DIRECTION 3: ATLAS OF SHARED MEMORIES.
+A distinct modern narrative-led layout on flat very pale celadon #EEF3ED, dark pine ink #253E36, lively vermilion accent #D45436. Header on a thin clean grid; generous centered enormous headline at top with short subcopy and the vermilion CTA directly below. The main visual is not a split hero and not a fullscreen photograph: an expansive, elegantly composed story route occupying the whole lower half, formed by three substantial rectangular photo chapters on a shared horizontal baseline, connected by a delicate simple angular line underneath, like a small atlas of personal moments. Tiny SQUARE connection points, never circular badges. Different meaningful photographs of the same fictional couple: their early café meeting, a mountain trip, their anniversary dinner. Use only the additional short chapter words «Знакомство», «Первая поездка», «Наш день» integrated into each chapter, not captions below pictures. Label the whole example «Демо-история». No maps of actual locations, no fabricated dates or metrics, no network complexity. This must read as an interactive chronological gift story, not a travel booking platform, project planner, dashboard or family tree. Occasion labels appear as a quiet single text selector above the route. Mobile responsively turns the route into a clean VERTICAL sequence of photo chapters with the hairline down one side, but the full headline, explanatory copy and primary CTA appear before it and remain large and usable. Calm architectural balance, extremely precise grid, a lot of large visual storytelling, clear spatial rhythm.
+
+04-letter - Письмо
+
+Use case: ui-mockup.
+Asset type: high fidelity website design concept for the Russian brand «Повод» (personal digital gift websites made by a team).
+Produce one exceptionally polished, realistic, buildable web design presentation image, landscape 3:2, high resolution and pin-sharp typography. It must show ONE large desktop first-screen website screenshot (approximately 1440 by 1000 CSS pixels) taking 76% of the board width, and ONE matching narrow mobile screenshot (approximately 390 by 844 CSS pixels) beside it, taking 22%. They are flat frontal UI rectangles aligned at top, with a narrow neutral board gutter, subtle edges only. The UI is the subject and fills the board. No perspective devices, no floating laptops, no phones with hardware bezels, no art-director notes, no color swatches, no numbered labels on the board, no external annotations.
+Business truth: a customer sends photographs, personal words and recorded voice; the team assembles a finished gift website to give by link. Main occasions: wedding, birthday, anniversary, milestone birthday. This is a bespoke done-for-you service. The landing page must make that understandable immediately and show an example of the final gift-story experience.
+Shared content to render in crisp correct Russian, verbatim:
+brand «повод»;
+small category line «Сайты-подарки под ключ»;
+main large headline «Сайт-подарок» then «про вас.»;
+supporting sentence «Ваши фото, слова и голос. Мы соберём их в историю.»;
+primary button «Посмотреть пример»;
+secondary text action «Обсудить подарок»;
+desktop nav «Поводы», «Примеры», «Как это работает»;
+occasion choices «Свадьба», «День рождения», «Годовщина», «Юбилей»;
+a discreet label «Демо-история» inside the example preview;
+small helper «Подарок по ссылке».
+Mobile must be an actually recomposed responsive layout of the same direction: legible headline, 44px-scale clear button, no tiny copied desktop, no horizontal rail overflowing, no overlapping text, no offscreen primary CTA.
+Typography: Onest throughout the brand and interface, beautifully optically spaced; if unavailable visually match its humanist geometric Cyrillic forms. Caveat handwriting is allowed ONLY within a personal letter. No other decorative fonts.
+Photography: believable photorealistic candid human photographs, natural skin texture, warm spontaneous body language, fictional people only; clearly a demo story, never alleged real customers. Avoid AI-plastic faces and malformed anatomy.
+All compositions must have a deliberate grid, equal outside margins, very few strong elements, beautiful whitespace and hierarchy, no sea of rounded cards. Buttons have small rectangular corner radii and plain text, no arrow icons, no circular badges. Do not display prices, reviews, stars, awards, customer counts, logos of other companies, countdowns, discounts, claims of permanent hosting, login, signup, editor or upload controls. No purple/lavender, no neon, no 3D blobs, no glassmorphism, no generic SaaS dashboard. No lorem ipsum. Use only short specified text plus the few direction-specific words permitted below. Make every required element comfortably readable and every photo render fully.
+
+ART DIRECTION 4: A PERSONAL DIGITAL LETTER.
+A tender and tactile but clean contemporary direction. Palette flat pale butter #FBF3DE, warm dark cocoa #3C302A, muted deep red #8B3F44, clean offwhite letter surface. Onest interface and headline; Caveat ONLY for the content of the letter. The desktop first screen is deliberately composed as a digital letter being opened. The headline/subcopy/primary red button sit in a narrow left column with generous quiet space. The large right two-thirds are an elegant finished gift-site preview, clearly a DIGITAL WEBSITE panel with a fine top bar and the small text tabs «История», «Письмо», «Голос». In that preview, an open letter page reads in beautiful legible Caveat handwriting «Помнишь наше лето?» and smaller «Я бы повторил его с тобой.» with two warmly lit fictional couple snapshots arranged in a perfectly aligned photo strip beside the note. Include the label «Демо-история» discreetly on that preview. No physical gift box, no shipping props, no packaging product shot: the surface and browser UI must communicate a gift given by LINK, not stationery for sale. Avoid arbitrary decorative hearts, stickers, torn-paper outlines, tilted photographs, overflowing collages and random shadows. The letter, the photos and the plain red primary button carry the emotion. Occasion choices are clean text in a neat short row under the left-column content. Mobile is a deliberate letter-oriented layout: masthead, headline, supporting sentence, full-width red CTA, then the digital letter preview with the handwritten greeting large enough to read. Warm, intimate and personal, not childish or ornate.
+
+05-poster - Смелый плакат
+
+Use case: ui-mockup.
+Asset type: high fidelity website design concept for the Russian brand «Повод» (personal digital gift websites made by a team).
+Produce one exceptionally polished, realistic, buildable web design presentation image, landscape 3:2, high resolution and pin-sharp typography. It must show ONE large desktop first-screen website screenshot (approximately 1440 by 1000 CSS pixels) taking 76% of the board width, and ONE matching narrow mobile screenshot (approximately 390 by 844 CSS pixels) beside it, taking 22%. They are flat frontal UI rectangles aligned at top, with a narrow neutral board gutter, subtle edges only. The UI is the subject and fills the board. No perspective devices, no floating laptops, no phones with hardware bezels, no art-director notes, no color swatches, no numbered labels on the board, no external annotations.
+Business truth: a customer sends photographs, personal words and recorded voice; the team assembles a finished gift website to give by link. Main occasions: wedding, birthday, anniversary, milestone birthday. This is a bespoke done-for-you service. The landing page must make that understandable immediately and show an example of the final gift-story experience.
+Shared content to render in crisp correct Russian, verbatim:
+brand «повод»;
+small category line «Сайты-подарки под ключ»;
+main large headline «Сайт-подарок» then «про вас.»;
+supporting sentence «Ваши фото, слова и голос. Мы соберём их в историю.»;
+primary button «Посмотреть пример»;
+secondary text action «Обсудить подарок»;
+desktop nav «Поводы», «Примеры», «Как это работает»;
+occasion choices «Свадьба», «День рождения», «Годовщина», «Юбилей»;
+a discreet label «Демо-история» inside the example preview;
+small helper «Подарок по ссылке».
+Mobile must be an actually recomposed responsive layout of the same direction: legible headline, 44px-scale clear button, no tiny copied desktop, no horizontal rail overflowing, no overlapping text, no offscreen primary CTA.
+Typography: Onest throughout the brand and interface, beautifully optically spaced; if unavailable visually match its humanist geometric Cyrillic forms. Caveat handwriting is allowed ONLY within a personal letter. No other decorative fonts.
+Photography: believable photorealistic candid human photographs, natural skin texture, warm spontaneous body language, fictional people only; clearly a demo story, never alleged real customers. Avoid AI-plastic faces and malformed anatomy.
+All compositions must have a deliberate grid, equal outside margins, very few strong elements, beautiful whitespace and hierarchy, no sea of rounded cards. Buttons have small rectangular corner radii and plain text, no arrow icons, no circular badges. Do not display prices, reviews, stars, awards, customer counts, logos of other companies, countdowns, discounts, claims of permanent hosting, login, signup, editor or upload controls. No purple/lavender, no neon, no 3D blobs, no glassmorphism, no generic SaaS dashboard. No lorem ipsum. Use only short specified text plus the few direction-specific words permitted below. Make every required element comfortably readable and every photo render fully.
+
+ART DIRECTION 5: BOLD COLOUR-BLOCKED CULTURAL POSTER.
+A visibly distinct, confident, contemporary mass-market gift brand: electric cobalt #174BE7, warm light yellow #F6EBA0, crisp white. No violet. Oversized very bold Onest, monumental scale contrast, strong flat rectangular colour fields, disciplined Swiss-poster grid, generous margins. Desktop top bar is cobalt with the brand and nav in warm white. Under it, the pale yellow hero has the main headline at huge scale across almost the whole width, with a strong asymmetric but aligned relationship between typography and a wide candid flash-style photograph of four happy fictional friends celebrating a birthday at a kitchen table. The photograph sits along the lower hero band, full colour, energetic but tasteful, with «Демо-история» integrated discreetly. A cobalt rectangular «Посмотреть пример» button sits next to the clear short explanation in a white or yellow text area. Occasion names form a bold compact editorial index in an aligned right column rather than rounded cards. The main image must show human connection rather than balloons, present boxes or confetti stock graphics; no fake birthday numbers or customer claims. Keep exact website offer and gift-by-link helper visible. This is professional lively design with geometry and photographs, no mascots, no cartoon illustration, no 3D or gimmicks. Mobile uses the cobalt masthead, generous yellow headline region, a fully visible cobalt primary button, then the same birthday photograph edge-to-edge within even gutters and a tidy two-row occasion grid. Minimal yet striking, strong recognisable brand, joyful and practical to develop.
+
+
+File integrity verification: 5 valid PNG files, each 1536x1024; SHA-256 matches generated originals.
+[
+  {
+    "file": "concept-20261126-01-editorial.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGB",
+    "sha256": "d3e078fdaf74b6651ffbf40ac217836ddd81a9454d6b6f740e3010a29589a52a",
+    "bytes": 1908092
+  },
+  {
+    "file": "concept-20261126-02-cinema.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGB",
+    "sha256": "007b7e7f982dc5426dd8bf3d0a2ff23c7c9cbc8ec8802d52448a14f0aa73a9bd",
+    "bytes": 2173106
+  },
+  {
+    "file": "concept-20261126-03-atlas.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGB",
+    "sha256": "aa2eba4aeb08b4f949700f7b6a34bebc47d68a461224cd75999c61fc20fe998f",
+    "bytes": 1873336
+  },
+  {
+    "file": "concept-20261126-04-letter.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGB",
+    "sha256": "4a89e44f81dee3c625418393e2a591c30049d3908d5dc66bc70fb40eacbdbbd1",
+    "bytes": 1811049
+  },
+  {
+    "file": "concept-20261126-05-poster.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGB",
+    "sha256": "0747d028d63e26fb340b3fec0cd34001f7c0542ef1f60ef957dde9c58c3676b3",
+    "bytes": 2053321
+  }
+]

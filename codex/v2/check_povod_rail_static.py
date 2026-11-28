@@ -1,4 +1,4 @@
-﻿import json, math, re, base64, hashlib, urllib.request
+import json, math, re, base64, hashlib, urllib.request
 from html.parser import HTMLParser
 from pathlib import Path
 root=Path.cwd()
@@ -61,4 +61,3 @@ result={'browser':'Chromium spawn EPERM; no screenshots; overflow and console no
  'sourceFiles':['povod/styles.css','povod/app.js'],'artifactRebuilt':True}
 (root/'codex/v2/povod_hero_rail_check.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
 print(json.dumps(result,ensure_ascii=True,indent=2))
-

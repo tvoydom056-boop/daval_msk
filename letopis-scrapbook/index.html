@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="ru" data-type="service" data-radius="sharp" data-buttons="solid" data-motion>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Летопись - семейный альбом Соколовых</title>
+  <meta name="description" content="Фотографии, письма и воспоминания пяти поколений вымышленной семьи Соколовых. Демонстрационный семейный альбом.">
+  <meta name="page-type" content="service">
+  <meta name="site-kind" content="other">
+  <meta name="theme-color" content="#eee9df">
+  <meta property="og:title" content="Летопись - семейный альбом Соколовых">
+  <meta property="og:description" content="Фотографии, письма и истории, которые остались с нами.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/family-1985.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/literata-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="assets/motion/motion.css">
+  <link rel="stylesheet" href="assets/moments/photo-chapters/moment.css">
+  <script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
+</head>
+<body>
+  <!-- The supplied scrapbook reference sets the paper palette, photographic captions and static collage angles. -->
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a class="skip-link" href="#top">К содержимому</a>
+      <a class="wordmark" href="#top" aria-label="Летопись, в начало альбома">летопись<span class="wordmark__dot">.</span></a>
+      <nav class="nav__links" id="navigation" aria-label="Разделы альбома">
+        <a href="#stories">Истории</a>
+        <a href="#album">Фотографии</a>
+        <a href="#letters">Письма</a>
+        <a href="#family">Родные</a>
+      </nav>
+      <button class="nav__add text-button" data-add-memory>Дополнить альбом</button>
+      <button class="nav__toggle text-button" aria-expanded="false" aria-controls="navigation">Меню</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section" data-enter aria-labelledby="hero-title">
+      <div class="wrap hero__layout">
+        <div class="hero-text">
+          <p class="eyebrow">Сохраняем то, что любим</p>
+          <h1 id="hero-title">Семейный<br>альбом<br><em>Соколовых</em></h1>
+          <p class="hero__lead">Фотографии, письма и истории пяти поколений. Собрали то, что помним, чтобы однажды передать дальше.</p>
+          <a class="btn btn--primary" href="#album">Открыть альбом</a>
+          <p class="hero__meta">1909 - наши дни <span>Собрано семьёй</span></p>
+        </div>
+        <div class="hero__collage" data-enter-media aria-label="Коллаж из семейных фотографий и письма">
+          <div class="red-paper" aria-hidden="true"><span>С любовью,<br>из прошлого.</span></div>
+          <img class="hero__letter" src="assets/img/letter.png" alt="" width="900" height="490" aria-hidden="true">
+          <figure class="photo hero__wedding">
+            <button class="photo__image m-zoom" data-photo="wedding" aria-label="Открыть свадебную фотографию">
+              <img src="assets/img/wedding-1956.jpg" alt="Свадебная фотография Николая и Анны у деревянного дома" width="1600" height="1200" fetchpriority="high" data-slot="Свадебная фотография Николая и Анны">
+            </button>
+            <figcaption>Николай и Анна. Начало нашей истории.</figcaption>
+          </figure>
+          <figure class="photo hero__portrait">
+            <button class="photo__image m-zoom" data-photo="nikolay" aria-label="Открыть портрет Николая">
+              <img src="assets/img/nikolay-bw.jpg" alt="Чёрно-белый портрет Николая Петровича Соколова" width="1200" height="1600" data-slot="Портрет Николая">
+            </button>
+            <figcaption>Наш Николай Петрович</figcaption>
+          </figure>
+          <div class="archive-stamp" aria-hidden="true">Семейный<br><strong>архив</strong><span>Хранить бережно</span></div>
+          <p class="collage-note">Помнишь, как это было?</p>
+        </div>
+        <div class="hero__foot"><span>Личная история в фотографиях и письмах</span><span>Листайте, как семейный альбом</span></div>
+      </div>
+    </section>
+
+    <section class="section stories" id="stories" data-moment="photo-chapters" aria-labelledby="stories-title">
+      <div class="wrap mo-ph">
+        <div class="mo-ph__head">
+          <p class="eyebrow">За каждым снимком - целая жизнь</p>
+          <h2 id="stories-title">Истории, которые<br>мы помним.</h2>
+        </div>
+        <ol class="mo-ph__list">
+          <li class="mo-ph__ch">
+            <figure class="mo-ph__pic"><img src="assets/img/wedding-1956.jpg" alt="Николай и Анна на семейной свадебной фотографии" width="1600" height="1200" loading="lazy" data-slot="История знакомства Николая и Анны"></figure>
+            <h3>Николай и Анна</h3>
+            <p>Он строил мосты. Она работала чертёжницей и однажды нашла ошибку в его расчётах. Так началась их общая история.</p>
+          </li>
+          <li class="mo-ph__ch">
+            <figure class="mo-ph__pic"><img src="assets/img/bridge-1967.jpg" alt="Строительство моста, дело жизни Николая" width="1600" height="1200" loading="lazy" data-slot="Мост, 1967 год"></figure>
+            <h3>Дело всей жизни</h3>
+            <p>Тридцать лет на мостах, от Урала до Енисея. Дома он тоже чинил всё сам: штангенциркуль лежал в кармане даже на даче.</p>
+          </li>
+          <li class="mo-ph__ch">
+            <figure class="mo-ph__pic"><img src="assets/img/family-1985.jpg" alt="Семья Соколовых за праздничным столом" width="1600" height="1200" loading="lazy" data-slot="Семейный стол, 1985 год"></figure>
+            <h3>Снова все вместе</h3>
+            <p>У каждого на этой фотографии своя история. Вместе они складываются в нашу - с родными лицами и знакомым с детства домом.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section album" id="album" aria-labelledby="album-title">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow">Из коробки с фотографиями</p><h2 id="album-title">Самые обычные.<br><em>Самые дорогие.</em></h2></div>
+          <p>На обороте - даты и знакомый почерк.<br>На лицевой стороне - целая жизнь.</p>
+        </div>
+        <div class="album__filters" role="group" aria-label="Выбрать фотографии">
+          <button class="filter" data-filter="all" aria-pressed="true">Все снимки</button>
+          <button class="filter" data-filter="family" aria-pressed="false">Семья</button>
+          <button class="filter" data-filter="portrait" aria-pressed="false">Портреты</button>
+          <button class="filter" data-filter="work" aria-pressed="false">Дело жизни</button>
+        </div>
+        <div class="album__photos" aria-live="polite">
+          <figure class="photo album__photo" data-category="family" style="--angle:-4deg">
+            <button class="photo__image m-zoom" data-photo="wedding" aria-label="Посмотреть свадебную фотографию"><img src="assets/img/wedding-1956.jpg" alt="Свадьба у дома" width="1600" height="1200" loading="lazy" data-slot="Свадьба в семейном альбоме"></button>
+            <figcaption>Тот самый день</figcaption>
+          </figure>
+          <figure class="photo album__photo" data-category="family" style="--angle:3deg">
+            <button class="photo__image m-zoom" data-photo="family" aria-label="Посмотреть семейную фотографию"><img src="assets/img/family-1985.jpg" alt="Большая семья за столом" width="1600" height="1200" loading="lazy" data-slot="Семья за столом"></button>
+            <figcaption>Все собрались. 1985</figcaption>
+          </figure>
+          <figure class="photo album__photo" data-category="work" style="--angle:-3deg">
+            <button class="photo__image m-zoom" data-photo="bridge" aria-label="Посмотреть фотографию моста"><img src="assets/img/bridge-1967.jpg" alt="Мост на строительстве" width="1600" height="1200" loading="lazy" data-slot="Строительство моста"></button>
+            <figcaption>Его мост. 1967</figcaption>
+          </figure>
+          <figure class="photo album__photo" data-category="portrait" style="--angle:5deg">
+            <button class="photo__image m-zoom" data-photo="anna" aria-label="Посмотреть портрет Анны"><img src="assets/img/anna-bw.jpg" alt="Портрет Анны Соколовой" width="1200" height="1600" loading="lazy" data-slot="Портрет Анны"></button>
+            <figcaption>Наша Анна</figcaption>
+          </figure>
+        </div>
+        <p class="album__hint">Нажмите на фотографию, чтобы рассмотреть поближе.</p>
+      </div>
+    </section>
+
+    <section class="section letters" id="letters" aria-labelledby="letters-title">
+      <div class="wrap letters__layout">
+        <div class="letters__intro">
+          <p class="eyebrow">Из семейного архива</p>
+          <h2 id="letters-title">Знакомый<br><em>почерк.</em></h2>
+          <p>Тридцать семь писем-треугольников. Пётр писал Марии каждую неделю. Семья сохранила их и передавала из поколения в поколение.</p>
+          <p class="letters__date">Последнее письмо. Май 1943 года.</p>
+          <img class="letters__envelope" src="assets/img/letter.png" alt="Сложенное треугольником старое письмо" width="900" height="490" loading="lazy" data-slot="Письмо из семейного архива">
+        </div>
+        <article class="letter-paper">
+          <span class="letter-paper__date">Май, 1943</span>
+          <p class="letter-paper__salutation">Маша,</p>
+          <blockquote>береги ребят.<br>Вернусь - достроим<br>веранду, как хотели.</blockquote>
+          <p class="letter-paper__signature">Пётр</p>
+          <div class="letter-paper__footer">Из письма Петра Соколова семье</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section family" id="family" aria-labelledby="family-title">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow">Люди нашей истории</p><h2 id="family-title">Всё начинается<br><em>с родных.</em></h2></div>
+          <p>Имена, лица и нити между ними.<br>Нажмите на карточку человека.</p>
+        </div>
+        <div class="family-tree" aria-label="Николай и Анна Соколовы, их дети Сергей и Ольга">
+          <div class="family-tree__couple">
+            <button class="person" data-person="nikolay"><img src="assets/img/nikolay-bw.jpg" alt="" width="1200" height="1600" loading="lazy" data-slot="Николай на семейном древе"><span class="person__name">Николай</span><span class="person__years">1931-2019</span></button>
+            <span class="family-tree__bond" aria-hidden="true"></span>
+            <button class="person" data-person="anna"><img src="assets/img/anna-bw.jpg" alt="" width="1200" height="1600" loading="lazy" data-slot="Анна на семейном древе"><span class="person__name">Анна</span><span class="person__years">1933-2015</span></button>
+          </div>
+          <div class="family-tree__branches" aria-hidden="true"></div>
+          <div class="family-tree__children">
+            <button class="person person--note" data-person="sergey"><span class="person__relation">Сын</span><span class="person__name">Сергей</span><span class="person__years">Родился в 1958</span><span class="person__role">Футболист и тренер</span></button>
+            <button class="person person--note" data-person="olga"><span class="person__relation">Дочь</span><span class="person__name">Ольга</span><span class="person__years">Родилась в 1962</span><span class="person__role">Врач</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="closing" id="memories">
+    <div class="wrap">
+      <div class="closing__main">
+        <div><p class="eyebrow">У этой истории есть продолжение</p><h2>Что вы<br><em>помните?</em></h2><p class="closing__lead">Одну поездку. Его любимую фразу. Как пахло у бабушки на кухне. Сохраните то, что знаете только вы.</p><button class="btn btn--primary" data-add-memory>Дополнить альбом</button></div>
+        <div class="memory-note" id="memory-note"><span class="memory-note__label">На память</span><blockquote>«Мост должен стоять дольше, чем мы. Иначе зачем строить».</blockquote><p>Николай Петрович</p><span class="memory-note__bottom">Из истории семьи Соколовых</span></div>
+      </div>
+      <div class="closing__bottom"><a class="wordmark" href="#top">летопись.</a><p>Демонстрационный альбом. Семья, истории и фотографии вымышлены.</p><button class="text-button" id="slotsToggle" aria-pressed="false">Слоты медиа</button></div>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" id="photo-dialog" aria-labelledby="photo-dialog-title">
+    <div class="lightbox__top"><h2 id="photo-dialog-title">Семейная фотография</h2><button class="text-button" data-close-dialog>Закрыть</button></div>
+    <img id="full-photo" alt="" width="1600" height="1200">
+    <p id="full-photo-description"></p>
+  </dialog>
+  <dialog class="person-dialog" id="person-dialog" aria-labelledby="person-dialog-title">
+    <button class="text-button dialog-close" data-close-dialog>Закрыть</button><p class="eyebrow">Из семейного альбома</p><h2 id="person-dialog-title"></h2><p id="person-dialog-years"></p><p id="person-dialog-bio"></p>
+  </dialog>
+  <dialog class="memory-dialog" id="memory-dialog" aria-labelledby="memory-title">
+    <button class="text-button dialog-close" data-close-dialog>Закрыть</button><p class="eyebrow">Ещё одна история</p><h2 id="memory-title">Ваше воспоминание</h2>
+    <p class="form-note">Это демо. Текст появится в альбоме только до перезагрузки страницы и никуда не отправится.</p>
+    <form id="memory-form">
+      <label for="memory-name">Как вас зовут</label><input id="memory-name" name="name" autocomplete="name" maxlength="60" required>
+      <label for="memory-text">Что вы помните</label><textarea id="memory-text" name="memory" rows="4" maxlength="1200" required></textarea>
+      <button class="btn btn--primary" type="submit">Добавить в демо</button>
+    </form>
+  </dialog>
+  <p class="status" role="status" id="status"></p>
+  <script type="module" src="assets/motion/motion.js"></script>
+  <script type="module" src="assets/moments/moments.js"></script>
+  <script src="app.js" defer></script>
+</body>
+</html>

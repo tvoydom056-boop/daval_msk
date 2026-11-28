@@ -1,0 +1,27 @@
+{
+  "matched_points": 239,
+  "inlier_points": 156,
+  "median_position_difference_px": 0.953,
+  "p95_position_difference_px": 1.738,
+  "affine_bw_to_color": [
+    [
+      1.0005449783725915,
+      -1.748853096142925e-05,
+      -0.2378635566455848
+    ],
+    [
+      1.748853096142925e-05,
+      1.0005449783725915,
+      -0.4244466034183891
+    ]
+  ],
+  "dimensions_and_jpeg_quality": "15/15 passed; exact dimensions; JPEG quantization quality 85",
+  "visual_check": "All 15 reviewed individually and on contact sheet; no visible readable text, logo, watermark, malformed face or hand found",
+  "edited_again": [
+    "birthday.jpg: removed book spines with print from background"
+  ],
+  "limitations": [
+    "Generative colorization is visually aligned, but textures and pixels are not mathematically identical",
+    "QR code is illustrative; no target URL was provided"
+  ]
+}

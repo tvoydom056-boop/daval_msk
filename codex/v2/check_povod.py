@@ -1,4 +1,4 @@
-﻿"""Проверки Повода v2. Запускать из любого каталога при сервере на 8770."""
+"""Проверки Повода v2. Запускать из любого каталога при сервере на 8770."""
 import asyncio
 import json
 from pathlib import Path
@@ -139,4 +139,3 @@ if __name__ == '__main__':
         RESULT['blocked'] = type(e).__name__ + ': ' + str(e)
         (OUT/'browser_results.json').write_text(json.dumps(RESULT, ensure_ascii=False, indent=2), encoding='utf-8')
         raise
-

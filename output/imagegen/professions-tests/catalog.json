@@ -1,0 +1,61 @@
+{
+  "title": "Профессии: 5 тестовых предметов",
+  "status": "samples",
+  "count": 5,
+  "target_count": 50,
+  "generator": "built-in imagegen",
+  "background": "transparent",
+  "reuse_prompt": "Используй приложенный PNG как референс конкретного предмета. Сохрани его форму, материалы и спокойный реалистичный стиль. Фон, окружение и композицию меняй только по задаче.",
+  "items": [
+    {
+      "id": "p001",
+      "file": "01-doctor-stethoscope.png",
+      "name": "Стетоскоп",
+      "profession": "Врач",
+      "prompt": "Use case: product-mockup.\nAsset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.\nScene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.\nStyle/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.\nComposition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.\nConstraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.\nSubject: One real conventional acoustic medical stethoscope, complete and correctly assembled, dark burgundy flexible rubber tubing forming a natural open U, two symmetric curved stainless steel ear tubes with soft black eartips, one single round brushed stainless steel chestpiece attached to the tubing. Arrange the full connected instrument with ears up and chestpiece near the lower right. Tubes and metal must be physically coherent.",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "f4ef3167c850cd07a521af81a3f642fa843c58e9049a242cbbadcf74ca0fda4c"
+    },
+    {
+      "id": "p002",
+      "file": "02-builder-hard-hat.png",
+      "name": "Строительная каска",
+      "profession": "Строитель",
+      "prompt": "Use case: product-mockup.\nAsset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.\nScene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.\nStyle/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.\nComposition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.\nConstraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.\nSubject: One real conventional mustard yellow construction safety hard hat. Sturdy molded thermoplastic dome with subtle longitudinal reinforcement ridges, short front brim, a little dark inner suspension visible beneath the rim. Three-quarter view from slightly above. Modest signs of honest use, intact clean helmet, no writing or logos.",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "5496d329b37e563c0cac2b8722500cebc6be48c8016941f2846a32a6d63cca48"
+    },
+    {
+      "id": "p003",
+      "file": "03-tailor-sewing-machine.png",
+      "name": "Швейная машинка",
+      "profession": "Швея",
+      "prompt": "Use case: product-mockup.\nAsset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.\nScene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.\nStyle/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.\nComposition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.\nConstraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.\nSubject: One real conventional compact mechanical domestic sewing machine, warm ivory enamel body on its own integral flat sewing bed, side handwheel, a small stitch selector, metal needle assembly and presser foot over a silver needle plate. Three-quarter view showing the open sewing arm, needle side, and handwheel. Believable familiar practical mid-to-late-twentieth-century construction with correct connected geometry. The spool pin is empty; no dangling thread, separate accessories, fabric, case or external table. No branding, labels or markings.",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "f74a1e47ed378d3f20d9ca2bfa63b762d19f74a36ffb357c11c8dde32633f53a"
+    },
+    {
+      "id": "p004",
+      "file": "04-chef-knife.png",
+      "name": "Поварской нож",
+      "profession": "Повар",
+      "prompt": "Use case: product-mockup.\nAsset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.\nScene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.\nStyle/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.\nComposition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.\nConstraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.\nSubject: One real conventional chef's kitchen knife with a broad tapered satin stainless steel blade, curved cutting edge, clearly defined heel and smooth dark walnut handle fixed by three small metal rivets. Complete knife lies diagonally across the square image, handle at lower left and blade tip at upper right, viewed from above at a slight oblique angle. Ordinary practical kitchen utensil, dry and clean, realistic proportional blade and handle, no sheath, food or any other object.",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "aa1ef88025391a3abf2fbfb69a2e553179e4083c34bb7a8a85b994d635c0d319"
+    },
+    {
+      "id": "p005",
+      "file": "05-mechanic-combination-wrench.png",
+      "name": "Комбинированный гаечный ключ",
+      "profession": "Автомеханик",
+      "prompt": "Use case: product-mockup.\nAsset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.\nScene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.\nStyle/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.\nComposition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.\nConstraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.\nSubject: One real conventional forged steel combination wrench, one open jaw end and one closed twelve-point box ring end connected by a single continuous flat shank. Correct mechanically usable geometry and realistic steel thickness. Satin silver finish with slight wear. Complete tool lies diagonally across the square image, open jaw near upper right and ring end near lower left, viewed from above at a slight oblique angle. No stamped text, size numerals, logos or extra parts.",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "c04ee389c40638fb877d4dfe67878cf69788ffc093d13f99b110bbc2967b956c"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+# сборки для публикации ссылкой (пересобираются build_artifacts.py)
+letopis/artifact.html
+povod/artifact.html
+# служебное Codex
+codex/*.log
+codex/*_result.txt
+__pycache__/
+*.pyc
+report/qa/
+.DS_Store
+Thumbs.db
+# профили headless-браузера Codex (история, куки)
+report/*profile*/
+report/screens_tmp/
+# служебное Codex v2: сырые генерации, логи, сессии и клиент Syntx
+codex/v2/raw/
+codex/v2/syntx/
+codex/v2/syntx_v2.py
+codex/v2/*.log
+codex/v2/*.out
+codex/v2/*_result.txt
+codex/v2/sessions.txt
+codex/v2/qa_*/
+codex/v2/*.png
+# v3: зависимости, сборка, кадры проверки
+v3/**/node_modules/
+v3/**/dist/
+codex/v3/frames_film/
+codex/v3/qa/
+codex/v3/__pycache__/
+codex/v3/*.log
+codex/v3/*.out
+codex/v3/*_result.txt
+codex/v3/session.txt
+codex/v3/frames_povod/
+codex/v3/cap_*.txt
+codex/v3/*.json
+codex/v3/frames_all/
+codex/v3/work_povod_scenes/
+run_*.out
+.taste-skill/

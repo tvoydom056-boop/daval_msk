@@ -1,0 +1,42 @@
+[
+  {
+    "name": "hero-archive",
+    "size": [
+      1536,
+      1024
+    ],
+    "bytes": 206558
+  },
+  {
+    "name": "hero-editorial",
+    "size": [
+      1536,
+      1024
+    ],
+    "bytes": 245336
+  },
+  {
+    "name": "hero-garden",
+    "size": [
+      1536,
+      1024
+    ],
+    "bytes": 203118
+  },
+  {
+    "name": "hero-letter",
+    "size": [
+      1536,
+      1024
+    ],
+    "bytes": 278168
+  },
+  {
+    "name": "hero-voice",
+    "size": [
+      1536,
+      1024
+    ],
+    "bytes": 159448
+  }
+]

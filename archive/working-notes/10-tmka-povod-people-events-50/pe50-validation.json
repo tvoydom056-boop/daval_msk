@@ -1,0 +1,8 @@
+{
+  "prepare_preserves_originals": "Prepared 50/50 originals, 100 previews and 5 contact sheets; acceptance statuses unchanged",
+  "actual_50_readonly_check": "PASS: 50 accepted originals, 100 previews, 5 contact sheets; quotas, paths, hashes, metadata and dimensions checked",
+  "missing_original_rejected": "ERROR: pe001: missing original originals/pe001.png",
+  "duplicate_original_rejected": "ERROR: pe002: duplicate original SHA-256",
+  "script_sha256": "f514f1322354a1311fc288a0ad92bde02c01b666fbed60188f495f549779f4f5",
+  "result": "PASS"
+}

@@ -1,0 +1,90 @@
+{
+  "artifact": true,
+  "domPassed": true,
+  "autoChange": true,
+  "thumbnailClick": true,
+  "routesAndBack": true,
+  "phoneBlocks": [
+    "chapters",
+    "voices",
+    "letter",
+    "count",
+    "gallery",
+    "final",
+    "quiz",
+    "reasons",
+    "recipe"
+  ],
+  "requestIsDemo": true,
+  "reducedMotion": true,
+  "phoneHintOutside": true,
+  "metadataAndPosters": true,
+  "collisionChecks": [
+    {
+      "width": 1440,
+      "height": 900,
+      "ctaHidden": true,
+      "captionHidden": true,
+      "clearPositionVisible": true
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "ctaHidden": true,
+      "captionHidden": true,
+      "clearPositionVisible": true
+    }
+  ],
+  "missingImages": [],
+  "rendered": {
+    "wedding": {
+      "scenes": 4,
+      "blocks": [
+        "chapters",
+        "voices",
+        "letter",
+        "count",
+        "gallery",
+        "final"
+      ],
+      "slots": 18
+    },
+    "birthday": {
+      "scenes": 4,
+      "blocks": [
+        "chapters",
+        "voices",
+        "quiz",
+        "letter",
+        "gallery",
+        "final"
+      ],
+      "slots": 19
+    },
+    "anniversary": {
+      "scenes": 4,
+      "blocks": [
+        "chapters",
+        "reasons",
+        "voices",
+        "letter",
+        "count",
+        "final"
+      ],
+      "slots": 13
+    },
+    "jubilee": {
+      "scenes": 4,
+      "blocks": [
+        "chapters",
+        "voices",
+        "recipe",
+        "letter",
+        "gallery",
+        "final"
+      ],
+      "slots": 18
+    }
+  },
+  "browserLayout": "not checked: Chromium spawn EPERM"
+}

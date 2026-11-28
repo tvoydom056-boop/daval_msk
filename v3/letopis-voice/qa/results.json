@@ -1,0 +1,511 @@
+{
+  "checked": "2026-11-28",
+  "browser": "Edge",
+  "checks": [
+    {
+      "name": "preview server: byte range for audio",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/default: HTTP",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/default: no overflow",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/default: local font",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/default: media duration and no autoplay",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/default: readable story",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/default: picture scenario",
+      "passed": true,
+      "details": "3"
+    },
+    {
+      "name": "1440/default: hero starts audio",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/default: visible keyboard focus",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/default: keyboard play",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/default: keyboard pause",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/default: keyboard seek",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/default: seek 30 seconds",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/default: playback after seek",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/default: no browser errors",
+      "passed": true,
+      "details": "Normal MP3 request cancellations during seek: 1"
+    },
+    {
+      "name": "1440/audio-only: HTTP",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/audio-only: no overflow",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/audio-only: local font",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/audio-only: media duration and no autoplay",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/audio-only: readable story",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/audio-only: picture scenario",
+      "passed": true,
+      "details": "0"
+    },
+    {
+      "name": "1440/audio-only: hero starts audio",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/audio-only: visible keyboard focus",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/audio-only: keyboard play",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/audio-only: keyboard pause",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/audio-only: keyboard seek",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/audio-only: seek 30 seconds",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/audio-only: playback after seek",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/audio-only: no browser errors",
+      "passed": true,
+      "details": "Normal MP3 request cancellations during seek: 1"
+    },
+    {
+      "name": "1440/uncertain-date: HTTP",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/uncertain-date: no overflow",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/uncertain-date: local font",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/uncertain-date: media duration and no autoplay",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/uncertain-date: readable story",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/uncertain-date: picture scenario",
+      "passed": true,
+      "details": "3"
+    },
+    {
+      "name": "1440/uncertain-date: approximate date",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/uncertain-date: hero starts audio",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/uncertain-date: visible keyboard focus",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/uncertain-date: keyboard play",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/uncertain-date: keyboard pause",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/uncertain-date: keyboard seek",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/uncertain-date: seek 30 seconds",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/uncertain-date: playback after seek",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1440/uncertain-date: no browser errors",
+      "passed": true,
+      "details": "Normal MP3 request cancellations during seek: 1"
+    },
+    {
+      "name": "375/default: HTTP",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/default: no overflow",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/default: local font",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/default: media duration and no autoplay",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/default: readable story",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/default: picture scenario",
+      "passed": true,
+      "details": "3"
+    },
+    {
+      "name": "375/default: hero starts audio",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/default: visible keyboard focus",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/default: keyboard play",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/default: keyboard pause",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/default: keyboard seek",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/default: seek 30 seconds",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/default: playback after seek",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/default: no browser errors",
+      "passed": true,
+      "details": "Normal MP3 request cancellations during seek: 1"
+    },
+    {
+      "name": "375/audio-only: HTTP",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/audio-only: no overflow",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/audio-only: local font",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/audio-only: media duration and no autoplay",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/audio-only: readable story",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/audio-only: picture scenario",
+      "passed": true,
+      "details": "0"
+    },
+    {
+      "name": "375/audio-only: hero starts audio",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/audio-only: visible keyboard focus",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/audio-only: keyboard play",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/audio-only: keyboard pause",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/audio-only: keyboard seek",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/audio-only: seek 30 seconds",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/audio-only: playback after seek",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/audio-only: no browser errors",
+      "passed": true,
+      "details": "Normal MP3 request cancellations during seek: 1"
+    },
+    {
+      "name": "375/uncertain-date: HTTP",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/uncertain-date: no overflow",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/uncertain-date: local font",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/uncertain-date: media duration and no autoplay",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/uncertain-date: readable story",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/uncertain-date: picture scenario",
+      "passed": true,
+      "details": "3"
+    },
+    {
+      "name": "375/uncertain-date: approximate date",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/uncertain-date: hero starts audio",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/uncertain-date: visible keyboard focus",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/uncertain-date: keyboard play",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/uncertain-date: keyboard pause",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/uncertain-date: keyboard seek",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/uncertain-date: seek 30 seconds",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/uncertain-date: playback after seek",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "375/uncertain-date: no browser errors",
+      "passed": true,
+      "details": "Normal MP3 request cancellations during seek: 2"
+    },
+    {
+      "name": "768/album: no overflow",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "768/album: readable story and illustrations",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "768/album: player controls do not overlap",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "768/album: captions at least 13px",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "768/album: no browser errors",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1024/album: no overflow",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1024/album: readable story and illustrations",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1024/album: player controls do not overlap",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1024/album: captions at least 13px",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "1024/album: no browser errors",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "no-JS: native audio and readable text",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "audio error: message, disabled controls, readable story",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "reduced motion: no entrance animation",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "offline file: play, pause, seek, font and story",
+      "passed": true,
+      "details": ""
+    }
+  ]
+}

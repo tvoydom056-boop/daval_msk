@@ -1,0 +1,10 @@
+{
+  "branch": "content/povod-people-events-50",
+  "head": "4e6dc0a84d96b42145e531598c98a8ac8f3b2fae",
+  "remote_head": "4e6dc0a84d96b42145e531598c98a8ac8f3b2fae",
+  "originals_verified_from_commit": 70,
+  "prior_50_unchanged": true,
+  "changed_paths": 229,
+  "local_archives_excluded": true,
+  "result": "PASS"
+}

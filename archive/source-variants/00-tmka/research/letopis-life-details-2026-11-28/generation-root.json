@@ -1,0 +1,30 @@
+[
+  {
+    "id": 109,
+    "file": "generated/letopis-109-father-daughter-model-sailboat.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "review_note": "Сцена просмотрена: естественные лица и руки, действие читается, без читаемых надписей и заметных артефактов."
+  },
+  {
+    "id": 110,
+    "file": "generated/letopis-110-older-woman-cross-country-skiing.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "review_note": "Сцена просмотрена: естественные лица и руки, действие читается, без читаемых надписей и заметных артефактов."
+  },
+  {
+    "id": 119,
+    "file": "generated/letopis-119-reading-glasses-open-case.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "review_note": "Предмет просмотрен; настоящий RGBA, целиком помещается в кадр, без надписей. На paper/dark-композите заметной цветной каймы нет."
+  },
+  {
+    "id": 120,
+    "file": "generated/letopis-120-unbranded-wristwatch.png",
+    "status": "generated",
+    "visual_review": "pass",
+    "review_note": "Предмет просмотрен; настоящий RGBA, целиком помещается в кадр, без надписей. На paper/dark-композите заметной цветной каймы нет."
+  }
+]

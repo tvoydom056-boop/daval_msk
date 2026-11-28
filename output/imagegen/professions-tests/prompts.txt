@@ -1,0 +1,44 @@
+[p001] Стетоскоп (Врач)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One real conventional acoustic medical stethoscope, complete and correctly assembled, dark burgundy flexible rubber tubing forming a natural open U, two symmetric curved stainless steel ear tubes with soft black eartips, one single round brushed stainless steel chestpiece attached to the tubing. Arrange the full connected instrument with ears up and chestpiece near the lower right. Tubes and metal must be physically coherent.
+
+[p002] Строительная каска (Строитель)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One real conventional mustard yellow construction safety hard hat. Sturdy molded thermoplastic dome with subtle longitudinal reinforcement ridges, short front brim, a little dark inner suspension visible beneath the rim. Three-quarter view from slightly above. Modest signs of honest use, intact clean helmet, no writing or logos.
+
+[p003] Швейная машинка (Швея)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One real conventional compact mechanical domestic sewing machine, warm ivory enamel body on its own integral flat sewing bed, side handwheel, a small stitch selector, metal needle assembly and presser foot over a silver needle plate. Three-quarter view showing the open sewing arm, needle side, and handwheel. Believable familiar practical mid-to-late-twentieth-century construction with correct connected geometry. The spool pin is empty; no dangling thread, separate accessories, fabric, case or external table. No branding, labels or markings.
+
+[p004] Поварской нож (Повар)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One real conventional chef's kitchen knife with a broad tapered satin stainless steel blade, curved cutting edge, clearly defined heel and smooth dark walnut handle fixed by three small metal rivets. Complete knife lies diagonally across the square image, handle at lower left and blade tip at upper right, viewed from above at a slight oblique angle. Ordinary practical kitchen utensil, dry and clean, realistic proportional blade and handle, no sheath, food or any other object.
+
+[p005] Комбинированный гаечный ключ (Автомеханик)
+Use case: product-mockup.
+Asset type: one reusable PNG cutout for the profession and life-story section of Letopis, a quiet Russian family memorial website.
+Scene/backdrop: genuinely transparent alpha background, no backdrop, no tabletop, no floor, no checkerboard painted into the image.
+Style/medium: highly realistic studio object photography, warm-neutral color balance, restrained natural materials, authentic functional construction, subtle believable everyday wear. Calm and dignified.
+Composition: square canvas, exactly ONE isolated complete object centered with generous clear margins of at least 10 percent on every side; whole silhouette fully visible; a gentle three-quarter view showing its recognizable shape. Keep small details legible. Soft upper-left studio illumination and natural shading within the object, clean crisp cutout edges, no detached cast shadow or halo.
+Constraints: no people, hands, human body parts, packaging, scenery, additional tools, lettering, labels, logos, brand marks, watermark, decorative border or pedestal. Do not invent unusual futuristic mechanisms. Preserve true alpha transparency.
+Subject: One real conventional forged steel combination wrench, one open jaw end and one closed twelve-point box ring end connected by a single continuous flat shank. Correct mechanically usable geometry and realistic steel thickness. Satin silver finish with slight wear. Complete tool lies diagonally across the square image, open jaw near upper right and ring end near lower left, viewed from above at a slight oblique angle. No stamped text, size numerals, logos or extra parts.

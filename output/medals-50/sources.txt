@@ -1,0 +1,461 @@
+ИСТОЧНИКИ ОБРАЗЦОВ
+Сведения reference_license относятся к исходной фотографии/иллюстрации, указанной рядом.
+Для сгенерированного PNG сохранены атрибуция исходника и ссылка на условия его использования.
+
+m001 | 01-za-trudovuyu-doblest.png
+Медаль «За трудовую доблесть»; год учреждения: 1938
+Страница образца: https://museum.mintrans.ru/exposition/state-rewards/11
+Изображение-референс: https://museum.mintrans.ru/storage/rewards/state/full/1603116865_8463.jpg
+Commons:
+Автор исходника: Не указан на странице музейного образца
+Лицензия исходника: Не указана на странице музейного образца
+Условия:
+
+m002 | 02-za-trudovoe-otlichie.png
+Медаль «За трудовое отличие»; год учреждения: 1938
+Страница образца: https://museum.mintrans.ru/exposition/state-rewards/12
+Изображение-референс: https://museum.mintrans.ru/storage/rewards/state/full/1603117298_7716.jpg
+Commons:
+Автор исходника: Не указан на странице музейного образца
+Лицензия исходника: Не указана на странице музейного образца
+Условия:
+
+m003 | 03-veteran-truda.png
+Медаль «Ветеран труда»; год учреждения: 1974
+Страница образца: https://museum.mintrans.ru/exposition/state-rewards/13
+Изображение-референс: https://museum.mintrans.ru/storage/rewards/state/full/1603117494_6129.jpg
+Commons:
+Автор исходника: Не указан на странице музейного образца
+Лицензия исходника: Не указана на странице музейного образца
+Условия:
+
+m004 | 04-zolotaya-zvezda.png
+Медаль «Золотая Звезда»; год учреждения: 1939
+Страница образца: https://museum.mintrans.ru/exposition/state-rewards/1
+Изображение-референс: https://museum.mintrans.ru/storage/rewards/state/full/1603051172_9087.jpg
+Commons:
+Автор исходника: Museum of the Ministry of Transport of the Russian Federation
+Лицензия исходника: No open licence stated on the museum item page; preserve source attribution
+Условия:
+Дополнительная сверка: https://museum.mintrans.ru/exposition/state-rewards/1
+Дополнительная сверка: https://victorymuseum.ru/about/museum-collection/numismatics/medal-zolotaya-zvezda-geroya-sovetskogo-soyuza/
+
+m005 | 05-serp-i-molot.png
+Золотая медаль «Серп и Молот»; год учреждения: 1940
+Страница образца: https://museum.mintrans.ru/exposition/state-rewards/2
+Изображение-референс: https://museum.mintrans.ru/storage/rewards/state/full/1603051426_3590.jpg
+Commons:
+Автор исходника: Museum of the Ministry of Transport of the Russian Federation
+Лицензия исходника: No open licence stated on the museum item page; preserve source attribution
+Условия:
+Дополнительная сверка: https://museum.mintrans.ru/exposition/state-rewards/2
+Дополнительная сверка: https://www.prlib.ru/history/2039888
+
+m006 | 06-za-otvagu.png
+Медаль «За отвагу»; год учреждения: 1938
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%97%D0%B0_%D0%BE%D1%82%D0%B2%D0%B0%D0%B3%D1%83%C2%BB_(%D0%A1%D0%A1%D0%A1%D0%A0)
+Изображение-референс: https://upload.wikimedia.org/wikipedia/commons/f/f6/Medalha_%22Pela_Coragem%22_da_URSS.png
+Commons: https://commons.wikimedia.org/wiki/File:Medalha_%22Pela_Coragem%22_da_URSS.png
+Автор исходника: Unknown author Unknown author
+Лицензия исходника: Public domain
+Условия:
+
+m007 | 07-za-boevye-zaslugi.png
+Медаль «За боевые заслуги»; год учреждения: 1938
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%97%D0%B0_%D0%B1%D0%BE%D0%B5%D0%B2%D1%8B%D0%B5_%D0%B7%D0%B0%D1%81%D0%BB%D1%83%D0%B3%D0%B8%C2%BB
+Изображение-референс: https://upload.wikimedia.org/wikipedia/commons/a/a0/Medal_for_Merit_in_Combat.jpg
+Commons: https://commons.wikimedia.org/wiki/File:Medal_for_Merit_in_Combat.jpg
+Автор исходника: Fdutil
+Лицензия исходника: CC BY-SA 3.0
+Условия: https://creativecommons.org/licenses/by-sa/3.0
+
+m008 | 08-za-oboronu-leningrada.png
+Медаль «За оборону Ленинграда»; год учреждения: 1942
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%97%D0%B0_%D0%BE%D0%B1%D0%BE%D1%80%D0%BE%D0%BD%D1%83_%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D0%B0%C2%BB
+Изображение-референс: https://upload.wikimedia.org/wikipedia/commons/6/6d/Medal_Defense_of_Leningrad.jpg
+Commons: https://commons.wikimedia.org/wiki/File:Medal_Defense_of_Leningrad.jpg
+Автор исходника: The original uploader was Grafikm fr at English Wikipedia .
+Лицензия исходника: CC BY-SA 2.5
+Условия: https://creativecommons.org/licenses/by-sa/2.5
+
+m009 | 09-za-oboronu-odessy.png
+Медаль «За оборону Одессы»; год учреждения: 1942
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%97%D0%B0_%D0%BE%D0%B1%D0%BE%D1%80%D0%BE%D0%BD%D1%83_%D0%9E%D0%B4%D0%B5%D1%81%D1%81%D1%8B%C2%BB
+Изображение-референс: https://upload.wikimedia.org/wikipedia/commons/f/f2/Defence_of_Odessa_OBVERSE.jpg
+Commons: https://commons.wikimedia.org/wiki/File:Defence_of_Odessa_OBVERSE.jpg
+Автор исходника: Fdutil
+Лицензия исходника: CC BY-SA 3.0
+Условия: https://creativecommons.org/licenses/by-sa/3.0
+
+m010 | 10-za-oboronu-sevastopolya.png
+Медаль «За оборону Севастополя»; год учреждения: 1942
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%97%D0%B0_%D0%BE%D0%B1%D0%BE%D1%80%D0%BE%D0%BD%D1%83_%D0%A1%D0%B5%D0%B2%D0%B0%D1%81%D1%82%D0%BE%D0%BF%D0%BE%D0%BB%D1%8F%C2%BB
+Изображение-референс: https://upload.wikimedia.org/wikipedia/commons/9/9b/Medal_Defense_of_Sevastopol.jpg
+Commons: https://commons.wikimedia.org/wiki/File:Medal_Defense_of_Sevastopol.jpg
+Автор исходника: The original uploader was Grafikm fr at English Wikipedia .
+Лицензия исходника: Public domain
+Условия:
+
+m011 | 11-za-oboronu-stalingrada.png
+Медаль «За оборону Сталинграда»; год учреждения: 1942
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%97%D0%B0_%D0%BE%D0%B1%D0%BE%D1%80%D0%BE%D0%BD%D1%83_%D0%A1%D1%82%D0%B0%D0%BB%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D0%B0%C2%BB
+Изображение-референс: https://upload.wikimedia.org/wikipedia/commons/d/dc/Defense_of_Stalingrad_OBVERSE.jpg
+Commons: https://commons.wikimedia.org/wiki/File:Defense_of_Stalingrad_OBVERSE.jpg
+Автор исходника: Fdutil
+Лицензия исходника: CC BY-SA 3.0
+Условия: https://creativecommons.org/licenses/by-sa/3.0
+
+m012 | 12-ushakova.png
+Медаль Ушакова; год учреждения: 1944
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%D0%A3%D1%88%D0%B0%D0%BA%D0%BE%D0%B2%D0%B0_(%D0%A1%D0%A1%D0%A1%D0%A0)
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Medal_of_Ushakov.jpg/500px-Medal_of_Ushakov.jpg
+Commons: https://commons.wikimedia.org/wiki/File:Medal_of_Ushakov.jpg
+Автор исходника:
+Лицензия исходника: Public domain
+Условия:
+
+m013 | 13-nakhimova.png
+Медаль Нахимова; год учреждения: 1944
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%D0%9D%D0%B0%D1%85%D0%B8%D0%BC%D0%BE%D0%B2%D0%B0
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Nakhimov_Medal_CCCP.jpg/500px-Nakhimov_Medal_CCCP.jpg
+Commons: https://commons.wikimedia.org/wiki/File:Nakhimov_Medal_CCCP.jpg
+Автор исходника: Fdutil
+Лицензия исходника: CC BY-SA 3.0
+Условия: https://creativecommons.org/licenses/by-sa/3.0
+
+m014 | 14-za-oboronu-moskvy.png
+Медаль «За оборону Москвы»; год учреждения: 1944
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%97%D0%B0_%D0%BE%D0%B1%D0%BE%D1%80%D0%BE%D0%BD%D1%83_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D1%8B%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Medal_Defense_of_Moscow.jpg/500px-Medal_Defense_of_Moscow.jpg
+Commons: https://commons.wikimedia.org/wiki/File:Medal_Defense_of_Moscow.jpg
+Автор исходника: The original uploader was Grafikm fr at English Wikipedia .
+Лицензия исходника: CC BY-SA 2.5
+Условия: https://creativecommons.org/licenses/by-sa/2.5
+
+m015 | 15-za-oboronu-kavkaza.png
+Медаль «За оборону Кавказа»; год учреждения: 1944
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%97%D0%B0_%D0%BE%D0%B1%D0%BE%D1%80%D0%BE%D0%BD%D1%83_%D0%9A%D0%B0%D0%B2%D0%BA%D0%B0%D0%B7%D0%B0%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Defense_of_the_caucasus_OBVERSE.jpg/500px-Defense_of_the_caucasus_OBVERSE.jpg
+Commons: https://commons.wikimedia.org/wiki/File:Defense_of_the_caucasus_OBVERSE.jpg
+Автор исходника: Fdutil
+Лицензия исходника: CC BY-SA 3.0
+Условия: https://creativecommons.org/licenses/by-sa/3.0
+Дополнительная сверка: https://chelmuseum.ru/science/articles/oboronnye-medali-velikoj-otechestvennoj-vojny-v-fondah-muzeya/
+Дополнительная сверка: https://en.wikipedia.org/wiki/Medal_%22For_the_Defence_of_the_Caucasus%22
+
+m016 | 16-za-oboronu-sovetskogo-zapolyarya.png
+Медаль «За оборону Советского Заполярья»; год учреждения: 1944
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%97%D0%B0_%D0%BE%D0%B1%D0%BE%D1%80%D0%BE%D0%BD%D1%83_%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%97%D0%B0%D0%BF%D0%BE%D0%BB%D1%8F%D1%80%D1%8C%D1%8F%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Medal_For_the_Defence_of_the_Soviet_Transarctic_OBVERSE.jpg/500px-Medal_For_the_Defence_of_the_Soviet_Transarctic_OBVERSE.jpg
+Commons: https://commons.wikimedia.org/wiki/File:Medal_For_the_Defence_of_the_Soviet_Transarctic_OBVERSE.jpg
+Автор исходника: Fdutil
+Лицензия исходника: CC BY-SA 3.0
+Условия: https://creativecommons.org/licenses/by-sa/3.0
+
+m017 | 17-za-pobedu-nad-germaniey-v-velikoy-otechestvennoy-voyne-1941-1945-gg.png
+Медаль «За победу над Германией в Великой Отечественной войне 1941-1945 гг.»; год учреждения: 1945
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%97%D0%B0_%D0%BF%D0%BE%D0%B1%D0%B5%D0%B4%D1%83_%D0%BD%D0%B0%D0%B4_%D0%93%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D0%B8%D0%B5%D0%B9_%D0%B2_%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B9_%D0%9E%D1%82%D0%B5%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9_%D0%B2%D0%BE%D0%B9%D0%BD%D0%B5_1941%E2%80%941945_%D0%B3%D0%B3.%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/WW2_Victory_USSR_OBVERSE.jpg/500px-WW2_Victory_USSR_OBVERSE.jpg
+Commons: https://commons.wikimedia.org/wiki/File:WW2_Victory_USSR_OBVERSE.jpg
+Автор исходника: Fdutil
+Лицензия исходника: CC BY-SA 3.0
+Условия: https://creativecommons.org/licenses/by-sa/3.0
+
+m018 | 18-za-doblestnyy-trud-v-velikoy-otechestvennoy-voyne-1941-1945-gg.png
+Медаль «За доблестный труд в Великой Отечественной войне 1941-1945 гг.»; год учреждения: 1945
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%97%D0%B0_%D0%B4%D0%BE%D0%B1%D0%BB%D0%B5%D1%81%D1%82%D0%BD%D1%8B%D0%B9_%D1%82%D1%80%D1%83%D0%B4_%D0%B2_%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B9_%D0%9E%D1%82%D0%B5%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9_%D0%B2%D0%BE%D0%B9%D0%BD%D0%B5_1941%E2%80%941945_%D0%B3%D0%B3.%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Heroic_Labor_During_The_Great_Patriotic_War_%28front%29.jpg/500px-Heroic_Labor_During_The_Great_Patriotic_War_%28front%29.jpg
+Commons: https://commons.wikimedia.org/wiki/File:Heroic_Labor_During_The_Great_Patriotic_War_(front).jpg
+Автор исходника: Travellingbarrett
+Лицензия исходника: CC BY 3.0
+Условия: https://creativecommons.org/licenses/by/3.0
+
+m019 | 19-za-vzyatie-budapeshta.png
+Медаль «За взятие Будапешта»; год учреждения: 1945
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%97%D0%B0_%D0%B2%D0%B7%D1%8F%D1%82%D0%B8%D0%B5_%D0%91%D1%83%D0%B4%D0%B0%D0%BF%D0%B5%D1%88%D1%82%D0%B0%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Capture_of_Budapest_OBVERSE.jpg/500px-Capture_of_Budapest_OBVERSE.jpg
+Commons: https://commons.wikimedia.org/wiki/File:Capture_of_Budapest_OBVERSE.jpg
+Автор исходника: Fdutil
+Лицензия исходника: CC BY-SA 3.0
+Условия: https://creativecommons.org/licenses/by-sa/3.0
+
+m020 | 20-za-vzyatie-kyonigsberga.png
+Медаль «За взятие Кёнигсберга»; год учреждения: 1945
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%97%D0%B0_%D0%B2%D0%B7%D1%8F%D1%82%D0%B8%D0%B5_%D0%9A%D1%91%D0%BD%D0%B8%D0%B3%D1%81%D0%B1%D0%B5%D1%80%D0%B3%D0%B0%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/MedalCaptureKoenigsberg.jpg/500px-MedalCaptureKoenigsberg.jpg
+Commons: https://commons.wikimedia.org/wiki/File:MedalCaptureKoenigsberg.jpg
+Автор исходника:
+Лицензия исходника: Public domain
+Условия:
+Дополнительная сверка: https://www.prlib.ru/item/389759
+Дополнительная сверка: https://xn--80aaah7cqq.xn--p1ai/medal-%C2%ABza-vzyatie-kyonigsberga%C2%BB
+
+m021 | 21-za-vzyatie-veny.png
+Медаль «За взятие Вены»; год учреждения: 1945
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%97%D0%B0_%D0%B2%D0%B7%D1%8F%D1%82%D0%B8%D0%B5_%D0%92%D0%B5%D0%BD%D1%8B%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Capture_of_Vienna_OBVERSE.jpg/500px-Capture_of_Vienna_OBVERSE.jpg
+Commons: https://commons.wikimedia.org/wiki/File:Capture_of_Vienna_OBVERSE.jpg
+Автор исходника: Fdutil
+Лицензия исходника: CC BY-SA 3.0
+Условия: https://creativecommons.org/licenses/by-sa/3.0
+
+m022 | 22-za-vzyatie-berlina.png
+Медаль «За взятие Берлина»; год учреждения: 1945
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%97%D0%B0_%D0%B2%D0%B7%D1%8F%D1%82%D0%B8%D0%B5_%D0%91%D0%B5%D1%80%D0%BB%D0%B8%D0%BD%D0%B0%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Capture_of_Berlin_OBVERSE.jpg/500px-Capture_of_Berlin_OBVERSE.jpg
+Commons: https://commons.wikimedia.org/wiki/File:Capture_of_Berlin_OBVERSE.jpg
+Автор исходника: Fdutil
+Лицензия исходника: CC BY-SA 3.0
+Условия: https://creativecommons.org/licenses/by-sa/3.0
+
+m023 | 23-za-osvobo-denie-belgrada.png
+Медаль «За освобождение Белграда»; год учреждения: 1945
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%97%D0%B0_%D0%BE%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D0%91%D0%B5%D0%BB%D0%B3%D1%80%D0%B0%D0%B4%D0%B0%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Medal_Liberation_of_Belgrad.jpg/500px-Medal_Liberation_of_Belgrad.jpg
+Commons: https://commons.wikimedia.org/wiki/File:Medal_Liberation_of_Belgrad.jpg
+Автор исходника: The original uploader was Grafikm fr at English Wikipedia .
+Лицензия исходника: Public domain
+Условия:
+
+m024 | 24-za-osvobo-denie-varshavy.png
+Медаль «За освобождение Варшавы»; год учреждения: 1945
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%97%D0%B0_%D0%BE%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D0%92%D0%B0%D1%80%D1%88%D0%B0%D0%B2%D1%8B%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Medal_For_The_Liberation_Of_Warsaw.jpeg/500px-Medal_For_The_Liberation_Of_Warsaw.jpeg
+Commons: https://commons.wikimedia.org/wiki/File:Medal_For_The_Liberation_Of_Warsaw.jpeg
+Автор исходника: The original uploader was Zac Allan at Russian Wikipedia .
+Лицензия исходника: Public domain
+Условия:
+
+m025 | 25-za-osvobo-denie-pragi.png
+Медаль «За освобождение Праги»; год учреждения: 1945
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%97%D0%B0_%D0%BE%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D0%9F%D1%80%D0%B0%D0%B3%D0%B8%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Liberation_of_Prague_OBVERSE.jpg/500px-Liberation_of_Prague_OBVERSE.jpg
+Commons: https://commons.wikimedia.org/wiki/File:Liberation_of_Prague_OBVERSE.jpg
+Автор исходника: Fdutil
+Лицензия исходника: CC BY-SA 3.0
+Условия: https://creativecommons.org/licenses/by-sa/3.0
+
+m026 | 26-za-pobedu-nad-yaponiey.png
+Медаль «За победу над Японией»; год учреждения: 1945
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%97%D0%B0_%D0%BF%D0%BE%D0%B1%D0%B5%D0%B4%D1%83_%D0%BD%D0%B0%D0%B4_%D0%AF%D0%BF%D0%BE%D0%BD%D0%B8%D0%B5%D0%B9%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Victory_Against_Japan_OBVERSE.jpg/500px-Victory_Against_Japan_OBVERSE.jpg
+Commons: https://commons.wikimedia.org/wiki/File:Victory_Against_Japan_OBVERSE.jpg
+Автор исходника: Fdutil
+Лицензия исходника: CC BY-SA 3.0
+Условия: https://creativecommons.org/licenses/by-sa/3.0
+
+m027 | 27-za-vosstanovlenie-ugolnykh-shakht-donbassa.png
+Медаль «За восстановление угольных шахт Донбасса»; год учреждения: 1947
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%97%D0%B0_%D0%B2%D0%BE%D1%81%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D1%85_%D1%88%D0%B0%D1%85%D1%82_%D0%94%D0%BE%D0%BD%D0%B1%D0%B0%D1%81%D1%81%D0%B0%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Medal_For_Restoration_of_the_Donbass_Coal_Mines.jpg/500px-Medal_For_Restoration_of_the_Donbass_Coal_Mines.jpg
+Commons: https://commons.wikimedia.org/wiki/File:Medal_For_Restoration_of_the_Donbass_Coal_Mines.jpg
+Автор исходника: The original uploader was Сдобников Андрей at Russian Wikipedia .
+Лицензия исходника: Public domain
+Условия:
+
+m028 | 28-v-pamyat-800-letiya-moskvy.png
+Медаль «В память 800-летия Москвы»; год учреждения: 1947
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%92_%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D1%8C_800-%D0%BB%D0%B5%D1%82%D0%B8%D1%8F_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D1%8B%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/800th_anniversary_of_Moscow_OBVERSE.jpg/500px-800th_anniversary_of_Moscow_OBVERSE.jpg
+Commons: https://commons.wikimedia.org/wiki/File:800th_anniversary_of_Moscow_OBVERSE.jpg
+Автор исходника: Fdutil
+Лицензия исходника: CC BY-SA 3.0
+Условия: https://creativecommons.org/licenses/by-sa/3.0
+
+m029 | 29-30-let-sovetskoy-armii-i-flota.png
+Юбилейная медаль «30 лет Советской Армии и Флота»; год учреждения: 1948
+Страница образца: https://ru.wikipedia.org/wiki/%D0%AE%D0%B1%D0%B8%D0%BB%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F_%D0%BC%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB30_%D0%BB%D0%B5%D1%82_%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B9_%D0%90%D1%80%D0%BC%D0%B8%D0%B8_%D0%B8_%D0%A4%D0%BB%D0%BE%D1%82%D0%B0%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/30YSAF.jpg/500px-30YSAF.jpg
+Commons: https://commons.wikimedia.org/wiki/File:30YSAF.jpg
+Автор исходника: User:Wootelef
+Лицензия исходника: Public domain
+Условия:
+
+m030 | 30-za-vosstanovlenie-predpriyatiy-chyornoy-metallurgii-yuga.png
+Медаль «За восстановление предприятий чёрной металлургии юга»; год учреждения: 1948
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%97%D0%B0_%D0%B2%D0%BE%D1%81%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BF%D1%80%D0%B5%D0%B4%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%B8%D0%B9_%D1%87%D1%91%D1%80%D0%BD%D0%BE%D0%B9_%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D1%83%D1%80%D0%B3%D0%B8%D0%B8_%D1%8E%D0%B3%D0%B0%C2%BB
+Изображение-референс: https://upload.wikimedia.org/wikipedia/commons/c/cc/For_Restoration_of_the_Black_Metallurgy_Enterprises_in_the_South_OBVERSE.jpg
+Commons: https://commons.wikimedia.org/wiki/File:For_Restoration_of_the_Black_Metallurgy_Enterprises_in_the_South_OBVERSE.jpg
+Автор исходника: Fdutil
+Лицензия исходника: CC BY-SA 3.0
+Условия: https://creativecommons.org/licenses/by-sa/3.0
+
+m031 | 31-za-otlichie-v-okhrane-gosudarstvennoy-granitsy-sssr.png
+Медаль «За отличие в охране государственной границы СССР»; год учреждения: 1950
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%97%D0%B0_%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%B8%D0%B5_%D0%B2_%D0%BE%D1%85%D1%80%D0%B0%D0%BD%D0%B5_%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9_%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B_%D0%A1%D0%A1%D0%A1%D0%A0%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Guard_of_USSR_Borders.jpg/500px-Guard_of_USSR_Borders.jpg
+Commons: https://commons.wikimedia.org/wiki/File:Guard_of_USSR_Borders.jpg
+Автор исходника: The original uploader was Grafikm fr at English Wikipedia .
+Лицензия исходника: Public domain
+Условия:
+
+m032 | 32-za-otlichnuyu-slu-bu-po-okhrane-obshchestvennogo-poryadka.png
+Медаль «За отличную службу по охране общественного порядка»; год учреждения: 1950
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%97%D0%B0_%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%BD%D1%83%D1%8E_%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D1%83_%D0%BF%D0%BE_%D0%BE%D1%85%D1%80%D0%B0%D0%BD%D0%B5_%D0%BE%D0%B1%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BF%D0%BE%D1%80%D1%8F%D0%B4%D0%BA%D0%B0%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Soviet_Medal_For_Distinction_in_the_Protection_of_Public_Order.jpg/500px-Soviet_Medal_For_Distinction_in_the_Protection_of_Public_Order.jpg
+Commons: https://commons.wikimedia.org/wiki/File:Soviet_Medal_For_Distinction_in_the_Protection_of_Public_Order.jpg
+Автор исходника: Fdutil
+Лицензия исходника: CC BY-SA 3.0
+Условия: https://creativecommons.org/licenses/by-sa/3.0
+
+m033 | 33-za-osvoenie-tselinnykh-zemel.png
+Медаль «За освоение целинных земель»; год учреждения: 1956
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%97%D0%B0_%D0%BE%D1%81%D0%B2%D0%BE%D0%B5%D0%BD%D0%B8%D0%B5_%D1%86%D0%B5%D0%BB%D0%B8%D0%BD%D0%BD%D1%8B%D1%85_%D0%B7%D0%B5%D0%BC%D0%B5%D0%BB%D1%8C%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Medal_For_Development_of_the_Virgin_Lands.jpg/500px-Medal_For_Development_of_the_Virgin_Lands.jpg
+Commons: https://commons.wikimedia.org/wiki/File:Medal_For_Development_of_the_Virgin_Lands.jpg
+Автор исходника: Fdutil
+Лицензия исходника: CC BY-SA 3.0
+Условия: https://creativecommons.org/licenses/by-sa/3.0
+
+m034 | 34-za-spasenie-utopayushchikh.png
+Медаль «За спасение утопающих»; год учреждения: 1957
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%97%D0%B0_%D1%81%D0%BF%D0%B0%D1%81%D0%B5%D0%BD%D0%B8%D0%B5_%D1%83%D1%82%D0%BE%D0%BF%D0%B0%D1%8E%D1%89%D0%B8%D1%85%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Medal_For_The_Rescue_Of_The_Drowning.jpg/500px-Medal_For_The_Rescue_Of_The_Drowning.jpg
+Commons: https://commons.wikimedia.org/wiki/File:Medal_For_The_Rescue_Of_The_Drowning.jpg
+Автор исходника: Гознак (Goznak)
+Лицензия исходника: Public domain
+Условия:
+
+m035 | 35-v-pamyat-250-letiya-leningrada.png
+Медаль «В память 250-летия Ленинграда»; год учреждения: 1957
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%92_%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D1%8C_250-%D0%BB%D0%B5%D1%82%D0%B8%D1%8F_%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D0%B0%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Medal250Leningrad.jpg/500px-Medal250Leningrad.jpg
+Commons: https://commons.wikimedia.org/wiki/File:Medal250Leningrad.jpg
+Автор исходника: ilich at ru.wikipedia
+Лицензия исходника: Public domain
+Условия:
+
+m036 | 36-za-otvagu-na-po-are.png
+Медаль «За отвагу на пожаре»; год учреждения: 1957
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%97%D0%B0_%D0%BE%D1%82%D0%B2%D0%B0%D0%B3%D1%83_%D0%BD%D0%B0_%D0%BF%D0%BE%D0%B6%D0%B0%D1%80%D0%B5%C2%BB_(%D0%A1%D0%A1%D0%A1%D0%A0)
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Medal_for_Bravery_in_Fire_Fighting.jpg/500px-Medal_for_Bravery_in_Fire_Fighting.jpg
+Commons: https://commons.wikimedia.org/wiki/File:Medal_for_Bravery_in_Fire_Fighting.jpg
+Автор исходника: mondvor.narod.ru
+Лицензия исходника: Public domain
+Условия:
+
+m037 | 37-za-oboronu-kieva.png
+Медаль «За оборону Киева»; год учреждения: 1961
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%97%D0%B0_%D0%BE%D0%B1%D0%BE%D1%80%D0%BE%D0%BD%D1%83_%D0%9A%D0%B8%D0%B5%D0%B2%D0%B0%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Defense_of_Kiev_OBVERSE.jpg/500px-Defense_of_Kiev_OBVERSE.jpg
+Commons: https://commons.wikimedia.org/wiki/File:Defense_of_Kiev_OBVERSE.jpg
+Автор исходника: Fdutil
+Лицензия исходника: CC BY-SA 3.0
+Условия: https://creativecommons.org/licenses/by-sa/3.0
+
+m038 | 38-50-let-sovetskoy-militsii.png
+Юбилейная медаль «50 лет советской милиции»; год учреждения: 1967
+Страница образца: https://ru.wikipedia.org/wiki/%D0%AE%D0%B1%D0%B8%D0%BB%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F_%D0%BC%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB50_%D0%BB%D0%B5%D1%82_%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B9_%D0%BC%D0%B8%D0%BB%D0%B8%D1%86%D0%B8%D0%B8%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Medal_50_years_soviet_militsiya.jpg/500px-Medal_50_years_soviet_militsiya.jpg
+Commons: https://commons.wikimedia.org/wiki/File:Medal_50_years_soviet_militsiya.jpg
+Автор исходника: mondvor.narod.ru
+Лицензия исходника: Public domain
+Условия:
+
+m039 | 39-50-let-vooru-yonnykh-sil-sssr.png
+Юбилейная медаль «50 лет Вооружённых Сил СССР»; год учреждения: 1967
+Страница образца: https://ru.wikipedia.org/wiki/%D0%AE%D0%B1%D0%B8%D0%BB%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F_%D0%BC%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB50_%D0%BB%D0%B5%D1%82_%D0%92%D0%BE%D0%BE%D1%80%D1%83%D0%B6%D1%91%D0%BD%D0%BD%D1%8B%D1%85_%D0%A1%D0%B8%D0%BB_%D0%A1%D0%A1%D0%A1%D0%A0%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/50_years_armed_forces_of_the_USSR_OBVERSE.jpg/500px-50_years_armed_forces_of_the_USSR_OBVERSE.jpg
+Commons: https://commons.wikimedia.org/wiki/File:50_years_armed_forces_of_the_USSR_OBVERSE.jpg
+Автор исходника: Fdutil
+Лицензия исходника: CC BY-SA 3.0
+Условия: https://creativecommons.org/licenses/by-sa/3.0
+
+m040 | 40-za-doblestnyy-trud-za-voinskuyu-doblest-v-oznamenovanie-100-letiya-so-dnya-ro-deniya-vladimira-ilicha-len.png
+Юбилейная медаль «За доблестный труд (За воинскую доблесть). В ознаменование 100-летия со дня рождения Владимира Ильича Ленина»; год учреждения: 1969
+Страница образца: https://ru.wikipedia.org/wiki/%D0%AE%D0%B1%D0%B8%D0%BB%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F_%D0%BC%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%97%D0%B0_%D0%B4%D0%BE%D0%B1%D0%BB%D0%B5%D1%81%D1%82%D0%BD%D1%8B%D0%B9_%D1%82%D1%80%D1%83%D0%B4_(%D0%97%D0%B0_%D0%B2%D0%BE%D0%B8%D0%BD%D1%81%D0%BA%D1%83%D1%8E_%D0%B4%D0%BE%D0%B1%D0%BB%D0%B5%D1%81%D1%82%D1%8C)._%D0%92_%D0%BE%D0%B7%D0%BD%D0%B0%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_100-%D0%BB%D0%B5%D1%82%D0%B8%D1%8F_%D1%81%D0%BE_%D0%B4%D0%BD%D1%8F_%D1%80%D0%BE%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F_%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D0%B0_%D0%98%D0%BB%D1%8C%D0%B8%D1%87%D0%B0_%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Jubi%C3%A4umsmedaille_100._Geburtstag_Lenins.jpg/500px-Jubi%C3%A4umsmedaille_100._Geburtstag_Lenins.jpg
+Commons: https://commons.wikimedia.org/wiki/File:Jubi%C3%A4umsmedaille_100._Geburtstag_Lenins.jpg
+Автор исходника: PimboliDD
+Лицензия исходника: CC BY-SA 3.0
+Условия: https://creativecommons.org/licenses/by-sa/3.0
+
+m041 | 41-za-otlichie-v-voinskoy-slu-be-i-stepeni.png
+Медаль «За отличие в воинской службе» I степени; год учреждения: 1974
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%97%D0%B0_%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%B8%D0%B5_%D0%B2_%D0%B2%D0%BE%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D0%B5%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Soviet_For_Distinction_in_Military_Service_1st_class.jpg/500px-Soviet_For_Distinction_in_Military_Service_1st_class.jpg
+Commons: https://commons.wikimedia.org/wiki/File:Soviet_For_Distinction_in_Military_Service_1st_class.jpg
+Автор исходника: Fdutil
+Лицензия исходника: CC BY-SA 3.0
+Условия: https://creativecommons.org/licenses/by-sa/3.0
+
+m042 | 42-veteran-vooru-yonnykh-sil-sssr.png
+Медаль «Ветеран Вооружённых Сил СССР»; год учреждения: 1976
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%92%D0%B5%D1%82%D0%B5%D1%80%D0%B0%D0%BD_%D0%92%D0%BE%D0%BE%D1%80%D1%83%D0%B6%D1%91%D0%BD%D0%BD%D1%8B%D1%85_%D0%A1%D0%B8%D0%BB_%D0%A1%D0%A1%D0%A1%D0%A0%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/MVeterVSA.jpg/500px-MVeterVSA.jpg
+Commons: https://commons.wikimedia.org/wiki/File:MVeterVSA.jpg
+Автор исходника: Original uploader was Bestalex at ru.wikipedia
+Лицензия исходника: Public domain
+Условия:
+
+m043 | 43-za-stroitelstvo-baykalo-amurskoy-magistrali.png
+Медаль «За строительство Байкало-Амурской магистрали»; год учреждения: 1976
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%97%D0%B0_%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE_%D0%91%D0%B0%D0%B9%D0%BA%D0%B0%D0%BB%D0%BE-%D0%90%D0%BC%D1%83%D1%80%D1%81%D0%BA%D0%BE%D0%B9_%D0%BC%D0%B0%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D0%BB%D0%B8%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/MbamA.jpg/500px-MbamA.jpg
+Commons: https://commons.wikimedia.org/wiki/File:MbamA.jpg
+Автор исходника: ilich at ru.wikipedia
+Лицензия исходника: Public domain
+Условия:
+
+m044 | 44-za-preobrazovanie-nechernozemya-rsfsr.png
+Медаль «За преобразование Нечерноземья РСФСР»; год учреждения: 1977
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%97%D0%B0_%D0%BF%D1%80%D0%B5%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%9D%D0%B5%D1%87%D0%B5%D1%80%D0%BD%D0%BE%D0%B7%D0%B5%D0%BC%D1%8C%D1%8F_%D0%A0%D0%A1%D0%A4%D0%A1%D0%A0%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Medal_For_Development_of_the_Non-Black_Earth_Regions_of_the_RSFSR.jpg/500px-Medal_For_Development_of_the_Non-Black_Earth_Regions_of_the_RSFSR.jpg
+Commons: https://commons.wikimedia.org/wiki/File:Medal_For_Development_of_the_Non-Black_Earth_Regions_of_the_RSFSR.jpg
+Автор исходника: mondvor.narod.ru
+Лицензия исходника: Public domain
+Условия:
+
+m045 | 45-60-let-vooru-yonnykh-sil-sssr.png
+Юбилейная медаль «60 лет Вооружённых Сил СССР»; год учреждения: 1978
+Страница образца: https://ru.wikipedia.org/wiki/%D0%AE%D0%B1%D0%B8%D0%BB%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F_%D0%BC%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB60_%D0%BB%D0%B5%D1%82_%D0%92%D0%BE%D0%BE%D1%80%D1%83%D0%B6%D1%91%D0%BD%D0%BD%D1%8B%D1%85_%D0%A1%D0%B8%D0%BB_%D0%A1%D0%A1%D0%A1%D0%A0%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/60th_anniversary_Armed_Forces_of_USSR.JPG/500px-60th_anniversary_Armed_Forces_of_USSR.JPG
+Commons: https://commons.wikimedia.org/wiki/File:60th_anniversary_Armed_Forces_of_USSR.JPG
+Автор исходника: Anastasiya Lvova
+Лицензия исходника: Public domain
+Условия:
+
+m046 | 46-za-osvoenie-nedr-i-razvitie-neftegazovogo-kompleksa-zapadnoy-sibiri.png
+Медаль «За освоение недр и развитие нефтегазового комплекса Западной Сибири»; год учреждения: 1978
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%97%D0%B0_%D0%BE%D1%81%D0%B2%D0%BE%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BD%D0%B5%D0%B4%D1%80_%D0%B8_%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D1%82%D0%B8%D0%B5_%D0%BD%D0%B5%D1%84%D1%82%D0%B5%D0%B3%D0%B0%D0%B7%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE_%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81%D0%B0_%D0%97%D0%B0%D0%BF%D0%B0%D0%B4%D0%BD%D0%BE%D0%B9_%D0%A1%D0%B8%D0%B1%D0%B8%D1%80%D0%B8%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Medal_For_Development_of_the_Petrochemical_Complex_of_Western_Siberia.jpg/500px-Medal_For_Development_of_the_Petrochemical_Complex_of_Western_Siberia.jpg
+Commons: https://commons.wikimedia.org/wiki/File:Medal_For_Development_of_the_Petrochemical_Complex_of_Western_Siberia.jpg
+Автор исходника: mondvor.narod.ru
+Лицензия исходника: Public domain
+Условия:
+
+m047 | 47-za-ukreplenie-boevogo-sodru-estva.png
+Медаль «За укрепление боевого содружества»; год учреждения: 1979
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%97%D0%B0_%D1%83%D0%BA%D1%80%D0%B5%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B1%D0%BE%D0%B5%D0%B2%D0%BE%D0%B3%D0%BE_%D1%81%D0%BE%D0%B4%D1%80%D1%83%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B0%C2%BB_(%D0%A1%D0%A1%D0%A1%D0%A0)
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Soviet_Medal_For_Strengthening_Military_Cooperation.jpg/500px-Soviet_Medal_For_Strengthening_Military_Cooperation.jpg
+Commons: https://commons.wikimedia.org/wiki/File:Soviet_Medal_For_Strengthening_Military_Cooperation.jpg
+Автор исходника: Fdutil
+Лицензия исходника: CC BY-SA 3.0
+Условия: https://creativecommons.org/licenses/by-sa/3.0
+
+m048 | 48-v-pamyat-1500-letiya-kieva.png
+Медаль «В память 1500-летия Киева»; год учреждения: 1982
+Страница образца: https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%92_%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D1%8C_1500-%D0%BB%D0%B5%D1%82%D0%B8%D1%8F_%D0%9A%D0%B8%D0%B5%D0%B2%D0%B0%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Kiev1500.jpg/500px-Kiev1500.jpg
+Commons: https://commons.wikimedia.org/wiki/File:Kiev1500.jpg
+Автор исходника:
+Лицензия исходника: Public domain
+Условия:
+
+m049 | 49-sorok-let-pobedy-v-velikoy-otechestvennoy-voyne-1941-1945-gg.png
+Юбилейная медаль «Сорок лет Победы в Великой Отечественной войне 1941-1945 гг.»; год учреждения: 1985
+Страница образца: https://ru.wikipedia.org/wiki/%D0%AE%D0%B1%D0%B8%D0%BB%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F_%D0%BC%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB%D0%A1%D0%BE%D1%80%D0%BE%D0%BA_%D0%BB%D0%B5%D1%82_%D0%9F%D0%BE%D0%B1%D0%B5%D0%B4%D1%8B_%D0%B2_%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B9_%D0%9E%D1%82%D0%B5%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9_%D0%B2%D0%BE%D0%B9%D0%BD%D0%B5_1941%E2%80%941945_%D0%B3%D0%B3.%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/40th_anniversary_of_Victory_in_Patriotic_War.JPG/500px-40th_anniversary_of_Victory_in_Patriotic_War.JPG
+Commons: https://commons.wikimedia.org/wiki/File:40th_anniversary_of_Victory_in_Patriotic_War.JPG
+Автор исходника: Anastasiya Lvova
+Лицензия исходника: Public domain
+Условия:
+
+m050 | 50-70-let-vooru-yonnykh-sil-sssr.png
+Юбилейная медаль «70 лет Вооружённых Сил СССР»; год учреждения: 1988
+Страница образца: https://ru.wikipedia.org/wiki/%D0%AE%D0%B1%D0%B8%D0%BB%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F_%D0%BC%D0%B5%D0%B4%D0%B0%D0%BB%D1%8C_%C2%AB70_%D0%BB%D0%B5%D1%82_%D0%92%D0%BE%D0%BE%D1%80%D1%83%D0%B6%D1%91%D0%BD%D0%BD%D1%8B%D1%85_%D0%A1%D0%B8%D0%BB_%D0%A1%D0%A1%D0%A1%D0%A0%C2%BB
+Изображение-референс: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/USSR%27S_Medal_of_70th_anniversary_of_armed_forces-avers.png/500px-USSR%27S_Medal_of_70th_anniversary_of_armed_forces-avers.png
+Commons: https://commons.wikimedia.org/wiki/File:USSR%27S_Medal_of_70th_anniversary_of_armed_forces-avers.png
+Автор исходника: Жук, Александр Борисович
+Лицензия исходника: Public domain
+Условия:

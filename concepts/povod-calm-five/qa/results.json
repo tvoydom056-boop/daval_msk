@@ -1,0 +1,394 @@
+{
+  "browser": "158.0.4370.45",
+  "viewports": [
+    [
+      1440,
+      900
+    ],
+    [
+      1024,
+      768
+    ],
+    [
+      768,
+      1024
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      375,
+      812
+    ]
+  ],
+  "pages": [
+    {
+      "name": "01-editorial",
+      "viewports": [
+        {
+          "width": 1440,
+          "height": 900,
+          "scroll": 1440,
+          "client": 1440,
+          "h1": 1,
+          "broken": [],
+          "missingAlts": 0,
+          "outside": [],
+          "cta": true
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "scroll": 1024,
+          "client": 1024,
+          "h1": 1,
+          "broken": [],
+          "missingAlts": 0,
+          "outside": [],
+          "cta": true
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "scroll": 768,
+          "client": 768,
+          "h1": 1,
+          "broken": [],
+          "missingAlts": 0,
+          "outside": [],
+          "cta": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "scroll": 390,
+          "client": 390,
+          "h1": 1,
+          "broken": [],
+          "missingAlts": 0,
+          "outside": [],
+          "cta": true
+        },
+        {
+          "width": 375,
+          "height": 812,
+          "scroll": 375,
+          "client": 375,
+          "h1": 1,
+          "broken": [],
+          "missingAlts": 0,
+          "outside": [],
+          "cta": true
+        }
+      ],
+      "interactions": [
+        "mobile menu: open, Escape, anchor close",
+        "occasion switches",
+        "FAQ toggles",
+        "form errors, focus, local validation, zero writes",
+        "disabled honest audio",
+        "keyboard skip link",
+        "reduced motion"
+      ],
+      "errors": [],
+      "warnings": [],
+      "badResponses": [],
+      "status": "PASS"
+    },
+    {
+      "name": "02-garden",
+      "viewports": [
+        {
+          "width": 1440,
+          "height": 900,
+          "scroll": 1440,
+          "client": 1440,
+          "h1": 1,
+          "broken": [],
+          "missingAlts": 0,
+          "outside": [],
+          "cta": true
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "scroll": 1024,
+          "client": 1024,
+          "h1": 1,
+          "broken": [],
+          "missingAlts": 0,
+          "outside": [],
+          "cta": true
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "scroll": 768,
+          "client": 768,
+          "h1": 1,
+          "broken": [],
+          "missingAlts": 0,
+          "outside": [],
+          "cta": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "scroll": 390,
+          "client": 390,
+          "h1": 1,
+          "broken": [],
+          "missingAlts": 0,
+          "outside": [],
+          "cta": true
+        },
+        {
+          "width": 375,
+          "height": 812,
+          "scroll": 375,
+          "client": 375,
+          "h1": 1,
+          "broken": [],
+          "missingAlts": 0,
+          "outside": [],
+          "cta": true
+        }
+      ],
+      "interactions": [
+        "mobile menu: open, Escape, anchor close",
+        "occasion switches",
+        "FAQ toggles",
+        "form errors, focus, local validation, zero writes",
+        "disabled honest audio",
+        "keyboard skip link",
+        "reduced motion"
+      ],
+      "errors": [],
+      "warnings": [],
+      "badResponses": [],
+      "status": "PASS"
+    },
+    {
+      "name": "03-archive",
+      "viewports": [
+        {
+          "width": 1440,
+          "height": 900,
+          "scroll": 1440,
+          "client": 1440,
+          "h1": 1,
+          "broken": [],
+          "missingAlts": 0,
+          "outside": [],
+          "cta": true
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "scroll": 1024,
+          "client": 1024,
+          "h1": 1,
+          "broken": [],
+          "missingAlts": 0,
+          "outside": [],
+          "cta": true
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "scroll": 768,
+          "client": 768,
+          "h1": 1,
+          "broken": [],
+          "missingAlts": 0,
+          "outside": [],
+          "cta": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "scroll": 390,
+          "client": 390,
+          "h1": 1,
+          "broken": [],
+          "missingAlts": 0,
+          "outside": [],
+          "cta": true
+        },
+        {
+          "width": 375,
+          "height": 812,
+          "scroll": 375,
+          "client": 375,
+          "h1": 1,
+          "broken": [],
+          "missingAlts": 0,
+          "outside": [],
+          "cta": true
+        }
+      ],
+      "interactions": [
+        "mobile menu: open, Escape, anchor close",
+        "occasion switches",
+        "FAQ toggles",
+        "form errors, focus, local validation, zero writes",
+        "disabled honest audio",
+        "keyboard skip link",
+        "reduced motion"
+      ],
+      "errors": [],
+      "warnings": [],
+      "badResponses": [],
+      "status": "PASS"
+    },
+    {
+      "name": "04-letter",
+      "viewports": [
+        {
+          "width": 1440,
+          "height": 900,
+          "scroll": 1440,
+          "client": 1440,
+          "h1": 1,
+          "broken": [],
+          "missingAlts": 0,
+          "outside": [],
+          "cta": true
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "scroll": 1024,
+          "client": 1024,
+          "h1": 1,
+          "broken": [],
+          "missingAlts": 0,
+          "outside": [],
+          "cta": true
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "scroll": 768,
+          "client": 768,
+          "h1": 1,
+          "broken": [],
+          "missingAlts": 0,
+          "outside": [],
+          "cta": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "scroll": 390,
+          "client": 390,
+          "h1": 1,
+          "broken": [],
+          "missingAlts": 0,
+          "outside": [],
+          "cta": true
+        },
+        {
+          "width": 375,
+          "height": 812,
+          "scroll": 375,
+          "client": 375,
+          "h1": 1,
+          "broken": [],
+          "missingAlts": 0,
+          "outside": [],
+          "cta": true
+        }
+      ],
+      "interactions": [
+        "mobile menu: open, Escape, anchor close",
+        "occasion switches",
+        "FAQ toggles",
+        "form errors, focus, local validation, zero writes",
+        "disabled honest audio",
+        "keyboard skip link",
+        "reduced motion"
+      ],
+      "errors": [],
+      "warnings": [],
+      "badResponses": [],
+      "status": "PASS"
+    },
+    {
+      "name": "05-voice",
+      "viewports": [
+        {
+          "width": 1440,
+          "height": 900,
+          "scroll": 1440,
+          "client": 1440,
+          "h1": 1,
+          "broken": [],
+          "missingAlts": 0,
+          "outside": [],
+          "cta": true
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "scroll": 1024,
+          "client": 1024,
+          "h1": 1,
+          "broken": [],
+          "missingAlts": 0,
+          "outside": [],
+          "cta": true
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "scroll": 768,
+          "client": 768,
+          "h1": 1,
+          "broken": [],
+          "missingAlts": 0,
+          "outside": [],
+          "cta": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "scroll": 390,
+          "client": 390,
+          "h1": 1,
+          "broken": [],
+          "missingAlts": 0,
+          "outside": [],
+          "cta": true
+        },
+        {
+          "width": 375,
+          "height": 812,
+          "scroll": 375,
+          "client": 375,
+          "h1": 1,
+          "broken": [],
+          "missingAlts": 0,
+          "outside": [],
+          "cta": true
+        }
+      ],
+      "interactions": [
+        "mobile menu: open, Escape, anchor close",
+        "occasion switches",
+        "FAQ toggles",
+        "form errors, focus, local validation, zero writes",
+        "disabled honest audio",
+        "keyboard skip link",
+        "reduced motion"
+      ],
+      "errors": [],
+      "warnings": [],
+      "badResponses": [],
+      "status": "PASS"
+    }
+  ],
+  "failures": [],
+  "gallery": "PASS"
+}

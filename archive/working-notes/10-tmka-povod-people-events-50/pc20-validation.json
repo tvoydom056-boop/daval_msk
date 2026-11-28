@@ -1,0 +1,14 @@
+{
+  "old_50_readonly": "PASS: 50 accepted originals, 100 previews, 5 contact sheets; quotas, paths, hashes, metadata and dimensions checked",
+  "new_prepare_preserves_masters": "Prepared 20/20 originals, 40 previews and 2 contact sheets; acceptance statuses unchanged",
+  "new_20_readonly": "PASS: 20 accepted originals, 40 previews, 2 contact sheets; quotas, paths, hashes, metadata and dimensions checked",
+  "cross_collection_original_hashes": "70 unique originals; 20 new themes",
+  "old_swapped_styles": "ERROR: pe001: expected documentary style",
+  "old_swapped_themes": "ERROR: pe001: expected portraits theme",
+  "new_repeated_theme": "ERROR: Expected 20 themes, 1 items each",
+  "wrong_profile": "ERROR: Catalog must contain exactly 50 item objects",
+  "missing_original": "ERROR: pc001: missing original originals/pc001.png",
+  "duplicate_original": "ERROR: pc002: duplicate original SHA-256",
+  "script_sha256": "fc6e9d2fab8efab9ae995663172e4f9ef657bbe030bf194847bb926bdb1dba8b",
+  "result": "PASS"
+}

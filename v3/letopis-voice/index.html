@@ -16,25 +16,33 @@
   <a class="skip" href="#story">Перейти к истории</a>
   <header class="top wrap">
     <a class="logo" href="#top">Летопись</a>
+    <nav class="album-nav" aria-label="Оглавление истории">
+      <a href="#story">Рассказ</a>
+      <a href="#listen">Запись</a>
+      <a class="photo-navigation" href="#details">Деталь</a>
+    </nav>
     <span class="demo-label">Вымышленная история</span>
   </header>
 
   <main id="top">
     <section class="hero wrap" aria-labelledby="title">
-      <div class="hero__copy">
-        <p class="eyebrow">Одно воспоминание Анны</p>
-        <h1 id="title">Ключ от<br>первого дома</h1>
-        <p class="hero__lead">Стол у окна, две чашки и тяжёлый ключ.<br class="desktop-break"> День, с которого начался свой дом.</p>
+      <div class="hero__meta">
+        <p class="eyebrow">Семейный альбом / История Анны</p>
         <p class="date" id="episode-date">Примерно начало 1970-х</p>
-        <div class="hero__actions">
-          <a class="btn btn--dark" href="#listen">Слушать историю</a>
-          <a class="text-link" href="#story">Читать</a>
+      </div>
+      <div class="hero__copy">
+        <h1 id="title">Ключ от<br>первого дома</h1>
+        <div class="hero__summary">
+          <p class="hero__lead">Стол у окна, две чашки и тяжёлый ключ. День, с которого начался свой дом.</p>
+          <div class="hero__actions">
+            <a class="btn btn--dark" href="#listen">Слушать историю</a>
+            <a class="text-link" href="#story">Читать</a>
+          </div>
         </div>
-        <p class="hero__note">Внутреннее демо «Летописи».<br>Персонаж и события придуманы.</p>
       </div>
       <figure class="hero__image photo-material" data-slot="Дом из истории, иллюстрация">
         <div class="image-window"><img src="assets/house.webp" width="1672" height="941" alt="Деревянный дом с берёзой у крыльца" fetchpriority="high"></div>
-        <figcaption>Образ дома. Иллюстрация создана ИИ.</figcaption>
+        <figcaption><span>Образ дома. Иллюстрация создана ИИ.</span><span aria-hidden="true">01</span></figcaption>
       </figure>
     </section>
 
@@ -78,19 +86,17 @@
             <p>Вечером ключ повесили на маленький гвоздь возле двери. Анна несколько раз возвращалась проверить, на месте ли он. Ей было непривычно, что теперь можно выйти во двор и снова войти в собственный дом.</p>
           </article>
         </div>
-      </div>
-    </section>
-
-    <section class="keepsake wrap photo-material" aria-labelledby="detail-heading">
-      <figure class="keepsake__image" data-slot="Ключ, предмет из истории">
-        <img src="assets/key.webp" width="600" height="600" alt="Латунный дверной ключ" loading="lazy">
-        <figcaption>Собирательный образ предмета, создан ИИ.</figcaption>
-      </figure>
-      <div class="keepsake__copy">
-        <p class="eyebrow">Одна деталь</p>
-        <h2 id="detail-heading">Ключ на гвозде<br>возле двери</h2>
-        <p>В рассказе Анна возвращается проверить, на месте ли ключ. Из этой маленькой привычки и складывается воспоминание о первом дне.</p>
-        <p class="material-note">На иллюстрации показан образ ключа из истории. Это не фотография семейной вещи.</p>
+        <section class="keepsake photo-material" id="details" aria-labelledby="detail-heading">
+          <div class="keepsake__copy">
+            <p class="eyebrow">Одна деталь</p>
+            <h2 id="detail-heading">Ключ на гвозде<br>возле двери</h2>
+            <p>В рассказе Анна возвращается проверить, на месте ли ключ. Из этой маленькой привычки и складывается воспоминание о первом дне.</p>
+          </div>
+          <figure class="keepsake__image" data-slot="Ключ, предмет из истории">
+            <img src="assets/key.webp" width="600" height="600" alt="Латунный дверной ключ" loading="lazy">
+            <figcaption>Образ предмета, создан ИИ. Это не фотография семейной вещи.</figcaption>
+          </figure>
+        </section>
       </div>
     </section>
 

@@ -81,6 +81,31 @@ try {
       await page.close();
     }
   }
+  for (const width of [768, 1024]) {
+    const page = await browser.newPage({ viewport: { width, height: 1024 } });
+    const errors = [];
+    page.on('pageerror', error => errors.push(error.message));
+    page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
+    await page.goto(url);
+    await page.evaluate(() => document.fonts.ready);
+    await page.evaluate(() => Promise.all(document.getAnimations().map(animation => animation.finished.catch(() => {}))));
+    for (const image of await page.locator('img:visible').all()) {
+      await image.scrollIntoViewIfNeeded();
+      await image.evaluate(image => image.decode());
+    }
+    check(`${width}/album: no overflow`, await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+    check(`${width}/album: readable story and illustrations`, await page.locator('.story').isVisible() && await page.locator('.photo-material:visible').count() === 3);
+    check(`${width}/album: player controls do not overlap`, await page.evaluate(() => {
+      const button = document.querySelector('#toggle').getBoundingClientRect();
+      const slider = document.querySelector('#seek').getBoundingClientRect();
+      return button.right <= slider.left || slider.right <= button.left || button.bottom <= slider.top || slider.bottom <= button.top;
+    }));
+    check(`${width}/album: captions at least 13px`, await page.locator('figcaption').evaluateAll(elements => elements.every(element => parseFloat(getComputedStyle(element).fontSize) >= 13)));
+    check(`${width}/album: no browser errors`, errors.length === 0, errors.join('; '));
+    await page.evaluate(() => scrollTo(0, 0));
+    await page.screenshot({ path: path.join(folder, 'screens', `album-${width}.png`), fullPage: true });
+    await page.close();
+  }
   const noJs = await browser.newPage({ javaScriptEnabled: false, viewport: { width: 375, height: 812 } });
   await noJs.goto(url);
   check('no-JS: native audio and readable text', await noJs.locator('audio[controls]').isVisible() && await noJs.locator('.story').isVisible());

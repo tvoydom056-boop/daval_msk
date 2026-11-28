@@ -1,0 +1,648 @@
+{
+  "version": 1,
+  "title": "20 новых фотоконцепций для «Повода»",
+  "items": [
+    {
+      "id": "pc001",
+      "theme": "graduation",
+      "title_ru": "Выпускница после вручения диплома",
+      "style": "documentary",
+      "orientation": "portrait",
+      "aspect_ratio": "4:5",
+      "role": "cover",
+      "prompt": "Create one standalone photorealistic photo for a personal gift website. A 23-year-old graduate with a short chestnut bob, freckles and round glasses has removed her academic cap and lifts it beside her shoulder, smiling with relieved pride. She wears a plain graduation gown in a quiet university courtyard after the ceremony. Keep her other hand relaxed, her whole cap visible, and the architecture softly behind her in gentle afternoon daylight. Warm family documentary photography with candid timing and unforced expressions. Vertical 4:5 cover composition. Keep faces and important hands above the lower fifth; normal continuous clothing or furniture forms the quiet lower area. Invent ordinary fictional people with distinct faces, realistic skin and believable age. Use warm paper, muted terracotta and natural surrounding colours without heavy filtering. Preserve correct anatomy, fingers, limbs and object geometry. One continuous real photograph: no fade, gradient mask, crossfade, compositing or synthetic caption band. No readable words, numbers, logos, watermarks, borders, collages or grids.\n\nAdditional composition and anatomy requirements: Exact 4:5 vertical photograph. The square academic cap has believable rigid flat geometry, one tassel and no emblems; the graduate's visible fingers grip its lower edge naturally beside her shoulder. Her lowered opposite hand may rest by her side, without extra arms. No diploma or sign with writing.",
+      "references": [
+        {
+          "url": "https://www.pinterest.com/pin/film-wedding-photographers--37647346874594180/",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "search-preview; page403"
+        },
+        {
+          "url": "https://unsplash.com/photos/a-happy-couple-walking-hand-in-hand-after-their-wedding-Bd7wdtN_NKU",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "pixel-viewed by GPT worker using view_image after ordinary HTTP 200"
+        }
+      ],
+      "status": "accepted",
+      "file": "originals/pc001.png",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "f3a3ee4c2224ffe65c1dc99b395e6101a6fd4dcf6f98237a77724e700214bded",
+      "visual_review": "Reviewed full portrait: a freckled graduate with chestnut bob and round glasses holds a complete square mortarboard beside her shoulder. Cap edge, tassel and gripping fingers look coherent; face and gown are natural, opposite hand rests by her side. Continuous gown forms most of the lower region; no readable writing. PNG 1122x1402, 4:5 within one pixel.",
+      "previews": {
+        "jpeg": "previews/jpeg/pc001.jpg",
+        "webp": "previews/webp/pc001.webp"
+      }
+    },
+    {
+      "id": "pc002",
+      "theme": "housewarming",
+      "title_ru": "Первая собственная квартира",
+      "style": "documentary",
+      "orientation": "portrait",
+      "aspect_ratio": "4:5",
+      "role": "cover",
+      "prompt": "Create one standalone photorealistic photo for a personal gift website. A 31-year-old woman with short sandy-blonde hair and a softly square face unlocks the door of her first own apartment. One hand turns a plain key in the lock; her other arm securely holds a small potted plant. A few unlabelled moving boxes are visible inside the open doorway. Capture her tentative delighted smile in soft hallway daylight, with believable hands and key. Warm family documentary photography with candid timing and unforced expressions. Vertical 4:5 cover composition. Keep faces and important hands above the lower fifth; normal continuous clothing or furniture forms the quiet lower area. Invent ordinary fictional people with distinct faces, realistic skin and believable age. Use warm paper, muted terracotta and natural surrounding colours without heavy filtering. Preserve correct anatomy, fingers, limbs and object geometry. One continuous real photograph: no fade, gradient mask, crossfade, compositing or synthetic caption band. No readable words, numbers, logos, watermarks, borders, collages or grids.\n\nAdditional composition and anatomy requirements: Exact 4:5 vertical photograph. Keep the action physically clear: her right hand turns one plain key in the real keyhole of the slightly open door, while her left forearm carries and supports the base of one small plant pot against her torso. Exactly two arms and two hands, no floating pot or impossible key grip. The open doorway reveals ordinary boxes.",
+      "references": [
+        {
+          "url": "https://www.joannapantigoso.com/portfolio/family/861695-clarice-euller-couple-documentary-at-home",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "page-description"
+        },
+        {
+          "url": "https://www.vanessatodd.com/blog/at-home-engagement-photos-with-dog-date-night-in-los-feliz",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "page-description"
+        }
+      ],
+      "status": "accepted",
+      "file": "originals/pc002.png",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "69128a8b6c174b69e12678b8bc49a86c4c744e30ce883ee0568b09168397471a",
+      "visual_review": "Reviewed full portrait: short sandy-haired woman carries a terracotta plant pot in her left arm while her right hand turns a visible key in a real door lock. Exactly two arms with plausible connected hands; pot, key and doorway geometry are coherent, moving boxes visible inside. Normal sweater and jeans continue to bottom with no blend. PNG 1122x1402.",
+      "previews": {
+        "jpeg": "previews/jpeg/pc002.jpg",
+        "webp": "previews/webp/pc002.webp"
+      }
+    },
+    {
+      "id": "pc003",
+      "theme": "retirement",
+      "title_ru": "Проводы на пенсию",
+      "style": "documentary",
+      "orientation": "landscape",
+      "aspect_ratio": "16:9",
+      "role": "section",
+      "prompt": "Create one standalone photorealistic photo for a personal gift website. A 67-year-old woman with a silver pixie haircut and oval glasses stands beside her almost empty office desk on retirement day. Two adult colleagues, a clean-shaven dark-haired man and a red-haired woman, present a plain wrapped gift. A box of personal belongings rests on the desk. Capture their affectionate moment in soft office window light; no cake or party table. Warm family documentary photography with candid timing and unforced expressions. Wide horizontal 16:9 section composition. Keep all main faces, important hands and the complete action safely inside both central 4:3 and 1.65:1 crops, with natural environmental margins. Invent ordinary fictional people with distinct faces, realistic skin and believable age. Use warm paper, muted terracotta and natural surrounding colours without heavy filtering. Preserve correct anatomy, fingers, limbs and object geometry. One continuous real photograph: no fade, gradient mask, crossfade, compositing or synthetic caption band. No readable words, numbers, logos, watermarks, borders, collages or grids.\n\nAdditional composition and anatomy requirements: Exact 16:9 wide photograph. Exactly three people stand in a compact central grouping; place the retirement gift, all six hands and all three faces safely within the central 60 percent width so both central crops retain the complete moment. Leave quiet believable office context on both sides. The silver-haired retiree is petite, the male colleague is tall and lean, the red-haired female colleague has a fuller build.",
+      "references": [
+        {
+          "url": "https://www.danwoottonphotography.co.uk/blog/lancashire-family-shoot-manson",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "pixel-viewed by GPT worker using view_image after ordinary HTTP 200"
+        },
+        {
+          "url": "https://www.retrospectphotography.com/journal/2019/7/16/grandpa-amp-grandma-linton-70th-wedding-anniversary-",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "page-description"
+        }
+      ],
+      "status": "accepted",
+      "file": "originals/pc003.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "7ec077049c41da1317b9adf9fb1a08c345a1dce302cfdccbf0693101d99bb9fd",
+      "visual_review": "Reviewed full wide photo: exactly three distinct colleagues, a petite silver-haired retiree in glasses, tall dark-haired man and fuller red-haired woman, share a wrapped gift beside an office desk and belongings box. Faces and important hands are plausible and central; gift, shoulder gesture and expressions survive both central crops. PNG 1672x941.",
+      "previews": {
+        "jpeg": "previews/jpeg/pc003.jpg",
+        "webp": "previews/webp/pc003.webp"
+      }
+    },
+    {
+      "id": "pc004",
+      "theme": "theatre-premiere",
+      "title_ru": "Поклон после премьеры",
+      "style": "editorial",
+      "orientation": "landscape",
+      "aspect_ratio": "16:9",
+      "role": "section",
+      "prompt": "Create one standalone photorealistic photo for a personal gift website. Five amateur adult actors aged 28 to 44 stand in a compact line on a small theatre stage, holding hands and making their first curtain-call bow. Give them distinct faces and ordinary bodies, including a bald man, a silver-streaked woman and a redhead. A plain deep-red curtain and soft amber stage light frame the proud, slightly nervous group; no audience faces are needed. Refined warm lifestyle editorial photography with considered light and relaxed expressions. Wide horizontal 16:9 section composition. Keep all main faces, important hands and the complete action safely inside both central 4:3 and 1.65:1 crops, with natural environmental margins. Invent ordinary fictional people with distinct faces, realistic skin and believable age. Use warm paper, muted terracotta and natural surrounding colours without heavy filtering. Preserve correct anatomy, fingers, limbs and object geometry. One continuous real photograph: no fade, gradient mask, crossfade, compositing or synthetic caption band. No readable words, numbers, logos, watermarks, borders, collages or grids.\n\nAdditional composition and anatomy requirements: Exact 16:9 wide establishing photograph of exactly five complete separate adult actors, no more and no fewer. Group them close enough that all five heads and linked hands fit comfortably within the central 60 percent width; leave substantial stage and red curtain at both sides. Give them simple unbranded everyday rehearsal clothing. Trace each arm naturally from the correct shoulder to its wrist; each inner hand link contains only the two adjacent people's hands. Outer actors have one free hand each. All five take a shallow natural bow, heads angled slightly up enough to see distinct proud faces.\nCrop safety is essential: use a wider full-stage view and a compact five-person line occupying the middle half of the frame. BOTH OUTERMOST ACTORS KEEP THEIR FREE HAND FLAT AGAINST THEIR OWN THIGH, with elbows bent close to the torso; nobody reaches or stretches sideways. Keep the complete five people, heads, feet and every hand link clearly inside a central 4:3 crop, with no important arm or hand near either side edge. The entire group should be visibly smaller in the scene, surrounded by broad curtain margins.",
+      "references": [
+        {
+          "url": "https://www.pinterest.com/pin/film-wedding-photographers--37647346874594180/",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "search-preview; page403"
+        },
+        {
+          "url": "https://unsplash.com/photos/a-happy-couple-walking-hand-in-hand-after-their-wedding-Bd7wdtN_NKU",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "pixel-viewed by GPT worker using view_image after ordinary HTTP 200"
+        }
+      ],
+      "status": "accepted",
+      "file": "originals/pc004.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "3dcfcc72e2d9fcb63e4e5ef6753eae98197a86cb9286a955b0bd03eb76324c93",
+      "visual_review": "Reviewed replacement wide photo: exactly five complete adult actors make a shallow bow before a red curtain. Ten legs/feet and naturally connected arms are visible; four inner hand links contain plausible adjacent hands. Both outer free hands rest against their own thighs, so all people, faces and gestures remain intact in central 4:3 and 1.65:1 crops. PNG 1672x941.",
+      "previews": {
+        "jpeg": "previews/jpeg/pc004.jpg",
+        "webp": "previews/webp/pc004.webp"
+      }
+    },
+    {
+      "id": "pc005",
+      "theme": "new-pet",
+      "title_ru": "Первое знакомство со щенком",
+      "style": "editorial",
+      "orientation": "square",
+      "aspect_ratio": "1:1",
+      "role": "gallery",
+      "prompt": "Create one standalone photorealistic photo for a personal gift website. A 33-year-old woman with straight dark hair, brown eyes and a round face sits on the floor of a modest animal-adoption room, meeting her new small puppy. The puppy rests its front paws on her knees and looks up at her; she smiles and gently supports its chest. Use soft window daylight, a simple blanket and believable small paws, distinct from human hands. Refined warm lifestyle editorial photography with considered light and relaxed expressions. Square 1:1 gallery composition, with comfortable room around faces, hands and the complete action. Invent ordinary fictional people with distinct faces, realistic skin and believable age. Use warm paper, muted terracotta and natural surrounding colours without heavy filtering. Preserve correct anatomy, fingers, limbs and object geometry. One continuous real photograph: no fade, gradient mask, crossfade, compositing or synthetic caption band. No readable words, numbers, logos, watermarks, borders, collages or grids.\n\nAdditional composition and anatomy requirements: Exact 1:1 square photograph with one whole small tan-and-white puppy. Show the puppy side-on with exactly four anatomically believable legs: two front paws resting on her knees and two hind paws on the floor, with a natural spine, ears and tail. The woman's supporting hand touches the puppy's upper chest gently and remains clearly distinct from all canine paws. Her other hand rests on her own knee. Preserve the puppy's entire body inside the frame.",
+      "references": [
+        {
+          "url": "https://www.danwoottonphotography.co.uk/blog/lancashire-family-shoot-manson",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "pixel-viewed by GPT worker using view_image after ordinary HTTP 200"
+        },
+        {
+          "url": "https://www.retrospectphotography.com/journal/2019/7/16/grandpa-amp-grandma-linton-70th-wedding-anniversary-",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "page-description"
+        }
+      ],
+      "status": "accepted",
+      "file": "originals/pc005.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "56ff3440cebde01096de53e1e2172918597e12f453859b2bce7207361c4934fb",
+      "visual_review": "Reviewed full square photo: one dark-haired woman sits on the floor of an adoption room with one complete tan-and-white puppy. The puppy has two front paws on her knees and two hind paws on the blanket, a normal tail and coherent body. Her chest-supporting/scratching hand is distinct from canine paws and her other hand rests on her knee. Faces and hands look natural. PNG 1254x1254.",
+      "previews": {
+        "jpeg": "previews/jpeg/pc005.jpg",
+        "webp": "previews/webp/pc005.webp"
+      }
+    },
+    {
+      "id": "pc006",
+      "theme": "newborn",
+      "title_ru": "Отец впервые держит малыша",
+      "style": "documentary",
+      "orientation": "portrait",
+      "aspect_ratio": "4:5",
+      "role": "cover",
+      "prompt": "Create one standalone photorealistic photo for a personal gift website. A 32-year-old clean-shaven father with short ginger hair and freckles sits securely in an armchair, holding his fully clothed newborn for the first time. One forearm supports the infant body and his other hand reliably cradles the head and neck. He looks down with quiet awe. Use bedroom window light, a plain sleepsuit and blanket, clear safe support and no medical equipment. Warm family documentary photography with candid timing and unforced expressions. Vertical 4:5 cover composition. Keep faces and important hands above the lower fifth; normal continuous clothing or furniture forms the quiet lower area. Invent ordinary fictional people with distinct faces, realistic skin and believable age. Use warm paper, muted terracotta and natural surrounding colours without heavy filtering. Preserve correct anatomy, fingers, limbs and object geometry. One continuous real photograph: no fade, gradient mask, crossfade, compositing or synthetic caption band. No readable words, numbers, logos, watermarks, borders, collages or grids.\n\nAdditional composition and anatomy requirements: Exact 4:5 vertical photograph. Make the newborn's head and neck visibly supported together by the father's open palm, while his opposite forearm supports the complete torso and clothed legs in a secure cradle hold. Infant lies close against his body, relaxed and fully clothed in a plain closed sleepsuit; no dangling head or unsupported body. Show both adult hands with plausible separate fingers, only two adult arms, and an intact continuous lap below.",
+      "references": [
+        {
+          "url": "https://www.danwoottonphotography.co.uk/blog/lancashire-family-shoot-manson",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "pixel-viewed by GPT worker using view_image after ordinary HTTP 200"
+        },
+        {
+          "url": "https://www.retrospectphotography.com/journal/2019/7/16/grandpa-amp-grandma-linton-70th-wedding-anniversary-",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "page-description"
+        }
+      ],
+      "status": "accepted",
+      "file": "originals/pc006.png",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "fb2b0885a1ea31a8ce0b6ffdded09200b5a1ccca5d41a06ada3ff5e7d7d69efe",
+      "visual_review": "Reviewed full portrait: ginger-haired clean-shaven father cradles a fully clothed newborn close to his body. One open hand visibly cups the back of the baby's head and supports the neck, while the opposite forearm and hand support the torso and clothed legs. Both adult hands connect plausibly; the infant lies securely without a dangling head. Continuous lap and armchair below. PNG 1122x1402.",
+      "previews": {
+        "jpeg": "previews/jpeg/pc006.jpg",
+        "webp": "previews/webp/pc006.webp"
+      }
+    },
+    {
+      "id": "pc007",
+      "theme": "reunion",
+      "title_ru": "Встреча сестёр после разлуки",
+      "style": "documentary",
+      "orientation": "portrait",
+      "aspect_ratio": "4:5",
+      "role": "cover",
+      "prompt": "Create one standalone photorealistic photo for a personal gift website. Two sisters aged 29 and 37 meet after a long separation on a quiet railway-station platform. One has long straight dark-blonde hair and rectangular glasses; the other has short dark curls and a round face. A plain suitcase stands beside them as they step toward each other with open bent arms and delighted, moved expressions. Use overcast daylight and an uncluttered station background. Warm family documentary photography with candid timing and unforced expressions. Vertical 4:5 cover composition. Keep faces and important hands above the lower fifth; normal continuous clothing or furniture forms the quiet lower area. Invent ordinary fictional people with distinct faces, realistic skin and believable age. Use warm paper, muted terracotta and natural surrounding colours without heavy filtering. Preserve correct anatomy, fingers, limbs and object geometry. One continuous real photograph: no fade, gradient mask, crossfade, compositing or synthetic caption band. No readable words, numbers, logos, watermarks, borders, collages or grids.\n\nAdditional composition and anatomy requirements: Exact 4:5 vertical photograph with both sisters clearly separated just before a hug. Give the taller long dark-blonde-haired sister narrow rectangular glasses and a lean frame, the shorter dark-curly-haired sister a full figure and round cheeks. Their open bent arms must connect naturally to the correct shoulders, no merged torsos or extra hands. Keep the suitcase and ordinary coats continuous through the bottom region; no fades or bands.",
+      "references": [
+        {
+          "url": "https://id.pinterest.com/pin/film-camera-aesthetic--197665871143632998/",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "search-preview; page403"
+        },
+        {
+          "url": "https://www.pexels.com/photo/girl-photographing-friends-at-birthday-party-7337024/",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "page-description"
+        }
+      ],
+      "status": "accepted",
+      "file": "originals/pc007.png",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "b2a5ab763d10e0e891cbe210c6c5b4af7911e1a43cf9fd52bae33a43fcf81543",
+      "visual_review": "Reviewed full portrait: two distinct sisters meet on a quiet railway platform, one long dark-blonde-haired with rectangular glasses and one shorter, dark-curly-haired with a fuller build. Four open hands are visibly connected to the correct shoulders and arms, with plausible fingers; faces are delighted and separate. A plain suitcase, continuous coats and legs establish the reunion without synthetic blending. PNG 1122x1402.",
+      "previews": {
+        "jpeg": "previews/jpeg/pc007.jpg",
+        "webp": "previews/webp/pc007.webp"
+      }
+    },
+    {
+      "id": "pc008",
+      "theme": "race-finish",
+      "title_ru": "Первый любительский финиш",
+      "style": "documentary",
+      "orientation": "landscape",
+      "aspect_ratio": "16:9",
+      "role": "section",
+      "prompt": "Create one standalone photorealistic photo for a personal gift website. A 36-year-old amateur female runner with a short blonde ponytail and a flushed ordinary face crosses a simple unprinted finish ribbon at a small park race. Her 39-year-old clean-shaven partner with glasses waits beyond it with an encouraging smile and open bent arms. Capture her tired joyful expression, believable running posture and feet, in clean morning light; no sponsor signs or race numbers. Warm family documentary photography with candid timing and unforced expressions. Wide horizontal 16:9 section composition. Keep all main faces, important hands and the complete action safely inside both central 4:3 and 1.65:1 crops, with natural environmental margins. Invent ordinary fictional people with distinct faces, realistic skin and believable age. Use warm paper, muted terracotta and natural surrounding colours without heavy filtering. Preserve correct anatomy, fingers, limbs and object geometry. One continuous real photograph: no fade, gradient mask, crossfade, compositing or synthetic caption band. No readable words, numbers, logos, watermarks, borders, collages or grids.\n\nAdditional anatomy and composition requirements: The runner wears a plain muted green running top and practical dark running shorts, no bib or lettering. Show the thin unprinted white ribbon contacting and parting at her waist as she passes through it, with physically plausible loose ends. Her arms remain naturally bent near her torso, one foot firmly landing and the other lifting in a believable running stride. Her partner stands to the side just beyond her, not blocking her path. Keep her whole body, ribbon contact and partner compactly inside both central safe crops, with generous park space at both edges. No repeated limbs, merged fingers, floating feet or twisted knees.",
+      "references": [
+        {
+          "url": "https://www.pexels.com/photo/people-friends-hiking-cliff-7625042/",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "page-description"
+        },
+        {
+          "url": "https://www.pexels.com/photo/young-friends-hiking-in-scenic-mountain-landscape-30991797/",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "page-description"
+        }
+      ],
+      "status": "accepted",
+      "file": "originals/pc008.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "252907285408ac5dffe1a8ebf6740ddfedc13919f2b7ba0a6fed81e3b4a33034",
+      "visual_review": "Reviewed wide race photo: blonde amateur runner crosses a plain white ribbon at waist height, one foot landing and the other lifted in a believable stride. Clean-shaven partner waits off her path with open hands. Runner face, hands, legs and ribbon contact clear; partner face/hands stay within central crops, no numbers or logos, continuous natural park scene.",
+      "previews": {
+        "jpeg": "previews/jpeg/pc008.jpg",
+        "webp": "previews/webp/pc008.webp"
+      }
+    },
+    {
+      "id": "pc009",
+      "theme": "teacher-thanks",
+      "title_ru": "Выпускники дарят учительнице шарф",
+      "style": "documentary",
+      "orientation": "landscape",
+      "aspect_ratio": "16:9",
+      "role": "section",
+      "prompt": "Create one standalone photorealistic photo for a personal gift website. A 66-year-old teacher with a silver bob and a narrow face tries on a soft plain scarf given by two former pupils, now adults aged 28 and 31. In an empty classroom, one graduate adjusts a scarf end while the other smiles nearby. Her expression is touched and amused. Use warm afternoon window light, a blank board and clearly separate hands, scarf and clothing. Warm family documentary photography with candid timing and unforced expressions. Wide horizontal 16:9 section composition. Keep all main faces, important hands and the complete action safely inside both central 4:3 and 1.65:1 crops, with natural environmental margins. Invent ordinary fictional people with distinct faces, realistic skin and believable age. Use warm paper, muted terracotta and natural surrounding colours without heavy filtering. Preserve correct anatomy, fingers, limbs and object geometry. One continuous real photograph: no fade, gradient mask, crossfade, compositing or synthetic caption band. No readable words, numbers, logos, watermarks, borders, collages or grids.\n\nAdditional anatomy and composition requirements: Show only these three adults: the silver-bobbed teacher aged 66 in a plain blouse, one former pupil aged 28 with short dark hair and round glasses, and one former pupil aged 31 with long auburn hair. Keep them compactly centred near a blank classroom board. The scarf is a single simple length of soft fabric, one end on each side of her neck; one graduate gently adjusts an end with two clearly distinct hands. Keep all faces and the scarf-adjusting action fully inside both central safe crops. Normal continuous furniture or clothing at the lower edge, no fake fade.\n\nCORRECTION: Move the camera several steps farther back for a genuinely wide environmental classroom photograph. Show the teacher and both former pupils waist-up as one compact group in the middle 55 percent of image width, with a substantial visible classroom area on both sides. All three whole faces, all important hands and the entire scarf-adjusting action must be comfortably inside the central 4:3 crop and central 1.65 crop. No close-up, no person against an image edge. Maintain natural anatomy and one continuous photograph without fade or synthetic bands.",
+      "references": [
+        {
+          "url": "https://www.danwoottonphotography.co.uk/blog/lancashire-family-shoot-manson",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "pixel-viewed by GPT worker using view_image after ordinary HTTP 200"
+        },
+        {
+          "url": "https://www.retrospectphotography.com/journal/2019/7/16/grandpa-amp-grandma-linton-70th-wedding-anniversary-",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "page-description"
+        }
+      ],
+      "status": "accepted",
+      "file": "originals/pc009.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "ac711f4bd332e22bae97912305cd0cae5e063909ea2c4d3c0fa67a0b4ae39602",
+      "visual_review": "Reviewed replacement wide classroom photograph: silver-bob teacher tries on a plain scarf while two distinct adult graduates stand compactly beside her; one adjusts the scarf with separate plausible hands. All three whole faces and the scarf action are comfortably inside central 4:3 and 1.65 crops. Blank board, natural classroom light, no writing, fade or artificial strip.",
+      "previews": {
+        "jpeg": "previews/jpeg/pc009.jpg",
+        "webp": "previews/webp/pc009.webp"
+      }
+    },
+    {
+      "id": "pc010",
+      "theme": "first-steps",
+      "title_ru": "Первые самостоятельные шаги",
+      "style": "editorial",
+      "orientation": "square",
+      "aspect_ratio": "1:1",
+      "role": "gallery",
+      "prompt": "Create one standalone photorealistic photo for a personal gift website. A one-year-old toddler with short fair hair makes a first unsteady independent step between two parents aged 29 and 34 seated low on the living-room floor. The dark-haired mother and clean-shaven sandy-haired father keep their hands open close by, ready to help without pulling. Show believable toddler balance, two feet and separate hands in gentle daylight, with a safe floor and no clutter. Refined warm lifestyle editorial photography with considered light and relaxed expressions. Square 1:1 gallery composition, with comfortable room around faces, hands and the complete action. Invent ordinary fictional people with distinct faces, realistic skin and believable age. Use warm paper, muted terracotta and natural surrounding colours without heavy filtering. Preserve correct anatomy, fingers, limbs and object geometry. One continuous real photograph: no fade, gradient mask, crossfade, compositing or synthetic caption band. No readable words, numbers, logos, watermarks, borders, collages or grids.\n\nAdditional anatomy and composition requirements: The toddler wears an ordinary long-sleeved cream shirt and soft muted olive trousers, with soft bare feet visible on a clean flat rug. Show one small foot flat on the floor and the other lifted slightly in a plausible first step, knees soft and body balanced. Parents sit on the floor close on either side with clearly separate open hands ready to help near the child's torso without grasping or pulling. Keep all three whole faces and important hands clearly visible and anatomically separate; no spare arms, fused fingers, impossible toddler posture or adult hands emerging from the child's body.",
+      "references": [
+        {
+          "url": "https://www.danwoottonphotography.co.uk/blog/lancashire-family-shoot-manson",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "pixel-viewed by GPT worker using view_image after ordinary HTTP 200"
+        },
+        {
+          "url": "https://www.retrospectphotography.com/journal/2019/7/16/grandpa-amp-grandma-linton-70th-wedding-anniversary-",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "page-description"
+        }
+      ],
+      "status": "accepted",
+      "file": "originals/pc010.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "e95e4f2176dbf5a7a018a820ff1405514dc86347f109783956ece955a0aaa24c",
+      "visual_review": "Reviewed square first-steps photo: clothed one-year-old toddler balances with one bare foot planted and the other lifted slightly. Both parents sit on the floor close by with four distinct open helping hands, without pulling the child. Faces, hands, feet and safe clear rug coherent; normal continuous photograph without gradient or caption strip.",
+      "previews": {
+        "jpeg": "previews/jpeg/pc010.jpg",
+        "webp": "previews/webp/pc010.webp"
+      }
+    },
+    {
+      "id": "pc011",
+      "theme": "business-opening",
+      "title_ru": "Первый поднос в своей пекарне",
+      "style": "documentary",
+      "orientation": "portrait",
+      "aspect_ratio": "4:5",
+      "role": "cover",
+      "prompt": "Create one standalone photorealistic photo for a personal gift website. A 35-year-old bakery owner with a short curly red bob places the first tray of fresh plain bread rolls on the counter of her newly opened bakery. Her 38-year-old partner with short dark hair and glasses steadies the open counter section beside her. They exchange a proud relieved smile. Use early-morning window light, flour-dusted practical clothes and believable tray support; no signage or prices. Warm family documentary photography with candid timing and unforced expressions. Vertical 4:5 cover composition. Keep faces and important hands above the lower fifth; normal continuous clothing or furniture forms the quiet lower area. Invent ordinary fictional people with distinct faces, realistic skin and believable age. Use warm paper, muted terracotta and natural surrounding colours without heavy filtering. Preserve correct anatomy, fingers, limbs and object geometry. One continuous real photograph: no fade, gradient mask, crossfade, compositing or synthetic caption band. No readable words, numbers, logos, watermarks, borders, collages or grids.\n\nAdditional anatomy and composition requirements: The bakery owner is an ordinary freckled redhead with a round face, and the partner is a clean-shaven dark-haired adult with rectangular glasses. The owner uses exactly two natural hands to support one rectangular baking tray as it rests securely on a clean counter. The partner stands beside her and keeps a simple hinged counter section open with one hand. Make tray, rolls and counter physically coherent, without floating objects or fused hands. Vertical 4:5, with normal continuous counter and apron in the lower fifth; no fade, gradient, compositing or caption band.\n\nCORRECTION: Move camera farther back and frame the working action higher. The tray with bread and both of the owner's hands should be centred around 60 percent of image height and fully above the bottom fifth. Include more ordinary continuous counter surface in the foreground below the tray so this lower fifth is quiet actual countertop. Faces above, hands and tray centrally visible, normal physical perspective. Do not add a gradient, fade, compositing, mask, abrupt ledge or fake caption strip.",
+      "references": [
+        {
+          "url": "https://id.pinterest.com/pin/film-camera-aesthetic--197665871143632998/",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "search-preview; page403"
+        },
+        {
+          "url": "https://www.pexels.com/photo/girl-photographing-friends-at-birthday-party-7337024/",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "page-description"
+        }
+      ],
+      "status": "accepted",
+      "file": "originals/pc011.png",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "7b39b6f6639e58f774d175af92c421433c7bd8f5031feaf927b7cd305d65c023",
+      "visual_review": "Reviewed replacement bakery portrait: red-haired owner places a tray of plain rolls onto a counter using two natural hands; dark-haired partner with glasses holds the hinged counter section. Tray and owner hands now sit well above lower fifth; lower area is ordinary continuous wooden countertop, no fade or synthetic band. Faces, fingers, tray and bread coherent, no logos.",
+      "previews": {
+        "jpeg": "previews/jpeg/pc011.jpg",
+        "webp": "previews/webp/pc011.webp"
+      }
+    },
+    {
+      "id": "pc012",
+      "theme": "career-start",
+      "title_ru": "Первый день работы ветеринаром",
+      "style": "documentary",
+      "orientation": "portrait",
+      "aspect_ratio": "4:5",
+      "role": "cover",
+      "prompt": "Create one standalone photorealistic photo for a personal gift website. A 27-year-old female veterinarian with a short dark pixie haircut puts on a plain clean work coat on her first working day. Her 43-year-old mentor with silver-streaked brown hair gently straightens the collar while they exchange a reassuring smile. Show a bright ordinary clinic staff room in soft daylight, distinct hands and realistic fabric. No animal examination, medical procedure or readable badge. Warm family documentary photography with candid timing and unforced expressions. Vertical 4:5 cover composition. Keep faces and important hands above the lower fifth; normal continuous clothing or furniture forms the quiet lower area. Invent ordinary fictional people with distinct faces, realistic skin and believable age. Use warm paper, muted terracotta and natural surrounding colours without heavy filtering. Preserve correct anatomy, fingers, limbs and object geometry. One continuous real photograph: no fade, gradient mask, crossfade, compositing or synthetic caption band. No readable words, numbers, logos, watermarks, borders, collages or grids.\n\nAdditional anatomy and composition requirements: The young veterinarian has a clearly distinct short black pixie haircut and round face; the female mentor has shoulder-length brown hair with silver streaks, oval glasses and a long narrow face. The work coat is an ordinary plain white coat with no printed badge. Mentor stands to one side and adjusts the upper collar with two clearly separate realistic hands; the younger woman holds one front edge of the coat herself. Keep faces and collar action safely framed above lower fifth. Normal continuous coats and furniture extend to bottom, no fade or synthetic band.",
+      "references": [
+        {
+          "url": "https://craigfrankphotography.wordpress.com/2019/04/02/jesabelles-birthday-party/",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "pixel-viewed by GPT worker using view_image after ordinary HTTP 200; two photographs inspected"
+        },
+        {
+          "url": "https://www.retrospectphotography.com/journal/2019/2/20/the-honest-portrait-project-30",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "pixel-viewed by GPT worker using view_image after ordinary HTTP 200"
+        }
+      ],
+      "status": "accepted",
+      "file": "originals/pc012.png",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "9324c3b5a2fe555a73b73806eef6ea29d4221f02429e9a8a2a980876aea69ece",
+      "visual_review": "Reviewed full portrait: short-black-pixie-haired young veterinarian in a plain white coat looks toward her older female mentor with silver-streaked hair and glasses. Two distinct mentor hands straighten the collar; younger woman's own hand holds the coat front naturally. Eyes, fingers and clothing coherent; continuous photograph to bottom, no printed badge or medical procedure.",
+      "previews": {
+        "jpeg": "previews/jpeg/pc012.jpg",
+        "webp": "previews/webp/pc012.webp"
+      }
+    },
+    {
+      "id": "pc013",
+      "theme": "first-bike",
+      "title_ru": "Первая самостоятельная поездка",
+      "style": "documentary",
+      "orientation": "landscape",
+      "aspect_ratio": "16:9",
+      "role": "section",
+      "prompt": "Create one standalone photorealistic photo for a personal gift website. A 38-year-old clean-shaven father with short sandy hair has just released his eight-year-old daughter bicycle saddle as she rides independently for the first time on a broad safe park path. She wears a correctly fitted plain helmet and looks ahead; he jogs closely behind with hands near his body. Capture believable pedalling, wheels and balance in gentle morning daylight, with no traffic. Warm family documentary photography with candid timing and unforced expressions. Wide horizontal 16:9 section composition. Keep all main faces, important hands and the complete action safely inside both central 4:3 and 1.65:1 crops, with natural environmental margins. Invent ordinary fictional people with distinct faces, realistic skin and believable age. Use warm paper, muted terracotta and natural surrounding colours without heavy filtering. Preserve correct anatomy, fingers, limbs and object geometry. One continuous real photograph: no fade, gradient mask, crossfade, compositing or synthetic caption band. No readable words, numbers, logos, watermarks, borders, collages or grids.\n\nAdditional anatomy and composition requirements: Show a realistic small two-wheel bicycle in side three-quarter view, with two equal circular wheels, an ordinary connected frame, visible fork, saddle, handlebars, chain and pedals. The eight-year-old girl wears ordinary trousers, a light jacket and a properly fitted plain helmet; both feet contact the pedals and both hands grip the handlebar. Her father jogs a short distance behind with arms bent near his torso, hands no longer touching saddle. Use a more distant wide view with the full bicycle, whole child, father face and important hands compactly inside the central 4:3 and 1.65:1 safe crops. No traffic, spare limbs, extra wheels, impossible chain geometry or arms stretching into the margins.",
+      "references": [
+        {
+          "url": "https://www.pexels.com/photo/people-friends-hiking-cliff-7625042/",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "page-description"
+        },
+        {
+          "url": "https://www.pexels.com/photo/young-friends-hiking-in-scenic-mountain-landscape-30991797/",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "page-description"
+        }
+      ],
+      "status": "accepted",
+      "file": "originals/pc013.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "aadb79d594e3f30d63fd9effbada819a15cf70c860286717eccedea482d92eb1",
+      "visual_review": "Reviewed wide bicycle scene: helmeted school-age girl rides a physically coherent two-wheel bicycle with both hands on handlebar and feet on opposite pedals; father jogs behind with hands no longer on saddle. Full bicycle, child, father and important hands fit central 4:3/1.65 crops. Safe park path, realistic wheels/frame/chain, no text, fade or spare limbs.",
+      "previews": {
+        "jpeg": "previews/jpeg/pc013.jpg",
+        "webp": "previews/webp/pc013.webp"
+      }
+    },
+    {
+      "id": "pc014",
+      "theme": "first-school-day",
+      "title_ru": "Первый школьный день",
+      "style": "documentary",
+      "orientation": "landscape",
+      "aspect_ratio": "16:9",
+      "role": "section",
+      "prompt": "Create one standalone photorealistic photo for a personal gift website. A 34-year-old mother with shoulder-length auburn waves crouches to adjust her seven-year-old daughter backpack straps outside a school on the first day. The child has a dark bob and looks proudly toward her clean-shaven 37-year-old father with glasses standing nearby. Use soft morning light, plain age-appropriate clothes and a simple school entrance without readable lettering, with distinct hands and backpack straps. Warm family documentary photography with candid timing and unforced expressions. Wide horizontal 16:9 section composition. Keep all main faces, important hands and the complete action safely inside both central 4:3 and 1.65:1 crops, with natural environmental margins. Invent ordinary fictional people with distinct faces, realistic skin and believable age. Use warm paper, muted terracotta and natural surrounding colours without heavy filtering. Preserve correct anatomy, fingers, limbs and object geometry. One continuous real photograph: no fade, gradient mask, crossfade, compositing or synthetic caption band. No readable words, numbers, logos, watermarks, borders, collages or grids.\n\nAdditional anatomy and composition requirements: The mother has auburn shoulder-length waves and no glasses, the seven-year-old girl a chin-length dark bob, and the father short dark-blonde hair, an angular face, rectangular glasses and no beard. The mother has exactly two visible hands, each lightly adjusting one backpack shoulder strap near the child's upper arms; all fingers stay separate from the straps. The child stands naturally with both feet on the ground, while father stays close beside them. Use a genuinely wide school-entrance view with the compact family group in the middle 55 percent of width; all faces, adjusting hands, backpack and main interaction completely inside both central 4:3 and 1.65 crops. No readable school signs or badges. One continuous natural photograph, no fade or synthetic bands.",
+      "references": [
+        {
+          "url": "https://www.danwoottonphotography.co.uk/blog/lancashire-family-shoot-manson",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "pixel-viewed by GPT worker using view_image after ordinary HTTP 200"
+        },
+        {
+          "url": "https://www.retrospectphotography.com/journal/2019/7/16/grandpa-amp-grandma-linton-70th-wedding-anniversary-",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "page-description"
+        }
+      ],
+      "status": "accepted",
+      "file": "originals/pc014.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "5c9dabd085be63ff9c090866f1b2c932798856b5c0d01b83679b0a1f144dc42e",
+      "visual_review": "Reviewed wide first-school-day scene: auburn-haired mother kneels and adjusts both backpack straps with two distinct natural hands; school-age girl stands normally and looks toward her clean-shaven father with glasses. All main faces, adjusting hands and backpack fit central safe crops. Plausible fingers, ordinary clothes and school entrance, no readable signs or artificial gradients.",
+      "previews": {
+        "jpeg": "previews/jpeg/pc014.jpg",
+        "webp": "previews/webp/pc014.webp"
+      }
+    },
+    {
+      "id": "pc015",
+      "theme": "first-book",
+      "title_ru": "Первый тираж собственной книги",
+      "style": "editorial",
+      "orientation": "square",
+      "aspect_ratio": "1:1",
+      "role": "gallery",
+      "prompt": "Create one standalone photorealistic photo for a personal gift website. A 41-year-old author with short salt-and-pepper hair, a clean-shaven face and round glasses opens a cardboard box containing the first printed copies of his own book. He lifts one book with a pleased, disbelieving smile in a modest study. Covers are solid muted terracotta and completely blank. Use soft side light, believable cardboard folds and separate natural fingers supporting the book. Refined warm lifestyle editorial photography with considered light and relaxed expressions. Square 1:1 gallery composition, with comfortable room around faces, hands and the complete action. Invent ordinary fictional people with distinct faces, realistic skin and believable age. Use warm paper, muted terracotta and natural surrounding colours without heavy filtering. Preserve correct anatomy, fingers, limbs and object geometry. One continuous real photograph: no fade, gradient mask, crossfade, compositing or synthetic caption band. No readable words, numbers, logos, watermarks, borders, collages or grids.\nNative image aspect ratio exactly 1:1. The book cover, back and spine are blank flat colour, with no lettering, symbols or decorative marks.",
+      "references": [
+        {
+          "url": "https://craigfrankphotography.wordpress.com/2019/04/02/jesabelles-birthday-party/",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "pixel-viewed by GPT worker using view_image after ordinary HTTP 200; two photographs inspected"
+        },
+        {
+          "url": "https://www.retrospectphotography.com/journal/2019/2/20/the-honest-portrait-project-30",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "pixel-viewed by GPT worker using view_image after ordinary HTTP 200"
+        }
+      ],
+      "status": "accepted",
+      "file": "originals/pc015.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "77d1f2bfe81bcd75ab9db1e0ab96339efede367b66f04b7835f404834a0dbda8",
+      "visual_review": "Square first-book-printing scene shows the author lifting a blank terracotta hardcover from a cardboard carton. Main book has coherent edges and page block; separate fingers support its sides and base naturally. Covers and visible main spine have no text; face and whole unboxing action are framed. Lower scene is continuous cardboard and table.",
+      "previews": {
+        "jpeg": "previews/jpeg/pc015.jpg",
+        "webp": "previews/webp/pc015.webp"
+      }
+    },
+    {
+      "id": "pc016",
+      "theme": "music-debut",
+      "title_ru": "Первое публичное выступление",
+      "style": "documentary",
+      "orientation": "portrait",
+      "aspect_ratio": "4:5",
+      "role": "cover",
+      "prompt": "Create one standalone photorealistic photo for a personal gift website. A 34-year-old beginner saxophonist with short curly dark-blonde hair and a broad face finishes a first public performance in a tiny neighbourhood music venue. The saxophone is lowered naturally against the torso on its neck strap; both hands rest correctly on it. A friend with a short black bob applauds nearby. Use warm practical stage light, believable instrument geometry and a relieved proud smile. Warm family documentary photography with candid timing and unforced expressions. Vertical 4:5 cover composition. Keep faces and important hands above the lower fifth; normal continuous clothing or furniture forms the quiet lower area. Invent ordinary fictional people with distinct faces, realistic skin and believable age. Use warm paper, muted terracotta and natural surrounding colours without heavy filtering. Preserve correct anatomy, fingers, limbs and object geometry. One continuous real photograph: no fade, gradient mask, crossfade, compositing or synthetic caption band. No readable words, numbers, logos, watermarks, borders, collages or grids.\nNative image aspect ratio exactly 4:5. One complete mechanically believable alto saxophone: a single connected J-shaped brass body with one flared bell, one curved neck ending in one small black mouthpiece, coherent aligned round keys and key rods, and one normal neck strap. No duplicate bells, extra mouthpieces or disconnected instrument parts. The musician has finished playing and is not blowing.\n\nREPLACEMENT FRAMING PRIORITY: Create a slightly more distant FULL-LENGTH vertical environmental photograph of both people on the small venue's real wooden stage, from their heads to their shoes, not a waist-up portrait. Show the whole saxophonist and applauding friend naturally with generous surroundings. BOTH of the musician's hands and the ENTIRE connected saxophone, including its mouthpiece, neck, lowest curved bow and the complete flared bell, must fit wholly ABOVE the lower QUARTER of the image. Aim to place the lowest bell/bow and the lower hand no lower than 68 percent of image height, leaving a real safe margin before a later caption at 80 percent height. The bottom quarter must contain normal continuous trouser legs, shoes, a chair leg if present, and the ordinary real wooden stage floor. No gradient mask, fading body, dissolved clothes, compositing, blank stripe or artificial caption band. Keep normal realistic instrument scale, plausible connected saxophone construction and correct finger positions. Both faces show the relieved joy of a first successful performance, and the friend is applauding. One native vertical 4:5 photo.",
+      "references": [
+        {
+          "url": "https://katebunnyhampson.com/film-wedding-photographer/",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "page-description"
+        },
+        {
+          "url": "https://pacoandaga.com/film-wedding-photography",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "page-description"
+        }
+      ],
+      "status": "accepted",
+      "file": "originals/pc016.png",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "6685e5b50aa1cf2faf21d6f24cba2b20d8b7be68f5acce734b217ad2b85f8d6e",
+      "visual_review": "Replacement is a full-length vertical debut-performance photograph with the saxophonist and an applauding friend. Both complete hands are above roughly 49 percent of image height; the entire saxophone, including its mouthpiece, curved neck, single flared bell and lowest bow, ends by roughly 54 percent. A rendered 75 percent safety line and 80 percent caption line cross only ordinary trouser legs and real stage surroundings, far below hands and instrument. Saxophone has coherent connected body, keys, neck strap and normal scale; hand grips and distinct faces are plausible. Bottom is continuous real trousers, shoes and wooden floor, without fade or synthetic stripe. Background amplifier marks are out of focus and unreadable; no identifiable text or logos.",
+      "previews": {
+        "jpeg": "previews/jpeg/pc016.jpg",
+        "webp": "previews/webp/pc016.webp"
+      }
+    },
+    {
+      "id": "pc017",
+      "theme": "first-exhibition",
+      "title_ru": "Первая персональная выставка",
+      "style": "documentary",
+      "orientation": "portrait",
+      "aspect_ratio": "4:5",
+      "role": "cover",
+      "prompt": "Create one standalone photorealistic photo for a personal gift website. A 40-year-old woman with a straight black bob and softly square face carefully unwraps her framed abstract painting for her first solo exhibition in a small gallery. A 33-year-old fair-haired assistant steadies the opposite frame edge. The artwork contains only broad abstract colour shapes, no letters or identifiable figures. Use gallery daylight, plain walls and believable separate hands, frame and protective wrapping. Warm family documentary photography with candid timing and unforced expressions. Vertical 4:5 cover composition. Keep faces and important hands above the lower fifth; normal continuous clothing or furniture forms the quiet lower area. Invent ordinary fictional people with distinct faces, realistic skin and believable age. Use warm paper, muted terracotta and natural surrounding colours without heavy filtering. Preserve correct anatomy, fingers, limbs and object geometry. One continuous real photograph: no fade, gradient mask, crossfade, compositing or synthetic caption band. No readable words, numbers, logos, watermarks, borders, collages or grids.\nNative image aspect ratio exactly 4:5. One physical rectangular frame with four consistent corners and straight edges; the two people support separate opposite sides while removing paper wrapping. The framed painting has broad plain abstract colour shapes only, without any words or signatures.",
+      "references": [
+        {
+          "url": "https://craigfrankphotography.wordpress.com/2019/04/02/jesabelles-birthday-party/",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "pixel-viewed by GPT worker using view_image after ordinary HTTP 200; two photographs inspected"
+        },
+        {
+          "url": "https://www.retrospectphotography.com/journal/2019/2/20/the-honest-portrait-project-30",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "pixel-viewed by GPT worker using view_image after ordinary HTTP 200"
+        }
+      ],
+      "status": "accepted",
+      "file": "originals/pc017.png",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "be28882597066a6206d1a011e2933063b9bde9c197fd75aeca7ecb78fbeb0083",
+      "visual_review": "Vertical first-exhibition scene shows two women unwrapping one framed abstract painting. Artist peels real kraft paper while assistant supports the opposite frame edge with separate visible hands. Frame perspective and corners are coherent, faces are distinct, artwork has broad colour shapes with no text or signature. Lower paper, bubble wrap and table are physically continuous.",
+      "previews": {
+        "jpeg": "previews/jpeg/pc017.jpg",
+        "webp": "previews/webp/pc017.webp"
+      }
+    },
+    {
+      "id": "pc018",
+      "theme": "volunteer-project",
+      "title_ru": "Волонтёры восстановили скамью",
+      "style": "documentary",
+      "orientation": "landscape",
+      "aspect_ratio": "16:9",
+      "role": "section",
+      "prompt": "Create one standalone photorealistic photo for a personal gift website. Three adult volunteers aged 28 to 42 have restored an ordinary courtyard bench. A red-haired woman peels masking tape from its edge while a clean-shaven bald man and a dark-curly-haired woman exchange a relaxed high-five beside her. Show practical work clothes, a closed paint tin and believable dry paint in afternoon daylight, with all important hands and the full bench interaction centred. Warm family documentary photography with candid timing and unforced expressions. Wide horizontal 16:9 section composition. Keep all main faces, important hands and the complete action safely inside both central 4:3 and 1.65:1 crops, with natural environmental margins. Invent ordinary fictional people with distinct faces, realistic skin and believable age. Use warm paper, muted terracotta and natural surrounding colours without heavy filtering. Preserve correct anatomy, fingers, limbs and object geometry. One continuous real photograph: no fade, gradient mask, crossfade, compositing or synthetic caption band. No readable words, numbers, logos, watermarks, borders, collages or grids.\nNative image aspect ratio exactly 16:9. Medium-wide environmental framing with all three people and their important actions as one compact group in the middle two-thirds of image width. Leave ordinary courtyard or garden context at both outer edges so that the full heads and key hand gestures remain intact after a central 4:3 crop.",
+      "references": [
+        {
+          "url": "https://id.pinterest.com/pin/film-camera-aesthetic--197665871143632998/",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "search-preview; page403"
+        },
+        {
+          "url": "https://www.pexels.com/photo/girl-photographing-friends-at-birthday-party-7337024/",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "page-description"
+        }
+      ],
+      "status": "accepted",
+      "file": "originals/pc018.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "35fcb206e3b62297ad7d3a11c915a4aa9bdc8f726000fe4e4b92df01ad90623a",
+      "visual_review": "Wide courtyard restoration scene shows three adults around one coherent slatted bench with metal supports. One woman peels real masking tape with separate fingers while the other two complete a plausible palm-to-palm high-five. Faces, limbs, bench and continuous ground are natural, and no words/logos are visible. Rendered central 4:3 and 1.65 crops were viewed: all three heads, tape-removal hands, high-five hands and the bench action remain intact.",
+      "previews": {
+        "jpeg": "previews/jpeg/pc018.jpg",
+        "webp": "previews/webp/pc018.webp"
+      }
+    },
+    {
+      "id": "pc019",
+      "theme": "family-tree-planting",
+      "title_ru": "Три поколения сажают дерево",
+      "style": "editorial",
+      "orientation": "landscape",
+      "aspect_ratio": "16:9",
+      "role": "section",
+      "prompt": "Create one standalone photorealistic photo for a personal gift website. Three generations plant a young tree in a family garden: a 72-year-old silver-haired grandfather steadies the thin trunk, his 39-year-old daughter with short dark curls adds soil with a small shovel, and an eight-year-old grandchild pours water from a plain watering can. Use distinct natural faces, realistic grips, believable sapling roots and warm afternoon light, with their shared planting action clearly visible. Refined warm lifestyle editorial photography with considered light and relaxed expressions. Wide horizontal 16:9 section composition. Keep all main faces, important hands and the complete action safely inside both central 4:3 and 1.65:1 crops, with natural environmental margins. Invent ordinary fictional people with distinct faces, realistic skin and believable age. Use warm paper, muted terracotta and natural surrounding colours without heavy filtering. Preserve correct anatomy, fingers, limbs and object geometry. One continuous real photograph: no fade, gradient mask, crossfade, compositing or synthetic caption band. No readable words, numbers, logos, watermarks, borders, collages or grids.\nNative image aspect ratio exactly 16:9. Medium-wide environmental framing with all three people and their important actions as one compact group in the middle two-thirds of image width. Leave ordinary courtyard or garden context at both outer edges so that the full heads and key hand gestures remain intact after a central 4:3 crop.\nThe child holds a real single watering can with one handle and one long spout, supporting it naturally. Water falls from the end of its spout down into the same planting hole. The sapling trunk and the soil-planting action are physically coherent.",
+      "references": [
+        {
+          "url": "https://www.danwoottonphotography.co.uk/blog/lancashire-family-shoot-manson",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "pixel-viewed by GPT worker using view_image after ordinary HTTP 200"
+        },
+        {
+          "url": "https://www.retrospectphotography.com/journal/2019/7/16/grandpa-amp-grandma-linton-70th-wedding-anniversary-",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "page-description"
+        }
+      ],
+      "status": "accepted",
+      "file": "originals/pc019.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "6e2d9fc8ae23559a87b8b09ad295cf48ff0cd23fa83508d34b64669ef64b7d7f",
+      "visual_review": "Wide planting scene shows grandfather steadying one sapling trunk, daughter adding soil with a real hand trowel, and child holding a single handled watering can with its second hand supporting the base. Water exits the spout into the planting hole; roots, soil and grips are physically coherent. Distinct faces and natural continuous garden foreground have no mask or lettering. Actual central 4:3 and 1.65 crops were rendered and viewed; faces, hands, can/spout, tree and soil action stay readable.",
+      "previews": {
+        "jpeg": "previews/jpeg/pc019.jpg",
+        "webp": "previews/webp/pc019.webp"
+      }
+    },
+    {
+      "id": "pc020",
+      "theme": "pottery",
+      "title_ru": "Первая чаша на гончарном занятии",
+      "style": "editorial",
+      "orientation": "square",
+      "aspect_ratio": "1:1",
+      "role": "gallery",
+      "prompt": "Create one standalone photorealistic photo for a personal gift website. Three female friends aged 28, 33 and 41 pause at their first pottery class to admire a freshly made slightly crooked clay bowl held carefully by one of them. Give them distinct appearances: short dark hair and glasses, long auburn waves, and short sandy-blonde hair. Clay marks on ordinary aprons and fingertips feel real. Use soft studio daylight, believable bowl weight and separate hands. Refined warm lifestyle editorial photography with considered light and relaxed expressions. Square 1:1 gallery composition, with comfortable room around faces, hands and the complete action. Invent ordinary fictional people with distinct faces, realistic skin and believable age. Use warm paper, muted terracotta and natural surrounding colours without heavy filtering. Preserve correct anatomy, fingers, limbs and object geometry. One continuous real photograph: no fade, gradient mask, crossfade, compositing or synthetic caption band. No readable words, numbers, logos, watermarks, borders, collages or grids.\nNative image aspect ratio exactly 1:1. One woman supports the clay bowl's base with one palm and steadies its outside with the other hand, with individual visible fingers and natural moist clay smudges. The other friends keep their hands separate from hers.",
+      "references": [
+        {
+          "url": "https://id.pinterest.com/pin/film-camera-aesthetic--197665871143632998/",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "search-preview; page403"
+        },
+        {
+          "url": "https://www.pexels.com/photo/girl-photographing-friends-at-birthday-party-7337024/",
+          "technique": "Stylistic reference only: warm natural light, clear interaction, relaxed personal expressions and tactile surroundings. This source is not evidence or a depiction of the new event.",
+          "verification": "page-description"
+        }
+      ],
+      "status": "accepted",
+      "file": "originals/pc020.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "39edbd10d9c34cf27a9a12a3a843083ebd7a7da0158c9a34097b707f6a368cd1",
+      "visual_review": "Square pottery-class scene shows three distinct women admiring one slightly uneven clay bowl. The central woman supports its base with one palm and steadies the outside with separate clay-marked fingers; no hands merge with the bowl or each other. Faces, aprons, clay texture and continuous tabletop are natural, with full heads and complete bowl action framed and no text or logos.",
+      "previews": {
+        "jpeg": "previews/jpeg/pc020.jpg",
+        "webp": "previews/webp/pc020.webp"
+      }
+    }
+  ],
+  "generation_tool": "built-in image_gen",
+  "people": "fictional demonstration subjects"
+}

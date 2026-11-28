@@ -39,3 +39,11 @@ codex/v3/frames_all/
 codex/v3/work_povod_scenes/
 run_*.out
 .taste-skill/
+
+# локальный архив библиотеки медалей для скачивания
+/output/medals-50/
+# локальный архив библиотеки предметов профессий для скачивания
+/output/professions-50/
+# локальные копии тематических пробников и архив для скачивания
+/output/imagegen/collections-samples/
+/output/imagegen/collections-samples-36.zip

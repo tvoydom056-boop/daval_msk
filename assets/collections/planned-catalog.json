@@ -1,0 +1,2209 @@
+{
+  "schema_version": 1,
+  "title": "План тематической библиотеки: 230 позиций",
+  "status": "partially-generated",
+  "count": 230,
+  "sample_count": 36,
+  "categories": [
+    {
+      "id": "family-archive",
+      "name": "Семейный архив",
+      "count": 22
+    },
+    {
+      "id": "sport",
+      "name": "Спорт",
+      "count": 19
+    },
+    {
+      "id": "music",
+      "name": "Музыка",
+      "count": 12
+    },
+    {
+      "id": "travel",
+      "name": "Путешествия",
+      "count": 20
+    },
+    {
+      "id": "hobbies",
+      "name": "Увлечения",
+      "count": 21
+    },
+    {
+      "id": "home-and-garden",
+      "name": "Дом и сад",
+      "count": 28
+    },
+    {
+      "id": "education",
+      "name": "Учёба и достижения",
+      "count": 12
+    },
+    {
+      "id": "personal-items",
+      "name": "Личные вещи",
+      "count": 12
+    },
+    {
+      "id": "everyday-history",
+      "name": "Эпоха и быт",
+      "count": 12
+    },
+    {
+      "id": "gaming",
+      "name": "Компьютерные игры",
+      "count": 12
+    },
+    {
+      "id": "animals",
+      "name": "Коты и другие животные",
+      "count": 12
+    },
+    {
+      "id": "clothing-templates",
+      "name": "Шаблоны одежды",
+      "count": 16,
+      "genders": {
+        "male": 8,
+        "female": 8
+      }
+    },
+    {
+      "id": "frames",
+      "name": "Рамки и держатели",
+      "count": 8
+    },
+    {
+      "id": "plants",
+      "name": "Растения и времена года",
+      "count": 8
+    },
+    {
+      "id": "childhood",
+      "name": "Детство и семейные игры",
+      "count": 8
+    },
+    {
+      "id": "pet-accessories",
+      "name": "Вещи домашних питомцев",
+      "count": 8
+    }
+  ],
+  "items": [
+    {
+      "id": "c001",
+      "category": "family-archive",
+      "name": "Семейный фотоальбом, закрытый, без надписей",
+      "file": "family-archive/png/01-photo-album.png",
+      "sample": true,
+      "status": "generated"
+    },
+    {
+      "id": "c002",
+      "category": "family-archive",
+      "name": "Открытый почтовый конверт без надписей",
+      "file": "family-archive/png/02-open-envelope.png",
+      "sample": true,
+      "status": "generated"
+    },
+    {
+      "id": "c003",
+      "category": "family-archive",
+      "name": "Перевязанная стопка писем без читаемого текста",
+      "file": "family-archive/png/03-tied-letters.png",
+      "sample": true,
+      "status": "generated"
+    },
+    {
+      "id": "c004",
+      "category": "family-archive",
+      "name": "Пустая деревянная фоторамка",
+      "file": "family-archive/png/04-wooden-photo-frame.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c005",
+      "category": "family-archive",
+      "name": "Чистая состаренная фотокарточка",
+      "file": "family-archive/png/05-blank-vintage-photo-card.png",
+      "sample": false,
+      "status": "deferred",
+      "deferred_reason": "Пустая фотокарточка визуально близка к выбранной открытке c006 и менее выразительна без реального семейного снимка."
+    },
+    {
+      "id": "c006",
+      "category": "family-archive",
+      "name": "Почтовая открытка с пустыми полями",
+      "file": "family-archive/png/06-blank-postcard.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c007",
+      "category": "family-archive",
+      "name": "Полоска фотонегативов",
+      "file": "family-archive/png/07-film-negative-strip.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c008",
+      "category": "family-archive",
+      "name": "Деревянная шкатулка для семейных реликвий",
+      "file": "family-archive/png/08-keepsake-box.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c009",
+      "category": "family-archive",
+      "name": "Детская вязаная пинетка",
+      "file": "family-archive/png/09-baby-bootie.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c010",
+      "category": "family-archive",
+      "name": "Браслет новорождённого с пустой биркой",
+      "file": "family-archive/png/10-blank-newborn-bracelet.png",
+      "sample": false,
+      "status": "deferred",
+      "deferred_reason": "Браслет новорождённого применим к узкому эпизоду и с пустой биркой слабо узнаваем; детскую тему уже раскрывают пинетка и погремушка."
+    },
+    {
+      "id": "c011",
+      "category": "family-archive",
+      "name": "Свадебный атласный бант",
+      "file": "family-archive/png/11-wedding-ribbon-bow.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c012",
+      "category": "family-archive",
+      "name": "Засушенная роза",
+      "file": "family-archive/png/12-pressed-rose.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c013",
+      "category": "family-archive",
+      "name": "Старая детская погремушка",
+      "file": "family-archive/png/13-vintage-baby-rattle.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c014",
+      "category": "family-archive",
+      "name": "Фотослайд в картонной рамке без надписей",
+      "file": "family-archive/png/14-mounted-photo-slide.png",
+      "sample": false,
+      "status": "deferred",
+      "deferred_reason": "Одиночный слайд близок по роли к выбранной полоске негативов c007; небольшой пустой кадр добавляет меньше разнообразия."
+    },
+    {
+      "id": "c015",
+      "category": "sport",
+      "name": "Футбольный мяч",
+      "file": "sport/png/01-football.png",
+      "sample": true,
+      "status": "generated"
+    },
+    {
+      "id": "c016",
+      "category": "sport",
+      "name": "Теннисная ракетка",
+      "file": "sport/png/02-tennis-racket.png",
+      "sample": true,
+      "status": "generated"
+    },
+    {
+      "id": "c017",
+      "category": "sport",
+      "name": "Фигурный конёк",
+      "file": "sport/png/03-figure-skate.png",
+      "sample": true,
+      "status": "generated"
+    },
+    {
+      "id": "c018",
+      "category": "sport",
+      "name": "Деревянная лыжа с креплением",
+      "file": "sport/png/04-wooden-ski.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c019",
+      "category": "sport",
+      "name": "Гантель",
+      "file": "sport/png/05-dumbbell.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c020",
+      "category": "sport",
+      "name": "Плавательные очки",
+      "file": "sport/png/06-swimming-goggles.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c021",
+      "category": "sport",
+      "name": "Боксёрская перчатка",
+      "file": "sport/png/07-boxing-glove.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c022",
+      "category": "sport",
+      "name": "Дорожный велосипед",
+      "file": "sport/png/08-road-bicycle.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c023",
+      "category": "sport",
+      "name": "Баскетбольный мяч",
+      "file": "sport/png/09-basketball.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c024",
+      "category": "sport",
+      "name": "Волан для бадминтона",
+      "file": "sport/png/10-badminton-shuttlecock.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c025",
+      "category": "sport",
+      "name": "Ракетка для настольного тенниса",
+      "file": "sport/png/11-table-tennis-paddle.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c026",
+      "category": "sport",
+      "name": "Фехтовальная маска",
+      "file": "sport/png/12-fencing-mask.png",
+      "sample": false,
+      "status": "deferred",
+      "deferred_reason": "Фехтовальная маска нужна более редкому увлечению; в этой партии предпочтены более универсальные спортивные предметы."
+    },
+    {
+      "id": "c027",
+      "category": "music",
+      "name": "Акустическая гитара",
+      "file": "music/png/01-acoustic-guitar.png",
+      "sample": true,
+      "status": "generated"
+    },
+    {
+      "id": "c028",
+      "category": "music",
+      "name": "Баян",
+      "file": "music/png/02-button-accordion.png",
+      "sample": true,
+      "status": "generated"
+    },
+    {
+      "id": "c029",
+      "category": "music",
+      "name": "Виниловая пластинка без надписей",
+      "file": "music/png/03-vinyl-record.png",
+      "sample": true,
+      "status": "generated"
+    },
+    {
+      "id": "c030",
+      "category": "music",
+      "name": "Поперечная флейта",
+      "file": "music/png/04-concert-flute.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c031",
+      "category": "music",
+      "name": "Труба",
+      "file": "music/png/05-trumpet.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c032",
+      "category": "music",
+      "name": "Бубен",
+      "file": "music/png/06-tambourine.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c033",
+      "category": "music",
+      "name": "Деревянный механический метроном",
+      "file": "music/png/07-wooden-metronome.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c034",
+      "category": "music",
+      "name": "Аудиокассета без надписей",
+      "file": "music/png/08-audio-cassette.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c035",
+      "category": "music",
+      "name": "Балалайка",
+      "file": "music/png/09-balalaika.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c036",
+      "category": "music",
+      "name": "Акустическое пианино",
+      "file": "music/png/10-upright-piano.png",
+      "sample": false,
+      "status": "deferred",
+      "deferred_reason": "Полное пианино требует корректной перспективы корпуса и множества повторяющихся клавиш; более компактные инструменты дают восемь разных музыкальных сюжетов."
+    },
+    {
+      "id": "c037",
+      "category": "music",
+      "name": "Губная гармошка",
+      "file": "music/png/11-harmonica.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c038",
+      "category": "music",
+      "name": "Саксофон",
+      "file": "music/png/12-saxophone.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c039",
+      "category": "travel",
+      "name": "Старый дорожный чемодан",
+      "file": "travel/png/01-vintage-suitcase.png",
+      "sample": true,
+      "status": "generated"
+    },
+    {
+      "id": "c040",
+      "category": "travel",
+      "name": "Магнитный туристический компас",
+      "file": "travel/png/02-magnetic-compass.png",
+      "sample": true,
+      "status": "generated"
+    },
+    {
+      "id": "c041",
+      "category": "travel",
+      "name": "Бинокль",
+      "file": "travel/png/03-binoculars.png",
+      "sample": true,
+      "status": "generated"
+    },
+    {
+      "id": "c042",
+      "category": "travel",
+      "name": "Походный рюкзак",
+      "file": "travel/png/04-hiking-backpack.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c043",
+      "category": "travel",
+      "name": "Складная карта без надписей",
+      "file": "travel/png/05-unlabeled-folding-map.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c044",
+      "category": "travel",
+      "name": "Железнодорожный билет с пустыми полями",
+      "file": "travel/png/06-blank-railway-ticket.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c045",
+      "category": "travel",
+      "name": "Походный термос",
+      "file": "travel/png/07-camping-thermos.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c046",
+      "category": "travel",
+      "name": "Брезентовая туристическая палатка",
+      "file": "travel/png/08-canvas-tent.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c047",
+      "category": "travel",
+      "name": "Походный ботинок",
+      "file": "travel/png/09-hiking-boot.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c048",
+      "category": "travel",
+      "name": "Треккинговая палка",
+      "file": "travel/png/10-trekking-pole.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c049",
+      "category": "travel",
+      "name": "Багажная бирка с пустым полем",
+      "file": "travel/png/11-blank-luggage-tag.png",
+      "sample": false,
+      "status": "deferred",
+      "deferred_reason": "Пустая багажная бирка мало выразительна отдельно и близка к уже выбранным дорожным заготовкам карты и билета."
+    },
+    {
+      "id": "c050",
+      "category": "travel",
+      "name": "Морская раковина на память о поездке",
+      "file": "travel/png/12-seashell-souvenir.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c051",
+      "category": "hobbies",
+      "name": "Деревянный шахматный конь",
+      "file": "hobbies/png/01-wooden-chess-knight.png",
+      "sample": true,
+      "status": "generated"
+    },
+    {
+      "id": "c052",
+      "category": "hobbies",
+      "name": "Пяльцы с вышивкой",
+      "file": "hobbies/png/02-embroidery-hoop.png",
+      "sample": true,
+      "status": "generated"
+    },
+    {
+      "id": "c053",
+      "category": "hobbies",
+      "name": "Удочка с катушкой",
+      "file": "hobbies/png/03-fishing-rod.png",
+      "sample": true,
+      "status": "generated"
+    },
+    {
+      "id": "c054",
+      "category": "hobbies",
+      "name": "Клубок шерсти",
+      "file": "hobbies/png/04-wool-yarn-ball.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c055",
+      "category": "hobbies",
+      "name": "Крючок для вязания",
+      "file": "hobbies/png/05-crochet-hook.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c056",
+      "category": "hobbies",
+      "name": "Любительский астрономический телескоп",
+      "file": "hobbies/png/06-amateur-telescope.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c057",
+      "category": "hobbies",
+      "name": "Модель парусника",
+      "file": "hobbies/png/07-model-sailboat.png",
+      "sample": false,
+      "status": "deferred",
+      "deferred_reason": "Тонкий рангоут и связная система такелажа модели парусника сложнее проверяются; сохранены более простые и разные формы увлечений."
+    },
+    {
+      "id": "c058",
+      "category": "hobbies",
+      "name": "Механический кубик-головоломка без маркировки",
+      "file": "hobbies/png/08-twist-puzzle-cube.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c059",
+      "category": "hobbies",
+      "name": "Керамическая ваза ручной работы",
+      "file": "hobbies/png/09-handmade-pottery-vase.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c060",
+      "category": "hobbies",
+      "name": "Бумажный журавлик оригами",
+      "file": "hobbies/png/10-origami-crane.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c061",
+      "category": "hobbies",
+      "name": "Коллекционная модель ретроавтомобиля",
+      "file": "hobbies/png/11-model-vintage-car.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c062",
+      "category": "hobbies",
+      "name": "Резная деревянная фигурка птицы",
+      "file": "hobbies/png/12-carved-wooden-bird.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c063",
+      "category": "home-and-garden",
+      "name": "Садовая лейка",
+      "file": "home-and-garden/png/01-garden-watering-can.png",
+      "sample": true,
+      "status": "generated"
+    },
+    {
+      "id": "c064",
+      "category": "home-and-garden",
+      "name": "Керамический заварочный чайник",
+      "file": "home-and-garden/png/02-ceramic-teapot.png",
+      "sample": true,
+      "status": "generated"
+    },
+    {
+      "id": "c065",
+      "category": "home-and-garden",
+      "name": "Пеларгония в терракотовом горшке",
+      "file": "home-and-garden/png/03-potted-pelargonium.png",
+      "sample": true,
+      "status": "generated"
+    },
+    {
+      "id": "c066",
+      "category": "home-and-garden",
+      "name": "Садовая лопата с длинной ручкой",
+      "file": "home-and-garden/png/04-garden-spade.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c067",
+      "category": "home-and-garden",
+      "name": "Плетёная хозяйственная корзина",
+      "file": "home-and-garden/png/05-wicker-basket.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c068",
+      "category": "home-and-garden",
+      "name": "Чугунная сковорода",
+      "file": "home-and-garden/png/06-cast-iron-skillet.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c069",
+      "category": "home-and-garden",
+      "name": "Деревянные настенные часы без надписей",
+      "file": "home-and-garden/png/07-wooden-wall-clock.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c070",
+      "category": "home-and-garden",
+      "name": "Деревянный скворечник",
+      "file": "home-and-garden/png/08-wooden-birdhouse.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c071",
+      "category": "home-and-garden",
+      "name": "Каменная кухонная ступка",
+      "file": "home-and-garden/png/09-stone-kitchen-mortar.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c072",
+      "category": "home-and-garden",
+      "name": "Эмалированный дуршлаг",
+      "file": "home-and-garden/png/10-enamel-colander.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c073",
+      "category": "home-and-garden",
+      "name": "Садовые грабли",
+      "file": "home-and-garden/png/11-garden-rake.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c074",
+      "category": "home-and-garden",
+      "name": "Плетёное кресло",
+      "file": "home-and-garden/png/12-wicker-armchair.png",
+      "sample": false,
+      "status": "deferred",
+      "deferred_reason": "Плетёное кресло имеет сложную пространственную решётку и мебельный масштаб; материал плетения уже представлен выбранной корзиной c067."
+    },
+    {
+      "id": "c075",
+      "category": "education",
+      "name": "Выпускная академическая шапочка",
+      "file": "education/png/01-graduation-cap.png",
+      "sample": true,
+      "status": "generated"
+    },
+    {
+      "id": "c076",
+      "category": "education",
+      "name": "Свёрнутый диплом без текста",
+      "file": "education/png/02-blank-diploma-scroll.png",
+      "sample": true,
+      "status": "generated"
+    },
+    {
+      "id": "c077",
+      "category": "education",
+      "name": "Учебный глобус без надписей",
+      "file": "education/png/03-unlabeled-school-globe.png",
+      "sample": true,
+      "status": "generated"
+    },
+    {
+      "id": "c078",
+      "category": "education",
+      "name": "Школьная грифельная доска без текста",
+      "file": "education/png/04-blank-school-slate.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c079",
+      "category": "education",
+      "name": "Школьный колокольчик",
+      "file": "education/png/05-school-bell.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c080",
+      "category": "education",
+      "name": "Деревянный карандаш без маркировки",
+      "file": "education/png/06-wooden-pencil.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c081",
+      "category": "education",
+      "name": "Прозрачный транспортир",
+      "file": "education/png/07-school-protractor.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c082",
+      "category": "education",
+      "name": "Логарифмическая линейка",
+      "file": "education/png/08-slide-rule.png",
+      "sample": false,
+      "status": "deferred",
+      "deferred_reason": "Логарифмическая линейка близка по виду к готовой масштабной линейке p008 и требует достоверных мелких шкал; в этой партии отложена."
+    },
+    {
+      "id": "c083",
+      "category": "education",
+      "name": "Школьная меловая губка",
+      "file": "education/png/09-chalkboard-eraser.png",
+      "sample": false,
+      "status": "deferred",
+      "deferred_reason": "Меловая губка слабо читается как отдельный сюжет; школьная тема уже представлена доской c078 и другими более узнаваемыми вещами."
+    },
+    {
+      "id": "c084",
+      "category": "education",
+      "name": "Деревянный пенал",
+      "file": "education/png/10-wooden-pencil-case.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c085",
+      "category": "education",
+      "name": "Школьный ранец без эмблем",
+      "file": "education/png/11-school-satchel.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c086",
+      "category": "education",
+      "name": "Кубок за достижения без надписей",
+      "file": "education/png/12-blank-achievement-trophy.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c087",
+      "category": "personal-items",
+      "name": "Карманные часы",
+      "file": "personal-items/png/01-pocket-watch.png",
+      "sample": true,
+      "status": "generated"
+    },
+    {
+      "id": "c088",
+      "category": "personal-items",
+      "name": "Круглые очки",
+      "file": "personal-items/png/02-round-eyeglasses.png",
+      "sample": true,
+      "status": "generated"
+    },
+    {
+      "id": "c089",
+      "category": "personal-items",
+      "name": "Открытый медальон с пустым местом под фото",
+      "file": "personal-items/png/03-open-photo-locket.png",
+      "sample": true,
+      "status": "generated"
+    },
+    {
+      "id": "c090",
+      "category": "personal-items",
+      "name": "Гладкое обручальное кольцо",
+      "file": "personal-items/png/04-plain-wedding-ring.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c091",
+      "category": "personal-items",
+      "name": "Гребень для волос",
+      "file": "personal-items/png/05-hair-comb.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c092",
+      "category": "personal-items",
+      "name": "Старый домашний ключ",
+      "file": "personal-items/png/06-old-house-key.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c093",
+      "category": "personal-items",
+      "name": "Хлопковый носовой платок",
+      "file": "personal-items/png/07-cotton-handkerchief.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c094",
+      "category": "personal-items",
+      "name": "Зажим для галстука",
+      "file": "personal-items/png/08-tie-clip.png",
+      "sample": false,
+      "status": "deferred",
+      "deferred_reason": "Зажим для галстука слишком мелкий и мало выразителен без одежды; личные вещи представлены восемью более узнаваемыми предметами."
+    },
+    {
+      "id": "c095",
+      "category": "personal-items",
+      "name": "Флакон духов без этикетки",
+      "file": "personal-items/png/09-unlabeled-perfume-bottle.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c096",
+      "category": "personal-items",
+      "name": "Кожаный бумажник",
+      "file": "personal-items/png/10-leather-wallet.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c097",
+      "category": "personal-items",
+      "name": "Заколка для волос",
+      "file": "personal-items/png/11-hair-barrette.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c098",
+      "category": "personal-items",
+      "name": "Деревянная трость",
+      "file": "personal-items/png/12-wooden-walking-cane.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c099",
+      "category": "everyday-history",
+      "name": "Дисковый телефон",
+      "file": "everyday-history/png/01-rotary-telephone.png",
+      "sample": true,
+      "status": "generated"
+    },
+    {
+      "id": "c100",
+      "category": "everyday-history",
+      "name": "Транзисторный радиоприёмник",
+      "file": "everyday-history/png/02-transistor-radio.png",
+      "sample": true,
+      "status": "generated"
+    },
+    {
+      "id": "c101",
+      "category": "everyday-history",
+      "name": "Керосиновая лампа",
+      "file": "everyday-history/png/03-kerosene-lamp.png",
+      "sample": true,
+      "status": "generated"
+    },
+    {
+      "id": "c102",
+      "category": "everyday-history",
+      "name": "Самовар",
+      "file": "everyday-history/png/04-samovar.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c103",
+      "category": "everyday-history",
+      "name": "Походный примус",
+      "file": "everyday-history/png/05-primus-stove.png",
+      "sample": false,
+      "status": "deferred",
+      "deferred_reason": "Примус требует согласованной конструкции горелки, насоса и бака; для текущей партии выбран более универсальный бытовой набор."
+    },
+    {
+      "id": "c104",
+      "category": "everyday-history",
+      "name": "Сумка-авоська",
+      "file": "everyday-history/png/06-string-grocery-bag.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c105",
+      "category": "everyday-history",
+      "name": "Эмалированная кружка",
+      "file": "everyday-history/png/07-enamel-mug.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c106",
+      "category": "everyday-history",
+      "name": "Катушечный магнитофон",
+      "file": "everyday-history/png/08-reel-to-reel-recorder.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c107",
+      "category": "everyday-history",
+      "name": "Чугунный угольный утюг",
+      "file": "everyday-history/png/09-charcoal-iron.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c108",
+      "category": "everyday-history",
+      "name": "Телевизор с кинескопом и выключенным экраном",
+      "file": "everyday-history/png/10-crt-television.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c109",
+      "category": "everyday-history",
+      "name": "Эмалированная хлебница",
+      "file": "everyday-history/png/11-enamel-bread-bin.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c110",
+      "category": "everyday-history",
+      "name": "Сифон для газированной воды",
+      "file": "everyday-history/png/12-soda-siphon.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c111",
+      "category": "gaming",
+      "name": "Геймпад с двумя аналоговыми стиками",
+      "file": "gaming/png/01-dual-analog-gamepad.png",
+      "sample": true,
+      "status": "generated"
+    },
+    {
+      "id": "c112",
+      "category": "gaming",
+      "name": "Настольный игровой джойстик",
+      "file": "gaming/png/02-desktop-gaming-joystick.png",
+      "sample": true,
+      "status": "generated"
+    },
+    {
+      "id": "c113",
+      "category": "gaming",
+      "name": "Портативная игровая консоль с выключенным экраном",
+      "file": "gaming/png/03-handheld-console.png",
+      "sample": true,
+      "status": "generated"
+    },
+    {
+      "id": "c114",
+      "category": "gaming",
+      "name": "Проводная игровая мышь",
+      "file": "gaming/png/04-wired-gaming-mouse.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c115",
+      "category": "gaming",
+      "name": "Шлем виртуальной реальности",
+      "file": "gaming/png/05-vr-headset.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c116",
+      "category": "gaming",
+      "name": "Игровой картридж без наклейки",
+      "file": "gaming/png/06-blank-game-cartridge.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c117",
+      "category": "gaming",
+      "name": "Стационарная игровая приставка без маркировки",
+      "file": "gaming/png/07-retro-game-console.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c118",
+      "category": "gaming",
+      "name": "Блок педалей для автосимулятора",
+      "file": "gaming/png/08-racing-pedals.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c119",
+      "category": "gaming",
+      "name": "Игровой оптический диск в футляре без надписей",
+      "file": "gaming/png/09-game-disc-case.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c120",
+      "category": "gaming",
+      "name": "Панель аркадных кнопок без джойстика",
+      "file": "gaming/png/10-arcade-button-panel.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c121",
+      "category": "gaming",
+      "name": "Карта памяти для игровой приставки без надписей",
+      "file": "gaming/png/11-console-memory-card.png",
+      "sample": false,
+      "status": "deferred",
+      "deferred_reason": "Карта памяти игровой приставки визуально близка к выбранному картриджу c116; предпочтены восемь периферийных предметов с разными силуэтами."
+    },
+    {
+      "id": "c122",
+      "category": "gaming",
+      "name": "Тканевый коврик для мыши без рисунка",
+      "file": "gaming/png/12-plain-mouse-pad.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c123",
+      "category": "animals",
+      "name": "Рыжий полосатый кот, целиком",
+      "file": "animals/png/01-ginger-tabby-cat.png",
+      "sample": true,
+      "status": "generated"
+    },
+    {
+      "id": "c124",
+      "category": "animals",
+      "name": "Палевый пёс, целиком",
+      "file": "animals/png/02-yellow-dog.png",
+      "sample": true,
+      "status": "generated"
+    },
+    {
+      "id": "c125",
+      "category": "animals",
+      "name": "Волнистый попугай, целиком",
+      "file": "animals/png/03-budgerigar.png",
+      "sample": true,
+      "status": "generated"
+    },
+    {
+      "id": "c126",
+      "category": "animals",
+      "name": "Серый длинношёрстный кот, целиком",
+      "file": "animals/png/04-gray-longhair-cat.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c127",
+      "category": "animals",
+      "name": "Чёрно-белый кот, целиком",
+      "file": "animals/png/05-black-white-cat.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c128",
+      "category": "animals",
+      "name": "Небольшой длиннотелый пёс с короткими лапами, целиком",
+      "file": "animals/png/06-dachshund.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c129",
+      "category": "animals",
+      "name": "Домашний кролик, целиком",
+      "file": "animals/png/07-domestic-rabbit.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c130",
+      "category": "animals",
+      "name": "Морская свинка, целиком",
+      "file": "animals/png/08-guinea-pig.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c131",
+      "category": "animals",
+      "name": "Лошадь, целиком",
+      "file": "animals/png/09-horse.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c132",
+      "category": "animals",
+      "name": "Сухопутная черепаха, целиком",
+      "file": "animals/png/10-tortoise.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c133",
+      "category": "animals",
+      "name": "Золотая рыбка, целиком",
+      "file": "animals/png/11-goldfish.png",
+      "sample": false,
+      "status": "generated"
+    },
+    {
+      "id": "c134",
+      "category": "animals",
+      "name": "Ёж, целиком",
+      "file": "animals/png/12-hedgehog.png",
+      "sample": false,
+      "status": "deferred",
+      "deferred_reason": "Ёж реже связан с домашним питомцем; мелкие иглы усложняют чистую границу, а восемь выбранных животных дают достаточно разные формы."
+    },
+    {
+      "id": "c135",
+      "category": "clothing-templates",
+      "name": "Мужской тёмный пиджак с рубашкой и галстуком",
+      "file": "clothing-templates/png/01-male-dark-suit.png",
+      "sample": true,
+      "gender": "male",
+      "status": "generated"
+    },
+    {
+      "id": "c136",
+      "category": "clothing-templates",
+      "name": "Женская светлая блузка",
+      "file": "clothing-templates/png/02-female-light-blouse.png",
+      "sample": true,
+      "gender": "female",
+      "status": "generated"
+    },
+    {
+      "id": "c137",
+      "category": "clothing-templates",
+      "name": "Женское бордовое платье",
+      "file": "clothing-templates/png/03-female-burgundy-dress.png",
+      "sample": true,
+      "gender": "female",
+      "status": "generated"
+    },
+    {
+      "id": "c138",
+      "category": "clothing-templates",
+      "name": "Мужская клетчатая повседневная рубашка",
+      "file": "clothing-templates/png/04-male-plaid-shirt.png",
+      "sample": false,
+      "gender": "male",
+      "status": "generated"
+    },
+    {
+      "id": "c139",
+      "category": "clothing-templates",
+      "name": "Мужской вязаный свитер с круглой горловиной",
+      "file": "clothing-templates/png/05-male-crewneck-sweater.png",
+      "sample": false,
+      "gender": "male",
+      "status": "generated"
+    },
+    {
+      "id": "c140",
+      "category": "clothing-templates",
+      "name": "Мужская джинсовая куртка",
+      "file": "clothing-templates/png/06-male-denim-jacket.png",
+      "sample": false,
+      "gender": "male",
+      "status": "generated"
+    },
+    {
+      "id": "c141",
+      "category": "clothing-templates",
+      "name": "Мужской вязаный жилет с рубашкой",
+      "file": "clothing-templates/png/07-male-knitted-vest-shirt.png",
+      "sample": false,
+      "gender": "male",
+      "status": "generated"
+    },
+    {
+      "id": "c142",
+      "category": "clothing-templates",
+      "name": "Мужская лёгкая рабочая куртка без эмблем",
+      "file": "clothing-templates/png/08-male-work-jacket.png",
+      "sample": false,
+      "gender": "male",
+      "status": "generated"
+    },
+    {
+      "id": "c143",
+      "category": "clothing-templates",
+      "name": "Мужская летняя льняная рубашка со стойкой",
+      "file": "clothing-templates/png/09-male-linen-shirt.png",
+      "sample": false,
+      "gender": "male",
+      "status": "generated"
+    },
+    {
+      "id": "c144",
+      "category": "clothing-templates",
+      "name": "Мужская водолазка",
+      "file": "clothing-templates/png/10-male-turtleneck.png",
+      "sample": false,
+      "gender": "male",
+      "status": "generated"
+    },
+    {
+      "id": "c145",
+      "category": "clothing-templates",
+      "name": "Женский мягкий кардиган с блузкой",
+      "file": "clothing-templates/png/11-female-cardigan-blouse.png",
+      "sample": false,
+      "gender": "female",
+      "status": "generated"
+    },
+    {
+      "id": "c146",
+      "category": "clothing-templates",
+      "name": "Женский твидовый жакет",
+      "file": "clothing-templates/png/12-female-tweed-jacket.png",
+      "sample": false,
+      "gender": "female",
+      "status": "generated"
+    },
+    {
+      "id": "c147",
+      "category": "clothing-templates",
+      "name": "Женский вязаный свитер с круглой горловиной",
+      "file": "clothing-templates/png/13-female-crewneck-sweater.png",
+      "sample": false,
+      "gender": "female",
+      "status": "generated"
+    },
+    {
+      "id": "c148",
+      "category": "clothing-templates",
+      "name": "Женская блузка с бантом у воротника",
+      "file": "clothing-templates/png/14-female-bow-blouse.png",
+      "sample": false,
+      "gender": "female",
+      "status": "generated"
+    },
+    {
+      "id": "c149",
+      "category": "clothing-templates",
+      "name": "Женская джинсовая куртка",
+      "file": "clothing-templates/png/15-female-denim-jacket.png",
+      "sample": false,
+      "gender": "female",
+      "status": "generated"
+    },
+    {
+      "id": "c150",
+      "category": "clothing-templates",
+      "name": "Женское шерстяное пальто с лацканами",
+      "file": "clothing-templates/png/16-female-wool-coat.png",
+      "sample": false,
+      "gender": "female",
+      "status": "generated"
+    },
+    {
+      "id": "c151",
+      "category": "frames",
+      "name": "Овальная настенная рамка",
+      "file": "frames/png/01-oval-wall-frame.png",
+      "sample": false,
+      "group": "frames-holders",
+      "kind": "object",
+      "subject_en": "One oval wall photograph frame made of warm brown wood, with a modest molded profile and a single large oval opening. Show it perfectly straight-on, with the entire outer oval and inner contour undistorted. The center is a genuine transparent through-opening, without glass, backing, picture, easel or text.",
+      "status": "generated"
+    },
+    {
+      "id": "c152",
+      "category": "frames",
+      "name": "Круглая настенная рамка",
+      "file": "frames/png/02-round-wall-frame.png",
+      "sample": false,
+      "group": "frames-holders",
+      "kind": "object",
+      "subject_en": "One round wall photograph frame with a restrained dark brass rim and a simple narrow circular molding. Show a perfectly straight-on frontal view so both the outer edge and the inner aperture remain true circles. The center is completely open and transparent, with no glass, backing panel, photograph, decorative symbols or lettering.",
+      "status": "generated"
+    },
+    {
+      "id": "c153",
+      "category": "frames",
+      "name": "Широкая горизонтальная рамка для семейного снимка",
+      "file": "frames/png/03-wide-family-photo-frame.png",
+      "sample": false,
+      "group": "frames-holders",
+      "kind": "object",
+      "subject_en": "One wide horizontal wooden photograph frame with a landscape aperture roughly twice as wide as it is high, suitable for a family group photograph. Show the complete frame perfectly straight-on, with parallel edges and no perspective tilt. Keep the central aperture genuinely open and transparent, without glazing, backing, easel, image or lettering.",
+      "status": "generated"
+    },
+    {
+      "id": "c154",
+      "category": "frames",
+      "name": "Двойная рамка на петлях",
+      "file": "frames/png/04-double-hinged-frame.png",
+      "sample": false,
+      "group": "frames-holders",
+      "kind": "object",
+      "subject_en": "One connected double photograph frame made of warm dark wood, with two matching rectangular apertures joined by small central hinges. Open both halves flat into a single plane and show a perfectly straight-on frontal view, with no tilt or perspective distortion. Both apertures are empty through-openings with genuine alpha transparency; omit glass, backing panels, easels, photographs and lettering.",
+      "status": "generated"
+    },
+    {
+      "id": "c155",
+      "category": "frames",
+      "name": "Глубокая рамка-витрина",
+      "file": "frames/png/05-deep-display-frame.png",
+      "sample": false,
+      "group": "frames-holders",
+      "kind": "object",
+      "subject_en": "One deep wooden display frame with four thick sidewalls forming an open rectangular tunnel and a restrained flat front rim. Show it perfectly straight-on, with symmetrical visible inner sidewalls and an undistorted rectangular aperture. The central passage remains genuinely empty and transparent all the way through. Include no glass, rear panel, photograph, contents, easel or text.",
+      "status": "generated"
+    },
+    {
+      "id": "c156",
+      "category": "frames",
+      "name": "Одиночное паспарту",
+      "file": "frames/png/06-single-window-mat.png",
+      "sample": false,
+      "group": "frames-holders",
+      "kind": "object",
+      "subject_en": "One rectangular warm ivory conservation mat board with a single large centered rectangular aperture and a neat beveled inner edge. Show it perfectly straight-on, flat and parallel to the image plane so a photograph can later be placed behind it without distortion. The central aperture is genuinely open and transparent, with no glazing, backing sheet, picture or text.",
+      "status": "generated"
+    },
+    {
+      "id": "c157",
+      "category": "frames",
+      "name": "Паспарту с четырьмя окнами",
+      "file": "frames/png/07-four-window-mat.png",
+      "sample": false,
+      "group": "frames-holders",
+      "kind": "object",
+      "subject_en": "One warm ivory conservation mat board with four identical rectangular portrait apertures arranged in a regular two-by-two grid, separated by broad paperboard dividers. Show the complete board perfectly straight-on with clean beveled window edges and no perspective distortion. All four apertures are genuine transparent through-openings, with no glazing, backing, pictures, numbers or lettering.",
+      "status": "generated"
+    },
+    {
+      "id": "c158",
+      "category": "frames",
+      "name": "Настольный держатель фотографии с зажимом",
+      "file": "frames/png/08-photo-clip-holder.png",
+      "sample": false,
+      "group": "frames-holders",
+      "kind": "object",
+      "subject_en": "One tabletop photograph holder consisting of a small plain wooden base, one securely attached upright metal stem and a single functional spring clip at its top. Show the whole connected holder from a straight-on frontal view, with the clip empty and slightly open. Include no photograph, card, glass, lettering or additional objects.",
+      "status": "generated"
+    },
+    {
+      "id": "c159",
+      "category": "family-archive",
+      "name": "Фотоальбомный уголок",
+      "file": "family-archive/png/15-photo-mount-corner.png",
+      "sample": false,
+      "group": "archive-details",
+      "kind": "object",
+      "subject_en": "One small ivory paper photo-mount corner folded into a triangular pocket with a clean diagonal front edge and two short adhesive flanges. Show it flat and directly from above, with fine paper fibers and coherent folded construction. The corner is empty, with no photograph, card or lettering.",
+      "status": "generated"
+    },
+    {
+      "id": "c160",
+      "category": "family-archive",
+      "name": "Канцелярский зажим",
+      "file": "family-archive/png/16-binder-clip.png",
+      "sample": false,
+      "group": "archive-details",
+      "kind": "object",
+      "subject_en": "One small black folded-steel binder clip with two hinged silver wire handles raised in their conventional positions. Show the complete connected clip from a gentle front three-quarter angle, with coherent jaws, pivots and wire loops. Include no paper, lettering or other stationery.",
+      "status": "generated"
+    },
+    {
+      "id": "c161",
+      "category": "family-archive",
+      "name": "Проволочная скрепка",
+      "file": "family-archive/png/17-wire-paper-clip.png",
+      "sample": false,
+      "group": "archive-details",
+      "kind": "object",
+      "subject_en": "One conventional wire paper clip formed from a single continuous length of muted brass-colored wire bent into nested rounded oval loops. Show the complete clip flat and directly from above, with both wire ends visible and ordinary practical proportions. Include no paper, markings or other clips.",
+      "status": "generated"
+    },
+    {
+      "id": "c162",
+      "category": "family-archive",
+      "name": "Полоска бумажного скотча с рваным краем",
+      "file": "family-archive/png/18-torn-masking-tape-strip.png",
+      "sample": false,
+      "group": "archive-details",
+      "kind": "object",
+      "subject_en": "One short horizontal strip of off-white paper masking tape with irregularly torn ends and lightly visible paper fibers. Show the complete strip flat and directly from above, with a few shallow natural wrinkles and no backing surface. Include no letters, printing, roll of tape or other items.",
+      "status": "generated"
+    },
+    {
+      "id": "c163",
+      "category": "family-archive",
+      "name": "Сургучная печать без эмблемы",
+      "file": "family-archive/png/19-plain-wax-seal.png",
+      "sample": false,
+      "group": "archive-details",
+      "kind": "object",
+      "subject_en": "One round dark burgundy wax seal disk with an irregular poured rim and a completely plain gently indented center. Show the entire front face directly from above, with believable solid wax texture. Include no emblem, letters, ribbon, envelope or document.",
+      "status": "generated"
+    },
+    {
+      "id": "c164",
+      "category": "family-archive",
+      "name": "Пустая металлическая табличка",
+      "file": "family-archive/png/20-blank-metal-nameplate.png",
+      "sample": false,
+      "group": "archive-details",
+      "kind": "object",
+      "subject_en": "One slender rectangular brushed-brass nameplate with softly rounded corners and two small mounting holes near its short ends. Show the complete plate straight-on from the front, with its central writing area entirely blank. Keep the mounting holes genuinely open, without screws, backing board, names or engraved decoration.",
+      "status": "generated"
+    },
+    {
+      "id": "c165",
+      "category": "family-archive",
+      "name": "Лист миллиметровой бумаги без цифр",
+      "file": "family-archive/png/21-unnumbered-graph-paper.png",
+      "sample": false,
+      "group": "archive-details",
+      "kind": "object",
+      "subject_en": "One rectangular sheet of warm cream graph paper with a fine muted blue square grid and slightly heavier lines at regular intervals. Show the whole sheet nearly flat from above, with a very slight curl at one corner and clearly visible paper edges. Include no numbers, headings, diagrams, handwriting or other stationery.",
+      "status": "generated"
+    },
+    {
+      "id": "c166",
+      "category": "family-archive",
+      "name": "Подложка из крафт-бумаги с неровными краями",
+      "file": "family-archive/png/22-deckle-edge-kraft-paper.png",
+      "sample": false,
+      "group": "archive-details",
+      "kind": "object",
+      "subject_en": "One flat rectangular sheet of thick brown kraft paper with naturally uneven hand-torn edges and small visible paper fibers along the perimeter. Show the complete sheet directly from above, with subtle shallow surface waviness. Keep it entirely blank, without printing, labels, adhesive, folds hiding its shape or other objects.",
+      "status": "generated"
+    },
+    {
+      "id": "c167",
+      "category": "plants",
+      "name": "Дубовая веточка с желудями",
+      "file": "plants/png/01-oak-twig-acorns.png",
+      "sample": false,
+      "group": "plants-seasons",
+      "kind": "object",
+      "subject_en": "One short oak twig with three naturally lobed green-brown leaves and two acorns seated in textured cups, all attached to the same branch. Show the full connected twig from slightly above, with restrained early-autumn coloring. Include no insects, birds, ribbon, vase or extra foliage.",
+      "status": "generated"
+    },
+    {
+      "id": "c168",
+      "category": "plants",
+      "name": "Осенний кленовый лист",
+      "file": "plants/png/02-autumn-maple-leaf.png",
+      "sample": false,
+      "group": "plants-seasons",
+      "kind": "object",
+      "subject_en": "One complete autumn maple leaf in muted amber and rust tones, with five main pointed lobes, clear veins, lightly curled edges and its attached slender petiole. Show the leaf nearly flat from above, with its full outline and stem visible. Include no branch, insects, lettering or separate leaves.",
+      "status": "generated"
+    },
+    {
+      "id": "c169",
+      "category": "plants",
+      "name": "Цветущая ветка яблони",
+      "file": "plants/png/03-apple-blossom-twig.png",
+      "sample": false,
+      "group": "plants-seasons",
+      "kind": "object",
+      "subject_en": "One short natural apple-tree twig carrying three five-petaled blossoms, two small pale-pink buds and a few fresh oval green leaves. The flowers are white with delicate pink tinges and restrained pale-yellow centers, all attached coherently to the same twig. Show the full branch from a gentle frontal angle, with no insects, fruit, vase or ribbon.",
+      "status": "generated"
+    },
+    {
+      "id": "c170",
+      "category": "plants",
+      "name": "Веточка рябины с ягодами",
+      "file": "plants/png/04-rowan-twig-berries.png",
+      "sample": false,
+      "group": "plants-seasons",
+      "kind": "object",
+      "subject_en": "One short rowan twig with a small tight cluster of muted red-orange berries and one pinnate leaf made of paired serrated leaflets. Keep the berries and leaf coherently attached to the same slender branch and show its complete silhouette from a gentle frontal angle. Include no insects, birds, ribbons or vase.",
+      "status": "generated"
+    },
+    {
+      "id": "c171",
+      "category": "plants",
+      "name": "Еловая веточка",
+      "file": "plants/png/05-spruce-sprig.png",
+      "sample": false,
+      "group": "plants-seasons",
+      "kind": "object",
+      "subject_en": "One complete spruce sprig with a thin woody central twig and short individual dark-green needles attached naturally around it. Show it from slightly above, with its tapered tip and cut stem end both visible. Include no insects, cones, ornaments, snow or separate branches.",
+      "status": "generated"
+    },
+    {
+      "id": "c172",
+      "category": "plants",
+      "name": "Пшеничный колос",
+      "file": "plants/png/06-wheat-ear.png",
+      "sample": false,
+      "group": "plants-seasons",
+      "kind": "object",
+      "subject_en": "One ripe wheat ear with natural alternating rows of golden-ochre kernels, fine attached awns and a short intact section of slender straw stem. Show the entire botanical specimen diagonally from a gentle frontal angle. Include no insects, ribbon, field, loose grain or additional stalks.",
+      "status": "generated"
+    },
+    {
+      "id": "c173",
+      "category": "plants",
+      "name": "Стебель ландыша",
+      "file": "plants/png/07-lily-of-the-valley-stem.png",
+      "sample": false,
+      "group": "plants-seasons",
+      "kind": "object",
+      "subject_en": "One intact gently arched lily-of-the-valley flower stem bearing six small downward-facing ivory bell flowers on short attached pedicels. Show its full slender green stem and delicate flower edges in a natural frontal arrangement. Include no insects, roots, ribbons, vase or unrelated leaves.",
+      "status": "generated"
+    },
+    {
+      "id": "c174",
+      "category": "plants",
+      "name": "Сосновая шишка",
+      "file": "plants/png/08-pine-cone.png",
+      "sample": false,
+      "group": "plants-seasons",
+      "kind": "object",
+      "subject_en": "One complete naturally dried brown pine cone with an oval body and overlapping woody scales arranged around a single central axis. Show the whole cone from a gentle three-quarter angle, including its intact base and tip. Include no insects, needles, branches, ribbon or other cones.",
+      "status": "generated"
+    },
+    {
+      "id": "c175",
+      "category": "childhood",
+      "name": "Плюшевый медведь",
+      "file": "childhood/png/01-teddy-bear.png",
+      "sample": false,
+      "group": "childhood-toys",
+      "kind": "object",
+      "subject_en": "One small traditional teddy bear made of softly worn warm-brown plush, with rounded ears, a stitched muzzle, two dark bead eyes and four properly attached stuffed limbs. Show the complete toy sitting naturally at a gentle front three-quarter angle, with its fabric seams and soft paw pads visible. Include no clothing, bow, label or other toys.",
+      "status": "generated"
+    },
+    {
+      "id": "c176",
+      "category": "childhood",
+      "name": "Деревянная лошадка-качалка",
+      "file": "childhood/png/02-wooden-rocking-horse.png",
+      "sample": false,
+      "group": "childhood-toys",
+      "kind": "object",
+      "subject_en": "One small traditional wooden rocking horse with four connected legs, a simple saddle-shaped seat and two curved rockers joined by ordinary cross braces. Show the entire assembled toy from a gentle side three-quarter angle so both rockers are understandable. Include no rider, fabric mane, lettering or extra toys.",
+      "status": "generated"
+    },
+    {
+      "id": "c177",
+      "category": "childhood",
+      "name": "Юла",
+      "file": "childhood/png/03-spinning-top.png",
+      "sample": false,
+      "group": "childhood-toys",
+      "kind": "object",
+      "subject_en": "One traditional metal spinning top with a rounded low bell-shaped body, a narrow bottom tip and a vertical pump plunger attached at its center. Its body has plain restrained cream and burgundy bands. Show the complete toy from a gentle three-quarter angle, with no hand, motion blur, writing or other objects.",
+      "status": "generated"
+    },
+    {
+      "id": "c178",
+      "category": "childhood",
+      "name": "Пирамидка с кольцами",
+      "file": "childhood/png/04-stacking-ring-toy.png",
+      "sample": false,
+      "group": "childhood-toys",
+      "kind": "object",
+      "subject_en": "One wooden stacking-ring toy with a flat round base, a straight central post and six graduated rings stacked from largest at the bottom to smallest at the top. Use restrained ordinary red, blue, yellow and green paint, with a small rounded wooden cap on the post. Show the complete assembled toy from a gentle three-quarter angle, without loose rings, lettering or other toys.",
+      "status": "generated"
+    },
+    {
+      "id": "c179",
+      "category": "childhood",
+      "name": "Закрытая матрёшка",
+      "file": "childhood/png/05-closed-nesting-doll.png",
+      "sample": false,
+      "group": "childhood-toys",
+      "kind": "object",
+      "subject_en": "One closed wooden nesting doll with a fitted horizontal middle seam and a rounded stable base. Its simple traditional painted design has a muted red headscarf, an ivory front, a small stylized face and restrained leaf details. Show the complete doll from the front, with no separate inner dolls, lettering or additional objects.",
+      "status": "generated"
+    },
+    {
+      "id": "c180",
+      "category": "childhood",
+      "name": "Комплект домино в открытой коробке",
+      "file": "childhood/png/06-dominoes-open-box.png",
+      "sample": false,
+      "group": "childhood-toys",
+      "kind": "object-set",
+      "subject_en": "One small open plain wooden domino box containing exactly three different standard domino tiles as a single set. The ivory tiles have a central divider and real black circular pips showing 6-1, 4-2 and 5-3 in conventional pip layouts. Place the three tiles face-up in the shallow box so each entire face is visible and countable. Include no letters, printed numerals, extra tiles or decorations.",
+      "status": "generated"
+    },
+    {
+      "id": "c181",
+      "category": "childhood",
+      "name": "Детский самокат",
+      "file": "childhood/png/07-child-scooter.png",
+      "sample": false,
+      "group": "childhood-toys",
+      "kind": "object",
+      "subject_en": "One small traditional child's scooter with two rubber wheels, a narrow wooden deck, a plain metal frame and a T-shaped handlebar with attached grips. Show the entire connected toy from a side three-quarter angle, with a conventional steering fork and the wheels correctly aligned. Include no child, helmet, branding or extra equipment.",
+      "status": "generated"
+    },
+    {
+      "id": "c182",
+      "category": "childhood",
+      "name": "Металлическая пружинка-игрушка",
+      "file": "childhood/png/08-metal-coil-spring-toy.png",
+      "sample": false,
+      "group": "childhood-toys",
+      "kind": "object",
+      "subject_en": "One continuous steel coil spring toy with evenly spaced turns, resting as a short upright cylinder. Show the complete toy from slightly above so the open center and continuous spiral winding are clear. Include no colored plastic, lettering, stand or loose fragments.",
+      "status": "generated"
+    },
+    {
+      "id": "c183",
+      "category": "hobbies",
+      "name": "Напёрсток",
+      "file": "hobbies/png/13-sewing-thimble.png",
+      "sample": false,
+      "group": "handicraft",
+      "kind": "object",
+      "subject_en": "One small domed metal sewing thimble with an open lower rim and a conventional grid of fine shallow dimples around its closed upper surface. Show the whole thimble from a gentle three-quarter angle, with believable thin metal construction. Include no finger, needle, thread or engraving.",
+      "status": "generated"
+    },
+    {
+      "id": "c184",
+      "category": "hobbies",
+      "name": "Катушка швейных ниток",
+      "file": "hobbies/png/14-sewing-thread-spool.png",
+      "sample": false,
+      "group": "handicraft",
+      "kind": "object",
+      "subject_en": "One wooden sewing-thread spool with two round flanges and a central barrel neatly wound with fine cream cotton thread. A short thread end remains connected and lies close to the spool. Show the complete spool from a gentle overhead three-quarter angle, with no lettering, needles or other sewing equipment.",
+      "status": "generated"
+    },
+    {
+      "id": "c185",
+      "category": "hobbies",
+      "name": "Портновский сантиметр",
+      "file": "hobbies/png/15-tailor-measuring-tape.png",
+      "sample": false,
+      "group": "handicraft",
+      "kind": "object",
+      "subject_en": "One flexible yellow cloth tailor's measuring tape loosely coiled as a single continuous strip, with both plain metal-capped ends visible. Use fine regular dark graduation ticks without numerals or lettering. Show the whole tape from slightly above, with natural soft bends and no hands, fabric or other tools.",
+      "status": "generated"
+    },
+    {
+      "id": "c186",
+      "category": "hobbies",
+      "name": "Штопальный грибок",
+      "file": "hobbies/png/16-darning-mushroom.png",
+      "sample": false,
+      "group": "handicraft",
+      "kind": "object",
+      "subject_en": "One traditional wooden darning mushroom with a broad smooth domed cap securely joined to a straight turned handle. Show the complete tool from a gentle side three-quarter angle so its mushroom-shaped working surface is clear. Include no sock, yarn, needle, lettering or extra objects.",
+      "status": "generated"
+    },
+    {
+      "id": "c187",
+      "category": "hobbies",
+      "name": "Игольница",
+      "file": "hobbies/png/17-pincushion.png",
+      "sample": false,
+      "group": "handicraft",
+      "kind": "object",
+      "subject_en": "One small round muted red fabric pincushion divided by stitched radial seams, with three plain steel sewing pins inserted securely into its top. Show the complete cushion and all three attached pin heads from a gentle overhead three-quarter angle. Include no loose pins, needles, lettering or other sewing equipment.",
+      "status": "generated"
+    },
+    {
+      "id": "c188",
+      "category": "hobbies",
+      "name": "Крупная перламутровая пуговица",
+      "file": "hobbies/png/18-mother-of-pearl-button.png",
+      "sample": false,
+      "group": "handicraft",
+      "kind": "object",
+      "subject_en": "One large round ivory mother-of-pearl sewing button with four ordinary evenly arranged sewing holes and a gently raised rim. Show the complete button directly from above, with subtle natural pearly variation. Keep all four holes open and include no thread, fabric, letters or decorative carving.",
+      "status": "generated"
+    },
+    {
+      "id": "c189",
+      "category": "hobbies",
+      "name": "Деревянное веретено",
+      "file": "hobbies/png/19-wooden-spindle.png",
+      "sample": false,
+      "group": "handicraft",
+      "kind": "object",
+      "subject_en": "One traditional wooden hand spindle consisting of a long smooth tapered shaft fitted through a single turned disk-shaped whorl near its lower end. Show the complete coherent assembly diagonally from slightly above. Include no yarn, hands, lettering or additional tools.",
+      "status": "generated"
+    },
+    {
+      "id": "c190",
+      "category": "hobbies",
+      "name": "Шило с деревянной ручкой",
+      "file": "hobbies/png/20-wooden-handle-awl.png",
+      "sample": false,
+      "group": "handicraft",
+      "kind": "object",
+      "subject_en": "One sewing awl with a smooth pear-shaped wooden handle and one securely fitted slender pointed steel shaft. Show the complete tool diagonally from slightly above, with a practical conventional joint between handle and shaft. Include no leather, holes, lettering or other tools.",
+      "status": "generated"
+    },
+    {
+      "id": "c191",
+      "category": "home-and-garden",
+      "name": "Эмалированная кастрюля с крышкой",
+      "file": "home-and-garden/png/13-enamel-pot-lid.png",
+      "sample": false,
+      "group": "family-kitchen",
+      "kind": "object",
+      "subject_en": "One cream enameled metal cooking pot with a dark rolled rim, two securely attached side handles and a fitted lid with a simple central knob. Show the entire closed pot from a gentle overhead three-quarter angle, with modest realistic rim wear. Include no food, steam, labels, table or utensils.",
+      "status": "generated"
+    },
+    {
+      "id": "c192",
+      "category": "home-and-garden",
+      "name": "Ручная мясорубка",
+      "file": "home-and-garden/png/14-hand-cranked-meat-grinder.png",
+      "sample": false,
+      "group": "family-kitchen",
+      "kind": "object",
+      "subject_en": "One conventional hand-cranked cast-metal meat grinder with a top hopper, horizontal auger housing, circular perforated front plate, fitted crank with a wooden grip and an integral table clamp. Show the entire coherent assembly from a gentle side three-quarter angle, with no table attached. All functional parts are correctly connected, with no food, brand or loose components.",
+      "status": "generated"
+    },
+    {
+      "id": "c193",
+      "category": "home-and-garden",
+      "name": "Разделочная доска",
+      "file": "home-and-garden/png/15-wooden-cutting-board.png",
+      "sample": false,
+      "group": "family-kitchen",
+      "kind": "object",
+      "subject_en": "One beech cutting board with a rectangular working face, softly rounded corners and a short integral handle containing a hanging hole. Show the complete board flat from slightly above, with ordinary wood grain and light kitchen wear. Keep the hanging hole open and include no food, knife, lettering or extra items.",
+      "status": "generated"
+    },
+    {
+      "id": "c194",
+      "category": "home-and-garden",
+      "name": "Венчик",
+      "file": "home-and-garden/png/16-wire-whisk.png",
+      "sample": false,
+      "group": "family-kitchen",
+      "kind": "object",
+      "subject_en": "One conventional stainless-steel wire whisk with a simple cylindrical handle and a teardrop cage formed by continuous wire loops securely fixed into a ferrule. Show the complete whisk diagonally from a gentle three-quarter angle, with clear open spaces between the wires. Include no bowl, food, labels or loose wire.",
+      "status": "generated"
+    },
+    {
+      "id": "c195",
+      "category": "home-and-garden",
+      "name": "Варежка-прихватка",
+      "file": "home-and-garden/png/17-oven-mitt.png",
+      "sample": false,
+      "group": "family-kitchen",
+      "kind": "object",
+      "subject_en": "One quilted ivory cotton oven mitt with a properly attached thumb section, a simple stitched pattern and an empty wrist opening. Show the complete mitt from slightly above, with its padded fabric construction clearly visible. Include no human hand, arm, cookware, lettering or second mitt.",
+      "status": "generated"
+    },
+    {
+      "id": "c196",
+      "category": "home-and-garden",
+      "name": "Сложенная скатерть с кружевным краем",
+      "file": "home-and-garden/png/18-folded-lace-tablecloth.png",
+      "sample": false,
+      "group": "family-kitchen",
+      "kind": "object",
+      "subject_en": "One real folded rectangular cream linen tablecloth with a SIMPLE crochet lace trim hanging below its FRONT edge. Three soft folded linen layers, seen gently from above in three-quarter view. The lace trim uses about eight LARGE simple open oval loops of cream cotton yarn, not dense floral cutwork. The entire lower row of crochet loops hangs freely beyond ALL linen layers with open air behind it, and every large loop opening must be genuine alpha=0 transparency like the outer background. The linen body and yarn threads remain opaque. Choose broad clearly open loop holes so there is no ambiguous tiny mesh or fabric behind them. Calm warm-neutral light, believable physical textile, complete silhouette and generous margins. No table, floor, backdrop, white plugs, dark painted hole interiors, props, lettering or monogram.",
+      "status": "generated"
+    },
+    {
+      "id": "c197",
+      "category": "home-and-garden",
+      "name": "Банка варенья без этикетки",
+      "file": "home-and-garden/png/19-unlabeled-jam-jar.png",
+      "sample": false,
+      "group": "family-kitchen",
+      "kind": "object",
+      "subject_en": "One closed cylindrical glass preserve jar with a plain metal screw lid, filled with dark red berry jam to just below the neck. Show the entire jar upright from a gentle three-quarter angle, with visible thick glass edges and natural jam texture. Include no label, ribbon, loose fruit or utensil.",
+      "status": "generated"
+    },
+    {
+      "id": "c198",
+      "category": "home-and-garden",
+      "name": "Фарфоровая сахарница",
+      "file": "home-and-garden/png/20-porcelain-sugar-bowl.png",
+      "sample": false,
+      "group": "family-kitchen",
+      "kind": "object",
+      "subject_en": "One plain off-white porcelain sugar bowl with a rounded body, two small attached side handles and a fitted lid with a modest central knob. Show the complete closed vessel from a gentle three-quarter angle. Include no decoration, lettering, loose sugar, spoon or matching crockery.",
+      "status": "generated"
+    },
+    {
+      "id": "c199",
+      "category": "home-and-garden",
+      "name": "Тяпка",
+      "file": "home-and-garden/png/21-garden-hoe.png",
+      "sample": false,
+      "group": "dacha-household",
+      "kind": "object",
+      "subject_en": "One garden hoe with a long straight wooden handle securely fitted through a conventional metal socket and bent neck to a flat transverse steel blade. Show the complete connected tool diagonally from a gentle side three-quarter angle. Include no soil, plants, lettering or additional tools.",
+      "status": "generated"
+    },
+    {
+      "id": "c200",
+      "category": "home-and-garden",
+      "name": "Комплект садовых перчаток",
+      "file": "home-and-garden/png/22-garden-gloves-pair.png",
+      "sample": false,
+      "group": "dacha-household",
+      "kind": "object-set",
+      "subject_en": "One matched pair of empty olive canvas gardening gloves with restrained brown reinforced palms, each having four proper finger sections and one attached thumb section. Lay the two complete gloves side by side with their wrist openings and all fingertips visible from slightly above. Include no hands, soil, plants, lettering or separate equipment.",
+      "status": "generated"
+    },
+    {
+      "id": "c201",
+      "category": "home-and-garden",
+      "name": "Садовая тачка",
+      "file": "home-and-garden/png/23-garden-wheelbarrow.png",
+      "sample": false,
+      "group": "dacha-household",
+      "kind": "object",
+      "subject_en": "One garden wheelbarrow with a shallow galvanized steel tray, one front rubber wheel, two long handles and two rear support legs, all properly connected to the same frame. Show the entire empty wheelbarrow from a gentle front-side three-quarter angle. Include no soil, tools, plants, labels or separate props.",
+      "status": "generated"
+    },
+    {
+      "id": "c202",
+      "category": "home-and-garden",
+      "name": "Шланг, свёрнутый кольцом",
+      "file": "home-and-garden/png/24-coiled-garden-hose.png",
+      "sample": false,
+      "group": "dacha-household",
+      "kind": "object",
+      "subject_en": "One continuous muted green rubber garden hose wound into a compact loose coil, with both ends visible and plain metal connectors attached. Show the complete coil from a gentle overhead three-quarter angle, with ordinary hose thickness and natural bends. Include no water, nozzle, labels or separate tools.",
+      "status": "generated"
+    },
+    {
+      "id": "c203",
+      "category": "home-and-garden",
+      "name": "Дачный подвесной рукомойник",
+      "file": "home-and-garden/png/25-wall-mounted-country-washstand.png",
+      "sample": false,
+      "group": "dacha-household",
+      "kind": "object",
+      "subject_en": "One small wall-mounted country washstand with a cylindrical aluminum water reservoir, a fitted lid, an attached rear hanging tab and a conventional push-rod water outlet underneath. Show the entire unmounted unit from a gentle front three-quarter angle, with all parts securely connected. Include no wall, basin, water stream, lettering or separate container.",
+      "status": "generated"
+    },
+    {
+      "id": "c204",
+      "category": "home-and-garden",
+      "name": "Перевязанная вязанка берёзовых поленьев",
+      "file": "home-and-garden/png/26-tied-birch-firewood-bundle.png",
+      "sample": false,
+      "group": "dacha-household",
+      "kind": "object",
+      "subject_en": "One cohesive bundle of four short birch firewood logs held tightly together by two loops of natural twine. Show the complete tied bundle from a gentle three-quarter angle, with white birch bark, dark bark marks and believable cut wood ends. Include no flames, ash, tools, lettering or loose extra logs.",
+      "status": "generated"
+    },
+    {
+      "id": "c205",
+      "category": "home-and-garden",
+      "name": "Металлическое ведро",
+      "file": "home-and-garden/png/27-metal-bucket.png",
+      "sample": false,
+      "group": "dacha-household",
+      "kind": "object",
+      "subject_en": "One empty tapered galvanized metal bucket with a rolled upper rim and one arched wire handle attached at two side pivots. Show the complete bucket from a gentle overhead three-quarter angle, with modest realistic material wear. Include no water, mop, plants, lettering or separate tools.",
+      "status": "generated"
+    },
+    {
+      "id": "c206",
+      "category": "home-and-garden",
+      "name": "Деревянный рассадный ящик",
+      "file": "home-and-garden/png/28-wooden-seedling-box.png",
+      "sample": false,
+      "group": "dacha-household",
+      "kind": "object",
+      "subject_en": "One shallow rectangular seedling box made of plain unfinished wooden boards with simple joined corners and a few narrow drainage gaps in its bottom. Show the complete empty box from a gentle overhead three-quarter angle, with believable wood grain. Include no soil, seedlings, labels, tools or additional containers.",
+      "status": "generated"
+    },
+    {
+      "id": "c207",
+      "category": "travel",
+      "name": "Спальный мешок",
+      "file": "travel/png/13-sleeping-bag.png",
+      "sample": false,
+      "group": "travel-camping",
+      "kind": "object",
+      "subject_en": "One complete muted navy mummy-shaped sleeping bag with coherent quilted padding, a visible side zipper and an empty hood opening. Show it closed and gently laid out diagonally from slightly above, preserving the entire soft fabric outline. Include no person, sleeping mat, pillow, lettering or extra bedding.",
+      "status": "generated"
+    },
+    {
+      "id": "c208",
+      "category": "travel",
+      "name": "Туристический коврик в рулоне",
+      "file": "travel/png/14-rolled-camping-mat.png",
+      "sample": false,
+      "group": "travel-camping",
+      "kind": "object",
+      "subject_en": "One camping foam mat rolled into a single compact cylinder and held by two simple attached dark straps. Show the whole muted olive roll from a gentle three-quarter angle so the layered spiral is visible at one end. Include no carrying bag, person, lettering or additional equipment.",
+      "status": "generated"
+    },
+    {
+      "id": "c209",
+      "category": "travel",
+      "name": "Складной походный табурет",
+      "file": "travel/png/15-folding-camp-stool.png",
+      "sample": false,
+      "group": "travel-camping",
+      "kind": "object",
+      "subject_en": "One folding camping stool with a plain olive canvas seat stretched across two conventional crossed metal leg frames joined at their pivots. Show the complete assembled stool from a gentle three-quarter angle, with all four feet and the taut seat visible. Include no person, scenery, logos or separate equipment.",
+      "status": "generated"
+    },
+    {
+      "id": "c210",
+      "category": "travel",
+      "name": "Походная фляга",
+      "file": "travel/png/16-camping-canteen.png",
+      "sample": false,
+      "group": "travel-camping",
+      "kind": "object",
+      "subject_en": "One flat oval metal camping canteen in a muted olive canvas cover, closed by a fitted screw cap retained by a short attached chain. Show the complete canteen from a gentle three-quarter angle, with coherent seams, neck and cover fastenings. Include no cup, badges, lettering or separate accessories.",
+      "status": "generated"
+    },
+    {
+      "id": "c211",
+      "category": "travel",
+      "name": "Спасательный жилет",
+      "file": "travel/png/17-life-jacket.png",
+      "sample": false,
+      "group": "travel-camping",
+      "kind": "object",
+      "subject_en": "One conventional life jacket with muted ochre fabric, two padded front panels, a simple neck opening and correctly attached adjustable webbing straps with plastic buckles. Show the complete empty jacket from a gentle front three-quarter angle, with ordinary shoulder construction. Include no wearer, lettering, symbols, whistle, water or other gear.",
+      "status": "generated"
+    },
+    {
+      "id": "c212",
+      "category": "travel",
+      "name": "Весло",
+      "file": "travel/png/18-paddle.png",
+      "sample": false,
+      "group": "travel-camping",
+      "kind": "object",
+      "subject_en": "One wooden canoe paddle with a single broad flattened oval blade, a long straight shaft and a modest T-shaped grip. Show the entire connected paddle diagonally from slightly above, with coherent wood grain and conventional proportions. Include no water, boat, person, markings or second paddle.",
+      "status": "generated"
+    },
+    {
+      "id": "c213",
+      "category": "travel",
+      "name": "Маска для сна",
+      "file": "travel/png/19-sleep-mask.png",
+      "sample": false,
+      "group": "travel-camping",
+      "kind": "object",
+      "subject_en": "One plain slate-blue cotton sleep mask with a soft contoured eye-covering panel and one securely attached elastic strap forming a closed loop behind it. Show the complete empty mask from a gentle front-overhead angle. Include no face, pillow, writing or other travel accessories.",
+      "status": "generated"
+    },
+    {
+      "id": "c214",
+      "category": "travel",
+      "name": "Дорожный несессер",
+      "file": "travel/png/20-travel-toiletry-bag.png",
+      "sample": false,
+      "group": "travel-camping",
+      "kind": "object",
+      "subject_en": "One small closed brown canvas travel toiletry bag with a rectangular gusseted body, a fitted top zipper and one attached short carrying loop. Show the entire bag from a gentle three-quarter angle, with ordinary practical stitching. Include no bottles, toiletries, lettering, initials or separate items.",
+      "status": "generated"
+    },
+    {
+      "id": "c215",
+      "category": "hobbies",
+      "name": "Колода карт рубашкой вверх",
+      "file": "hobbies/png/21-face-down-playing-card-deck.png",
+      "sample": false,
+      "group": "games-activities",
+      "kind": "object-set",
+      "subject_en": "A single neatly aligned deck of ordinary playing cards, shown face-down as one compact set. The back design is a restrained burgundy field with a simple geometric border, while the layered cream card edges remain visible. Show the complete deck from a shallow overhead three-quarter angle, with no lettering, ranks, suits, box or loose cards.",
+      "status": "generated"
+    },
+    {
+      "id": "c216",
+      "category": "sport",
+      "name": "Дротик",
+      "file": "sport/png/13-dart.png",
+      "sample": false,
+      "group": "games-activities",
+      "kind": "object",
+      "subject_en": "One conventional steel-tip dart with a knurled brass barrel, a short straight shaft and plain muted red flights fitted coherently at the rear. Show the entire dart diagonally from a gentle three-quarter angle, with its tip and flight edges complete. Include no target, hand, lettering or additional darts.",
+      "status": "generated"
+    },
+    {
+      "id": "c217",
+      "category": "sport",
+      "name": "Бильярдный кий",
+      "file": "sport/png/14-billiard-cue.png",
+      "sample": false,
+      "group": "games-activities",
+      "kind": "object",
+      "subject_en": "One complete wooden billiard cue with a long straight tapered shaft, a small pale ferrule and an attached dark leather tip. Show the full cue diagonally from slightly above, with conventional proportions and a plain darker butt end. Include no balls, rack, chalk, branding or lettering.",
+      "status": "generated"
+    },
+    {
+      "id": "c218",
+      "category": "sport",
+      "name": "Скейтборд",
+      "file": "sport/png/15-skateboard.png",
+      "sample": false,
+      "group": "games-activities",
+      "kind": "object",
+      "subject_en": "One conventional skateboard with a short wooden laminated deck, slightly raised nose and tail, dark plain grip tape, two attached metal trucks and four rubber wheels. Show the complete board from a gentle overhead three-quarter angle so the deck and wheel assembly are understandable. Include no rider, shoes, lettering or graphics.",
+      "status": "generated"
+    },
+    {
+      "id": "c219",
+      "category": "sport",
+      "name": "Кистевой эспандер",
+      "file": "sport/png/16-hand-gripper.png",
+      "sample": false,
+      "group": "games-activities",
+      "kind": "object",
+      "subject_en": "One conventional hand-grip exerciser with two textured dark handles joined by a single exposed metal coil spring at the top. Show the complete connected tool diagonally from a gentle three-quarter angle, with the handles naturally separated. Include no hand, lettering or additional exercise equipment.",
+      "status": "generated"
+    },
+    {
+      "id": "c220",
+      "category": "sport",
+      "name": "Спортивный свисток",
+      "file": "sport/png/17-sports-whistle.png",
+      "sample": false,
+      "group": "games-activities",
+      "kind": "object",
+      "subject_en": "One plain metal sports whistle with a conventional hollow body, a fitted mouthpiece, a visible air opening and one small attached ring. Show the complete whistle from a gentle side three-quarter angle. Include no cord, person, lettering or separate accessories.",
+      "status": "generated"
+    },
+    {
+      "id": "c221",
+      "category": "sport",
+      "name": "Хоккейная клюшка",
+      "file": "sport/png/18-hockey-stick.png",
+      "sample": false,
+      "group": "games-activities",
+      "kind": "object",
+      "subject_en": "One conventional wooden hockey stick with a long straight shaft and a single correctly angled gently curved blade, finished with a short plain dark tape wrap on the blade. Show the complete connected stick diagonally from slightly above. Include no puck, player, gloves, brand or lettering.",
+      "status": "generated"
+    },
+    {
+      "id": "c222",
+      "category": "sport",
+      "name": "Бумеранг",
+      "file": "sport/png/19-boomerang.png",
+      "sample": false,
+      "group": "games-activities",
+      "kind": "object",
+      "subject_en": "One plain wooden boomerang with two broad gently curved arms forming a conventional open V shape, rounded tips and believable thin airfoil edges. Show the complete object almost flat from above, with natural wood grain. Include no painted symbols, lettering, hand or other objects.",
+      "status": "generated"
+    },
+    {
+      "id": "c223",
+      "category": "pet-accessories",
+      "name": "Ошейник без данных",
+      "file": "pet-accessories/png/01-plain-pet-collar.png",
+      "sample": false,
+      "group": "pet-accessories",
+      "kind": "object",
+      "subject_en": "One plain brown leather pet collar with a conventional metal buckle, adjustment holes and one attached D-ring. It is fastened into a single continuous oval loop and shown from a gentle overhead three-quarter angle. Include no animal, identification tag, writing or decoration.",
+      "status": "generated"
+    },
+    {
+      "id": "c224",
+      "category": "pet-accessories",
+      "name": "Поводок",
+      "file": "pet-accessories/png/02-pet-leash.png",
+      "sample": false,
+      "group": "pet-accessories",
+      "kind": "object",
+      "subject_en": "One continuous brown woven pet leash with a stitched hand loop at one end and a securely attached metal swivel clasp at the other. Show its full length loosely curved from slightly above, with both ends clearly visible. Include no animal, collar, identification tag or lettering.",
+      "status": "generated"
+    },
+    {
+      "id": "c225",
+      "category": "pet-accessories",
+      "name": "Миска для питомца",
+      "file": "pet-accessories/png/03-pet-bowl.png",
+      "sample": false,
+      "group": "pet-accessories",
+      "kind": "object",
+      "subject_en": "One empty round stainless-steel pet bowl with a shallow basin, rolled rim and a fitted narrow dark rubber base ring. Show the entire bowl from a gentle overhead three-quarter angle, with believable metal reflections and a visible empty interior. Include no food, water, animal, paw-print motif, lettering or logo.",
+      "status": "generated"
+    },
+    {
+      "id": "c226",
+      "category": "pet-accessories",
+      "name": "Лежанка для питомца",
+      "file": "pet-accessories/png/04-pet-bed.png",
+      "sample": false,
+      "group": "pet-accessories",
+      "kind": "object",
+      "subject_en": "One small oval beige canvas pet bed with a padded raised bolster around the edge and a recessed cushion forming one coherent textile unit. Show the entire empty bed from a gentle overhead three-quarter angle, with practical sewn seams. Include no animal, blanket, toy, lettering or logo.",
+      "status": "generated"
+    },
+    {
+      "id": "c227",
+      "category": "pet-accessories",
+      "name": "Когтеточка",
+      "file": "pet-accessories/png/05-cat-scratching-post.png",
+      "sample": false,
+      "group": "pet-accessories",
+      "kind": "object",
+      "subject_en": "One simple cat scratching post consisting of a square wooden base and one thick upright column tightly wrapped in natural sisal rope and fitted with a plain top cap. Show the complete securely connected unit from a gentle three-quarter angle. Include no cat, hanging toy, lettering or extra platforms.",
+      "status": "generated"
+    },
+    {
+      "id": "c228",
+      "category": "pet-accessories",
+      "name": "Игрушечная мышка",
+      "file": "pet-accessories/png/06-toy-mouse.png",
+      "sample": false,
+      "group": "pet-accessories",
+      "kind": "object",
+      "subject_en": "One small stuffed gray fabric toy mouse with rounded sewn ears, simple embroidered eyes and a single attached cotton-cord tail. Show the complete connected toy from a gentle three-quarter angle, with its seams and soft fabric construction visible. Include no live animal, label, collar or separate accessories.",
+      "status": "generated"
+    },
+    {
+      "id": "c229",
+      "category": "pet-accessories",
+      "name": "Переноска для питомца",
+      "file": "pet-accessories/png/07-pet-carrier.png",
+      "sample": false,
+      "group": "pet-accessories",
+      "kind": "object",
+      "subject_en": "One compact rigid pet carrier with a plain charcoal molded plastic shell, conventional ventilation slots, a closed attached metal-bar front door and a fitted top carrying handle. Show the entire empty carrier from a gentle front three-quarter angle, with coherent hinges, latches and an unoccupied interior. Include no animal, bedding, bowl, labels or brand.",
+      "status": "generated"
+    },
+    {
+      "id": "c230",
+      "category": "pet-accessories",
+      "name": "Птичья жердочка с креплением",
+      "file": "pet-accessories/png/08-bird-perch-clamp.png",
+      "sample": false,
+      "group": "pet-accessories",
+      "kind": "object",
+      "subject_en": "One straight natural wooden bird perch with a conventional threaded metal mounting bolt at one end, fitted with two washers and a wing nut. Show the complete connected component from slightly above, with the whole wooden dowel and clamp visible. Include no cage, bird, food, foliage or lettering.",
+      "status": "generated"
+    }
+  ],
+  "generated_count": 216,
+  "deferred_count": 14,
+  "updated_at": "2026-11-28",
+  "original_plan_total": 150
+}
